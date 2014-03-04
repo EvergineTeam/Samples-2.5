@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>BasicRigidBody</Title>
+  <Description>An example about how to use the 3D physics basics.</Description>
+  <ImageUri>BasicRigidBody.png</ImageUri>
+  <ExecutePath>BasicRigidBody.exe</ExecutePath>
+  <Type>Physics3D</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>BasicRigidBodyCompressed.exe</InstallPath>
+</Sample>

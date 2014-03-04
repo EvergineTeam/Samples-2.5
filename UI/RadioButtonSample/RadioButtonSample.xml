@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>RadioButtonSample</Title>
+  <Description>Shows the use of UI Radio Button Control.</Description>
+  <ImageUri>RadioButtonSample.png</ImageUri>
+  <ExecutePath>RadioButtonSample.exe</ExecutePath>
+  <Type>UI</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>RadioButtonSampleCompressed.exe</InstallPath>
+</Sample>

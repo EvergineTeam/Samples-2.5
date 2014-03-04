@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Force2DSample</Title>
+  <Description>Shows the use of Physic Forces in 2D.</Description>
+  <ImageUri>Force2DSample.png</ImageUri>
+  <ExecutePath>Force2DSample.exe</ExecutePath>
+  <Type>Physics2D</Type>
+  <Dificulty>Intermediate</Dificulty>
+  <InstallPath>Force2DSampleCompressed.exe</InstallPath>
+</Sample>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="DinosaurAssets" Version="1">
+  <Profiles>
+    <Profile Name="Kindle Fire" Platform="Android" />
+  </Profiles>
+  <Assets>
+    <Asset Path="Models\fern.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\floor.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\velociraptor.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="False" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\FernTexture.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="True" AntialiasType="Smooth" OutputFormat="CompressedHighQuality" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\floorNight.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="True" AntialiasType="Smooth" OutputFormat="CompressedHighQuality" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\VelociraptorTexture3.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="True" AntialiasType="Smooth" OutputFormat="CompressedHighQuality" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="False" />
+      </ExportProperties>
+    </Asset>
+  </Assets>
+</Project>

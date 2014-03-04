@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>RimLighting</Title>
+  <Description>Shows how to use the Rim Lighting shader material.</Description>
+  <ImageUri>RimLighting.png</ImageUri>
+  <ExecutePath>RimLighting.exe</ExecutePath>
+  <Type>Graphics</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>RimLightingCompressed.exe</InstallPath>
+</Sample>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="CityDemoAssets" Version="1">
+  <Profiles>
+    <Profile Name="Default" Platform="Windows" />
+  </Profiles>
+  <Assets>
+    <Asset Path="Models\balcony.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\buildingModels.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\buildingModels2.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\cityBackground.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\light.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\lightFoot.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\lightSignal.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Models\skyModel.X">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\balconyMapRadiosity.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\buildings.jpg">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\buildings2.jpg">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\lightFootMap.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\lightMap.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\rainParticle.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\Sky.jpg">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\skylineAlpha.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Textures\WaveLight.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" />
+      </ExportProperties>
+    </Asset>
+  </Assets>
+</Project>

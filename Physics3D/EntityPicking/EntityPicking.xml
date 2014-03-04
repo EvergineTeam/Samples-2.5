@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>EntityPicking</Title>
+  <Description>An example about how to pick a physic entity in 3D</Description>
+  <ImageUri>EntityPicking.PNG</ImageUri>
+  <ExecutePath>EntityPicking.exe</ExecutePath>
+  <Type>Physics3D</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>EntityPickingCompressed.exe</InstallPath>
+</Sample>

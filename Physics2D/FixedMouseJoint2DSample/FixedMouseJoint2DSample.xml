@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>FixedMouseJoint2DSample</Title>
+  <Description>How to use the FixedMouseJoint2D to move physical entities in the game.</Description>
+  <ImageUri>FixedMouseJoint2DSample.png</ImageUri>
+  <ExecutePath>FixedMouseJoint2DSample.exe</ExecutePath>
+  <Type>Physics2D</Type>
+  <Dificulty>Intermediate</Dificulty>
+  <InstallPath>FixedMouseJoint2DSampleCompressed.exe</InstallPath>
+</Sample>

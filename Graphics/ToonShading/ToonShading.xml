@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>ToonShading</Title>
+  <Description>Shows how to use the Toon (or cell) shader material.</Description>
+  <ImageUri>ToonShading.png</ImageUri>
+  <ExecutePath>ToonShading.exe</ExecutePath>
+  <Type>Graphics</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>ToonShadingCompressed.exe</InstallPath>
+</Sample>

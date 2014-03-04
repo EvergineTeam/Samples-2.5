@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Entity3DCollisionGroups</Title>
+  <Description>An example about how to use the physics</Description>
+  <ImageUri>Entity3DCollisionGroups.png</ImageUri>
+  <ExecutePath>Entity3DCollisionGroups.exe</ExecutePath>
+  <Type>Physics3D</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>Entity3DCollisionGroupsCompressed.exe</InstallPath>
+</Sample>

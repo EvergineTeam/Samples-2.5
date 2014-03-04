@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>SpineSkeletalAnimation</Title>
+  <Description>Shows Spine Skeletal engine integration.</Description>
+  <ImageUri>SpineSkeletalAnimation.png</ImageUri>
+  <ExecutePath>SpineSkeletalAnimation.exe</ExecutePath>
+  <Dificulty>Beginner</Dificulty>
+  <Type>Graphics</Type>
+  <InstallPath>SpineSkeletalAnimationCompressed.exe</InstallPath>
+</Sample>

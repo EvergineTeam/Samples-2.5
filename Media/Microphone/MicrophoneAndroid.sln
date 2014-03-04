@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "LauncherAndroid\Launcher.csproj", "{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneProjectAndroid", "Microphone\MicrophoneProject\MicrophoneProjectAndroid.csproj", "{7FFD1918-A885-436E-98A3-153B28DE8135}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.plainconcepts.com/tfs/plainconcepts
+		SccProjectUniqueName0 = LauncherAndroid\\Launcher.csproj
+		SccProjectName0 = LauncherAndroid
+		SccAuxPath0 = https://tfs.plainconcepts.com/tfs/plainconcepts
+		SccLocalPath0 = LauncherAndroid
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Microphone\\MicrophoneProject\\MicrophoneProjectAndroid.csproj
+		SccProjectName1 = Microphone/MicrophoneProject
+		SccAuxPath1 = https://tfs.plainconcepts.com/tfs/plainconcepts
+		SccLocalPath1 = Microphone\\MicrophoneProject
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C2A0C6-B4F0-4A99-9D7C-BBF9FC6A3601}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal

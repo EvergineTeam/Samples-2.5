@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>PathCamera</Title>
+  <Description>An example of path camera. Put a few "CameraPoints" in the world and the camera will create a path between these points.</Description>
+  <ImageUri>PathCamera.PNG</ImageUri>
+  <ExecutePath>PathCamera.exe</ExecutePath>
+  <Type>Camera</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>PathCameraCompressed.exe</InstallPath>
+</Sample>

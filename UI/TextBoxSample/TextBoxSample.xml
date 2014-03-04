@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>TextBoxSample</Title>
+  <Description>Shows the use of UI TextBox Control.</Description>
+  <ImageUri>TextBoxSample.png</ImageUri>
+  <ExecutePath>TextBoxSample.exe</ExecutePath>
+  <Type>UI</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>TextBoxSampleCompressed.exe</InstallPath>
+</Sample>

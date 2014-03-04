@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>ThirdPersonCamera</Title>
+  <Description>An example of third person camera.</Description>
+  <ImageUri>ThirdPersonCamera.PNG</ImageUri>
+  <ExecutePath>ThirdPersonCamera.exe</ExecutePath>
+  <Type>Camera</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>ThirdPersonCameraCompressed.exe</InstallPath>
+</Sample>

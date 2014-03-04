@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>NormalMap</Title>
+  <Description>NormapMapping is one of most used technique in 3D computer graphics. This technique is used for faking the lighting of bumps and dents.</Description>
+  <ImageUri>NormalMap.png</ImageUri>
+  <ExecutePath>NormalMap.exe</ExecutePath>
+  <Dificulty>Intermediate</Dificulty>
+  <Type>Graphics</Type>
+  <InstallPath>NormalMapCompressed.exe</InstallPath>
+</Sample>

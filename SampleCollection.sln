@@ -1,0 +1,2043 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Camera", "Camera", "{A1086397-6B24-4266-BFFC-E7DAD499D145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4E2CC77C-B230-4BFB-8057-162576B38427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graphics", "Graphics", "{9E1C5754-9A42-43C2-BCA1-E42A63757B7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{97FF442C-D027-4025-B904-8484BB58C959}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{47E245AA-2E8E-4ED5-A3B5-3D01742160FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Physics2D", "Physics2D", "{B571E393-20CA-4D21-8643-89EAE459013C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Physics3D", "Physics3D", "{D04B2298-FA86-434F-A7B4-EBE20B67A2C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8F330DC3-BC42-41E7-900F-85768A701CFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FreeCamera", "FreeCamera", "{2ADCC6D2-D794-41D7-9C82-C85F67A2F136}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IsometricCamera", "IsometricCamera", "{101619EB-00AE-48C4-821C-5F0F82C370FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrthogonalCamera", "OrthogonalCamera", "{5ED222BC-B9E3-4213-8F6C-4490226D8C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PathCamera", "PathCamera", "{EC241287-DEC7-4C7C-A6CA-1102A8FC3AF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdPersonCamera", "ThirdPersonCamera", "{AFA8702A-A9DF-466B-8910-8594060FB218}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewCamera", "ViewCamera", "{A1EDD355-83E3-4067-A43D-38CCB8275A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCamera", "Cameras\FreeCamera\FreeCamera\FreeCamera\FreeCamera.csproj", "{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCameraProject", "Cameras\FreeCamera\FreeCamera\FreeCameraProject\FreeCameraProject.csproj", "{C0C621FB-87C1-4F3F-8E41-8F9193313B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCamera", "Cameras\IsometricCamera\IsometricCamera\IsometricCamera\IsometricCamera.csproj", "{B29C75EB-84FA-4284-A5EC-14ADE809E903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCameraProject", "Cameras\IsometricCamera\IsometricCamera\IsometricCameraProject\IsometricCameraProject.csproj", "{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrthogonalCamera", "Cameras\OrthogonalCamera\OrthogonalCamera\OrthogonalCamera\OrthogonalCamera.csproj", "{F36E7336-FCC2-4820-A3DF-7438C1C32280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrthogonalCameraProject", "Cameras\OrthogonalCamera\OrthogonalCamera\OrthogonalCameraProject\OrthogonalCameraProject.csproj", "{7276A9E1-32E5-4E67-B278-4FC12AB24C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathCamera", "Cameras\PathCamera\PathCamera\PathCamera\PathCamera.csproj", "{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathCameraProject", "Cameras\PathCamera\PathCamera\PathCameraProject\PathCameraProject.csproj", "{00B95563-FFBA-41D4-8E7A-3F656272FB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPersonCamera", "Cameras\ThirdPersonCamera\ThirdPersonCamera\ThirdPersonCamera\ThirdPersonCamera.csproj", "{C4729282-C7D9-4758-B732-B89ED31660A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPersonCameraProject", "Cameras\ThirdPersonCamera\ThirdPersonCamera\ThirdPersonCameraProject\ThirdPersonCameraProject.csproj", "{27831D60-D975-42A4-859B-0E342366F4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewCamera", "Cameras\ViewCamera\ViewCamera\ViewCamera\ViewCamera.csproj", "{FD61AA01-3B0C-4D22-A944-D916FEB87C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewCameraProject", "Cameras\ViewCamera\ViewCamera\ViewCameraProject\ViewCameraProject.csproj", "{228C4E89-E642-4855-A91C-35919B30E0CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clone", "Clone", "{CB2A4627-E6F6-42CF-8068-2FAF114685AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics", "{B86EC490-BF34-4917-828F-81EA71612796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScreenLayers", "ScreenLayers", "{D7B497DC-D4FB-46DF-997B-4A3267934936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clone", "Core\Clone\Clone\Clone\Clone.csproj", "{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneProject", "Core\Clone\Clone\CloneProject\CloneProject.csproj", "{5A3AB054-4564-4B42-A1EB-0915F5370F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "Core\Diagnostics\Diagnostics\Diagnostics\Diagnostics.csproj", "{396BFC07-5880-4DD7-AE36-4E14CF242939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticsProject", "Core\Diagnostics\Diagnostics\DiagnosticsProject\DiagnosticsProject.csproj", "{0803DD29-93DF-4C96-9C0E-D6330AE7CD68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnimatedModel", "AnimatedModel", "{A24C1D39-C464-4166-935E-43F1832D0FCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CityDemo", "CityDemo", "{9BA92CE8-D71C-4C28-97C8-40B8167BEF67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DebugShapes", "DebugShapes", "{92E470AA-2022-4C09-90EB-30960BC06C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedModel", "Graphics\AnimatedModel\AnimatedModel\AnimatedModel\AnimatedModel.csproj", "{70EB0A86-86BF-4308-9E98-489884EB8C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedModelProject", "Graphics\AnimatedModel\AnimatedModel\AnimatedModelProject\AnimatedModelProject.csproj", "{E2218418-CD57-4B71-A412-F66C33C78A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugShapes", "Graphics\DebugShapes\DebugShapes\DebugShapes\DebugShapes.csproj", "{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugShapesProject", "Graphics\DebugShapes\DebugShapes\DebugShapesProject\DebugShapesProject.csproj", "{C709781C-169A-45F3-A665-7AF7A9286795}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dinosaur", "Dinosaur", "{4FFE16F3-6A8F-4CD1-A476-3E313114E19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinosaur", "Graphics\Dinosaur\Dinosaur\Dinosaur\Dinosaur.csproj", "{81C36008-0F6F-4720-A1CB-CD8557205309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinosaurProject", "Graphics\Dinosaur\Dinosaur\DinosaurProject\DinosaurProject.csproj", "{978B052A-6BE0-499C-A626-7595942F10D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DualTexture", "DualTexture", "{5F87F7E3-12F7-4751-BF10-0E46080C39C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTexture", "Graphics\DualTexture\DualTexture\DualTexture.csproj", "{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTextureProject", "Graphics\DualTexture\DualTextureProject\DualTextureProject.csproj", "{E6304525-1FA9-4A49-8E19-72DE123CBC34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyEventsAnimation", "KeyEventsAnimation", "{C5A57EC4-CEFB-4584-82DD-122DA1DA768F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsAnimationProject", "Graphics\KeyEventsAnimation\KeyEventsAnimation\KeyEventsAnimationProject\KeyEventsAnimationProject.csproj", "{3A6E13FA-EA1A-4136-B8DE-1482673D1552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsAnimation", "Graphics\KeyEventsAnimation\KeyEventsAnimation\KeyEventsAnimation\KeyEventsAnimation.csproj", "{E4F87516-901F-4899-BE2C-38633F6F3C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lighting", "Lighting", "{9C0FE3A3-2F78-4755-B60A-5EB4A74962A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lighting", "Graphics\Lighting\Lighting\Lighting\Lighting.csproj", "{89C69D14-6866-4AD4-A574-ADB8191ABCA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightingProject", "Graphics\Lighting\Lighting\LightingProject\LightingProject.csproj", "{53303981-980C-40E4-8E1C-2C93ED1E8E28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ParticleSystem", "ParticleSystem", "{587B465D-F2B0-4383-916D-6D0BE253F877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystem", "Graphics\ParticleSystem\ParticleSystem\ParticleSystem\ParticleSystem.csproj", "{40BA3B07-6A11-4725-AD81-B1F83500E715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystemProject", "Graphics\ParticleSystem\ParticleSystem\ParticleSystemProject\ParticleSystemProject.csproj", "{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Primitives", "Primitives", "{148F042F-F34C-4151-857C-786CE2C28EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primitives", "Graphics\Primitives\Primitives\Primitives\Primitives.csproj", "{502BB470-9CC3-4ECC-8435-B4A7F713712D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitivesProject", "Graphics\Primitives\Primitives\PrimitivesProject\PrimitivesProject.csproj", "{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Picking", "Picking", "{F49DE791-143A-46C0-87B9-5A2DCB43805F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picking", "Graphics\Project\Project\Project\Picking.csproj", "{C1D21814-56A6-46B2-A362-D47BEF284F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingProject", "Graphics\Project\Project\ProjectProject\PickingProject.csproj", "{EFB2B98C-4FB8-434C-BA9A-7A179D712594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RenderTarget", "RenderTarget", "{1F6CD9FF-04E2-414D-9549-D14474B8EC87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderTarget", "Graphics\RenderTarget\RenderTarget\RenderTarget\RenderTarget.csproj", "{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderTargetProject", "Graphics\RenderTarget\RenderTarget\RenderTargetProject\RenderTargetProject.csproj", "{31B43760-E09F-43AE-8552-C21328818C66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RimLighting", "RimLighting", "{118C571C-7E4F-4237-8991-AE44D4424253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLighting", "Graphics\RimLighting\RimLighting\RimLighting\RimLighting.csproj", "{43E36B67-134B-44B0-A759-76E2AFE6F0F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLightingProject", "Graphics\RimLighting\RimLighting\RimLightingProject\RimLightingProject.csproj", "{BC47A57B-F924-4A73-A504-DB91BF310C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToonShading", "ToonShading", "{623AD8D6-0C73-4F5C-A710-48A8C14B75D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonShading", "Graphics\ToonShading\ToonShading\ToonShading\ToonShading.csproj", "{0F1BD175-A841-4151-803F-50A8468B3147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonShadingProject", "Graphics\ToonShading\ToonShading\ToonShadingProject\ToonShadingProject.csproj", "{DD082D56-0348-4D02-A368-487BA4CB3953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accelerometer", "Accelerometer", "{E56975F0-CD8E-40D3-A845-A17946EF30AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Touch", "Touch", "{4DCBE8B7-DD21-4CD2-AAA8-7E4501755A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accelerometer", "Input\Accelerometer\Accelerometer\Accelerometer\Accelerometer.csproj", "{3A116FD1-41FB-4390-94B6-A3878E989086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelerometerProject", "Input\Accelerometer\Accelerometer\AccelerometerProject\AccelerometerProject.csproj", "{76FB1C04-3EF2-4502-BCD0-116000AF41E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Touch", "Input\Touch\Touch\Touch\Touch.csproj", "{89354C0E-058B-409B-8817-A65501C308B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchProject", "Input\Touch\Touch\TouchProject\TouchProject.csproj", "{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Music", "Music", "{1DE7F396-FD97-406E-8362-3E255347D605}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sounds", "Sounds", "{8EEBB009-4BC3-4EF6-9D69-9C4DB9B76213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music", "Media\Music\Music\Music\Music.csproj", "{4AE81D53-6807-4261-A563-B645243469F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicProject", "Media\Music\Music\MusicProject\MusicProject.csproj", "{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sounds", "Media\Sounds\Sounds\Sounds\Sounds.csproj", "{E6858835-78E1-4044-A491-CCA444EA4A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundsProject", "Media\Sounds\Sounds\SoundsProject\SoundsProject.csproj", "{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicRigidBody2D", "BasicRigidBody2D", "{B715AC35-6232-4B86-A54D-581F67DA0193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicRigidBody2D", "Physics2D\BasicRigidBody2D\BasicRigidBody2D\BasicRigidBody2D\BasicRigidBody2D.csproj", "{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicRigidBodyProject2D", "Physics2D\BasicRigidBody2D\BasicRigidBody2D\BasicRigidBody2DProject\BasicRigidBodyProject2D.csproj", "{9A8A4146-83A8-40F8-931F-69ABC1E98B32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicRigidBody", "BasicRigidBody", "{D1B404BA-480E-4E9E-B4CA-E877B632E798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bounciness", "Bounciness", "{4652DEF9-54F9-4DB5-A3D9-9B6907DE057D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FixedJoint", "FixedJoint", "{7770B499-64F5-4F38-9B5E-34FB36B46D83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Friction", "Friction", "{91F1879E-8C31-4475-ACF9-943E37EA87E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HingeJoint", "HingeJoint", "{339D9C20-0716-4A7A-9874-3E0DD3B6B4E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jenga", "Jenga", "{B79E4535-8789-479E-977C-434F41AF0EA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rope", "Rope", "{67C213D4-1AA0-4AAE-8A1F-ED6E0A54F329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StockRoom", "StockRoom", "{A8118ADC-7A72-4EA3-B389-4F3F17F8882C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WallDemo", "WallDemo", "{EF387ED6-12DA-4BC5-B002-A369045AD7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicRigidBody", "Physics3D\BasicRigidBody\BasicRigidBody\BasicRigidBody\BasicRigidBody.csproj", "{5A63E8F1-436C-461F-97ED-322969909195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicRigidBodyProject", "Physics3D\BasicRigidBody\BasicRigidBody\BasicRigidBodyProject\BasicRigidBodyProject.csproj", "{01BE75DE-D053-4C49-B9F3-A818181393A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bounciness", "Physics3D\Bounciness\Bounciness\Bounciness\Bounciness.csproj", "{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncinessProject", "Physics3D\Bounciness\Bounciness\BouncinessProject\BouncinessProject.csproj", "{E8248B8A-5943-410B-9BCB-DE8F6B1354AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedJoint", "Physics3D\FixedJoint\FixedJoint\FixedJoint\FixedJoint.csproj", "{8B22795C-2A16-49EF-BB4B-25301551C1DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedJointProject", "Physics3D\FixedJoint\FixedJoint\FixedJointProject\FixedJointProject.csproj", "{7AD03F07-644B-4DA7-A56E-F72AC252A316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friction", "Physics3D\Friction\Friction\Friction\Friction.csproj", "{8059EE63-2F47-4D5E-8596-A0CB74647462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrictionProject", "Physics3D\Friction\Friction\FrictionProject\FrictionProject.csproj", "{AEF24F84-4A3F-4EF4-80CC-80113CABC098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HingeJoint", "Physics3D\HingeJoint\hingeJoint\hingeJoint\HingeJoint.csproj", "{0C210E2E-2839-4789-B09C-EBF2CAAA7D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HingeJointProject", "Physics3D\HingeJoint\hingeJoint\hingeJointProject\HingeJointProject.csproj", "{7278E361-46DC-41AD-85D4-F094768FB719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jenga", "Physics3D\Jenga\Jenga\Jenga\Jenga.csproj", "{225778EB-523F-4CAF-8583-4817296987D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JengaProject", "Physics3D\Jenga\Jenga\JengaProject\JengaProject.csproj", "{3D0FFE9D-6DED-44CC-B238-44F77F182666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rope", "Physics3D\Rope\Rope\Rope\Rope.csproj", "{94D59FA5-DAD0-491E-A727-EFCF034AD77D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RopeProject", "Physics3D\Rope\Rope\RopeProject\RopeProject.csproj", "{78A1DAF9-9DBF-42D2-A87F-63990683F798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockRoom", "Physics3D\StockRoom\StockRoom\StockRoom\StockRoom.csproj", "{B926DBEA-201F-4D25-AABD-92D6AC3E8DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockRoomProject", "Physics3D\StockRoom\StockRoom\StockRoomProject\StockRoomProject.csproj", "{A9EBA232-0922-464B-89FB-06A5A58CA966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WallDemo", "Physics3D\WallDemo\WallDemo\WallDemo\WallDemo.csproj", "{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WallDemoProject", "Physics3D\WallDemo\WallDemo\WallDemoProject\WallDemoProject.csproj", "{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TextBoxSample", "TextBoxSample", "{937C3D03-6DF3-4DB8-B2D5-D74A6B8DB2A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RadioButtonSample", "RadioButtonSample", "{9E11DCEC-BD1B-4313-AA37-01E812BF8728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgressBarSample", "ProgressBarSample", "{6C71D218-D090-483C-B2A9-FA2091A01515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SliderSample", "SliderSample", "{222BB989-0ECD-41DB-A443-FE41BF76C8A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToggleSwitchSample", "ToggleSwitchSample", "{3F634476-B3D3-4919-9E30-E8AFEA8E1876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ButtonSample", "ButtonSample", "{BBAA9C2C-5477-4883-804F-5D117EA5B531}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageSample", "ImageSample", "{E731C826-FB17-4161-AE89-C18C99DEDCE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckBoxSample", "CheckBoxSample", "{5F6BA9BB-9CC1-49DF-BFEE-76EFB2EAB0D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TextBlockSample", "TextBlockSample", "{2B8AED62-3BFA-4238-B328-BD363A166A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StackPanelSample", "StackPanelSample", "{97A3152F-68C3-49DD-A74E-7E31CB944A52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WrapPanelSample", "WrapPanelSample", "{44AFED19-72A9-4E70-8E6A-99096367F6D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GridSample", "GridSample", "{5A0A3D3B-737A-4D13-993B-A84FB6F5E660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity3DCollision", "Entity3DCollision", "{15F31E2C-7A4B-4826-AFF1-24769292031B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity3DCollision", "Physics3D\Entity3DCollision\Entity3DCollision\Entity3DCollision\Entity3DCollision.csproj", "{107C2E3B-C328-4FE8-ABFB-C26B30ECB2A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity3DCollisionProject", "Physics3D\Entity3DCollision\Entity3DCollision\Entity3DCollisionProject\Entity3DCollisionProject.csproj", "{B0244D23-8077-4045-9721-6F673C425CBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity3DCollisionGroups", "Entity3DCollisionGroups", "{9029ADB7-F38D-4180-BBC6-E1B7B4EE265C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity3DCollisionGroups", "Physics3D\Entity3DCollisionGroups\Entity3DCollisionGroups\Entity3DCollisionGroups\Entity3DCollisionGroups.csproj", "{4CB36472-BAC1-4E00-8C16-72DEFAEC5A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity3DCollisionGroupsProject", "Physics3D\Entity3DCollisionGroups\Entity3DCollisionGroups\Entity3DCollisionGroupsProject\Entity3DCollisionGroupsProject.csproj", "{662C5204-E831-432E-A033-C0758B49549F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MeshCollider", "MeshCollider", "{94BCD97F-5C20-4DE4-A9B0-B0950742E973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeshCollider", "Physics3D\MeshCollider\MeshCollider\MeshCollider\MeshCollider.csproj", "{09FB81E9-2E69-49ED-AFF3-181CA8DFC557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeshColliderProject", "Physics3D\MeshCollider\MeshCollider\MeshColliderProject\MeshColliderProject.csproj", "{F4E0C7D2-06BA-4CE2-B873-86E6279E8599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Motor3DSample", "Motor3DSample", "{DD13DFB8-7492-439E-8B0C-F8C606E2BDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motor3DSample", "Physics3D\Motor3DSample\Motor3DSample\Motor3DSample\Motor3DSample.csproj", "{0595200E-EFC3-45A6-8907-8E35566FBD31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motor3DSampleProject", "Physics3D\Motor3DSample\Motor3DSample\Motor3DSampleProject\Motor3DSampleProject.csproj", "{BFC185E1-2542-43C1-A0FC-92FF217E060C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityPicking", "EntityPicking", "{AC0EA598-1AB5-40C8-8995-FD2786BFBC83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityPicking", "Physics3D\EntityPicking\EntityPicking\EntityPicking\EntityPicking.csproj", "{94DD7625-1F3A-47AF-BFFA-0B4DAA837C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityPickingProject", "Physics3D\EntityPicking\EntityPicking\EntityPickingProject\EntityPickingProject.csproj", "{9627567A-1AEA-4C46-B730-CB53BA35192F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AngleJoint2DSample", "AngleJoint2DSample", "{C99B6A57-BD42-4AF9-8A0D-B50316B007D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleJoint2DSample", "Physics2D\AngleJoint2DSample\AngleJoint2DSample\AngleJoint2DSample\AngleJoint2DSample.csproj", "{43F7E763-44C8-43E4-885F-DF5C3D7F7378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleJoint2DSampleProject", "Physics2D\AngleJoint2DSample\AngleJoint2DSample\AngleJoint2DSampleProject\AngleJoint2DSampleProject.csproj", "{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CollisionCategories", "CollisionCategories", "{AF0445B9-A7A1-4C77-A37D-E45469EE2E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategories", "Physics2D\CollisionCategories\CollisionCategories\CollisionCategories\CollisionCategories.csproj", "{3F39D977-D67D-4C01-BFD3-9808FB4D277C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategoriesProject", "Physics2D\CollisionCategories\CollisionCategories\CollisionCategoriesProject\CollisionCategoriesProject.csproj", "{0FFA60D3-BE7D-49AF-91D8-1667619449C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DistanceJoint2DSample", "DistanceJoint2DSample", "{65E072FD-B479-4456-99EA-050F749954F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceJoint2DSample", "Physics2D\DistanceJoint2DSample\DistanceJoint2DSample\DistanceJoint2DSample\DistanceJoint2DSample.csproj", "{ADC7FB43-2309-4D0C-A4F2-ACEB5A8B41BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceJoint2DSampleProject", "Physics2D\DistanceJoint2DSample\DistanceJoint2DSample\DistanceJoint2DSampleProject\DistanceJoint2DSampleProject.csproj", "{6AA8BD72-3644-4CCF-B917-19D5790A90B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FixedMouseJoint2DSample", "FixedMouseJoint2DSample", "{60E3EB56-A726-4FE6-991B-9561B71E136F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedMouseJoint2DSample", "Physics2D\FixedMouseJoint2DSample\FixedMouseJoint2DSample\FixedMouseJoint2DSample\FixedMouseJoint2DSample.csproj", "{851D7800-F77F-45CB-9481-8861F92EC994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedMouseJoint2DSampleProject", "Physics2D\FixedMouseJoint2DSample\FixedMouseJoint2DSample\FixedMouseJoint2DSampleProject\FixedMouseJoint2DSampleProject.csproj", "{391256F5-5E7B-4EFC-B5E4-647F9D169307}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Force2DSample", "Force2DSample", "{70BA49A6-AB3B-483C-A74A-83C02DD20073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Force2DSample", "Physics2D\Force2DSample\Force2DSample\Force2DSample\Force2DSample.csproj", "{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Force2DSampleProject", "Physics2D\Force2DSample\Force2DSample\Force2DSampleProject\Force2DSampleProject.csproj", "{1D62B319-CD32-4AA3-95CB-A36B6D9D2174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MotorRevoluteJoint2DSample", "MotorRevoluteJoint2DSample", "{5F267815-8100-4033-A3EE-CB460A6F060D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSample", "Physics2D\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample.csproj", "{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSampleProject", "Physics2D\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSampleProject\MotorRevoluteJoint2DSampleProject.csproj", "{A48D0CDD-AACF-49E7-845A-B21F473830B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnPhysics2DCollisionSample", "OnPhysics2DCollisionSample", "{286FE62A-5CCB-4992-A71F-505F4D51EFF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPhysics2DCollisionSample", "Physics2D\OnPhysics2DCollisionSample\OnPhysics2DCollisionSample\OnPhysics2DCollisionSample\OnPhysics2DCollisionSample.csproj", "{94B02B2C-548A-4125-9D3E-3732959493DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPhysics2DCollisionSampleProject", "Physics2D\OnPhysics2DCollisionSample\OnPhysics2DCollisionSample\OnPhysics2DCollisionSampleProject\OnPhysics2DCollisionSampleProject.csproj", "{7D5BF49F-88FA-4E1A-8158-2C2BE7382948}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServoMotor3DSample", "ServoMotor3DSample", "{5A28671D-B27A-4915-B507-DAF67E4B0242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServoMotor3DSample", "Physics3D\ServoMotor3DSample\ServoMotor3DSample\ServoMotor3DSample\ServoMotor3DSample.csproj", "{17B468B5-87A2-4AEA-B573-9EFEF92BE91F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServoMotor3DSampleProject", "Physics3D\ServoMotor3DSample\ServoMotor3DSample\ServoMotor3DSampleProject\ServoMotor3DSampleProject.csproj", "{DF541F9A-665B-474C-B47F-114E9BB2BF9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnvironmentMap", "EnvironmentMap", "{45CBC321-B5B3-4820-B15D-29FEAF694A85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentMap", "Graphics\EnvironmentMap\EnvironmentMap\EnvironmentMap.csproj", "{C94326E0-1B64-472F-8C06-9470EA31FFF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvironmentMapProject", "Graphics\EnvironmentMap\EnvironmentMapProject\EnvironmentMapProject.csproj", "{C1CE4EB5-E292-40BE-8C6F-F954F578B98F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NormalMap", "NormalMap", "{CFAB9D10-0657-4CE6-B0A0-3C65665D5FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMap", "Graphics\NormalMap\NormalMap\NormalMap\NormalMap.csproj", "{12F09142-4F2F-48A4-AD84-3565A0EC82F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMapProject", "Graphics\NormalMap\NormalMap\NormalMapProject\NormalMapProject.csproj", "{70201307-97B3-494F-A297-AFC395ABCD51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skybox", "Skybox", "{5B1F7873-5887-469E-874B-44556DFC7C17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skybox", "Graphics\Skybox\Skybox\Skybox\Skybox.csproj", "{96752C22-3565-4247-B389-88194A7612FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyboxProject", "Graphics\Skybox\Skybox\SkyboxProject\SkyboxProject.csproj", "{58111CB6-816E-4C97-8552-013489E6D2BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDemo", "Graphics\CityDemo\CityDemo\CityDemo\CityDemo.csproj", "{E47E2D3E-4DC5-404F-B619-A8739F6F7958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDemoProject", "Graphics\CityDemo\CityDemo\CityDemoProject\CityDemoProject.csproj", "{E85C768D-C17B-4A56-8A32-696BD32D5772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RevoluteJoint2DSample", "RevoluteJoint2DSample", "{07F81E3E-08CA-44D7-9004-E21203F7A2C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevoluteJoint2DSampleProject", "Physics2D\RevoluteJoint2DSample\RevoluteJoint2DSample\RevoluteJoint2DSampleProject\RevoluteJoint2DSampleProject.csproj", "{84B79CAD-6096-4579-B92E-727C962F91A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevoluteJoint2DSample", "Physics2D\RevoluteJoint2DSample\RevoluteJoint2DSample\RevoluteJoint2DSample\RevoluteJoint2DSample.csproj", "{46C4C4B3-BFFF-44FD-B29E-C06AC19527C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrustumCulling", "FrustumCulling", "{2CBC780B-D44B-4E84-A695-DC131B10EFA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrustumCulling", "Graphics\FrustumCulling\FrustumCulling\FrustumCulling\FrustumCulling.csproj", "{F166F527-A0AA-4728-8E5E-18A70CD8ADF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrustumCullingProject", "Graphics\FrustumCulling\FrustumCulling\FrustumCullingProject\FrustumCullingProject.csproj", "{C86D02C6-7CE4-450A-98EB-2379AA3CEF84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lines", "Lines", "{8C9EA45B-9250-40C3-A23F-207A05496C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinesProject", "Graphics\Lines\Lines\LinesProject\LinesProject.csproj", "{38C9E4CB-7884-41DC-BF8A-81828364A185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lines", "Graphics\Lines\Lines\Lines\Lines.csproj", "{7AD60BE5-3F7A-4955-A936-CAC0E8B0848A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PerPixelCollider", "PerPixelCollider", "{E984CC3C-064C-4347-94D8-E027C8CEC4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelCollider", "Graphics\PerPixelCollider\PerPixelCollider\PerPixelCollider\PerPixelCollider.csproj", "{4731682F-71C8-40C1-A50B-7FDB96877460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelColliderProject", "Graphics\PerPixelCollider\PerPixelCollider\PerPixelColliderProject\PerPixelColliderProject.csproj", "{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlatformGameDemo", "PlatformGameDemo", "{68855640-2657-4757-AE23-D1EDFBF67D8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemo", "Graphics\PlatformGameDemo\PlatformGameDemo\PlatformGameDemo\PlatformGameDemo.csproj", "{F4943C53-46C8-40AB-934A-500DAF26F08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemoProject", "Graphics\PlatformGameDemo\PlatformGameDemo\PlatformGameDemoProject\PlatformGameDemoProject.csproj", "{95211FAC-EC0C-4F35-8BFC-4FE745F46020}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpineSkeletalAnimation", "SpineSkeletalAnimation", "{5C3B6FFA-D634-4BAF-9DE9-375C3E2511D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineSkeletalAnimation", "Graphics\SpineSkeletalAnimation\SpineSkeletalAnimation\SpineSkeletalAnimation\SpineSkeletalAnimation.csproj", "{A9BBF3B9-0C5E-47C6-8518-6CA3965C3BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpineSkeletalAnimationProject", "Graphics\SpineSkeletalAnimation\SpineSkeletalAnimation\SpineSkeletalAnimationProject\SpineSkeletalAnimationProject.csproj", "{9152A612-848F-4F1F-9ADD-1B607ECA8668}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ParticleSystem2D", "ParticleSystem2D", "{865E6640-2813-4D92-8131-8FB24DB6F05D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystem2D", "Graphics\ParticleSystem2D\ParticleSystem2D\ParticleSystem2D\ParticleSystem2D.csproj", "{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystem2DProject", "Graphics\ParticleSystem2D\ParticleSystem2D\ParticleSystem2DProject\ParticleSystem2DProject.csproj", "{855D2CD1-1E6D-4D82-82D0-A8474D8721C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microphone", "Microphone", "{591F1421-C617-4C67-B869-02B98D3B447B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VideoPlayer", "VideoPlayer", "{4226D4DC-7C3C-4E5D-AEA4-0B8DCABF07B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microphone", "Media\Microphone\Microphone\Microphone\Microphone.csproj", "{678AE6AA-AC7D-4787-8169-48ACE87C08D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneProject", "Media\Microphone\Microphone\MicrophoneProject\MicrophoneProject.csproj", "{7FFD1918-A885-436E-98A3-153B28DE8135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayer", "Media\VideoPlayer\VideoPlayer\VideoPlayer\VideoPlayer.csproj", "{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayerProject", "Media\VideoPlayer\VideoPlayer\VideoPlayerProject\VideoPlayerProject.csproj", "{5258B9B4-783D-41F1-9AD3-133AF3A03800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IsisTemple", "IsisTemple", "{A49834C8-DFE1-4BA1-B733-28F137694A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsisTemple", "Graphics\IsisTemple\IsisTemple\IsisTemple\IsisTemple.csproj", "{1A9947A7-950B-4703-BF17-B1BA842DBB06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsisTempleProject", "Graphics\IsisTemple\IsisTemple\IsisTempleProject\IsisTempleProject.csproj", "{3C46652E-B012-4CDF-9B90-1932AAF23CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSample", "UI\GridSample\GridSample\GridSample\GridSample.csproj", "{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSampleProject", "UI\GridSample\GridSample\GridSampleProject\GridSampleProject.csproj", "{245955E0-013C-46DF-BC20-60A6F40CE1D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CameraCapture", "CameraCapture", "{FBFF40A0-1E8E-472A-91DC-4F59AD71794F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCapture", "Media\CameraCapture\CameraCapture\CameraCapture\CameraCapture.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCaptureProject", "Media\CameraCapture\CameraCapture\CameraCaptureProject\CameraCaptureProject.csproj", "{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSample", "UI\ButtonSample\ButtonSample\ButtonSample\ButtonSample.csproj", "{190850DC-48F5-40BA-8AFB-59EF43E24621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSampleProject", "UI\ButtonSample\ButtonSample\ButtonSampleProject\ButtonSampleProject.csproj", "{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxSample", "UI\CheckBoxSample\CheckBoxSample\CheckBoxSample\CheckBoxSample.csproj", "{2CACA9E2-7616-4152-8D6E-3755185EA268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxSampleProject", "UI\CheckBoxSample\CheckBoxSample\CheckBoxSampleProject\CheckBoxSampleProject.csproj", "{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSample", "UI\ImageSample\ImageSample\ImageSample\ImageSample.csproj", "{5827CA43-99E9-4265-BA56-6D7C39FC8528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSampleProject", "UI\ImageSample\ImageSample\ImageSampleProject\ImageSampleProject.csproj", "{6925DA9E-4745-4441-A4A7-E9090E400419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarSample", "UI\ProgressBarSample\ProgressBarSample\ProgressBarSample\ProgressBarSample.csproj", "{FD501D48-72D5-47C5-8F77-389E61DD95F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarSampleProject", "UI\ProgressBarSample\ProgressBarSample\ProgressBarSampleProject\ProgressBarSampleProject.csproj", "{99074BA0-8B9C-40A2-BE91-016447E6D6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonSample", "UI\RadioButtonSample\RadioButtonSample\RadioButtonSample\RadioButtonSample.csproj", "{3C833F0E-B5E8-4929-A2C6-A2A753FD2473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioButtonSampleProject", "UI\RadioButtonSample\RadioButtonSample\RadioButtonSampleProject\RadioButtonSampleProject.csproj", "{B3816FC2-EA0D-4472-B48A-D88F6FB6555C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderSample", "UI\SliderSample\SliderSample\SliderSample\SliderSample.csproj", "{FE959977-CE20-47AE-812F-08F9392674CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderSampleProject", "UI\SliderSample\SliderSample\SliderSampleProject\SliderSampleProject.csproj", "{B579A381-9D90-4CC5-B9A4-D7F1E369EE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelSample", "UI\StackPanelSample\StackPanelSample\StackPanelSample\StackPanelSample.csproj", "{A1093AF7-BD96-4B67-BA34-262267D7E9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelSampleProject", "UI\StackPanelSample\StackPanelSample\StackPanelSampleProject\StackPanelSampleProject.csproj", "{931933A5-2EEB-4973-8140-E4B73ED4DDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBlockSample", "UI\TextBlockSample\TextBlockSample\TextBlockSample\TextBlockSample.csproj", "{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBlockSampleProject", "UI\TextBlockSample\TextBlockSample\TextBlockSampleProject\TextBlockSampleProject.csproj", "{B099D483-F560-4582-8F20-01D5D396F0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxSample", "UI\TextBoxSample\TextBoxSample\TextBoxSample\TextBoxSample.csproj", "{CB680F8D-DCCA-4EF0-8F6F-31971E35348E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxSampleProject", "UI\TextBoxSample\TextBoxSample\TextBoxSampleProject\TextBoxSampleProject.csproj", "{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSample", "UI\ToggleSwitchSample\ToggleSwitchSample\ToggleSwitchSample\ToggleSwitchSample.csproj", "{E7E06512-37F1-4F68-BBF9-04773071FB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSampleProject", "UI\ToggleSwitchSample\ToggleSwitchSample\ToggleSwitchSampleProject\ToggleSwitchSampleProject.csproj", "{CFC67715-C709-49DF-8BF1-FB7E402FC69B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanelSample", "UI\WrapPanelSample\WrapPanelSample\WrapPanelSample\WrapPanelSample.csproj", "{DD2D4893-E1E4-4932-A229-1A232328F380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanelSampleProject", "UI\WrapPanelSample\WrapPanelSample\WrapPanelSampleProject\WrapPanelSampleProject.csproj", "{9B28CB65-7B07-42E3-80B7-CD0875F47779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GamePad", "GamePad", "{764284B6-4967-46F7-B0DF-A40690141941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XboxController", "Input\XboxController\XboxController\XboxController\XboxController.csproj", "{27B097F6-D49A-4B69-B10C-FD6020D59A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XboxControllerProject", "Input\XboxController\XboxController\XboxControllerProject\XboxControllerProject.csproj", "{302381E0-FBEE-4A93-9B9D-FF7B985D24D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleWPF", "SampleWPF", "{6EFB679A-3156-4E2A-BC2D-B4D39AEBDFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWPFProject", "Core\SampleWPF\SampleWPF\SampleWPFProject\SampleWPFProject.csproj", "{629D040E-51BE-4F83-8F33-7526E6F73F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWPF", "Core\SampleWPF\SampleWPF\SampleWPF\SampleWPF.csproj", "{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CameraRenderTarget", "CameraRenderTarget", "{B4C60DC7-9EF0-4D4A-9DD8-778BA1BDADFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraRenderTargetProject", "Graphics\CameraRenderTarget\CameraRenderTarget\CameraRenderTargetProject\CameraRenderTargetProject.csproj", "{9BD8AC70-360B-40CE-A0D6-971B85BB90C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraRenderTarget", "Graphics\CameraRenderTarget\CameraRenderTarget\CameraRenderTarget\CameraRenderTarget.csproj", "{E2035C6B-2842-473A-BC4D-D986E373ECD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomGeometry", "CustomGeometry", "{D0682FED-9E7A-4AEB-ABDF-39ACB231C63A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomMaterial", "CustomMaterial", "{4057817D-E5F6-4606-953D-A8BB4D7456EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeometryProject", "Graphics\CustomGeometry\CustomGeometry\CustomGeometryProject\CustomGeometryProject.csproj", "{7574FA64-FBCE-4162-887F-A4DE886AB22D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeometry", "Graphics\CustomGeometry\CustomGeometry\CustomGeometry\CustomGeometry.csproj", "{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialTutorialProject", "Graphics\CustomMaterial\MaterialTutorial\MaterialTutorialProject\MaterialTutorialProject.csproj", "{D7CB10B3-A549-4A6F-8287-8A4ED39CF370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialTutorial", "Graphics\CustomMaterial\MaterialTutorial\MaterialTutorial\MaterialTutorial.csproj", "{8A407946-892A-4C2C-AD7F-6B64EF9D78CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IBLSample", "IBLSample", "{AE838D99-1D68-4FF2-AB68-7A9E79C6A9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBLSampleProject", "Graphics\IBLSample\IBLSample\IBLSampleProject\IBLSampleProject.csproj", "{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBLSample", "Graphics\IBLSample\IBLSample\IBLSample\IBLSample.csproj", "{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LensFlare", "LensFlare", "{8EC8BC0A-2B14-48E6-A203-19204A5C42C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlareProject", "Graphics\LensFlare\LensFlare\LensFlareProject\LensFlareProject.csproj", "{908136DF-602E-4EBC-883A-C237BFC1DCE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlare", "Graphics\LensFlare\LensFlare\LensFlare\LensFlare.csproj", "{ECD4E9A3-8EDD-4958-B26A-DCC384181390}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XboxController", "XboxController", "{57045823-B310-44CC-AB8E-8C39E5C2C173}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 163
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2013.plainconcepts.com/tfs/wave
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Core\\Clone\\Clone\\Clone\\Clone.csproj
+		SccProjectTopLevelParentUniqueName1 = SampleCollection.sln
+		SccProjectName1 = Core/Clone/Clone/Clone
+		SccLocalPath1 = Core\\Clone\\Clone\\Clone
+		SccProjectUniqueName2 = Core\\Clone\\Clone\\CloneProject\\CloneProject.csproj
+		SccProjectTopLevelParentUniqueName2 = SampleCollection.sln
+		SccProjectName2 = Core/Clone/Clone/CloneProject
+		SccLocalPath2 = Core\\Clone\\Clone\\CloneProject
+		SccProjectUniqueName3 = Core\\Diagnostics\\Diagnostics\\Diagnostics\\Diagnostics.csproj
+		SccProjectTopLevelParentUniqueName3 = SampleCollection.sln
+		SccProjectName3 = Core/Diagnostics/Diagnostics/Diagnostics
+		SccLocalPath3 = Core\\Diagnostics\\Diagnostics\\Diagnostics
+		SccProjectUniqueName4 = Core\\Diagnostics\\Diagnostics\\DiagnosticsProject\\DiagnosticsProject.csproj
+		SccProjectTopLevelParentUniqueName4 = SampleCollection.sln
+		SccProjectName4 = Core/Diagnostics/Diagnostics/DiagnosticsProject
+		SccLocalPath4 = Core\\Diagnostics\\Diagnostics\\DiagnosticsProject
+		SccProjectUniqueName5 = Graphics\\AnimatedModel\\AnimatedModel\\AnimatedModel\\AnimatedModel.csproj
+		SccProjectTopLevelParentUniqueName5 = SampleCollection.sln
+		SccProjectName5 = Graphics/AnimatedModel/AnimatedModel/AnimatedModel
+		SccLocalPath5 = Graphics\\AnimatedModel\\AnimatedModel\\AnimatedModel
+		SccProjectUniqueName6 = Graphics\\AnimatedModel\\AnimatedModel\\AnimatedModelProject\\AnimatedModelProject.csproj
+		SccProjectTopLevelParentUniqueName6 = SampleCollection.sln
+		SccProjectName6 = Graphics/AnimatedModel/AnimatedModel/AnimatedModelProject
+		SccLocalPath6 = Graphics\\AnimatedModel\\AnimatedModel\\AnimatedModelProject
+		SccProjectUniqueName7 = Graphics\\DebugShapes\\DebugShapes\\DebugShapes\\DebugShapes.csproj
+		SccProjectTopLevelParentUniqueName7 = SampleCollection.sln
+		SccProjectName7 = Graphics/DebugShapes/DebugShapes/DebugShapes
+		SccLocalPath7 = Graphics\\DebugShapes\\DebugShapes\\DebugShapes
+		SccProjectUniqueName8 = Graphics\\DebugShapes\\DebugShapes\\DebugShapesProject\\DebugShapesProject.csproj
+		SccProjectTopLevelParentUniqueName8 = SampleCollection.sln
+		SccProjectName8 = Graphics/DebugShapes/DebugShapes/DebugShapesProject
+		SccLocalPath8 = Graphics\\DebugShapes\\DebugShapes\\DebugShapesProject
+		SccProjectUniqueName9 = Graphics\\Dinosaur\\Dinosaur\\Dinosaur\\Dinosaur.csproj
+		SccProjectTopLevelParentUniqueName9 = SampleCollection.sln
+		SccProjectName9 = Graphics/Dinosaur/Dinosaur/Dinosaur
+		SccLocalPath9 = Graphics\\Dinosaur\\Dinosaur\\Dinosaur
+		SccProjectUniqueName10 = Graphics\\Dinosaur\\Dinosaur\\DinosaurProject\\DinosaurProject.csproj
+		SccProjectTopLevelParentUniqueName10 = SampleCollection.sln
+		SccProjectName10 = Graphics/Dinosaur/Dinosaur/DinosaurProject
+		SccLocalPath10 = Graphics\\Dinosaur\\Dinosaur\\DinosaurProject
+		SccProjectUniqueName11 = Graphics\\DualTexture\\DualTexture\\DualTexture.csproj
+		SccProjectTopLevelParentUniqueName11 = SampleCollection.sln
+		SccProjectName11 = Graphics/DualTexture/DualTexture
+		SccLocalPath11 = Graphics\\DualTexture\\DualTexture
+		SccProjectUniqueName12 = Graphics\\DualTexture\\DualTextureProject\\DualTextureProject.csproj
+		SccProjectTopLevelParentUniqueName12 = SampleCollection.sln
+		SccProjectName12 = Graphics/DualTexture/DualTextureProject
+		SccLocalPath12 = Graphics\\DualTexture\\DualTextureProject
+		SccProjectUniqueName13 = Graphics\\KeyEventsAnimation\\KeyEventsAnimation\\KeyEventsAnimationProject\\KeyEventsAnimationProject.csproj
+		SccProjectTopLevelParentUniqueName13 = SampleCollection.sln
+		SccProjectName13 = Graphics/KeyEventsAnimation/KeyEventsAnimation/KeyEventsAnimationProject
+		SccLocalPath13 = Graphics\\KeyEventsAnimation\\KeyEventsAnimation\\KeyEventsAnimationProject
+		SccProjectUniqueName14 = Graphics\\KeyEventsAnimation\\KeyEventsAnimation\\KeyEventsAnimation\\KeyEventsAnimation.csproj
+		SccProjectTopLevelParentUniqueName14 = SampleCollection.sln
+		SccProjectName14 = Graphics/KeyEventsAnimation/KeyEventsAnimation/KeyEventsAnimation
+		SccLocalPath14 = Graphics\\KeyEventsAnimation\\KeyEventsAnimation\\KeyEventsAnimation
+		SccProjectUniqueName15 = Graphics\\Lighting\\Lighting\\Lighting\\Lighting.csproj
+		SccProjectTopLevelParentUniqueName15 = SampleCollection.sln
+		SccProjectName15 = Graphics/Lighting/Lighting/Lighting
+		SccLocalPath15 = Graphics\\Lighting\\Lighting\\Lighting
+		SccProjectUniqueName16 = Graphics\\Lighting\\Lighting\\LightingProject\\LightingProject.csproj
+		SccProjectTopLevelParentUniqueName16 = SampleCollection.sln
+		SccProjectName16 = Graphics/Lighting/Lighting/LightingProject
+		SccLocalPath16 = Graphics\\Lighting\\Lighting\\LightingProject
+		SccProjectUniqueName17 = Graphics\\ParticleSystem\\ParticleSystem\\ParticleSystem\\ParticleSystem.csproj
+		SccProjectTopLevelParentUniqueName17 = SampleCollection.sln
+		SccProjectName17 = Graphics/ParticleSystem/ParticleSystem/ParticleSystem
+		SccLocalPath17 = Graphics\\ParticleSystem\\ParticleSystem\\ParticleSystem
+		SccProjectUniqueName18 = Graphics\\ParticleSystem\\ParticleSystem\\ParticleSystemProject\\ParticleSystemProject.csproj
+		SccProjectTopLevelParentUniqueName18 = SampleCollection.sln
+		SccProjectName18 = Graphics/ParticleSystem/ParticleSystem/ParticleSystemProject
+		SccLocalPath18 = Graphics\\ParticleSystem\\ParticleSystem\\ParticleSystemProject
+		SccProjectUniqueName19 = Graphics\\Primitives\\Primitives\\Primitives\\Primitives.csproj
+		SccProjectTopLevelParentUniqueName19 = SampleCollection.sln
+		SccProjectName19 = Graphics/Primitives/Primitives/Primitives
+		SccLocalPath19 = Graphics\\Primitives\\Primitives\\Primitives
+		SccProjectUniqueName20 = Graphics\\Primitives\\Primitives\\PrimitivesProject\\PrimitivesProject.csproj
+		SccProjectTopLevelParentUniqueName20 = SampleCollection.sln
+		SccProjectName20 = Graphics/Primitives/Primitives/PrimitivesProject
+		SccLocalPath20 = Graphics\\Primitives\\Primitives\\PrimitivesProject
+		SccProjectUniqueName21 = Graphics\\RenderTarget\\RenderTarget\\RenderTarget\\RenderTarget.csproj
+		SccProjectTopLevelParentUniqueName21 = SampleCollection.sln
+		SccProjectName21 = Graphics/RenderTarget/RenderTarget/RenderTarget
+		SccLocalPath21 = Graphics\\RenderTarget\\RenderTarget\\RenderTarget
+		SccProjectUniqueName22 = Graphics\\RenderTarget\\RenderTarget\\RenderTargetProject\\RenderTargetProject.csproj
+		SccProjectTopLevelParentUniqueName22 = SampleCollection.sln
+		SccProjectName22 = Graphics/RenderTarget/RenderTarget/RenderTargetProject
+		SccLocalPath22 = Graphics\\RenderTarget\\RenderTarget\\RenderTargetProject
+		SccProjectUniqueName23 = Graphics\\RimLighting\\RimLighting\\RimLighting\\RimLighting.csproj
+		SccProjectTopLevelParentUniqueName23 = SampleCollection.sln
+		SccProjectName23 = Graphics/RimLighting/RimLighting/RimLighting
+		SccLocalPath23 = Graphics\\RimLighting\\RimLighting\\RimLighting
+		SccProjectUniqueName24 = Graphics\\RimLighting\\RimLighting\\RimLightingProject\\RimLightingProject.csproj
+		SccProjectTopLevelParentUniqueName24 = SampleCollection.sln
+		SccProjectName24 = Graphics/RimLighting/RimLighting/RimLightingProject
+		SccLocalPath24 = Graphics\\RimLighting\\RimLighting\\RimLightingProject
+		SccProjectUniqueName25 = Graphics\\ToonShading\\ToonShading\\ToonShading\\ToonShading.csproj
+		SccProjectTopLevelParentUniqueName25 = SampleCollection.sln
+		SccProjectName25 = Graphics/ToonShading/ToonShading/ToonShading
+		SccLocalPath25 = Graphics\\ToonShading\\ToonShading\\ToonShading
+		SccProjectUniqueName26 = Graphics\\ToonShading\\ToonShading\\ToonShadingProject\\ToonShadingProject.csproj
+		SccProjectTopLevelParentUniqueName26 = SampleCollection.sln
+		SccProjectName26 = Graphics/ToonShading/ToonShading/ToonShadingProject
+		SccLocalPath26 = Graphics\\ToonShading\\ToonShading\\ToonShadingProject
+		SccProjectUniqueName27 = Input\\Accelerometer\\Accelerometer\\Accelerometer\\Accelerometer.csproj
+		SccProjectTopLevelParentUniqueName27 = SampleCollection.sln
+		SccProjectName27 = Input/Accelerometer/Accelerometer/Accelerometer
+		SccLocalPath27 = Input\\Accelerometer\\Accelerometer\\Accelerometer
+		SccProjectUniqueName28 = Input\\Accelerometer\\Accelerometer\\AccelerometerProject\\AccelerometerProject.csproj
+		SccProjectTopLevelParentUniqueName28 = SampleCollection.sln
+		SccProjectName28 = Input/Accelerometer/Accelerometer/AccelerometerProject
+		SccLocalPath28 = Input\\Accelerometer\\Accelerometer\\AccelerometerProject
+		SccProjectUniqueName29 = Input\\Touch\\Touch\\Touch\\Touch.csproj
+		SccProjectTopLevelParentUniqueName29 = SampleCollection.sln
+		SccProjectName29 = Input/Touch/Touch/Touch
+		SccLocalPath29 = Input\\Touch\\Touch\\Touch
+		SccProjectUniqueName30 = Input\\Touch\\Touch\\TouchProject\\TouchProject.csproj
+		SccProjectTopLevelParentUniqueName30 = SampleCollection.sln
+		SccProjectName30 = Input/Touch/Touch/TouchProject
+		SccLocalPath30 = Input\\Touch\\Touch\\TouchProject
+		SccProjectUniqueName31 = Media\\Music\\Music\\Music\\Music.csproj
+		SccProjectTopLevelParentUniqueName31 = SampleCollection.sln
+		SccProjectName31 = Media/Music/Music/Music
+		SccLocalPath31 = Media\\Music\\Music\\Music
+		SccProjectUniqueName32 = Media\\Music\\Music\\MusicProject\\MusicProject.csproj
+		SccProjectTopLevelParentUniqueName32 = SampleCollection.sln
+		SccProjectName32 = Media/Music/Music/MusicProject
+		SccLocalPath32 = Media\\Music\\Music\\MusicProject
+		SccProjectUniqueName33 = Media\\Sounds\\Sounds\\Sounds\\Sounds.csproj
+		SccProjectTopLevelParentUniqueName33 = SampleCollection.sln
+		SccProjectName33 = Media/Sounds/Sounds/Sounds
+		SccLocalPath33 = Media\\Sounds\\Sounds\\Sounds
+		SccProjectUniqueName34 = Media\\Sounds\\Sounds\\SoundsProject\\SoundsProject.csproj
+		SccProjectTopLevelParentUniqueName34 = SampleCollection.sln
+		SccProjectName34 = Media/Sounds/Sounds/SoundsProject
+		SccLocalPath34 = Media\\Sounds\\Sounds\\SoundsProject
+		SccProjectUniqueName35 = Physics2D\\BasicRigidBody2D\\BasicRigidBody2D\\BasicRigidBody2D\\BasicRigidBody2D.csproj
+		SccProjectTopLevelParentUniqueName35 = SampleCollection.sln
+		SccProjectName35 = Physics2D/BasicRigidBody2D/BasicRigidBody2D/BasicRigidBody2D
+		SccLocalPath35 = Physics2D\\BasicRigidBody2D\\BasicRigidBody2D\\BasicRigidBody2D
+		SccProjectUniqueName36 = Physics2D\\BasicRigidBody2D\\BasicRigidBody2D\\BasicRigidBody2DProject\\BasicRigidBodyProject2D.csproj
+		SccProjectTopLevelParentUniqueName36 = SampleCollection.sln
+		SccProjectName36 = Physics2D/BasicRigidBody2D/BasicRigidBody2D/BasicRigidBody2DProject
+		SccLocalPath36 = Physics2D\\BasicRigidBody2D\\BasicRigidBody2D\\BasicRigidBody2DProject
+		SccProjectUniqueName37 = Physics3D\\BasicRigidBody\\BasicRigidBody\\BasicRigidBody\\BasicRigidBody.csproj
+		SccProjectTopLevelParentUniqueName37 = SampleCollection.sln
+		SccProjectName37 = Physics3D/BasicRigidBody/BasicRigidBody/BasicRigidBody
+		SccLocalPath37 = Physics3D\\BasicRigidBody\\BasicRigidBody\\BasicRigidBody
+		SccProjectUniqueName38 = Physics3D\\BasicRigidBody\\BasicRigidBody\\BasicRigidBodyProject\\BasicRigidBodyProject.csproj
+		SccProjectTopLevelParentUniqueName38 = SampleCollection.sln
+		SccProjectName38 = Physics3D/BasicRigidBody/BasicRigidBody/BasicRigidBodyProject
+		SccLocalPath38 = Physics3D\\BasicRigidBody\\BasicRigidBody\\BasicRigidBodyProject
+		SccProjectUniqueName39 = Physics3D\\Bounciness\\Bounciness\\Bounciness\\Bounciness.csproj
+		SccProjectTopLevelParentUniqueName39 = SampleCollection.sln
+		SccProjectName39 = Physics3D/Bounciness/Bounciness/Bounciness
+		SccLocalPath39 = Physics3D\\Bounciness\\Bounciness\\Bounciness
+		SccProjectUniqueName40 = Physics3D\\Bounciness\\Bounciness\\BouncinessProject\\BouncinessProject.csproj
+		SccProjectTopLevelParentUniqueName40 = SampleCollection.sln
+		SccProjectName40 = Physics3D/Bounciness/Bounciness/BouncinessProject
+		SccLocalPath40 = Physics3D\\Bounciness\\Bounciness\\BouncinessProject
+		SccProjectUniqueName41 = Physics3D\\FixedJoint\\FixedJoint\\FixedJoint\\FixedJoint.csproj
+		SccProjectTopLevelParentUniqueName41 = SampleCollection.sln
+		SccProjectName41 = Physics3D/FixedJoint/FixedJoint/FixedJoint
+		SccLocalPath41 = Physics3D\\FixedJoint\\FixedJoint\\FixedJoint
+		SccProjectUniqueName42 = Physics3D\\FixedJoint\\FixedJoint\\FixedJointProject\\FixedJointProject.csproj
+		SccProjectTopLevelParentUniqueName42 = SampleCollection.sln
+		SccProjectName42 = Physics3D/FixedJoint/FixedJoint/FixedJointProject
+		SccLocalPath42 = Physics3D\\FixedJoint\\FixedJoint\\FixedJointProject
+		SccProjectUniqueName43 = Physics3D\\Friction\\Friction\\Friction\\Friction.csproj
+		SccProjectTopLevelParentUniqueName43 = SampleCollection.sln
+		SccProjectName43 = Physics3D/Friction/Friction/Friction
+		SccLocalPath43 = Physics3D\\Friction\\Friction\\Friction
+		SccProjectUniqueName44 = Physics3D\\Friction\\Friction\\FrictionProject\\FrictionProject.csproj
+		SccProjectTopLevelParentUniqueName44 = SampleCollection.sln
+		SccProjectName44 = Physics3D/Friction/Friction/FrictionProject
+		SccLocalPath44 = Physics3D\\Friction\\Friction\\FrictionProject
+		SccProjectUniqueName45 = Physics3D\\HingeJoint\\hingeJoint\\hingeJoint\\HingeJoint.csproj
+		SccProjectTopLevelParentUniqueName45 = SampleCollection.sln
+		SccProjectName45 = Physics3D/HingeJoint/hingeJoint/hingeJoint
+		SccLocalPath45 = Physics3D\\HingeJoint\\hingeJoint\\hingeJoint
+		SccProjectUniqueName46 = Physics3D\\HingeJoint\\hingeJoint\\hingeJointProject\\HingeJointProject.csproj
+		SccProjectTopLevelParentUniqueName46 = SampleCollection.sln
+		SccProjectName46 = Physics3D/HingeJoint/hingeJoint/hingeJointProject
+		SccLocalPath46 = Physics3D\\HingeJoint\\hingeJoint\\hingeJointProject
+		SccProjectUniqueName47 = Physics3D\\Jenga\\Jenga\\Jenga\\Jenga.csproj
+		SccProjectTopLevelParentUniqueName47 = SampleCollection.sln
+		SccProjectName47 = Physics3D/Jenga/Jenga/Jenga
+		SccLocalPath47 = Physics3D\\Jenga\\Jenga\\Jenga
+		SccProjectUniqueName48 = Physics3D\\Jenga\\Jenga\\JengaProject\\JengaProject.csproj
+		SccProjectTopLevelParentUniqueName48 = SampleCollection.sln
+		SccProjectName48 = Physics3D/Jenga/Jenga/JengaProject
+		SccLocalPath48 = Physics3D\\Jenga\\Jenga\\JengaProject
+		SccProjectUniqueName49 = Physics3D\\Rope\\Rope\\Rope\\Rope.csproj
+		SccProjectTopLevelParentUniqueName49 = SampleCollection.sln
+		SccProjectName49 = Physics3D/Rope/Rope/Rope
+		SccLocalPath49 = Physics3D\\Rope\\Rope\\Rope
+		SccProjectUniqueName50 = Physics3D\\Rope\\Rope\\RopeProject\\RopeProject.csproj
+		SccProjectTopLevelParentUniqueName50 = SampleCollection.sln
+		SccProjectName50 = Physics3D/Rope/Rope/RopeProject
+		SccLocalPath50 = Physics3D\\Rope\\Rope\\RopeProject
+		SccProjectUniqueName51 = Physics3D\\StockRoom\\StockRoom\\StockRoom\\StockRoom.csproj
+		SccProjectTopLevelParentUniqueName51 = SampleCollection.sln
+		SccProjectName51 = Physics3D/StockRoom/StockRoom/StockRoom
+		SccLocalPath51 = Physics3D\\StockRoom\\StockRoom\\StockRoom
+		SccProjectUniqueName52 = Physics3D\\StockRoom\\StockRoom\\StockRoomProject\\StockRoomProject.csproj
+		SccProjectTopLevelParentUniqueName52 = SampleCollection.sln
+		SccProjectName52 = Physics3D/StockRoom/StockRoom/StockRoomProject
+		SccLocalPath52 = Physics3D\\StockRoom\\StockRoom\\StockRoomProject
+		SccProjectUniqueName53 = Physics3D\\WallDemo\\WallDemo\\WallDemo\\WallDemo.csproj
+		SccProjectTopLevelParentUniqueName53 = SampleCollection.sln
+		SccProjectName53 = Physics3D/WallDemo/WallDemo/WallDemo
+		SccLocalPath53 = Physics3D\\WallDemo\\WallDemo\\WallDemo
+		SccProjectUniqueName54 = Physics3D\\WallDemo\\WallDemo\\WallDemoProject\\WallDemoProject.csproj
+		SccProjectTopLevelParentUniqueName54 = SampleCollection.sln
+		SccProjectName54 = Physics3D/WallDemo/WallDemo/WallDemoProject
+		SccLocalPath54 = Physics3D\\WallDemo\\WallDemo\\WallDemoProject
+		SccProjectUniqueName55 = Physics3D\\Entity3DCollision\\Entity3DCollision\\Entity3DCollision\\Entity3DCollision.csproj
+		SccProjectTopLevelParentUniqueName55 = SampleCollection.sln
+		SccProjectName55 = Physics3D/Entity3DCollision/Entity3DCollision/Entity3DCollision
+		SccLocalPath55 = Physics3D\\Entity3DCollision\\Entity3DCollision\\Entity3DCollision
+		SccProjectUniqueName56 = Physics3D\\Entity3DCollision\\Entity3DCollision\\Entity3DCollisionProject\\Entity3DCollisionProject.csproj
+		SccProjectTopLevelParentUniqueName56 = SampleCollection.sln
+		SccProjectName56 = Physics3D/Entity3DCollision/Entity3DCollision/Entity3DCollisionProject
+		SccLocalPath56 = Physics3D\\Entity3DCollision\\Entity3DCollision\\Entity3DCollisionProject
+		SccProjectUniqueName57 = Physics3D\\Entity3DCollisionGroups\\Entity3DCollisionGroups\\Entity3DCollisionGroups\\Entity3DCollisionGroups.csproj
+		SccProjectTopLevelParentUniqueName57 = SampleCollection.sln
+		SccProjectName57 = Physics3D/Entity3DCollisionGroups/Entity3DCollisionGroups/Entity3DCollisionGroups
+		SccLocalPath57 = Physics3D\\Entity3DCollisionGroups\\Entity3DCollisionGroups\\Entity3DCollisionGroups
+		SccProjectUniqueName58 = Physics3D\\Entity3DCollisionGroups\\Entity3DCollisionGroups\\Entity3DCollisionGroupsProject\\Entity3DCollisionGroupsProject.csproj
+		SccProjectTopLevelParentUniqueName58 = SampleCollection.sln
+		SccProjectName58 = Physics3D/Entity3DCollisionGroups/Entity3DCollisionGroups/Entity3DCollisionGroupsProject
+		SccLocalPath58 = Physics3D\\Entity3DCollisionGroups\\Entity3DCollisionGroups\\Entity3DCollisionGroupsProject
+		SccProjectUniqueName59 = Physics3D\\MeshCollider\\MeshCollider\\MeshCollider\\MeshCollider.csproj
+		SccProjectTopLevelParentUniqueName59 = SampleCollection.sln
+		SccProjectName59 = Physics3D/MeshCollider/MeshCollider/MeshCollider
+		SccLocalPath59 = Physics3D\\MeshCollider\\MeshCollider\\MeshCollider
+		SccProjectUniqueName60 = Physics3D\\MeshCollider\\MeshCollider\\MeshColliderProject\\MeshColliderProject.csproj
+		SccProjectTopLevelParentUniqueName60 = SampleCollection.sln
+		SccProjectName60 = Physics3D/MeshCollider/MeshCollider/MeshColliderProject
+		SccLocalPath60 = Physics3D\\MeshCollider\\MeshCollider\\MeshColliderProject
+		SccProjectUniqueName61 = Physics3D\\Motor3DSample\\Motor3DSample\\Motor3DSample\\Motor3DSample.csproj
+		SccProjectTopLevelParentUniqueName61 = SampleCollection.sln
+		SccProjectName61 = Physics3D/Motor3DSample/Motor3DSample/Motor3DSample
+		SccLocalPath61 = Physics3D\\Motor3DSample\\Motor3DSample\\Motor3DSample
+		SccProjectUniqueName62 = Physics3D\\Motor3DSample\\Motor3DSample\\Motor3DSampleProject\\Motor3DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName62 = SampleCollection.sln
+		SccProjectName62 = Physics3D/Motor3DSample/Motor3DSample/Motor3DSampleProject
+		SccLocalPath62 = Physics3D\\Motor3DSample\\Motor3DSample\\Motor3DSampleProject
+		SccProjectUniqueName63 = Physics3D\\EntityPicking\\EntityPicking\\EntityPicking\\EntityPicking.csproj
+		SccProjectTopLevelParentUniqueName63 = SampleCollection.sln
+		SccProjectName63 = Physics3D/EntityPicking/EntityPicking/EntityPicking
+		SccLocalPath63 = Physics3D\\EntityPicking\\EntityPicking\\EntityPicking
+		SccProjectUniqueName64 = Physics3D\\EntityPicking\\EntityPicking\\EntityPickingProject\\EntityPickingProject.csproj
+		SccProjectTopLevelParentUniqueName64 = SampleCollection.sln
+		SccProjectName64 = Physics3D/EntityPicking/EntityPicking/EntityPickingProject
+		SccLocalPath64 = Physics3D\\EntityPicking\\EntityPicking\\EntityPickingProject
+		SccProjectUniqueName65 = Physics2D\\AngleJoint2DSample\\AngleJoint2DSample\\AngleJoint2DSample\\AngleJoint2DSample.csproj
+		SccProjectTopLevelParentUniqueName65 = SampleCollection.sln
+		SccProjectName65 = Physics2D/AngleJoint2DSample/AngleJoint2DSample/AngleJoint2DSample
+		SccLocalPath65 = Physics2D\\AngleJoint2DSample\\AngleJoint2DSample\\AngleJoint2DSample
+		SccProjectUniqueName66 = Physics2D\\AngleJoint2DSample\\AngleJoint2DSample\\AngleJoint2DSampleProject\\AngleJoint2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName66 = SampleCollection.sln
+		SccProjectName66 = Physics2D/AngleJoint2DSample/AngleJoint2DSample/AngleJoint2DSampleProject
+		SccLocalPath66 = Physics2D\\AngleJoint2DSample\\AngleJoint2DSample\\AngleJoint2DSampleProject
+		SccProjectUniqueName67 = Physics2D\\CollisionCategories\\CollisionCategories\\CollisionCategories\\CollisionCategories.csproj
+		SccProjectTopLevelParentUniqueName67 = SampleCollection.sln
+		SccProjectName67 = Physics2D/CollisionCategories/CollisionCategories/CollisionCategories
+		SccLocalPath67 = Physics2D\\CollisionCategories\\CollisionCategories\\CollisionCategories
+		SccProjectUniqueName68 = Physics2D\\CollisionCategories\\CollisionCategories\\CollisionCategoriesProject\\CollisionCategoriesProject.csproj
+		SccProjectTopLevelParentUniqueName68 = SampleCollection.sln
+		SccProjectName68 = Physics2D/CollisionCategories/CollisionCategories/CollisionCategoriesProject
+		SccLocalPath68 = Physics2D\\CollisionCategories\\CollisionCategories\\CollisionCategoriesProject
+		SccProjectUniqueName69 = Physics2D\\DistanceJoint2DSample\\DistanceJoint2DSample\\DistanceJoint2DSample\\DistanceJoint2DSample.csproj
+		SccProjectTopLevelParentUniqueName69 = SampleCollection.sln
+		SccProjectName69 = Physics2D/DistanceJoint2DSample/DistanceJoint2DSample/DistanceJoint2DSample
+		SccLocalPath69 = Physics2D\\DistanceJoint2DSample\\DistanceJoint2DSample\\DistanceJoint2DSample
+		SccProjectUniqueName70 = Physics2D\\DistanceJoint2DSample\\DistanceJoint2DSample\\DistanceJoint2DSampleProject\\DistanceJoint2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName70 = SampleCollection.sln
+		SccProjectName70 = Physics2D/DistanceJoint2DSample/DistanceJoint2DSample/DistanceJoint2DSampleProject
+		SccLocalPath70 = Physics2D\\DistanceJoint2DSample\\DistanceJoint2DSample\\DistanceJoint2DSampleProject
+		SccProjectUniqueName71 = Physics2D\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample.csproj
+		SccProjectTopLevelParentUniqueName71 = SampleCollection.sln
+		SccProjectName71 = Physics2D/FixedMouseJoint2DSample/FixedMouseJoint2DSample/FixedMouseJoint2DSample
+		SccLocalPath71 = Physics2D\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample
+		SccProjectUniqueName72 = Physics2D\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample\\FixedMouseJoint2DSampleProject\\FixedMouseJoint2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName72 = SampleCollection.sln
+		SccProjectName72 = Physics2D/FixedMouseJoint2DSample/FixedMouseJoint2DSample/FixedMouseJoint2DSampleProject
+		SccLocalPath72 = Physics2D\\FixedMouseJoint2DSample\\FixedMouseJoint2DSample\\FixedMouseJoint2DSampleProject
+		SccProjectUniqueName73 = Physics2D\\Force2DSample\\Force2DSample\\Force2DSample\\Force2DSample.csproj
+		SccProjectTopLevelParentUniqueName73 = SampleCollection.sln
+		SccProjectName73 = Physics2D/Force2DSample/Force2DSample/Force2DSample
+		SccLocalPath73 = Physics2D\\Force2DSample\\Force2DSample\\Force2DSample
+		SccProjectUniqueName74 = Physics2D\\Force2DSample\\Force2DSample\\Force2DSampleProject\\Force2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName74 = SampleCollection.sln
+		SccProjectName74 = Physics2D/Force2DSample/Force2DSample/Force2DSampleProject
+		SccLocalPath74 = Physics2D\\Force2DSample\\Force2DSample\\Force2DSampleProject
+		SccProjectUniqueName75 = Physics2D\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample.csproj
+		SccProjectTopLevelParentUniqueName75 = SampleCollection.sln
+		SccProjectName75 = Physics2D/MotorRevoluteJoint2DSample/MotorRevoluteJoint2DSample/MotorRevoluteJoint2DSample
+		SccLocalPath75 = Physics2D\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample
+		SccProjectUniqueName76 = Physics2D\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSampleProject\\MotorRevoluteJoint2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName76 = SampleCollection.sln
+		SccProjectName76 = Physics2D/MotorRevoluteJoint2DSample/MotorRevoluteJoint2DSample/MotorRevoluteJoint2DSampleProject
+		SccLocalPath76 = Physics2D\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSample\\MotorRevoluteJoint2DSampleProject
+		SccProjectUniqueName77 = Physics2D\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample.csproj
+		SccProjectTopLevelParentUniqueName77 = SampleCollection.sln
+		SccProjectName77 = Physics2D/OnPhysics2DCollisionSample/OnPhysics2DCollisionSample/OnPhysics2DCollisionSample
+		SccLocalPath77 = Physics2D\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample
+		SccProjectUniqueName78 = Physics2D\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSampleProject\\OnPhysics2DCollisionSampleProject.csproj
+		SccProjectTopLevelParentUniqueName78 = SampleCollection.sln
+		SccProjectName78 = Physics2D/OnPhysics2DCollisionSample/OnPhysics2DCollisionSample/OnPhysics2DCollisionSampleProject
+		SccLocalPath78 = Physics2D\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSample\\OnPhysics2DCollisionSampleProject
+		SccProjectUniqueName79 = Physics3D\\ServoMotor3DSample\\ServoMotor3DSample\\ServoMotor3DSample\\ServoMotor3DSample.csproj
+		SccProjectTopLevelParentUniqueName79 = SampleCollection.sln
+		SccProjectName79 = Physics3D/ServoMotor3DSample/ServoMotor3DSample/ServoMotor3DSample
+		SccLocalPath79 = Physics3D\\ServoMotor3DSample\\ServoMotor3DSample\\ServoMotor3DSample
+		SccProjectUniqueName80 = Physics3D\\ServoMotor3DSample\\ServoMotor3DSample\\ServoMotor3DSampleProject\\ServoMotor3DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName80 = SampleCollection.sln
+		SccProjectName80 = Physics3D/ServoMotor3DSample/ServoMotor3DSample/ServoMotor3DSampleProject
+		SccLocalPath80 = Physics3D\\ServoMotor3DSample\\ServoMotor3DSample\\ServoMotor3DSampleProject
+		SccProjectUniqueName81 = Graphics\\Project\\Project\\Project\\Picking.csproj
+		SccProjectTopLevelParentUniqueName81 = SampleCollection.sln
+		SccProjectName81 = Graphics/Project/Project/Project
+		SccLocalPath81 = Graphics\\Project\\Project\\Project
+		SccProjectUniqueName82 = Graphics\\Project\\Project\\ProjectProject\\PickingProject.csproj
+		SccProjectTopLevelParentUniqueName82 = SampleCollection.sln
+		SccProjectName82 = Graphics/Project/Project/ProjectProject
+		SccLocalPath82 = Graphics\\Project\\Project\\ProjectProject
+		SccProjectUniqueName83 = Graphics\\EnvironmentMap\\EnvironmentMap\\EnvironmentMap.csproj
+		SccProjectTopLevelParentUniqueName83 = SampleCollection.sln
+		SccProjectName83 = Graphics/EnvironmentMap/EnvironmentMap
+		SccLocalPath83 = Graphics\\EnvironmentMap\\EnvironmentMap
+		SccProjectUniqueName84 = Graphics\\EnvironmentMap\\EnvironmentMapProject\\EnvironmentMapProject.csproj
+		SccProjectTopLevelParentUniqueName84 = SampleCollection.sln
+		SccProjectName84 = Graphics/EnvironmentMap/EnvironmentMapProject
+		SccLocalPath84 = Graphics\\EnvironmentMap\\EnvironmentMapProject
+		SccProjectUniqueName85 = Graphics\\NormalMap\\NormalMap\\NormalMap\\NormalMap.csproj
+		SccProjectTopLevelParentUniqueName85 = SampleCollection.sln
+		SccProjectName85 = Graphics/NormalMap/NormalMap/NormalMap
+		SccLocalPath85 = Graphics\\NormalMap\\NormalMap\\NormalMap
+		SccProjectUniqueName86 = Graphics\\NormalMap\\NormalMap\\NormalMapProject\\NormalMapProject.csproj
+		SccProjectTopLevelParentUniqueName86 = SampleCollection.sln
+		SccProjectName86 = Graphics/NormalMap/NormalMap/NormalMapProject
+		SccLocalPath86 = Graphics\\NormalMap\\NormalMap\\NormalMapProject
+		SccProjectUniqueName87 = Graphics\\Skybox\\Skybox\\Skybox\\Skybox.csproj
+		SccProjectTopLevelParentUniqueName87 = SampleCollection.sln
+		SccProjectName87 = Graphics/Skybox/Skybox/Skybox
+		SccLocalPath87 = Graphics\\Skybox\\Skybox\\Skybox
+		SccProjectUniqueName88 = Graphics\\Skybox\\Skybox\\SkyboxProject\\SkyboxProject.csproj
+		SccProjectTopLevelParentUniqueName88 = SampleCollection.sln
+		SccProjectName88 = Graphics/Skybox/Skybox/SkyboxProject
+		SccLocalPath88 = Graphics\\Skybox\\Skybox\\SkyboxProject
+		SccProjectUniqueName89 = Physics2D\\RevoluteJoint2DSample\\RevoluteJoint2DSample\\RevoluteJoint2DSampleProject\\RevoluteJoint2DSampleProject.csproj
+		SccProjectTopLevelParentUniqueName89 = SampleCollection.sln
+		SccProjectName89 = Physics2D/RevoluteJoint2DSample/RevoluteJoint2DSample/RevoluteJoint2DSampleProject
+		SccLocalPath89 = Physics2D\\RevoluteJoint2DSample\\RevoluteJoint2DSample\\RevoluteJoint2DSampleProject
+		SccProjectUniqueName90 = Physics2D\\RevoluteJoint2DSample\\RevoluteJoint2DSample\\RevoluteJoint2DSample\\RevoluteJoint2DSample.csproj
+		SccProjectTopLevelParentUniqueName90 = SampleCollection.sln
+		SccProjectName90 = Physics2D/RevoluteJoint2DSample/RevoluteJoint2DSample/RevoluteJoint2DSample
+		SccLocalPath90 = Physics2D\\RevoluteJoint2DSample\\RevoluteJoint2DSample\\RevoluteJoint2DSample
+		SccProjectUniqueName91 = Graphics\\CityDemo\\CityDemo\\CityDemoProject\\CityDemoProject.csproj
+		SccProjectTopLevelParentUniqueName91 = SampleCollection.sln
+		SccProjectName91 = Graphics/CityDemo/CityDemo/CityDemoProject
+		SccLocalPath91 = Graphics\\CityDemo\\CityDemo\\CityDemoProject
+		SccProjectUniqueName92 = Graphics\\CityDemo\\CityDemo\\CityDemo\\CityDemo.csproj
+		SccProjectTopLevelParentUniqueName92 = SampleCollection.sln
+		SccProjectName92 = Graphics/CityDemo/CityDemo/CityDemo
+		SccLocalPath92 = Graphics\\CityDemo\\CityDemo\\CityDemo
+		SccProjectUniqueName93 = Graphics\\FrustumCulling\\FrustumCulling\\FrustumCulling\\FrustumCulling.csproj
+		SccProjectTopLevelParentUniqueName93 = SampleCollection.sln
+		SccProjectName93 = Graphics/FrustumCulling/FrustumCulling/FrustumCulling
+		SccLocalPath93 = Graphics\\FrustumCulling\\FrustumCulling\\FrustumCulling
+		SccProjectUniqueName94 = Graphics\\FrustumCulling\\FrustumCulling\\FrustumCullingProject\\FrustumCullingProject.csproj
+		SccProjectTopLevelParentUniqueName94 = SampleCollection.sln
+		SccProjectName94 = Graphics/FrustumCulling/FrustumCulling/FrustumCullingProject
+		SccLocalPath94 = Graphics\\FrustumCulling\\FrustumCulling\\FrustumCullingProject
+		SccProjectUniqueName95 = Graphics\\Lines\\Lines\\LinesProject\\LinesProject.csproj
+		SccProjectTopLevelParentUniqueName95 = SampleCollection.sln
+		SccProjectName95 = Graphics/Lines/Lines/LinesProject
+		SccLocalPath95 = Graphics\\Lines\\Lines\\LinesProject
+		SccProjectUniqueName96 = Graphics\\Lines\\Lines\\Lines\\Lines.csproj
+		SccProjectTopLevelParentUniqueName96 = SampleCollection.sln
+		SccProjectName96 = Graphics/Lines/Lines/Lines
+		SccLocalPath96 = Graphics\\Lines\\Lines\\Lines
+		SccProjectUniqueName97 = Graphics\\PerPixelCollider\\PerPixelCollider\\PerPixelCollider\\PerPixelCollider.csproj
+		SccProjectTopLevelParentUniqueName97 = SampleCollection.sln
+		SccProjectName97 = Graphics/PerPixelCollider/PerPixelCollider/PerPixelCollider
+		SccLocalPath97 = Graphics\\PerPixelCollider\\PerPixelCollider\\PerPixelCollider
+		SccProjectUniqueName98 = Graphics\\PerPixelCollider\\PerPixelCollider\\PerPixelColliderProject\\PerPixelColliderProject.csproj
+		SccProjectTopLevelParentUniqueName98 = SampleCollection.sln
+		SccProjectName98 = Graphics/PerPixelCollider/PerPixelCollider/PerPixelColliderProject
+		SccLocalPath98 = Graphics\\PerPixelCollider\\PerPixelCollider\\PerPixelColliderProject
+		SccProjectUniqueName99 = Graphics\\PlatformGameDemo\\PlatformGameDemo\\PlatformGameDemo\\PlatformGameDemo.csproj
+		SccProjectTopLevelParentUniqueName99 = SampleCollection.sln
+		SccProjectName99 = Graphics/PlatformGameDemo/PlatformGameDemo/PlatformGameDemo
+		SccLocalPath99 = Graphics\\PlatformGameDemo\\PlatformGameDemo\\PlatformGameDemo
+		SccProjectUniqueName100 = Graphics\\PlatformGameDemo\\PlatformGameDemo\\PlatformGameDemoProject\\PlatformGameDemoProject.csproj
+		SccProjectTopLevelParentUniqueName100 = SampleCollection.sln
+		SccProjectName100 = Graphics/PlatformGameDemo/PlatformGameDemo/PlatformGameDemoProject
+		SccLocalPath100 = Graphics\\PlatformGameDemo\\PlatformGameDemo\\PlatformGameDemoProject
+		SccProjectUniqueName101 = Graphics\\SpineSkeletalAnimation\\SpineSkeletalAnimation\\SpineSkeletalAnimation\\SpineSkeletalAnimation.csproj
+		SccProjectTopLevelParentUniqueName101 = SampleCollection.sln
+		SccProjectName101 = Graphics/SpineSkeletalAnimation/SpineSkeletalAnimation/SpineSkeletalAnimation
+		SccLocalPath101 = Graphics\\SpineSkeletalAnimation\\SpineSkeletalAnimation\\SpineSkeletalAnimation
+		SccProjectUniqueName102 = Graphics\\SpineSkeletalAnimation\\SpineSkeletalAnimation\\SpineSkeletalAnimationProject\\SpineSkeletalAnimationProject.csproj
+		SccProjectTopLevelParentUniqueName102 = SampleCollection.sln
+		SccProjectName102 = Graphics/SpineSkeletalAnimation/SpineSkeletalAnimation/SpineSkeletalAnimationProject
+		SccLocalPath102 = Graphics\\SpineSkeletalAnimation\\SpineSkeletalAnimation\\SpineSkeletalAnimationProject
+		SccProjectUniqueName103 = Graphics\\ParticleSystem2D\\ParticleSystem2D\\ParticleSystem2D\\ParticleSystem2D.csproj
+		SccProjectTopLevelParentUniqueName103 = SampleCollection.sln
+		SccProjectName103 = Graphics/ParticleSystem2D/ParticleSystem2D/ParticleSystem2D
+		SccLocalPath103 = Graphics\\ParticleSystem2D\\ParticleSystem2D\\ParticleSystem2D
+		SccProjectUniqueName104 = Graphics\\ParticleSystem2D\\ParticleSystem2D\\ParticleSystem2DProject\\ParticleSystem2DProject.csproj
+		SccProjectTopLevelParentUniqueName104 = SampleCollection.sln
+		SccProjectName104 = Graphics/ParticleSystem2D/ParticleSystem2D/ParticleSystem2DProject
+		SccLocalPath104 = Graphics\\ParticleSystem2D\\ParticleSystem2D\\ParticleSystem2DProject
+		SccProjectUniqueName105 = Media\\Microphone\\Microphone\\Microphone\\Microphone.csproj
+		SccProjectTopLevelParentUniqueName105 = SampleCollection.sln
+		SccProjectName105 = Media/Microphone/Microphone/Microphone
+		SccLocalPath105 = Media\\Microphone\\Microphone\\Microphone
+		SccProjectUniqueName106 = Media\\Microphone\\Microphone\\MicrophoneProject\\MicrophoneProject.csproj
+		SccProjectTopLevelParentUniqueName106 = SampleCollection.sln
+		SccProjectName106 = Media/Microphone/Microphone/MicrophoneProject
+		SccLocalPath106 = Media\\Microphone\\Microphone\\MicrophoneProject
+		SccProjectUniqueName107 = Media\\VideoPlayer\\VideoPlayer\\VideoPlayer\\VideoPlayer.csproj
+		SccProjectTopLevelParentUniqueName107 = SampleCollection.sln
+		SccProjectName107 = Media/VideoPlayer/VideoPlayer/VideoPlayer
+		SccLocalPath107 = Media\\VideoPlayer\\VideoPlayer\\VideoPlayer
+		SccProjectUniqueName108 = Media\\VideoPlayer\\VideoPlayer\\VideoPlayerProject\\VideoPlayerProject.csproj
+		SccProjectTopLevelParentUniqueName108 = SampleCollection.sln
+		SccProjectName108 = Media/VideoPlayer/VideoPlayer/VideoPlayerProject
+		SccLocalPath108 = Media\\VideoPlayer\\VideoPlayer\\VideoPlayerProject
+		SccProjectUniqueName109 = Graphics\\IsisTemple\\IsisTemple\\IsisTemple\\IsisTemple.csproj
+		SccProjectTopLevelParentUniqueName109 = SampleCollection.sln
+		SccProjectName109 = Graphics/IsisTemple/IsisTemple/IsisTemple
+		SccLocalPath109 = Graphics\\IsisTemple\\IsisTemple\\IsisTemple
+		SccProjectUniqueName110 = Graphics\\IsisTemple\\IsisTemple\\IsisTempleProject\\IsisTempleProject.csproj
+		SccProjectTopLevelParentUniqueName110 = SampleCollection.sln
+		SccProjectName110 = Graphics/IsisTemple/IsisTemple/IsisTempleProject
+		SccLocalPath110 = Graphics\\IsisTemple\\IsisTemple\\IsisTempleProject
+		SccProjectUniqueName111 = UI\\GridSample\\GridSample\\GridSample\\GridSample.csproj
+		SccProjectTopLevelParentUniqueName111 = SampleCollection.sln
+		SccProjectName111 = UI/GridSample/GridSample/GridSample
+		SccLocalPath111 = UI\\GridSample\\GridSample\\GridSample
+		SccProjectUniqueName112 = UI\\GridSample\\GridSample\\GridSampleProject\\GridSampleProject.csproj
+		SccProjectTopLevelParentUniqueName112 = SampleCollection.sln
+		SccProjectName112 = UI/GridSample/GridSample/GridSampleProject
+		SccLocalPath112 = UI\\GridSample\\GridSample\\GridSampleProject
+		SccProjectUniqueName113 = Media\\CameraCapture\\CameraCapture\\CameraCapture\\CameraCapture.csproj
+		SccProjectTopLevelParentUniqueName113 = SampleCollection.sln
+		SccProjectName113 = Media/CameraCapture/CameraCapture/CameraCapture
+		SccLocalPath113 = Media\\CameraCapture\\CameraCapture\\CameraCapture
+		SccProjectUniqueName114 = Media\\CameraCapture\\CameraCapture\\CameraCaptureProject\\CameraCaptureProject.csproj
+		SccProjectTopLevelParentUniqueName114 = SampleCollection.sln
+		SccProjectName114 = Media/CameraCapture/CameraCapture/CameraCaptureProject
+		SccLocalPath114 = Media\\CameraCapture\\CameraCapture\\CameraCaptureProject
+		SccProjectUniqueName115 = UI\\ButtonSample\\ButtonSample\\ButtonSample\\ButtonSample.csproj
+		SccProjectTopLevelParentUniqueName115 = SampleCollection.sln
+		SccProjectName115 = UI/ButtonSample/ButtonSample/ButtonSample
+		SccLocalPath115 = UI\\ButtonSample\\ButtonSample\\ButtonSample
+		SccProjectUniqueName116 = UI\\ButtonSample\\ButtonSample\\ButtonSampleProject\\ButtonSampleProject.csproj
+		SccProjectTopLevelParentUniqueName116 = SampleCollection.sln
+		SccProjectName116 = UI/ButtonSample/ButtonSample/ButtonSampleProject
+		SccLocalPath116 = UI\\ButtonSample\\ButtonSample\\ButtonSampleProject
+		SccProjectUniqueName117 = UI\\CheckBoxSample\\CheckBoxSample\\CheckBoxSample\\CheckBoxSample.csproj
+		SccProjectTopLevelParentUniqueName117 = SampleCollection.sln
+		SccProjectName117 = UI/CheckBoxSample/CheckBoxSample/CheckBoxSample
+		SccLocalPath117 = UI\\CheckBoxSample\\CheckBoxSample\\CheckBoxSample
+		SccProjectUniqueName118 = UI\\CheckBoxSample\\CheckBoxSample\\CheckBoxSampleProject\\CheckBoxSampleProject.csproj
+		SccProjectTopLevelParentUniqueName118 = SampleCollection.sln
+		SccProjectName118 = UI/CheckBoxSample/CheckBoxSample/CheckBoxSampleProject
+		SccLocalPath118 = UI\\CheckBoxSample\\CheckBoxSample\\CheckBoxSampleProject
+		SccProjectUniqueName119 = UI\\ImageSample\\ImageSample\\ImageSample\\ImageSample.csproj
+		SccProjectTopLevelParentUniqueName119 = SampleCollection.sln
+		SccProjectName119 = UI/ImageSample/ImageSample/ImageSample
+		SccLocalPath119 = UI\\ImageSample\\ImageSample\\ImageSample
+		SccProjectUniqueName120 = UI\\ImageSample\\ImageSample\\ImageSampleProject\\ImageSampleProject.csproj
+		SccProjectTopLevelParentUniqueName120 = SampleCollection.sln
+		SccProjectName120 = UI/ImageSample/ImageSample/ImageSampleProject
+		SccLocalPath120 = UI\\ImageSample\\ImageSample\\ImageSampleProject
+		SccProjectUniqueName121 = UI\\ProgressBarSample\\ProgressBarSample\\ProgressBarSample\\ProgressBarSample.csproj
+		SccProjectTopLevelParentUniqueName121 = SampleCollection.sln
+		SccProjectName121 = UI/ProgressBarSample/ProgressBarSample/ProgressBarSample
+		SccLocalPath121 = UI\\ProgressBarSample\\ProgressBarSample\\ProgressBarSample
+		SccProjectUniqueName122 = UI\\ProgressBarSample\\ProgressBarSample\\ProgressBarSampleProject\\ProgressBarSampleProject.csproj
+		SccProjectTopLevelParentUniqueName122 = SampleCollection.sln
+		SccProjectName122 = UI/ProgressBarSample/ProgressBarSample/ProgressBarSampleProject
+		SccLocalPath122 = UI\\ProgressBarSample\\ProgressBarSample\\ProgressBarSampleProject
+		SccProjectUniqueName123 = UI\\RadioButtonSample\\RadioButtonSample\\RadioButtonSample\\RadioButtonSample.csproj
+		SccProjectTopLevelParentUniqueName123 = SampleCollection.sln
+		SccProjectName123 = UI/RadioButtonSample/RadioButtonSample/RadioButtonSample
+		SccLocalPath123 = UI\\RadioButtonSample\\RadioButtonSample\\RadioButtonSample
+		SccProjectUniqueName124 = UI\\RadioButtonSample\\RadioButtonSample\\RadioButtonSampleProject\\RadioButtonSampleProject.csproj
+		SccProjectTopLevelParentUniqueName124 = SampleCollection.sln
+		SccProjectName124 = UI/RadioButtonSample/RadioButtonSample/RadioButtonSampleProject
+		SccLocalPath124 = UI\\RadioButtonSample\\RadioButtonSample\\RadioButtonSampleProject
+		SccProjectUniqueName125 = UI\\SliderSample\\SliderSample\\SliderSample\\SliderSample.csproj
+		SccProjectTopLevelParentUniqueName125 = SampleCollection.sln
+		SccProjectName125 = UI/SliderSample/SliderSample/SliderSample
+		SccLocalPath125 = UI\\SliderSample\\SliderSample\\SliderSample
+		SccProjectUniqueName126 = UI\\SliderSample\\SliderSample\\SliderSampleProject\\SliderSampleProject.csproj
+		SccProjectTopLevelParentUniqueName126 = SampleCollection.sln
+		SccProjectName126 = UI/SliderSample/SliderSample/SliderSampleProject
+		SccLocalPath126 = UI\\SliderSample\\SliderSample\\SliderSampleProject
+		SccProjectUniqueName127 = UI\\StackPanelSample\\StackPanelSample\\StackPanelSample\\StackPanelSample.csproj
+		SccProjectTopLevelParentUniqueName127 = SampleCollection.sln
+		SccProjectName127 = UI/StackPanelSample/StackPanelSample/StackPanelSample
+		SccLocalPath127 = UI\\StackPanelSample\\StackPanelSample\\StackPanelSample
+		SccProjectUniqueName128 = UI\\StackPanelSample\\StackPanelSample\\StackPanelSampleProject\\StackPanelSampleProject.csproj
+		SccProjectTopLevelParentUniqueName128 = SampleCollection.sln
+		SccProjectName128 = UI/StackPanelSample/StackPanelSample/StackPanelSampleProject
+		SccLocalPath128 = UI\\StackPanelSample\\StackPanelSample\\StackPanelSampleProject
+		SccProjectUniqueName129 = UI\\TextBlockSample\\TextBlockSample\\TextBlockSample\\TextBlockSample.csproj
+		SccProjectTopLevelParentUniqueName129 = SampleCollection.sln
+		SccProjectName129 = UI/TextBlockSample/TextBlockSample/TextBlockSample
+		SccLocalPath129 = UI\\TextBlockSample\\TextBlockSample\\TextBlockSample
+		SccProjectUniqueName130 = UI\\TextBlockSample\\TextBlockSample\\TextBlockSampleProject\\TextBlockSampleProject.csproj
+		SccProjectTopLevelParentUniqueName130 = SampleCollection.sln
+		SccProjectName130 = UI/TextBlockSample/TextBlockSample/TextBlockSampleProject
+		SccLocalPath130 = UI\\TextBlockSample\\TextBlockSample\\TextBlockSampleProject
+		SccProjectUniqueName131 = UI\\TextBoxSample\\TextBoxSample\\TextBoxSample\\TextBoxSample.csproj
+		SccProjectTopLevelParentUniqueName131 = SampleCollection.sln
+		SccProjectName131 = UI/TextBoxSample/TextBoxSample/TextBoxSample
+		SccLocalPath131 = UI\\TextBoxSample\\TextBoxSample\\TextBoxSample
+		SccProjectUniqueName132 = UI\\TextBoxSample\\TextBoxSample\\TextBoxSampleProject\\TextBoxSampleProject.csproj
+		SccProjectTopLevelParentUniqueName132 = SampleCollection.sln
+		SccProjectName132 = UI/TextBoxSample/TextBoxSample/TextBoxSampleProject
+		SccLocalPath132 = UI\\TextBoxSample\\TextBoxSample\\TextBoxSampleProject
+		SccProjectUniqueName133 = UI\\ToggleSwitchSample\\ToggleSwitchSample\\ToggleSwitchSample\\ToggleSwitchSample.csproj
+		SccProjectTopLevelParentUniqueName133 = SampleCollection.sln
+		SccProjectName133 = UI/ToggleSwitchSample/ToggleSwitchSample/ToggleSwitchSample
+		SccLocalPath133 = UI\\ToggleSwitchSample\\ToggleSwitchSample\\ToggleSwitchSample
+		SccProjectUniqueName134 = UI\\ToggleSwitchSample\\ToggleSwitchSample\\ToggleSwitchSampleProject\\ToggleSwitchSampleProject.csproj
+		SccProjectTopLevelParentUniqueName134 = SampleCollection.sln
+		SccProjectName134 = UI/ToggleSwitchSample/ToggleSwitchSample/ToggleSwitchSampleProject
+		SccLocalPath134 = UI\\ToggleSwitchSample\\ToggleSwitchSample\\ToggleSwitchSampleProject
+		SccProjectUniqueName135 = UI\\WrapPanelSample\\WrapPanelSample\\WrapPanelSample\\WrapPanelSample.csproj
+		SccProjectTopLevelParentUniqueName135 = SampleCollection.sln
+		SccProjectName135 = UI/WrapPanelSample/WrapPanelSample/WrapPanelSample
+		SccLocalPath135 = UI\\WrapPanelSample\\WrapPanelSample\\WrapPanelSample
+		SccProjectUniqueName136 = UI\\WrapPanelSample\\WrapPanelSample\\WrapPanelSampleProject\\WrapPanelSampleProject.csproj
+		SccProjectTopLevelParentUniqueName136 = SampleCollection.sln
+		SccProjectName136 = UI/WrapPanelSample/WrapPanelSample/WrapPanelSampleProject
+		SccLocalPath136 = UI\\WrapPanelSample\\WrapPanelSample\\WrapPanelSampleProject
+		SccProjectUniqueName137 = Cameras\\FreeCamera\\FreeCamera\\FreeCameraProject\\FreeCameraProject.csproj
+		SccProjectTopLevelParentUniqueName137 = SampleCollection.sln
+		SccProjectName137 = Cameras/FreeCamera/FreeCamera/FreeCameraProject
+		SccLocalPath137 = Cameras\\FreeCamera\\FreeCamera\\FreeCameraProject
+		SccProjectUniqueName138 = Cameras\\FreeCamera\\FreeCamera\\FreeCamera\\FreeCamera.csproj
+		SccProjectTopLevelParentUniqueName138 = SampleCollection.sln
+		SccProjectName138 = Cameras/FreeCamera/FreeCamera/FreeCamera
+		SccLocalPath138 = Cameras\\FreeCamera\\FreeCamera\\FreeCamera
+		SccProjectUniqueName139 = Cameras\\IsometricCamera\\IsometricCamera\\IsometricCameraProject\\IsometricCameraProject.csproj
+		SccProjectTopLevelParentUniqueName139 = SampleCollection.sln
+		SccProjectName139 = Cameras/IsometricCamera/IsometricCamera/IsometricCameraProject
+		SccLocalPath139 = Cameras\\IsometricCamera\\IsometricCamera\\IsometricCameraProject
+		SccProjectUniqueName140 = Cameras\\IsometricCamera\\IsometricCamera\\IsometricCamera\\IsometricCamera.csproj
+		SccProjectTopLevelParentUniqueName140 = SampleCollection.sln
+		SccProjectName140 = Cameras/IsometricCamera/IsometricCamera/IsometricCamera
+		SccLocalPath140 = Cameras\\IsometricCamera\\IsometricCamera\\IsometricCamera
+		SccProjectUniqueName141 = Cameras\\OrthogonalCamera\\OrthogonalCamera\\OrthogonalCameraProject\\OrthogonalCameraProject.csproj
+		SccProjectTopLevelParentUniqueName141 = SampleCollection.sln
+		SccProjectName141 = Cameras/OrthogonalCamera/OrthogonalCamera/OrthogonalCameraProject
+		SccLocalPath141 = Cameras\\OrthogonalCamera\\OrthogonalCamera\\OrthogonalCameraProject
+		SccProjectUniqueName142 = Cameras\\OrthogonalCamera\\OrthogonalCamera\\OrthogonalCamera\\OrthogonalCamera.csproj
+		SccProjectTopLevelParentUniqueName142 = SampleCollection.sln
+		SccProjectName142 = Cameras/OrthogonalCamera/OrthogonalCamera/OrthogonalCamera
+		SccLocalPath142 = Cameras\\OrthogonalCamera\\OrthogonalCamera\\OrthogonalCamera
+		SccProjectUniqueName143 = Cameras\\PathCamera\\PathCamera\\PathCameraProject\\PathCameraProject.csproj
+		SccProjectTopLevelParentUniqueName143 = SampleCollection.sln
+		SccProjectName143 = Cameras/PathCamera/PathCamera/PathCameraProject
+		SccLocalPath143 = Cameras\\PathCamera\\PathCamera\\PathCameraProject
+		SccProjectUniqueName144 = Cameras\\PathCamera\\PathCamera\\PathCamera\\PathCamera.csproj
+		SccProjectTopLevelParentUniqueName144 = SampleCollection.sln
+		SccProjectName144 = Cameras/PathCamera/PathCamera/PathCamera
+		SccLocalPath144 = Cameras\\PathCamera\\PathCamera\\PathCamera
+		SccProjectUniqueName145 = Cameras\\ThirdPersonCamera\\ThirdPersonCamera\\ThirdPersonCameraProject\\ThirdPersonCameraProject.csproj
+		SccProjectTopLevelParentUniqueName145 = SampleCollection.sln
+		SccProjectName145 = Cameras/ThirdPersonCamera/ThirdPersonCamera/ThirdPersonCameraProject
+		SccLocalPath145 = Cameras\\ThirdPersonCamera\\ThirdPersonCamera\\ThirdPersonCameraProject
+		SccProjectUniqueName146 = Cameras\\ThirdPersonCamera\\ThirdPersonCamera\\ThirdPersonCamera\\ThirdPersonCamera.csproj
+		SccProjectTopLevelParentUniqueName146 = SampleCollection.sln
+		SccProjectName146 = Cameras/ThirdPersonCamera/ThirdPersonCamera/ThirdPersonCamera
+		SccLocalPath146 = Cameras\\ThirdPersonCamera\\ThirdPersonCamera\\ThirdPersonCamera
+		SccProjectUniqueName147 = Cameras\\ViewCamera\\ViewCamera\\ViewCameraProject\\ViewCameraProject.csproj
+		SccProjectTopLevelParentUniqueName147 = SampleCollection.sln
+		SccProjectName147 = Cameras/ViewCamera/ViewCamera/ViewCameraProject
+		SccLocalPath147 = Cameras\\ViewCamera\\ViewCamera\\ViewCameraProject
+		SccProjectUniqueName148 = Cameras\\ViewCamera\\ViewCamera\\ViewCamera\\ViewCamera.csproj
+		SccProjectTopLevelParentUniqueName148 = SampleCollection.sln
+		SccProjectName148 = Cameras/ViewCamera/ViewCamera/ViewCamera
+		SccLocalPath148 = Cameras\\ViewCamera\\ViewCamera\\ViewCamera
+		SccProjectUniqueName149 = Input\\XboxController\\XboxController\\XboxController\\XboxController.csproj
+		SccProjectTopLevelParentUniqueName149 = SampleCollection.sln
+		SccProjectName149 = Input/XboxController/XboxController/XboxController
+		SccLocalPath149 = Input\\XboxController\\XboxController\\XboxController
+		SccProjectUniqueName150 = Input\\XboxController\\XboxController\\XboxControllerProject\\XboxControllerProject.csproj
+		SccProjectTopLevelParentUniqueName150 = SampleCollection.sln
+		SccProjectName150 = Input/XboxController/XboxController/XboxControllerProject
+		SccLocalPath150 = Input\\XboxController\\XboxController\\XboxControllerProject
+		SccProjectUniqueName151 = Core\\SampleWPF\\SampleWPF\\SampleWPFProject\\SampleWPFProject.csproj
+		SccProjectTopLevelParentUniqueName151 = SampleCollection.sln
+		SccProjectName151 = Core/SampleWPF/SampleWPF/SampleWPFProject
+		SccLocalPath151 = Core\\SampleWPF\\SampleWPF\\SampleWPFProject
+		SccProjectUniqueName152 = Core\\SampleWPF\\SampleWPF\\SampleWPF\\SampleWPF.csproj
+		SccProjectTopLevelParentUniqueName152 = SampleCollection.sln
+		SccProjectName152 = Core/SampleWPF/SampleWPF/SampleWPF
+		SccLocalPath152 = Core\\SampleWPF\\SampleWPF\\SampleWPF
+		SccProjectUniqueName153 = Graphics\\CameraRenderTarget\\CameraRenderTarget\\CameraRenderTargetProject\\CameraRenderTargetProject.csproj
+		SccProjectTopLevelParentUniqueName153 = SampleCollection.sln
+		SccProjectName153 = Graphics/CameraRenderTarget/CameraRenderTarget/CameraRenderTargetProject
+		SccLocalPath153 = Graphics\\CameraRenderTarget\\CameraRenderTarget\\CameraRenderTargetProject
+		SccProjectUniqueName154 = Graphics\\CameraRenderTarget\\CameraRenderTarget\\CameraRenderTarget\\CameraRenderTarget.csproj
+		SccProjectTopLevelParentUniqueName154 = SampleCollection.sln
+		SccProjectName154 = Graphics/CameraRenderTarget/CameraRenderTarget/CameraRenderTarget
+		SccLocalPath154 = Graphics\\CameraRenderTarget\\CameraRenderTarget\\CameraRenderTarget
+		SccProjectUniqueName155 = Graphics\\CustomGeometry\\CustomGeometry\\CustomGeometryProject\\CustomGeometryProject.csproj
+		SccProjectTopLevelParentUniqueName155 = SampleCollection.sln
+		SccProjectName155 = Graphics/CustomGeometry/CustomGeometry/CustomGeometryProject
+		SccLocalPath155 = Graphics\\CustomGeometry\\CustomGeometry\\CustomGeometryProject
+		SccProjectUniqueName156 = Graphics\\CustomGeometry\\CustomGeometry\\CustomGeometry\\CustomGeometry.csproj
+		SccProjectTopLevelParentUniqueName156 = SampleCollection.sln
+		SccProjectName156 = Graphics/CustomGeometry/CustomGeometry/CustomGeometry
+		SccLocalPath156 = Graphics\\CustomGeometry\\CustomGeometry\\CustomGeometry
+		SccProjectUniqueName157 = Graphics\\CustomMaterial\\MaterialTutorial\\MaterialTutorialProject\\MaterialTutorialProject.csproj
+		SccProjectTopLevelParentUniqueName157 = SampleCollection.sln
+		SccProjectName157 = Graphics/CustomMaterial/MaterialTutorial/MaterialTutorialProject
+		SccLocalPath157 = Graphics\\CustomMaterial\\MaterialTutorial\\MaterialTutorialProject
+		SccProjectUniqueName158 = Graphics\\CustomMaterial\\MaterialTutorial\\MaterialTutorial\\MaterialTutorial.csproj
+		SccProjectTopLevelParentUniqueName158 = SampleCollection.sln
+		SccProjectName158 = Graphics/CustomMaterial/MaterialTutorial/MaterialTutorial
+		SccLocalPath158 = Graphics\\CustomMaterial\\MaterialTutorial\\MaterialTutorial
+		SccProjectUniqueName159 = Graphics\\IBLSample\\IBLSample\\IBLSampleProject\\IBLSampleProject.csproj
+		SccProjectTopLevelParentUniqueName159 = SampleCollection.sln
+		SccProjectName159 = Graphics/IBLSample/IBLSample/IBLSampleProject
+		SccLocalPath159 = Graphics\\IBLSample\\IBLSample\\IBLSampleProject
+		SccProjectUniqueName160 = Graphics\\IBLSample\\IBLSample\\IBLSample\\IBLSample.csproj
+		SccProjectTopLevelParentUniqueName160 = SampleCollection.sln
+		SccProjectName160 = Graphics/IBLSample/IBLSample/IBLSample
+		SccLocalPath160 = Graphics\\IBLSample\\IBLSample\\IBLSample
+		SccProjectUniqueName161 = Graphics\\LensFlare\\LensFlare\\LensFlareProject\\LensFlareProject.csproj
+		SccProjectTopLevelParentUniqueName161 = SampleCollection.sln
+		SccProjectName161 = Graphics/LensFlare/LensFlare/LensFlareProject
+		SccLocalPath161 = Graphics\\LensFlare\\LensFlare\\LensFlareProject
+		SccProjectUniqueName162 = Graphics\\LensFlare\\LensFlare\\LensFlare\\LensFlare.csproj
+		SccProjectTopLevelParentUniqueName162 = SampleCollection.sln
+		SccProjectName162 = Graphics/LensFlare/LensFlare/LensFlare
+		SccLocalPath162 = Graphics\\LensFlare\\LensFlare\\LensFlare
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Debug|x86.ActiveCfg = Debug|x86
+		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Debug|x86.Build.0 = Debug|x86
+		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Release|x86.ActiveCfg = Release|x86
+		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Release|x86.Build.0 = Release|x86
+		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Debug|x86.ActiveCfg = Debug|x86
+		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Debug|x86.Build.0 = Debug|x86
+		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Release|x86.ActiveCfg = Release|x86
+		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Release|x86.Build.0 = Release|x86
+		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|x86.ActiveCfg = Debug|x86
+		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|x86.Build.0 = Debug|x86
+		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|x86.ActiveCfg = Release|x86
+		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|x86.Build.0 = Release|x86
+		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|x86.ActiveCfg = Debug|x86
+		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|x86.Build.0 = Debug|x86
+		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|x86.ActiveCfg = Release|x86
+		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|x86.Build.0 = Release|x86
+		{F36E7336-FCC2-4820-A3DF-7438C1C32280}.Debug|x86.ActiveCfg = Debug|x86
+		{F36E7336-FCC2-4820-A3DF-7438C1C32280}.Debug|x86.Build.0 = Debug|x86
+		{F36E7336-FCC2-4820-A3DF-7438C1C32280}.Release|x86.ActiveCfg = Release|x86
+		{F36E7336-FCC2-4820-A3DF-7438C1C32280}.Release|x86.Build.0 = Release|x86
+		{7276A9E1-32E5-4E67-B278-4FC12AB24C02}.Debug|x86.ActiveCfg = Debug|x86
+		{7276A9E1-32E5-4E67-B278-4FC12AB24C02}.Debug|x86.Build.0 = Debug|x86
+		{7276A9E1-32E5-4E67-B278-4FC12AB24C02}.Release|x86.ActiveCfg = Release|x86
+		{7276A9E1-32E5-4E67-B278-4FC12AB24C02}.Release|x86.Build.0 = Release|x86
+		{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D}.Debug|x86.ActiveCfg = Debug|x86
+		{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D}.Debug|x86.Build.0 = Debug|x86
+		{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D}.Release|x86.ActiveCfg = Release|x86
+		{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D}.Release|x86.Build.0 = Release|x86
+		{00B95563-FFBA-41D4-8E7A-3F656272FB76}.Debug|x86.ActiveCfg = Debug|x86
+		{00B95563-FFBA-41D4-8E7A-3F656272FB76}.Debug|x86.Build.0 = Debug|x86
+		{00B95563-FFBA-41D4-8E7A-3F656272FB76}.Release|x86.ActiveCfg = Release|x86
+		{00B95563-FFBA-41D4-8E7A-3F656272FB76}.Release|x86.Build.0 = Release|x86
+		{C4729282-C7D9-4758-B732-B89ED31660A0}.Debug|x86.ActiveCfg = Debug|x86
+		{C4729282-C7D9-4758-B732-B89ED31660A0}.Debug|x86.Build.0 = Debug|x86
+		{C4729282-C7D9-4758-B732-B89ED31660A0}.Release|x86.ActiveCfg = Release|x86
+		{C4729282-C7D9-4758-B732-B89ED31660A0}.Release|x86.Build.0 = Release|x86
+		{27831D60-D975-42A4-859B-0E342366F4DF}.Debug|x86.ActiveCfg = Debug|x86
+		{27831D60-D975-42A4-859B-0E342366F4DF}.Debug|x86.Build.0 = Debug|x86
+		{27831D60-D975-42A4-859B-0E342366F4DF}.Release|x86.ActiveCfg = Release|x86
+		{27831D60-D975-42A4-859B-0E342366F4DF}.Release|x86.Build.0 = Release|x86
+		{FD61AA01-3B0C-4D22-A944-D916FEB87C99}.Debug|x86.ActiveCfg = Debug|x86
+		{FD61AA01-3B0C-4D22-A944-D916FEB87C99}.Debug|x86.Build.0 = Debug|x86
+		{FD61AA01-3B0C-4D22-A944-D916FEB87C99}.Release|x86.ActiveCfg = Release|x86
+		{FD61AA01-3B0C-4D22-A944-D916FEB87C99}.Release|x86.Build.0 = Release|x86
+		{228C4E89-E642-4855-A91C-35919B30E0CA}.Debug|x86.ActiveCfg = Debug|x86
+		{228C4E89-E642-4855-A91C-35919B30E0CA}.Debug|x86.Build.0 = Debug|x86
+		{228C4E89-E642-4855-A91C-35919B30E0CA}.Release|x86.ActiveCfg = Release|x86
+		{228C4E89-E642-4855-A91C-35919B30E0CA}.Release|x86.Build.0 = Release|x86
+		{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F}.Debug|x86.ActiveCfg = Debug|x86
+		{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F}.Debug|x86.Build.0 = Debug|x86
+		{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F}.Release|x86.ActiveCfg = Release|x86
+		{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F}.Release|x86.Build.0 = Release|x86
+		{5A3AB054-4564-4B42-A1EB-0915F5370F6C}.Debug|x86.ActiveCfg = Debug|x86
+		{5A3AB054-4564-4B42-A1EB-0915F5370F6C}.Debug|x86.Build.0 = Debug|x86
+		{5A3AB054-4564-4B42-A1EB-0915F5370F6C}.Release|x86.ActiveCfg = Release|x86
+		{5A3AB054-4564-4B42-A1EB-0915F5370F6C}.Release|x86.Build.0 = Release|x86
+		{396BFC07-5880-4DD7-AE36-4E14CF242939}.Debug|x86.ActiveCfg = Debug|x86
+		{396BFC07-5880-4DD7-AE36-4E14CF242939}.Debug|x86.Build.0 = Debug|x86
+		{396BFC07-5880-4DD7-AE36-4E14CF242939}.Release|x86.ActiveCfg = Release|x86
+		{396BFC07-5880-4DD7-AE36-4E14CF242939}.Release|x86.Build.0 = Release|x86
+		{0803DD29-93DF-4C96-9C0E-D6330AE7CD68}.Debug|x86.ActiveCfg = Debug|x86
+		{0803DD29-93DF-4C96-9C0E-D6330AE7CD68}.Debug|x86.Build.0 = Debug|x86
+		{0803DD29-93DF-4C96-9C0E-D6330AE7CD68}.Release|x86.ActiveCfg = Release|x86
+		{0803DD29-93DF-4C96-9C0E-D6330AE7CD68}.Release|x86.Build.0 = Release|x86
+		{70EB0A86-86BF-4308-9E98-489884EB8C85}.Debug|x86.ActiveCfg = Debug|x86
+		{70EB0A86-86BF-4308-9E98-489884EB8C85}.Debug|x86.Build.0 = Debug|x86
+		{70EB0A86-86BF-4308-9E98-489884EB8C85}.Release|x86.ActiveCfg = Release|x86
+		{70EB0A86-86BF-4308-9E98-489884EB8C85}.Release|x86.Build.0 = Release|x86
+		{E2218418-CD57-4B71-A412-F66C33C78A95}.Debug|x86.ActiveCfg = Debug|x86
+		{E2218418-CD57-4B71-A412-F66C33C78A95}.Debug|x86.Build.0 = Debug|x86
+		{E2218418-CD57-4B71-A412-F66C33C78A95}.Release|x86.ActiveCfg = Release|x86
+		{E2218418-CD57-4B71-A412-F66C33C78A95}.Release|x86.Build.0 = Release|x86
+		{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917}.Debug|x86.ActiveCfg = Debug|x86
+		{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917}.Debug|x86.Build.0 = Debug|x86
+		{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917}.Release|x86.ActiveCfg = Release|x86
+		{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917}.Release|x86.Build.0 = Release|x86
+		{C709781C-169A-45F3-A665-7AF7A9286795}.Debug|x86.ActiveCfg = Debug|x86
+		{C709781C-169A-45F3-A665-7AF7A9286795}.Debug|x86.Build.0 = Debug|x86
+		{C709781C-169A-45F3-A665-7AF7A9286795}.Release|x86.ActiveCfg = Release|x86
+		{C709781C-169A-45F3-A665-7AF7A9286795}.Release|x86.Build.0 = Release|x86
+		{81C36008-0F6F-4720-A1CB-CD8557205309}.Debug|x86.ActiveCfg = Debug|x86
+		{81C36008-0F6F-4720-A1CB-CD8557205309}.Debug|x86.Build.0 = Debug|x86
+		{81C36008-0F6F-4720-A1CB-CD8557205309}.Release|x86.ActiveCfg = Release|Any CPU
+		{978B052A-6BE0-499C-A626-7595942F10D0}.Debug|x86.ActiveCfg = Debug|x86
+		{978B052A-6BE0-499C-A626-7595942F10D0}.Debug|x86.Build.0 = Debug|x86
+		{978B052A-6BE0-499C-A626-7595942F10D0}.Release|x86.ActiveCfg = Release|x86
+		{978B052A-6BE0-499C-A626-7595942F10D0}.Release|x86.Build.0 = Release|x86
+		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Debug|x86.ActiveCfg = Debug|x86
+		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Debug|x86.Build.0 = Debug|x86
+		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Release|x86.ActiveCfg = Release|x86
+		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Release|x86.Build.0 = Release|x86
+		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Debug|x86.ActiveCfg = Debug|x86
+		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Debug|x86.Build.0 = Debug|x86
+		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Release|x86.ActiveCfg = Release|x86
+		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Release|x86.Build.0 = Release|x86
+		{3A6E13FA-EA1A-4136-B8DE-1482673D1552}.Debug|x86.ActiveCfg = Debug|x86
+		{3A6E13FA-EA1A-4136-B8DE-1482673D1552}.Debug|x86.Build.0 = Debug|x86
+		{3A6E13FA-EA1A-4136-B8DE-1482673D1552}.Release|x86.ActiveCfg = Release|x86
+		{3A6E13FA-EA1A-4136-B8DE-1482673D1552}.Release|x86.Build.0 = Release|x86
+		{E4F87516-901F-4899-BE2C-38633F6F3C3A}.Debug|x86.ActiveCfg = Debug|x86
+		{E4F87516-901F-4899-BE2C-38633F6F3C3A}.Debug|x86.Build.0 = Debug|x86
+		{E4F87516-901F-4899-BE2C-38633F6F3C3A}.Release|x86.ActiveCfg = Release|x86
+		{E4F87516-901F-4899-BE2C-38633F6F3C3A}.Release|x86.Build.0 = Release|x86
+		{89C69D14-6866-4AD4-A574-ADB8191ABCA6}.Debug|x86.ActiveCfg = Debug|x86
+		{89C69D14-6866-4AD4-A574-ADB8191ABCA6}.Debug|x86.Build.0 = Debug|x86
+		{89C69D14-6866-4AD4-A574-ADB8191ABCA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{53303981-980C-40E4-8E1C-2C93ED1E8E28}.Debug|x86.ActiveCfg = Debug|x86
+		{53303981-980C-40E4-8E1C-2C93ED1E8E28}.Debug|x86.Build.0 = Debug|x86
+		{53303981-980C-40E4-8E1C-2C93ED1E8E28}.Release|x86.ActiveCfg = Release|x86
+		{53303981-980C-40E4-8E1C-2C93ED1E8E28}.Release|x86.Build.0 = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|x86.ActiveCfg = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|x86.Build.0 = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|x86.ActiveCfg = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|x86.Build.0 = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|x86.ActiveCfg = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|x86.Build.0 = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|x86.ActiveCfg = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|x86.Build.0 = Release|x86
+		{502BB470-9CC3-4ECC-8435-B4A7F713712D}.Debug|x86.ActiveCfg = Debug|x86
+		{502BB470-9CC3-4ECC-8435-B4A7F713712D}.Debug|x86.Build.0 = Debug|x86
+		{502BB470-9CC3-4ECC-8435-B4A7F713712D}.Release|x86.ActiveCfg = Release|x86
+		{502BB470-9CC3-4ECC-8435-B4A7F713712D}.Release|x86.Build.0 = Release|x86
+		{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3}.Debug|x86.ActiveCfg = Debug|x86
+		{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3}.Debug|x86.Build.0 = Debug|x86
+		{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3}.Release|x86.ActiveCfg = Release|x86
+		{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3}.Release|x86.Build.0 = Release|x86
+		{C1D21814-56A6-46B2-A362-D47BEF284F80}.Debug|x86.ActiveCfg = Debug|x86
+		{C1D21814-56A6-46B2-A362-D47BEF284F80}.Debug|x86.Build.0 = Debug|x86
+		{C1D21814-56A6-46B2-A362-D47BEF284F80}.Release|x86.ActiveCfg = Release|x86
+		{C1D21814-56A6-46B2-A362-D47BEF284F80}.Release|x86.Build.0 = Release|x86
+		{EFB2B98C-4FB8-434C-BA9A-7A179D712594}.Debug|x86.ActiveCfg = Debug|x86
+		{EFB2B98C-4FB8-434C-BA9A-7A179D712594}.Debug|x86.Build.0 = Debug|x86
+		{EFB2B98C-4FB8-434C-BA9A-7A179D712594}.Release|x86.ActiveCfg = Release|x86
+		{EFB2B98C-4FB8-434C-BA9A-7A179D712594}.Release|x86.Build.0 = Release|x86
+		{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4}.Debug|x86.ActiveCfg = Debug|x86
+		{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4}.Debug|x86.Build.0 = Debug|x86
+		{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4}.Release|x86.ActiveCfg = Release|x86
+		{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4}.Release|x86.Build.0 = Release|x86
+		{31B43760-E09F-43AE-8552-C21328818C66}.Debug|x86.ActiveCfg = Debug|x86
+		{31B43760-E09F-43AE-8552-C21328818C66}.Debug|x86.Build.0 = Debug|x86
+		{31B43760-E09F-43AE-8552-C21328818C66}.Release|x86.ActiveCfg = Release|x86
+		{31B43760-E09F-43AE-8552-C21328818C66}.Release|x86.Build.0 = Release|x86
+		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Debug|x86.ActiveCfg = Debug|x86
+		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Debug|x86.Build.0 = Debug|x86
+		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Debug|x86.ActiveCfg = Debug|x86
+		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Debug|x86.Build.0 = Debug|x86
+		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Release|x86.ActiveCfg = Release|x86
+		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Release|x86.Build.0 = Release|x86
+		{0F1BD175-A841-4151-803F-50A8468B3147}.Debug|x86.ActiveCfg = Debug|x86
+		{0F1BD175-A841-4151-803F-50A8468B3147}.Debug|x86.Build.0 = Debug|x86
+		{0F1BD175-A841-4151-803F-50A8468B3147}.Release|x86.ActiveCfg = Release|x86
+		{0F1BD175-A841-4151-803F-50A8468B3147}.Release|x86.Build.0 = Release|x86
+		{DD082D56-0348-4D02-A368-487BA4CB3953}.Debug|x86.ActiveCfg = Debug|x86
+		{DD082D56-0348-4D02-A368-487BA4CB3953}.Debug|x86.Build.0 = Debug|x86
+		{DD082D56-0348-4D02-A368-487BA4CB3953}.Release|x86.ActiveCfg = Release|x86
+		{DD082D56-0348-4D02-A368-487BA4CB3953}.Release|x86.Build.0 = Release|x86
+		{3A116FD1-41FB-4390-94B6-A3878E989086}.Debug|x86.ActiveCfg = Debug|x86
+		{3A116FD1-41FB-4390-94B6-A3878E989086}.Debug|x86.Build.0 = Debug|x86
+		{3A116FD1-41FB-4390-94B6-A3878E989086}.Release|x86.ActiveCfg = Release|x86
+		{3A116FD1-41FB-4390-94B6-A3878E989086}.Release|x86.Build.0 = Release|x86
+		{76FB1C04-3EF2-4502-BCD0-116000AF41E6}.Debug|x86.ActiveCfg = Debug|x86
+		{76FB1C04-3EF2-4502-BCD0-116000AF41E6}.Debug|x86.Build.0 = Debug|x86
+		{76FB1C04-3EF2-4502-BCD0-116000AF41E6}.Release|x86.ActiveCfg = Release|x86
+		{76FB1C04-3EF2-4502-BCD0-116000AF41E6}.Release|x86.Build.0 = Release|x86
+		{89354C0E-058B-409B-8817-A65501C308B1}.Debug|x86.ActiveCfg = Debug|x86
+		{89354C0E-058B-409B-8817-A65501C308B1}.Debug|x86.Build.0 = Debug|x86
+		{89354C0E-058B-409B-8817-A65501C308B1}.Release|x86.ActiveCfg = Release|x86
+		{89354C0E-058B-409B-8817-A65501C308B1}.Release|x86.Build.0 = Release|x86
+		{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4}.Debug|x86.ActiveCfg = Debug|x86
+		{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4}.Debug|x86.Build.0 = Debug|x86
+		{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4}.Release|x86.ActiveCfg = Release|x86
+		{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4}.Release|x86.Build.0 = Release|x86
+		{4AE81D53-6807-4261-A563-B645243469F4}.Debug|x86.ActiveCfg = Debug|x86
+		{4AE81D53-6807-4261-A563-B645243469F4}.Debug|x86.Build.0 = Debug|x86
+		{4AE81D53-6807-4261-A563-B645243469F4}.Release|x86.ActiveCfg = Release|x86
+		{4AE81D53-6807-4261-A563-B645243469F4}.Release|x86.Build.0 = Release|x86
+		{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6}.Debug|x86.ActiveCfg = Debug|x86
+		{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6}.Debug|x86.Build.0 = Debug|x86
+		{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6}.Release|x86.ActiveCfg = Release|x86
+		{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6}.Release|x86.Build.0 = Release|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Debug|x86.ActiveCfg = Debug|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Debug|x86.Build.0 = Debug|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Release|x86.ActiveCfg = Release|Any CPU
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Debug|x86.ActiveCfg = Debug|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Debug|x86.Build.0 = Debug|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Release|x86.ActiveCfg = Release|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Release|x86.Build.0 = Release|x86
+		{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159}.Debug|x86.ActiveCfg = Debug|x86
+		{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159}.Debug|x86.Build.0 = Debug|x86
+		{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159}.Release|x86.ActiveCfg = Release|x86
+		{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159}.Release|x86.Build.0 = Release|x86
+		{9A8A4146-83A8-40F8-931F-69ABC1E98B32}.Debug|x86.ActiveCfg = Debug|x86
+		{9A8A4146-83A8-40F8-931F-69ABC1E98B32}.Debug|x86.Build.0 = Debug|x86
+		{9A8A4146-83A8-40F8-931F-69ABC1E98B32}.Release|x86.ActiveCfg = Release|x86
+		{9A8A4146-83A8-40F8-931F-69ABC1E98B32}.Release|x86.Build.0 = Release|x86
+		{5A63E8F1-436C-461F-97ED-322969909195}.Debug|x86.ActiveCfg = Debug|x86
+		{5A63E8F1-436C-461F-97ED-322969909195}.Debug|x86.Build.0 = Debug|x86
+		{5A63E8F1-436C-461F-97ED-322969909195}.Release|x86.ActiveCfg = Release|x86
+		{5A63E8F1-436C-461F-97ED-322969909195}.Release|x86.Build.0 = Release|x86
+		{01BE75DE-D053-4C49-B9F3-A818181393A2}.Debug|x86.ActiveCfg = Debug|x86
+		{01BE75DE-D053-4C49-B9F3-A818181393A2}.Debug|x86.Build.0 = Debug|x86
+		{01BE75DE-D053-4C49-B9F3-A818181393A2}.Release|x86.ActiveCfg = Release|x86
+		{01BE75DE-D053-4C49-B9F3-A818181393A2}.Release|x86.Build.0 = Release|x86
+		{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3}.Debug|x86.ActiveCfg = Debug|x86
+		{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3}.Debug|x86.Build.0 = Debug|x86
+		{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3}.Release|x86.ActiveCfg = Release|x86
+		{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3}.Release|x86.Build.0 = Release|x86
+		{E8248B8A-5943-410B-9BCB-DE8F6B1354AA}.Debug|x86.ActiveCfg = Debug|x86
+		{E8248B8A-5943-410B-9BCB-DE8F6B1354AA}.Debug|x86.Build.0 = Debug|x86
+		{E8248B8A-5943-410B-9BCB-DE8F6B1354AA}.Release|x86.ActiveCfg = Release|x86
+		{E8248B8A-5943-410B-9BCB-DE8F6B1354AA}.Release|x86.Build.0 = Release|x86
+		{8B22795C-2A16-49EF-BB4B-25301551C1DD}.Debug|x86.ActiveCfg = Debug|x86
+		{8B22795C-2A16-49EF-BB4B-25301551C1DD}.Debug|x86.Build.0 = Debug|x86
+		{8B22795C-2A16-49EF-BB4B-25301551C1DD}.Release|x86.ActiveCfg = Release|x86
+		{8B22795C-2A16-49EF-BB4B-25301551C1DD}.Release|x86.Build.0 = Release|x86
+		{7AD03F07-644B-4DA7-A56E-F72AC252A316}.Debug|x86.ActiveCfg = Debug|x86
+		{7AD03F07-644B-4DA7-A56E-F72AC252A316}.Debug|x86.Build.0 = Debug|x86
+		{7AD03F07-644B-4DA7-A56E-F72AC252A316}.Release|x86.ActiveCfg = Release|x86
+		{7AD03F07-644B-4DA7-A56E-F72AC252A316}.Release|x86.Build.0 = Release|x86
+		{8059EE63-2F47-4D5E-8596-A0CB74647462}.Debug|x86.ActiveCfg = Debug|x86
+		{8059EE63-2F47-4D5E-8596-A0CB74647462}.Debug|x86.Build.0 = Debug|x86
+		{8059EE63-2F47-4D5E-8596-A0CB74647462}.Release|x86.ActiveCfg = Release|x86
+		{8059EE63-2F47-4D5E-8596-A0CB74647462}.Release|x86.Build.0 = Release|x86
+		{AEF24F84-4A3F-4EF4-80CC-80113CABC098}.Debug|x86.ActiveCfg = Debug|x86
+		{AEF24F84-4A3F-4EF4-80CC-80113CABC098}.Debug|x86.Build.0 = Debug|x86
+		{AEF24F84-4A3F-4EF4-80CC-80113CABC098}.Release|x86.ActiveCfg = Release|x86
+		{AEF24F84-4A3F-4EF4-80CC-80113CABC098}.Release|x86.Build.0 = Release|x86
+		{0C210E2E-2839-4789-B09C-EBF2CAAA7D02}.Debug|x86.ActiveCfg = Debug|x86
+		{0C210E2E-2839-4789-B09C-EBF2CAAA7D02}.Debug|x86.Build.0 = Debug|x86
+		{0C210E2E-2839-4789-B09C-EBF2CAAA7D02}.Release|x86.ActiveCfg = Release|x86
+		{0C210E2E-2839-4789-B09C-EBF2CAAA7D02}.Release|x86.Build.0 = Release|x86
+		{7278E361-46DC-41AD-85D4-F094768FB719}.Debug|x86.ActiveCfg = Debug|x86
+		{7278E361-46DC-41AD-85D4-F094768FB719}.Debug|x86.Build.0 = Debug|x86
+		{7278E361-46DC-41AD-85D4-F094768FB719}.Release|x86.ActiveCfg = Release|x86
+		{7278E361-46DC-41AD-85D4-F094768FB719}.Release|x86.Build.0 = Release|x86
+		{225778EB-523F-4CAF-8583-4817296987D0}.Debug|x86.ActiveCfg = Debug|x86
+		{225778EB-523F-4CAF-8583-4817296987D0}.Debug|x86.Build.0 = Debug|x86
+		{225778EB-523F-4CAF-8583-4817296987D0}.Release|x86.ActiveCfg = Release|x86
+		{225778EB-523F-4CAF-8583-4817296987D0}.Release|x86.Build.0 = Release|x86
+		{3D0FFE9D-6DED-44CC-B238-44F77F182666}.Debug|x86.ActiveCfg = Debug|x86
+		{3D0FFE9D-6DED-44CC-B238-44F77F182666}.Debug|x86.Build.0 = Debug|x86
+		{3D0FFE9D-6DED-44CC-B238-44F77F182666}.Release|x86.ActiveCfg = Release|x86
+		{3D0FFE9D-6DED-44CC-B238-44F77F182666}.Release|x86.Build.0 = Release|x86
+		{94D59FA5-DAD0-491E-A727-EFCF034AD77D}.Debug|x86.ActiveCfg = Debug|x86
+		{94D59FA5-DAD0-491E-A727-EFCF034AD77D}.Debug|x86.Build.0 = Debug|x86
+		{94D59FA5-DAD0-491E-A727-EFCF034AD77D}.Release|x86.ActiveCfg = Release|x86
+		{94D59FA5-DAD0-491E-A727-EFCF034AD77D}.Release|x86.Build.0 = Release|x86
+		{78A1DAF9-9DBF-42D2-A87F-63990683F798}.Debug|x86.ActiveCfg = Debug|x86
+		{78A1DAF9-9DBF-42D2-A87F-63990683F798}.Debug|x86.Build.0 = Debug|x86
+		{78A1DAF9-9DBF-42D2-A87F-63990683F798}.Release|x86.ActiveCfg = Release|x86
+		{78A1DAF9-9DBF-42D2-A87F-63990683F798}.Release|x86.Build.0 = Release|x86
+		{B926DBEA-201F-4D25-AABD-92D6AC3E8DBB}.Debug|x86.ActiveCfg = Debug|x86
+		{B926DBEA-201F-4D25-AABD-92D6AC3E8DBB}.Debug|x86.Build.0 = Debug|x86
+		{B926DBEA-201F-4D25-AABD-92D6AC3E8DBB}.Release|x86.ActiveCfg = Release|Any CPU
+		{A9EBA232-0922-464B-89FB-06A5A58CA966}.Debug|x86.ActiveCfg = Debug|x86
+		{A9EBA232-0922-464B-89FB-06A5A58CA966}.Debug|x86.Build.0 = Debug|x86
+		{A9EBA232-0922-464B-89FB-06A5A58CA966}.Release|x86.ActiveCfg = Release|x86
+		{A9EBA232-0922-464B-89FB-06A5A58CA966}.Release|x86.Build.0 = Release|x86
+		{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02}.Debug|x86.ActiveCfg = Debug|x86
+		{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02}.Debug|x86.Build.0 = Debug|x86
+		{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02}.Release|x86.ActiveCfg = Release|x86
+		{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02}.Release|x86.Build.0 = Release|x86
+		{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545}.Debug|x86.ActiveCfg = Debug|x86
+		{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545}.Debug|x86.Build.0 = Debug|x86
+		{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545}.Release|x86.ActiveCfg = Release|x86
+		{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545}.Release|x86.Build.0 = Release|x86
+		{107C2E3B-C328-4FE8-ABFB-C26B30ECB2A0}.Debug|x86.ActiveCfg = Debug|x86
+		{107C2E3B-C328-4FE8-ABFB-C26B30ECB2A0}.Debug|x86.Build.0 = Debug|x86
+		{107C2E3B-C328-4FE8-ABFB-C26B30ECB2A0}.Release|x86.ActiveCfg = Release|Any CPU
+		{B0244D23-8077-4045-9721-6F673C425CBC}.Debug|x86.ActiveCfg = Debug|x86
+		{B0244D23-8077-4045-9721-6F673C425CBC}.Debug|x86.Build.0 = Debug|x86
+		{B0244D23-8077-4045-9721-6F673C425CBC}.Release|x86.ActiveCfg = Release|x86
+		{B0244D23-8077-4045-9721-6F673C425CBC}.Release|x86.Build.0 = Release|x86
+		{4CB36472-BAC1-4E00-8C16-72DEFAEC5A88}.Debug|x86.ActiveCfg = Debug|x86
+		{4CB36472-BAC1-4E00-8C16-72DEFAEC5A88}.Debug|x86.Build.0 = Debug|x86
+		{4CB36472-BAC1-4E00-8C16-72DEFAEC5A88}.Release|x86.ActiveCfg = Release|Any CPU
+		{662C5204-E831-432E-A033-C0758B49549F}.Debug|x86.ActiveCfg = Debug|x86
+		{662C5204-E831-432E-A033-C0758B49549F}.Debug|x86.Build.0 = Debug|x86
+		{662C5204-E831-432E-A033-C0758B49549F}.Release|x86.ActiveCfg = Release|x86
+		{662C5204-E831-432E-A033-C0758B49549F}.Release|x86.Build.0 = Release|x86
+		{09FB81E9-2E69-49ED-AFF3-181CA8DFC557}.Debug|x86.ActiveCfg = Debug|x86
+		{09FB81E9-2E69-49ED-AFF3-181CA8DFC557}.Debug|x86.Build.0 = Debug|x86
+		{09FB81E9-2E69-49ED-AFF3-181CA8DFC557}.Release|x86.ActiveCfg = Release|Any CPU
+		{F4E0C7D2-06BA-4CE2-B873-86E6279E8599}.Debug|x86.ActiveCfg = Debug|x86
+		{F4E0C7D2-06BA-4CE2-B873-86E6279E8599}.Debug|x86.Build.0 = Debug|x86
+		{F4E0C7D2-06BA-4CE2-B873-86E6279E8599}.Release|x86.ActiveCfg = Release|x86
+		{F4E0C7D2-06BA-4CE2-B873-86E6279E8599}.Release|x86.Build.0 = Release|x86
+		{0595200E-EFC3-45A6-8907-8E35566FBD31}.Debug|x86.ActiveCfg = Debug|x86
+		{0595200E-EFC3-45A6-8907-8E35566FBD31}.Debug|x86.Build.0 = Debug|x86
+		{0595200E-EFC3-45A6-8907-8E35566FBD31}.Release|x86.ActiveCfg = Release|x86
+		{0595200E-EFC3-45A6-8907-8E35566FBD31}.Release|x86.Build.0 = Release|x86
+		{BFC185E1-2542-43C1-A0FC-92FF217E060C}.Debug|x86.ActiveCfg = Debug|x86
+		{BFC185E1-2542-43C1-A0FC-92FF217E060C}.Debug|x86.Build.0 = Debug|x86
+		{BFC185E1-2542-43C1-A0FC-92FF217E060C}.Release|x86.ActiveCfg = Release|Any CPU
+		{94DD7625-1F3A-47AF-BFFA-0B4DAA837C71}.Debug|x86.ActiveCfg = Debug|x86
+		{94DD7625-1F3A-47AF-BFFA-0B4DAA837C71}.Debug|x86.Build.0 = Debug|x86
+		{94DD7625-1F3A-47AF-BFFA-0B4DAA837C71}.Release|x86.ActiveCfg = Release|Any CPU
+		{9627567A-1AEA-4C46-B730-CB53BA35192F}.Debug|x86.ActiveCfg = Debug|x86
+		{9627567A-1AEA-4C46-B730-CB53BA35192F}.Debug|x86.Build.0 = Debug|x86
+		{9627567A-1AEA-4C46-B730-CB53BA35192F}.Release|x86.ActiveCfg = Release|x86
+		{9627567A-1AEA-4C46-B730-CB53BA35192F}.Release|x86.Build.0 = Release|x86
+		{43F7E763-44C8-43E4-885F-DF5C3D7F7378}.Debug|x86.ActiveCfg = Debug|x86
+		{43F7E763-44C8-43E4-885F-DF5C3D7F7378}.Debug|x86.Build.0 = Debug|x86
+		{43F7E763-44C8-43E4-885F-DF5C3D7F7378}.Release|x86.ActiveCfg = Release|x86
+		{43F7E763-44C8-43E4-885F-DF5C3D7F7378}.Release|x86.Build.0 = Release|x86
+		{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA}.Debug|x86.ActiveCfg = Debug|x86
+		{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA}.Debug|x86.Build.0 = Debug|x86
+		{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA}.Release|x86.ActiveCfg = Release|x86
+		{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA}.Release|x86.Build.0 = Release|x86
+		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Debug|x86.ActiveCfg = Debug|x86
+		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Debug|x86.Build.0 = Debug|x86
+		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Release|x86.ActiveCfg = Release|Any CPU
+		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Debug|x86.ActiveCfg = Debug|x86
+		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Debug|x86.Build.0 = Debug|x86
+		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Release|x86.ActiveCfg = Release|x86
+		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Release|x86.Build.0 = Release|x86
+		{ADC7FB43-2309-4D0C-A4F2-ACEB5A8B41BB}.Debug|x86.ActiveCfg = Debug|x86
+		{ADC7FB43-2309-4D0C-A4F2-ACEB5A8B41BB}.Debug|x86.Build.0 = Debug|x86
+		{ADC7FB43-2309-4D0C-A4F2-ACEB5A8B41BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{6AA8BD72-3644-4CCF-B917-19D5790A90B7}.Debug|x86.ActiveCfg = Debug|x86
+		{6AA8BD72-3644-4CCF-B917-19D5790A90B7}.Debug|x86.Build.0 = Debug|x86
+		{6AA8BD72-3644-4CCF-B917-19D5790A90B7}.Release|x86.ActiveCfg = Release|x86
+		{6AA8BD72-3644-4CCF-B917-19D5790A90B7}.Release|x86.Build.0 = Release|x86
+		{851D7800-F77F-45CB-9481-8861F92EC994}.Debug|x86.ActiveCfg = Debug|x86
+		{851D7800-F77F-45CB-9481-8861F92EC994}.Debug|x86.Build.0 = Debug|x86
+		{851D7800-F77F-45CB-9481-8861F92EC994}.Release|x86.ActiveCfg = Release|Any CPU
+		{391256F5-5E7B-4EFC-B5E4-647F9D169307}.Debug|x86.ActiveCfg = Debug|x86
+		{391256F5-5E7B-4EFC-B5E4-647F9D169307}.Debug|x86.Build.0 = Debug|x86
+		{391256F5-5E7B-4EFC-B5E4-647F9D169307}.Release|x86.ActiveCfg = Release|x86
+		{391256F5-5E7B-4EFC-B5E4-647F9D169307}.Release|x86.Build.0 = Release|x86
+		{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912}.Debug|x86.ActiveCfg = Debug|x86
+		{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912}.Debug|x86.Build.0 = Debug|x86
+		{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D62B319-CD32-4AA3-95CB-A36B6D9D2174}.Debug|x86.ActiveCfg = Debug|x86
+		{1D62B319-CD32-4AA3-95CB-A36B6D9D2174}.Debug|x86.Build.0 = Debug|x86
+		{1D62B319-CD32-4AA3-95CB-A36B6D9D2174}.Release|x86.ActiveCfg = Release|x86
+		{1D62B319-CD32-4AA3-95CB-A36B6D9D2174}.Release|x86.Build.0 = Release|x86
+		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Debug|x86.ActiveCfg = Debug|x86
+		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Debug|x86.Build.0 = Debug|x86
+		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Release|x86.ActiveCfg = Release|Any CPU
+		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Debug|x86.ActiveCfg = Debug|x86
+		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Debug|x86.Build.0 = Debug|x86
+		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Release|x86.ActiveCfg = Release|x86
+		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Release|x86.Build.0 = Release|x86
+		{94B02B2C-548A-4125-9D3E-3732959493DF}.Debug|x86.ActiveCfg = Debug|x86
+		{94B02B2C-548A-4125-9D3E-3732959493DF}.Debug|x86.Build.0 = Debug|x86
+		{94B02B2C-548A-4125-9D3E-3732959493DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{7D5BF49F-88FA-4E1A-8158-2C2BE7382948}.Debug|x86.ActiveCfg = Debug|x86
+		{7D5BF49F-88FA-4E1A-8158-2C2BE7382948}.Debug|x86.Build.0 = Debug|x86
+		{7D5BF49F-88FA-4E1A-8158-2C2BE7382948}.Release|x86.ActiveCfg = Release|x86
+		{7D5BF49F-88FA-4E1A-8158-2C2BE7382948}.Release|x86.Build.0 = Release|x86
+		{17B468B5-87A2-4AEA-B573-9EFEF92BE91F}.Debug|x86.ActiveCfg = Debug|x86
+		{17B468B5-87A2-4AEA-B573-9EFEF92BE91F}.Debug|x86.Build.0 = Debug|x86
+		{17B468B5-87A2-4AEA-B573-9EFEF92BE91F}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF541F9A-665B-474C-B47F-114E9BB2BF9C}.Debug|x86.ActiveCfg = Debug|x86
+		{DF541F9A-665B-474C-B47F-114E9BB2BF9C}.Debug|x86.Build.0 = Debug|x86
+		{DF541F9A-665B-474C-B47F-114E9BB2BF9C}.Release|x86.ActiveCfg = Release|x86
+		{DF541F9A-665B-474C-B47F-114E9BB2BF9C}.Release|x86.Build.0 = Release|x86
+		{C94326E0-1B64-472F-8C06-9470EA31FFF2}.Debug|x86.ActiveCfg = Debug|x86
+		{C94326E0-1B64-472F-8C06-9470EA31FFF2}.Debug|x86.Build.0 = Debug|x86
+		{C94326E0-1B64-472F-8C06-9470EA31FFF2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1CE4EB5-E292-40BE-8C6F-F954F578B98F}.Debug|x86.ActiveCfg = Debug|x86
+		{C1CE4EB5-E292-40BE-8C6F-F954F578B98F}.Debug|x86.Build.0 = Debug|x86
+		{C1CE4EB5-E292-40BE-8C6F-F954F578B98F}.Release|x86.ActiveCfg = Release|x86
+		{C1CE4EB5-E292-40BE-8C6F-F954F578B98F}.Release|x86.Build.0 = Release|x86
+		{12F09142-4F2F-48A4-AD84-3565A0EC82F9}.Debug|x86.ActiveCfg = Debug|x86
+		{12F09142-4F2F-48A4-AD84-3565A0EC82F9}.Debug|x86.Build.0 = Debug|x86
+		{12F09142-4F2F-48A4-AD84-3565A0EC82F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{70201307-97B3-494F-A297-AFC395ABCD51}.Debug|x86.ActiveCfg = Debug|x86
+		{70201307-97B3-494F-A297-AFC395ABCD51}.Debug|x86.Build.0 = Debug|x86
+		{70201307-97B3-494F-A297-AFC395ABCD51}.Release|x86.ActiveCfg = Release|x86
+		{70201307-97B3-494F-A297-AFC395ABCD51}.Release|x86.Build.0 = Release|x86
+		{96752C22-3565-4247-B389-88194A7612FE}.Debug|x86.ActiveCfg = Debug|x86
+		{96752C22-3565-4247-B389-88194A7612FE}.Debug|x86.Build.0 = Debug|x86
+		{96752C22-3565-4247-B389-88194A7612FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{58111CB6-816E-4C97-8552-013489E6D2BA}.Debug|x86.ActiveCfg = Debug|x86
+		{58111CB6-816E-4C97-8552-013489E6D2BA}.Debug|x86.Build.0 = Debug|x86
+		{58111CB6-816E-4C97-8552-013489E6D2BA}.Release|x86.ActiveCfg = Release|x86
+		{58111CB6-816E-4C97-8552-013489E6D2BA}.Release|x86.Build.0 = Release|x86
+		{E47E2D3E-4DC5-404F-B619-A8739F6F7958}.Debug|x86.ActiveCfg = Debug|x86
+		{E47E2D3E-4DC5-404F-B619-A8739F6F7958}.Debug|x86.Build.0 = Debug|x86
+		{E47E2D3E-4DC5-404F-B619-A8739F6F7958}.Release|x86.ActiveCfg = Release|Any CPU
+		{E85C768D-C17B-4A56-8A32-696BD32D5772}.Debug|x86.ActiveCfg = Debug|x86
+		{E85C768D-C17B-4A56-8A32-696BD32D5772}.Debug|x86.Build.0 = Debug|x86
+		{E85C768D-C17B-4A56-8A32-696BD32D5772}.Release|x86.ActiveCfg = Release|x86
+		{E85C768D-C17B-4A56-8A32-696BD32D5772}.Release|x86.Build.0 = Release|x86
+		{84B79CAD-6096-4579-B92E-727C962F91A1}.Debug|x86.ActiveCfg = Debug|x86
+		{84B79CAD-6096-4579-B92E-727C962F91A1}.Debug|x86.Build.0 = Debug|x86
+		{84B79CAD-6096-4579-B92E-727C962F91A1}.Release|x86.ActiveCfg = Release|x86
+		{84B79CAD-6096-4579-B92E-727C962F91A1}.Release|x86.Build.0 = Release|x86
+		{46C4C4B3-BFFF-44FD-B29E-C06AC19527C4}.Debug|x86.ActiveCfg = Debug|x86
+		{46C4C4B3-BFFF-44FD-B29E-C06AC19527C4}.Debug|x86.Build.0 = Debug|x86
+		{46C4C4B3-BFFF-44FD-B29E-C06AC19527C4}.Release|x86.ActiveCfg = Release|Any CPU
+		{F166F527-A0AA-4728-8E5E-18A70CD8ADF2}.Debug|x86.ActiveCfg = Debug|x86
+		{F166F527-A0AA-4728-8E5E-18A70CD8ADF2}.Debug|x86.Build.0 = Debug|x86
+		{F166F527-A0AA-4728-8E5E-18A70CD8ADF2}.Release|x86.ActiveCfg = Release|x86
+		{F166F527-A0AA-4728-8E5E-18A70CD8ADF2}.Release|x86.Build.0 = Release|x86
+		{C86D02C6-7CE4-450A-98EB-2379AA3CEF84}.Debug|x86.ActiveCfg = Debug|x86
+		{C86D02C6-7CE4-450A-98EB-2379AA3CEF84}.Debug|x86.Build.0 = Debug|x86
+		{C86D02C6-7CE4-450A-98EB-2379AA3CEF84}.Release|x86.ActiveCfg = Release|x86
+		{C86D02C6-7CE4-450A-98EB-2379AA3CEF84}.Release|x86.Build.0 = Release|x86
+		{38C9E4CB-7884-41DC-BF8A-81828364A185}.Debug|x86.ActiveCfg = Debug|x86
+		{38C9E4CB-7884-41DC-BF8A-81828364A185}.Debug|x86.Build.0 = Debug|x86
+		{38C9E4CB-7884-41DC-BF8A-81828364A185}.Release|x86.ActiveCfg = Release|x86
+		{38C9E4CB-7884-41DC-BF8A-81828364A185}.Release|x86.Build.0 = Release|x86
+		{7AD60BE5-3F7A-4955-A936-CAC0E8B0848A}.Debug|x86.ActiveCfg = Debug|x86
+		{7AD60BE5-3F7A-4955-A936-CAC0E8B0848A}.Debug|x86.Build.0 = Debug|x86
+		{7AD60BE5-3F7A-4955-A936-CAC0E8B0848A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4731682F-71C8-40C1-A50B-7FDB96877460}.Debug|x86.ActiveCfg = Debug|x86
+		{4731682F-71C8-40C1-A50B-7FDB96877460}.Debug|x86.Build.0 = Debug|x86
+		{4731682F-71C8-40C1-A50B-7FDB96877460}.Release|x86.ActiveCfg = Release|Any CPU
+		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Debug|x86.ActiveCfg = Debug|x86
+		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Debug|x86.Build.0 = Debug|x86
+		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Release|x86.ActiveCfg = Release|x86
+		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Release|x86.Build.0 = Release|x86
+		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Debug|x86.ActiveCfg = Debug|x86
+		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Debug|x86.Build.0 = Debug|x86
+		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Release|x86.ActiveCfg = Release|Any CPU
+		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Debug|x86.ActiveCfg = Debug|x86
+		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Debug|x86.Build.0 = Debug|x86
+		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Release|x86.ActiveCfg = Release|x86
+		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Release|x86.Build.0 = Release|x86
+		{A9BBF3B9-0C5E-47C6-8518-6CA3965C3BC1}.Debug|x86.ActiveCfg = Debug|x86
+		{A9BBF3B9-0C5E-47C6-8518-6CA3965C3BC1}.Debug|x86.Build.0 = Debug|x86
+		{A9BBF3B9-0C5E-47C6-8518-6CA3965C3BC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{9152A612-848F-4F1F-9ADD-1B607ECA8668}.Debug|x86.ActiveCfg = Debug|x86
+		{9152A612-848F-4F1F-9ADD-1B607ECA8668}.Debug|x86.Build.0 = Debug|x86
+		{9152A612-848F-4F1F-9ADD-1B607ECA8668}.Release|x86.ActiveCfg = Release|x86
+		{9152A612-848F-4F1F-9ADD-1B607ECA8668}.Release|x86.Build.0 = Release|x86
+		{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE}.Debug|x86.ActiveCfg = Debug|x86
+		{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE}.Debug|x86.Build.0 = Debug|x86
+		{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE}.Release|x86.ActiveCfg = Release|x86
+		{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE}.Release|x86.Build.0 = Release|x86
+		{855D2CD1-1E6D-4D82-82D0-A8474D8721C0}.Debug|x86.ActiveCfg = Debug|x86
+		{855D2CD1-1E6D-4D82-82D0-A8474D8721C0}.Debug|x86.Build.0 = Debug|x86
+		{855D2CD1-1E6D-4D82-82D0-A8474D8721C0}.Release|x86.ActiveCfg = Release|x86
+		{855D2CD1-1E6D-4D82-82D0-A8474D8721C0}.Release|x86.Build.0 = Release|x86
+		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Debug|x86.ActiveCfg = Debug|x86
+		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Debug|x86.Build.0 = Debug|x86
+		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Release|x86.ActiveCfg = Release|x86
+		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Release|x86.Build.0 = Release|x86
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|x86.ActiveCfg = Debug|x86
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|x86.Build.0 = Debug|x86
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Release|x86.ActiveCfg = Release|x86
+		{7FFD1918-A885-436E-98A3-153B28DE8135}.Release|x86.Build.0 = Release|x86
+		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Debug|x86.ActiveCfg = Debug|x86
+		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Debug|x86.Build.0 = Debug|x86
+		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Release|x86.ActiveCfg = Release|x86
+		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Release|x86.Build.0 = Release|x86
+		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Debug|x86.ActiveCfg = Debug|x86
+		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Debug|x86.Build.0 = Debug|x86
+		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Release|x86.ActiveCfg = Release|x86
+		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Release|x86.Build.0 = Release|x86
+		{1A9947A7-950B-4703-BF17-B1BA842DBB06}.Debug|x86.ActiveCfg = Debug|x86
+		{1A9947A7-950B-4703-BF17-B1BA842DBB06}.Debug|x86.Build.0 = Debug|x86
+		{1A9947A7-950B-4703-BF17-B1BA842DBB06}.Release|x86.ActiveCfg = Release|x86
+		{1A9947A7-950B-4703-BF17-B1BA842DBB06}.Release|x86.Build.0 = Release|x86
+		{3C46652E-B012-4CDF-9B90-1932AAF23CA7}.Debug|x86.ActiveCfg = Debug|x86
+		{3C46652E-B012-4CDF-9B90-1932AAF23CA7}.Debug|x86.Build.0 = Debug|x86
+		{3C46652E-B012-4CDF-9B90-1932AAF23CA7}.Release|x86.ActiveCfg = Release|x86
+		{3C46652E-B012-4CDF-9B90-1932AAF23CA7}.Release|x86.Build.0 = Release|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Debug|x86.ActiveCfg = Debug|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Debug|x86.Build.0 = Debug|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Release|x86.ActiveCfg = Release|Any CPU
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Debug|x86.ActiveCfg = Debug|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Debug|x86.Build.0 = Debug|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Debug|x86.ActiveCfg = Debug|x86
+		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Debug|x86.Build.0 = Debug|x86
+		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Release|x86.ActiveCfg = Release|x86
+		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Release|x86.Build.0 = Release|x86
+		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Debug|x86.ActiveCfg = Debug|x86
+		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Debug|x86.Build.0 = Debug|x86
+		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Release|x86.ActiveCfg = Release|x86
+		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Release|x86.Build.0 = Release|x86
+		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Debug|x86.ActiveCfg = Debug|x86
+		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Debug|x86.Build.0 = Debug|x86
+		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Release|x86.ActiveCfg = Release|x86
+		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Release|x86.Build.0 = Release|x86
+		{2CACA9E2-7616-4152-8D6E-3755185EA268}.Debug|x86.ActiveCfg = Debug|x86
+		{2CACA9E2-7616-4152-8D6E-3755185EA268}.Debug|x86.Build.0 = Debug|x86
+		{2CACA9E2-7616-4152-8D6E-3755185EA268}.Release|x86.ActiveCfg = Release|x86
+		{2CACA9E2-7616-4152-8D6E-3755185EA268}.Release|x86.Build.0 = Release|x86
+		{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7}.Debug|x86.ActiveCfg = Debug|x86
+		{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7}.Debug|x86.Build.0 = Debug|x86
+		{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7}.Release|x86.ActiveCfg = Release|x86
+		{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7}.Release|x86.Build.0 = Release|x86
+		{5827CA43-99E9-4265-BA56-6D7C39FC8528}.Debug|x86.ActiveCfg = Debug|x86
+		{5827CA43-99E9-4265-BA56-6D7C39FC8528}.Debug|x86.Build.0 = Debug|x86
+		{5827CA43-99E9-4265-BA56-6D7C39FC8528}.Release|x86.ActiveCfg = Release|x86
+		{5827CA43-99E9-4265-BA56-6D7C39FC8528}.Release|x86.Build.0 = Release|x86
+		{6925DA9E-4745-4441-A4A7-E9090E400419}.Debug|x86.ActiveCfg = Debug|x86
+		{6925DA9E-4745-4441-A4A7-E9090E400419}.Debug|x86.Build.0 = Debug|x86
+		{6925DA9E-4745-4441-A4A7-E9090E400419}.Release|x86.ActiveCfg = Release|x86
+		{6925DA9E-4745-4441-A4A7-E9090E400419}.Release|x86.Build.0 = Release|x86
+		{FD501D48-72D5-47C5-8F77-389E61DD95F0}.Debug|x86.ActiveCfg = Debug|x86
+		{FD501D48-72D5-47C5-8F77-389E61DD95F0}.Debug|x86.Build.0 = Debug|x86
+		{FD501D48-72D5-47C5-8F77-389E61DD95F0}.Release|x86.ActiveCfg = Release|x86
+		{FD501D48-72D5-47C5-8F77-389E61DD95F0}.Release|x86.Build.0 = Release|x86
+		{99074BA0-8B9C-40A2-BE91-016447E6D6EC}.Debug|x86.ActiveCfg = Debug|x86
+		{99074BA0-8B9C-40A2-BE91-016447E6D6EC}.Debug|x86.Build.0 = Debug|x86
+		{99074BA0-8B9C-40A2-BE91-016447E6D6EC}.Release|x86.ActiveCfg = Release|x86
+		{99074BA0-8B9C-40A2-BE91-016447E6D6EC}.Release|x86.Build.0 = Release|x86
+		{3C833F0E-B5E8-4929-A2C6-A2A753FD2473}.Debug|x86.ActiveCfg = Debug|x86
+		{3C833F0E-B5E8-4929-A2C6-A2A753FD2473}.Debug|x86.Build.0 = Debug|x86
+		{3C833F0E-B5E8-4929-A2C6-A2A753FD2473}.Release|x86.ActiveCfg = Release|x86
+		{3C833F0E-B5E8-4929-A2C6-A2A753FD2473}.Release|x86.Build.0 = Release|x86
+		{B3816FC2-EA0D-4472-B48A-D88F6FB6555C}.Debug|x86.ActiveCfg = Debug|x86
+		{B3816FC2-EA0D-4472-B48A-D88F6FB6555C}.Debug|x86.Build.0 = Debug|x86
+		{B3816FC2-EA0D-4472-B48A-D88F6FB6555C}.Release|x86.ActiveCfg = Release|x86
+		{B3816FC2-EA0D-4472-B48A-D88F6FB6555C}.Release|x86.Build.0 = Release|x86
+		{FE959977-CE20-47AE-812F-08F9392674CE}.Debug|x86.ActiveCfg = Debug|x86
+		{FE959977-CE20-47AE-812F-08F9392674CE}.Debug|x86.Build.0 = Debug|x86
+		{FE959977-CE20-47AE-812F-08F9392674CE}.Release|x86.ActiveCfg = Release|x86
+		{FE959977-CE20-47AE-812F-08F9392674CE}.Release|x86.Build.0 = Release|x86
+		{B579A381-9D90-4CC5-B9A4-D7F1E369EE18}.Debug|x86.ActiveCfg = Debug|x86
+		{B579A381-9D90-4CC5-B9A4-D7F1E369EE18}.Debug|x86.Build.0 = Debug|x86
+		{B579A381-9D90-4CC5-B9A4-D7F1E369EE18}.Release|x86.ActiveCfg = Release|x86
+		{B579A381-9D90-4CC5-B9A4-D7F1E369EE18}.Release|x86.Build.0 = Release|x86
+		{A1093AF7-BD96-4B67-BA34-262267D7E9A3}.Debug|x86.ActiveCfg = Debug|x86
+		{A1093AF7-BD96-4B67-BA34-262267D7E9A3}.Debug|x86.Build.0 = Debug|x86
+		{A1093AF7-BD96-4B67-BA34-262267D7E9A3}.Release|x86.ActiveCfg = Release|x86
+		{A1093AF7-BD96-4B67-BA34-262267D7E9A3}.Release|x86.Build.0 = Release|x86
+		{931933A5-2EEB-4973-8140-E4B73ED4DDD7}.Debug|x86.ActiveCfg = Debug|x86
+		{931933A5-2EEB-4973-8140-E4B73ED4DDD7}.Debug|x86.Build.0 = Debug|x86
+		{931933A5-2EEB-4973-8140-E4B73ED4DDD7}.Release|x86.ActiveCfg = Release|x86
+		{931933A5-2EEB-4973-8140-E4B73ED4DDD7}.Release|x86.Build.0 = Release|x86
+		{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE}.Debug|x86.ActiveCfg = Debug|x86
+		{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE}.Debug|x86.Build.0 = Debug|x86
+		{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE}.Release|x86.ActiveCfg = Release|x86
+		{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE}.Release|x86.Build.0 = Release|x86
+		{B099D483-F560-4582-8F20-01D5D396F0EF}.Debug|x86.ActiveCfg = Debug|x86
+		{B099D483-F560-4582-8F20-01D5D396F0EF}.Debug|x86.Build.0 = Debug|x86
+		{B099D483-F560-4582-8F20-01D5D396F0EF}.Release|x86.ActiveCfg = Release|x86
+		{B099D483-F560-4582-8F20-01D5D396F0EF}.Release|x86.Build.0 = Release|x86
+		{CB680F8D-DCCA-4EF0-8F6F-31971E35348E}.Debug|x86.ActiveCfg = Debug|x86
+		{CB680F8D-DCCA-4EF0-8F6F-31971E35348E}.Debug|x86.Build.0 = Debug|x86
+		{CB680F8D-DCCA-4EF0-8F6F-31971E35348E}.Release|x86.ActiveCfg = Release|x86
+		{CB680F8D-DCCA-4EF0-8F6F-31971E35348E}.Release|x86.Build.0 = Release|x86
+		{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E}.Debug|x86.ActiveCfg = Debug|x86
+		{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E}.Debug|x86.Build.0 = Debug|x86
+		{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E}.Release|x86.ActiveCfg = Release|x86
+		{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E}.Release|x86.Build.0 = Release|x86
+		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Debug|x86.ActiveCfg = Debug|x86
+		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Debug|x86.Build.0 = Debug|x86
+		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Release|x86.ActiveCfg = Release|x86
+		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Release|x86.Build.0 = Release|x86
+		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Debug|x86.ActiveCfg = Debug|x86
+		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Debug|x86.Build.0 = Debug|x86
+		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Release|x86.ActiveCfg = Release|x86
+		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Release|x86.Build.0 = Release|x86
+		{DD2D4893-E1E4-4932-A229-1A232328F380}.Debug|x86.ActiveCfg = Debug|x86
+		{DD2D4893-E1E4-4932-A229-1A232328F380}.Debug|x86.Build.0 = Debug|x86
+		{DD2D4893-E1E4-4932-A229-1A232328F380}.Release|x86.ActiveCfg = Release|x86
+		{DD2D4893-E1E4-4932-A229-1A232328F380}.Release|x86.Build.0 = Release|x86
+		{9B28CB65-7B07-42E3-80B7-CD0875F47779}.Debug|x86.ActiveCfg = Debug|x86
+		{9B28CB65-7B07-42E3-80B7-CD0875F47779}.Debug|x86.Build.0 = Debug|x86
+		{9B28CB65-7B07-42E3-80B7-CD0875F47779}.Release|x86.ActiveCfg = Release|x86
+		{9B28CB65-7B07-42E3-80B7-CD0875F47779}.Release|x86.Build.0 = Release|x86
+		{27B097F6-D49A-4B69-B10C-FD6020D59A0E}.Debug|x86.ActiveCfg = Debug|x86
+		{27B097F6-D49A-4B69-B10C-FD6020D59A0E}.Debug|x86.Build.0 = Debug|x86
+		{27B097F6-D49A-4B69-B10C-FD6020D59A0E}.Release|x86.ActiveCfg = Release|x86
+		{27B097F6-D49A-4B69-B10C-FD6020D59A0E}.Release|x86.Build.0 = Release|x86
+		{302381E0-FBEE-4A93-9B9D-FF7B985D24D1}.Debug|x86.ActiveCfg = Debug|x86
+		{302381E0-FBEE-4A93-9B9D-FF7B985D24D1}.Debug|x86.Build.0 = Debug|x86
+		{302381E0-FBEE-4A93-9B9D-FF7B985D24D1}.Release|x86.ActiveCfg = Release|x86
+		{302381E0-FBEE-4A93-9B9D-FF7B985D24D1}.Release|x86.Build.0 = Release|x86
+		{629D040E-51BE-4F83-8F33-7526E6F73F3D}.Debug|x86.ActiveCfg = Debug|x86
+		{629D040E-51BE-4F83-8F33-7526E6F73F3D}.Debug|x86.Build.0 = Debug|x86
+		{629D040E-51BE-4F83-8F33-7526E6F73F3D}.Release|x86.ActiveCfg = Release|x86
+		{629D040E-51BE-4F83-8F33-7526E6F73F3D}.Release|x86.Build.0 = Release|x86
+		{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783}.Debug|x86.ActiveCfg = Debug|x86
+		{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783}.Debug|x86.Build.0 = Debug|x86
+		{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783}.Release|x86.ActiveCfg = Release|x86
+		{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783}.Release|x86.Build.0 = Release|x86
+		{9BD8AC70-360B-40CE-A0D6-971B85BB90C3}.Debug|x86.ActiveCfg = Debug|x86
+		{9BD8AC70-360B-40CE-A0D6-971B85BB90C3}.Debug|x86.Build.0 = Debug|x86
+		{9BD8AC70-360B-40CE-A0D6-971B85BB90C3}.Release|x86.ActiveCfg = Release|x86
+		{9BD8AC70-360B-40CE-A0D6-971B85BB90C3}.Release|x86.Build.0 = Release|x86
+		{E2035C6B-2842-473A-BC4D-D986E373ECD6}.Debug|x86.ActiveCfg = Debug|x86
+		{E2035C6B-2842-473A-BC4D-D986E373ECD6}.Debug|x86.Build.0 = Debug|x86
+		{E2035C6B-2842-473A-BC4D-D986E373ECD6}.Release|x86.ActiveCfg = Release|x86
+		{E2035C6B-2842-473A-BC4D-D986E373ECD6}.Release|x86.Build.0 = Release|x86
+		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Debug|x86.ActiveCfg = Debug|x86
+		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Debug|x86.Build.0 = Debug|x86
+		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Release|x86.ActiveCfg = Release|x86
+		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Release|x86.Build.0 = Release|x86
+		{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7}.Debug|x86.ActiveCfg = Debug|x86
+		{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7}.Debug|x86.Build.0 = Debug|x86
+		{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7}.Release|x86.ActiveCfg = Release|x86
+		{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7}.Release|x86.Build.0 = Release|x86
+		{D7CB10B3-A549-4A6F-8287-8A4ED39CF370}.Debug|x86.ActiveCfg = Debug|x86
+		{D7CB10B3-A549-4A6F-8287-8A4ED39CF370}.Debug|x86.Build.0 = Debug|x86
+		{D7CB10B3-A549-4A6F-8287-8A4ED39CF370}.Release|x86.ActiveCfg = Release|x86
+		{D7CB10B3-A549-4A6F-8287-8A4ED39CF370}.Release|x86.Build.0 = Release|x86
+		{8A407946-892A-4C2C-AD7F-6B64EF9D78CA}.Debug|x86.ActiveCfg = Debug|x86
+		{8A407946-892A-4C2C-AD7F-6B64EF9D78CA}.Debug|x86.Build.0 = Debug|x86
+		{8A407946-892A-4C2C-AD7F-6B64EF9D78CA}.Release|x86.ActiveCfg = Release|x86
+		{8A407946-892A-4C2C-AD7F-6B64EF9D78CA}.Release|x86.Build.0 = Release|x86
+		{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6}.Debug|x86.ActiveCfg = Debug|x86
+		{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6}.Debug|x86.Build.0 = Debug|x86
+		{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6}.Release|x86.ActiveCfg = Release|x86
+		{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6}.Release|x86.Build.0 = Release|x86
+		{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8}.Debug|x86.ActiveCfg = Debug|x86
+		{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8}.Debug|x86.Build.0 = Debug|x86
+		{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8}.Release|x86.ActiveCfg = Release|x86
+		{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8}.Release|x86.Build.0 = Release|x86
+		{908136DF-602E-4EBC-883A-C237BFC1DCE7}.Debug|x86.ActiveCfg = Debug|x86
+		{908136DF-602E-4EBC-883A-C237BFC1DCE7}.Debug|x86.Build.0 = Debug|x86
+		{908136DF-602E-4EBC-883A-C237BFC1DCE7}.Release|x86.ActiveCfg = Release|x86
+		{908136DF-602E-4EBC-883A-C237BFC1DCE7}.Release|x86.Build.0 = Release|x86
+		{ECD4E9A3-8EDD-4958-B26A-DCC384181390}.Debug|x86.ActiveCfg = Debug|x86
+		{ECD4E9A3-8EDD-4958-B26A-DCC384181390}.Debug|x86.Build.0 = Debug|x86
+		{ECD4E9A3-8EDD-4958-B26A-DCC384181390}.Release|x86.ActiveCfg = Release|x86
+		{ECD4E9A3-8EDD-4958-B26A-DCC384181390}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ADCC6D2-D794-41D7-9C82-C85F67A2F136} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{101619EB-00AE-48C4-821C-5F0F82C370FE} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{5ED222BC-B9E3-4213-8F6C-4490226D8C79} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{EC241287-DEC7-4C7C-A6CA-1102A8FC3AF7} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{AFA8702A-A9DF-466B-8910-8594060FB218} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{A1EDD355-83E3-4067-A43D-38CCB8275A17} = {A1086397-6B24-4266-BFFC-E7DAD499D145}
+		{CB2A4627-E6F6-42CF-8068-2FAF114685AE} = {4E2CC77C-B230-4BFB-8057-162576B38427}
+		{B86EC490-BF34-4917-828F-81EA71612796} = {4E2CC77C-B230-4BFB-8057-162576B38427}
+		{D7B497DC-D4FB-46DF-997B-4A3267934936} = {4E2CC77C-B230-4BFB-8057-162576B38427}
+		{6EFB679A-3156-4E2A-BC2D-B4D39AEBDFAE} = {4E2CC77C-B230-4BFB-8057-162576B38427}
+		{A24C1D39-C464-4166-935E-43F1832D0FCF} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{9BA92CE8-D71C-4C28-97C8-40B8167BEF67} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{92E470AA-2022-4C09-90EB-30960BC06C6C} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{4FFE16F3-6A8F-4CD1-A476-3E313114E19C} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{5F87F7E3-12F7-4751-BF10-0E46080C39C3} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{C5A57EC4-CEFB-4584-82DD-122DA1DA768F} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{9C0FE3A3-2F78-4755-B60A-5EB4A74962A3} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{587B465D-F2B0-4383-916D-6D0BE253F877} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{148F042F-F34C-4151-857C-786CE2C28EF4} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{F49DE791-143A-46C0-87B9-5A2DCB43805F} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{1F6CD9FF-04E2-414D-9549-D14474B8EC87} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{118C571C-7E4F-4237-8991-AE44D4424253} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{623AD8D6-0C73-4F5C-A710-48A8C14B75D2} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{45CBC321-B5B3-4820-B15D-29FEAF694A85} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{CFAB9D10-0657-4CE6-B0A0-3C65665D5FE4} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{5B1F7873-5887-469E-874B-44556DFC7C17} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{2CBC780B-D44B-4E84-A695-DC131B10EFA4} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{8C9EA45B-9250-40C3-A23F-207A05496C5B} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{E984CC3C-064C-4347-94D8-E027C8CEC4FB} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{68855640-2657-4757-AE23-D1EDFBF67D8C} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{5C3B6FFA-D634-4BAF-9DE9-375C3E2511D0} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{865E6640-2813-4D92-8131-8FB24DB6F05D} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{A49834C8-DFE1-4BA1-B733-28F137694A44} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{B4C60DC7-9EF0-4D4A-9DD8-778BA1BDADFC} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{D0682FED-9E7A-4AEB-ABDF-39ACB231C63A} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{4057817D-E5F6-4606-953D-A8BB4D7456EE} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{AE838D99-1D68-4FF2-AB68-7A9E79C6A9C7} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{8EC8BC0A-2B14-48E6-A203-19204A5C42C9} = {9E1C5754-9A42-43C2-BCA1-E42A63757B7D}
+		{E56975F0-CD8E-40D3-A845-A17946EF30AA} = {97FF442C-D027-4025-B904-8484BB58C959}
+		{4DCBE8B7-DD21-4CD2-AAA8-7E4501755A42} = {97FF442C-D027-4025-B904-8484BB58C959}
+		{764284B6-4967-46F7-B0DF-A40690141941} = {97FF442C-D027-4025-B904-8484BB58C959}
+		{57045823-B310-44CC-AB8E-8C39E5C2C173} = {97FF442C-D027-4025-B904-8484BB58C959}
+		{1DE7F396-FD97-406E-8362-3E255347D605} = {47E245AA-2E8E-4ED5-A3B5-3D01742160FF}
+		{8EEBB009-4BC3-4EF6-9D69-9C4DB9B76213} = {47E245AA-2E8E-4ED5-A3B5-3D01742160FF}
+		{591F1421-C617-4C67-B869-02B98D3B447B} = {47E245AA-2E8E-4ED5-A3B5-3D01742160FF}
+		{4226D4DC-7C3C-4E5D-AEA4-0B8DCABF07B3} = {47E245AA-2E8E-4ED5-A3B5-3D01742160FF}
+		{FBFF40A0-1E8E-472A-91DC-4F59AD71794F} = {47E245AA-2E8E-4ED5-A3B5-3D01742160FF}
+		{B715AC35-6232-4B86-A54D-581F67DA0193} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{C99B6A57-BD42-4AF9-8A0D-B50316B007D9} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{AF0445B9-A7A1-4C77-A37D-E45469EE2E3E} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{65E072FD-B479-4456-99EA-050F749954F0} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{60E3EB56-A726-4FE6-991B-9561B71E136F} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{70BA49A6-AB3B-483C-A74A-83C02DD20073} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{5F267815-8100-4033-A3EE-CB460A6F060D} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{286FE62A-5CCB-4992-A71F-505F4D51EFF0} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{07F81E3E-08CA-44D7-9004-E21203F7A2C4} = {B571E393-20CA-4D21-8643-89EAE459013C}
+		{D1B404BA-480E-4E9E-B4CA-E877B632E798} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{4652DEF9-54F9-4DB5-A3D9-9B6907DE057D} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{7770B499-64F5-4F38-9B5E-34FB36B46D83} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{91F1879E-8C31-4475-ACF9-943E37EA87E3} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{339D9C20-0716-4A7A-9874-3E0DD3B6B4E2} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{B79E4535-8789-479E-977C-434F41AF0EA8} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{67C213D4-1AA0-4AAE-8A1F-ED6E0A54F329} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{A8118ADC-7A72-4EA3-B389-4F3F17F8882C} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{EF387ED6-12DA-4BC5-B002-A369045AD7D0} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{15F31E2C-7A4B-4826-AFF1-24769292031B} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{9029ADB7-F38D-4180-BBC6-E1B7B4EE265C} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{94BCD97F-5C20-4DE4-A9B0-B0950742E973} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{DD13DFB8-7492-439E-8B0C-F8C606E2BDC7} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{AC0EA598-1AB5-40C8-8995-FD2786BFBC83} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{5A28671D-B27A-4915-B507-DAF67E4B0242} = {D04B2298-FA86-434F-A7B4-EBE20B67A2C1}
+		{937C3D03-6DF3-4DB8-B2D5-D74A6B8DB2A2} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{9E11DCEC-BD1B-4313-AA37-01E812BF8728} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{6C71D218-D090-483C-B2A9-FA2091A01515} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{222BB989-0ECD-41DB-A443-FE41BF76C8A3} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{3F634476-B3D3-4919-9E30-E8AFEA8E1876} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{BBAA9C2C-5477-4883-804F-5D117EA5B531} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{E731C826-FB17-4161-AE89-C18C99DEDCE7} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{5F6BA9BB-9CC1-49DF-BFEE-76EFB2EAB0D4} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{2B8AED62-3BFA-4238-B328-BD363A166A26} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{97A3152F-68C3-49DD-A74E-7E31CB944A52} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{44AFED19-72A9-4E70-8E6A-99096367F6D1} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{5A0A3D3B-737A-4D13-993B-A84FB6F5E660} = {8F330DC3-BC42-41E7-900F-85768A701CFC}
+		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7} = {2ADCC6D2-D794-41D7-9C82-C85F67A2F136}
+		{C0C621FB-87C1-4F3F-8E41-8F9193313B71} = {2ADCC6D2-D794-41D7-9C82-C85F67A2F136}
+		{B29C75EB-84FA-4284-A5EC-14ADE809E903} = {101619EB-00AE-48C4-821C-5F0F82C370FE}
+		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E} = {101619EB-00AE-48C4-821C-5F0F82C370FE}
+		{F36E7336-FCC2-4820-A3DF-7438C1C32280} = {5ED222BC-B9E3-4213-8F6C-4490226D8C79}
+		{7276A9E1-32E5-4E67-B278-4FC12AB24C02} = {5ED222BC-B9E3-4213-8F6C-4490226D8C79}
+		{7C8CB5AA-0B72-4DEA-AAF8-0FA1EE854E5D} = {EC241287-DEC7-4C7C-A6CA-1102A8FC3AF7}
+		{00B95563-FFBA-41D4-8E7A-3F656272FB76} = {EC241287-DEC7-4C7C-A6CA-1102A8FC3AF7}
+		{C4729282-C7D9-4758-B732-B89ED31660A0} = {AFA8702A-A9DF-466B-8910-8594060FB218}
+		{27831D60-D975-42A4-859B-0E342366F4DF} = {AFA8702A-A9DF-466B-8910-8594060FB218}
+		{FD61AA01-3B0C-4D22-A944-D916FEB87C99} = {A1EDD355-83E3-4067-A43D-38CCB8275A17}
+		{228C4E89-E642-4855-A91C-35919B30E0CA} = {A1EDD355-83E3-4067-A43D-38CCB8275A17}
+		{FFA1AB76-6DC0-4ECA-AE7D-0DFE74F77C8F} = {CB2A4627-E6F6-42CF-8068-2FAF114685AE}
+		{5A3AB054-4564-4B42-A1EB-0915F5370F6C} = {CB2A4627-E6F6-42CF-8068-2FAF114685AE}
+		{396BFC07-5880-4DD7-AE36-4E14CF242939} = {B86EC490-BF34-4917-828F-81EA71612796}
+		{0803DD29-93DF-4C96-9C0E-D6330AE7CD68} = {B86EC490-BF34-4917-828F-81EA71612796}
+		{70EB0A86-86BF-4308-9E98-489884EB8C85} = {A24C1D39-C464-4166-935E-43F1832D0FCF}
+		{E2218418-CD57-4B71-A412-F66C33C78A95} = {A24C1D39-C464-4166-935E-43F1832D0FCF}
+		{E47E2D3E-4DC5-404F-B619-A8739F6F7958} = {9BA92CE8-D71C-4C28-97C8-40B8167BEF67}
+		{E85C768D-C17B-4A56-8A32-696BD32D5772} = {9BA92CE8-D71C-4C28-97C8-40B8167BEF67}
+		{6BEBF1ED-75BF-40C4-A08C-1D768BDBC917} = {92E470AA-2022-4C09-90EB-30960BC06C6C}
+		{C709781C-169A-45F3-A665-7AF7A9286795} = {92E470AA-2022-4C09-90EB-30960BC06C6C}
+		{81C36008-0F6F-4720-A1CB-CD8557205309} = {4FFE16F3-6A8F-4CD1-A476-3E313114E19C}
+		{978B052A-6BE0-499C-A626-7595942F10D0} = {4FFE16F3-6A8F-4CD1-A476-3E313114E19C}
+		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917} = {5F87F7E3-12F7-4751-BF10-0E46080C39C3}
+		{E6304525-1FA9-4A49-8E19-72DE123CBC34} = {5F87F7E3-12F7-4751-BF10-0E46080C39C3}
+		{3A6E13FA-EA1A-4136-B8DE-1482673D1552} = {C5A57EC4-CEFB-4584-82DD-122DA1DA768F}
+		{E4F87516-901F-4899-BE2C-38633F6F3C3A} = {C5A57EC4-CEFB-4584-82DD-122DA1DA768F}
+		{89C69D14-6866-4AD4-A574-ADB8191ABCA6} = {9C0FE3A3-2F78-4755-B60A-5EB4A74962A3}
+		{53303981-980C-40E4-8E1C-2C93ED1E8E28} = {9C0FE3A3-2F78-4755-B60A-5EB4A74962A3}
+		{40BA3B07-6A11-4725-AD81-B1F83500E715} = {587B465D-F2B0-4383-916D-6D0BE253F877}
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7} = {587B465D-F2B0-4383-916D-6D0BE253F877}
+		{502BB470-9CC3-4ECC-8435-B4A7F713712D} = {148F042F-F34C-4151-857C-786CE2C28EF4}
+		{8279E4C8-93B5-45D5-85AA-E65AEB5AB1D3} = {148F042F-F34C-4151-857C-786CE2C28EF4}
+		{C1D21814-56A6-46B2-A362-D47BEF284F80} = {F49DE791-143A-46C0-87B9-5A2DCB43805F}
+		{EFB2B98C-4FB8-434C-BA9A-7A179D712594} = {F49DE791-143A-46C0-87B9-5A2DCB43805F}
+		{0F11BFA0-F84C-4C87-B643-1F9EA42BFDF4} = {1F6CD9FF-04E2-414D-9549-D14474B8EC87}
+		{31B43760-E09F-43AE-8552-C21328818C66} = {1F6CD9FF-04E2-414D-9549-D14474B8EC87}
+		{43E36B67-134B-44B0-A759-76E2AFE6F0F8} = {118C571C-7E4F-4237-8991-AE44D4424253}
+		{BC47A57B-F924-4A73-A504-DB91BF310C8C} = {118C571C-7E4F-4237-8991-AE44D4424253}
+		{0F1BD175-A841-4151-803F-50A8468B3147} = {623AD8D6-0C73-4F5C-A710-48A8C14B75D2}
+		{DD082D56-0348-4D02-A368-487BA4CB3953} = {623AD8D6-0C73-4F5C-A710-48A8C14B75D2}
+		{3A116FD1-41FB-4390-94B6-A3878E989086} = {E56975F0-CD8E-40D3-A845-A17946EF30AA}
+		{76FB1C04-3EF2-4502-BCD0-116000AF41E6} = {E56975F0-CD8E-40D3-A845-A17946EF30AA}
+		{89354C0E-058B-409B-8817-A65501C308B1} = {4DCBE8B7-DD21-4CD2-AAA8-7E4501755A42}
+		{9A1483A6-26E9-4846-BEEE-BFF5FC778BC4} = {4DCBE8B7-DD21-4CD2-AAA8-7E4501755A42}
+		{4AE81D53-6807-4261-A563-B645243469F4} = {1DE7F396-FD97-406E-8362-3E255347D605}
+		{21F7DF13-D07F-4773-90B0-F6C8C0BFD7C6} = {1DE7F396-FD97-406E-8362-3E255347D605}
+		{E6858835-78E1-4044-A491-CCA444EA4A5E} = {8EEBB009-4BC3-4EF6-9D69-9C4DB9B76213}
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA} = {8EEBB009-4BC3-4EF6-9D69-9C4DB9B76213}
+		{B4F0C3AF-DC94-4B3E-9E65-78C87FD39159} = {B715AC35-6232-4B86-A54D-581F67DA0193}
+		{9A8A4146-83A8-40F8-931F-69ABC1E98B32} = {B715AC35-6232-4B86-A54D-581F67DA0193}
+		{5A63E8F1-436C-461F-97ED-322969909195} = {D1B404BA-480E-4E9E-B4CA-E877B632E798}
+		{01BE75DE-D053-4C49-B9F3-A818181393A2} = {D1B404BA-480E-4E9E-B4CA-E877B632E798}
+		{B84DBC20-1A9B-4533-8ADE-C767A03ED4F3} = {4652DEF9-54F9-4DB5-A3D9-9B6907DE057D}
+		{E8248B8A-5943-410B-9BCB-DE8F6B1354AA} = {4652DEF9-54F9-4DB5-A3D9-9B6907DE057D}
+		{8B22795C-2A16-49EF-BB4B-25301551C1DD} = {7770B499-64F5-4F38-9B5E-34FB36B46D83}
+		{7AD03F07-644B-4DA7-A56E-F72AC252A316} = {7770B499-64F5-4F38-9B5E-34FB36B46D83}
+		{8059EE63-2F47-4D5E-8596-A0CB74647462} = {91F1879E-8C31-4475-ACF9-943E37EA87E3}
+		{AEF24F84-4A3F-4EF4-80CC-80113CABC098} = {91F1879E-8C31-4475-ACF9-943E37EA87E3}
+		{0C210E2E-2839-4789-B09C-EBF2CAAA7D02} = {339D9C20-0716-4A7A-9874-3E0DD3B6B4E2}
+		{7278E361-46DC-41AD-85D4-F094768FB719} = {339D9C20-0716-4A7A-9874-3E0DD3B6B4E2}
+		{225778EB-523F-4CAF-8583-4817296987D0} = {B79E4535-8789-479E-977C-434F41AF0EA8}
+		{3D0FFE9D-6DED-44CC-B238-44F77F182666} = {B79E4535-8789-479E-977C-434F41AF0EA8}
+		{94D59FA5-DAD0-491E-A727-EFCF034AD77D} = {67C213D4-1AA0-4AAE-8A1F-ED6E0A54F329}
+		{78A1DAF9-9DBF-42D2-A87F-63990683F798} = {67C213D4-1AA0-4AAE-8A1F-ED6E0A54F329}
+		{B926DBEA-201F-4D25-AABD-92D6AC3E8DBB} = {A8118ADC-7A72-4EA3-B389-4F3F17F8882C}
+		{A9EBA232-0922-464B-89FB-06A5A58CA966} = {A8118ADC-7A72-4EA3-B389-4F3F17F8882C}
+		{D5BE1D5B-8DC0-4505-86DA-ACDB7F7FFB02} = {EF387ED6-12DA-4BC5-B002-A369045AD7D0}
+		{5A9A97BD-3C1D-4820-9425-2DAFEAFDA545} = {EF387ED6-12DA-4BC5-B002-A369045AD7D0}
+		{CB680F8D-DCCA-4EF0-8F6F-31971E35348E} = {937C3D03-6DF3-4DB8-B2D5-D74A6B8DB2A2}
+		{CDBF86AC-EE2F-4814-B06C-9DC99EA0218E} = {937C3D03-6DF3-4DB8-B2D5-D74A6B8DB2A2}
+		{3C833F0E-B5E8-4929-A2C6-A2A753FD2473} = {9E11DCEC-BD1B-4313-AA37-01E812BF8728}
+		{B3816FC2-EA0D-4472-B48A-D88F6FB6555C} = {9E11DCEC-BD1B-4313-AA37-01E812BF8728}
+		{FD501D48-72D5-47C5-8F77-389E61DD95F0} = {6C71D218-D090-483C-B2A9-FA2091A01515}
+		{99074BA0-8B9C-40A2-BE91-016447E6D6EC} = {6C71D218-D090-483C-B2A9-FA2091A01515}
+		{FE959977-CE20-47AE-812F-08F9392674CE} = {222BB989-0ECD-41DB-A443-FE41BF76C8A3}
+		{B579A381-9D90-4CC5-B9A4-D7F1E369EE18} = {222BB989-0ECD-41DB-A443-FE41BF76C8A3}
+		{E7E06512-37F1-4F68-BBF9-04773071FB9C} = {3F634476-B3D3-4919-9E30-E8AFEA8E1876}
+		{CFC67715-C709-49DF-8BF1-FB7E402FC69B} = {3F634476-B3D3-4919-9E30-E8AFEA8E1876}
+		{190850DC-48F5-40BA-8AFB-59EF43E24621} = {BBAA9C2C-5477-4883-804F-5D117EA5B531}
+		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C} = {BBAA9C2C-5477-4883-804F-5D117EA5B531}
+		{5827CA43-99E9-4265-BA56-6D7C39FC8528} = {E731C826-FB17-4161-AE89-C18C99DEDCE7}
+		{6925DA9E-4745-4441-A4A7-E9090E400419} = {E731C826-FB17-4161-AE89-C18C99DEDCE7}
+		{2CACA9E2-7616-4152-8D6E-3755185EA268} = {5F6BA9BB-9CC1-49DF-BFEE-76EFB2EAB0D4}
+		{1457AC86-A5AE-4C57-A448-FCFE5A0C4FD7} = {5F6BA9BB-9CC1-49DF-BFEE-76EFB2EAB0D4}
+		{01506ABF-B183-4A20-9FDB-FBA81AA4B8EE} = {2B8AED62-3BFA-4238-B328-BD363A166A26}
+		{B099D483-F560-4582-8F20-01D5D396F0EF} = {2B8AED62-3BFA-4238-B328-BD363A166A26}
+		{A1093AF7-BD96-4B67-BA34-262267D7E9A3} = {97A3152F-68C3-49DD-A74E-7E31CB944A52}
+		{931933A5-2EEB-4973-8140-E4B73ED4DDD7} = {97A3152F-68C3-49DD-A74E-7E31CB944A52}
+		{DD2D4893-E1E4-4932-A229-1A232328F380} = {44AFED19-72A9-4E70-8E6A-99096367F6D1}
+		{9B28CB65-7B07-42E3-80B7-CD0875F47779} = {44AFED19-72A9-4E70-8E6A-99096367F6D1}
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA} = {5A0A3D3B-737A-4D13-993B-A84FB6F5E660}
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2} = {5A0A3D3B-737A-4D13-993B-A84FB6F5E660}
+		{107C2E3B-C328-4FE8-ABFB-C26B30ECB2A0} = {15F31E2C-7A4B-4826-AFF1-24769292031B}
+		{B0244D23-8077-4045-9721-6F673C425CBC} = {15F31E2C-7A4B-4826-AFF1-24769292031B}
+		{4CB36472-BAC1-4E00-8C16-72DEFAEC5A88} = {9029ADB7-F38D-4180-BBC6-E1B7B4EE265C}
+		{662C5204-E831-432E-A033-C0758B49549F} = {9029ADB7-F38D-4180-BBC6-E1B7B4EE265C}
+		{09FB81E9-2E69-49ED-AFF3-181CA8DFC557} = {94BCD97F-5C20-4DE4-A9B0-B0950742E973}
+		{F4E0C7D2-06BA-4CE2-B873-86E6279E8599} = {94BCD97F-5C20-4DE4-A9B0-B0950742E973}
+		{0595200E-EFC3-45A6-8907-8E35566FBD31} = {DD13DFB8-7492-439E-8B0C-F8C606E2BDC7}
+		{BFC185E1-2542-43C1-A0FC-92FF217E060C} = {DD13DFB8-7492-439E-8B0C-F8C606E2BDC7}
+		{94DD7625-1F3A-47AF-BFFA-0B4DAA837C71} = {AC0EA598-1AB5-40C8-8995-FD2786BFBC83}
+		{9627567A-1AEA-4C46-B730-CB53BA35192F} = {AC0EA598-1AB5-40C8-8995-FD2786BFBC83}
+		{43F7E763-44C8-43E4-885F-DF5C3D7F7378} = {C99B6A57-BD42-4AF9-8A0D-B50316B007D9}
+		{5374DED9-8DF3-436A-8EE8-F2E8A8579ABA} = {C99B6A57-BD42-4AF9-8A0D-B50316B007D9}
+		{3F39D977-D67D-4C01-BFD3-9808FB4D277C} = {AF0445B9-A7A1-4C77-A37D-E45469EE2E3E}
+		{0FFA60D3-BE7D-49AF-91D8-1667619449C4} = {AF0445B9-A7A1-4C77-A37D-E45469EE2E3E}
+		{ADC7FB43-2309-4D0C-A4F2-ACEB5A8B41BB} = {65E072FD-B479-4456-99EA-050F749954F0}
+		{6AA8BD72-3644-4CCF-B917-19D5790A90B7} = {65E072FD-B479-4456-99EA-050F749954F0}
+		{851D7800-F77F-45CB-9481-8861F92EC994} = {60E3EB56-A726-4FE6-991B-9561B71E136F}
+		{391256F5-5E7B-4EFC-B5E4-647F9D169307} = {60E3EB56-A726-4FE6-991B-9561B71E136F}
+		{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912} = {70BA49A6-AB3B-483C-A74A-83C02DD20073}
+		{1D62B319-CD32-4AA3-95CB-A36B6D9D2174} = {70BA49A6-AB3B-483C-A74A-83C02DD20073}
+		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257} = {5F267815-8100-4033-A3EE-CB460A6F060D}
+		{A48D0CDD-AACF-49E7-845A-B21F473830B9} = {5F267815-8100-4033-A3EE-CB460A6F060D}
+		{94B02B2C-548A-4125-9D3E-3732959493DF} = {286FE62A-5CCB-4992-A71F-505F4D51EFF0}
+		{7D5BF49F-88FA-4E1A-8158-2C2BE7382948} = {286FE62A-5CCB-4992-A71F-505F4D51EFF0}
+		{17B468B5-87A2-4AEA-B573-9EFEF92BE91F} = {5A28671D-B27A-4915-B507-DAF67E4B0242}
+		{DF541F9A-665B-474C-B47F-114E9BB2BF9C} = {5A28671D-B27A-4915-B507-DAF67E4B0242}
+		{C94326E0-1B64-472F-8C06-9470EA31FFF2} = {45CBC321-B5B3-4820-B15D-29FEAF694A85}
+		{C1CE4EB5-E292-40BE-8C6F-F954F578B98F} = {45CBC321-B5B3-4820-B15D-29FEAF694A85}
+		{12F09142-4F2F-48A4-AD84-3565A0EC82F9} = {CFAB9D10-0657-4CE6-B0A0-3C65665D5FE4}
+		{70201307-97B3-494F-A297-AFC395ABCD51} = {CFAB9D10-0657-4CE6-B0A0-3C65665D5FE4}
+		{96752C22-3565-4247-B389-88194A7612FE} = {5B1F7873-5887-469E-874B-44556DFC7C17}
+		{58111CB6-816E-4C97-8552-013489E6D2BA} = {5B1F7873-5887-469E-874B-44556DFC7C17}
+		{84B79CAD-6096-4579-B92E-727C962F91A1} = {07F81E3E-08CA-44D7-9004-E21203F7A2C4}
+		{46C4C4B3-BFFF-44FD-B29E-C06AC19527C4} = {07F81E3E-08CA-44D7-9004-E21203F7A2C4}
+		{F166F527-A0AA-4728-8E5E-18A70CD8ADF2} = {2CBC780B-D44B-4E84-A695-DC131B10EFA4}
+		{C86D02C6-7CE4-450A-98EB-2379AA3CEF84} = {2CBC780B-D44B-4E84-A695-DC131B10EFA4}
+		{38C9E4CB-7884-41DC-BF8A-81828364A185} = {8C9EA45B-9250-40C3-A23F-207A05496C5B}
+		{7AD60BE5-3F7A-4955-A936-CAC0E8B0848A} = {8C9EA45B-9250-40C3-A23F-207A05496C5B}
+		{4731682F-71C8-40C1-A50B-7FDB96877460} = {E984CC3C-064C-4347-94D8-E027C8CEC4FB}
+		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D} = {E984CC3C-064C-4347-94D8-E027C8CEC4FB}
+		{F4943C53-46C8-40AB-934A-500DAF26F08A} = {68855640-2657-4757-AE23-D1EDFBF67D8C}
+		{95211FAC-EC0C-4F35-8BFC-4FE745F46020} = {68855640-2657-4757-AE23-D1EDFBF67D8C}
+		{A9BBF3B9-0C5E-47C6-8518-6CA3965C3BC1} = {5C3B6FFA-D634-4BAF-9DE9-375C3E2511D0}
+		{9152A612-848F-4F1F-9ADD-1B607ECA8668} = {5C3B6FFA-D634-4BAF-9DE9-375C3E2511D0}
+		{29CEFC62-0F2A-47FF-A149-A3A8E0911CAE} = {865E6640-2813-4D92-8131-8FB24DB6F05D}
+		{855D2CD1-1E6D-4D82-82D0-A8474D8721C0} = {865E6640-2813-4D92-8131-8FB24DB6F05D}
+		{678AE6AA-AC7D-4787-8169-48ACE87C08D0} = {591F1421-C617-4C67-B869-02B98D3B447B}
+		{7FFD1918-A885-436E-98A3-153B28DE8135} = {591F1421-C617-4C67-B869-02B98D3B447B}
+		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9} = {4226D4DC-7C3C-4E5D-AEA4-0B8DCABF07B3}
+		{5258B9B4-783D-41F1-9AD3-133AF3A03800} = {4226D4DC-7C3C-4E5D-AEA4-0B8DCABF07B3}
+		{1A9947A7-950B-4703-BF17-B1BA842DBB06} = {A49834C8-DFE1-4BA1-B733-28F137694A44}
+		{3C46652E-B012-4CDF-9B90-1932AAF23CA7} = {A49834C8-DFE1-4BA1-B733-28F137694A44}
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2} = {FBFF40A0-1E8E-472A-91DC-4F59AD71794F}
+		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7} = {FBFF40A0-1E8E-472A-91DC-4F59AD71794F}
+		{27B097F6-D49A-4B69-B10C-FD6020D59A0E} = {764284B6-4967-46F7-B0DF-A40690141941}
+		{302381E0-FBEE-4A93-9B9D-FF7B985D24D1} = {764284B6-4967-46F7-B0DF-A40690141941}
+		{629D040E-51BE-4F83-8F33-7526E6F73F3D} = {6EFB679A-3156-4E2A-BC2D-B4D39AEBDFAE}
+		{8F0B3472-F8A4-47D3-AE29-E4C4ED8C3783} = {6EFB679A-3156-4E2A-BC2D-B4D39AEBDFAE}
+		{9BD8AC70-360B-40CE-A0D6-971B85BB90C3} = {B4C60DC7-9EF0-4D4A-9DD8-778BA1BDADFC}
+		{E2035C6B-2842-473A-BC4D-D986E373ECD6} = {B4C60DC7-9EF0-4D4A-9DD8-778BA1BDADFC}
+		{7574FA64-FBCE-4162-887F-A4DE886AB22D} = {D0682FED-9E7A-4AEB-ABDF-39ACB231C63A}
+		{902F29D7-40FE-4B4B-9BE6-C20C3E4E93A7} = {D0682FED-9E7A-4AEB-ABDF-39ACB231C63A}
+		{D7CB10B3-A549-4A6F-8287-8A4ED39CF370} = {4057817D-E5F6-4606-953D-A8BB4D7456EE}
+		{8A407946-892A-4C2C-AD7F-6B64EF9D78CA} = {4057817D-E5F6-4606-953D-A8BB4D7456EE}
+		{FFF634B3-A3D7-4E0C-B6AA-F931FBDCC2A6} = {AE838D99-1D68-4FF2-AB68-7A9E79C6A9C7}
+		{82A9E6D0-1A11-4790-94E6-201B7BDDC4F8} = {AE838D99-1D68-4FF2-AB68-7A9E79C6A9C7}
+		{908136DF-602E-4EBC-883A-C237BFC1DCE7} = {8EC8BC0A-2B14-48E6-A203-19204A5C42C9}
+		{ECD4E9A3-8EDD-4958-B26A-DCC384181390} = {8EC8BC0A-2B14-48E6-A203-19204A5C42C9}
+	EndGlobalSection
+EndGlobal

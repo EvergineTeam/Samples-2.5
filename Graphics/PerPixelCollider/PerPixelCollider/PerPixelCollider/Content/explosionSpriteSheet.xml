@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:348347aefcca3e9c282f450f42018dca$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="explosionSpriteSheet.png" width="256" height="256">
+  <sprite n="explosion_01.png" x="0" y="0" w="64" h="64"/>
+  <sprite n="explosion_02.png" x="64" y="0" w="64" h="64"/>
+  <sprite n="explosion_03.png" x="128" y="0" w="64" h="64"/>
+  <sprite n="explosion_04.png" x="192" y="0" w="64" h="64"/>
+  <sprite n="explosion_05.png" x="0" y="64" w="64" h="64"/>
+  <sprite n="explosion_06.png" x="64" y="64" w="64" h="64"/>
+  <sprite n="explosion_07.png" x="128" y="64" w="64" h="64"/>
+  <sprite n="explosion_08.png" x="192" y="64" w="64" h="64"/>
+  <sprite n="explosion_09.png" x="0" y="128" w="64" h="64"/>
+  <sprite n="explosion_10.png" x="64" y="128" w="64" h="64"/>
+  <sprite n="explosion_11.png" x="128" y="128" w="64" h="64"/>
+  <sprite n="explosion_12.png" x="192" y="128" w="64" h="64"/>
+  <sprite n="explosion_13.png" x="0" y="192" w="64" h="64"/>
+  <sprite n="explosion_14.png" x="64" y="192" w="64" h="64"/>
+  <sprite n="explosion_15.png" x="128" y="192" w="64" h="64"/>
+  <sprite n="explosion_16.png" x="192" y="192" w="64" h="64"/>
+</TextureAtlas>

@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="IBSampleAssets" Version="1">
+  <Profiles>
+    <Profile Name="Default" Platform="Windows" LowQualityCompressionFormat="R8G8B8A8" HighQualityCompressionFormat="R8G8B8A8" />
+  </Profiles>
+  <Assets>
+    <Asset Path="environment1.cubemap">
+      <ExportProperties>
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap">
+      <ExportProperties>
+        <Export Width="64" Height="64" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="False" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap">
+      <ExportProperties>
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap">
+      <ExportProperties>
+        <Export Width="64" Height="64" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="False" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap">
+      <ExportProperties>
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap">
+      <ExportProperties>
+        <Export Width="128" Height="128" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="venus.FBX">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="False" ExportType="WaveEngine.Components.Graphics3D.InternalStaticModel" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="venusLightingMap.jpg">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="True" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.Texture2D" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="white.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="False" ZipCompress="False" ExportType="WaveEngine.Framework.Graphics.Texture2D" ExportVersion="1.0.0.0" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posx.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posy.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posz.bmp">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Default" Platform="Windows" Generate="True" ZipCompress="False" />
+      </ExportProperties>
+    </Asset>
+  </Assets>
+</Project>

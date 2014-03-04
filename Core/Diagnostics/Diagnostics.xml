@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Diagnostics</Title>
+<Description>Using diagnostic feature to get extra info about our game with labels and timers.</Description>
+  <ImageUri>Diagnostics.PNG</ImageUri>
+  <ExecutePath>Diagnostics.exe</ExecutePath>
+  <Type>Core</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>DiagnosticsCompressed.exe</InstallPath>
+</Sample>

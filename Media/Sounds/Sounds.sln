@@ -1,0 +1,26 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sounds", "Sounds\Sounds\Sounds.csproj", "{E6858835-78E1-4044-A491-CCA444EA4A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundsProject", "Sounds\SoundsProject\SoundsProject.csproj", "{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}"
+EndProject
+Global
+	
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Debug|x86.ActiveCfg = Debug|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Debug|x86.Build.0 = Debug|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Release|x86.ActiveCfg = Release|x86
+		{E6858835-78E1-4044-A491-CCA444EA4A5E}.Release|x86.Build.0 = Release|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Debug|x86.ActiveCfg = Debug|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Debug|x86.Build.0 = Debug|x86
+		{9EAAAE39-52B3-4B75-8A20-E84BB664EEAA}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

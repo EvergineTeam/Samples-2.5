@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Project</Title>
+  <Description>An example about how to use the projections to screen.</Description>
+  <ImageUri>ProjectPicking.PNG</ImageUri>
+  <ExecutePath>Project.exe</ExecutePath>
+  <Type>Graphics</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>ProjectCompressed.exe</InstallPath>
+</Sample>

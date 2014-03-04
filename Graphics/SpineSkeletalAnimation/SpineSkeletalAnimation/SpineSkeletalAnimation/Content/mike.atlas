@@ -1,0 +1,102 @@
+mike.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+brazo-delante-02
+  rotate: false
+  xy: 858, 229
+  size: 39, 97
+  orig: 39, 97
+  offset: 0, 0
+  index: -1
+brazo-detras-02
+  rotate: false
+  xy: 805, 136
+  size: 39, 97
+  orig: 39, 97
+  offset: 0, 0
+  index: -1
+pie-delante
+  rotate: false
+  xy: 675, 69
+  size: 146, 65
+  orig: 146, 65
+  offset: 0, 0
+  index: -1
+mano-detras
+  rotate: false
+  xy: 899, 229
+  size: 48, 84
+  orig: 48, 84
+  offset: 0, 0
+  index: -1
+pie-detras
+  rotate: false
+  xy: 675, 2
+  size: 146, 65
+  orig: 146, 65
+  offset: 0, 0
+  index: -1
+pata-detras-01
+  rotate: true
+  xy: 823, 62
+  size: 68, 112
+  orig: 68, 112
+  offset: 0, 0
+  index: -1
+brazo-delante-01
+  rotate: false
+  xy: 675, 136
+  size: 58, 134
+  orig: 58, 134
+  offset: 0, 0
+  index: -1
+pata-delante-02
+  rotate: true
+  xy: 761, 250
+  size: 76, 95
+  orig: 76, 95
+  offset: 0, 0
+  index: -1
+pata-delante-01
+  rotate: false
+  xy: 735, 136
+  size: 68, 112
+  orig: 68, 112
+  offset: 0, 0
+  index: -1
+mano-delante
+  rotate: true
+  xy: 675, 272
+  size: 49, 84
+  orig: 49, 84
+  offset: 0, 0
+  index: -1
+main-abierto
+  rotate: false
+  xy: 2, 2
+  size: 337, 331
+  orig: 337, 331
+  offset: 0, 0
+  index: -1
+main-cerrado
+  rotate: false
+  xy: 341, 2
+  size: 332, 331
+  orig: 332, 331
+  offset: 0, 0
+  index: -1
+pata-detras-02
+  rotate: false
+  xy: 846, 132
+  size: 76, 95
+  orig: 76, 95
+  offset: 0, 0
+  index: -1
+brazo-detras-01
+  rotate: true
+  xy: 823, 2
+  size: 58, 134
+  orig: 58, 134
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Motor3DSample</Title>
+  <Description>An example about how to create a Motor with 3d Physics.</Description>
+  <ImageUri>Motor3DSample.png</ImageUri>
+  <ExecutePath>Motor3DSample.exe</ExecutePath>
+  <Type>Physics3D</Type>
+  <Dificulty>Intermediate</Dificulty>
+  <InstallPath>Motor3DSampleCompressed.exe</InstallPath>
+</Sample>

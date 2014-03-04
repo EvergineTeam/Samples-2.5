@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>WrapPanelSample</Title>
+  <Description>Shows the use of UI Wrap Panel Control.</Description>
+  <ImageUri>WrapPanelSample.png</ImageUri>
+  <ExecutePath>WrapPanelSample.exe</ExecutePath>
+  <Type>UI</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>WrapPanelSampleCompressed.exe</InstallPath>
+</Sample>

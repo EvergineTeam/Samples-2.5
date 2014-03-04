@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSample", "GridSample\GridSample\GridSample.csproj", "{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSampleProject", "GridSample\GridSampleProject\GridSampleProject.csproj", "{245955E0-013C-46DF-BC20-60A6F40CE1D2}"
+EndProject
+Global
+	
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Debug|x86.ActiveCfg = Debug|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Debug|x86.Build.0 = Debug|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Release|x86.ActiveCfg = Release|x86
+		{FABFCB98-E98B-4B3F-A2D0-769DC7BE97BA}.Release|x86.Build.0 = Release|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Debug|x86.ActiveCfg = Debug|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Debug|x86.Build.0 = Debug|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Release|x86.ActiveCfg = Release|x86
+		{245955E0-013C-46DF-BC20-60A6F40CE1D2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

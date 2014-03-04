@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Jenga</Title>
+  <Description>This is sample of the well known Jenga game.</Description>
+  <ImageUri>Jenga.PNG</ImageUri>
+  <ExecutePath>Jenga.exe</ExecutePath>
+  <Type>Physics3D</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>JengaCompressed.exe</InstallPath>
+</Sample>

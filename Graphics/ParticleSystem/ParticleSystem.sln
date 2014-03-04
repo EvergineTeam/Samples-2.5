@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystem", "ParticleSystem\ParticleSystem\ParticleSystem.csproj", "{40BA3B07-6A11-4725-AD81-B1F83500E715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSystemProject", "ParticleSystem\ParticleSystemProject\ParticleSystemProject.csproj", "{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2013.plainconcepts.com/tfs/wave
+		SccProjectUniqueName0 = ParticleSystem\\ParticleSystemProject\\ParticleSystemProject.csproj
+		SccProjectName0 = ParticleSystem/ParticleSystemProject
+		SccLocalPath0 = ParticleSystem\\ParticleSystemProject
+		SccProjectUniqueName1 = ParticleSystem\\ParticleSystem\\ParticleSystem.csproj
+		SccProjectName1 = ParticleSystem/ParticleSystem
+		SccLocalPath1 = ParticleSystem\\ParticleSystem
+		SccLocalPath2 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|x86.ActiveCfg = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Debug|x86.Build.0 = Debug|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|Any CPU.ActiveCfg = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|Mixed Platforms.Build.0 = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|x86.ActiveCfg = Release|x86
+		{40BA3B07-6A11-4725-AD81-B1F83500E715}.Release|x86.Build.0 = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|x86.ActiveCfg = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Debug|x86.Build.0 = Debug|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|Any CPU.ActiveCfg = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|x86.ActiveCfg = Release|x86
+		{1C6DA2A8-059B-4EF9-BB37-5346E9F2D8A7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

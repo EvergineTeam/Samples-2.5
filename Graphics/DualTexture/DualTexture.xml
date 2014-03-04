@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>DualTexture</Title>
+  <Description>Shows how to use Dual Textures in components.</Description>
+  <ImageUri>DualTexture.png</ImageUri>
+  <ExecutePath>DualTexture.exe</ExecutePath>
+  <Type>Graphics</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>DualTextureCompressed.exe</InstallPath>
+</Sample>

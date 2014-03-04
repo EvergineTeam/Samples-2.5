@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Music</Title>
+  <Description>An example about how to play music using a mp3 file.</Description>
+  <ImageUri>Music.png</ImageUri>
+  <ExecutePath>Music.exe</ExecutePath>
+  <Type>Media</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>MusicCompressed.exe</InstallPath>
+</Sample>

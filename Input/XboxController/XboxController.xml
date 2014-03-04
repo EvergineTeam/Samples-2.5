@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>XboxController</Title>
+  <Description>Shows how to read input from a standard controller.</Description>
+  <ImageUri>XboxController.png</ImageUri>
+  <ExecutePath>XboxController.exe</ExecutePath>
+  <Dificulty>Beginner</Dificulty>
+  <Type>Graphics</Type>
+  <InstallPath>XboxControllerCompressed.exe</InstallPath>
+</Sample>

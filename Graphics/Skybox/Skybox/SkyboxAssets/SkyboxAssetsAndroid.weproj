@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="SkyboxAssets" Version="1">
+  <Profiles>
+    <Profile Name="Kindle Fire" Platform="Android" />
+  </Profiles>
+  <Assets>
+    <Asset Path="Sky.cubemap">
+      <ExportProperties>
+        <Export Width="512" Height="512" OutputFormat="CompressedHighQuality" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="DefaultTexture.png">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="True" AntialiasType="Smooth" OutputFormat="CompressedHighQuality" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\negx.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\negy.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\negz.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\posx.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\posy.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="Sky.cubemap\posz.jpg">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Kindle Fire" Platform="Android" Generate="True" />
+      </ExportProperties>
+    </Asset>
+  </Assets>
+</Project>

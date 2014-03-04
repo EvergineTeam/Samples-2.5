@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>CollisionCategories</Title>
+  <Description>Shows how to use the physic categories to create collision groups in physics.</Description>
+  <ImageUri>CollisionCategories.png</ImageUri>
+  <ExecutePath>CollisionCategories.exe</ExecutePath>
+  <Type>Physics2D</Type>
+  <Dificulty>Intermediate</Dificulty>
+  <InstallPath>CollisionCategoriesCompressed.exe</InstallPath>
+</Sample>

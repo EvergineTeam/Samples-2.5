@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Microphone</Title>
+  <Description>Learn how to use the microphone in your games. In this sample you can record a sound and play it later.</Description>
+  <ImageUri>Microphone.png</ImageUri>
+  <ExecutePath>Microphone.exe</ExecutePath>
+  <Type>Media</Type>
+  <Dificulty>Beginner</Dificulty>
+  <InstallPath>MicrophoneCompressed.exe</InstallPath>
+</Sample>
