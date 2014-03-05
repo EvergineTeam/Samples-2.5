@@ -8,6 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IsometricCamera</RootNamespace>
     <AssemblyName>IsometricCamera</AssemblyName>
+	<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
