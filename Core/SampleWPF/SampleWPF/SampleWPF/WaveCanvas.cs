@@ -599,10 +599,11 @@ namespace SampleWPF
         /// <exception cref="System.NotImplementedException"></exception>
         private void CheckInit(object sender, EventArgs e)
         {
-            if (this.app.Game != null)
+            if (this.app.Game != null 
+                && WaveServices.ScreenContextManager.CurrentContext != null)
             {
                 WaveServices.Input.IsEnabled = false;
-
+                
                 if (this.GameLoaded != null)
                 {
                     this.GameLoaded(this, this.app.Game);
