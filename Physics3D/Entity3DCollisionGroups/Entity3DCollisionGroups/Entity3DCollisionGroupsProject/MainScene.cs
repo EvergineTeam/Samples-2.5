@@ -145,7 +145,7 @@ namespace Entity3DCollisionGroupsProject
             EntityManager.Add(primitive);
 
             // Collision Grouping. Blue ball is groupA. Red Ball is groupB
-            RigidBody3D rigidBody = primitive.FindComponentOfType<RigidBody3D>();
+            RigidBody3D rigidBody = primitive.FindComponent<RigidBody3D>();
             if (rigidBody != null)
             {
                 rigidBody.CollisionGroup = isBlueBall ? groupA : groupB;

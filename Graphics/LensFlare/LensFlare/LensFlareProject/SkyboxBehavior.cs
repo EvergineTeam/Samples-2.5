@@ -33,7 +33,7 @@ namespace LensFlareProject
 
         protected override void Update(TimeSpan gameTime)
         {
-            Transform.Position = RenderManager.Camera.Position;
+            Transform.Position = RenderManager.ActiveCamera.Position;
         }
     }
 }

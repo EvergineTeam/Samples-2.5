@@ -34,6 +34,12 @@ namespace PerPixelColliderProject
 
     public class MyScene : Scene
     {
+        public const int MAXOBSTACLES = 6;
+        public const int WAITINGTIME = 2000;
+        public const float SCROLLACCELERATION = -3;
+        public const float SCROLLSPEED = -150;
+        public const float SCROLLWIDTH = 1800;
+
         private const string TEXTURESHIP = "Content/spaceShip.wpk";
         private const string TEXTURESHIPBURST = "Content/spaceShipBurst.wpk";
         private const string TEXTUREOBSTACLE = "Content/asteroid.wpk";
@@ -41,19 +47,15 @@ namespace PerPixelColliderProject
         private const string TEXTUREBACKGROUND = "Content/background.wpk";
         private const string TEXTUREEXPLOSION = "Content/explosionSpriteSheet.wpk";
         private const string EXPLOSIONSPRITESHEET = "Content/explosionSpriteSheet.xml";
-        private const int MAXOBSTACLES = 6;
-        private const int WAITINGTIME = 2000;
-        private const float SCROLLACCELERATION = -3;
-        private const float SCROLLSPEED = -150;
-        private const float SCROLLWIDTH = 1800;
 
+        public IList<Entity> obstacles;
+        public Entity ship;
+        public Entity ground, ground2, ground3;
+        public Entity explosion;
 
-        private IList<Entity> obstacles;
-        private Entity ship;
-        private Entity ground, ground2, ground3;
         private SampleState state;
-        private Entity explosion;
-        private int countDown;
+        
+        public int countDown;
 
         public SampleState State
         {
@@ -123,6 +125,8 @@ namespace PerPixelColliderProject
 
             this.state = SampleState.Playing;
             ScrollBehavior.ScrollSpeed = SCROLLSPEED;
+
+            this.AddSceneBehavior(new CollisionSceneBehavior(), SceneBehavior.Order.PostUpdate);
         }
 
         private void CreateBackground()
@@ -218,61 +222,7 @@ namespace PerPixelColliderProject
             this.EntityManager.Add(this.explosion);
         }
 
-        protected override void Draw(TimeSpan gameTime)
-        {
-            base.Draw(gameTime);
-
-            if (this.state == SampleState.Playing)
-            {
-                // Playing update
-                ScrollBehavior.ScrollSpeed += SCROLLACCELERATION * (float)gameTime.TotalSeconds;
-
-                // Gets the elements colliders
-                PerPixelCollider shipCollider = this.ship.FindComponent<PerPixelCollider>();
-                PerPixelCollider groundCollider = this.ground.FindComponent<PerPixelCollider>();
-                PerPixelCollider groundCollider2 = this.ground2.FindComponent<PerPixelCollider>();
-                PerPixelCollider groundCollider3 = this.ground3.FindComponent<PerPixelCollider>();
-                PerPixelCollider obstacleCollider;
-                bool collision = false;
-
-                if (shipCollider.Intersects(groundCollider) || shipCollider.Intersects(groundCollider2) || shipCollider.Intersects(groundCollider3))
-                {
-                    // Checks collision of the ground.
-                    collision = true;
-                }
-                else
-                {
-
-                    // Iterates through the obstacles to detect intersection
-                    foreach (var obstacle in this.obstacles)
-                    {
-                        obstacleCollider = obstacle.FindComponent<PerPixelCollider>();
-
-                        if (shipCollider.Intersects(obstacleCollider))
-                        {
-                            collision = true;
-                            break;
-                        }
-                    }
-                }
-
-                if (collision)
-                {
-                    this.Explosion();
-                    this.State = SampleState.Waiting;
-                }
-            }
-            else
-            {
-                this.countDown += (int)gameTime.TotalMilliseconds;
-                if (this.countDown > WAITINGTIME)
-                {
-                    this.State = SampleState.Playing;
-                }
-            }
-        }
-
-        private void Explosion()
+        public void Explosion()
         {
             // Creates the explosions and adjusts to the ship position.
             this.explosion.Enabled = true;
@@ -286,6 +236,68 @@ namespace PerPixelColliderProject
             var anim2D = this.explosion.FindComponent<Animation2D>();
             anim2D.CurrentAnimation = "Explosion";
             anim2D.Play(false);
+        }
+    }
+
+    public class CollisionSceneBehavior : SceneBehavior
+    {
+        public MyScene myScene;
+
+        protected override void ResolveDependencies()
+        {
+            myScene = (MyScene)this.Scene;
+        }
+
+        protected override void Update(TimeSpan gameTime)
+        {
+            if (myScene.State == SampleState.Playing)
+            {
+                // Playing update
+                ScrollBehavior.ScrollSpeed += MyScene.SCROLLACCELERATION * (float)gameTime.TotalSeconds;
+
+                // Gets the elements colliders
+                PerPixelCollider shipCollider = myScene.ship.FindComponent<PerPixelCollider>();
+                PerPixelCollider groundCollider = myScene.ground.FindComponent<PerPixelCollider>();
+                PerPixelCollider groundCollider2 = myScene.ground2.FindComponent<PerPixelCollider>();
+                PerPixelCollider groundCollider3 = myScene.ground3.FindComponent<PerPixelCollider>();
+                PerPixelCollider obstacleCollider;
+                bool collision = false;
+
+                if (shipCollider.Intersects(groundCollider) || shipCollider.Intersects(groundCollider2) || shipCollider.Intersects(groundCollider3))
+                {
+                    // Checks collision of the ground.
+                    collision = true;
+                }
+                else
+                {
+
+                    // Iterates through the obstacles to detect intersection
+                    foreach (var obstacle in this.myScene.obstacles)
+                    {
+                        obstacleCollider = obstacle.FindComponent<PerPixelCollider>();
+
+                        if (shipCollider.Intersects(obstacleCollider))
+                        {
+                            collision = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (collision)
+                {
+                    this.myScene.Explosion();
+                    this.myScene.State = SampleState.Waiting;
+                }
+            }
+            else
+            {
+                this.myScene.countDown += (int)gameTime.TotalMilliseconds;
+                if (this.myScene.countDown > MyScene.WAITINGTIME)
+                {
+                    this.myScene.State = SampleState.Playing;
+                }
+            }
         }
     }
 }

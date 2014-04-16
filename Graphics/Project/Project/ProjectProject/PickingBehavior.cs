@@ -66,7 +66,7 @@ namespace ProjectProject
                 {
                     currentEntity = EntityManager.EntityGraph.ElementAt(i); ;
 
-                    entityCollider = currentEntity.FindComponentOfType<BoxCollider>();
+                    entityCollider = currentEntity.FindComponent<BoxCollider>();
                     // ... but only a collidable entities ( entities which have a boxCollider component)
                     if (entityCollider != null)
                     {

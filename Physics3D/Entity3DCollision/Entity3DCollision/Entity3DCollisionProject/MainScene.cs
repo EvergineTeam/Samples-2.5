@@ -136,7 +136,7 @@ namespace Entity3DCollisionProject
                 .AddComponent(new MaterialsMap(new BasicMaterial(GetRandomColor())))
                 .AddComponent(new ModelRenderer());
 
-            RigidBody3D rigidBody3D = primitive.FindComponentOfType<RigidBody3D>();
+            RigidBody3D rigidBody3D = primitive.FindComponent<RigidBody3D>(false);
             if (rigidBody3D != null)
             {
                 rigidBody3D.OnPhysic3DCollision += rigidBody3D_OnPhysic3DCollision;

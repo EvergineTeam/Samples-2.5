@@ -46,14 +46,14 @@ namespace FixedMouseJoint2DSampleProject
     {
         // input variables
         private Input input;
-        private MouseState mouseState;
+        private TouchPanelState touchState;
 
         // Physic components
         private FixedMouseJoint2D mouseJoint;
         private Entity connectedEntity;
 
         // Mouse position optimization
-        private Vector2 mousePosition = Vector2.Zero;
+        private Vector2 touchPosition = Vector2.Zero;
 
         /// <summary>
         /// Constructor
@@ -71,37 +71,36 @@ namespace FixedMouseJoint2DSampleProject
         {
             this.input = WaveServices.Input;
 
-            if (this.input.MouseState.IsConnected)
+            if (this.input.TouchPanelState.IsConnected)
             {
-                this.mouseState = this.input.MouseState;
+                this.touchState = this.input.TouchPanelState;
 
                 // Checks Mouse Left Button Click and anyone entity linked
-                if (this.mouseState.LeftButton == ButtonState.Pressed && this.mouseJoint == null)
+                if (this.touchState.Count > 0 && this.mouseJoint == null)
                 {
                     // Udpates Mouse Position
-                    this.mousePosition.X = this.mouseState.X;
-                    this.mousePosition.Y = this.mouseState.Y;
+                    this.touchPosition = this.touchState[0].Position;
 
                     foreach (Entity entity in this.Scene.EntityManager.EntityGraph)
                     {
-                        Collider2D collider = entity.FindComponentOfType<Collider2D>();
+                        Collider2D collider = entity.FindComponent<Collider2D>(false);
                         if (collider != null)
                         {
                             // Collider Test
-                            if(collider.Contain(mousePosition))
+                            if (collider.Contain(touchPosition))
                             {
-                                RigidBody2D rigidBody = entity.FindComponentOfType<RigidBody2D>();
+                                RigidBody2D rigidBody = entity.FindComponent<RigidBody2D>();
                                 if (rigidBody != null)
                                 {
                                     // Forbiden Mouse Joint of Kinematic Bodies
                                     if (!rigidBody.IsKinematic)
                                     {
                                         this.connectedEntity = entity;
-                                        
+
                                         // Create Mouse Joint
-                                        this.mouseJoint = new FixedMouseJoint2D(this.mousePosition);
+                                        this.mouseJoint = new FixedMouseJoint2D(this.touchPosition);
                                         this.connectedEntity.AddComponent(this.mouseJoint);
-                                        
+
                                         // We can break after collider test when true, but we'll miss overlapped entities if Physic entity is 
                                         // under a non Physic entity. We are breaking here just for sample.
                                         break;
@@ -113,19 +112,22 @@ namespace FixedMouseJoint2DSampleProject
                 }
 
                 // Checks Mouse Left Button Release
-                if (this.mouseState.LeftButton == ButtonState.Release && this.mouseJoint != null)
+                if (this.touchState.Count == 0 && this.mouseJoint != null)
                 {
-                    // Remove Fixed Joint
-                    this.connectedEntity.RemoveComponent<FixedMouseJoint2D>();
+                    if (!this.connectedEntity.IsDisposed)
+                    {
+                        // Remove Fixed Joint
+                        this.connectedEntity.RemoveComponent<FixedMouseJoint2D>();
+                    }
+
                     this.mouseJoint = null;
                 }
 
                 // If joint exists then update joint anchor position
                 if (this.mouseJoint != null)
                 {
-                    this.mousePosition.X = this.mouseState.X;
-                    this.mousePosition.Y = this.mouseState.Y;
-                    this.mouseJoint.WorldAnchor = this.mousePosition;
+                    this.touchPosition = this.touchState[0].Position;
+                    this.mouseJoint.WorldAnchor = this.touchPosition;
                 }
             }
         }

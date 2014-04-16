@@ -93,7 +93,7 @@ namespace StockRoomProject.Behaviors
                 for (int i = 0; i < EntityManager.Count; i++)
                 {
                     auxEntity = EntityManager.EntityGraph.ElementAt(i);
-                    entityCollider = auxEntity.FindComponentOfType<BoxCollider>();
+                    entityCollider = auxEntity.FindComponent<BoxCollider>();
                     // ... but only a collidable entities ( entities which have a boxCollider component)
                     if (entityCollider != null && ( auxEntity.Name.Contains("box") ||
                                                   auxEntity.Name.Contains("anchor") ||

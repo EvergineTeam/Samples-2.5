@@ -78,10 +78,5 @@ namespace SkyboxProject
 
             EntityManager.Add(skybox);
         }
-
-        protected override void Draw(TimeSpan gameTime)
-        {
-            base.Draw(gameTime);
-        }
     }
 }

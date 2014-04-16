@@ -73,7 +73,7 @@ namespace OnPhysics2DCollisionSampleProject
 
             // Sample Crate and Collision Event Register
             Entity box = this.CreateCrate(200, 100);
-            RigidBody2D boxRigidBody = box.FindComponentOfType<RigidBody2D>();
+            RigidBody2D boxRigidBody = box.FindComponent<RigidBody2D>();
             if (boxRigidBody != null)
             {
                 boxRigidBody.OnPhysic2DCollision += BoxRigidBody_OnPhysic2DCollision;
@@ -82,7 +82,7 @@ namespace OnPhysics2DCollisionSampleProject
 
             // Sample Circle and Collision Event register
             Entity circle = this.CreateCircle(600, 100);
-            RigidBody2D circleRigidBody = circle.FindComponentOfType<RigidBody2D>();
+            RigidBody2D circleRigidBody = circle.FindComponent<RigidBody2D>();
             if (circleRigidBody != null)
             {
                 circleRigidBody.OnPhysic2DCollision += CircleRigidBody_OnPhysic2DCollision;

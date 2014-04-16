@@ -210,7 +210,7 @@ namespace Motor3DSampleProject
             foreach (Entity entity in this.Owner.Scene.EntityManager.EntityGraph)
             {
                 // It takes Box Shaped Physic Entities
-                this.entityBoxCollider = entity.FindComponentOfType<BoxCollider>();
+                this.entityBoxCollider = entity.FindComponent<BoxCollider>();
                 if (this.entityBoxCollider != null)
                 {
                     this.collisionResult = this.entityBoxCollider.Intersects(ref ray);
