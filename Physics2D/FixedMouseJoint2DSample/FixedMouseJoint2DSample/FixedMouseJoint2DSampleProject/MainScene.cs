@@ -79,7 +79,7 @@ namespace FixedMouseJoint2DSampleProject
         private Entity CreateCrate(float x, float y)
         {
             Entity box = new Entity("Crate" + this.instances++)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/boxSprite.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = false })
@@ -114,13 +114,11 @@ namespace FixedMouseJoint2DSampleProject
         private Entity CreateGround(string name, float x, float y, float angle)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/groundSprite.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = true, Friction = 1 })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
-
-            sprite.FindComponent<RigidBody2D>().Rotation = angle;
 
             return sprite;
         }

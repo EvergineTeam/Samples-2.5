@@ -49,7 +49,7 @@ namespace Force2DSampleProject
             this.CreateClosures();
 
             Entity wheel = new Entity("Wheel")
-                .AddComponent(new Transform2D() { X = 400, Y = 300 })
+                .AddComponent(new Transform2D() { X = 400, Y = 300, Origin = Vector2.Center})
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = false, Friction = 1 })
@@ -70,14 +70,12 @@ namespace Force2DSampleProject
         private Entity CreateGround(string name, float x, float y, float angle)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y})
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle})
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Ground.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = true, Friction = 1 })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
-
-            sprite.FindComponent<RigidBody2D>().Rotation = angle;
-            
+                        
             return sprite;
         }
     }

@@ -140,7 +140,7 @@ namespace RevoluteJoint2DSampleProject
         private Entity CreateSquareSprite(string name, int x, int y, string fileName, bool isKinematic, float mass = 1f)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(fileName))
                 .AddComponent(new RigidBody2D() { IsKinematic = isKinematic, Mass = mass })

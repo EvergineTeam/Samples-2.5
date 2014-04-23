@@ -48,7 +48,7 @@ namespace BasicRigidBody2DProject
             //RenderManager.DebugLines = true;
 
             Entity ground = new Entity("ground")
-                .AddComponent(new Transform2D() {X = 400, Y = 400 })
+                .AddComponent(new Transform2D() {X = 400, Y = 400, Origin = Vector2.Center })
                 .AddComponent(new Sprite("Content/groundSprite.wpk"))
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new RigidBody2D() { IsKinematic = true })
@@ -57,7 +57,7 @@ namespace BasicRigidBody2DProject
             EntityManager.Add(ground);
 
             Entity circle = new Entity("Circle")
-                .AddComponent(new Transform2D() { X = 450})
+                .AddComponent(new Transform2D() { X = 450, Origin = Vector2.Center })
                 .AddComponent(new Sprite("Content/circleSprite.wpk"))
                 .AddComponent(new CircleCollider())
                 .AddComponent(new RigidBody2D())
@@ -75,7 +75,7 @@ namespace BasicRigidBody2DProject
         private Entity CreateBox(string name, float x, float y)
         {
             return new Entity(name)
-              .AddComponent(new Transform2D() { X = x, Y = y })
+              .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
               .AddComponent(new Sprite("Content/boxSprite.wpk"))
               .AddComponent(new RectangleCollider())
               .AddComponent(new RigidBody2D() { EnableContinuousContact = true, Mass = 4 })

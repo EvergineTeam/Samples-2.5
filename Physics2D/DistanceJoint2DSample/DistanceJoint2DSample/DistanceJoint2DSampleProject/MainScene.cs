@@ -47,14 +47,14 @@ namespace DistanceJoint2DSampleProject
             RenderManager.BackgroundColor = Color.CornflowerBlue;
 
             Entity crate = new Entity("crate")
-                .AddComponent(new Transform2D() { X = 300, Y = 150 })
+                .AddComponent(new Transform2D() { X = 300, Y = 150, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Crate.wpk"))
                 .AddComponent(new RigidBody2D())
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             Entity Wheel1 = new Entity("wheel1")
-                .AddComponent(new Transform2D() { X = 300, Y = 400 })
+                .AddComponent(new Transform2D() { X = 300, Y = 400, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
                 .AddComponent(new RigidBody2D())
@@ -62,7 +62,7 @@ namespace DistanceJoint2DSampleProject
                //.AddComponent(new DistanceJoint2D(crate, Vector2.Zero, Vector2.Zero));
 
             Entity Wheel2 = new Entity("wheel2")
-                .AddComponent(new Transform2D() { X = 450, Y = 400 })
+                .AddComponent(new Transform2D() { X = 450, Y = 400, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
                 .AddComponent(new RigidBody2D())
@@ -70,7 +70,7 @@ namespace DistanceJoint2DSampleProject
                 .AddComponent(new DistanceJoint2D(Wheel1, Vector2.Zero, Vector2.Zero));
 
             Entity ground = new Entity("ground")
-                .AddComponent(new Transform2D() { X = 400, Y = 500 })
+                .AddComponent(new Transform2D() { X = 400, Y = 500, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Ground.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = true })

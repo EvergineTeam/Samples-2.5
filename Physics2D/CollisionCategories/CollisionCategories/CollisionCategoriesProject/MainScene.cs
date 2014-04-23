@@ -100,7 +100,7 @@ namespace CollisionCategoriesProject
         private Entity CreateCrate(float x, float y, string texture, Physic2DCategory category)
         {
             Entity box = new Entity("Crate" + this.instances++)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center})
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(texture))
                 .AddComponent(new RigidBody2D() { IsKinematic = false, CollisionCategories = category, CollidesWith = category })
@@ -118,7 +118,7 @@ namespace CollisionCategoriesProject
         private Entity CreateCircle(float x, float y, string texture, Physic2DCategory category)
         {
             Entity box = new Entity("Circle" + this.instances++)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite(texture))
                 .AddComponent(new RigidBody2D() { IsKinematic = false, CollisionCategories = category })
@@ -153,13 +153,11 @@ namespace CollisionCategoriesProject
         private Entity CreateGround(string name, float x, float y, float angle)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle})
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(GROUND_TEXTURE))
                 .AddComponent(new RigidBody2D() { IsKinematic = true, Friction = 1, CollisionCategories = Physic2DCategory.All })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
-
-            sprite.FindComponent<RigidBody2D>().Rotation = angle;
 
             return sprite;
         }

@@ -121,7 +121,7 @@ namespace MotorRevoluteJoint2DSampleProject
         private Entity CreateBody(string name, float x, float y)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/RectangleBody.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = false})
@@ -140,10 +140,10 @@ namespace MotorRevoluteJoint2DSampleProject
         private Entity CreateKinematicBox(string name, float x, float y, float angle)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Ground.wpk"))
-                .AddComponent(new RigidBody2D() { IsKinematic = true, Rotation = angle })
+                .AddComponent(new RigidBody2D() { IsKinematic = true })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             return sprite;

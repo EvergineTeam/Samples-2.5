@@ -99,17 +99,20 @@ namespace AngleJoint2DSampleProject
             if (fallingCrate == null)
             {
                 fallingCrate = new Entity("FallingCrate" + repeats++)
-                    .AddComponent(new Transform2D())
+                    .AddComponent(new Transform2D() 
+                    { 
+                        Origin = Vector2.Center, 
+                        Rotation = MathHelper.ToRadians(45), 
+                        X = x, 
+                        Y = -50 
+                    })
                     .AddComponent(new RectangleCollider())
                     .AddComponent(new Sprite("Content/Crate.wpk"))
-                    .AddComponent(new RigidBody2D() { IsKinematic = false, Restitution = 0, Friction=100 })
+                    .AddComponent(new RigidBody2D() { IsKinematic = false, Restitution = 0, Friction = 100 })
                     .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
                 
                 EntityManager.Add(fallingCrate);
             }
-
-            fallingCrate.FindComponent<RigidBody2D>().ResetPosition(new Vector2(x, -50));
-            fallingCrate.FindComponent<RigidBody2D>().Rotation = MathHelper.ToRadians(45);
 
             repeats++;
         }
@@ -124,7 +127,7 @@ namespace AngleJoint2DSampleProject
         private Entity CreatePin(string name, int x, int y)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/PinAzureA.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = true })
@@ -143,7 +146,7 @@ namespace AngleJoint2DSampleProject
         private Entity CreateWheel(string name, int x, int y)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = false})
@@ -162,7 +165,7 @@ namespace AngleJoint2DSampleProject
         private Entity CreateGround(string name, int x, int y)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y })
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Ground.wpk"))
                 .AddComponent(new RigidBody2D() { IsKinematic = true })
