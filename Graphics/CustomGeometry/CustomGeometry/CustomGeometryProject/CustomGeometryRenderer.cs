@@ -36,15 +36,7 @@ namespace CustomGeometryProject
         /// </summary>
         protected bool disposed;
 
-        /// <summary>
-        /// The vertex buffer
-        /// </summary>
-        private VertexBuffer vertexBuffer;
-
-        /// <summary>
-        /// The index buffer
-        /// </summary>
-        private IndexBuffer indexBuffer;
+        private Mesh mesh;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomGeometryRenderer"/> class.
@@ -53,6 +45,36 @@ namespace CustomGeometryProject
             : base("CustomGeometryRenderer" + instances)
         {
             instances++;
+        }
+
+        /// <summary>
+        /// Performs further custom initialization for this instance.
+        /// </summary>
+        protected override void Initialize()
+        {
+            base.Initialize();
+
+            VertexPositionColor[] vertices = new VertexPositionColor[3];
+            vertices[0].Position = new Vector3(-0.5f, -0.5f, 0f);
+            vertices[0].Color = Color.Red;
+
+            vertices[1].Position = new Vector3(0f, 0.5f, 0f);
+            vertices[1].Color = Color.Green;
+
+            vertices[2].Position = new Vector3(0.5f, -0.5f, 0f);
+            vertices[2].Color = Color.Yellow;
+
+            var vertexBuffer = new VertexBuffer(VertexPositionColor.VertexFormat);
+            vertexBuffer.SetData(vertices, 3);
+            
+            ushort[] indices = new ushort[3];
+            indices[0] = 0;
+            indices[1] = 1;
+            indices[2] = 2;
+
+            var indexBuffer = new IndexBuffer(indices);
+
+            this.mesh = new Mesh(0, vertices.Length, 0, 1, vertexBuffer, indexBuffer, PrimitiveType.TriangleList);
         }
 
         /// <summary>
@@ -78,58 +100,9 @@ namespace CustomGeometryProject
         /// </remarks>
         public override void Draw(TimeSpan gameTime)
         {
-            Layer layer = RenderManager.FindLayer(DefaultLayers.Opaque);
-
-            layer.AddDrawable(0, this, this.SortId);
-
-            this.Material.DefaultMaterial.Matrices.World = Transform3D.LocalWorld;
+            this.RenderManager.DrawMesh(this.mesh, this.Material.DefaultMaterial, ref this.Transform3D.LocalWorld);
         }
 
-        /// <summary>
-        /// Draws the basic unit.
-        /// </summary>
-        /// <param name="parameter">The parameter.</param>
-        protected override void DrawBasicUnit(int parameter)
-        {
-            this.Material.DefaultMaterial.Apply(this.RenderManager);
-
-            this.GraphicsDevice.DrawVertexBuffer(
-                4,
-                2,
-                PrimitiveType.TriangleList,
-                this.vertexBuffer,
-                this.indexBuffer);
-        }
-        /// <summary>
-        /// Performs further custom initialization for this instance.
-        /// </summary>
-        protected override void Initialize()
-        {
-            base.Initialize();
-
-            VertexPositionColor[] vertices = new VertexPositionColor[3];
-            vertices[0].Position = new Vector3(-0.5f, -0.5f, 0f);
-            vertices[0].Color = Color.Red;
-
-            vertices[1].Position = new Vector3(0f, 0.5f, 0f);
-            vertices[1].Color = Color.Green;
-
-            vertices[2].Position = new Vector3(0.5f, -0.5f, 0f);
-            vertices[2].Color = Color.Yellow;
-
-            this.vertexBuffer = new VertexBuffer(VertexPositionColor.VertexFormat);
-
-            this.vertexBuffer.SetData(vertices, 3);
-            this.GraphicsDevice.BindVertexBuffer(this.vertexBuffer);
-
-            ushort[] indices = new ushort[3];
-            indices[0] = 0;
-            indices[1] = 1;
-            indices[2] = 2;
-
-            this.indexBuffer = new IndexBuffer(indices);
-            this.GraphicsDevice.BindIndexBuffer(this.indexBuffer);
-        }
         /// <summary>
         /// Releases unmanaged and - optionally - managed resources.
         /// </summary>

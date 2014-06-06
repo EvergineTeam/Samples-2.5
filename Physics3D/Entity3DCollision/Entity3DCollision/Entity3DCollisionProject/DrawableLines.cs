@@ -84,9 +84,5 @@ namespace Entity3DCollisionProject
         protected override void Dispose(bool disposing)
         {
         }
-
-        protected override void DrawBasicUnit(int parameter)
-        {
-        }
     }
 }

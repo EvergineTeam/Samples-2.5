@@ -241,7 +241,7 @@ namespace OnPhysics2DCollisionSampleProject
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite(CIRCLE_TEXTURE))
                 .AddComponent(new RigidBody2D() { IsKinematic = false })
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
 
             return box;
         }

@@ -113,9 +113,9 @@ namespace SampleWPF
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.Begin();
+                    
                     this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
-                    this.spriteBatch.End();
+                    this.spriteBatch.Render();
                     #endregion
                 }
                 else

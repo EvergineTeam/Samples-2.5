@@ -122,7 +122,7 @@ namespace CollisionCategoriesProject
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite(texture))
                 .AddComponent(new RigidBody2D() { IsKinematic = false, CollisionCategories = category })
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
 
             return box;
         }
@@ -157,7 +157,7 @@ namespace CollisionCategoriesProject
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(GROUND_TEXTURE))
                 .AddComponent(new RigidBody2D() { IsKinematic = true, Friction = 1, CollisionCategories = Physic2DCategory.All })
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
 
             return sprite;
         }

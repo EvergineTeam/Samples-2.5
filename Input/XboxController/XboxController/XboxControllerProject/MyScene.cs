@@ -31,7 +31,7 @@ namespace XboxControllerProject
                                                 DrawOrder = 0.9f,
                                             })
                                             .AddComponent(new Sprite("Content/FrontController.wpk"))
-                                            .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                                            .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(frontController);
 
             // Top Controller
@@ -43,7 +43,7 @@ namespace XboxControllerProject
                                                 DrawOrder = 0.9f,
                                             })
                                             .AddComponent(new Sprite("Content/TopController.wpk"))
-                                            .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                                            .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(topController);
 
             // Sticks
@@ -55,7 +55,7 @@ namespace XboxControllerProject
                                             DrawOrder = 0.5f,
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "JoyStick"))
-                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(leftJoystick);
 
             this.rightJoystick = new Entity()
@@ -66,7 +66,7 @@ namespace XboxControllerProject
                                             DrawOrder = 0.5f,
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "JoyStick"))
-                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(rightJoystick);
 
             // Button A
@@ -79,7 +79,7 @@ namespace XboxControllerProject
                                             DrawOrder = 0.5f,
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "circlePressed"))
-                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonA);
 
             // Button B
@@ -92,7 +92,7 @@ namespace XboxControllerProject
                                             DrawOrder = 0.5f,
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "circlePressed"))
-                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                        .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonB);
 
             // ButtonX
@@ -105,7 +105,7 @@ namespace XboxControllerProject
                                            DrawOrder = 0.5f,
                                        })
                                        .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "circlePressed"))
-                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonX);
 
             // ButtonY
@@ -118,7 +118,7 @@ namespace XboxControllerProject
                                            DrawOrder = 0.5f,
                                        })
                                        .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "circlePressed"))
-                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonY);
 
             // Button Back
@@ -131,7 +131,7 @@ namespace XboxControllerProject
                                            DrawOrder = 0.5f,
                                        })
                                        .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "rectangularPressed"))
-                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                       .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonBack);
 
             // Start
@@ -144,7 +144,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                       .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "rectangularPressed"))
-                                      .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                      .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(buttonStart);
 
             // DPad Up
@@ -157,7 +157,7 @@ namespace XboxControllerProject
                                         DrawOrder = 0.5f,
                                     })
                                       .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "DPad"))
-                                      .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                      .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(dpadUp);
 
             // DPad Down
@@ -171,7 +171,7 @@ namespace XboxControllerProject
                                        DrawOrder = 0.5f,
                                    })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "DPad"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(dpadDown);
 
             // DPad Left
@@ -185,7 +185,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "DPad"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(dpadLeft);
 
             // DPad Right
@@ -199,7 +199,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "DPad"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(dpadRight);
 
             // Left shoulder
@@ -212,7 +212,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "LeftShoulderPressed"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(leftShoulder);
 
             // Right shoulder
@@ -225,7 +225,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "RightShoulder"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(rightShoulder);
 
             // Left trigger
@@ -238,7 +238,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "LeftTrigger"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(leftTrigger);
 
             // Right trigger
@@ -251,7 +251,7 @@ namespace XboxControllerProject
                                           DrawOrder = 0.5f,
                                       })
                                      .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "RightTrigger"))
-                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Opaque));
+                                     .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
             EntityManager.Add(rightTrigger);
 
             // Texts

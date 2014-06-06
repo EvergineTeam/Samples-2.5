@@ -51,7 +51,16 @@ namespace DebugShapes
 
         public override void Draw(TimeSpan gameTime)
         {
-            RenderManager.FindLayer(DefaultLayers.Debug).AddDrawable(0, this);
+            // Add our shapes to be rendered
+            RenderManager.LineBatch3D.DrawBoundingOrientedBox(box, Color.Yellow);
+            RenderManager.LineBatch3D.DrawBoundingFrustum(frustum, Color.Green);
+            RenderManager.LineBatch3D.DrawBoundingSphere(sphere, Color.Red);
+
+            //Also add a triangle and a line
+            RenderManager.LineBatch3D.DrawBox(new Vector3(-2), new Vector3(2), Color.White);
+            RenderManager.LineBatch3D.DrawCircle(Vector3.Zero, 1.5f, Color.Pink);
+            RenderManager.LineBatch3D.DrawTriangle(new Vector3(-1f, 0f, 0f), new Vector3(1f, 0f, 0f), new Vector3(0f, 2f, 0f), Color.Purple);
+            RenderManager.LineBatch3D.DrawLine(new Vector3(0f, 0f, 0f), new Vector3(3f, 3f, 3f), Color.Blue);
         }
 
         protected override void Initialize()
@@ -71,20 +80,6 @@ namespace DebugShapes
 
         protected override void Dispose(bool disposing)
         {
-        }
-
-        protected override void DrawBasicUnit(int parameter)
-        {
-            // Add our shapes to be rendered
-            RenderManager.LineBatch3D.DrawBoundingOrientedBox(box, Color.Yellow);
-            RenderManager.LineBatch3D.DrawBoundingFrustum(frustum, Color.Green);
-            RenderManager.LineBatch3D.DrawBoundingSphere(sphere, Color.Red);
-
-            //Also add a triangle and a line
-            RenderManager.LineBatch3D.DrawBox(new Vector3(-2), new Vector3(2), Color.White);
-            RenderManager.LineBatch3D.DrawCircle(Vector3.Zero, 1.5f, Color.Pink);
-            RenderManager.LineBatch3D.DrawTriangle(new Vector3(-1f, 0f, 0f), new Vector3(1f, 0f, 0f), new Vector3(0f, 2f, 0f), Color.Purple);
-            RenderManager.LineBatch3D.DrawLine(new Vector3(0f, 0f, 0f), new Vector3(3f, 3f, 3f), Color.Blue);
         }
     }
 }

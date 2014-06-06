@@ -58,8 +58,7 @@ namespace DistanceJoint2DSampleProject
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
                 .AddComponent(new RigidBody2D())
-                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
-               //.AddComponent(new DistanceJoint2D(crate, Vector2.Zero, Vector2.Zero));
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));               
 
             Entity Wheel2 = new Entity("wheel2")
                 .AddComponent(new Transform2D() { X = 450, Y = 400, Origin = Vector2.Center })

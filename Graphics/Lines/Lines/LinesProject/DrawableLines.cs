@@ -58,14 +58,6 @@ namespace LinesProject
 
         public override void Draw(TimeSpan gameTime)
         {
-            RenderManager.FindLayer(DefaultLayers.Debug).AddDrawable(0, this);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-        }
-        protected override void DrawBasicUnit(int parameter)
-        {
             if (lines.Count < 66000)
             {
                 for (int i = 0; i < 2; i++)
@@ -81,6 +73,10 @@ namespace LinesProject
                 Line l = lines[i];
                 RenderManager.LineBatch3D.DrawLine(ref l);
             }
+        }
+
+        protected override void Dispose(bool disposing)
+        {
         }
     }
 }

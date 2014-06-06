@@ -47,13 +47,13 @@ namespace TouchProject
             origin = new Vector2(texture.Width / 2, texture.Height / 2);
         }
 
-        protected override void DrawBasicUnit(int parameter)
+        public override void Draw(TimeSpan gameTime)
         {
             TouchPanelState state = WaveServices.Input.TouchPanelState;
 
             foreach (var Touch in state)
             {
-                spriteBatch.Draw(
+                this.layer.SpriteBatch.Draw(
                         texture,
                         Touch.Position - origin,
                         Color.White);

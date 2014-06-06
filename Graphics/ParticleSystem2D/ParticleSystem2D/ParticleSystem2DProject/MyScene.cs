@@ -50,26 +50,26 @@ namespace ParticleSystem2DProject
             var explosionParticles = new Entity("explosionParticles")
                 .AddComponent(new Transform2D())
                 .AddComponent(ParticleSystemFactory.CreateExplosion())
-                .AddComponent(new Material2D(new BasicMaterial2D("Content/particleFire.wpk")))
-                .AddComponent(new ParticleSystemRenderer2D("particleRenderer", DefaultLayers.Additive));
+                .AddComponent(new Material2D(new BasicMaterial2D("Content/particleFire.wpk", DefaultLayers.Additive)))
+                .AddComponent(new ParticleSystemRenderer2D("particleRenderer"));
 
             var dinos = new Entity("dinos")
                 .AddComponent(new Transform2D())
                 .AddComponent(ParticleSystemFactory.CreateDinosaurs())
-                .AddComponent(new Material2D(new BasicMaterial2D("Content/dinoParticle.wpk")))
-                .AddComponent(new ParticleSystemRenderer2D("particleRenderer", DefaultLayers.Alpha));
+                .AddComponent(new Material2D(new BasicMaterial2D("Content/dinoParticle.wpk", DefaultLayers.Alpha)))
+                .AddComponent(new ParticleSystemRenderer2D("particleRenderer"));
 
             var meteorSmoke = new Entity("smoke")
                 .AddComponent(new Transform2D())
                 .AddComponent(ParticleSystemFactory.CreateSmokeParticle())
-                .AddComponent(new Material2D(new BasicMaterial2D("Content/meteorSmoke.wpk")))
-                .AddComponent(new ParticleSystemRenderer2D("smokeRenderer", DefaultLayers.Alpha));
+                .AddComponent(new Material2D(new BasicMaterial2D("Content/meteorSmoke.wpk", DefaultLayers.Alpha)))
+                .AddComponent(new ParticleSystemRenderer2D("smokeRenderer"));
 
             var meteorFire = new Entity("fire")
                 .AddComponent(new Transform2D())
                 .AddComponent(ParticleSystemFactory.CreateFireParticle())
-                .AddComponent(new Material2D(new BasicMaterial2D("Content/particleFire.wpk")))
-                .AddComponent(new ParticleSystemRenderer2D("particleRenderer", DefaultLayers.Additive));
+                .AddComponent(new Material2D(new BasicMaterial2D("Content/particleFire.wpk", DefaultLayers.Additive)))
+                .AddComponent(new ParticleSystemRenderer2D("particleRenderer"));
 
             var explosion = new Entity("explosion")
                 .AddComponent(new Transform2D())

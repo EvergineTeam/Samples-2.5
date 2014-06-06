@@ -61,7 +61,7 @@ namespace BasicRigidBody2DProject
                 .AddComponent(new Sprite("Content/circleSprite.wpk"))
                 .AddComponent(new CircleCollider())
                 .AddComponent(new RigidBody2D())
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             
             EntityManager.Add(circle);
 

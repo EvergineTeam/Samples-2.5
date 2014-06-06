@@ -164,7 +164,7 @@ namespace PerPixelColliderProject
                 .AddComponent(new Transform2D() { X = x, Y = y, XScale = scale, YScale = scale, Origin = new WaveEngine.Common.Math.Vector2(0.5f, 0.5f) })
                 .AddComponent(new PerPixelCollider(TEXTUREOBSTACLE, 0))
                 .AddComponent(new Sprite(TEXTUREOBSTACLE))
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque))
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
                 .AddComponent(new ScrollBehavior(SCROLLWIDTH, true, true));
 
                 this.obstacles.Add(obstacle);
@@ -182,7 +182,7 @@ namespace PerPixelColliderProject
                 .AddComponent(new Transform2D() { X = x, Y = bottomLeft.Y - 128 })
             .AddComponent(new PerPixelCollider(TEXTUREGROUND, 0))
             .AddComponent(new Sprite(TEXTUREGROUND))
-            .AddComponent(new SpriteRenderer(DefaultLayers.Opaque))
+            .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
             .AddComponent(new ScrollBehavior(3072, false, false));
 
             this.EntityManager.Add(ground);
@@ -195,7 +195,7 @@ namespace PerPixelColliderProject
                 .AddComponent(new Transform2D() { X = 100, Y = 32, Origin = new Vector2(0.5f) })
                 .AddComponent(new PerPixelCollider(TEXTURESHIP, 0))
                 .AddComponent(new Sprite(TEXTURESHIP))
-                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque))
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
                 .AddComponent(new ShipBehavior());
 
             var shipBurst = new Entity("shipBurst")
