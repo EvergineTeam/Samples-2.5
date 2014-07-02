@@ -186,52 +186,52 @@ namespace TransitionSampleProject
             switch (this.index)
             {
                 case (0):
-                    this.transition = new CrossFadeTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.CrossFade(TRANSITIONTIME);
                     break;
                 case (1):
-                    this.transition = new PushTransition(TRANSITIONTIME, PushTransition.EffectOptions.FromLeft);
+                    this.transition = DefaultTransitions.Push(TRANSITIONTIME, PushTransition.EffectOptions.FromLeft);
                     break;
                 case (2):
-                    this.transition = new ColorFadeTransition(Color.White, TRANSITIONTIME);
+                    this.transition = DefaultTransitions.ColorFade(Color.White, TRANSITIONTIME);
                     break;
                 case (3):
-                    this.transition = new DoorwayTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Doorway(TRANSITIONTIME);
                     break;
                 case (4):
-                    this.transition = new CombTransition(TRANSITIONTIME, CombTransition.EffectOptions.Horizontal);
+                    this.transition = DefaultTransitions.Comb(TRANSITIONTIME, CombTransition.EffectOptions.Horizontal);
                     break;
                 case (5):
-                    this.transition = new CoverTransition(TRANSITIONTIME, CoverTransition.EffectOptions.FromLeft);
+                    this.transition = DefaultTransitions.Cover(TRANSITIONTIME, CoverTransition.EffectOptions.FromLeft);
                     break;
                 case (6):
-                    this.transition = new CurtainsTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Curtains(TRANSITIONTIME);
                     break;
                 case (7):
-                    this.transition = new FallingLinesTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.FallingLines(TRANSITIONTIME);
                     break;
                 case (8):
-                    this.transition = new FanTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Fan(TRANSITIONTIME);
                     break;
                 case (9):
-                    this.transition = new RotateTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Rotate(TRANSITIONTIME);
                     break;
                 case (10):
-                    this.transition = new ScaleTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Scale(TRANSITIONTIME);
                     break;
                 case (11):
-                    this.transition = new ShrinkAndSpinTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.ShrinkAndSpin(TRANSITIONTIME);
                     break;
                 case (12):
-                    this.transition = new SpinningSquaresTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.SpinningSquares(TRANSITIONTIME);
                     break;
                 case (13):
-                    this.transition = new UncoverTransition(TRANSITIONTIME, UncoverTransition.EffectOptions.FromLeft);
+                    this.transition = DefaultTransitions.Uncover(TRANSITIONTIME, UncoverTransition.EffectOptions.FromLeft);
                     break;
                 case (14):
-                    this.transition = new ZoomTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.Zoom(TRANSITIONTIME);
                     break;
                 case (15):
-                    this.transition = new ChequeredAppearTransition(TRANSITIONTIME);
+                    this.transition = DefaultTransitions.ChequeredAppear(TRANSITIONTIME);
                     break;
                 default:
                     break;
