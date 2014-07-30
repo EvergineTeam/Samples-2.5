@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeModel.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="MyScene.cs" />
   </ItemGroup>
