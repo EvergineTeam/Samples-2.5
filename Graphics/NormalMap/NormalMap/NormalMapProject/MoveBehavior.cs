@@ -23,6 +23,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WaveEngine.Common.Input;
+using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
@@ -46,36 +47,38 @@ namespace NormalMapProject
         {
             var keyboard = WaveServices.Input.KeyboardState;
 
+            Vector3 auxPosition = this.transform3D.Position;
             if (keyboard.Left == ButtonState.Pressed)
             {
-                transform3D.Position.X -= Speed;
+                auxPosition.X -= Speed;
             }
 
             if (keyboard.Right == ButtonState.Pressed)
             {
-                transform3D.Position.X += Speed;
+                auxPosition.X += Speed;
             }
 
             if (keyboard.O == ButtonState.Pressed)
             {
-                transform3D.Position.Z -= Speed;
+                auxPosition.Z -= Speed;
             }
 
             if (keyboard.P == ButtonState.Pressed)
             {
-                transform3D.Position.Z += Speed;
+                auxPosition.Z += Speed;
             }
 
             if (keyboard.Up == ButtonState.Pressed)
             {
-                transform3D.Position.Y += Speed;
+                auxPosition.Y += Speed;
             }
 
             if (keyboard.Down == ButtonState.Pressed)
             {
-                transform3D.Position.Y -= Speed;
+                auxPosition.Y -= Speed;
             }
 
+            this.transform3D.Position = auxPosition;
         }
     }
 }
