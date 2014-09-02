@@ -28,7 +28,7 @@ namespace ParticleSystem2DProject
                 EndDeltaScale = 4f,
                 MinRotateSpeed = -0.01f,
                 MaxRotateSpeed = 0.01f,
-                EmitterSize = new Vector3(10),
+                EmitterSize = new Vector2(10),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle,
                 InterpolationColors = new List<Color>() { Color.Transparent },
                 LinearColorEnabled = true,
@@ -54,7 +54,7 @@ namespace ParticleSystem2DProject
                 MinRotateSpeed = 0.1f,
                 MaxRotateSpeed = -0.1f,
                 EndDeltaScale = 0.0f,
-                EmitterSize = new Vector3(10),
+                EmitterSize = new Vector2(10),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle
             };
 
@@ -76,7 +76,7 @@ namespace ParticleSystem2DProject
                 MinRotateSpeed = 0.03f,
                 MaxRotateSpeed = -0.03f,
                 EndDeltaScale = 0f,
-                EmitterSize = new Vector3(30),
+                EmitterSize = new Vector2(30),
                 Gravity = new Vector2(0, 0.03f),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle,
             };
@@ -101,7 +101,7 @@ namespace ParticleSystem2DProject
                 MinRotateSpeed = 0.06f,
                 MaxRotateSpeed = -0.06f,
                 InitialAngleVariation = 100,
-                EmitterSize = new Vector3(30),
+                EmitterSize = new Vector2(30),
                 Gravity = new Vector2(0, 0.08f),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle,
                 InterpolationColors = new List<Color>() { Color.Transparent },

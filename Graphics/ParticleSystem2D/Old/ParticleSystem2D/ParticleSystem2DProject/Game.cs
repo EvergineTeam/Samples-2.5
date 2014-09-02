@@ -2,6 +2,7 @@
 using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
@@ -14,8 +15,7 @@ namespace ParticleSystem2DProject
         {
             base.Initialize(application);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
         }
     }
 }

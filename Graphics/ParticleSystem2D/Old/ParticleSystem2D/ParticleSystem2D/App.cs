@@ -7,11 +7,11 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace PerPixelCollider
+namespace ParticleSystem2D
 {
     public class App : WaveEngine.Adapter.Application
     {
-        PerPixelColliderProject.Game game;
+        ParticleSystem2DProject.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -21,19 +21,19 @@ namespace PerPixelCollider
 
         public App()
         {
-            this.Width = 1200;
+            this.Width = 1280;
             this.Height = 720;
             this.FullScreen = false;
-            this.WindowTitle = "PerPixelCollider";
+            this.WindowTitle = "ParticleSystem2D";
         }
 
         public override void Initialize()
         {
-            this.game = new PerPixelColliderProject.Game();
+            this.game = new ParticleSystem2DProject.Game();
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = new Color(32, 32, 32, 255);
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -106,7 +106,8 @@ namespace PerPixelCollider
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
+                    
+                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
                 }
@@ -114,30 +115,6 @@ namespace PerPixelCollider
                 {
                     this.game.DrawFrame(elapsedTime);
                 }
-            }
-        }
-
-        /// <summary>
-        /// Called when [activated].
-        /// </summary>
-        public override void OnActivated()
-        {
-            base.OnActivated();
-            if (this.game != null)
-            {
-                game.OnActivated();
-            }
-        }
-
-        /// <summary>
-        /// Called when [deactivate].
-        /// </summary>
-        public override void OnDeactivate()
-        {
-            base.OnDeactivate();
-            if (this.game != null)
-            {
-                game.OnDeactivated();
             }
         }
     }
