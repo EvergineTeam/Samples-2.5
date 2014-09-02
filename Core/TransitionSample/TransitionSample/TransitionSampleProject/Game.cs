@@ -1,7 +1,5 @@
 #region Using Statements
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Framework;
