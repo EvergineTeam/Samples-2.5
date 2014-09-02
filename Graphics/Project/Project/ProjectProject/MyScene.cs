@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,23 +18,27 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-using System.Collections.Generic;
+#region Using Statements
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
-using WaveEngine.Framework;
-using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Physics3D;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
-using WaveEngine.Components.Cameras;
+using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
+using WaveEngine.Materials;
+#endregion
 
 namespace ProjectProject
 {
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         TextBlock instructions;
 
@@ -42,16 +46,14 @@ namespace ProjectProject
         {
             // Create the camera
             FreeCamera mainCamera = new FreeCamera("MainCamera", Vector3.Zero, new Vector3(0f, 0f, -50f));
-
+            mainCamera.BackgroundColor = Color.CornflowerBlue;
             // Add the Picking Behavior to the camera
-            mainCamera.Entity.AddComponent(new PickingBehavior());
-            
-            RenderManager.SetActiveCamera(mainCamera.Entity);
+            mainCamera.Entity.AddComponent(new PickingBehavior());            
             EntityManager.Add(mainCamera.Entity);
 
             // Add the ground
             Entity ground = new Entity("Ground")
-               .AddComponent(new Transform3D() { Position = new Vector3(0, -1, 0)})
+               .AddComponent(new Transform3D() { Position = new Vector3(0, -1, 0) })
                .AddComponent(new BoxCollider())
                .AddComponent(Model.CreatePlane(Vector3.Up, 50))
                .AddComponent(new MaterialsMap(new BasicMaterial(Color.Gray)))
@@ -82,9 +84,6 @@ namespace ProjectProject
                 Text = "Selected Entity",
             };
             EntityManager.Add(instructions.Entity);
-
-            // Select a background color
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         /// <summary>
