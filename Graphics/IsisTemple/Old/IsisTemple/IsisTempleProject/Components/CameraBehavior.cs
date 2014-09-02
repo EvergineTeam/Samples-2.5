@@ -12,7 +12,7 @@ namespace IsisTempleProject.Components
     {
         #region Variables
         [RequiredComponent]
-        public Camera3D camera;
+        public Camera camera;
 
         private Entity followEntity;
         private Vector3 positionOffset;

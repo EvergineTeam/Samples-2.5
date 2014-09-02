@@ -13,14 +13,14 @@ namespace IsisTempleProject.Components
         #region Variables
         [RequiredComponent]
         public Transform3D transform3D;
-        private Camera3D camera; 
+        private Camera camera; 
         #endregion
 
         #region Initialize
         public FollowCameraBehavior(Entity cameraEntity)
             : base("FollowCamera")
         {
-            this.camera = cameraEntity.FindComponent<Camera3D>();
+            this.camera = cameraEntity.FindComponent<Camera>();
         } 
         #endregion
 
