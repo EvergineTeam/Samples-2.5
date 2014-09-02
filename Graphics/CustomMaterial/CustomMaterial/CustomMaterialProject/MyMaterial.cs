@@ -9,7 +9,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace MaterialTutorialProject
+namespace CustomMaterialProject
 {
     public class MyMaterial : Material
     {
@@ -57,7 +57,7 @@ namespace MaterialTutorialProject
             {
                 this.DiffuseMap = assets.LoadAsset<Texture2D>(this.diffuseMapPath);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw new InvalidOperationException("MyMaterial needs a valid texture.");
             }

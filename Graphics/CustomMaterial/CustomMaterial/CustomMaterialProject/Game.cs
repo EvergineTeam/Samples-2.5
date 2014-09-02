@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace MaterialTutorialProject
+namespace CustomMaterialProject
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,7 +14,8 @@ namespace MaterialTutorialProject
         {
             base.Initialize(application);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
