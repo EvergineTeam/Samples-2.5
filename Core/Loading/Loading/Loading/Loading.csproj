@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}</ProjectGuid>
+    <ProjectGuid>{1E5489F4-1907-45DD-82A7-D772B1694F45}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loading</RootNamespace>
