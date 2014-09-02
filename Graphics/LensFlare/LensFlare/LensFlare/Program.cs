@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace WaveEngineGame1
+namespace LensFlare
 {
     static class Program
     {

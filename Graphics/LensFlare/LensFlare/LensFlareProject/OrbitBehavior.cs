@@ -102,15 +102,19 @@ namespace LensFlareProject
                 this.orbitAngle = this.orbitAngle + ((float)gameTime.TotalSeconds * this.orbitSpeed);                
             }
 
-            this.Transform.Position.X = this.radius * ((float)Math.Sin(this.orbitAngle));
-            this.Transform.Position.Z = this.radius * ((float)Math.Cos(this.orbitAngle));
+            Vector3 auxPosition = Vector3.Zero;
+            auxPosition.X = this.radius * ((float)Math.Sin(this.orbitAngle));
+            auxPosition.Z = this.radius * ((float)Math.Cos(this.orbitAngle));
+            this.Transform.Position = auxPosition;
 
             if (this.rotationSpeed > 0)
             {
                 this.rotationAngle = this.rotationAngle + ((float)gameTime.TotalSeconds * this.rotationSpeed);                
             }
 
-            this.Transform.Rotation.Y = this.rotationAngle;
+            Vector3 auxRotation = this.Transform.Rotation;
+            auxRotation.Y = this.rotationAngle;
+            this.Transform.Rotation = auxRotation;
         }
     }
 }
