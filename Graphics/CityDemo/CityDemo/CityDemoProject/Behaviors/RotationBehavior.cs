@@ -46,16 +46,19 @@ namespace CityDemoProject.Behaviors
 
             Transform3D transform = this.Owner.FindComponent<Transform3D>();
 
+            Vector3 auxRotation = transform.Rotation;
             if (this.y)
             {
-                transform.Rotation.Y = (float)(0.5 * Math.Cos(totalTime));
+                auxRotation.Y = (float)(0.5 * Math.Cos(totalTime));
             }
 
             if (this.x)
             {
-                
-                transform.Rotation.X = (float)(0.5 * Math.Sin(totalTime) - 0.5f);
+
+                auxRotation.X = (float)(0.5 * Math.Sin(totalTime) - 0.5f);
             }
+
+            transform.Rotation = auxRotation;
         }
     }
 }
