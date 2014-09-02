@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>EnvironmentMap</Title>
+  <Description>Learn how add reflection to your models using EnvironmentMap material.</Description>
+  <ImageUri>EnvironmentMap.png</ImageUri>
+  <ExecutePath>EnvironmentMap.exe</ExecutePath>
+  <Dificulty>Beginner</Dificulty>
+  <Type>Graphics</Type>
+  <InstallPath>EnvironmentMapCompressed.exe</InstallPath>
+</Sample>
