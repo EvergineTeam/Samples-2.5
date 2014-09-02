@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clone", "Clone\Clone\Clone.csproj", "{251BF0E8-2311-43FE-BC08-C9407C3CBEE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneProject", "Clone\CloneProject\CloneProject.csproj", "{58DEF4A5-A5A8-4C16-952B-0F39A00DB55C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{251BF0E8-2311-43FE-BC08-C9407C3CBEE6}.Debug|x86.ActiveCfg = Debug|x86
+		{251BF0E8-2311-43FE-BC08-C9407C3CBEE6}.Debug|x86.Build.0 = Debug|x86
+		{251BF0E8-2311-43FE-BC08-C9407C3CBEE6}.Release|x86.ActiveCfg = Release|x86
+		{251BF0E8-2311-43FE-BC08-C9407C3CBEE6}.Release|x86.Build.0 = Release|x86
+		{58DEF4A5-A5A8-4C16-952B-0F39A00DB55C}.Debug|x86.ActiveCfg = Debug|x86
+		{58DEF4A5-A5A8-4C16-952B-0F39A00DB55C}.Debug|x86.Build.0 = Debug|x86
+		{58DEF4A5-A5A8-4C16-952B-0F39A00DB55C}.Release|x86.ActiveCfg = Release|x86
+		{58DEF4A5-A5A8-4C16-952B-0F39A00DB55C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
