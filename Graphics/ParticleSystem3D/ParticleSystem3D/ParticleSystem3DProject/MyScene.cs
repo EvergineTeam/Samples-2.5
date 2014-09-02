@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -19,33 +19,33 @@
 // IN THE SOFTWARE.
 
 #region Using Statements
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
-using WaveEngine.Framework;
-using WaveEngine.Components.UI;
-using WaveEngine.Framework.Graphics;
-using System.Linq;
-using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Components.UI;
+using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
 
-namespace ParticleSystemProject
+namespace ParticleSystem3DProject
 {
     public class MyScene : Scene
     {
         public TextBlock textBlock1;
 
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.Black;
-
+        {            
             // Main Camera
             ViewCamera camera = new ViewCamera("MainCamera", new Vector3(0, 400, 1200), new Vector3(0, 400, 0));
-
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            camera.BackgroundColor = Color.Black;
+            EntityManager.Add(camera.Entity);            
 
             // Initialize particle system
 
@@ -53,7 +53,7 @@ namespace ParticleSystemProject
                 .AddComponent(new Transform3D())
                 .AddComponent(new ParticleBehavior())
                 .AddComponent(new ParticleSystemRenderer3D());
-            
+
             var behavior = entitySystem.FindComponent<ParticleBehavior>();
             behavior.ApplyChanges();
             behavior.ApplyMaterial();

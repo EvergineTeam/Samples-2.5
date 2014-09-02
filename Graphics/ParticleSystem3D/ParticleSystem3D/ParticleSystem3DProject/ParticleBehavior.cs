@@ -31,7 +31,7 @@ using WaveEngine.Materials;
 using System.Collections.Generic;
 using WaveEngine.Common.Math;
 
-namespace ParticleSystemProject
+namespace ParticleSystem3DProject
 {
     public class ParticleBehavior : Behavior
     {

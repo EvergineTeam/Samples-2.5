@@ -28,7 +28,7 @@ using WaveEngine.Materials;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Components.Graphics3D;
 
-namespace ParticleSystemProject
+namespace ParticleSystem3DProject
 {
     /// <summary>
     /// A custom factory to create some differents particle systems

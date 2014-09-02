@@ -7,11 +7,11 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace ParticleSystem
+namespace ParticleSystem3D
 {
     public class App : WaveEngine.Adapter.Application
     {
-        ParticleSystemProject.Game game;
+        ParticleSystem3DProject.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -24,16 +24,16 @@ namespace ParticleSystem
             this.Width = 800;
             this.Height = 600;
             this.FullScreen = false;
-            this.WindowTitle = "ParticleSystem";
+            this.WindowTitle = "ParticleSystem3D";
         }
 
         public override void Initialize()
         {
-            this.game = new ParticleSystemProject.Game();
+            this.game = new ParticleSystem3DProject.Game();
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color(32, 32, 32, 255);
+            this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -106,8 +106,7 @@ namespace ParticleSystem
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    
-                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
                 }
@@ -115,6 +114,30 @@ namespace ParticleSystem
                 {
                     this.game.DrawFrame(elapsedTime);
                 }
+            }
+        }
+
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
+        {
+            base.OnActivated();
+            if (this.game != null)
+            {
+                game.OnActivated();
+            }
+        }
+
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
+        {
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                game.OnDeactivated();
             }
         }
     }
