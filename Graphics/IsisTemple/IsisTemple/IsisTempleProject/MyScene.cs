@@ -32,7 +32,7 @@ namespace IsisTempleProject
             this.CreateUI();
 
             //Create the level
-            //this.CreateLevel();
+            this.CreateLevel();
 
             //Create the camera
             FreeCamera camera = new FreeCamera("freeCamera", new Vector3(0, 2f, -2.5f), Vector3.UnitY * 0.9f)

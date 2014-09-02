@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2012-2013 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,27 +18,27 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+#region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
 using WaveEngine.Components.Animation;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Sound;
 using WaveEngine.Materials;
-using WaveEngine.Components.Gestures;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Physics3D;
-using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.UI;
-using WaveEngine.Components.Cameras;
-using WaveEngine.Framework.Physics2D;
+#endregion
 
 namespace KeyEventsAnimationProject
 {
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         Animation3D animation;
 
@@ -47,9 +47,8 @@ namespace KeyEventsAnimationProject
             #region Scene creation
             // Create the camera
             ViewCamera camera = new ViewCamera("MainCamera", new Vector3(2, 1, 2), new Vector3(0, 1, 0));
-            EntityManager.Add(camera.Entity);
-
-            RenderManager.SetActiveCamera(camera.Entity);
+            camera.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera.Entity);            
 
             // Create the model. Note of we add the Animation3D component.
             Entity animatedModel = new Entity("Isis")
@@ -65,9 +64,7 @@ namespace KeyEventsAnimationProject
             SoundBank spankerSlamSounds = new SoundBank();
             spankerSlamSounds.Add(SoundsManager.FootStep1);
             spankerSlamSounds.Add(SoundsManager.FootStep2);
-            WaveServices.SoundPlayer.RegisterSoundBank(spankerSlamSounds);
-
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            WaveServices.SoundPlayer.RegisterSoundBank(spankerSlamSounds);            
             #endregion
 
             #region Key Events
