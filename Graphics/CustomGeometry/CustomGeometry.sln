@@ -1,12 +1,13 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeometry", "CustomGeometry\CustomGeometry\CustomGeometry.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeometryProject", "CustomGeometry\CustomGeometryProject\CustomGeometryProject.csproj", "{7574FA64-FBCE-4162-887F-A4DE886AB22D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGeometryProject", "CustomGeometry\CustomGeometryProject\CustomGeometryProject.csproj", "{404BB31C-1B95-4392-BFBC-614E14527794}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
@@ -16,10 +17,10 @@ Global
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
-		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Debug|x86.ActiveCfg = Debug|x86
-		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Debug|x86.Build.0 = Debug|x86
-		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Release|x86.ActiveCfg = Release|x86
-		{7574FA64-FBCE-4162-887F-A4DE886AB22D}.Release|x86.Build.0 = Release|x86
+		{404BB31C-1B95-4392-BFBC-614E14527794}.Debug|x86.ActiveCfg = Debug|x86
+		{404BB31C-1B95-4392-BFBC-614E14527794}.Debug|x86.Build.0 = Debug|x86
+		{404BB31C-1B95-4392-BFBC-614E14527794}.Release|x86.ActiveCfg = Release|x86
+		{404BB31C-1B95-4392-BFBC-614E14527794}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

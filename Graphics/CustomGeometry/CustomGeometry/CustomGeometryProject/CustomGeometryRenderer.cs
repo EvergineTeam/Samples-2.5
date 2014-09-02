@@ -99,8 +99,9 @@ namespace CustomGeometryProject
         /// </list>
         /// </remarks>
         public override void Draw(TimeSpan gameTime)
-        {
-            this.RenderManager.DrawMesh(this.mesh, this.Material.DefaultMaterial, ref this.Transform3D.LocalWorld);
+        {            
+            Matrix localWorld = this.Transform3D.WorldTransform;
+            this.RenderManager.DrawMesh(this.mesh, this.Material.DefaultMaterial, ref localWorld);
         }
 
         /// <summary>
