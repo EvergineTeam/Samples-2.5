@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Resources" Version="1">
+  <Profiles>
+    <Profile Name="Windows" Platform="Windows" LowQualityCompressionFormat="R8G8B8A8" HighQualityCompressionFormat="R8G8B8A8" />
+    <Profile Name="WP" Platform="WP" LowQualityCompressionFormat="DXT1" HighQualityCompressionFormat="DXT5" />
+    <Profile Name="Metro" Platform="Metro" LowQualityCompressionFormat="DXT1" HighQualityCompressionFormat="DXT5" />
+    <Profile Name="iOS" Platform="iOS" LowQualityCompressionFormat="PVRTC2BPP" HighQualityCompressionFormat="PVRTC4BPP" />
+    <Profile Name="Android" Platform="Android" LowQualityCompressionFormat="ETC1RGB8" HighQualityCompressionFormat="R8G8B8A8" />
+    <Profile Name="Mac" Platform="Mac" LowQualityCompressionFormat="R8G8B8A8" HighQualityCompressionFormat="R8G8B8A8" />
+    <Profile Name="Linux" Platform="Linux" LowQualityCompressionFormat="R8G8B8A8" HighQualityCompressionFormat="R8G8B8A8" />
+  </Profiles>
+  <Assets>
+    <Asset Path="environment1.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap">
+      <ExportProperties>
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="venus.FBX" Hash="dd3ae93d47d929e42127807832dcbec1">
+      <ExportProperties>
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Components.Graphics3D.InternalStaticModel" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;ClipListViewModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;Clips /&gt;&#xD;&#xA;  &lt;ExportAnimations&gt;false&lt;/ExportAnimations&gt;&#xD;&#xA;&lt;/ClipListViewModel&gt;" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="venusLightingMap.jpg" Hash="e2af336034f6a04f83471d6496c8a33a">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.Texture2D" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="white.png" Hash="d695056fcac929afb0a6e7a2ce704c1e">
+      <ExportProperties>
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.Texture2D" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export ScalingType="Percentage" ScaledPercentage="100" GenerateMipmaps="False" PremultipliedAlpha="True" AntialiasType="Smooth" OutputFormat="Color32Bit" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negx.bmp" Hash="cf4ffa112f499bd2ec6ab5e8e873e285">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negy.bmp" Hash="34f2e6e50ca36a3bbb137b06cdc421c6">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\negz.bmp" Hash="4b0371175f600b0f39d749a7457e1a42">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posx.bmp" Hash="3c5ea099283efa4d6e35accb14a217ab">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posy.bmp" Hash="f1ac2a9ae331dd797ca8d503cdbaa5de">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1.cubemap\posz.bmp" Hash="dfa41a929fb1f3eb90728ae16b5944ca">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negx.bmp" Hash="376a865b553afd20b4c27cc05f647c73">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negy.bmp" Hash="bfdf0255087f4796a1d5f0d3de916b39">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\negz.bmp" Hash="c53f8e5c3b3476040220132429852398">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posx.bmp" Hash="1d24e5d547d8ea05a2a4f1d386a90d47">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posy.bmp" Hash="c2adcf8e2abf3308795eaaf61da7b9c7">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment1Light.cubemap\posz.bmp" Hash="0994c0f2d19f84b3a2fac3b4fcae17ce">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negx.bmp" Hash="7d1a6b6101e7c37d4c21064e2ce252a8">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negy.bmp" Hash="c444b8e4695684219bdbc873da53ccbc">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\negz.bmp" Hash="412220167252ff1171d37a8b80d6bece">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posx.bmp" Hash="930174a54f4814cc943317cb99cdb4e5">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posy.bmp" Hash="eec7b14da02f9086934ab096ced9956f">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2.cubemap\posz.bmp" Hash="4e579cfd7c33edcee21ed72bb878e14d">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negx.bmp" Hash="e40e9969ceb449155af7ed4d3c3f4443">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negy.bmp" Hash="769dd48a3c77e5a38cfe74f1d95680c2">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\negz.bmp" Hash="193cb1828a51e05758f20432eca6a889">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posx.bmp" Hash="1b503838899c893f085ffe7fa3c36c29">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posy.bmp" Hash="ba39ef3d1acd059c772a2635eb2e30ec">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment2Light.cubemap\posz.bmp" Hash="5748205fade5b0f81f1d61dea4d7049a">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negx.bmp" Hash="c391c2cb4eb4c25fcbed95d0c3afd6b5">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negy.bmp" Hash="6fb0fe3e83a6349741434092836dd0fe">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\negz.bmp" Hash="2a9feb3995a901eba8beeaba9b9c4d3d">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posx.bmp" Hash="a680d665ba078889786574d161880cae">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posy.bmp" Hash="6e74537cd61422521db4661afd857ab1">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3.cubemap\posz.bmp" Hash="e67533cb01e95187ef0aab5b3b9bd0c8">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negx.bmp" Hash="d0a2008ee71e6f0f61d2edcbbf4b8722">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negy.bmp" Hash="3fdb4d2c32c380782d4d24146aa82d78">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\negz.bmp" Hash="e11bafa0d28543586f231aadda53842f">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posx.bmp" Hash="6ec02d3fb21fce8dc9e14c2b7928f3fb">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posy.bmp" Hash="08cf2c9b3252850cea8c486147383a2e">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+    <Asset Path="environment3Light.cubemap\posz.bmp" Hash="97c391995e2ddc254ee969aed63b8b78">
+      <ExportProperties>
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Android" Platform="Android" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Mac" Platform="Mac" Generate="True" ZipCompress="True" />
+        <Export Profile="WaveEditor.Core.Model.PlatformProfile" Name="Linux" Platform="Linux" Generate="True" ZipCompress="True" />
+      </ExportProperties>
+    </Asset>
+  </Assets>
+</Project>

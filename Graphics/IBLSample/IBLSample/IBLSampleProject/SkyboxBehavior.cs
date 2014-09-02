@@ -39,10 +39,19 @@ namespace IBLSampleProject
         [RequiredComponent]
         public ModelRenderer ModelRenderer;
 
+        private Camera3D camera3D;
+
         public SkyboxBehavior()
             : base("Skybox" + instances)
         {
             instances++;
+        }
+
+        protected override void ResolveDependencies()
+        {
+            base.ResolveDependencies();
+
+            this.camera3D = this.EntityManager.Find("camera").FindComponent<Camera3D>();
         }
 
         protected override void Initialize()
@@ -54,7 +63,7 @@ namespace IBLSampleProject
 
         protected override void Update(TimeSpan gameTime)
         {
-            Transform.Position = RenderManager.ActiveCamera.Position;
+            Transform.Position = this.camera3D.Position; 
         }
     }
 }
