@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2012-2013 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -19,27 +19,29 @@
 // IN THE SOFTWARE.
 
 #region Using Statements
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
-
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 #endregion
 
-namespace DebugShapes
+namespace DebugShapesProject
 {
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.Black;
-            //WaveServices.ScreenLayers.SetDiagnosticsActive(true);
-
-            ViewCamera mainCamera = new ViewCamera("MainCamera", new Vector3(0f,10f,15f), Vector3.Zero);
+        {            
+            ViewCamera mainCamera = new ViewCamera("MainCamera", new Vector3(0f, 10f, 15f), Vector3.Zero);
+            mainCamera.BackgroundColor = Color.Black;
             EntityManager.Add(mainCamera.Entity);
-
-            RenderManager.SetActiveCamera(mainCamera.Entity);
+            
 
             Entity drawable = new Entity("Drawable")
                 .AddComponent(new DebugShapes());
