@@ -5,13 +5,11 @@ using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
-using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -22,16 +20,19 @@ namespace FrustumCullingProject
     {
         protected override void CreateScene()
         {
+            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            //RenderManager.DebugLines = true;
             var random = WaveServices.Random;
 
             var freeCamera = new FreeCamera("FreeCamera", new Vector3(0, 10, -10), Vector3.Zero) { FarPlane = 100 };
-            freeCamera.BackgroundColor = Color.CornflowerBlue;
-            freeCamera.Entity.AddComponent(new CameraFrustum());
+            freeCamera.Entity.AddComponent(new CameraFrustum()); 
             EntityManager.Add(freeCamera);
 
             var fixedCamera = new FixedCamera("FixedCamera", new Vector3(20, 50, -20), new Vector3(20, 0, 20));
 
             EntityManager.Add(fixedCamera);
+
+            RenderManager.SetActiveCamera(fixedCamera.Entity);
             RenderManager.SetFrustumCullingCamera(freeCamera.Entity);
 
             int num = 15;
@@ -87,6 +88,39 @@ namespace FrustumCullingProject
         {
             var random = WaveServices.Random;
             return new Color((float)random.NextDouble(), (float)random.NextDouble(), (float)random.NextDouble(), 1f);
+        }
+
+        public class SelectCamera : SceneBehavior
+        {
+            KeyboardState lastState, currentState;
+            FreeCamera freeCamera;
+            FixedCamera fixedCamera;
+
+            public SelectCamera(FreeCamera freeCamera, FixedCamera fixedCamera) : base("SelectCameraBehavior")
+            {
+                this.freeCamera = freeCamera;
+                this.fixedCamera = fixedCamera;
+            }
+
+            protected override void ResolveDependencies()
+            {
+            }
+
+            protected override void Update(TimeSpan gameTime)
+            {
+                currentState = WaveServices.Input.KeyboardState;
+                if (currentState.D1 == ButtonState.Pressed && lastState.D1 == ButtonState.Release)
+                {
+                    Scene.RenderManager.SetActiveCamera(freeCamera.Entity);
+                }
+
+                if (currentState.D2 == ButtonState.Pressed && lastState.D2 == ButtonState.Release)
+                {
+                    Scene.RenderManager.SetActiveCamera(fixedCamera.Entity);
+                }
+
+                lastState = currentState;
+            }
         }
     }
 }

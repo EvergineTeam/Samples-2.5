@@ -14,8 +14,7 @@ namespace FrustumCullingProject
         {
             base.Initialize(application);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
         }
     }
 }
