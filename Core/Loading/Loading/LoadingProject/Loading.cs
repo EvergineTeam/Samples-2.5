@@ -95,7 +95,7 @@ namespace LoadingProject
 
             background.FindComponent<AnimationUI>()
                     .BeginAnimation(
-                        Transform2D.LocalOpacityProperty,
+                        Transform2D.OpacityProperty,
                         new SingleAnimation(0f, 1f, TimeSpan.FromMilliseconds(2000)));
 
             tower.FindComponent<AnimationUI>()
@@ -120,7 +120,7 @@ namespace LoadingProject
 
             text.FindComponent<AnimationUI>()
                     .BeginAnimation(
-                        Transform2D.LocalOpacityProperty,
+                        Transform2D.OpacityProperty,
                         new SingleAnimation(0, 0.4f, TimeSpan.FromMilliseconds(400)))
                     .BeginAnimation(
                         Transform2D.XProperty,
@@ -172,17 +172,17 @@ namespace LoadingProject
                         Transform2D.XProperty,
                         getOutAnimation)
                     .BeginAnimation(
-                        Transform2D.LocalOpacityProperty,
+                        Transform2D.OpacityProperty,
                         new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
 
             background.FindComponent<AnimationUI>()
                     .BeginAnimation(
-                        Transform2D.LocalOpacityProperty,
+                        Transform2D.OpacityProperty,
                         new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
 
             text.FindComponent<AnimationUI>()
                     .BeginAnimation(
-                        Transform2D.LocalOpacityProperty,
+                        Transform2D.OpacityProperty,
                         new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
         }
 

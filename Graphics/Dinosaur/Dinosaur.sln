@@ -1,25 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinosaur", "Dinosaur\Dinosaur\Dinosaur.csproj", "{81C36008-0F6F-4720-A1CB-CD8557205309}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinosaur", "Dinosaur\Dinosaur\Dinosaur.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinosaurProject", "Dinosaur\DinosaurProject\DinosaurProject.csproj", "{978B052A-6BE0-499C-A626-7595942F10D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinosaurProject", "Dinosaur\DinosaurProject\DinosaurProject.csproj", "{C371074B-CEA3-4293-9814-EDE628224852}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81C36008-0F6F-4720-A1CB-CD8557205309}.Debug|x86.ActiveCfg = Debug|x86
-		{81C36008-0F6F-4720-A1CB-CD8557205309}.Debug|x86.Build.0 = Debug|x86
-		{81C36008-0F6F-4720-A1CB-CD8557205309}.Release|x86.ActiveCfg = Release|x86
-		{81C36008-0F6F-4720-A1CB-CD8557205309}.Release|x86.Build.0 = Release|x86
-		{978B052A-6BE0-499C-A626-7595942F10D0}.Debug|x86.ActiveCfg = Debug|x86
-		{978B052A-6BE0-499C-A626-7595942F10D0}.Debug|x86.Build.0 = Debug|x86
-		{978B052A-6BE0-499C-A626-7595942F10D0}.Release|x86.ActiveCfg = Release|x86
-		{978B052A-6BE0-499C-A626-7595942F10D0}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{C371074B-CEA3-4293-9814-EDE628224852}.Debug|x86.ActiveCfg = Debug|x86
+		{C371074B-CEA3-4293-9814-EDE628224852}.Debug|x86.Build.0 = Debug|x86
+		{C371074B-CEA3-4293-9814-EDE628224852}.Release|x86.ActiveCfg = Release|x86
+		{C371074B-CEA3-4293-9814-EDE628224852}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
