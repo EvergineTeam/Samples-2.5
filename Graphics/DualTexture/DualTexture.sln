@@ -1,23 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTexture", "DualTexture\DualTexture.csproj", "{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTexture", "DualTexture\DualTexture\DualTexture.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTextureProject", "DualTextureProject\DualTextureProject.csproj", "{E6304525-1FA9-4A49-8E19-72DE123CBC34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DualTextureProject", "DualTexture\DualTextureProject\DualTextureProject.csproj", "{CF5B58E8-50DF-4301-A0B2-0AB36DC63751}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Debug|x86.ActiveCfg = Debug|x86
-		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Debug|x86.Build.0 = Debug|x86
-		{7545FCF8-76AD-4EDA-BA7E-AF1360E58917}.Release|x86.ActiveCfg = Release|x86
-		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Debug|x86.ActiveCfg = Debug|x86
-		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Debug|x86.Build.0 = Debug|x86
-		{E6304525-1FA9-4A49-8E19-72DE123CBC34}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{CF5B58E8-50DF-4301-A0B2-0AB36DC63751}.Debug|x86.ActiveCfg = Debug|x86
+		{CF5B58E8-50DF-4301-A0B2-0AB36DC63751}.Debug|x86.Build.0 = Debug|x86
+		{CF5B58E8-50DF-4301-A0B2-0AB36DC63751}.Release|x86.ActiveCfg = Release|x86
+		{CF5B58E8-50DF-4301-A0B2-0AB36DC63751}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
