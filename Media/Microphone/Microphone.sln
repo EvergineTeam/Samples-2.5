@@ -1,34 +1,26 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microphone", "Microphone\Microphone\Microphone.csproj", "{678AE6AA-AC7D-4787-8169-48ACE87C08D0}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microphone", "Microphone\Microphone\Microphone.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneProject", "Microphone\MicrophoneProject\MicrophoneProject.csproj", "{7FFD1918-A885-436E-98A3-153B28DE8135}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneProject", "Microphone\MicrophoneProject\MicrophoneProject.csproj", "{67A41199-ABF7-4C94-8D39-DFC5F9B78F63}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs2013.plainconcepts.com/tfs/wave
-		SccProjectUniqueName0 = Microphone\\MicrophoneProject\\MicrophoneProject.csproj
-		SccProjectName0 = Microphone/MicrophoneProject
-		SccLocalPath0 = Microphone\\MicrophoneProject
-		SccProjectUniqueName1 = Microphone\\Microphone\\Microphone.csproj
-		SccProjectName1 = Microphone/Microphone
-		SccLocalPath1 = Microphone\\Microphone
-		SccLocalPath2 = .
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Debug|Any CPU.Build.0 = Debug|x86
-		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{678AE6AA-AC7D-4787-8169-48ACE87C08D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{7FFD1918-A885-436E-98A3-153B28DE8135}.Debug|Any CPU.Build.0 = Debug|x86
-		{7FFD1918-A885-436E-98A3-153B28DE8135}.Release|Any CPU.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{67A41199-ABF7-4C94-8D39-DFC5F9B78F63}.Debug|x86.ActiveCfg = Debug|x86
+		{67A41199-ABF7-4C94-8D39-DFC5F9B78F63}.Debug|x86.Build.0 = Debug|x86
+		{67A41199-ABF7-4C94-8D39-DFC5F9B78F63}.Release|x86.ActiveCfg = Release|x86
+		{67A41199-ABF7-4C94-8D39-DFC5F9B78F63}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
