@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,35 +18,25 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#region File Description
-//-----------------------------------------------------------------------------
-// MainScene
-//
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
 
 namespace Entity3DCollisionGroupsProject
 {
-    /// <summary>
-    /// Main Scene Class
-    /// </summary>
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         /// <summary>
         /// Entities Instance Count
@@ -60,14 +50,15 @@ namespace Entity3DCollisionGroupsProject
         /// Create Scene
         /// </summary>
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+        {            
             RenderManager.DebugLines = true;
 
             // Createa a Free Camera (W, A, S, D Keyboard controlled)
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 5, 5), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 5, 5), Vector3.Zero)
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
+            EntityManager.Add(camera.Entity);            
 
             // We set group before entities grouping
             this.groupA = new Physic3DCollisionGroup();
@@ -75,14 +66,14 @@ namespace Entity3DCollisionGroupsProject
 
             // GroupA RED will Ignore Self Group Collision
             this.groupA.IgnoreCollisionWith(this.groupA);
-            
+
             // GroupA RED will Ignore GroupB BLUE Collision
             this.groupA.IgnoreCollisionWith(this.groupB);
 
             // GroupB BLUE will Collide Self group entities. 
             // Every entity collide all groups by default for each new Collision group.
             // Use Physic3DCollisionGroup.DefaulCollisionGroup Property to get Engine Physic3D default Collision group
-            
+
             // Creates a plane ground
             this.CreateGround();
 
