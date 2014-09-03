@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,33 +18,26 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#region File Description
-//-----------------------------------------------------------------------------
-// MainScene
-//
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
-using WaveEngine.Components.Particles;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
 
 namespace OnPhysics2DCollisionSampleProject
 {
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         // Consts
         private const string GROUND_TEXTURE = "Content/GroundSprite.wpk";
@@ -65,7 +58,9 @@ namespace OnPhysics2DCollisionSampleProject
         /// </summary>
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera2d);
 
             // Border and UI
             this.CreateClosures();
@@ -117,7 +112,7 @@ namespace OnPhysics2DCollisionSampleProject
             float angle = (float)Math.Atan2(args.Normal.X, args.Normal.Y);
             this.boxTextBlock.Text = string.Format("Normal : {0}\nNormal Angle: {1}\nPointA : {2}\nPointB : {3}", args.Normal, MathHelper.ToDegrees(angle), args.PointA, args.PointB);
             this.CreateVolatileMark(args.PointA.Value.X, args.PointA.Value.Y, angle);
-            
+
             // We could retrieve a second contact points on Collision. A circle only can get ONE contact point. 
             if (args.PointB != Vector2.Zero)
             {
@@ -153,24 +148,24 @@ namespace OnPhysics2DCollisionSampleProject
         private void CreateVolatileMark(float x, float y, float angle)
         {
             Entity mark = new Entity("mark" + instances++)
-                .AddComponent(new Transform2D() { X = x - 7, Y  = y-7})
+                .AddComponent(new Transform2D() { X = x - 7, Y = y - 7 })
                 .AddComponent(new Sprite(MARKER_TEXTURE))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(mark);
 
             Entity arrow = new Entity("mark" + instances++)
-                .AddComponent(new Transform2D() { Origin = new Vector2(0.5f,1),  X = x, Y = y, Rotation = angle })
+                .AddComponent(new Transform2D() { Origin = new Vector2(0.5f, 1), X = x, Y = y, Rotation = angle })
                 .AddComponent(new Sprite(ARROW_TEXTURE))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(arrow);
 
             // Sets Time To Live for the mark. Remove timer from WaveServices after use.
             WaveServices.TimerFactory.CreateTimer("Timer" + mark.Name, TimeSpan.FromSeconds(1), () =>
-                {
-                    EntityManager.Remove(mark);
-                    EntityManager.Remove(arrow);
-                    WaveServices.TimerFactory.RemoveTimer("Timer" + mark.Name);
-                });
+            {
+                EntityManager.Remove(mark);
+                EntityManager.Remove(arrow);
+                WaveServices.TimerFactory.RemoveTimer("Timer" + mark.Name);
+            });
         }
 
         /// <summary>
@@ -201,10 +196,10 @@ namespace OnPhysics2DCollisionSampleProject
         private Entity CreateGround(string name, float x, float y, float angle)
         {
             Entity sprite = new Entity(name)
-                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle})
+                .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(GROUND_TEXTURE))
-                .AddComponent(new RigidBody2D() { IsKinematic = true, Friction = 1, CollisionCategories = Physic2DCategory.All })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Static, Friction = 1, CollisionCategories = Physic2DCategory.All })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             return sprite;
@@ -222,7 +217,8 @@ namespace OnPhysics2DCollisionSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(CRATEA_TEXTURE))
-                .AddComponent(new RigidBody2D() { IsKinematic = false })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic })
+                .AddComponent(new JointMap2D())
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             return box;
@@ -240,7 +236,8 @@ namespace OnPhysics2DCollisionSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite(CIRCLE_TEXTURE))
-                .AddComponent(new RigidBody2D() { IsKinematic = false })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic })
+                .AddComponent(new JointMap2D())
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
 
             return box;
