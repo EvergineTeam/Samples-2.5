@@ -1,16 +1,15 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyTitle("StaticBatching")]
+[assembly: AssemblyProduct("StaticBatching")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("Weekend game Studio")]
-[assembly: AssemblyCopyright("Copyright © Weekend Game Studio 2013")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -23,7 +22,7 @@ using System.Resources;
 // On Windows, the following GUID is for the ID of the typelib if this
 // project is exposed to COM. On other platforms, it unique identifies the
 // title storage container when deploying this assembly to the device.
-[assembly: Guid("84d493d6-d38e-47e1-8f63-73a7c049caca")]
+[assembly: Guid("6e16bf7a-b58e-47dc-b233-a0c2e87ba3bb")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -33,4 +32,3 @@ using System.Resources;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguageAttribute("en-US")]

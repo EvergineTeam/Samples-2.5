@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace ToonShadingProject
+namespace StaticBatchingProject
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,8 +14,11 @@ namespace ToonShadingProject
         {
             base.Initialize(application);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+            WaveServices.ViewportManager.Activate(800, 600, ViewportManager.StretchMode.Uniform);
+
+            ScreenLayers screenLayers = WaveServices.ScreenLayers;
+            screenLayers.AddScene<MyScene>();
+            screenLayers.Apply();
         }
     }
 }

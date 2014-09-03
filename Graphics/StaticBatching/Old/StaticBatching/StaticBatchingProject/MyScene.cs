@@ -8,7 +8,7 @@ using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -19,13 +19,15 @@ namespace StaticBatchingProject
     {
         protected override void CreateScene()
         {
-            WaveServices.ScreenContextManager.SetDiagnosticsActive(true);                        
+            WaveServices.ScreenLayers.SetDiagnosticsActive(true);
+            //RenderManager.DebugLines = true;
+
+            RenderManager.BackgroundColor = Color.CornflowerBlue;
 
             //Create the camera
             FreeCamera camera = new FreeCamera("freeCamera", new Vector3(42.60071f, 10.3373f, -45.83459f), new Vector3(41.77419f, 10.37616f, -45.27303f))
             {
-                Speed = 10,
-                BackgroundColor = Color.CornflowerBlue,
+                Speed = 10
             };
 
             //Add some light!
@@ -53,8 +55,8 @@ namespace StaticBatchingProject
                 for (int j = 0; j < nCols; j++)
                 {
                     Entity column = new Entity("column_" + nColumns++) { IsStatic = isStatic }
-                        .AddComponent(new Transform3D()
-                        {
+                        .AddComponent(new Transform3D() 
+                        { 
                             Position = new Vector3(-j * columnSpacing, 0, (i - 1) * columnSpacing),
                             Rotation = new Vector3(0, (WaveServices.Random.NextInt() % 4) * MathHelper.PiOver4, 0)
                         })
@@ -71,8 +73,8 @@ namespace StaticBatchingProject
                 for (int j = 0; j < nCols; j++)
                 {
                     Entity column = new Entity("column_" + nColumns++) { IsStatic = isStatic }
-                        .AddComponent(new Transform3D()
-                        {
+                        .AddComponent(new Transform3D() 
+                        { 
                             Position = new Vector3(-j * columnSpacing, 0, (i - 4) * columnSpacing),
                             Rotation = new Vector3(0, (WaveServices.Random.NextInt() % 4) * MathHelper.PiOver2, 0)
                         })
@@ -97,6 +99,6 @@ namespace StaticBatchingProject
                     EntityManager.Add(column);
                 }
             }
-        }        
+        }
     }
 }

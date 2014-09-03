@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,31 +18,30 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
+#endregion
 
 namespace ToonShadingProject
 {
-    public class BasicScene : Scene
+    public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-
+        {            
             FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 20, 30), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            camera.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera.Entity);            
 
             Entity sphere = new Entity("Sphere")
                 .AddComponent(new Transform3D() { Scale = new Vector3(10f) })
