@@ -119,8 +119,12 @@ namespace EntityPickingProject
                         // Calculate 
                         this.pickingPosition = this.camera.Position + this.pickingPosition * this.distance;
 
-                        this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
-                        this.selectedEntity.FindComponent<JointMap3D>().AddJoint("mouseJoint",mouseJoint);                        
+                        var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                        if (jointMap != null)
+                        {
+                            this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
+                            jointMap.AddJoint("mouseJoint", mouseJoint);
+                        }
                     }
                 }
 
@@ -179,7 +183,11 @@ namespace EntityPickingProject
             this.distance = float.MaxValue;
             if (this.selectedEntity != null)
             {
-                this.selectedEntity.FindComponent<JointMap3D>().RemoveJoint("mouseJoint");                
+                var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                if (jointMap != null)
+                {
+                    jointMap.RemoveJoint("mouseJoint");
+                }
                 this.selectedEntity = null;
 
             }

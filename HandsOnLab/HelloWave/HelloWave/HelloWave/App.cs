@@ -33,7 +33,7 @@ namespace HelloWave
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color(32, 32, 32, 255);
+            this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -59,8 +59,6 @@ namespace HelloWave
             }
 
             position = new Vector2();
-            position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
-            position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
             #endregion
         }
 
@@ -81,6 +79,9 @@ namespace HelloWave
                     {
                         this.splashState = false;
                     }
+
+                    position.X = (this.Width - this.splashScreen.Width) / 2.0f;
+                    position.Y = (this.Height - this.splashScreen.Height) / 2.0f;
                     #endregion
                 }
                 else
@@ -106,15 +107,38 @@ namespace HelloWave
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.Begin();
-                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
-                    this.spriteBatch.End();
+                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Render();
                     #endregion
                 }
                 else
                 {
                     this.game.DrawFrame(elapsedTime);
                 }
+            }
+        }
+
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
+        {
+            base.OnActivated();
+            if (this.game != null)
+            {
+                game.OnActivated();
+            }
+        }
+
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
+        {
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                game.OnDeactivated();
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+﻿// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -22,7 +22,7 @@
 //-----------------------------------------------------------------------------
 // MouseBehavior
 //
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
+// Copyright © 2014 Weekend Game Studio. All rights reserved.
 // Use is subject to license terms.
 //-----------------------------------------------------------------------------
 #endregion
@@ -93,13 +93,14 @@ namespace CollisionCategoriesProject
                                 if (rigidBody != null)
                                 {
                                     // Forbiden Mouse Joint of Kinematic Bodies
-                                    if (!rigidBody.IsKinematic)
+                                    if (rigidBody.PhysicBodyType != PhysicBodyType.Kinematic)
                                     {
                                         this.connectedEntity = entity;
 
                                         // Create Mouse Joint
                                         this.mouseJoint = new FixedMouseJoint2D(this.touchPosition);
-                                        this.connectedEntity.AddComponent(this.mouseJoint);
+                                        JointMap2D jointMap = this.connectedEntity.FindComponent<JointMap2D>();
+                                        jointMap.AddJoint("mouseJoint", this.mouseJoint);
 
                                         // We can break after collider test when true, but we'll miss overlapped entities if Physic entity is 
                                         // under a non Physic entity. We are breaking here just for sample.
@@ -117,7 +118,8 @@ namespace CollisionCategoriesProject
                     if (!this.connectedEntity.IsDisposed)
                     {
                         // Remove Fixed Joint
-                        this.connectedEntity.RemoveComponent<FixedMouseJoint2D>();
+                        JointMap2D jointMap2D = this.connectedEntity.FindComponent<JointMap2D>();
+                        jointMap2D.RemoveJoint("mouseJoint");
                     }
 
                     this.mouseJoint = null;

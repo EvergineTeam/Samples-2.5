@@ -33,7 +33,7 @@ namespace AccelerometerProject.Behaviors
     public class CameraBehavior: Behavior
     {
         [RequiredComponent()]
-        public Camera Camera;
+        public Camera3D Camera;
         private Vector3 input;
 
         internal CameraBehavior()
@@ -46,9 +46,7 @@ namespace AccelerometerProject.Behaviors
             {
                 input = WaveServices.Input.AccelerometerState.SmoothAcceleration * ((float)gameTime.Milliseconds * 10);
 
-                Camera.LookAt.X = input.Y;
-                Camera.LookAt.Y = input.X;
-                Camera.LookAt.Z = input.Z;
+                Camera.LookAt = input;
             }
             else
             {

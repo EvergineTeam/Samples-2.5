@@ -97,29 +97,11 @@ namespace Motor3DSampleProject
             EntityManager.Add(wheel3);
             EntityManager.Add(wheel4);
 
-            // Create Joints and define Motors
-            vBody.AddComponent(new JointMap3D()
-                                    .AddJoint("jointWheel1", new HingeJoint(vBody, wheel1Position, Vector3.Forward)
-                                    {
-                                        IsMotorEnabled = true,
-                                        MotorVelocity = MathHelper.ToRadians(-720),
-                                        MotorDamping = 1 / 500,
-                                        MotorMaxForce = 500
-                                    })
-                                    .AddJoint("jointWheel2", new HingeJoint(vBody, wheel2Position, Vector3.Forward)
-                                    {
-                                        IsMotorEnabled = true,
-                                        MotorVelocity = MathHelper.ToRadians(-720),
-                                        MotorDamping = 1 / 500,
-                                        MotorMaxForce = 500
-                                    })
-                                    .AddJoint("jointWheel3", new HingeJoint(vBody, wheel3Position, Vector3.Forward))
-                                    .AddJoint("jointWheel4", new HingeJoint(vBody, wheel4Position, Vector3.Forward))
-                              );
-            //wheel1.AddComponent(new HingeJoint(vBody, wheel1Position, Vector3.Forward) { IsMotorEnabled = true, MotorVelocity = MathHelper.ToRadians(-720), MotorDamping = 1 / 500, MotorMaxForce = 500 });
-            //wheel2.AddComponent(new HingeJoint(vBody, wheel2Position, Vector3.Forward) { IsMotorEnabled = true, MotorVelocity = MathHelper.ToRadians(-720), MotorDamping = 1 / 500, MotorMaxForce = 500 });
-            //wheel3.AddComponent(new HingeJoint(vBody, wheel3Position, Vector3.Forward));
-            //wheel4.AddComponent(new HingeJoint(vBody, wheel4Position, Vector3.Forward));
+            // Create Joints and define Motors            
+            wheel1.AddComponent(new JointMap3D().AddJoint("jointWheel1",new HingeJoint(vBody, wheel1Position, Vector3.Forward) { IsMotorEnabled = true, MotorVelocity = MathHelper.ToRadians(-720), MotorDamping = 1 / 500, MotorMaxForce = 500 }));
+            wheel2.AddComponent(new JointMap3D().AddJoint("jointWheel2",new HingeJoint(vBody, wheel2Position, Vector3.Forward) { IsMotorEnabled = true, MotorVelocity = MathHelper.ToRadians(-720), MotorDamping = 1 / 500, MotorMaxForce = 500 }));
+            wheel3.AddComponent(new JointMap3D().AddJoint("jointWheel3",new HingeJoint(vBody, wheel3Position, Vector3.Forward)));
+            wheel4.AddComponent(new JointMap3D().AddJoint("jointWheel4",new HingeJoint(vBody, wheel4Position, Vector3.Forward)));
         }
 
         /// <summary>

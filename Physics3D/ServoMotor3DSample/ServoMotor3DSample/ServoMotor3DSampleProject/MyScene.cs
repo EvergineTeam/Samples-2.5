@@ -103,12 +103,10 @@ namespace ServoMotor3DSampleProject
             float motorStiffness = 100;
             float motorGoalDistance = 2;
 
-            vBody.AddComponent(new JointMap3D()
-                                        .AddJoint("jointBase1", new LineSliderJoint(vBody, base1Position, Vector3.Up, base1Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance })
-                                        .AddJoint("jointBase2", new LineSliderJoint(vBody, base2Position, Vector3.Up, base2Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance })
-                                        .AddJoint("jointBase3", new LineSliderJoint(vBody, base3Position, Vector3.Up, base3Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance })
-                                        .AddJoint("jointBase4", new LineSliderJoint(vBody, base4Position, Vector3.Up, base4Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance })
-                              );
+            base1.AddComponent(new JointMap3D().AddJoint("jointBase1", new LineSliderJoint(vBody, base1Position, Vector3.Up, base1Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance }));
+            base2.AddComponent(new JointMap3D().AddJoint("jointBase1",new LineSliderJoint(vBody, base2Position, Vector3.Up, base2Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance }));
+            base3.AddComponent(new JointMap3D().AddJoint("jointBase1",new LineSliderJoint(vBody, base3Position, Vector3.Up, base3Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance }));
+            base4.AddComponent(new JointMap3D().AddJoint("jointBase1",new LineSliderJoint(vBody, base4Position, Vector3.Up, base4Position + Vector3.UnitY * baseToBodyDistance) { IsMotorEnabled = isMotorEnabled, MotorMaxForce = motorMaxForce, MotorDamping = motorDamping, MotorStiffness = motorStiffness, MotorGoalDistance = motorGoalDistance }));
         }
 
         /// <summary>

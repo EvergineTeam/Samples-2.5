@@ -1,24 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategories", "CollisionCategories\CollisionCategories\CollisionCategories.csproj", "{3F39D977-D67D-4C01-BFD3-9808FB4D277C}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategories", "CollisionCategories\CollisionCategories\CollisionCategories.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategoriesProject", "CollisionCategories\CollisionCategoriesProject\CollisionCategoriesProject.csproj", "{0FFA60D3-BE7D-49AF-91D8-1667619449C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionCategoriesProject", "CollisionCategories\CollisionCategoriesProject\CollisionCategoriesProject.csproj", "{71962152-03F7-4211-9070-225F3D246ACD}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Debug|x86.ActiveCfg = Debug|x86
-		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Debug|x86.Build.0 = Debug|x86
-		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Release|x86.ActiveCfg = Release|x86
-		{3F39D977-D67D-4C01-BFD3-9808FB4D277C}.Release|x86.Build.0 = Release|x86
-		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Debug|x86.ActiveCfg = Debug|x86
-		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Debug|x86.Build.0 = Debug|x86
-		{0FFA60D3-BE7D-49AF-91D8-1667619449C4}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{71962152-03F7-4211-9070-225F3D246ACD}.Debug|x86.ActiveCfg = Debug|x86
+		{71962152-03F7-4211-9070-225F3D246ACD}.Debug|x86.Build.0 = Debug|x86
+		{71962152-03F7-4211-9070-225F3D246ACD}.Release|x86.ActiveCfg = Release|x86
+		{71962152-03F7-4211-9070-225F3D246ACD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
