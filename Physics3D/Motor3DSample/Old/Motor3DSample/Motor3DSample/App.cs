@@ -7,11 +7,11 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace MeshCollider
+namespace Motor3DSample
 {
     public class App : WaveEngine.Adapter.Application
     {
-        MeshColliderProject.Game game;
+        Motor3DSampleProject.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -24,16 +24,16 @@ namespace MeshCollider
             this.Width = 800;
             this.Height = 600;
             this.FullScreen = false;
-            this.WindowTitle = "MeshCollider";
+            this.WindowTitle = "Motor3DSample";
         }
 
         public override void Initialize()
         {
-            this.game = new MeshColliderProject.Game();
+            this.game = new Motor3DSampleProject.Game();
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = new Color(32, 32, 32, 255);
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -59,6 +59,8 @@ namespace MeshCollider
             }
 
             position = new Vector2();
+            position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+            position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
             #endregion
         }
 
@@ -79,9 +81,6 @@ namespace MeshCollider
                     {
                         this.splashState = false;
                     }
-
-                    position.X = (this.Width - this.splashScreen.Width) / 2.0f;
-                    position.Y = (this.Height - this.splashScreen.Height) / 2.0f;
                     #endregion
                 }
                 else
@@ -107,7 +106,8 @@ namespace MeshCollider
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
+                    
+                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
                 }
@@ -117,30 +117,5 @@ namespace MeshCollider
                 }
             }
         }
-
-        /// <summary>
-        /// Called when [activated].
-        /// </summary>
-        public override void OnActivated()
-        {
-            base.OnActivated();
-            if (this.game != null)
-            {
-                game.OnActivated();
-            }
-        }
-
-        /// <summary>
-        /// Called when [deactivate].
-        /// </summary>
-        public override void OnDeactivate()
-        {
-            base.OnDeactivate();
-            if (this.game != null)
-            {
-                game.OnDeactivated();
-            }
-        }
     }
 }
-

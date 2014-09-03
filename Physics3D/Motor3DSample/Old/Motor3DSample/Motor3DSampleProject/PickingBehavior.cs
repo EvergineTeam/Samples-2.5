@@ -45,7 +45,7 @@ namespace Motor3DSampleProject
         private const float MINDISTANCE = 2.5f;
 
         [RequiredComponent()]
-        public Camera3D camera;
+        public Camera camera;
 
         private Input input;
         private MouseState mouseState;
@@ -110,7 +110,7 @@ namespace Motor3DSampleProject
                         this.pickingPosition.X = this.mousePosition.X;
                         this.pickingPosition.Y = this.mousePosition.Y;
                         this.pickingPosition.Z = this.distance;
-                        this.pickingPosition = this.camera.Unproject(ref this.pickingPosition);
+                        this.pickingPosition = this.camera.Unproject(ref this.pickingPosition, ref camera.View, ref this.camera.Projection, ref this.identity);
 
                         // obtains CameraPosition-PickingPosition vector
                         this.pickingPosition = this.camera.Position - this.pickingPosition;
@@ -120,7 +120,7 @@ namespace Motor3DSampleProject
                         this.pickingPosition = this.camera.Position + this.pickingPosition * this.distance;
 
                         this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
-                        //TODO: this.selectedEntity.AddComponent(mouseJoint);
+                        this.selectedEntity.AddComponent(mouseJoint);
                     }
                 }
 
@@ -136,7 +136,7 @@ namespace Motor3DSampleProject
                     this.pickingPosition.X = this.mousePosition.X;
                     this.pickingPosition.Y = this.mousePosition.Y;
                     this.pickingPosition.Z = this.distance;
-                    this.pickingPosition = this.camera.Unproject(ref this.pickingPosition);
+                    this.pickingPosition = this.camera.Unproject(ref this.pickingPosition, ref camera.View, ref this.camera.Projection, ref this.identity);
 
                     // obtains CameraPosition-PickingPosition vector
                     this.pickingPosition = this.camera.Position - this.pickingPosition;
@@ -179,7 +179,7 @@ namespace Motor3DSampleProject
             this.distance = float.MaxValue;
             if (this.selectedEntity != null)
             {
-                //TODO: this.selectedEntity.RemoveComponent<MotorizedGrabSpring3D>();
+                this.selectedEntity.RemoveComponent<MotorizedGrabSpring3D>();
                 this.selectedEntity = null;
 
             }
@@ -198,8 +198,8 @@ namespace Motor3DSampleProject
             this.farPosition.Z = 1.0f;
 
             // Unproject Mouse Position
-            this.nearPosition = this.camera.Unproject(ref this.nearPosition);
-            this.farPosition = this.camera.Unproject(ref this.farPosition);
+            this.nearPosition = this.camera.Unproject(ref this.nearPosition, ref this.camera.View, ref this.camera.Projection, ref this.identity);
+            this.farPosition = this.camera.Unproject(ref this.farPosition, ref this.camera.View, ref this.camera.Projection, ref this.identity);
 
             // Update ray. Ray launched from nearPosition in rayDirection direction.
             this.rayDirection = this.farPosition - this.nearPosition;
