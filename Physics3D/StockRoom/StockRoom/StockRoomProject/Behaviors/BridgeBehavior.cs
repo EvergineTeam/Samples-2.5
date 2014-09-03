@@ -81,17 +81,17 @@ namespace StockRoomProject.Behaviors
                 if (i == 0)
                 {
                     this.anchor1 = CreateAnchor("Anchor1", new Vector3(offset, HIGH, 0), new Vector3(5, 5, 50));
-                    this.anchor1.AddComponent(new HingeJoint(tables[i], new Vector3(offset + 10, HIGH, 0), Vector3.UnitZ));
+                    this.anchor1.AddComponent(new JointMap3D().AddJoint("joint",new HingeJoint(tables[i], new Vector3(offset + 10, HIGH, 0), Vector3.UnitZ)));
                 }
                 else if (i == NUMTABLES - 1)
                 {
                     this.anchor2 = CreateAnchor("Anchor2", new Vector3(offset + 20 + space * NUMTABLES, HIGH, 0), new Vector3(5, 5, 50));
-                    tables[i - 1].AddComponent(new HingeJoint(tables[i], new Vector3(offset + 10 + (space * i), HIGH, 0), Vector3.UnitZ));
-                    tables[i].AddComponent(new HingeJoint(this.anchor2, new Vector3(offset + 10 + space * NUMTABLES, HIGH, 0), Vector3.UnitZ));
+                    tables[i - 1].AddComponent(new JointMap3D().AddJoint("joint", new HingeJoint(tables[i], new Vector3(offset + 10 + (space * i), HIGH, 0), Vector3.UnitZ)));
+                    tables[i].AddComponent(new JointMap3D().AddJoint("joint", new HingeJoint(this.anchor2, new Vector3(offset + 10 + space * NUMTABLES, HIGH, 0), Vector3.UnitZ)));
                 }
                 else
                 {
-                    tables[i - 1].AddComponent(new HingeJoint(tables[i], new Vector3(offset + 10 + (space * i), HIGH, 0), Vector3.UnitZ));
+                    tables[i - 1].AddComponent(new JointMap3D().AddJoint("joint", new HingeJoint(tables[i], new Vector3(offset + 10 + (space * i), HIGH, 0), Vector3.UnitZ)));
                 }
             }
         }
@@ -163,7 +163,7 @@ namespace StockRoomProject.Behaviors
                 {
                     Entity tablet = tables[NUM_BOXES / 2];
                     //HingeJoint joint = tablet.FindComponent<HingeJoint>();
-                    tablet.RemoveComponent<HingeJoint>();
+                    tablet.FindComponent<JointMap3D>().RemoveJoint("joint");
                     tablet.RefreshDependencies();
                 }
             }
