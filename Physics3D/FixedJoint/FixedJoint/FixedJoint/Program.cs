@@ -1,14 +1,14 @@
 using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+using WaveEngine.Adapter;
 
 namespace FixedJoint
 {
-#if WINDOWS || XBOX
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
             using (App game = new App())
             {
@@ -16,6 +16,5 @@ namespace FixedJoint
             }
         }
     }
-#endif
 }
 

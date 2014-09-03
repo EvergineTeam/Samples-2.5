@@ -1,16 +1,18 @@
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components.Animation;
 using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
+using WaveEngine.Spine;
 #endregion
 
 namespace SpineSkeletalAnimationProject
@@ -21,8 +23,10 @@ namespace SpineSkeletalAnimationProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-            
+            FixedCamera2D camera2D = new FixedCamera2D("camera");
+            camera2D.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera2D);            
+
             //"spineboy","walk"),
             //"powerup","animation"),
 
@@ -31,7 +35,7 @@ namespace SpineSkeletalAnimationProject
             var ratio = WaveServices.ViewportManager.RatioX;
 
             this.skeleton = new Entity("Spine")
-                            .AddComponent(new Transform2D() { X = 350, Y = 460, XScale = 1, YScale = 1})
+                            .AddComponent(new Transform2D() { X = 350, Y = 460, XScale = 1, YScale = 1 })
                             .AddComponent(new SkeletalData("Content/" + file + ".atlas"))
                             .AddComponent(new SkeletalAnimation("Content/" + file + ".json"))
                             .AddComponent(new SkeletalRenderer() { ActualDebugMode = SkeletalRenderer.DebugMode.None });
@@ -40,13 +44,13 @@ namespace SpineSkeletalAnimationProject
 
             #region UI
             Slider slider1 = new Slider()
-               {
-                   Margin = new Thickness(10, 40, 0, 0),
-                   Width = 500,
-                   Minimum = -25,
-                   Maximum = 25,
-                   Value = 0
-               };
+            {
+                Margin = new Thickness(10, 40, 0, 0),
+                Width = 500,
+                Minimum = -25,
+                Maximum = 25,
+                Value = 0
+            };
 
             slider1.RealTimeValueChanged += (s, e) =>
             {
@@ -116,7 +120,7 @@ namespace SpineSkeletalAnimationProject
                 }
             };
 
-            EntityManager.Add(debugQuads); 
+            EntityManager.Add(debugQuads);
             #endregion
         }
 
@@ -125,7 +129,7 @@ namespace SpineSkeletalAnimationProject
             base.Start();
 
             var anim = this.skeleton.FindComponent<SkeletalAnimation>();
-            anim.CurrentAnimation = "walk"; 
+            anim.CurrentAnimation = "walk";
             anim.Play(true);
         }
     }

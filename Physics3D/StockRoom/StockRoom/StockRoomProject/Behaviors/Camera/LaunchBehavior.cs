@@ -37,7 +37,7 @@ namespace StockRoomProject.Behaviors
     public class LaunchBehavior : Behavior
     {
         [RequiredComponent]
-        public Camera Camera;
+        public Camera3D Camera;
 
         private const int BALL_MASS = 3;
         private Vector3 ballSize = new Vector3(10);

@@ -48,10 +48,13 @@ namespace CityDemoProject.Behaviors
                 angle -= MathHelper.TwoPi;
             }
 
-            Camera camera = this.Owner.FindComponent<Camera>();
-            camera.Position.X = CENTER.X + 400 * (float)Math.Sin(angle);
-            camera.Position.Y = 200;
-            camera.Position.Z = CENTER.Z + 400 * (float)Math.Cos(angle);
+            Camera3D camera = this.Owner.FindComponent<Camera3D>();
+            Vector3 aux;
+            aux.X = CENTER.X + 400 * (float)Math.Sin(angle);
+            aux.Y = 200;
+            aux.Z = CENTER.Z + 400 * (float)Math.Cos(angle);
+
+            camera.Position = aux;
 
             camera.LookAt = CENTER;
         }

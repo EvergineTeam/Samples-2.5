@@ -1,15 +1,17 @@
-#region Using Statements
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
-using WaveEngine.Common;
+using System.Threading.Tasks;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-#endregion
 
 namespace LoadingProject
 {
@@ -20,7 +22,9 @@ namespace LoadingProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.Black;
+            var camera2D = new FixedCamera2D("Camera2D");
+            camera2D.BackgroundColor = Color.Black;
+            EntityManager.Add(camera2D);
 
             background = new Entity()
                 .AddComponent(new Transform2D()
@@ -169,17 +173,17 @@ namespace LoadingProject
                         getOutAnimation)
                     .BeginAnimation(
                         Transform2D.OpacityProperty,
-                        new SingleAnimation(1,0, TimeSpan.FromSeconds(1)));
+                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
 
             background.FindComponent<AnimationUI>()
                     .BeginAnimation(
                         Transform2D.OpacityProperty,
-                        new SingleAnimation(1,0, TimeSpan.FromSeconds(1)));
+                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
 
             text.FindComponent<AnimationUI>()
                     .BeginAnimation(
                         Transform2D.OpacityProperty,
-                        new SingleAnimation(1,0, TimeSpan.FromSeconds(1)));
+                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
         }
 
         private void getOutAnimation_Completed(object sender, EventArgs e)

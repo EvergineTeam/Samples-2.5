@@ -4,6 +4,7 @@ using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
@@ -38,9 +39,10 @@ namespace DolbySampleProject
         /// </remarks>
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.Blue;
-            //RenderManager.DebugLines = true;
-
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.Blue;
+            EntityManager.Add(camera2d);
+            
             //// Entities
             // Left Speaker
             this.leftSpeaker = this.CreateSpeaker(WaveServices.ViewportManager.LeftEdge, WaveServices.ViewportManager.VirtualHeight / 2, false, new Vector2(0.0f, 0.5f), new Vector2(1.0f, 1.0f), "Content/speakera.wpk", 0.5f);

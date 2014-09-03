@@ -16,9 +16,8 @@ namespace StaticBatchingProject
 
             WaveServices.ViewportManager.Activate(800, 600, ViewportManager.StretchMode.Uniform);
 
-            ScreenLayers screenLayers = WaveServices.ScreenLayers;
-            screenLayers.AddScene<MyScene>();
-            screenLayers.Apply();
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

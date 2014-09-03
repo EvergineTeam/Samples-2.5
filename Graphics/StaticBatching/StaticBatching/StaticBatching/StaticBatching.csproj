@@ -12,10 +12,6 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +35,9 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="WaveEngine.Adapter" />
+    <Reference Include="WaveEngine.Common" />
+    <Reference Include="WaveEngine.Framework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,53 +53,12 @@
     <EmbeddedResource Include="SplashScreen.wpk" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\mainColumn.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\column2.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\column2_normal_spec.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Framework\Dev-RenderCommands\Windows\Adapter\WaveEngine.Adapter.csproj">
-      <Project>{d0d1320b-c32e-46cd-945b-ca6214b208a3}</Project>
-      <Name>WaveEngine.Adapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Framework\Dev-RenderCommands\Windows\WaveEngine.Common\WaveEngine.Common.csproj">
-      <Project>{55b6b4f4-bce2-4ef7-836f-44f17332f924}</Project>
-      <Name>WaveEngine.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Framework\Dev-RenderCommands\Windows\WaveEngine.Framework\WaveEngine.Framework.csproj">
-      <Project>{75527125-5aa8-45d0-a801-f674ee689e78}</Project>
-      <Name>WaveEngine.Framework</Name>
-    </ProjectReference>
     <ProjectReference Include="..\StaticBatchingProject\StaticBatchingProject.csproj">
       <Name>StaticBatchingProject</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\column.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\column1.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\column1_normal_spec.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\meteorSmoke.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\particleFire.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(WaveEngine)v1.0\Targets\Windows\WPKAssetsCompilation.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

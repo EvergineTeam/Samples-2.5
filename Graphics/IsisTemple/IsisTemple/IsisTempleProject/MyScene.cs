@@ -1,7 +1,6 @@
 #region Using Statements
 using IsisTempleProject.Components;
 using System;
-using System.Diagnostics;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -14,6 +13,7 @@ using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 using WaveEngine.Materials;
@@ -24,10 +24,7 @@ namespace IsisTempleProject
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
-            //Dark background
-            RenderManager.BackgroundColor = Color.Black;
-
+        {            
             //Create the player character
             this.CreatePlayer();
 
@@ -40,7 +37,8 @@ namespace IsisTempleProject
             //Create the camera
             FreeCamera camera = new FreeCamera("freeCamera", new Vector3(0, 2f, -2.5f), Vector3.UnitY * 0.9f)
             {
-                Speed = 5
+                Speed = 5,
+                BackgroundColor = Color.Black,
             };
             camera.Entity.AddComponent(new CameraBehavior(EntityManager.Find("isis")));
 
@@ -55,8 +53,7 @@ namespace IsisTempleProject
             light.Entity.AddComponent(new TorchLightBehaviour());
 
             EntityManager.Add(light);
-            EntityManager.Add(camera);
-            RenderManager.SetActiveCamera(camera.Entity);
+            EntityManager.Add(camera);            
         }
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -16,20 +16,23 @@
 // THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+
 // IN THE SOFTWARE.
 
 #region Using Statements
-using System.Collections.Generic;
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
-using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.Cameras;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
+using WaveEngine.Materials;
 #endregion
 
 namespace FrictionProject
@@ -42,19 +45,19 @@ namespace FrictionProject
         Entity cube4;
 
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(-5, 8, 22), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+        {            
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(-5, 8, 22), Vector3.Zero)
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
+            EntityManager.Add(camera.Entity);            
 
             Entity ground = new Entity("Ground")
                 .AddComponent(new Transform3D() { Position = new Vector3(0, 0, 0), Scale = new Vector3(20, 1, 20) })
                 .AddComponent(new BoxCollider())
                 .AddComponent(Model.CreateCube())
                 .AddComponent(new RigidBody3D() { IsKinematic = true })
-                .AddComponent(new MaterialsMap(new BasicMaterial(Color.Beige) ))
+                .AddComponent(new MaterialsMap(new BasicMaterial(Color.Beige)))
                 .AddComponent(new ModelRenderer());
 
             EntityManager.Add(ground);
@@ -89,7 +92,7 @@ namespace FrictionProject
                 .AddComponent(new BoxCollider())
                 .AddComponent(Model.CreateCube())
                 .AddComponent(new RigidBody3D() { KineticFriction = friction, StaticFriction = friction })
-                .AddComponent(new MaterialsMap(new BasicMaterial(GetRandomColor()) ))
+                .AddComponent(new MaterialsMap(new BasicMaterial(GetRandomColor())))
                 .AddComponent(new ModelRenderer());
 
             return primitive;

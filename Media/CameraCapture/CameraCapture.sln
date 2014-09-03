@@ -1,12 +1,13 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCapture", "CameraCapture\CameraCapture\CameraCapture.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCaptureProject", "CameraCapture\CameraCaptureProject\CameraCaptureProject.csproj", "{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraCaptureProject", "CameraCapture\CameraCaptureProject\CameraCaptureProject.csproj", "{1BD80CA8-FE16-499A-BB9B-37D87E401D1E}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
@@ -16,10 +17,10 @@ Global
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
-		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Debug|x86.ActiveCfg = Debug|x86
-		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Debug|x86.Build.0 = Debug|x86
-		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Release|x86.ActiveCfg = Release|x86
-		{ADBC8617-B656-483C-A8BD-F8FF7F77DFD7}.Release|x86.Build.0 = Release|x86
+		{1BD80CA8-FE16-499A-BB9B-37D87E401D1E}.Debug|x86.ActiveCfg = Debug|x86
+		{1BD80CA8-FE16-499A-BB9B-37D87E401D1E}.Debug|x86.Build.0 = Debug|x86
+		{1BD80CA8-FE16-499A-BB9B-37D87E401D1E}.Release|x86.ActiveCfg = Release|x86
+		{1BD80CA8-FE16-499A-BB9B-37D87E401D1E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

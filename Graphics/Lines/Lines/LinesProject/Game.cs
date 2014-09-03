@@ -4,10 +4,6 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
-using WaveEngine.Framework.Graphics;
-using System.Collections.Generic;
-using WaveEngine.Common.Math;
-using WaveEngine.Components;
 #endregion
 
 namespace LinesProject
@@ -18,7 +14,8 @@ namespace LinesProject
         {
             base.Initialize(application);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

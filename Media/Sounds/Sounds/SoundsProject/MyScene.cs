@@ -2,7 +2,13 @@
 using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Sound;
 #endregion
@@ -18,7 +24,9 @@ namespace SoundsProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.Black;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.Black;
+            EntityManager.Add(camera2d);             
 
             //Register bank
             SoundBank bank = new SoundBank(Assets);

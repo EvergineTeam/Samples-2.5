@@ -4,10 +4,12 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -16,26 +18,22 @@ namespace LensFlareProject
 {
     public class MyScene : Scene
     {
-        /// <summary>
-        /// Creates the scene.
-        /// </summary>
-        /// <remarks>
-        /// This method is called before all <see cref="T:WaveEngine.Framework.Entity" /> instances in this instance are initialized.
-        /// </remarks>
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.Black;
+        {            
             RenderManager.DebugLines = false;
             RenderManager.RegisterLayerBefore(new SkyLayer(this.RenderManager), DefaultLayers.Alpha);
 
             FreeCamera camera = new FreeCamera("camera", new Vector3(-2.4f, 0, -3), new Vector3(-1.6f, 0, -2.5f))
             {
                 Speed = 2,
-                NearPlane = 0.1f
+                NearPlane = 0.1f,
+                BackgroundColor = Color.Black,
             };
-
             EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+
+            FixedCamera2D camera2d = new FixedCamera2D("camera2d");
+            camera2d.ClearFlags = ClearFlags.DepthAndStencil;
+            EntityManager.Add(camera2d);
 
             this.CreateSunFlare();
 

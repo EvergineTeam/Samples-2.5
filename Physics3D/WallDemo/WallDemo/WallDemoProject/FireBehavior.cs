@@ -49,7 +49,7 @@ namespace WallDemoProject
         Entity sphere;
 
         [RequiredComponent]
-        public Camera Camera;
+        public Camera3D Camera;
 
         public FireBehavior()
             : base("FireBehavior")

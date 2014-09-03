@@ -1,24 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemo", "PlatformGameDemo\PlatformGameDemo\PlatformGameDemo.csproj", "{F4943C53-46C8-40AB-934A-500DAF26F08A}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemo", "PlatformGameDemo\PlatformGameDemo\PlatformGameDemo.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemoProject", "PlatformGameDemo\PlatformGameDemoProject\PlatformGameDemoProject.csproj", "{95211FAC-EC0C-4F35-8BFC-4FE745F46020}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemoProject", "PlatformGameDemo\PlatformGameDemoProject\PlatformGameDemoProject.csproj", "{1296261F-A8F5-4240-A1AE-607FB7D61A8B}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Debug|x86.ActiveCfg = Debug|x86
-		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Debug|x86.Build.0 = Debug|x86
-		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Release|x86.ActiveCfg = Release|x86
-		{F4943C53-46C8-40AB-934A-500DAF26F08A}.Release|x86.Build.0 = Release|x86
-		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Debug|x86.ActiveCfg = Debug|x86
-		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Debug|x86.Build.0 = Debug|x86
-		{95211FAC-EC0C-4F35-8BFC-4FE745F46020}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{1296261F-A8F5-4240-A1AE-607FB7D61A8B}.Debug|x86.ActiveCfg = Debug|x86
+		{1296261F-A8F5-4240-A1AE-607FB7D61A8B}.Debug|x86.Build.0 = Debug|x86
+		{1296261F-A8F5-4240-A1AE-607FB7D61A8B}.Release|x86.ActiveCfg = Release|x86
+		{1296261F-A8F5-4240-A1AE-607FB7D61A8B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

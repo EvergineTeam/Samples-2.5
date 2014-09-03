@@ -17,7 +17,8 @@ namespace SpineSkeletalAnimationProject
             ViewportManager vm = WaveServices.GetService<ViewportManager>();
             vm.Activate(800, 480, ViewportManager.StretchMode.Fill);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}</ProjectGuid>
+    <ProjectGuid>{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DolbySampleProject</RootNamespace>
@@ -34,9 +33,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DolbyAPI">
-      <HintPath>C:\Wave Engine\v1.0\Lib\Android\DolbyAPI.dll</HintPath>
-    </Reference>
     <Reference Include="WaveEngine.Common">
       <HintPath>$(waveengine)\v1.0\Lib\Android\WaveEngineAndroid.Common.dll</HintPath>
     </Reference>
@@ -53,17 +49,24 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="DolbyAPI">
+      <HintPath>$(waveengine)\v1.0\Lib\Android\DolbyAPI.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundScene.cs" />
     <Compile Include="Behaviors\BlinkBehavior.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="BackgroundScene.cs" />
-    <Compile Include="MainScene.cs" />
+    <Compile Include="MyScene.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources.weproj" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
 	-->
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="$(WaveEngine)v1.0\Targets\Android\WPKAssetsExport.targets" />
 </Project>

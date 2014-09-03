@@ -1,25 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skybox", "Skybox\Skybox\Skybox.csproj", "{96752C22-3565-4247-B389-88194A7612FE}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skybox", "Skybox\Skybox\Skybox.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyboxProject", "Skybox\SkyboxProject\SkyboxProject.csproj", "{58111CB6-816E-4C97-8552-013489E6D2BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyboxProject", "Skybox\SkyboxProject\SkyboxProject.csproj", "{E39899B0-84E1-48F9-8EE5-863874FB032C}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96752C22-3565-4247-B389-88194A7612FE}.Debug|x86.ActiveCfg = Debug|x86
-		{96752C22-3565-4247-B389-88194A7612FE}.Debug|x86.Build.0 = Debug|x86
-		{96752C22-3565-4247-B389-88194A7612FE}.Release|x86.ActiveCfg = Release|x86
-		{96752C22-3565-4247-B389-88194A7612FE}.Release|x86.Build.0 = Release|x86
-		{58111CB6-816E-4C97-8552-013489E6D2BA}.Debug|x86.ActiveCfg = Debug|x86
-		{58111CB6-816E-4C97-8552-013489E6D2BA}.Debug|x86.Build.0 = Debug|x86
-		{58111CB6-816E-4C97-8552-013489E6D2BA}.Release|x86.ActiveCfg = Release|x86
-		{58111CB6-816E-4C97-8552-013489E6D2BA}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{E39899B0-84E1-48F9-8EE5-863874FB032C}.Debug|x86.ActiveCfg = Debug|x86
+		{E39899B0-84E1-48F9-8EE5-863874FB032C}.Debug|x86.Build.0 = Debug|x86
+		{E39899B0-84E1-48F9-8EE5-863874FB032C}.Release|x86.ActiveCfg = Release|x86
+		{E39899B0-84E1-48F9-8EE5-863874FB032C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
