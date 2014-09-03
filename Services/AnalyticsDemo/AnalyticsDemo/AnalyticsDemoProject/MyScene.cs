@@ -1,12 +1,17 @@
 #region Using Statements
-using SaveThePrincessProject.Commons;
 using System;
 using WaveEngine.Analytics;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
@@ -26,10 +31,12 @@ namespace AnalyticsDemoProject
         /// </remarks>
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.White;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.White;
+            EntityManager.Add(camera2d);            
 
             // Sonic
-            PressedButton spankerButton = new PressedButton()
+            Button spankerButton = new Button()
             {
                 Width = 226,
                 Height = 226,
@@ -47,7 +54,7 @@ namespace AnalyticsDemoProject
             EntityManager.Add(spankerButton);
 
             // Link
-            PressedButton colonelButton = new PressedButton()
+            Button colonelButton = new Button()
             {
                 Width = 226,
                 Height = 226,
@@ -65,7 +72,7 @@ namespace AnalyticsDemoProject
             EntityManager.Add(colonelButton);
 
             // Mario
-            PressedButton fuzzButton = new PressedButton()
+            Button fuzzButton = new Button()
             {
                 Width = 226,
                 Height = 226,
@@ -82,9 +89,9 @@ namespace AnalyticsDemoProject
             };
             EntityManager.Add(fuzzButton);
 
-            this.showSpanker = new SingleAnimation(0, -374, 0.5f, EasingFunctions.Back);            
+            this.showSpanker = new SingleAnimation(0, -374, 0.5f, EasingFunctions.Back);
             this.showColonel = new SingleAnimation(0, -374, 0.5f, EasingFunctions.Back);
-            this.showFuzz = new SingleAnimation(0, -374, 0.5f, EasingFunctions.Back);            
+            this.showFuzz = new SingleAnimation(0, -374, 0.5f, EasingFunctions.Back);
         }
 
 
