@@ -26,7 +26,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace MotorRevoluteJoint2DSampleProject
+namespace Force2DSampleProject
 {
     public class Game : WaveEngine.Framework.Game
     {

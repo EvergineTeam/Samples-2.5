@@ -58,7 +58,9 @@ namespace MotorRevoluteJoint2DSampleProject
 
         // Motor Revolute Joint
         [RequiredComponent()]
-        public RevoluteJoint2D revoluteJoint;
+        private JointMap2D jointMap;
+
+        private RevoluteJoint2D revoluteJoint;
 
         /// <summary>
         /// Constructor
@@ -68,6 +70,13 @@ namespace MotorRevoluteJoint2DSampleProject
             : base(name)
         {
             this.revoluteJoint = null;
+        }
+
+        protected override void ResolveDependencies()
+        {
+            base.ResolveDependencies();
+
+            this.revoluteJoint = jointMap.Joints["joint"] as RevoluteJoint2D;
         }
 
         /// <summary>

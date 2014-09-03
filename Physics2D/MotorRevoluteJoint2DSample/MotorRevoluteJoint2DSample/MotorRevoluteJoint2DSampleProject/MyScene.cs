@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,33 +18,30 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#region File Description
-//-----------------------------------------------------------------------------
-// MainScene
-//
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 #endregion
 
 namespace MotorRevoluteJoint2DSampleProject
 {
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera2d);
 
             // Creates Car Body
             Entity body = this.CreateBody("body", 90, 100);
@@ -53,18 +50,22 @@ namespace MotorRevoluteJoint2DSampleProject
             // Creates Motor Wheel
             Entity wheel1 = this.CreateWheel("Wheel1", 90, 100);
             EntityManager.Add(wheel1);
-            wheel1.AddComponent(new RevoluteJoint2D(body, Vector2.Zero, new Vector2(-70, 25))
-                {
-                    MotorEnabled = true,
-                    MotorMaxTorque = 1000f,
-                    MotorTorque = 100f
-                });
+            wheel1.AddComponent(new JointMap2D()
+                                        .AddJoint("joint", new RevoluteJoint2D(body, Vector2.Zero, new Vector2(-70, 0))
+                                                                        {
+                                                                            MotorEnabled = true,
+                                                                            MotorMaxTorque = 1000f,
+                                                                            MotorTorque = 100f
+                                                                        }
+                                                  )
+                                 );
             wheel1.AddComponent(new MotorBehavior("MotorBehavior"));
 
             // Creates Second WHeel
-            Entity wheel2 = this.CreateWheel("Wheel2", 210, 100); 
+            Entity wheel2 = this.CreateWheel("Wheel2", 210, 100);
             EntityManager.Add(wheel2);
-            wheel2.AddComponent(new RevoluteJoint2D(body, Vector2.Zero, new Vector2(70, 25)));
+            wheel2.AddComponent(new JointMap2D()
+                                            .AddJoint("joint", new RevoluteJoint2D(body, Vector2.Zero, new Vector2(70, 0))));
 
             // Create Ground and ramps
             this.CreateWalls();
@@ -105,7 +106,7 @@ namespace MotorRevoluteJoint2DSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
-                .AddComponent(new RigidBody2D() { IsKinematic = false, Friction = 1, Damping = 0 })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic, Friction = 1, Damping = 0 })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
 
             return sprite;
@@ -124,7 +125,7 @@ namespace MotorRevoluteJoint2DSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/RectangleBody.wpk"))
-                .AddComponent(new RigidBody2D() { IsKinematic = false})
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             return sprite;
@@ -143,7 +144,7 @@ namespace MotorRevoluteJoint2DSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center, Rotation = angle })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/Ground.wpk"))
-                .AddComponent(new RigidBody2D() { IsKinematic = true })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Static })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 
             return sprite;

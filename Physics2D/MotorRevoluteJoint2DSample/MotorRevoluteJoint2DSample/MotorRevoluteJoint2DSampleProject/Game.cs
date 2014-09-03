@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Force2DSampleProject
+namespace MotorRevoluteJoint2DSampleProject
 {
     public class Game : WaveEngine.Framework.Game
     {

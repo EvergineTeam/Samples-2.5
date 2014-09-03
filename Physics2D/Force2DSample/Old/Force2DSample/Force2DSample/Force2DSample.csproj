@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}</ProjectGuid>
+    <ProjectGuid>{F5F2A9BD-E70E-488E-8568-E7F8B8DE4912}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MotorRevoluteJoint2DSample</RootNamespace>
-    <AssemblyName>MotorRevoluteJoint2DSample</AssemblyName>
+    <RootNamespace>Force2DSample</RootNamespace>
+    <AssemblyName>Force2DSample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -58,6 +58,15 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="WaveEngine.Adapter">
+      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Adapter.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Common">
+      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Framework">
+      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,34 +81,20 @@
     <EmbeddedResource Include="Game.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Ground.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <ProjectReference Include="..\Force2DSampleProject\Force2DSampleProject.csproj">
+      <Project>{1d62b319-cd32-4aa3-95cb-a36b6d9d2174}</Project>
+      <Name>Force2DSampleProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Adapter">
-      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Adapter.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Common">
-      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Framework">
-      <HintPath>$(waveengine)\v1.0\Lib\Windows\WaveEngine.Framework.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\RectangleBody.wpk">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Content\Wheel.wpk">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MotorRevoluteJoint2DSampleProject\MotorRevoluteJoint2DSampleProject.csproj">
-      <Project>{a48d0cdd-aacf-49e7-845a-b21f473830b9}</Project>
-      <Name>MotorRevoluteJoint2DSampleProject</Name>
-    </ProjectReference>
+    <Content Include="Content\Ground.wpk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SplashScreen.wpk" />
