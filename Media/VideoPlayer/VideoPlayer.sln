@@ -1,25 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayer", "VideoPlayer\VideoPlayer\VideoPlayer.csproj", "{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayer", "VideoPlayer\VideoPlayer\VideoPlayer.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayerProject", "VideoPlayer\VideoPlayerProject\VideoPlayerProject.csproj", "{5258B9B4-783D-41F1-9AD3-133AF3A03800}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPlayerProject", "VideoPlayer\VideoPlayerProject\VideoPlayerProject.csproj", "{95A95F41-D230-499B-9CA2-4FBC1EED8945}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Debug|x86.ActiveCfg = Debug|x86
-		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Debug|x86.Build.0 = Debug|x86
-		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Release|x86.ActiveCfg = Release|x86
-		{8F9175DD-A0CF-4380-9411-FE536DF9CFF9}.Release|x86.Build.0 = Release|x86
-		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Debug|x86.ActiveCfg = Debug|x86
-		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Debug|x86.Build.0 = Debug|x86
-		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Release|x86.ActiveCfg = Release|x86
-		{5258B9B4-783D-41F1-9AD3-133AF3A03800}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{95A95F41-D230-499B-9CA2-4FBC1EED8945}.Debug|x86.ActiveCfg = Debug|x86
+		{95A95F41-D230-499B-9CA2-4FBC1EED8945}.Debug|x86.Build.0 = Debug|x86
+		{95A95F41-D230-499B-9CA2-4FBC1EED8945}.Release|x86.ActiveCfg = Release|x86
+		{95A95F41-D230-499B-9CA2-4FBC1EED8945}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
