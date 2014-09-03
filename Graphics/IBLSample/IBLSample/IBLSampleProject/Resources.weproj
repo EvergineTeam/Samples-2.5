@@ -12,7 +12,7 @@
   <Assets>
     <Asset Path="environment1.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
@@ -23,7 +23,7 @@
     </Asset>
     <Asset Path="environment1Light.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
@@ -34,7 +34,7 @@
     </Asset>
     <Asset Path="environment2.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
@@ -45,7 +45,7 @@
     </Asset>
     <Asset Path="environment2Light.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
@@ -56,7 +56,7 @@
     </Asset>
     <Asset Path="environment3.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
@@ -67,7 +67,7 @@
     </Asset>
     <Asset Path="environment3Light.cubemap">
       <ExportProperties>
-        <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
+        <Export Width="512" Height="512" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Framework.Graphics.TextureCube" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export Width="1024" Height="1024" OutputFormat="Color32Bit" AntialiasType="Smooth" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />
