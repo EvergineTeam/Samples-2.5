@@ -12,7 +12,7 @@
   <Assets>
     <Asset Path="Terrain.X" Hash="3e44fef1e849a62b1939a8779be08ad0">
       <ExportProperties>
-        <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Components.Graphics3D.InternalStaticModel" />
+        <Export SwapWindingOrder="False" GenerateCollisionInfo="True" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Windows" Platform="Windows" Generate="False" ZipCompress="True" ExportType="WaveEngine.Components.Graphics3D.InternalStaticModel" />
         <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="WP" Platform="WP" Generate="True" ZipCompress="True" />
         <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="Metro" Platform="Metro" Generate="True" ZipCompress="True" />
         <Export SwapWindingOrder="True" GenerateCollisionInfo="False" GenerateTangentSpace="False" FullBoneWeights="False" ExportAnimations="False" HasAnimations="False" Profile="WaveEditor.Core.Model.PlatformProfile" Name="iOS" Platform="iOS" Generate="True" ZipCompress="True" />

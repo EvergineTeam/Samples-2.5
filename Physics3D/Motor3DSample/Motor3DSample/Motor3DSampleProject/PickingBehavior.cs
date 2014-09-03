@@ -119,8 +119,12 @@ namespace Motor3DSampleProject
                         // Calculate 
                         this.pickingPosition = this.camera.Position + this.pickingPosition * this.distance;
 
-                        this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
-                        //TODO: this.selectedEntity.AddComponent(mouseJoint);
+                        var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                        if (jointMap != null)
+                        {
+                            this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
+                            jointMap.AddJoint("joint", this.mouseJoint);
+                        }
                     }
                 }
 
@@ -179,7 +183,12 @@ namespace Motor3DSampleProject
             this.distance = float.MaxValue;
             if (this.selectedEntity != null)
             {
-                //TODO: this.selectedEntity.RemoveComponent<MotorizedGrabSpring3D>();
+                var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                if (jointMap != null)
+                {
+                    jointMap.RemoveJoint("joint");
+                }
+
                 this.selectedEntity = null;
 
             }
