@@ -1,4 +1,4 @@
-// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -34,7 +34,8 @@ namespace BasicRigidBody2DProject
         {
             base.Initialize(application);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
