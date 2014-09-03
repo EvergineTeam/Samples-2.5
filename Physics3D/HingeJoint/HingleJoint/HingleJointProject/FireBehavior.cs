@@ -32,7 +32,7 @@ using WaveEngine.Framework.Physics3D;
 
 #endregion
 
-namespace HingeJointProject
+namespace HingleJointProject
 {
     public class FireBehavior : Behavior
     {
@@ -40,7 +40,7 @@ namespace HingeJointProject
         Entity sphere;
 
         [RequiredComponent]
-        public Camera Camera;
+        public Camera3D Camera;
 
         public FireBehavior()
             : base("FireBehavior")
