@@ -7,7 +7,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace BasicRigidBody
+namespace BasicRigidBody2D
 {
     public class App : WaveEngine.Adapter.Application
     {
@@ -24,7 +24,7 @@ namespace BasicRigidBody
             this.Width = 800;
             this.Height = 600;
             this.FullScreen = false;
-            this.WindowTitle = "WaveEngineGame2";
+            this.WindowTitle = "BasicRigidBody2D";
         }
 
         public override void Initialize()
@@ -33,7 +33,7 @@ namespace BasicRigidBody
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color(32, 32, 32, 255);
+            this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -106,7 +106,6 @@ namespace BasicRigidBody
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    
                     this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
@@ -117,5 +116,30 @@ namespace BasicRigidBody
                 }
             }
         }
+
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
+        {
+            base.OnActivated();
+            if (this.game != null)
+            {
+                game.OnActivated();
+            }
+        }
+
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
+        {
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                game.OnDeactivated();
+            }
+        }
     }
 }
+

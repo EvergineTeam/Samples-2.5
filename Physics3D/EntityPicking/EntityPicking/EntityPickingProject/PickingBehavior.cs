@@ -45,7 +45,7 @@ namespace EntityPickingProject
         private const float MINDISTANCE = 2.5f;
 
         [RequiredComponent()]
-        public Camera camera;
+        public Camera3D camera;
 
         private Input input;
         private MouseState mouseState;
@@ -110,7 +110,7 @@ namespace EntityPickingProject
                         this.pickingPosition.X = this.mousePosition.X;
                         this.pickingPosition.Y = this.mousePosition.Y;
                         this.pickingPosition.Z = this.distance;
-                        this.pickingPosition = this.camera.Unproject(ref this.pickingPosition, ref camera.View, ref this.camera.Projection, ref this.identity);
+                        this.pickingPosition = this.camera.Unproject(ref this.pickingPosition);
 
                         // obtains CameraPosition-PickingPosition vector
                         this.pickingPosition = this.camera.Position - this.pickingPosition;
@@ -119,8 +119,12 @@ namespace EntityPickingProject
                         // Calculate 
                         this.pickingPosition = this.camera.Position + this.pickingPosition * this.distance;
 
-                        this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
-                        this.selectedEntity.AddComponent(mouseJoint);
+                        var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                        if (jointMap != null)
+                        {
+                            this.mouseJoint = new MotorizedGrabSpring3D(this.pickingPosition);
+                            jointMap.AddJoint("mouseJoint", mouseJoint);
+                        }
                     }
                 }
 
@@ -136,7 +140,7 @@ namespace EntityPickingProject
                     this.pickingPosition.X = this.mousePosition.X;
                     this.pickingPosition.Y = this.mousePosition.Y;
                     this.pickingPosition.Z = this.distance;
-                    this.pickingPosition = this.camera.Unproject(ref this.pickingPosition, ref camera.View, ref this.camera.Projection, ref this.identity);
+                    this.pickingPosition = this.camera.Unproject(ref this.pickingPosition);
 
                     // obtains CameraPosition-PickingPosition vector
                     this.pickingPosition = this.camera.Position - this.pickingPosition;
@@ -179,7 +183,11 @@ namespace EntityPickingProject
             this.distance = float.MaxValue;
             if (this.selectedEntity != null)
             {
-                this.selectedEntity.RemoveComponent<MotorizedGrabSpring3D>();
+                var jointMap = this.selectedEntity.FindComponent<JointMap3D>();
+                if (jointMap != null)
+                {
+                    jointMap.RemoveJoint("mouseJoint");
+                }
                 this.selectedEntity = null;
 
             }
@@ -198,8 +206,8 @@ namespace EntityPickingProject
             this.farPosition.Z = 1.0f;
 
             // Unproject Mouse Position
-            this.nearPosition = this.camera.Unproject(ref this.nearPosition, ref this.camera.View, ref this.camera.Projection, ref this.identity);
-            this.farPosition = this.camera.Unproject(ref this.farPosition, ref this.camera.View, ref this.camera.Projection, ref this.identity);
+            this.nearPosition = this.camera.Unproject(ref this.nearPosition);
+            this.farPosition = this.camera.Unproject(ref this.farPosition);
 
             // Update ray. Ray launched from nearPosition in rayDirection direction.
             this.rayDirection = this.farPosition - this.nearPosition;

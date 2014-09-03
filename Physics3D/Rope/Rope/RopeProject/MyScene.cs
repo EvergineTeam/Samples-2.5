@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,27 +18,21 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#region File Description
-//-----------------------------------------------------------------------------
-// MyScene
-//
-// Copyright © 2012 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
+using System;
 using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
-using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.Cameras;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
+using WaveEngine.Materials;
 #endregion
 
 namespace RopeProject
@@ -47,19 +41,16 @@ namespace RopeProject
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-            //WaveServices.GraphicsDevice.RenderState.FillMode = FillMode.Wireframe;
-
-            //RenderManager.DebugLines = true;
-
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, 20), new Vector3(0, 5, 0));
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, 20), new Vector3(0, 5, 0))
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
             camera.Entity.AddComponent(new FireBehavior());
-            
+
             EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
 
             Entity ground = new Entity("Ground")
-                .AddComponent(new Transform3D() { Position = new Vector3(0, -1, 0)})
+                .AddComponent(new Transform3D() { Position = new Vector3(0, -1, 0) })
                 .AddComponent(new BoxCollider())
                 .AddComponent(Model.CreatePlane(Vector3.Up, 100))
                 .AddComponent(new RigidBody3D() { IsKinematic = true })
@@ -86,7 +77,7 @@ namespace RopeProject
             {
                 if (i > 0)
                 {
-                    entities[i].AddComponent(new BallSocketJoint(entities[i - 1], null));
+                    entities[i].AddComponent(new JointMap3D().AddJoint("ropeJoint", new BallSocketJoint(entities[i - 1], null)));
                 }
 
                 EntityManager.Add(entities[i]);

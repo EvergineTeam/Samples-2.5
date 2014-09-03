@@ -22,7 +22,7 @@
 //-----------------------------------------------------------------------------
 // MouseBehavior
 //
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
+// Copyright © 2014 Weekend Game Studio. All rights reserved.
 // Use is subject to license terms.
 //-----------------------------------------------------------------------------
 #endregion
@@ -93,13 +93,13 @@ namespace FixedMouseJoint2DSampleProject
                                 if (rigidBody != null)
                                 {
                                     // Forbiden Mouse Joint of Kinematic Bodies
-                                    if (!rigidBody.IsKinematic)
+                                    if (rigidBody.PhysicBodyType == PhysicBodyType.Dynamic)
                                     {
                                         this.connectedEntity = entity;
 
                                         // Create Mouse Joint
                                         this.mouseJoint = new FixedMouseJoint2D(this.touchPosition);
-                                        this.connectedEntity.AddComponent(this.mouseJoint);
+                                        this.connectedEntity.FindComponent<JointMap2D>().AddJoint("mouseJoint", this.mouseJoint);
 
                                         // We can break after collider test when true, but we'll miss overlapped entities if Physic entity is 
                                         // under a non Physic entity. We are breaking here just for sample.
@@ -117,7 +117,7 @@ namespace FixedMouseJoint2DSampleProject
                     if (!this.connectedEntity.IsDisposed)
                     {
                         // Remove Fixed Joint
-                        this.connectedEntity.RemoveComponent<FixedMouseJoint2D>();
+                        this.connectedEntity.FindComponent<JointMap2D>().RemoveJoint("mouseJoint");
                     }
 
                     this.mouseJoint = null;

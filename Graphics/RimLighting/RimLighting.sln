@@ -1,24 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLighting", "RimLighting\RimLighting\RimLighting.csproj", "{43E36B67-134B-44B0-A759-76E2AFE6F0F8}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLighting", "RimLighting\RimLighting\RimLighting.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLightingProject", "RimLighting\RimLightingProject\RimLightingProject.csproj", "{BC47A57B-F924-4A73-A504-DB91BF310C8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLightingProject", "RimLighting\RimLightingProject\RimLightingProject.csproj", "{526AED37-5C58-4D8A-8705-CC272F05B7E4}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Debug|x86.ActiveCfg = Debug|x86
-		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Debug|x86.Build.0 = Debug|x86
-		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Release|x86.ActiveCfg = Release|x86
-		{43E36B67-134B-44B0-A759-76E2AFE6F0F8}.Release|x86.Build.0 = Release|x86
-		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Debug|x86.ActiveCfg = Debug|x86
-		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Debug|x86.Build.0 = Debug|x86
-		{BC47A57B-F924-4A73-A504-DB91BF310C8C}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{526AED37-5C58-4D8A-8705-CC272F05B7E4}.Debug|x86.ActiveCfg = Debug|x86
+		{526AED37-5C58-4D8A-8705-CC272F05B7E4}.Debug|x86.Build.0 = Debug|x86
+		{526AED37-5C58-4D8A-8705-CC272F05B7E4}.Release|x86.ActiveCfg = Release|x86
+		{526AED37-5C58-4D8A-8705-CC272F05B7E4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

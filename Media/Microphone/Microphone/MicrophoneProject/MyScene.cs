@@ -1,11 +1,16 @@
 #region Using Statements
 using System;
-using System.Diagnostics;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
 using WaveEngine.Common.Media;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Sound;
 #endregion
@@ -13,7 +18,7 @@ using WaveEngine.Framework.Sound;
 namespace MicrophoneProject
 {
     public class MyScene : Scene
-    {
+    {      
         private const string RECORDFILE = "record.wpk";
 
         private const string STARTTEXT = "Record";
@@ -35,8 +40,10 @@ namespace MicrophoneProject
         private ProgressBar progressBar;
 
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.Black;
+        {            
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.Black;
+            EntityManager.Add(camera2d);
 
             // Adds record button.
             this.recordButton = new Button("recordButton")

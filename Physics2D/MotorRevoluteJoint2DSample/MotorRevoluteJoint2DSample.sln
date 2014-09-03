@@ -1,24 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSample", "MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample.csproj", "{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSample", "MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSample.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSampleProject", "MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSampleProject\MotorRevoluteJoint2DSampleProject.csproj", "{A48D0CDD-AACF-49E7-845A-B21F473830B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorRevoluteJoint2DSampleProject", "MotorRevoluteJoint2DSample\MotorRevoluteJoint2DSampleProject\MotorRevoluteJoint2DSampleProject.csproj", "{9F26236C-1AAB-4C0E-99DC-20C4EE190997}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Debug|x86.ActiveCfg = Debug|x86
-		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Debug|x86.Build.0 = Debug|x86
-		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Release|x86.ActiveCfg = Release|x86
-		{CE4F122A-E6E3-4E63-80AF-9C8B8CAF2257}.Release|x86.Build.0 = Release|x86
-		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Debug|x86.ActiveCfg = Debug|x86
-		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Debug|x86.Build.0 = Debug|x86
-		{A48D0CDD-AACF-49E7-845A-B21F473830B9}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{9F26236C-1AAB-4C0E-99DC-20C4EE190997}.Debug|x86.ActiveCfg = Debug|x86
+		{9F26236C-1AAB-4C0E-99DC-20C4EE190997}.Debug|x86.Build.0 = Debug|x86
+		{9F26236C-1AAB-4C0E-99DC-20C4EE190997}.Release|x86.ActiveCfg = Release|x86
+		{9F26236C-1AAB-4C0E-99DC-20C4EE190997}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

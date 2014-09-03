@@ -28,7 +28,7 @@ namespace KeyEventsAnimationProject
 {
     public static class SoundsManager
     {
-        public static readonly SoundInfo FootStep1 = new SoundInfo("Content/slam/footstep1.wpk");
-        public static readonly SoundInfo FootStep2 = new SoundInfo("Content/slam/footstep2.wpk");
+        public static readonly SoundInfo FootStep1 = new SoundInfo("Content/footstep1.wpk");
+        public static readonly SoundInfo FootStep2 = new SoundInfo("Content/footstep2.wpk");
     }
 }

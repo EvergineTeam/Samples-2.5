@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -19,18 +19,18 @@
 // IN THE SOFTWARE.
 
 #region Using Statements
-using System.Collections.Generic;
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
-using WaveEngine.Framework;
-using WaveEngine.Framework.Managers;
-using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
-using WaveEngine.Components.Cameras;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 #endregion
 
 namespace PrimitivesProject
@@ -39,12 +39,9 @@ namespace PrimitivesProject
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-            //RenderManager.DebugLines = true;
-
             ViewCamera camera = new ViewCamera("MainCamera", new Vector3(0, 0, 3), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            camera.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera.Entity);         
 
             Entity primitive = new Entity("Primitive")
                 .AddComponent(new Spinner() { AxisTotalIncreases = new Vector3(1f, 2f, 1f) })
@@ -56,6 +53,6 @@ namespace PrimitivesProject
                 .AddComponent(new ModelRenderer());
 
             EntityManager.Add(primitive);
-        }
+        }     
     }
 }

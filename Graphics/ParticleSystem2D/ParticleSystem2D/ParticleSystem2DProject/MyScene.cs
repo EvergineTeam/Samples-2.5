@@ -3,10 +3,13 @@ using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -16,8 +19,12 @@ namespace ParticleSystem2DProject
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {   
-            RenderManager.BackgroundColor = Color.Black;
+        {
+            FixedCamera2D camera2D = new FixedCamera2D("camera")
+            {
+                BackgroundColor = Color.Black,
+            };
+            EntityManager.Add(camera2D);            
 
             var textBlock = new TextBlock()
             {
@@ -29,7 +36,7 @@ namespace ParticleSystem2DProject
             };
 
             var background = new Entity("back")
-                .AddComponent(new Transform2D() 
+                .AddComponent(new Transform2D()
                 {
                     DrawOrder = 1,
                     XScale = WaveServices.Platform.ScreenWidth / 256f,

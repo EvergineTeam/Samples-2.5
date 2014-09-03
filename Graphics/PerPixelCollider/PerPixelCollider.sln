@@ -1,24 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelCollider", "PerPixelCollider\PerPixelCollider\PerPixelCollider.csproj", "{4731682F-71C8-40C1-A50B-7FDB96877460}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelCollider", "PerPixelCollider\PerPixelCollider\PerPixelCollider.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelColliderProject", "PerPixelCollider\PerPixelColliderProject\PerPixelColliderProject.csproj", "{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelColliderProject", "PerPixelCollider\PerPixelColliderProject\PerPixelColliderProject.csproj", "{49DFD455-F33E-454B-9874-5141041258BC}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4731682F-71C8-40C1-A50B-7FDB96877460}.Debug|x86.ActiveCfg = Debug|x86
-		{4731682F-71C8-40C1-A50B-7FDB96877460}.Debug|x86.Build.0 = Debug|x86
-		{4731682F-71C8-40C1-A50B-7FDB96877460}.Release|x86.ActiveCfg = Release|x86
-		{4731682F-71C8-40C1-A50B-7FDB96877460}.Release|x86.Build.0 = Release|x86
-		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Debug|x86.ActiveCfg = Debug|x86
-		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Debug|x86.Build.0 = Debug|x86
-		{269CCFF1-F2D1-4410-B2C0-1C5C98383C7D}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{49DFD455-F33E-454B-9874-5141041258BC}.Debug|x86.ActiveCfg = Debug|x86
+		{49DFD455-F33E-454B-9874-5141041258BC}.Debug|x86.Build.0 = Debug|x86
+		{49DFD455-F33E-454B-9874-5141041258BC}.Release|x86.ActiveCfg = Release|x86
+		{49DFD455-F33E-454B-9874-5141041258BC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,14 +22,13 @@ namespace AnalyticsDemoProject
 
             this.analyticsManager = new AnalyticsManager(application.Adapter);
             WaveServices.RegisterService<AnalyticsManager>(analyticsManager);
-                                   
+
             this.analyticsManager.SetAnalyticsSystem(new LocalyticsInfo("492098e861d94597fd5f0cf-e9b821a6-7d17-11e3-9836-009c5fda0a25"));
             this.analyticsManager.Open();
             this.analyticsManager.Upload();
 
-            ScreenLayers screenLayers = WaveServices.ScreenLayers;
-            screenLayers.AddScene<MyScene>();
-            screenLayers.Apply();
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
 
         /// <summary>

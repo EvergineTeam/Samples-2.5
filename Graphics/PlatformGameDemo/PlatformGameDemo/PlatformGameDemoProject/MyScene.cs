@@ -4,10 +4,13 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Animation;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
@@ -18,10 +21,11 @@ namespace PlatformGameDemoProject
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            EntityManager.Add(camera2d);
 
-            var credits = new TextBlock() 
-            { 
+            var credits = new TextBlock()
+            {
                 Text = "Braid's art copyright from their original owners\n" +
                        "Sprites from Cyrus Annihilator, background from David Hellman's web\n" +
                        "We just love this game and wanted to make a small tribute within this sample :-)",
@@ -41,11 +45,11 @@ namespace PlatformGameDemoProject
             var floor = new Entity("Floor")
                 .AddComponent(new Sprite("Content/Floor.wpk"))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
-                .AddComponent(new Transform2D() 
-                { 
-                    Origin = new Vector2(0.5f, 1), 
+                .AddComponent(new Transform2D()
+                {
+                    Origin = new Vector2(0.5f, 1),
                     X = WaveServices.Platform.ScreenWidth / 2,
-                    Y = WaveServices.Platform.ScreenHeight 
+                    Y = WaveServices.Platform.ScreenHeight
                 });
 
             // Tim

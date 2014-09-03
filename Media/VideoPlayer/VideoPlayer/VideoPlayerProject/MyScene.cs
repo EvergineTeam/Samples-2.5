@@ -5,11 +5,12 @@ using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Common.Media;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -18,7 +19,6 @@ namespace VideoPlayerProject
 {
     public class MyScene : Scene
     {
-
         public Button PlayBtn { get; set; }
         public Button PauseBtn { get; set; }
         public VideoInfo Video1 { get; set; }
@@ -27,10 +27,10 @@ namespace VideoPlayerProject
         protected override void CreateScene()
         {
             FreeCamera camera = new FreeCamera("camera", new Vector3(-3.8f, 2.2f, 5.6f), new Vector3(0, 0.8f, 2.2f))
-                {
-                    Speed = 5,
-                    NearPlane = 0.1f
-                };
+            {
+                Speed = 5,
+                NearPlane = 0.1f
+            };
 
             EntityManager.Add(camera);
 
@@ -65,7 +65,7 @@ namespace VideoPlayerProject
                 IsBorder = true,
             };
 
-                        ToggleSwitch muteToggle = new ToggleSwitch()
+            ToggleSwitch muteToggle = new ToggleSwitch()
             {
                 OnText = "Mute",
                 OffText = "Mute",
@@ -97,7 +97,7 @@ namespace VideoPlayerProject
             {
                 GroupName = "Videos",
                 Text = "Channel 2",
-                Margin = new WaveEngine.Framework.UI.Thickness(5,0,5,10)
+                Margin = new WaveEngine.Framework.UI.Thickness(5, 0, 5, 10)
             };
             radioButton2.Checked += (e, s) =>
             {

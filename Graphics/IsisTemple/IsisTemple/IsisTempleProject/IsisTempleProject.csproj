@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3C46652E-B012-4CDF-9B90-1932AAF23CA7}</ProjectGuid>
+    <ProjectGuid>{E5A3AA94-A1DB-48DA-8EC4-BCBFB0784CB5}</ProjectGuid>
     <WaveEngineProject>{196BC63C-5C01-4C02-9F24-E720CA3AD406}</WaveEngineProject>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -13,10 +13,6 @@
     <AssemblyName>IsisTempleProject</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -57,7 +53,11 @@
     <Compile Include="Game.cs" />
     <Compile Include="MyScene.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources.weproj" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(WaveEngine)v1.0\Targets\Windows\WPKAssetsExport.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
 	-->

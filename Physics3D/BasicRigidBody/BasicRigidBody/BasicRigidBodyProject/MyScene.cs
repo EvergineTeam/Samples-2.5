@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -20,17 +20,17 @@
 
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
 #endregion
 
 namespace BasicRigidBodyProject
@@ -38,14 +38,13 @@ namespace BasicRigidBodyProject
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
-            //WaveServices.GraphicsDevice.RenderState.FillMode = FillMode.Wireframe;
+        {            
             RenderManager.DebugLines = true;
-            //WaveServices.ScreenLayers.SetDiagnosticsActive(true);
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, 20), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, 20), Vector3.Zero)
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
+            EntityManager.Add(camera.Entity);            
 
             Entity ground = new Entity("Ground")
              .AddComponent(new Transform3D() { Position = new Vector3(0, -1, 0), Scale = new Vector3(100, 1, 100) })
@@ -65,10 +64,10 @@ namespace BasicRigidBodyProject
                     switch (j)
                     {
                         case 0:
-                            CreateBox("Box" + i, new Vector3(0.1f, 15, 0));                            
+                            CreateBox("Box" + i, new Vector3(0.1f, 15, 0));
                             break;
                         case 1:
-                            CreateSphere("Sphere" + i, new Vector3(i*0.01f, 18, 0));
+                            CreateSphere("Sphere" + i, new Vector3(i * 0.01f, 18, 0));
                             break;
                         case 2:
                             CreateCapsule("Capusle" + i, new Vector3(0, 20, 0));
@@ -84,13 +83,13 @@ namespace BasicRigidBodyProject
                     }
                 }, true);
 
-         
+
         }
 
         private void CreateBox(string name, Vector3 position)
         {
             Entity primitive = new Entity(name)
-                .AddComponent(new Transform3D() { Position = position})
+                .AddComponent(new Transform3D() { Position = position })
                 .AddComponent(new BoxCollider())
                 .AddComponent(Model.CreateCube())
                 .AddComponent(new RigidBody3D())

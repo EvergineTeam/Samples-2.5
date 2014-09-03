@@ -14,9 +14,8 @@ namespace HelloWaveProject
         {
             base.Initialize(application);
 
-            ScreenLayers screenLayers = WaveServices.ScreenLayers;
-            screenLayers.AddScene<MyScene>();
-            screenLayers.Apply();
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
