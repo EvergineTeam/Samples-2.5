@@ -29,7 +29,11 @@ namespace LensFlareProject
                 NearPlane = 0.1f,
                 BackgroundColor = Color.Black,
             };
-            EntityManager.Add(camera.Entity);            
+            EntityManager.Add(camera.Entity);
+
+            FixedCamera2D camera2d = new FixedCamera2D("camera2d");
+            camera2d.ClearFlags = ClearFlags.DepthAndStencil;
+            EntityManager.Add(camera2d);
 
             this.CreateSunFlare();
 
