@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,35 +18,25 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#region File Description
-//-----------------------------------------------------------------------------
-// MainScene
-//
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
 
 namespace Entity3DCollisionProject
 {
-    /// <summary>
-    /// Main Scene Class
-    /// </summary>
-    public class MainScene : Scene
+    public class MyScene : Scene
     {
         /// <summary>
         /// Entities Instance Count
@@ -59,14 +49,15 @@ namespace Entity3DCollisionProject
         /// Create Scene
         /// </summary>
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+        {            
             RenderManager.DebugLines = true;
 
             // Createa a Free Camera (W, A, S, D Keyboard controlled)
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 5, 10), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 5, 10), Vector3.Zero)
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
+            EntityManager.Add(camera.Entity);            
 
             // Creates a plane ground
             this.CreateGround();
@@ -79,10 +70,10 @@ namespace Entity3DCollisionProject
 
             // Create a Timer to instance new Sphere each 0.5 seconds
             WaveServices.TimerFactory.CreateTimer("MainTimer", TimeSpan.FromSeconds(0.5f), () =>
-                {
-                    // new sphere in (random(0,1), 5, random(0, 1)) position
-                    this.CreateSphere(Vector3.Up * 5 + Vector3.Forward*(float)WaveServices.Random.NextDouble() + Vector3.Left*(float)WaveServices.Random.NextDouble());
-                });
+            {
+                // new sphere in (random(0,1), 5, random(0, 1)) position
+                this.CreateSphere(Vector3.Up * 5 + Vector3.Forward * (float)WaveServices.Random.NextDouble() + Vector3.Left * (float)WaveServices.Random.NextDouble());
+            });
         }
 
         /// <summary>
@@ -149,7 +140,7 @@ namespace Entity3DCollisionProject
             {
                 EntityManager.Remove(primitive);
                 WaveServices.TimerFactory.RemoveTimer("Timer" + primitive.Name);
-            }); 
+            });
         }
 
         /// <summary>
