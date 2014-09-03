@@ -30,7 +30,7 @@ namespace ParticleSystem2DProject
                 MaxRotateSpeed = 0.01f,
                 EmitterSize = new Vector3(10),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle,
-                InterpolationColors = new List<Color>() { Color.Transparent },
+                InterpolationColors = new List<Color>() { Color.White, Color.Transparent },
                 LinearColorEnabled = true,
                 AlphaEnabled = true,
 
@@ -104,7 +104,7 @@ namespace ParticleSystem2DProject
                 EmitterSize = new Vector3(30),
                 Gravity = new Vector2(0, 0.08f),
                 EmitterShape = ParticleSystem2D.Shape.FillCircle,
-                InterpolationColors = new List<Color>() { Color.Transparent },
+                InterpolationColors = new List<Color>() { Color.White, Color.Transparent },
             };
 
             return dinoParticle;
