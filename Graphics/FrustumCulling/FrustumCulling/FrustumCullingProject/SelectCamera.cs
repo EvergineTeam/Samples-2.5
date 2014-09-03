@@ -33,15 +33,13 @@ namespace FrustumCullingProject
             if (currentState.D1 == ButtonState.Pressed && lastState.D1 == ButtonState.Release)
             {
                 freeCamera.IsActive = true;
-                fixedCamera.IsActive = false;
-                //Scene.RenderManager.SetActiveCamera(freeCamera.Entity);
+                fixedCamera.IsActive = false;                
             }
 
             if (currentState.D2 == ButtonState.Pressed && lastState.D2 == ButtonState.Release)
             {
                 freeCamera.IsActive = false;
-                fixedCamera.IsActive = true;
-                //Scene.RenderManager.SetActiveCamera(fixedCamera.Entity);
+                fixedCamera.IsActive = true;                
             }
 
             lastState = currentState;

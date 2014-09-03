@@ -30,6 +30,7 @@ namespace FrustumCullingProject
             EntityManager.Add(freeCamera);
 
             var fixedCamera = new FixedCamera("FixedCamera", new Vector3(20, 50, -20), new Vector3(20, 0, 20));
+            fixedCamera.BackgroundColor = Color.CornflowerBlue;
 
             EntityManager.Add(fixedCamera);
             RenderManager.SetFrustumCullingCamera(freeCamera.Entity);
