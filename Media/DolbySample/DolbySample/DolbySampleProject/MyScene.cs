@@ -1,22 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+#region Using Statements
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Common.Media;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
+#endregion
 
 namespace DolbySampleProject
 {
-    public class MainScene : Scene
-    {
+    public class MyScene : Scene
+    {       
         /// <summary>
         /// The buttonwidth
         /// </summary>
@@ -86,8 +88,9 @@ namespace DolbySampleProject
         /// </remarks>
         protected override void CreateScene()
         {
-            // Allow transparent background
-            this.RenderManager.ClearFlags = ClearFlags.DepthAndStencil;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.ClearFlags = ClearFlags.DepthAndStencil;
+            EntityManager.Add(camera2d);            
 
             // Music Player
             MusicInfo musicInfo = new MusicInfo("Content/audiodolby.mp3");
@@ -270,4 +273,4 @@ namespace DolbySampleProject
             this.SetDolbyText();
         }
     }
-}
+}      

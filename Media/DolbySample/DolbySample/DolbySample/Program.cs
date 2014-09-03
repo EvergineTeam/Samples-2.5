@@ -7,9 +7,6 @@ namespace DolbySample
 {
     static class Program
     {
-        /// <summary>
-        /// Defines the entry point of the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {

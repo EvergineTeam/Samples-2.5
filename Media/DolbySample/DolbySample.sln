@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolbySample", "DolbySample\DolbySample\DolbySample.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolbySampleProject", "DolbySample\DolbySampleProject\DolbySampleProject.csproj", "{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolbySampleProject", "DolbySample\DolbySampleProject\DolbySampleProject.csproj", "{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
 		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
-		{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}.Debug|x86.ActiveCfg = Debug|x86
-		{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}.Debug|x86.Build.0 = Debug|x86
-		{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}.Release|x86.ActiveCfg = Release|x86
-		{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}.Release|x86.Build.0 = Release|x86
+		{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}.Debug|x86.ActiveCfg = Debug|x86
+		{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}.Debug|x86.Build.0 = Debug|x86
+		{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}.Release|x86.ActiveCfg = Release|x86
+		{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

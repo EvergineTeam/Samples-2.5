@@ -1,3 +1,4 @@
+using Android.App;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -6,7 +7,7 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("")]
+[assembly: AssemblyTitle("DolbySample")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("Weekend game Studio")]
@@ -23,7 +24,7 @@ using System.Resources;
 // On Windows, the following GUID is for the ID of the typelib if this
 // project is exposed to COM. On other platforms, it unique identifies the
 // title storage container when deploying this assembly to the device.
-[assembly: Guid("78f0f1f6-e552-4ba2-9061-abbef1df52cd")]
+[assembly: Guid("9c94f458-3c8a-4589-a685-0ca06295448f")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,3 +35,5 @@ using System.Resources;
 //
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
+[assembly: Application(Icon = "@drawable/icon")]
+
