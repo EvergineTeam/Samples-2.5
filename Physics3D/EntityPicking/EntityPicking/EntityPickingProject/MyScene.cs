@@ -1,62 +1,34 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
-
-#region File Description
-//-----------------------------------------------------------------------------
-// MainScene
-//
-// Copyright © 2013 Weekend Game Studio. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
 #region Using Statements
 using System;
-using System.Collections.Generic;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
-using WaveEngine.Materials;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 #endregion
 
 namespace EntityPickingProject
 {
-    public class MainScene : Scene
-    {
+    public class MyScene : Scene
+    {     
         private long instances = 0;
 
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+        {            
             RenderManager.DebugLines = true;
 
-            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, -10), Vector3.Zero);
+            FreeCamera camera = new FreeCamera("MainCamera", new Vector3(0, 10, -10), Vector3.Zero)
+            {
+                BackgroundColor = Color.CornflowerBlue,
+            };
             EntityManager.Add(camera.Entity);
-            camera.Entity.AddComponent(new PickingBehavior());
-
-            RenderManager.SetActiveCamera(camera.Entity);
+            camera.Entity.AddComponent(new PickingBehavior());            
 
             EntityManager.Add(this.CreateGround());
             EntityManager.Add(this.CreateBox(new Vector3(0.0f, 10.0f, 0.0f)));
@@ -93,6 +65,7 @@ namespace EntityPickingProject
                 .AddComponent(Model.CreateCube())
                 .AddComponent(new MaterialsMap())
                 .AddComponent(new RigidBody3D() { Mass = 10 })
+                .AddComponent(new JointMap3D())
                 .AddComponent(new ModelRenderer());
             return box;
         }
