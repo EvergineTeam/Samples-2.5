@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,18 +18,25 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
+#endregion
 
 namespace CheckBoxSampleProject
 {
-    public class CheckBoxScene : Scene
+    public class MyScene : Scene
     {
         CheckBox checkbox1, checkbox2, checkbox3, checkbox4, checkbox5;
         Button button1;
@@ -39,8 +46,9 @@ namespace CheckBoxSampleProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.Gray;
-            //RenderManager.DebugLines = true;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.Gray;
+            EntityManager.Add(camera2d);
 
             int offsetTop = 20;
             int spacing = 80;
