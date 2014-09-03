@@ -95,7 +95,8 @@ namespace StockRoomProject.Behaviors
             bigBall = Helpers.CreateSphere("BigBall", rope.EndPoint, new Vector3(30), MASS_BIGBALL, Color.Gray);
             EntityManager.Add(bigBall);
 
-            anchor.AddComponent(new BallSocketJoint(bigBall, rope.StartPoint));
+            anchor.AddComponent(new JointMap3D()
+                                        .AddJoint("jointA", new BallSocketJoint(bigBall, rope.StartPoint)));
         }
 
         protected override void Update(TimeSpan gameTime)

@@ -14,7 +14,8 @@ namespace PlatformGameDemoProject
         {
             base.Initialize(application);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MyScene()));
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2012-2013 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -18,31 +18,30 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
-using WaveEngine.Framework.Physics3D;
-using WaveEngine.Components.Cameras;
+#endregion
 
-namespace Dinosaur
+namespace DinosaurProject
 {
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
-            RenderManager.BackgroundColor = Color.Black;
-            //RenderManager.DebugLines = true;
-
+        {            
             FreeCamera mainCamera = new FreeCamera("MainCamera", new Vector3(0, 50, 80), Vector3.Zero);
+            mainCamera.BackgroundColor = Color.Black;
             EntityManager.Add(mainCamera);
 
             Entity velociraptor = new Entity("Velociraptor")

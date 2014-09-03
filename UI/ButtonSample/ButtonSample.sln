@@ -1,25 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSample", "ButtonSample\ButtonSample\ButtonSample.csproj", "{190850DC-48F5-40BA-8AFB-59EF43E24621}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSample", "ButtonSample\ButtonSample\ButtonSample.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSampleProject", "ButtonSample\ButtonSampleProject\ButtonSampleProject.csproj", "{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonSampleProject", "ButtonSample\ButtonSampleProject\ButtonSampleProject.csproj", "{22911E7B-C5CB-4AAC-A6E6-3B2C3128EF62}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Debug|x86.ActiveCfg = Debug|x86
-		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Debug|x86.Build.0 = Debug|x86
-		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Release|x86.ActiveCfg = Release|x86
-		{190850DC-48F5-40BA-8AFB-59EF43E24621}.Release|x86.Build.0 = Release|x86
-		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Debug|x86.ActiveCfg = Debug|x86
-		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Debug|x86.Build.0 = Debug|x86
-		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Release|x86.ActiveCfg = Release|x86
-		{FAB1AC78-38B7-4DCA-A4BC-8CDF06988A1C}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{22911E7B-C5CB-4AAC-A6E6-3B2C3128EF62}.Debug|x86.ActiveCfg = Debug|x86
+		{22911E7B-C5CB-4AAC-A6E6-3B2C3128EF62}.Debug|x86.Build.0 = Debug|x86
+		{22911E7B-C5CB-4AAC-A6E6-3B2C3128EF62}.Release|x86.ActiveCfg = Release|x86
+		{22911E7B-C5CB-4AAC-A6E6-3B2C3128EF62}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

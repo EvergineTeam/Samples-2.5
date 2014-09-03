@@ -17,7 +17,7 @@ namespace DolbySampleProject
             // Use ViewportManager to ensure scaling in all devices
             WaveServices.ViewportManager.Activate(1024, 576, ViewportManager.StretchMode.Uniform);
 
-            ScreenContext screenContext = new ScreenContext(new BackgroundScene(), new MainScene());
+            ScreenContext screenContext = new ScreenContext(new BackgroundScene(), new MyScene());
             WaveServices.ScreenContextManager.To(screenContext);
         }
     }

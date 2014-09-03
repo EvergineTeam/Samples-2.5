@@ -5,6 +5,7 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.Transitions;
 using WaveEngine.Components.UI;
@@ -12,15 +13,13 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
 
 namespace TransitionSampleProject
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class MyScene : Scene
     {
         /// <summary>
@@ -46,7 +45,7 @@ namespace TransitionSampleProject
         /// <summary>
         /// The ease function
         /// </summary>
-        private static EasingFunctionBase easeFunction = new CubicEase() { EasingMode = EasingMode.EaseInOut }; 
+        private static EasingFunctionBase easeFunction = new CubicEase() { EasingMode = EasingMode.EaseInOut };
 
         /// <summary>
         /// The index
@@ -64,8 +63,7 @@ namespace TransitionSampleProject
             string name = string.Empty;
 
             ViewCamera camera = new ViewCamera("MainCamera", new Vector3(0, 0, 3), Vector3.Zero);
-            EntityManager.Add(camera.Entity);
-            RenderManager.SetActiveCamera(camera.Entity);
+            EntityManager.Add(camera.Entity);            
 
             Entity primitive = new Entity("Primitive")
                 .AddComponent(new Spinner() { AxisTotalIncreases = new Vector3(1f, 2f, 1f) })
@@ -79,82 +77,82 @@ namespace TransitionSampleProject
                 case (0):
                     name = "Push";
                     primitive.AddComponent(Model.CreateTeapot());
-                    RenderManager.BackgroundColor = Color.Black;
+                    camera.BackgroundColor = Color.Black;                    
                     break;
                 case (1):
                     name = "Color Fade";
                     primitive.AddComponent(Model.CreateCapsule());
-                    RenderManager.BackgroundColor = Color.DarkBlue;
+                    camera.BackgroundColor = Color.DarkBlue;
                     break;
                 case (2):
                     name = "Doorway";
                     primitive.AddComponent(Model.CreateSphere());
-                    RenderManager.BackgroundColor = Color.DarkCyan;
+                    camera.BackgroundColor = Color.DarkCyan;
                     break;
                 case (3):
                     name = "Comb";
                     primitive.AddComponent(Model.CreateTorus());
-                    RenderManager.BackgroundColor = Color.DarkGoldenrod;
+                    camera.BackgroundColor = Color.DarkGoldenrod;
                     break;
                 case (4):
                     name = "Cover";
                     primitive.AddComponent(Model.CreateCapsule());
-                    RenderManager.BackgroundColor = Color.DarkGray;
+                    camera.BackgroundColor = Color.DarkGray;
                     break;
                 case (5):
                     name = "Curtains";
                     primitive.AddComponent(Model.CreatePyramid());
-                    RenderManager.BackgroundColor = Color.DarkGreen;
+                    camera.BackgroundColor = Color.DarkGreen;
                     break;
                 case (6):
                     name = "Falling Lines";
                     primitive.AddComponent(Model.CreatePlane());
-                    RenderManager.BackgroundColor = Color.DarkKhaki;
+                    camera.BackgroundColor = Color.DarkKhaki;
                     break;
                 case (7):
                     name = "Fan";
                     primitive.AddComponent(Model.CreateCone());
-                    RenderManager.BackgroundColor = Color.DarkMagenta;
+                    camera.BackgroundColor = Color.DarkMagenta;
                     break;
                 case (8):
                     name = "Rotate";
                     primitive.AddComponent(Model.CreateCube());
-                    RenderManager.BackgroundColor = Color.DarkOliveGreen;
+                    camera.BackgroundColor = Color.DarkOliveGreen;
                     break;
                 case (9):
                     name = "Scale";
                     primitive.AddComponent(Model.CreateTeapot());
-                    RenderManager.BackgroundColor = Color.DarkOrange;
+                    camera.BackgroundColor = Color.DarkOrange;
                     break;
                 case (10):
                     name = "Shrink and Spin";
                     primitive.AddComponent(Model.CreateCapsule());
-                    RenderManager.BackgroundColor = Color.DarkOrchid;
+                    camera.BackgroundColor = Color.DarkOrchid;
                     break;
                 case (11):
                     name = "Spinning Squares";
                     primitive.AddComponent(Model.CreateSphere());
-                    RenderManager.BackgroundColor = Color.DarkRed;
+                    camera.BackgroundColor = Color.DarkRed;
                     break;
                 case (12):
                     name = "Uncover";
                     primitive.AddComponent(Model.CreateTorus());
-                    RenderManager.BackgroundColor = Color.DarkSalmon;
+                    camera.BackgroundColor = Color.DarkSalmon;
                     break;
                 case (13):
                     name = "Zoom";
                     primitive.AddComponent(Model.CreatePyramid());
-                    RenderManager.BackgroundColor = Color.DarkSeaGreen;
+                    camera.BackgroundColor = Color.DarkSeaGreen;
                     break;
                 case (14):
                     name = "Chequered";
                     primitive.AddComponent(Model.CreatePlane());
-                    RenderManager.BackgroundColor = Color.DarkSlateBlue;
+                    camera.BackgroundColor = Color.DarkSlateBlue;
                     break;
                 case (15):
                     name = "Cross Fade";
                     primitive.AddComponent(Model.CreateCube());
-                    RenderManager.BackgroundColor = Color.DarkSlateGray;
+                    camera.BackgroundColor = Color.DarkSlateGray;
                     break;
                 default:
                     break;

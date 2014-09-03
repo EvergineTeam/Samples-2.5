@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3ACF8A6F-AD93-4FD4-9D51-162CFC1A6846}</ProjectGuid>
+    <ProjectGuid>{AD483959-BD4E-443E-BDA0-F48D1E0FAF80}</ProjectGuid>
     <WaveEngineProject>{196BC63C-5C01-4C02-9F24-E720CA3AD406}</WaveEngineProject>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,12 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundScene.cs" />
     <Compile Include="Behaviors\BlinkBehavior.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="BackgroundScene.cs" />
-    <Compile Include="MainScene.cs" />
+    <Compile Include="MyScene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources.weproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(WaveEngine)v1.0\Targets\Windows\WPKAssetsExport.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
 	-->

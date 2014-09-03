@@ -35,7 +35,7 @@ using WaveEngine.Framework.Graphics;
 
 #endregion
 
-namespace DebugShapes
+namespace DebugShapesProject
 {
     public class DebugShapes : Drawable3D
     {

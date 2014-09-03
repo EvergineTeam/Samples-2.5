@@ -1,35 +1,15 @@
-// Copyright (C) 2012-2013 Weekend Game Studio
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to
-// deal in the Software without restriction, including without limitation the
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-// sell copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-// IN THE SOFTWARE.
-
 #region Using Statements
 using CityDemoProject.Behaviors;
 using System;
-using System.Collections.Generic;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.Particles;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
@@ -43,6 +23,8 @@ namespace CityDemoProject
 
         protected override void CreateScene()
         {
+            this.RenderManager.RegisterLayerBefore(new CustomLayer(this.RenderManager), DefaultLayers.Opaque);
+
             FreeCamera cameraEntity = new FreeCamera("camera", new Vector3(-152, 180, 1000), new Vector3(0, 180, 0))
             {
                 NearPlane = 10,
@@ -50,13 +32,9 @@ namespace CityDemoProject
                 FieldOfView = MathHelper.ToRadians(65),
                 Speed = 300
             };
+            cameraEntity.BackgroundColor = Color.Black;            
             cameraEntity.Entity.AddComponent(new CameraBehavior());
-            EntityManager.Add(cameraEntity);
-
-            RenderManager.SetActiveCamera(cameraEntity.Entity);
-            RenderManager.BackgroundColor = Color.Black;
-            WaveServices.GraphicsDevice.RenderState.BlendMode = BlendMode.AlphaBlend;
-
+            EntityManager.Add(cameraEntity);                                               
 
             this.LoadModel("buildingModels", "buildings");
             this.LoadModel("buildingModels2", "buildings2");
@@ -67,12 +45,11 @@ namespace CityDemoProject
             lightFoot.AddComponent(new RotationBehavior(false, true));
             lightFoot.FindComponent<Transform3D>().Position = new Vector3(36, 22, 549);
             Entity light = this.LoadModel("light", "lightMap", lightFoot);
-            light.FindComponent<Transform3D>().Position = new Vector3(35, 207, 549);
+            light.FindComponent<Transform3D>().Position = new Vector3(-1, 185, 0);
             light.AddComponent(new RotationBehavior(true, true));
             Entity lightSignal = this.LoadModel("lightSignal", "WaveLight", lightFoot, true);
-            lightSignal.FindComponent<Transform3D>().Position = new Vector3(35, 207, 549);
+            lightSignal.FindComponent<Transform3D>().Position = new Vector3(-1, 185, 0);
             lightSignal.AddComponent(new RotationBehavior(true, true));
-            Camera cam = cameraEntity.Entity.FindComponent<Camera>();
         }
 
         private Entity LoadModel(string model, string texture)
@@ -94,7 +71,7 @@ namespace CityDemoProject
 
             if (!isAdditive)
             {
-                entity.AddComponent(new MaterialsMap(new BasicMaterial(string.Format(PATHMATERIAL, texture), DefaultLayers.Opaque)));
+                entity.AddComponent(new MaterialsMap(new BasicMaterial(string.Format(PATHMATERIAL, texture), typeof(CustomLayer) )));
             }
             else
             {

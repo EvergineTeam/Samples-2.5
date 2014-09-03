@@ -1,25 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSample", "ToggleSwitchSample\ToggleSwitchSample\ToggleSwitchSample.csproj", "{E7E06512-37F1-4F68-BBF9-04773071FB9C}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSample", "ToggleSwitchSample\ToggleSwitchSample\ToggleSwitchSample.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSampleProject", "ToggleSwitchSample\ToggleSwitchSampleProject\ToggleSwitchSampleProject.csproj", "{CFC67715-C709-49DF-8BF1-FB7E402FC69B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitchSampleProject", "ToggleSwitchSample\ToggleSwitchSampleProject\ToggleSwitchSampleProject.csproj", "{1F830412-6D1D-4104-BBE1-01B3CAF4597A}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Debug|x86.ActiveCfg = Debug|x86
-		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Debug|x86.Build.0 = Debug|x86
-		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Release|x86.ActiveCfg = Release|x86
-		{E7E06512-37F1-4F68-BBF9-04773071FB9C}.Release|x86.Build.0 = Release|x86
-		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Debug|x86.ActiveCfg = Debug|x86
-		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Debug|x86.Build.0 = Debug|x86
-		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Release|x86.ActiveCfg = Release|x86
-		{CFC67715-C709-49DF-8BF1-FB7E402FC69B}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{1F830412-6D1D-4104-BBE1-01B3CAF4597A}.Debug|x86.ActiveCfg = Debug|x86
+		{1F830412-6D1D-4104-BBE1-01B3CAF4597A}.Debug|x86.Build.0 = Debug|x86
+		{1F830412-6D1D-4104-BBE1-01B3CAF4597A}.Release|x86.ActiveCfg = Release|x86
+		{1F830412-6D1D-4104-BBE1-01B3CAF4597A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

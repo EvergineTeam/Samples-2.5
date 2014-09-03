@@ -33,7 +33,7 @@ namespace ProjectProject
     {
         // A camera required component to calculate the projections
         [RequiredComponent()]
-        public Camera Camera;
+        public Camera3D Camera;
 
         // Cached variables
         private TouchPanelState touchPanelState;
@@ -79,7 +79,7 @@ namespace ProjectProject
                             if (collisionResult.Value < bestValue)
                             {
                                 // Send to the scene the new entity picked name
-                                (WaveServices.ScreenContextManager.CurrentContext[0] as MainScene).ShowPickedEntity(currentEntity.Name);
+                                (WaveServices.ScreenContextManager.CurrentContext[0] as MyScene).ShowPickedEntity(currentEntity.Name);
                                 bestValue = collisionResult.Value;
                             }
                         }
@@ -88,7 +88,7 @@ namespace ProjectProject
             }
             else
             {
-                (WaveServices.ScreenContextManager.CurrentContext[0] as MainScene).ShowPickedEntity("None");
+                (WaveServices.ScreenContextManager.CurrentContext[0] as MyScene).ShowPickedEntity("None");
             }
         }
 
@@ -119,8 +119,9 @@ namespace ProjectProject
             farPoint.Z = 1f;
 
             // Unproject both to get the 2d point in a 3d screen projections. 
-            nearPoint = Camera.Unproject(ref nearPoint, ref Camera.View, ref Camera.Projection, ref identity);
-            farPoint = Camera.Unproject(ref farPoint, ref Camera.View, ref Camera.Projection, ref identity);
+            
+            nearPoint = Camera.Unproject(ref nearPoint);
+            farPoint = Camera.Unproject(ref farPoint);
 
             // Now, we have a 3d point. We calculate the point direction
             direction = farPoint - nearPoint;

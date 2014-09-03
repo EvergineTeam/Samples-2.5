@@ -93,13 +93,17 @@ namespace OnPhysics2DCollisionSampleProject
                                 if (rigidBody != null)
                                 {
                                     // Forbiden Mouse Joint of Kinematic Bodies
-                                    if (!rigidBody.IsKinematic)
+                                    if (rigidBody.PhysicBodyType != PhysicBodyType.Static)
                                     {
                                         this.connectedEntity = entity;
 
-                                        // Create Mouse Joint
-                                        this.mouseJoint = new FixedMouseJoint2D(this.touchPosition);
-                                        this.connectedEntity.AddComponent(this.mouseJoint);
+                                        // Create Mouse Joint                                        
+                                        var jointMap = this.connectedEntity.FindComponent<JointMap2D>();
+                                        if (jointMap != null)
+                                        {
+                                            this.mouseJoint = new FixedMouseJoint2D(this.touchPosition);
+                                            jointMap.AddJoint("joint", this.mouseJoint);                                            
+                                        }
 
                                         // We can break after collider test when true, but we'll miss overlapped entities if Physic entity is 
                                         // under a non Physic entity. We are breaking here just for sample.
@@ -117,7 +121,11 @@ namespace OnPhysics2DCollisionSampleProject
                     if (!this.connectedEntity.IsDisposed)
                     {
                         // Remove Fixed Joint
-                        this.connectedEntity.RemoveComponent<FixedMouseJoint2D>();
+                        var jointMap = this.connectedEntity.FindComponent<JointMap2D>();
+                        if (jointMap != null)
+                        {
+                            jointMap.RemoveJoint("joint");
+                        }                        
                     }
 
                     this.mouseJoint = null;
