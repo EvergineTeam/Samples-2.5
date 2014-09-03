@@ -7,13 +7,13 @@ using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Animation;
 using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
+using WaveEngine.ImageEffects;
 using WaveEngine.Materials;
 #endregion
 
@@ -21,7 +21,7 @@ namespace CameraRenderTargetProject
 {
     public class MyScene : Scene
     {      
-         // Cameras
+        // Cameras
         List<FixedCamera> cameras;
         
         // Camera rendertargets
@@ -114,12 +114,13 @@ namespace CameraRenderTargetProject
                 FarPlane = 15,
             };
             camera.Entity.AddComponent(new SecurityCameraBehavior(startLookAt, endLookAt, timeOffset));
+            camera.Entity.AddComponent(ImageEffects.FilmGrain());
+            camera.Entity.AddComponent(ImageEffects.ScanLines());
             
             // This camera will not render the GUI layer
             camera.LayerMask[DefaultLayers.GUI] = false;
 
             // Register as secondary camera
-            this.RenderManager.AddSecondaryCamera(camera.Entity);
             EntityManager.Add(camera);
             
             this.cameras.Add(camera);
@@ -153,7 +154,6 @@ namespace CameraRenderTargetProject
             EntityManager.Add(stage);
         }
 
-
         /// <summary>
         /// Creates main character.
         /// </summary>
@@ -179,16 +179,11 @@ namespace CameraRenderTargetProject
         }
 
         private void SetActiveCamera(int cameraIndex)
-        {
-            foreach (var camera in this.cameras)
-            {
-                this.RenderManager.RemoveSecondaryCamera(camera.Entity);
-            }
-            
+        {            
             var activeCamera = this.cameras[cameraIndex];
             activeCamera.RenderTarget = null;
             activeCamera.LayerMask[DefaultLayers.GUI] = true;
-            this.RenderManager.SetActiveCamera(activeCamera.Entity);
+            this.RenderManager.SetActiveCamera3D(activeCamera.Entity);
 
             this.textBlock.Text = string.Format("Active Camera: {0}", activeCamera.Entity.Name);
 
@@ -202,7 +197,6 @@ namespace CameraRenderTargetProject
                     if (this.cameraRenderTargets.ContainsKey(camera))
                     {
                         camera.RenderTarget = this.cameraRenderTargets[camera];
-                        this.RenderManager.AddSecondaryCamera(camera.Entity);
                         camera.LayerMask[DefaultLayers.GUI] = false;
                     }                    
                 }
