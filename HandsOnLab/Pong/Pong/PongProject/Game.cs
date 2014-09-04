@@ -14,7 +14,8 @@ namespace PongProject
         {
             base.Initialize(application);
 
-            WaveServices.ScreenContextManager.To(new ScreenContext(new MenuScene()));            
+            ScreenContext screenContext = new ScreenContext(new MenuScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
