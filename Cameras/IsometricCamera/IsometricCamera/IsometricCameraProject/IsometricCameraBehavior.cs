@@ -37,8 +37,8 @@ namespace IsometricCameraProject
         /// <summary>
         /// Current camera
         /// </summary>
-        [RequiredComponent()]
-        public Camera Camera;
+        [RequiredComponent]
+        public Camera3D Camera;
 
         // Cached input
         private Input input;
@@ -99,19 +99,23 @@ namespace IsometricCameraProject
         private void MoveCamera(ref Vector3 addedVector)
         {
             // Manual inline: position += speed * addedVector;
-            Camera.Position.X = Camera.Position.X + (speed * addedVector.X);
-            Camera.Position.Y = Camera.Position.Y + (speed * addedVector.Y);
-            Camera.Position.Z = Camera.Position.Z + (speed * addedVector.Z);
+
+            Camera.Position = new Vector3()
+            {
+                X = Camera.Position.X + (speed*addedVector.X),
+                Y = Camera.Position.Y + (speed*addedVector.Y),
+                Z = Camera.Position.Z + (speed*addedVector.Z),
+            };
         }
 
 
         protected override void Initialize()
         {
-            Camera.Position = new Vector3(0f, 10f, 25f);
             var rotationMatrix = Matrix.CreateRotationX(MathHelper.ToRadians(45.0f)) * Matrix.CreateRotationY(MathHelper.ToRadians(30.0f));
             Vector3 transformedReference = Vector3.Transform(Vector3.Down, rotationMatrix);
             Vector3 cameraLookat = Camera.Position + transformedReference;
             Camera.LookAt = cameraLookat;
+
             speed = .3f;
 
             forward = -Vector3.UnitZ;

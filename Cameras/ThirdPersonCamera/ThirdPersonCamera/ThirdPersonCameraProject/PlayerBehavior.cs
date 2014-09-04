@@ -27,19 +27,16 @@ using WaveEngine.Framework.Graphics;
 
 namespace ThirdPersonCameraProject
 {
-    public class PlayerBehavior: Behavior
+    public class PlayerBehavior : Behavior
     {
-
         public float Speed = 2f;
 
-        [RequiredComponent()]
+        [RequiredComponent]
         public Transform3D PlayerTransform;
 
         private float timeAmount;
 
         private Input inputService;
-
-        private Vector3 playerPosition;
 
         private float zMovement;
 
@@ -51,18 +48,12 @@ namespace ThirdPersonCameraProject
             : base("PlayerBehavior")
         { }
 
-        protected override void Initialize()
-        {
-            base.Initialize();
-            
-        }
-
         protected override void Update(TimeSpan gameTime)
         {
             timeAmount = (float)gameTime.Milliseconds / 1000;
 
             inputService = WaveServices.Input;
-            
+
             zMovement = 0f;
 
             if (inputService.KeyboardState.IsConnected)
@@ -76,16 +67,20 @@ namespace ThirdPersonCameraProject
                     zMovement = -(timeAmount);
                 }
 
+                var rotation = new Vector3();
+                rotation.X = PlayerTransform.Rotation.X;
+                rotation.Z = PlayerTransform.Rotation.Z;
+
                 if (inputService.KeyboardState.A == ButtonState.Pressed)
                 {
-                    PlayerTransform.Rotation.Y = PlayerTransform.Rotation.Y + (timeAmount * Speed);
+                    rotation.Y = PlayerTransform.Rotation.Y + (timeAmount * Speed);
                 }
                 else if (inputService.KeyboardState.D == ButtonState.Pressed)
                 {
-                    PlayerTransform.Rotation.Y = PlayerTransform.Rotation.Y - (timeAmount * Speed);
+                    rotation.Y = PlayerTransform.Rotation.Y - (timeAmount * Speed);
                 }
 
-                playerPosition = PlayerTransform.Position;
+                PlayerTransform.Rotation = rotation;
 
                 dir = Vector3.UnitX;
                 dir.X = dir.X - PlayerTransform.Position.X;
@@ -103,9 +98,12 @@ namespace ThirdPersonCameraProject
 
                 Vector3.Multiply(ref dir, zMovement, out directionResultVector);
 
-                PlayerTransform.Position.X = PlayerTransform.Position.X + directionResultVector.X;
-                PlayerTransform.Position.Y = PlayerTransform.Position.Y + directionResultVector.Y;
-                PlayerTransform.Position.Z = PlayerTransform.Position.Z + directionResultVector.Z;
+                PlayerTransform.Position = new Vector3()
+                {
+                    X = PlayerTransform.Position.X + directionResultVector.X,
+                    Y = PlayerTransform.Position.Y + directionResultVector.Y,
+                    Z = PlayerTransform.Position.Z + directionResultVector.Z,
+                };
             }
         }
     }

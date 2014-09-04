@@ -19,18 +19,18 @@ namespace PathCameraProject
             {
                 new CameraPoint() { Position = new Vector3(0f,0f,15f), LookAt = Vector3.Zero, Up = Vector3.Up},
                 new CameraPoint() { Position = new Vector3(30f,0f,15f), LookAt = Vector3.Zero, Up = Vector3.Up},
-                new CameraPoint() { Position = new Vector3(30f,30f,15f), LookAt =new Vector3(-15f, 0f, 0f), Up = Vector3.UnitX},
-                new CameraPoint() { Position = new Vector3(-30f,0f,15f), LookAt=new Vector3(-15f, 0f, 0f), Up = Vector3.Up},
+                new CameraPoint() { Position = new Vector3(30f,30f,15f), LookAt = new Vector3(-15f, 0f, 0f), Up = Vector3.UnitX},
+                new CameraPoint() { Position = new Vector3(-30f,0f,15f), LookAt= new Vector3(-15f, 0f, 0f), Up = Vector3.Up},
                 new CameraPoint() { Position = new Vector3(0f,0f,15f), LookAt = Vector3.Zero, Up = Vector3.Up}
             };
 
             PathCamera pathCamera = new PathCamera("path", new Vector3(0, 15f, 15f), Vector3.Zero, pointList, 500)
             {
                 Speed = 0.5f,
-            };           
+                BackgroundColor = Color.CornflowerBlue,
+            };
 
-            RenderManager.SetActiveCamera(pathCamera.Entity);
-            EntityManager.Add(pathCamera.Entity);
+            EntityManager.Add(pathCamera);
 
             CreateCube("Cube1", Vector3.Zero);
             CreateCube("Cube2", new Vector3(15f, 0f, 0f));
@@ -38,7 +38,6 @@ namespace PathCameraProject
             CreateCube("Cube4", new Vector3(0f, 0f, 15f));
             CreateCube("Cube5", new Vector3(0f, 0f, -15f));
 
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         private void CreateCube(string cubeName, Vector3 position)

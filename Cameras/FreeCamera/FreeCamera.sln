@@ -1,35 +1,26 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCamera", "FreeCamera\FreeCamera\FreeCamera.csproj", "{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCamera", "FreeCamera\FreeCamera\FreeCamera.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCameraProject", "FreeCamera\FreeCameraProject\FreeCameraProject.csproj", "{C0C621FB-87C1-4F3F-8E41-8F9193313B71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCameraProject", "FreeCamera\FreeCameraProject\FreeCameraProject.csproj", "{35CAE999-EB52-4DB2-B391-A24F17858AB6}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs2013.plainconcepts.com/tfs/wave
-		SccProjectUniqueName0 = FreeCamera\\FreeCameraProject\\FreeCameraProject.csproj
-		SccProjectName0 = FreeCamera/FreeCameraProject
-		SccLocalPath0 = FreeCamera\\FreeCameraProject
-		SccProjectUniqueName1 = FreeCamera\\FreeCamera\\FreeCamera.csproj
-		SccProjectName1 = FreeCamera/FreeCamera
-		SccLocalPath1 = FreeCamera\\FreeCamera
-		SccLocalPath2 = .
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Debug|x86.ActiveCfg = Debug|x86
-		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Debug|x86.Build.0 = Debug|x86
-		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Release|x86.ActiveCfg = Release|x86
-		{A1FF6E1F-2D7F-488F-BCFC-3120B7A67DD7}.Release|x86.Build.0 = Release|x86
-		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Debug|x86.ActiveCfg = Debug|x86
-		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Debug|x86.Build.0 = Debug|x86
-		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Release|x86.ActiveCfg = Release|x86
-		{C0C621FB-87C1-4F3F-8E41-8F9193313B71}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{35CAE999-EB52-4DB2-B391-A24F17858AB6}.Debug|x86.ActiveCfg = Debug|x86
+		{35CAE999-EB52-4DB2-B391-A24F17858AB6}.Debug|x86.Build.0 = Debug|x86
+		{35CAE999-EB52-4DB2-B391-A24F17858AB6}.Release|x86.ActiveCfg = Release|x86
+		{35CAE999-EB52-4DB2-B391-A24F17858AB6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

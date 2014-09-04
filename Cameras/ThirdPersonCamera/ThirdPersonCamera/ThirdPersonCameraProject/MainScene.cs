@@ -35,20 +35,17 @@ namespace ThirdPersonCameraProject
         protected override void CreateScene()
         {
             var player = CreatePlayer();
-            ThirdPersonCamera thirdPersonCamera = new ThirdPersonCamera("thirdPerson", player);            
+            ThirdPersonCamera thirdPersonCamera = new ThirdPersonCamera("thirdPerson", player);
+            thirdPersonCamera.BackgroundColor = Color.CornflowerBlue;
 
-            RenderManager.SetActiveCamera(thirdPersonCamera.Entity);
-            EntityManager.Add(thirdPersonCamera.Entity);
+            EntityManager.Add(thirdPersonCamera);
 
-            
             CreateCube("Cube2", new Vector3(5f, 0f, 0f));
             CreateCube("Cube3", new Vector3(-5f, 0f, 0f));
             CreateCube("Cube4", new Vector3(5f, 0f, 5f));
             CreateCube("Cube5", new Vector3(-5f, 0f, 5f));
             CreateCube("Cube6", new Vector3(5f, 0f, -5f));
             CreateCube("Cube7", new Vector3(-5f, 0f, -5f));
-
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         private void CreateCube(string cubeName, Vector3 position)
