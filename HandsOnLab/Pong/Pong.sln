@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pong", "Pong\Pong\Pong.csproj", "{BDF172CE-C74E-4DB1-B184-5C9A9F37101C}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pong", "Pong\Pong\Pong.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongProject", "Pong\PongProject\PongProject.csproj", "{3ACA5EBE-6D1A-4276-A9E5-214C7730F0FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongProject", "Pong\PongProject\PongProject.csproj", "{98A1ABCD-BF75-40ED-BCAB-BF4439F4B15F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BDF172CE-C74E-4DB1-B184-5C9A9F37101C}.Debug|x86.ActiveCfg = Debug|x86
-		{BDF172CE-C74E-4DB1-B184-5C9A9F37101C}.Debug|x86.Build.0 = Debug|x86
-		{BDF172CE-C74E-4DB1-B184-5C9A9F37101C}.Release|x86.ActiveCfg = Release|x86
-		{BDF172CE-C74E-4DB1-B184-5C9A9F37101C}.Release|x86.Build.0 = Release|x86
-		{3ACA5EBE-6D1A-4276-A9E5-214C7730F0FC}.Debug|x86.ActiveCfg = Debug|x86
-		{3ACA5EBE-6D1A-4276-A9E5-214C7730F0FC}.Debug|x86.Build.0 = Debug|x86
-		{3ACA5EBE-6D1A-4276-A9E5-214C7730F0FC}.Release|x86.ActiveCfg = Release|x86
-		{3ACA5EBE-6D1A-4276-A9E5-214C7730F0FC}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{98A1ABCD-BF75-40ED-BCAB-BF4439F4B15F}.Debug|x86.ActiveCfg = Debug|x86
+		{98A1ABCD-BF75-40ED-BCAB-BF4439F4B15F}.Debug|x86.Build.0 = Debug|x86
+		{98A1ABCD-BF75-40ED-BCAB-BF4439F4B15F}.Release|x86.ActiveCfg = Release|x86
+		{98A1ABCD-BF75-40ED-BCAB-BF4439F4B15F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
