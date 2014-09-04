@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
 
 namespace CameraRenderTargetProject.Components
@@ -19,6 +20,8 @@ namespace CameraRenderTargetProject.Components
         private Vector3 startLookAt;
         private Vector3 endLookAt;
         private double timeAcumulator;
+
+        private static CubicEase easing = new CubicEase() { EasingMode = EasingMode.EaseInOut };
 
         [RequiredComponent]
         public Camera3D Camera;
@@ -52,9 +55,9 @@ namespace CameraRenderTargetProject.Components
             else if (phase < EaseOutPeriod)
             {
                 float lerp = (float)((phase - EndPeriod) / StartPeriod);
+                lerp = (float)easing.Ease(lerp);
                 this.Camera.LookAt = Vector3.Lerp(this.endLookAt, this.startLookAt, lerp);
             }
-
         }
     }
 }

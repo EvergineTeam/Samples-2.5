@@ -75,19 +75,22 @@ namespace AccelerometerProject.Behaviors
 
             var random = WaveServices.Random;
 
-            Transform.Position.X = random.Next(0, 100);
-            Transform.Position.Z = random.Next(0, 100);
-            Transform.Position.Y = random.Next(0, 100);
+            Vector3 newPosition = new Vector3();
+
+            newPosition.X = random.Next(0, 100);
+            newPosition.Z = random.Next(0, 100);
+            newPosition.Y = random.Next(0, 100);
 
             if (random.NextBool())
-                Transform.Position.X *= -1f;
+                newPosition.X *= -1f;
 
             if (random.NextBool())
-                Transform.Position.Z *= -1f;
+                newPosition.Z *= -1f;
 
             if (random.NextBool())
-                Transform.Position.Y *= -1f;
+                newPosition.Y *= -1f;
 
+            Transform.Position = newPosition;
             seconds = 0f;
             weight = random.Next(1, 10) / 10f;
 
