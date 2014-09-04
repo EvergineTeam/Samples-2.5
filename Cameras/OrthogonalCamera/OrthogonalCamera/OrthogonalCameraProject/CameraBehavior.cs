@@ -28,7 +28,7 @@ using WaveEngine.Framework.Services;
 using WaveEngine.Common.Input;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components; 
+using WaveEngine.Components;
 #endregion
 
 namespace OrthogonalCameraProject
@@ -36,7 +36,7 @@ namespace OrthogonalCameraProject
     public class CameraBehavior : Behavior
     {
         [RequiredComponent]
-        public Camera Camera;
+        public Camera3D Camera;
 
         private bool isPerspectiveCamera;
         private bool isPressed;

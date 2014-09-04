@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("OrthogonalCamera")]
 [assembly: AssemblyProduct("OrthogonalCamera")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyCompany("Weekend game Studio")]
+[assembly: AssemblyCopyright("Copyright © Weekend Game Studio 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
