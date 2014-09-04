@@ -37,14 +37,14 @@ namespace OrthogonalCameraProject
         protected override void CreateScene()
         {
             Entity orthogonalCamera = new Entity("orthogonal")
-                                        .AddComponent(new Camera()
+                                        .AddComponent(new Camera3D()
                                         {
-                                            Position = new Vector3(0,15f,15f),
+                                            Position = new Vector3(0, 15f, 15f),
                                             LookAt = Vector3.Zero,
+                                            BackgroundColor = Color.CornflowerBlue,
                                         })
                                         .AddComponent(new CameraBehavior());
 
-            RenderManager.SetActiveCamera(orthogonalCamera);
             EntityManager.Add(orthogonalCamera);
 
             Color color1 = Color.LightSalmon;
@@ -78,8 +78,6 @@ namespace OrthogonalCameraProject
 
                 CreateCube("CubeBackRight" + i, new Vector3(i * -offset, (1 + i) * offset, (i * -offset)), color2);
             }
-
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         private void CreateCube(string name, Vector3 position, Color color)

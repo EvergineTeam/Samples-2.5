@@ -37,9 +37,9 @@ namespace FreeCameraProject
     {
         protected override void CreateScene()
         {
-            FreeCamera freeCamera = new FreeCamera("free", new Vector3(0, 15f, 15f), Vector3.Zero);            
-            RenderManager.SetActiveCamera(freeCamera.Entity);
-            EntityManager.Add(freeCamera.Entity);
+            FreeCamera freeCamera = new FreeCamera("free", new Vector3(0, 15f, 15f), Vector3.Zero);  
+            freeCamera.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(freeCamera);
 
             CreateCube("Cube1", Vector3.Zero);
             CreateCube("Cube2", new Vector3(5f, 0f, 0f));
@@ -55,8 +55,6 @@ namespace FreeCameraProject
                                   .AddComponent(new ModelRenderer());
 
             EntityManager.Add(plane);
-
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         private void CreateCube(string cubeName, Vector3 position)

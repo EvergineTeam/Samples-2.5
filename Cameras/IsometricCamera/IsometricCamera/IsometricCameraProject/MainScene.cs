@@ -33,37 +33,33 @@ using WaveEngine.Components.Graphics3D;
 
 namespace IsometricCameraProject
 {
-    public class MainScene:Scene
+    public class MainScene : Scene
     {
         private int cubeIndex = 0;
 
         protected override void CreateScene()
         {
             Entity isometricCamera = new Entity("isometric")
-                                    .AddComponent(new Camera()
+                                    .AddComponent(new Camera3D()
                                     {
-                                        Position = new Vector3(0,15f,15f),
+                                        Position = new Vector3(10f, 25f, 30f),
                                         LookAt = Vector3.Zero,
+                                        BackgroundColor = Color.CornflowerBlue,
                                     })
                                     .AddComponent(new IsometricCameraBehavior());
-           
-            RenderManager.SetActiveCamera(isometricCamera);
 
             EntityManager.Add(isometricCamera);
 
             var cubes = 10;
-            
 
             CreateCube(Vector3.Zero, new Vector3(20f, 1f, 1f));
-            CreateCube(new Vector3(0f,-1.01f,0f), new Vector3(25f, 1f, 25f));
+            CreateCube(new Vector3(0f, -1.01f, 0f), new Vector3(25f, 1f, 25f));
 
-            
             for (int i = 1; i < cubes; i++)
             {
-                CreateCube(new Vector3(i * -1f, 0f,i* -1f));
+                CreateCube(new Vector3(i * -1f, 0f, i * -1f));
                 CreateCube(new Vector3(i * 1f, 0f, i * 1f));
             }
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
         }
 
         private void CreateCube(Vector3 position)

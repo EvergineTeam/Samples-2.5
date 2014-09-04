@@ -1,41 +1,26 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCamera", "IsometricCamera\IsometricCamera\IsometricCamera.csproj", "{B29C75EB-84FA-4284-A5EC-14ADE809E903}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCamera", "IsometricCamera\IsometricCamera\IsometricCamera.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCameraProject", "IsometricCamera\IsometricCameraProject\IsometricCameraProject.csproj", "{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsometricCameraProject", "IsometricCamera\IsometricCameraProject\IsometricCameraProject.csproj", "{81DD0931-F9CE-448E-BB21-6671F228D0D5}"
 EndProject
 Global
-	
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
-		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|x86.ActiveCfg = Debug|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Debug|x86.Build.0 = Debug|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|Any CPU.ActiveCfg = Release|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|Mixed Platforms.Build.0 = Release|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|x86.ActiveCfg = Release|x86
-		{B29C75EB-84FA-4284-A5EC-14ADE809E903}.Release|x86.Build.0 = Release|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|x86.ActiveCfg = Debug|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Debug|x86.Build.0 = Debug|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|Any CPU.ActiveCfg = Release|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|Mixed Platforms.Build.0 = Release|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|x86.ActiveCfg = Release|x86
-		{F618EF5E-E8BF-4CC9-BD0F-765D1BF8995E}.Release|x86.Build.0 = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{81DD0931-F9CE-448E-BB21-6671F228D0D5}.Debug|x86.ActiveCfg = Debug|x86
+		{81DD0931-F9CE-448E-BB21-6671F228D0D5}.Debug|x86.Build.0 = Debug|x86
+		{81DD0931-F9CE-448E-BB21-6671F228D0D5}.Release|x86.ActiveCfg = Release|x86
+		{81DD0931-F9CE-448E-BB21-6671F228D0D5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,8 +38,8 @@ namespace FreeCameraProject
         #endregion
 
         // Camera component
-        [RequireComponent]
-        private Camera camera;
+        [RequiredComponent]
+        private Camera3D camera;
 
         // Speed of the movement
         private float speed = 14f;
@@ -302,9 +302,12 @@ namespace FreeCameraProject
         private void UpdateLookAt()
         {
             // Manual inline: camera.LookAt = target;
-            camera.LookAt.X = position.X + forward.X;
-            camera.LookAt.Y = position.Y + forward.Y;
-            camera.LookAt.Z = position.Z + forward.Z;
+
+            var cameraLookAt = camera.LookAt;
+            cameraLookAt.X = position.X;
+            cameraLookAt.Y = position.Y;
+            cameraLookAt.Z = position.Z;
+            camera.LookAt = cameraLookAt;
 
             camera.UpVector = Vector3.Up;
         }
@@ -314,9 +317,12 @@ namespace FreeCameraProject
             UpdateLookAt();
 
             // Manual inline: camera.Position = position;
-            camera.Position.X = position.X;
-            camera.Position.Y = position.Y;
-            camera.Position.Z = position.Z;
+
+            var cameraPosition = camera.Position;
+            cameraPosition.X = position.X;
+            cameraPosition.Y = position.Y;
+            cameraPosition.Z = position.Z;
+            camera.Position = cameraPosition;
         }
 
         #endregion
