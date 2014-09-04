@@ -45,10 +45,10 @@ namespace CameraCaptureProject
             .AddComponent(new ModelRenderer())
             .AddComponent(new MaterialsMap(new System.Collections.Generic.Dictionary<string, Material>
                 {
-                    {"floor", new DualTextureMaterial("Content/parketFloor_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                    {"tv", new DualTextureMaterial("Content/Tv_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                    {"table", new DualTextureMaterial("Content/table_Difusse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                    {"chair", new DualTextureMaterial("Content/Chair_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                    {"floor", new DualTextureMaterial("Content/parketFloor_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                    {"tv", new DualTextureMaterial("Content/Tv_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                    {"table", new DualTextureMaterial("Content/table_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                    {"chair", new DualTextureMaterial("Content/Chair_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
 
                     // Camera preview texture used in a basic material
                     {"tv_screen", new BasicMaterial(Color.Black)}
