@@ -52,9 +52,9 @@ namespace MotorRevoluteJoint2DSampleProject
         private KeyboardState keyboardState;
 
         // Motor Speed Increase
-        private float motorSpeed = 0.5f;
+        private float motorSpeed = 0.7f;
 
-        private float maxSpeed = 10.0f;
+        private float maxSpeed = 12.0f;
 
         // Motor Revolute Joint
         [RequiredComponent()]

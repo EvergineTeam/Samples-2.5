@@ -44,8 +44,8 @@ namespace Force2DSampleProject
         private Input input;
         private KeyboardState keyboardState;
 
-        private float multiplicator = 0.1f;
-        private float angularImpulse = 0.05f;
+        private float multiplicator = 2f;
+        private float angularImpulse = 0.1f;
         private float torque = 1f;
         private Vector2 topDirection;
         private Vector2 leftDirection;
