@@ -1,0 +1,91 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D41C5006-760E-45C1-9803-E6A0464FF0A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ParallaxCamera2DProject</RootNamespace>
+    <AssemblyName>ParallaxCamera2DProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{948B3504-5B70-4649-8FE4-BDE1FB46EC69};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <ProductVersion>10.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\AnyCPU\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PROFILE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CustomCommands xmlns="">
+      <CustomCommands>
+        <Command type="AfterBuild" command="rm -rf $(Solution)/Resources/Export/Mac" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/Tools/AssetExporter/WaveExporterCMD.exe -i$(ProjectDir)/Resources.weproj -o $(SolutionDir)/Resources/Export -t Mac" workingdir="/Library/Frameworks/WaveEngine.framework/Tools/AssetExporter" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\AnyCPU\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CustomCommands xmlns="">
+      <CustomCommands>
+        <Command type="AfterBuild" command="rm -rf $(Solution)/Resources/Export/Mac" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/Tools/AssetExporter/WaveExporterCMD.exe -i$(ProjectDir)/Resources.weproj -o $(SolutionDir)/Resources/Export -t Mac" workingdir="/Library/Frameworks/WaveEngine.framework/Tools/AssetExporter" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="WaveEngineMac.Common">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngineMac.Framework">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngineMac.Components">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngineMac.Materials">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.Materials.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngineMac.Spine">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.Spine.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngineMac.ImageEffects">
+      <HintPath>/Library/Frameworks/WaveEngine.framework/MacLibraries/WaveEngineMac.ImageEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="MonoMac" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviors\CameraBehavior.cs" />
+    <Compile Include="Behaviors\YureiBehavior.cs" />
+    <Compile Include="Entities\YureiDecorator.cs" />
+    <Compile Include="Layers\BackgroundLayer.cs" />
+    <Compile Include="Layers\SunLayer.cs" />
+    <Compile Include="Layers\ForegroundLayer.cs" />
+    <Compile Include="SceneResources.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="MyScene.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources.weproj" />
+  </ItemGroup>
+  <ItemGroup />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+	-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
