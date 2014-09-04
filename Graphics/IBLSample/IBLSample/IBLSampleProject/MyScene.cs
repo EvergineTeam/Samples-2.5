@@ -38,7 +38,7 @@ using WaveEngine.Materials;
 namespace IBLSampleProject
 {
     public class MyScene : Scene
-    {      
+    {
         /// <summary>
         /// The amount of environments
         /// </summary>
@@ -50,14 +50,14 @@ namespace IBLSampleProject
         private Entity venus;
 
         /// <summary>
-        /// Sky entity.
+        /// Camera
         /// </summary>
-        private Entity sky;
+        private ViewCamera camera;
 
         /// <summary>
         /// Dictionary of the different environments maps for the sky
         /// </summary>
-        private Dictionary<int, MaterialsMap> skyboxMaps;
+        private Dictionary<int, Skybox> skyboxMaps;
 
         /// <summary>
         /// Dictionary of the different environments maps for the venus statue
@@ -76,20 +76,17 @@ namespace IBLSampleProject
 
         protected override void CreateScene()
         {
-            RenderManager.RegisterLayerBefore(new SkyLayer(this.RenderManager), DefaultLayers.Alpha);
+            this.CreateMaterials();
 
-            ViewCamera camera = new ViewCamera("camera", new Vector3(0, 5, 13), new Vector3(0, 5, 0))
+            this.camera = new ViewCamera("camera", new Vector3(0, 5, 13), new Vector3(0, 5, 0))
             {
                 FieldOfView = 0.8f,
                 NearPlane = 0.1f
             };
-            EntityManager.Add(camera);            
-
-            this.CreateMaterials();
+            this.camera.Entity.AddComponent(this.skyboxMaps[this.currentEnv]);
+            EntityManager.Add(camera);           
 
             this.CreateVenus();
-
-            this.CreateSky();
 
             this.CreateUI();
 
@@ -119,21 +116,7 @@ namespace IBLSampleProject
 
             changeSkyButton.Click += (o, e) => { this.ChangeEnvironment(); };
             ambientCheckBox.Checked += (o, e) => { this.ChangeAmbientOcclusion(e.Value); };
-        }
-
-        /// <summary>
-        /// Creates the skybox
-        /// </summary>
-        private void CreateSky()
-        {
-            this.sky = new Entity("sky")
-               .AddComponent(new Transform3D() { Scale = new Vector3(-1) })
-               .AddComponent(new SkyboxBehavior())
-               .AddComponent(new BoxCollider())
-               .AddComponent(Model.CreateCube(1))
-               .AddComponent(new ModelRenderer());
-            EntityManager.Add(this.sky);
-        }
+        }       
 
         /// <summary>
         /// Creates the Venus statue model.
@@ -168,10 +151,10 @@ namespace IBLSampleProject
         }
 
         private void UpdateMaterials()
-        {
-            this.sky.RemoveComponent<MaterialsMap>();
-            this.sky.AddComponent(this.skyboxMaps[this.currentEnv]);
-            this.sky.RefreshDependencies();
+        {           
+            this.camera.Entity.RemoveComponent<Skybox>();
+            this.camera.Entity.AddComponent(this.skyboxMaps[this.currentEnv]);
+            this.camera.Entity.RefreshDependencies();
 
             this.venus.RemoveComponent<MaterialsMap>();
             this.venus.AddComponent(this.venusMaps[new Tuple<bool, int>(this.isOcclusionEnabled, this.currentEnv)]);
@@ -183,7 +166,7 @@ namespace IBLSampleProject
         /// </summary>
         private void CreateMaterials()
         {
-            this.skyboxMaps = new Dictionary<int, MaterialsMap>();
+            this.skyboxMaps = new Dictionary<int, Skybox>();
             this.venusMaps = new Dictionary<Tuple<bool, int>, MaterialsMap>();
 
             for (int i = 0; i < NUMENVIRONMENTS; i++)
@@ -191,7 +174,7 @@ namespace IBLSampleProject
                 string skyboxTexture = string.Format("Content/environment{0}.wpk", i + 1);
                 string venusTexture = string.Format("Content/environment{0}Light.wpk", i + 1);
 
-                this.skyboxMaps.Add(i, new MaterialsMap(new SkyboxMaterial(skyboxTexture, typeof(SkyLayer))));
+                this.skyboxMaps.Add(i, new Skybox(skyboxTexture));
                 this.venusMaps.Add(new Tuple<bool, int>(true, i), new MaterialsMap(new BasicMaterial("Content/venusLightingMap.wpk", venusTexture) { LightingEnabled = true }));
                 this.venusMaps.Add(new Tuple<bool, int>(false, i), new MaterialsMap(new BasicMaterial("Content/white.wpk", venusTexture) { LightingEnabled = true }));
             }
