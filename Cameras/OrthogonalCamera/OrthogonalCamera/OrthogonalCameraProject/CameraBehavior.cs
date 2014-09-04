@@ -96,12 +96,12 @@ namespace OrthogonalCameraProject
             var width = WaveServices.Platform.ScreenWidth / 8;
             var height = WaveServices.Platform.ScreenHeight / 8;
 
-            Camera.Projection = Matrix.CreateOrthographic(width, height, Camera.NearPlane, Camera.FarPlane);
+            Camera.SetCustomProjection(Matrix.CreateOrthographic(width, height, Camera.NearPlane, Camera.FarPlane));
         }
 
         private void setNormalCamera()
         {
-            Camera.Projection = Matrix.CreatePerspectiveFieldOfView(Camera.FieldOfView, Camera.AspectRatio, Camera.NearPlane, Camera.FarPlane);
+            Camera.ResetCustomProjection();
         }
     }
 }

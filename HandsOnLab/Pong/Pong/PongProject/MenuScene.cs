@@ -1,5 +1,6 @@
 ﻿using System;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Gestures;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.UI;
@@ -14,7 +15,8 @@ namespace PongProject
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.Black;
+            var camera2D = new FixedCamera2D("Camera2D") { BackgroundColor = Color.Black }; 
+            EntityManager.Add(camera2D);
 
             int offset = 100;
 
