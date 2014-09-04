@@ -33,10 +33,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Common" />
-    <Reference Include="WaveEngine.Framework" />
-    <Reference Include="WaveEngine.Components" />
-    <Reference Include="WaveEngine.Materials" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +40,11 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+	<Reference Include="WaveEngine.Common" />
+    <Reference Include="WaveEngine.Framework" />
+    <Reference Include="WaveEngine.Components" />
+    <Reference Include="WaveEngine.Materials" />
+	<Reference Include="WaveEngine.ImageEffects" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\SecurityCameraBehavior.cs" />

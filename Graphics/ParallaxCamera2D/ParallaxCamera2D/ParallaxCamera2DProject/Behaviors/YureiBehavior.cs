@@ -22,6 +22,14 @@ namespace ParallaxCamera2DProject.Behaviors
             RunRight,   // Is Running toward right direction
             RunLeft     // Is Running toward left direction
         }
+        
+        private enum YureiControl
+        {
+            None = 0,
+            Touch,
+            Keyboard,
+            Gamepad
+        }
 
         private const string IdleAnimation = "idle";
         private const string MoveAnimation = "move";
@@ -45,8 +53,7 @@ namespace ParallaxCamera2DProject.Behaviors
         private Input input;
         private YureiState state;
 
-        private bool useTouch;
-        private bool useKeys;
+        private YureiControl yureiControl;
 
         private YureiState State
         {
@@ -93,6 +100,7 @@ namespace ParallaxCamera2DProject.Behaviors
         {
             this.CheckTouch();
             this.CheckKeyboard();
+            this.CheckGamePad();
 
             if (dustAnimation.State == WaveEngine.Framework.Animation.AnimationState.Stopped)
             {
@@ -168,8 +176,7 @@ namespace ParallaxCamera2DProject.Behaviors
             var touches = this.input.TouchPanelState;
             if (touches.Count > 0)
             {
-                this.useTouch = true;
-                this.useKeys = false;
+                this.yureiControl = YureiControl.Touch;
 
                 var firstTouch = touches[0];
                 if (firstTouch.Position.X > WaveServices.Platform.ScreenWidth / 2)
@@ -181,7 +188,7 @@ namespace ParallaxCamera2DProject.Behaviors
                     this.State = YureiState.RunLeft;
                 }
             }
-            else if (this.useTouch)
+            else if (this.yureiControl == YureiControl.Touch)
             {
                 this.State = YureiState.Idle;
             }
@@ -194,19 +201,47 @@ namespace ParallaxCamera2DProject.Behaviors
             {
                 if (keyboard.Right == ButtonState.Pressed)
                 {
-                    this.useKeys = true;
-                    this.useTouch = false;                    
-
+                    this.yureiControl = YureiControl.Keyboard;
                     this.State = YureiState.RunRight;
                 }
                 else if (keyboard.Left == ButtonState.Pressed)
                 {
-                    this.useKeys = true;
-                    this.useTouch = false;
-
+                    this.yureiControl = YureiControl.Keyboard; 
                     this.State = YureiState.RunLeft;
                 }
-                else if (this.useKeys)
+                else if (this.yureiControl == YureiControl.Keyboard)
+                {
+                    this.State = YureiState.Idle;
+                }
+            }
+        }
+
+        private void CheckGamePad()
+        {
+            var gamepad = this.input.GamePadState;
+            if (gamepad.IsConnected)
+            {
+                if (gamepad.ThumbStricks.Left.X > 0)
+                {
+                    this.yureiControl = YureiControl.Gamepad;
+                    this.State = YureiState.RunRight;
+                }
+                else if (gamepad.ThumbStricks.Left.X < 0)
+                {
+                    this.yureiControl = YureiControl.Gamepad;
+                    this.State = YureiState.RunLeft;
+                }
+                else if (gamepad.DPad.Right == ButtonState.Pressed)
+                {
+                    this.yureiControl = YureiControl.Gamepad;
+                    this.State = YureiState.RunRight;
+                }
+                else if (gamepad.DPad.Left == ButtonState.Pressed)
+                {
+                    this.yureiControl = YureiControl.Gamepad;
+                    this.State = YureiState.RunLeft;
+                }
+                else if (this.yureiControl == YureiControl.Gamepad)
                 {
                     this.State = YureiState.Idle;
                 }
