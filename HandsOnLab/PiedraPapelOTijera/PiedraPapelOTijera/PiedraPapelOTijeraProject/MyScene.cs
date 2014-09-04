@@ -5,10 +5,13 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Animation;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
@@ -20,19 +23,19 @@ namespace PiedraPapelOTijeraProject
         private const float GameplayDurationInSeconds = 5;
 
         private Timer countdownTimer;
-        
+
         private CpuMoveHandEntity cpuMoveHandEntity;
-        
+
         private bool shouldPlayerWin;
-        
+
         private Image goalWinImage;
-        
+
         private Image goalLoseImage;
-        
+
         private Button successLayerButton;
-        
+
         private Button failLayerButton;
-        
+
         private Animation2D countdownAnimationComponent;
 
         private enum GameStates
@@ -44,7 +47,12 @@ namespace PiedraPapelOTijeraProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            // Create the camera entity
+            FixedCamera2D camera = new FixedCamera2D("MainCamera")
+            {
+                BackgroundColor = Color.Black,
+            };
+            this.EntityManager.Add(camera);
 
             this.CreateBackground();
 
@@ -87,7 +95,7 @@ namespace PiedraPapelOTijeraProject
         {
             var background = new Entity("Background")
                 .AddComponent(new Sprite("Content/BG.wpk"))
-                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
+                .AddComponent(new SpriteRenderer(DefaultLayers.Opaque))
                 .AddComponent(new Transform2D { DrawOrder = 1 });
             this.EntityManager.Add(background);
 
@@ -112,7 +120,7 @@ namespace PiedraPapelOTijeraProject
             this.successLayerButton = new Button("Success")
             {
                 Opacity = 0.9f,
-                DrawOrder = 0,
+                DrawOrder = -1,
                 BackgroundImage = "Content/_0001_CORRECTO.wpk",
                 Text = string.Empty,
                 IsBorder = false
@@ -122,7 +130,7 @@ namespace PiedraPapelOTijeraProject
             this.failLayerButton = new Button("Fail")
             {
                 Opacity = 0.9f,
-                DrawOrder = 0,
+                DrawOrder = -1,
                 BackgroundImage = "Content/_0000_Group-6-copy.wpk",
                 Text = string.Empty,
                 IsBorder = false
@@ -148,7 +156,7 @@ namespace PiedraPapelOTijeraProject
             };
 
             playerStoneHandButton.Click += (sender, args) => this.CheckWhoWins(GameplayHandMovesEnum.Stone);
-            
+
             this.EntityManager.Add(playerStoneHandButton);
 
             var playerPaperHandButton = new Button("Player paper hand")
@@ -263,8 +271,8 @@ namespace PiedraPapelOTijeraProject
 
         private void StartCountdown()
         {
-            this.countdownTimer = WaveServices.TimerFactory.CreateTimer("Countdown", 
-                TimeSpan.FromSeconds(GameplayDurationInSeconds), 
+            this.countdownTimer = WaveServices.TimerFactory.CreateTimer("Countdown",
+                TimeSpan.FromSeconds(GameplayDurationInSeconds),
                 () => this.ChangeGameState(GameStates.CpuWins));
             this.countdownTimer.IsPaused = false;
 
