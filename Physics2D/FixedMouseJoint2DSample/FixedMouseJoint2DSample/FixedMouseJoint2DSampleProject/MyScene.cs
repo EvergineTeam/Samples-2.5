@@ -61,7 +61,7 @@ namespace FixedMouseJoint2DSampleProject
             {
                 for (int j = 0; j < STACKWIDTH; j++)
                 {
-                    Entity box = this.CreateCrate(200 + j * 45, 100 + (STACKHEIGHT - i) * 45);
+                    Entity box = this.CreateCrate(200 + j * 45, 335 + (STACKHEIGHT - i) * 42);
                     EntityManager.Add(box);
                 }
             }
@@ -89,7 +89,7 @@ namespace FixedMouseJoint2DSampleProject
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite("Content/boxSprite.wpk"))
-                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic, Mass = 0.001f})
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic})
                 .AddComponent(new JointMap2D())
                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
 

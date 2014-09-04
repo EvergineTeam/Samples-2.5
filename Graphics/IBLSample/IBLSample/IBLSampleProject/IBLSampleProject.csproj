@@ -48,8 +48,6 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="MyScene.cs" />
-    <Compile Include="SkyboxBehavior.cs" />
-    <Compile Include="SkyLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources.weproj" />

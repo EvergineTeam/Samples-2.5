@@ -92,7 +92,7 @@ namespace BasicRigidBody2DProject
               .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
               .AddComponent(new Sprite("Content/boxSprite.wpk"))
               .AddComponent(new RectangleCollider())
-              .AddComponent(new RigidBody2D() { EnableContinuousContact = true, Mass = 0.4f })
+              .AddComponent(new RigidBody2D() { EnableContinuousContact = true })
               .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
         }
 

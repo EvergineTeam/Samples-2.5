@@ -65,7 +65,7 @@ namespace PongProject
                                 Height = 130,
                             };
 
-           
+
 
             textblockGoal2 = new TextBlock("Goal2")
                             {
@@ -74,7 +74,7 @@ namespace PongProject
                                 Text = "0",
                                 Height = 130,
                             };
-            
+
 
             textblockInit = new TextBlock("TextInit")
                             {
@@ -85,16 +85,16 @@ namespace PongProject
                                 IsVisible = false,
                             };
 
-           
+
             //Create Borders
             var barTop = new Entity("BarTop")
-                            .AddComponent(new Sprite("Content/Texture/wall.wpk"))
+                .AddComponent(new Sprite("Content/Texture/wall.wpk"))
                             .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
                             .AddComponent(new RectangleCollider())
                             .AddComponent(new Transform2D()
                             {
-                                 XScale = 1.55f,
-                                 YScale = 2f,
+                                XScale = 1.55f,
+                                YScale = 2f,                                
                             });
 
             var barBot = new Entity("BarBot")
@@ -105,7 +105,7 @@ namespace PongProject
                             {
                                 XScale = 1.55f,
                                 YScale = 2f,
-                                Y = WaveServices.Platform.ScreenHeight - 25
+                                Y = WaveServices.Platform.ScreenHeight - 25,                                
                             });
 
             //Create Players
@@ -115,9 +115,9 @@ namespace PongProject
                            .AddComponent(new RectangleCollider())
                            .AddComponent(new Transform2D()
                            {
-                                Origin = new Vector2(0.5f, 1),
-                                X = WaveServices.Platform.ScreenWidth / 50,
-                                Y = WaveServices.Platform.ScreenHeight / 2
+                               Origin = new Vector2(0.5f, 1),
+                               X = WaveServices.Platform.ScreenWidth / 50,
+                               Y = WaveServices.Platform.ScreenHeight / 2
                            })
                            .AddComponent(new PlayerBehavior());
 
@@ -131,7 +131,7 @@ namespace PongProject
                                X = WaveServices.Platform.ScreenWidth - 15,
                                Y = WaveServices.Platform.ScreenHeight / 2
                            });
-              
+
             //Create Ball
             var ball = new Entity("Ball")
                           .AddComponent(new Sprite("Content/Texture/ball.wpk"))
@@ -145,13 +145,13 @@ namespace PongProject
                           })
                           .AddComponent(new BallBehavior(player, barBot, barTop, player2));
 
-            
-             //Trophy components               
+
+            //Trophy components               
             trophy.AddComponent(new Sprite("Content/Texture/trophy.wpk"));
             trophy.AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             trophy.AddComponent(new Transform2D());
             trophy.IsVisible = false;
-                          
+
 
             //Add component AI or Second Player controller
             if (WaveServices.ScreenContextManager.CurrentContext.Name == "FromSingleplayer")

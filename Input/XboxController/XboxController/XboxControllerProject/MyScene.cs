@@ -3,10 +3,13 @@ using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 #endregion
@@ -20,7 +23,9 @@ namespace XboxControllerProject
 
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.White;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.White;
+            EntityManager.Add(camera2d);
 
             // FrontController
             Entity frontController = new Entity()
@@ -47,27 +52,41 @@ namespace XboxControllerProject
             EntityManager.Add(topController);
 
             // Sticks
+            Entity leftParent = new Entity()
+                       .AddComponent(new Transform2D()
+                       {
+                           Origin = Vector2.One / 2,
+                           Position = new Vector2(183, 311),
+                           DrawOrder = 0.5f,
+                       });
+            this.EntityManager.Add(leftParent);
+
             this.leftJoystick = new Entity()
                                         .AddComponent(new Transform2D()
                                         {
                                             Origin = Vector2.One / 2,
-                                            Rectangle = new RectangleF(183, 311, 75, 75),
-                                            DrawOrder = 0.5f,
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "JoyStick"))
                                         .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
-            EntityManager.Add(leftJoystick);
+            leftParent.AddChild(leftJoystick);
+
+            Entity rightParent = new Entity()
+                       .AddComponent(new Transform2D()
+                       {
+                           Origin = Vector2.One / 2,
+                           Position = new Vector2(427, 407),
+                           DrawOrder = 0.5f,
+                       });
+            this.EntityManager.Add(rightParent);
 
             this.rightJoystick = new Entity()
                                         .AddComponent(new Transform2D()
                                         {
-                                            Origin = Vector2.One / 2,
-                                            Rectangle = new RectangleF(427, 407, 75, 75),
-                                            DrawOrder = 0.5f,
+                                            Origin = Vector2.One / 2,                                            
                                         })
                                         .AddComponent(new SpriteAtlas("Content/Buttons.wpk", "JoyStick"))
                                         .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha));
-            EntityManager.Add(rightJoystick);
+            rightParent.AddChild(rightJoystick);
 
             // Button A
             this.buttonA = new Entity()

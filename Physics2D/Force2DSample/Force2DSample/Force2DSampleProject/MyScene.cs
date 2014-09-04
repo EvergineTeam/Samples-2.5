@@ -49,7 +49,7 @@ namespace Force2DSampleProject
                 .AddComponent(new Transform2D() { X = 400, Y = 300, Origin = Vector2.Center })
                 .AddComponent(new CircleCollider())
                 .AddComponent(new Sprite("Content/Wheel.wpk"))
-                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic, Friction = 1 , Mass = 0.1f})
+                .AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Dynamic, Friction = 1 })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
                 .AddComponent(new ForceBehavior("ForceBehavior"));
 
