@@ -20,7 +20,7 @@ namespace RevoluteJoint2DSampleProject
         // Constants
         private const int BRIDGE_Y_POSITION = 200;
         private const int BRIDGE_LENGTH = 600;
-        private const int BRIDGE_CHAIN_LINKS = 40;
+        private const int BRIDGE_CHAIN_LINKS = 38;
 
         private const string LEFT_BRIDGE_FILENAME = "Content/PinAzureB.wpk";
         private const string RIGHT_BRIDGE_FILENAME = "Content/PinAzureA.wpk";
@@ -44,12 +44,10 @@ namespace RevoluteJoint2DSampleProject
 
             FixedCamera2D camera2d = new FixedCamera2D("camera");
             camera2d.BackgroundColor = Color.CornflowerBlue;
-            EntityManager.Add(camera2d);
-
-            PhysicsManager.Physics2DPositionIterations = 15;
+            EntityManager.Add(camera2d);            
 
             // Left Bridge Anchor
-            Entity Pin1 = this.CreateSquareSprite("Pin1", 50, BRIDGE_Y_POSITION, LEFT_BRIDGE_FILENAME, PhysicBodyType.Static);
+            Entity Pin1 = this.CreateSquareSprite("Pin1", 50, BRIDGE_Y_POSITION, LEFT_BRIDGE_FILENAME, PhysicBodyType.Static, -1f);
             EntityManager.Add(Pin1);
 
             // Bridge links creation
@@ -57,7 +55,7 @@ namespace RevoluteJoint2DSampleProject
             int spacing = BRIDGE_LENGTH / BRIDGE_CHAIN_LINKS;
             for (int i = 0; i < BRIDGE_CHAIN_LINKS; i++)
             {
-                Entity currentLink = this.CreateSquareSprite("link" + i + 1, 70 + i * spacing, BRIDGE_Y_POSITION, this.GetRandomLinkFileName(), PhysicBodyType.Dynamic);
+                Entity currentLink = this.CreateSquareSprite("link" + i + 1, 70 + i * spacing, BRIDGE_Y_POSITION, this.GetRandomLinkFileName(), PhysicBodyType.Dynamic, -1);
                 EntityManager.Add(currentLink);
 
                 if (i == 0)
@@ -72,7 +70,7 @@ namespace RevoluteJoint2DSampleProject
                         currentLink.AddComponent(new JointMap2D()
                                                           .AddJoint("joint", new RevoluteJoint2D(lastLink, new Vector2(-8, 0), new Vector2(8, 0))
                                                           {
-                                                              BreakPoint = 12,
+                                                              BreakPoint = 20,                                                             
                                                           }));
                     }
                 }
@@ -83,7 +81,7 @@ namespace RevoluteJoint2DSampleProject
             if (lastLink != null)
             {
                 // Right Bridge Anchor
-                Entity Pin2 = this.CreateSquareSprite("Pin2", 750, BRIDGE_Y_POSITION, RIGHT_BRIDGE_FILENAME, PhysicBodyType.Static);
+                Entity Pin2 = this.CreateSquareSprite("Pin2", 750, BRIDGE_Y_POSITION, RIGHT_BRIDGE_FILENAME, PhysicBodyType.Static, -1f);
                 EntityManager.Add(Pin2);
 
                 // Last Bridge Link joins to Right Anchor
@@ -92,13 +90,13 @@ namespace RevoluteJoint2DSampleProject
             }
 
             // Physic ground
-            Entity ground = this.CreateSquareSprite("Ground", 400, 500, "Content/groundSprite.wpk", PhysicBodyType.Static);
+            Entity ground = this.CreateSquareSprite("Ground", 400, 500, "Content/groundSprite.wpk", PhysicBodyType.Static, -1f);
             EntityManager.Add(ground);
 
             // Timer to create crates
             WaveServices.TimerFactory.CreateTimer("FallingCratesTimer", TimeSpan.FromSeconds(1.0f), () =>
             {
-                Entity box = this.CreateSquareSprite("Crate" + instances++, WaveServices.Random.Next(300, 400), -40, this.GetRandomCrateFileName(), PhysicBodyType.Dynamic, 0.5f);
+                Entity box = this.CreateSquareSprite("Crate" + instances++, WaveServices.Random.Next(300, 400), -40, this.GetRandomCrateFileName(), PhysicBodyType.Dynamic, -1);
                 EntityManager.Add(box);
 
                 if (instances == 10)
@@ -118,14 +116,20 @@ namespace RevoluteJoint2DSampleProject
         /// <param name="isKinematic">Physic IsKinetic Sprite Parameter.</param>
         /// <param name="mass">Physic Mass Sprite Parameter.</param>
         /// <returns></returns>
-        private Entity CreateSquareSprite(string name, int x, int y, string fileName, PhysicBodyType bodyType, float mass = .001f)
+        private Entity CreateSquareSprite(string name, int x, int y, string fileName, PhysicBodyType bodyType, float mass)
         {
             Entity sprite = new Entity(name)
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
                 .AddComponent(new RectangleCollider())
                 .AddComponent(new Sprite(fileName))
-                .AddComponent(new RigidBody2D() { PhysicBodyType = bodyType, Mass = mass })
+                .AddComponent(new RigidBody2D() { PhysicBodyType = bodyType })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
+
+            if (mass != -1)
+            {
+                sprite.FindComponent<RigidBody2D>().Mass = mass;
+            }
+
             return sprite;
         }
 
