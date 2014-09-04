@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2013 Weekend Game Studio
+// Copyright (C) 2014 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -19,8 +19,17 @@
 // IN THE SOFTWARE.
 
 #region Using Statements
+using System;
+using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Resources;
+using WaveEngine.Framework.Services;
 #endregion
 
 namespace TouchProject
@@ -29,7 +38,9 @@ namespace TouchProject
     {
         protected override void CreateScene()
         {
-            RenderManager.BackgroundColor = Color.CornflowerBlue;
+            FixedCamera2D camera2d = new FixedCamera2D("camera");
+            camera2d.BackgroundColor = Color.CornflowerBlue;
+            EntityManager.Add(camera2d);
 
             Entity panel = new Entity("TouchPanel")
                 .AddComponent(new TouchesRenderer("Content/Touch.wpk"));
