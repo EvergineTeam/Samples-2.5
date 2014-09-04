@@ -47,7 +47,7 @@ namespace CameraCaptureProject
                 {
                     {"floor", new DualTextureMaterial("Content/parketFloor_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
                     {"tv", new DualTextureMaterial("Content/Tv_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                    {"table", new DualTextureMaterial("Content/table_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                    {"table", new DualTextureMaterial("Content/table_Difusse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
                     {"chair", new DualTextureMaterial("Content/Chair_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
 
                     // Camera preview texture used in a basic material
