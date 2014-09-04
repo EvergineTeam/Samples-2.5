@@ -46,10 +46,10 @@ namespace VideoPlayerProject
             .AddComponent(new ModelRenderer())
                 .AddComponent(new MaterialsMap(new System.Collections.Generic.Dictionary<string, Material>
                     {
-                        {"floor", new DualTextureMaterial("Content/parketFloor_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                        {"tv", new DualTextureMaterial("Content/Tv_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                        {"table", new DualTextureMaterial("Content/table_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
-                        {"chair", new DualTextureMaterial("Content/Chair_Diffuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                        {"floor", new DualTextureMaterial("Content/parketFloor_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                        {"tv", new DualTextureMaterial("Content/Tv_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                        {"table", new DualTextureMaterial("Content/table_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
+                        {"chair", new DualTextureMaterial("Content/Chair_Difuse.wpk", "Content/TvRoomLightingMap.wpk", DefaultLayers.Opaque)},
                         {"tv_screen", new BasicMaterial(WaveServices.VideoPlayer.VideoTexture)}
                     }
                     ));
