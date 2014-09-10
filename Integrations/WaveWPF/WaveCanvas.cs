@@ -231,21 +231,10 @@ namespace WaveWPF
             if (!IsInDesignMode)
             {
                 this.Loaded += this.OnLoaded;
-                this.Unloaded += this.OnUnloaded;
 
                 EventManager.RegisterClassHandler(typeof(Window), Keyboard.KeyDownEvent, new KeyEventHandler(this.OnKeyDown), true);
                 EventManager.RegisterClassHandler(typeof(Window), Keyboard.KeyUpEvent, new KeyEventHandler(this.OnKeyUp), true);
             }
-        }
-
-        /// <summary>
-        /// Called when [unloaded].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
-        private void OnUnloaded(object sender, RoutedEventArgs e)
-        {
-            this.Unload();
         }
 
         /// <summary>
@@ -255,12 +244,6 @@ namespace WaveWPF
         {
             if (this.counters > 0)
             {
-                this.MouseMove -= this.OnMouseMove;
-                this.MouseWheel -= this.OnMouseWheel;
-                this.MouseDown -= this.OnMouseDown;
-                this.MouseUp -= this.OnMouseUp;
-                this.MouseLeave -= this.OnMouseLeave;
-                this.LostMouseCapture -= this.OnMouseLostCapture;
                 CompositionTargetEx.Rendering -= this.OnRendering;
 
                 WaveServices.Input.MouseState.X = 0;
@@ -756,26 +739,6 @@ namespace WaveWPF
         #endregion
 
         /// <summary>
-        /// Called when [mouse lost capture].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseEventArgs"/> instance containing the event data.</param>
-        private void OnMouseLostCapture(object sender, MouseEventArgs e)
-        {
-            WaveServices.Input.TouchPanelState.Clear();
-        }
-
-        /// <summary>
-        /// Called when [mouse leave].
-        /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseEventArgs"/> instance containing the event data.</param>
-        private void OnMouseLeave(object sender, MouseEventArgs e)
-        {
-            WaveServices.Input.TouchPanelState.Clear();
-        }
-
-        /// <summary>
         /// The counters
         /// </summary>
         private int counters;
@@ -791,9 +754,7 @@ namespace WaveWPF
             {
                 this.app = new MainApp((int)this.ActualWidth, (int)this.ActualHeight);
 
-                var source = this.app.Configure();
-
-                this.image = source as D3DImage;
+                this.image = this.app.Configure() as D3DImage;
 
                 this.InvalidateVisual();
 
@@ -802,12 +763,6 @@ namespace WaveWPF
 
             if (this.counters == 0)
             {
-                this.MouseMove += this.OnMouseMove;
-                this.MouseWheel += this.OnMouseWheel;
-                this.MouseDown += this.OnMouseDown;
-                this.MouseUp += this.OnMouseUp;
-                this.MouseLeave += this.OnMouseLeave;
-                this.LostMouseCapture += this.OnMouseLostCapture;
                 this.SizeChanged += this.OnSizeChanged;
 
                 CompositionTargetEx.Rendering += this.CheckInit;
@@ -885,11 +840,6 @@ namespace WaveWPF
             this.app.Render();
             this.app.RefreshImageSource();
 
-            if (WaveServices.Input != null)
-            {
-                WaveServices.Input.MouseState.Wheel = 0;
-            }
-
             if ((WaveServices.Platform == null) || WaveServices.Platform.HasExited)
             {
                 this.Unload();
@@ -932,22 +882,30 @@ namespace WaveWPF
         }
 
         /// <summary>
-        /// Called when [mouse wheel].
+        /// Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.MouseWheel" /> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseWheelEventArgs"/> instance containing the event data.</param>
-        private void OnMouseWheel(object sender, MouseWheelEventArgs e)
+        /// <param name="e">The <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> that contains the event data.</param>
+        protected override void OnMouseWheel(MouseWheelEventArgs e)
         {
-            WaveServices.Input.MouseState.Wheel = e.Delta;
+            base.OnMouseWheel(e);
+            if (e.Delta > 0)
+            {
+                WaveServices.Input.MouseState.Wheel += 1;
+            }
+            else
+            {
+                WaveServices.Input.MouseState.Wheel -= 1;
+            }
         }
 
         /// <summary>
-        /// Called when [mouse down].
+        /// Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.MouseDown" /> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
-        private void OnMouseDown(object sender, MouseButtonEventArgs e)
+        /// <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> that contains the event data. This event data reports details about the mouse button that was pressed and the handled state.</param>
+        protected override void OnMouseDown(MouseButtonEventArgs e)
         {
+            base.OnMouseDown(e);
+
             switch (e.ChangedButton)
             {
                 case MouseButton.Left:
@@ -965,12 +923,12 @@ namespace WaveWPF
         }
 
         /// <summary>
-        /// Called when [mouse up].
+        /// Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.MouseUp" /> routed event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
-        private void OnMouseUp(object sender, MouseButtonEventArgs e)
+        /// <param name="e">The <see cref="T:System.Windows.Input.MouseButtonEventArgs" /> that contains the event data. The event data reports that the mouse button was released.</param>
+        protected override void OnMouseUp(MouseButtonEventArgs e)
         {
+            base.OnMouseUp(e);
             switch (e.ChangedButton)
             {
                 case MouseButton.Left:
@@ -988,15 +946,25 @@ namespace WaveWPF
         }
 
         /// <summary>
-        /// Called when [mouse move].
+        /// Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.MouseMove" /> attached event reaches an element in its route that is derived from this class. Implement this method to add class handling for this event.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="System.Windows.Input.MouseEventArgs"/> instance containing the event data.</param>
-        private void OnMouseMove(object sender, MouseEventArgs e)
+        /// <param name="e">The <see cref="T:System.Windows.Input.MouseEventArgs" /> that contains the event data.</param>
+        protected override void OnMouseMove(MouseEventArgs e)
         {
+            base.OnMouseMove(e);
             var position = e.GetPosition(this);
             WaveServices.Input.MouseState.X = (int)position.X;
             WaveServices.Input.MouseState.Y = (int)position.Y;
+        }
+
+        /// <summary>
+        /// Invoked when an unhandled <see cref="E:System.Windows.Input.Mouse.MouseLeave" /> attached event is raised on this element. Implement this method to add class handling for this event.
+        /// </summary>
+        /// <param name="e">The <see cref="T:System.Windows.Input.MouseEventArgs" /> that contains the event data.</param>
+        protected override void OnMouseLeave(MouseEventArgs e)
+        {
+            base.OnMouseLeave(e);
+            WaveServices.Input.TouchPanelState.Clear();
         }
     }
 }
