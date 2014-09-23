@@ -62,8 +62,18 @@ namespace PlatformGameDemoProject
                 })
                 .AddComponent(new Sprite("Content/TimSpriteSheet.wpk"))
                 .AddComponent(Animation2D.Create<TexturePackerGenericXml>("Content/TimSpriteSheet.xml")
-                    .Add("Idle", new SpriteSheetAnimationSequence() { First = 1, Length = 22, FramesPerSecond = 11 })
-                    .Add("Running", new SpriteSheetAnimationSequence() { First = 23, Length = 27, FramesPerSecond = 27 }))
+                    .Add("Idle", new SpriteSheetAnimationSequence() 
+                    { 
+                        First = 1, 
+                        Length = 22, 
+                        FramesPerSecond = 11 
+                    })
+                    .Add("Running", new SpriteSheetAnimationSequence() 
+                    { 
+                        First = 23, 
+                        Length = 27, 
+                        FramesPerSecond = 27 
+                    }))
                 .AddComponent(new AnimatedSpriteRenderer())
                 .AddComponent(new TimBehavior());
 
