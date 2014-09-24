@@ -24,7 +24,7 @@ namespace IsisTempleProject
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {            
+        {
             //Create the player character
             this.CreatePlayer();
 
@@ -42,6 +42,11 @@ namespace IsisTempleProject
             };
             camera.Entity.AddComponent(new CameraBehavior(EntityManager.Find("isis")));
 
+            FixedCamera2D camera2D = new FixedCamera2D("camera2D")
+            {
+                ClearFlags = ClearFlags.DepthAndStencil
+            };
+
             //Add some light!
             PointLight light = new PointLight("light", Vector3.Zero)
             {
@@ -53,7 +58,8 @@ namespace IsisTempleProject
             light.Entity.AddComponent(new TorchLightBehaviour());
 
             EntityManager.Add(light);
-            EntityManager.Add(camera);            
+            EntityManager.Add(camera);
+            EntityManager.Add(camera2D);
         }
 
         /// <summary>
@@ -105,7 +111,7 @@ namespace IsisTempleProject
         private void CreateJoystickButton(string name, float x, float y, float rotation, EventHandler<GestureEventArgs> pressed, EventHandler<GestureEventArgs> released)
         {
             var upButton = new Entity(name)
-                .AddComponent(new Sprite("Content/JoystickButton.wpk"))
+                .AddComponent(new Sprite("Content/JoystickButton"))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha))
                 .AddComponent(new Transform2D() { Origin = Vector2.One / 2, X = x, Y = y, Rotation = rotation })
                 .AddComponent(new TouchGestures())
