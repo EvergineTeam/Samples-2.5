@@ -14,7 +14,7 @@ namespace IsisTempleProject.Components
     {
         Idle,
         Walk,
-        Jog
+        Run
     }
 
     public class IsisBehavior : Behavior
@@ -88,7 +88,7 @@ namespace IsisTempleProject.Components
                 if (this.Run || inputService.KeyboardState.LeftShift == WaveEngine.Common.Input.ButtonState.Pressed || inputService.GamePadState.Buttons.A == WaveEngine.Common.Input.ButtonState.Pressed)
                 {
                     // Run you fools!
-                    this.State = EAnimState.Jog;
+                    this.State = EAnimState.Run;
                     advance = Vector3.UnitZ * JOG_SPEED;
                 }
                 else
@@ -110,7 +110,7 @@ namespace IsisTempleProject.Components
                 if (this.Run || inputService.KeyboardState.LeftShift == WaveEngine.Common.Input.ButtonState.Pressed || inputService.GamePadState.Buttons.A == WaveEngine.Common.Input.ButtonState.Pressed)
                 {
                     // Run you fools!
-                    this.State = EAnimState.Jog;
+                    this.State = EAnimState.Run;
                     advance = -Vector3.UnitZ * JOG_SPEED;
                 }
                 else
@@ -131,7 +131,7 @@ namespace IsisTempleProject.Components
                 if (this.Run || inputService.KeyboardState.LeftShift == WaveEngine.Common.Input.ButtonState.Pressed || inputService.GamePadState.Buttons.A == WaveEngine.Common.Input.ButtonState.Pressed)
                 {
                     // Run you fools!
-                    this.State = EAnimState.Jog;
+                    this.State = EAnimState.Run;
                     advance = -Vector3.UnitX * JOG_SPEED;
                 }
                 else
@@ -152,7 +152,7 @@ namespace IsisTempleProject.Components
                 if (this.Run || inputService.KeyboardState.LeftShift == WaveEngine.Common.Input.ButtonState.Pressed || inputService.GamePadState.Buttons.A == WaveEngine.Common.Input.ButtonState.Pressed)
                 {
                     // Run you fools!
-                    this.State = EAnimState.Jog;
+                    this.State = EAnimState.Run;
                     advance = Vector3.UnitX * JOG_SPEED;
                 }
                 else
