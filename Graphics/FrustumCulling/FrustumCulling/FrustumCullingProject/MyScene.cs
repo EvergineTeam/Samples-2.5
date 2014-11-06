@@ -29,8 +29,9 @@ namespace FrustumCullingProject
             freeCamera.Entity.AddComponent(new CameraFrustum());
             EntityManager.Add(freeCamera);
 
-            var fixedCamera = new FixedCamera("FixedCamera", new Vector3(20, 50, -20), new Vector3(20, 0, 20));
-            fixedCamera.BackgroundColor = Color.CornflowerBlue;
+            var fixedCamera = new FixedCamera("FixedCamera", new Vector3(20, 50, -20), new Vector3(20, 0, 20));            
+            fixedCamera.Entity.FindComponent<Camera3D>().Viewport = new Viewport(0, 0.6f, 0.4f, 0.4f);
+            fixedCamera.ClearFlags = ClearFlags.DepthAndStencil;
 
             EntityManager.Add(fixedCamera);
             RenderManager.SetFrustumCullingCamera(freeCamera.Entity);
@@ -54,12 +55,6 @@ namespace FrustumCullingProject
                     }
                 }
             }
-
-            TextBlock textBlock = new TextBlock("Message");
-            textBlock.Text = "Press 1 or 2 to change the camera";
-            EntityManager.Add(textBlock);
-
-            AddSceneBehavior(new SelectCamera(freeCamera, fixedCamera), SceneBehavior.Order.PreUpdate);
         }
 
         private Entity CreateCube(string name, Vector3 position)

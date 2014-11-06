@@ -21,8 +21,8 @@ namespace FrustumCulling
 
         public App()
         {
-            this.Width = 800;
-            this.Height = 600;
+            this.Width = 1280;
+            this.Height = 720;
             this.FullScreen = false;
             this.WindowTitle = "FrustumCulling";
         }
