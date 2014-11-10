@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TiledMapProject.Components;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
@@ -32,7 +33,7 @@ namespace TiledMapProject
         private PlayerController playerController;
 
         bool isInitialized = false;
-        
+
         protected override void ResolveDependencies()
         {
 
@@ -70,7 +71,7 @@ namespace TiledMapProject
             foreach (var coin in result)
             {
                 Entity coinEntity = coin as Entity;
-                
+
                 this.coins.Add(coinEntity);
                 this.coinColliders.Add(coinEntity.FindComponent<Collider2D>(false));
                 this.initCoinPositions.Add(coinEntity.FindComponent<Transform2D>().Position);
@@ -88,6 +89,17 @@ namespace TiledMapProject
                 this.crates.Add(crateEntity);
                 this.initCratePositions.Add(crateEntity.FindComponent<Transform2D>().Position);
             }
+
+            WaveServices.TimerFactory.CreateTimer("cratesounds", TimeSpan.FromSeconds(2), () =>
+                {
+                    foreach (var crate in result)
+                    {
+                        Entity crateEntity = crate as Entity;
+                        var rigidBody = crateEntity.FindComponent<RigidBody2D>();
+                        rigidBody.OnPhysic2DCollision += this.OnCrateCollision;
+                    }
+
+                }, false);
         }
 
         private void InitTraps()
@@ -102,8 +114,8 @@ namespace TiledMapProject
         }
 
         protected override void Update(TimeSpan gameTime)
-        {         
-            if(!this.isInitialized)
+        {
+            if (!this.isInitialized)
             {
                 this.Initialize();
                 this.isInitialized = true;
@@ -160,16 +172,27 @@ namespace TiledMapProject
             this.ResetGame();
         }
 
+        private void OnCrateCollision(object sender, Physic2DCollisionEventArgs args)
+        {
+            var velocity = args.Body2DB.LinearVelocity;
+            float length = velocity.Length();
+            float volume = Math.Min(1, length/ 5);
+            Labels.Add("Volume", volume);
+
+            var instance = this.soundManager.PlaySound(SoundType.CrateDrop, volume);
+        }
+
+
         private void ResetGame()
-        {            
+        {
             this.playerController.Reset();
 
-            foreach(var coin in this.coins)
+            foreach (var coin in this.coins)
             {
                 coin.Enabled = true;
             }
 
-            for(int i = 0; i < this.crates.Count; i++)  
+            for (int i = 0; i < this.crates.Count; i++)
             {
                 var crate = this.crates[i];
 

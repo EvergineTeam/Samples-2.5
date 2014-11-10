@@ -48,9 +48,9 @@ namespace TiledMapProject
             }
         }
 
-        public SoundInstance PlaySound(SoundType soundType)
+        public SoundInstance PlaySound(SoundType soundType, float volume = 1)
         {
-            return this.soundPlayer.Play(this.sounds[soundType]);
+            return this.soundPlayer.Play(this.sounds[soundType], volume);
         }
     }
 }

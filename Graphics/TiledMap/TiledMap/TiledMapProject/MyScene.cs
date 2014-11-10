@@ -1,6 +1,7 @@
 #region Using Statements
 using System;
 using TiledMapProject.Components;
+using TiledMapProject.Entities;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -33,7 +34,7 @@ namespace TiledMapProject
         }
 
         protected override void Start()
-        {
+        {            
             base.Start();
 
             this.AddCoins();
@@ -60,23 +61,24 @@ namespace TiledMapProject
             // Create a 2D camera
             var camera = new FixedCamera2D("Camera2D")
             {
-                FieldOfView = MathHelper.ToRadians(70),
                 BackgroundColor = new Color("#5a93e0"),
             };
 
             var camera2DComponent = camera.Entity.FindComponent<Camera2D>();
             camera2DComponent.Zoom = Vector2.One / 2.5f;
 
-            //if (WaveServices.Platform.PlatformType == PlatformType.Windows ||
-            //    WaveServices.Platform.PlatformType == PlatformType.Linux || 
-            //    WaveServices.Platform.PlatformType == PlatformType.MacOS)
-            //{
-            //    camera.Entity.AddComponent(ImageEffects.FishEye());
-            //    camera.Entity.AddComponent(new ChromaticAberrationLens() { AberrationStrength = 5.5f });
-            //    camera.Entity.AddComponent(new RadialBlurLens() { Center = new Vector2(0.5f, 0.75f), BlurWidth = 0.02f, Nsamples = 5 }); 
-            //    camera.Entity.AddComponent(ImageEffects.Vignette());
-            //    camera.Entity.AddComponent(new FilmGrainLens() { GrainIntensityMin = 0.075f, GrainIntensityMax = 0.15f });
-            //} 
+            #region Lens Effects
+            ////if (WaveServices.Platform.PlatformType == PlatformType.Windows ||
+            ////    WaveServices.Platform.PlatformType == PlatformType.Linux ||
+            ////    WaveServices.Platform.PlatformType == PlatformType.MacOS)
+            ////{
+            ////    camera.Entity.AddComponent(ImageEffects.FishEye());
+            ////    camera.Entity.AddComponent(new ChromaticAberrationLens() { AberrationStrength = 5.5f });
+            ////    camera.Entity.AddComponent(new RadialBlurLens() { Center = new Vector2(0.5f, 0.75f), BlurWidth = 0.02f, Nsamples = 5 });
+            ////    camera.Entity.AddComponent(ImageEffects.Vignette());
+            ////    camera.Entity.AddComponent(new FilmGrainLens() { GrainIntensityMin = 0.075f, GrainIntensityMax = 0.15f });
+            ////}  
+            #endregion
 
             EntityManager.Add(camera);
         }
@@ -172,24 +174,17 @@ namespace TiledMapProject
             int i = 0;
             foreach (var obj in cratesLayer.Objects)
             {
-                RigidBody2D rigidBody;
-
                 Entity crateEntity = new Entity("crate_" + (i++)) { Tag = "crate" }
                 .AddComponent(new Transform2D() { LocalPosition = new Vector2(obj.X, obj.Y), Rotation = (float)obj.Rotation, DrawOrder = -9 })
-                .AddComponent(new Sprite("Content/tilesets/scene-tiles.png") { SourceRectangle = new Rectangle(0, 128, 16, 16) })
+                .AddComponent(new Sprite("Content/tilesets/sceneTiles.png") { SourceRectangle = new Rectangle(55, 199, 16, 16) })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha, AddressMode.PointWrap))
                 .AddComponent(new RectangleCollider())
-                .AddComponent(rigidBody = new RigidBody2D()
+                .AddComponent(new RigidBody2D()
                 {
                     Mass = 0.003f
                 });
 
                 this.EntityManager.Add(crateEntity);
-
-                rigidBody.OnPhysic2DCollision +=(s,e) =>
-                    {
-                        this.soundManager.PlaySound(SoundType.CrateDrop);
-                    };
             }
         }
 

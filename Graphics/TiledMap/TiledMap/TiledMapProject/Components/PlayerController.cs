@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TiledMapProject.Entities;
+using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
@@ -11,19 +13,30 @@ using WaveEngine.Framework.Services;
 
 namespace TiledMapProject.Components
 {
+    public enum ControllerType
+    {
+        JoystickController,
+        KeyboardController,
+        GamepadController
+    }
+
     public class PlayerController : Behavior
     {
         private const float SideImpulse = 0.001f;
         private const float JumpImpulse = 0.08f;
 
+        private Joystick joystick;
+        private JumpButton jumpButton;
 
         private Input input;
         private bool isJump;
         private int collisionCounter = 0;
         private Vector2 initPosition;
 
-        private SoundManager soundManager;
+        private ControllerType controller;
 
+        private SoundManager soundManager;
+        private ViewportManager vm;
 
         private bool OnFloor
         {
@@ -44,6 +57,7 @@ namespace TiledMapProject.Components
             base.Initialize();
 
             this.soundManager = this.EntityManager.Find("soundManager").FindComponent<SoundManager>();
+            this.vm = WaveServices.ViewportManager;
 
             this.input = WaveServices.Input;
             this.initPosition = this.Transform2D.Position;
@@ -60,6 +74,72 @@ namespace TiledMapProject.Components
         }
 
         protected override void Update(TimeSpan gameTime)
+        {
+            this.HandleJoystick();
+            this.HandleKeys();
+            this.HandleGamepad();
+        }
+
+        private void HandleGamepad()
+        {
+            if(this.input.GamePadState.IsConnected)
+            {
+                var gamepadState = this.input.GamePadState;
+
+                if (this.OnFloor && (gamepadState.ThumbStricks.Left.X != 0))
+                {
+                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbStricks.Left.X);
+                }
+
+                if (gamepadState.Buttons.A == ButtonState.Pressed)
+                {
+                    this.Jump();
+                    this.controller = ControllerType.GamepadController;
+                    this.isJump = true;
+                }
+                else
+                {
+                    if (this.controller == ControllerType.GamepadController)
+                    {
+                        this.isJump = false;
+                    }
+                }
+            }
+        }
+
+        private void HandleJoystick()
+        {
+            if (this.joystick == null)
+            {
+                var joystickScene = WaveServices.ScreenContextManager.CurrentContext.FindScene<JoystickScene>();
+                this.joystick = joystickScene.Joystick;
+                this.jumpButton = joystickScene.JumpButton;
+            }
+            else
+            {
+
+                if (this.OnFloor && (joystick.Direction.X != 0))
+                {
+                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * joystick.Direction.X);
+                }
+
+                if (this.jumpButton.IsShooting)
+                {
+                    this.Jump();
+                    this.controller = ControllerType.JoystickController;
+                    this.isJump = true;
+                }
+                else
+                {
+                    if (this.controller == ControllerType.JoystickController)
+                    {
+                        this.isJump = false;
+                    }
+                }
+            }
+        }
+
+        private void HandleKeys()
         {
             if (this.input.KeyboardState.IsConnected)
             {
@@ -78,11 +158,15 @@ namespace TiledMapProject.Components
                 if (keyState.Space == WaveEngine.Common.Input.ButtonState.Pressed)
                 {
                     this.Jump();
+                    this.controller = ControllerType.KeyboardController;
                     this.isJump = true;
                 }
                 else
                 {
-                    this.isJump = false;
+                    if (this.controller == ControllerType.KeyboardController)
+                    {
+                        this.isJump = false;
+                    }
                 }
             }
         }
@@ -115,15 +199,12 @@ namespace TiledMapProject.Components
         private void OnPhysic2DCollision(object sender, Physic2DCollisionEventArgs args)
         {
             this.collisionCounter++;
-            Labels.Add("#Counter", this.collisionCounter);
-
             this.soundManager.PlaySound(SoundType.Contact);
         }
 
         private void OnPhysic2DSeparation(object sender, Physic2DSeparationEventArgs args)
         {
             this.collisionCounter--;
-            Labels.Add("#Counter", this.collisionCounter);
         }
     }
 }
