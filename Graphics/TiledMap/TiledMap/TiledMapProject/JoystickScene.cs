@@ -19,7 +19,7 @@ namespace TiledMapProject
 
         protected override void CreateScene()
         {
-            FreeCamera2D camera = new FreeCamera2D("camera")
+            FixedCamera2D camera = new FixedCamera2D("camera")
             {
                 ClearFlags = WaveEngine.Common.Graphics.ClearFlags.DepthAndStencil
             };
