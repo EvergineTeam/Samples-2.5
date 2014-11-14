@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "LauncherIOS\Launcher.csproj", "{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveOculusDemoProjectIOS", "WaveOculusDemo\WaveOculusDemoProject\WaveOculusDemoProjectIOS.csproj", "{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2013.plainconcepts.com/tfs/wave
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LauncherIOS\\Launcher.csproj
+		SccProjectName1 = LauncherIOS
+		SccLocalPath1 = LauncherIOS
+		SccProjectUniqueName2 = WaveOculusDemo\\WaveOculusDemoProject\\WaveOculusDemoProjectIOS.csproj
+		SccProjectName2 = WaveOculusDemo/WaveOculusDemoProject
+		SccLocalPath2 = WaveOculusDemo\\WaveOculusDemoProject
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhone.Build.0 = Release|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhone.Deploy.0 = Release|iPhone
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{BC4EFFD9-5A97-442A-9FB2-01A6848C9E24}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Release|iPhone.Build.0 = Release|iPhone
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{099EB954-8F8E-42F0-8EEB-2FC40BA69A2A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal
