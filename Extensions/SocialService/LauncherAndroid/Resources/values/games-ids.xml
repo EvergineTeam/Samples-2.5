@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+  <string name="app_id">385226339286</string>
+  <string name="achievement_logro1">CgkIpLaW3L0XEAIQAg</string>
+</resources>
