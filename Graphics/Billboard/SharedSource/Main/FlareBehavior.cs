@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
-using System.Threading.Tasks;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 
-namespace BillboardProject
+namespace Billboard
 {
+    [DataContract]
     public class FlareBehavior : Behavior
     {
         [RequiredComponent]
         private Transform3D transform = null;
 
-        private float speed;
         private float initY;
-        private double angle;
 
-        public FlareBehavior(float angle, float speed)
+        [DataMember]
+        public double Angle { get; set; }
+
+        [DataMember]
+        public float Speed { get; set; }
+        
+        public FlareBehavior()
         {
-            this.angle = angle;
-            this.speed = speed;
         }
 
         protected override void Initialize()
@@ -33,12 +35,12 @@ namespace BillboardProject
 
         protected override void Update(TimeSpan gameTime)
         {
-            this.angle += gameTime.TotalSeconds * speed;
+            this.Angle += gameTime.TotalSeconds * this.Speed;
 
             this.transform.Position = new Vector3(
-                (float)Math.Sin(angle),
+                (float)Math.Sin(this.Angle),
                 this.initY,
-                (float)Math.Cos(angle));
+                (float)Math.Cos(this.Angle));
         }
     }
 }
