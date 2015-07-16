@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceJoint2DSample", "DistanceJoint2DSample\DistanceJoint2DSample\DistanceJoint2DSample.csproj", "{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceJoint2DSampleProject", "DistanceJoint2DSample\DistanceJoint2DSampleProject\DistanceJoint2DSampleProject.csproj", "{FACFAEF1-4648-435B-A98D-AC9F7C7F78E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.ActiveCfg = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Debug|x86.Build.0 = Debug|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.ActiveCfg = Release|x86
+		{C3A2E831-0A38-44A4-8BEF-1A53735BC9D2}.Release|x86.Build.0 = Release|x86
+		{FACFAEF1-4648-435B-A98D-AC9F7C7F78E2}.Debug|x86.ActiveCfg = Debug|x86
+		{FACFAEF1-4648-435B-A98D-AC9F7C7F78E2}.Debug|x86.Build.0 = Debug|x86
+		{FACFAEF1-4648-435B-A98D-AC9F7C7F78E2}.Release|x86.ActiveCfg = Release|x86
+		{FACFAEF1-4648-435B-A98D-AC9F7C7F78E2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
