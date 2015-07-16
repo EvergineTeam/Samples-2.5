@@ -11,31 +11,31 @@ namespace FixedMouseJoint2DSample
 {
     public class App : WaveEngine.Adapter.Application
     {
-        FixedMouseJoint2DSampleProject.Game game;
+        FixedMouseJoint2DSample.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-
+		
         public App()
         {
-            this.Width = 800;
-            this.Height = 600;
-            this.FullScreen = false;
-            this.WindowTitle = "FixedMouseJoint2DSample";
+            this.Width = 1280;
+            this.Height = 720;
+			this.FullScreen = false;
+			this.WindowTitle = "FixedMouseJoint2DSample";
         }
 
         public override void Initialize()
         {
-            this.game = new FixedMouseJoint2DSampleProject.Game();
+            this.game = new FixedMouseJoint2DSample.Game();
             this.game.Initialize(this);
-
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+			
+			#region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
+            
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -66,14 +66,14 @@ namespace FixedMouseJoint2DSample
 
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+             if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-                if (this.splashState)
+				if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -140,6 +140,6 @@ namespace FixedMouseJoint2DSample
                 game.OnDeactivated();
             }
         }
-    }
+	}
 }
 

@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace FixedMouseJoint2DSampleProject
+namespace FixedMouseJoint2DSample
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,8 +14,8 @@ namespace FixedMouseJoint2DSampleProject
         {
             base.Initialize(application);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+			ScreenContext screenContext = new ScreenContext(new MyScene());	
+			WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
