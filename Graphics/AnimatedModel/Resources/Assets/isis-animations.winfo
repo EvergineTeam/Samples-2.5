@@ -1,0 +1,37 @@
+﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>414c9450-c006-42df-a493-31b2329c2c27</Id>
+  <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
+    <d2p1:FramesPerSecond>30</d2p1:FramesPerSecond>
+    <d2p1:IsAnimated>true</d2p1:IsAnimated>
+    <d2p1:Materials xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:string>Isis</d3p1:string>
+    </d2p1:Materials>
+    <d2p1:Meshes>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
+        <d2p1:Name>low_body</d2p1:Name>
+      </d2p1:Mesh>
+    </d2p1:Meshes>
+    <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
+      <d3p1:ModelProfile>
+        <d3p1:Name i:nil="true" />
+        <d3p1:ZipCompress>true</d3p1:ZipCompress>
+        <d3p1:Animations>
+          <d3p1:Animation>
+            <d3p1:End>576</d3p1:End>
+            <d3p1:Name>default</d3p1:Name>
+            <d3p1:Start>0</d3p1:Start>
+          </d3p1:Animation>
+        </d3p1:Animations>
+        <d3p1:ExportAnimations>true</d3p1:ExportAnimations>
+        <d3p1:FullBoneWeights>true</d3p1:FullBoneWeights>
+        <d3p1:GenerateCollisionInfo>false</d3p1:GenerateCollisionInfo>
+        <d3p1:GenerateTangentSpace>true</d3p1:GenerateTangentSpace>
+        <d3p1:NumFrames>576</d3p1:NumFrames>
+        <d3p1:SwapWindingOrder>true</d3p1:SwapWindingOrder>
+      </d3p1:ModelProfile>
+    </d2p1:Profiles>
+  </Asset>
+  <Thumbnail i:nil="true" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+</Asset>
