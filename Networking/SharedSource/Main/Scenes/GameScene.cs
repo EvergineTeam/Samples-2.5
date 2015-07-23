@@ -18,6 +18,7 @@ namespace Networking.Scenes
     {
         private const string GameSceneIdentifier = "NetworkingSample.Game.Scene";
 
+        private readonly NetworkService networkService;
         private readonly NetworkManager networkManager;
 
         private int playerSpriteIndex;
@@ -27,10 +28,9 @@ namespace Networking.Scenes
         {
             this.playerSpriteIndex = playerSpriteIndex;
 
-            //The scene that uses synchronization components need a NetworkManager to manage the eneties.
-            this.networkManager = new NetworkManager(this);
+            this.networkService = WaveServices.GetService<NetworkService>();
             //Register the scene to use the synchronization components. This scene sync the entities in the scenes with the same sceneId in other clients.
-            this.networkManager.RegisterScene(GameSceneIdentifier);
+            this.networkManager = this.networkService.RegisterScene(this, GameSceneIdentifier);
         }
 
         protected override void CreateScene()
