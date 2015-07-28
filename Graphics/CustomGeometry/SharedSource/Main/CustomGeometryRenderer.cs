@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Graphics.VertexFormats;
@@ -10,8 +11,9 @@ using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 
-namespace CustomGeometryProject
+namespace CustomGeometry
 {
+    [DataContract(Namespace = "CustomGeometry")]
     public class CustomGeometryRenderer : Drawable3D
     {
         /// <summary>
@@ -54,17 +56,20 @@ namespace CustomGeometryProject
         {
             base.Initialize();
 
-            VertexPositionColor[] vertices = new VertexPositionColor[3];
+            VertexPositionNormalColorTexture[] vertices = new VertexPositionNormalColorTexture[3];
             vertices[0].Position = new Vector3(-0.5f, -0.5f, 0f);
             vertices[0].Color = Color.Red;
+            vertices[0].TexCoord = new Vector2(0, 1);
 
             vertices[1].Position = new Vector3(0f, 0.5f, 0f);
             vertices[1].Color = Color.Green;
+            vertices[1].TexCoord = new Vector2(0.5f, 0);
 
             vertices[2].Position = new Vector3(0.5f, -0.5f, 0f);
             vertices[2].Color = Color.Yellow;
+            vertices[2].TexCoord = new Vector2(1, 1);
 
-            var vertexBuffer = new VertexBuffer(VertexPositionColor.VertexFormat);
+            var vertexBuffer = new VertexBuffer(VertexPositionNormalColorTexture.VertexFormat);
             vertexBuffer.SetData(vertices, 3);
             
             ushort[] indices = new ushort[3];
