@@ -13,55 +13,44 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace RevoluteJoint2DSampleProject
+namespace RevoluteJoint2DSample
 {
     public class MyScene : Scene
     {
-        // Constants
-        private const int BRIDGE_Y_POSITION = 200;
-        private const int BRIDGE_LENGTH = 600;
-        private const int BRIDGE_CHAIN_LINKS = 38;
+        private const int BRIDGE_CHAIN_LINKS = 30;
 
-        private const string LEFT_BRIDGE_FILENAME = "Content/PinAzureB.wpk";
-        private const string RIGHT_BRIDGE_FILENAME = "Content/PinAzureA.wpk";
-
-        private const string BRIDGE_LINK1_FILENAME = "Content/Wood20x5a.wpk";
-        private const string BRIDGE_LINK2_FILENAME = "Content/Wood20x5b.wpk";
-        private const string BRIDGE_LINK3_FILENAME = "Content/Wood20x5c.wpk";
-
-        private const string CRATE1_FILENAME = "Content/CrateA.wpk";
-        private const string CRATE2_FILENAME = "Content/CrateB.wpk";
+        private const string BRIDGE_LINK1_FILENAME = "Content/Assets/Wood20x5a.wpk";
+        private const string BRIDGE_LINK2_FILENAME = "Content/Assets/Wood20x5b.wpk";
+        private const string BRIDGE_LINK3_FILENAME = "Content/Assets/Wood20x5c.wpk";
+        private const string CRATE1_FILENAME = "Content/Assets/CrateA.wpk";
+        private const string CRATE2_FILENAME = "Content/Assets/CrateB.wpk";
 
         // Instance count. Use to create different entity names.
         private static long instances = 0;
 
-        /// <summary>
-        /// Scene
-        /// </summary>
         protected override void CreateScene()
         {
-            //this.RenderManager.DebugLines = true;
+            this.Load(@"Content/Scenes/MyScene.wscene");
 
-            FixedCamera2D camera2d = new FixedCamera2D("camera");
-            camera2d.BackgroundColor = Color.CornflowerBlue;
-            EntityManager.Add(camera2d);            
+            Entity pin01 = this.EntityManager.Find("pin01");
+            Transform2D pin01Transform = pin01.FindComponent<Transform2D>();
 
-            // Left Bridge Anchor
-            Entity Pin1 = this.CreateSquareSprite("Pin1", 50, BRIDGE_Y_POSITION, LEFT_BRIDGE_FILENAME, PhysicBodyType.Static, -1f);
-            EntityManager.Add(Pin1);
+            Entity pin02 = this.EntityManager.Find("pin02");
+            Transform2D pin02Transform = pin02.FindComponent<Transform2D>();
 
             // Bridge links creation
             Entity lastLink = null;
-            int spacing = BRIDGE_LENGTH / BRIDGE_CHAIN_LINKS;
+            int spacing = (int)((pin02Transform.Position.X - pin01Transform.Position.X) / BRIDGE_CHAIN_LINKS);
+
             for (int i = 0; i < BRIDGE_CHAIN_LINKS; i++)
             {
-                Entity currentLink = this.CreateSquareSprite("link" + i + 1, 70 + i * spacing, BRIDGE_Y_POSITION, this.GetRandomLinkFileName(), PhysicBodyType.Dynamic, -1);
-                EntityManager.Add(currentLink);
+                Entity currentLink = this.CreateSquareSprite((int)pin01Transform.Position.X + i * spacing, (int)pin01Transform.Position.Y, this.GetRandomLinkFileName(), 0.005f);
+                this.EntityManager.Add(currentLink);
 
+                // First Link Joins to Left Anchor
                 if (i == 0)
                 {
-                    // First Link Joins to Left Anchor
-                    currentLink.AddComponent(new JointMap2D().AddJoint("joint", new RevoluteJoint2D(Pin1, new Vector2(-6, 0), new Vector2(0, 24))));
+                    currentLink.AddComponent(new JointMap2D().AddJoint("joint", new RevoluteJoint2D(pin01, new Vector2(-8, 0), new Vector2(0, 26))));
                 }
                 else
                 {
@@ -70,7 +59,7 @@ namespace RevoluteJoint2DSampleProject
                         currentLink.AddComponent(new JointMap2D()
                                                           .AddJoint("joint", new RevoluteJoint2D(lastLink, new Vector2(-8, 0), new Vector2(8, 0))
                                                           {
-                                                              BreakPoint = 20,                                                             
+                                                              BreakPoint = 10,
                                                           }));
                     }
                 }
@@ -80,27 +69,22 @@ namespace RevoluteJoint2DSampleProject
 
             if (lastLink != null)
             {
-                // Right Bridge Anchor
-                Entity Pin2 = this.CreateSquareSprite("Pin2", 750, BRIDGE_Y_POSITION, RIGHT_BRIDGE_FILENAME, PhysicBodyType.Static, -1f);
-                EntityManager.Add(Pin2);
-
                 // Last Bridge Link joins to Right Anchor
-                Pin2.AddComponent(new JointMap2D()
+                pin02.AddComponent(new JointMap2D()
                                         .AddJoint("joint", new RevoluteJoint2D(lastLink, new Vector2(-1, 23), new Vector2(6, 0))));
             }
-
-            // Physic ground
-            Entity ground = this.CreateSquareSprite("Ground", 400, 500, "Content/groundSprite.wpk", PhysicBodyType.Static, -1f);
-            EntityManager.Add(ground);
 
             // Timer to create crates
             WaveServices.TimerFactory.CreateTimer("FallingCratesTimer", TimeSpan.FromSeconds(1.0f), () =>
             {
-                Entity box = this.CreateSquareSprite("Crate" + instances++, WaveServices.Random.Next(300, 400), -40, this.GetRandomCrateFileName(), PhysicBodyType.Dynamic, -1);
-                EntityManager.Add(box);
+                instances++;
+                Entity box = this.CreateSquareSprite(WaveServices.Random.Next(500, 800), -40, this.GetRandomCrateFileName(), 0.03f);
+                this.EntityManager.Add(box);
 
                 if (instances == 10)
                 {
+                    Entity bigBox = this.CreateSquareSprite(WaveServices.Random.Next(500, 800), -100, this.GetRandomCrateFileName(), 2f);
+                    this.EntityManager.Add(bigBox);
                     WaveServices.TimerFactory.RemoveTimer("FallingCratesTimer");
                 }
             });
@@ -116,19 +100,14 @@ namespace RevoluteJoint2DSampleProject
         /// <param name="isKinematic">Physic IsKinetic Sprite Parameter.</param>
         /// <param name="mass">Physic Mass Sprite Parameter.</param>
         /// <returns></returns>
-        private Entity CreateSquareSprite(string name, int x, int y, string fileName, PhysicBodyType bodyType, float mass)
+        private Entity CreateSquareSprite(int x, int y, string fileName, float mass)
         {
-            Entity sprite = new Entity(name)
+            Entity sprite = new Entity()
                 .AddComponent(new Transform2D() { X = x, Y = y, Origin = Vector2.Center })
-                .AddComponent(new RectangleCollider())
+                .AddComponent(new RectangleCollider2D())
                 .AddComponent(new Sprite(fileName))
-                .AddComponent(new RigidBody2D() { PhysicBodyType = bodyType })
+                .AddComponent(new RigidBody2D() { Mass = mass })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
-
-            if (mass != -1)
-            {
-                sprite.FindComponent<RigidBody2D>().Mass = mass;
-            }
 
             return sprite;
         }
