@@ -44,7 +44,7 @@
       <Platform>Linux</Platform>
     </Profile>
   </Profiles>
-  <ResourcesPath>Resources</ResourcesPath>
+  <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings" i:nil="true" />
   <WaveVersion>1.9.10.15</WaveVersion>
 </Project>
