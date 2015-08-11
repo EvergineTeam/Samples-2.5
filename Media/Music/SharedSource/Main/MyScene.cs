@@ -13,17 +13,15 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace MusicProject
+namespace Music
 {
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {            
-            FixedCamera2D camera2d = new FixedCamera2D("camera");
-            camera2d.BackgroundColor = Color.CornflowerBlue;
-            EntityManager.Add(camera2d);
+        {
+            this.Load(@"Content/Scenes/MyScene.wscene");
 
-            MusicInfo musicInfo = new MusicInfo("Content/ByeByeBrain.mp3");
+            MusicInfo musicInfo = new MusicInfo(@"Content/Assets/ByeByeBrain.mp3");
             WaveServices.MusicPlayer.Play(musicInfo);
         }
     }

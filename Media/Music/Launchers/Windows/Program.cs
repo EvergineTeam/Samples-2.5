@@ -7,7 +7,7 @@ namespace Music
 {
     static class Program
     {
-        [STAThread]
+		[STAThread]
         static void Main()
         {
             using (App game = new App())
