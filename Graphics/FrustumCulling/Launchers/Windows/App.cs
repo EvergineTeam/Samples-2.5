@@ -11,31 +11,31 @@ namespace FrustumCulling
 {
     public class App : WaveEngine.Adapter.Application
     {
-        FrustumCullingProject.Game game;
+        FrustumCulling.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-
+		
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-            this.FullScreen = false;
-            this.WindowTitle = "FrustumCulling";
+			this.FullScreen = false;
+			this.WindowTitle = "FrustumCulling";
         }
 
         public override void Initialize()
         {
-            this.game = new FrustumCullingProject.Game();
+            this.game = new FrustumCulling.Game();
             this.game.Initialize(this);
-
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+			
+			#region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
+            
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -66,14 +66,14 @@ namespace FrustumCulling
 
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+             if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-                if (this.splashState)
+				if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -106,7 +106,7 @@ namespace FrustumCulling
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
                 }
@@ -140,6 +140,6 @@ namespace FrustumCulling
                 game.OnDeactivated();
             }
         }
-    }
+	}
 }
 

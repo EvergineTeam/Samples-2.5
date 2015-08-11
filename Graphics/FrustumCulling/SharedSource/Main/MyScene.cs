@@ -2,12 +2,10 @@
 using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
@@ -16,26 +14,28 @@ using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
 #endregion
 
-namespace FrustumCullingProject
+namespace FrustumCulling
 {
     public class MyScene : Scene
     {
         protected override void CreateScene()
         {
+            this.Load(@"Content/Scenes/MyScene.wscene");           
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+
+
+            var fixedCamera = EntityManager.Find("FixedCamera");
+            fixedCamera.FindComponent<Transform3D>().LookAt(new Vector3(20, 0, 20));
+            fixedCamera.FindComponent<Camera3D>().Viewport = new Viewport(0, 0.6f, 0.4f, 0.4f);
+
+            RenderManager.SetFrustumCullingCamera(EntityManager.Find("FreeCamera"));
+
             var random = WaveServices.Random;
-
-            var freeCamera = new FreeCamera("FreeCamera", new Vector3(0, 10, -10), Vector3.Zero) { FarPlane = 100 };
-            freeCamera.BackgroundColor = Color.CornflowerBlue;
-            freeCamera.Entity.AddComponent(new CameraFrustum());
-            EntityManager.Add(freeCamera);
-
-            var fixedCamera = new FixedCamera("FixedCamera", new Vector3(20, 50, -20), new Vector3(20, 0, 20));            
-            fixedCamera.Entity.FindComponent<Camera3D>().Viewport = new Viewport(0, 0.6f, 0.4f, 0.4f);
-            fixedCamera.ClearFlags = ClearFlags.DepthAndStencil;
-
-            EntityManager.Add(fixedCamera);
-            RenderManager.SetFrustumCullingCamera(freeCamera.Entity);
-
+            
             int num = 15;
 
             for (int i = 0; i < num; i++)
@@ -62,8 +62,8 @@ namespace FrustumCullingProject
             Entity cube = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position })
                 .AddComponent(Model.CreateCube())
-                .AddComponent(new BoxCollider())
-                .AddComponent(new MaterialsMap(new BasicMaterial(GetRandomColor())))
+                .AddComponent(new BoxCollider3D())
+                .AddComponent(new MaterialsMap(new StandardMaterial(GetRandomColor(), DefaultLayers.Opaque)))
                 .AddComponent(new ModelRenderer());
             return cube;
         }
@@ -73,8 +73,8 @@ namespace FrustumCullingProject
             Entity sphere = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position })
                 .AddComponent(Model.CreateSphere())
-                .AddComponent(new SphereCollider())
-                .AddComponent(new MaterialsMap(new BasicMaterial(GetRandomColor())))
+                .AddComponent(new SphereCollider3D())
+                .AddComponent(new MaterialsMap(new StandardMaterial(GetRandomColor(), DefaultLayers.Opaque)))
                 .AddComponent(new ModelRenderer());
             return sphere;
         }

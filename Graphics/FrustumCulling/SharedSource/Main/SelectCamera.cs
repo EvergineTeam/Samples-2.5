@@ -8,15 +8,15 @@ using WaveEngine.Components.Cameras;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 
-namespace FrustumCullingProject
+namespace FrustumCulling
 {
-    public class SelectCamera : SceneBehavior
+    public class SelectCamera4 : SceneBehavior
     {
         KeyboardState lastState, currentState;
-        FreeCamera freeCamera;
-        FixedCamera fixedCamera;
+        FreeCamera3D freeCamera;
+        FixedCamera3D fixedCamera;
 
-        public SelectCamera(FreeCamera freeCamera, FixedCamera fixedCamera)
+        public SelectCamera4(FreeCamera3D freeCamera, FixedCamera3D fixedCamera)
             : base("SelectCameraBehavior")
         {
             this.freeCamera = freeCamera;
