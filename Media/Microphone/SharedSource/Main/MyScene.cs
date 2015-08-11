@@ -15,35 +15,66 @@ using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Sound;
 #endregion
 
-namespace MicrophoneProject
+namespace Microphone
 {
     public class MyScene : Scene
-    {      
+    {
+        /// <summary>
+        /// The recordfile
+        /// </summary>
         private const string RECORDFILE = "record.wpk";
 
+        /// <summary>
+        /// The starttext
+        /// </summary>
         private const string STARTTEXT = "Record";
 
+        /// <summary>
+        /// The stoptext
+        /// </summary>
         private const string STOPTEXT = "Stop";
 
+        /// <summary>
+        /// The playtext
+        /// </summary>
         private const string PLAYTEXT = "Play";
 
+        /// <summary>
+        /// The errorext
+        /// </summary>
         private const string ERROREXT = "Microphone not found!";
 
+        /// <summary>
+        /// The record button
+        /// </summary>
         private Button recordButton;
 
+        /// <summary>
+        /// The play button
+        /// </summary>
         private Button playButton;
 
+        /// <summary>
+        /// The bank
+        /// </summary>
         private SoundBank bank;
 
+        /// <summary>
+        /// The sound
+        /// </summary>
         private SoundInfo sound;
 
+        /// <summary>
+        /// The progress bar
+        /// </summary>
         private ProgressBar progressBar;
 
+        /// <summary>
+        /// Creates the scene.
+        /// </summary>
         protected override void CreateScene()
-        {            
-            FixedCamera2D camera2d = new FixedCamera2D("camera");
-            camera2d.BackgroundColor = Color.Black;
-            EntityManager.Add(camera2d);
+        {
+            this.Load(@"Content/Scenes/MyScene.wscene");
 
             // Adds record button.
             this.recordButton = new Button("recordButton")
@@ -94,7 +125,7 @@ namespace MicrophoneProject
                 HorizontalAlignment = WaveEngine.Framework.UI.HorizontalAlignment.Center,
                 IsVisible = false
             };
-            
+
             this.EntityManager.Add(this.progressBar);
 
             //Register bank
@@ -102,6 +133,11 @@ namespace MicrophoneProject
             WaveServices.SoundPlayer.RegisterSoundBank(this.bank);
         }
 
+        /// <summary>
+        /// Called when [record button clicked].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void OnRecordButtonClicked(object sender, EventArgs e)
         {
             if (!WaveServices.Microphone.IsConnected)
@@ -141,6 +177,11 @@ namespace MicrophoneProject
             }
         }
 
+        /// <summary>
+        /// Handles the DataAvailable event of the Microphone control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MicrophoneDataEventArgs"/> instance containing the event data.</param>
         private void Microphone_DataAvailable(object sender, MicrophoneDataEventArgs e)
         {
             float averageFloat = 0;
@@ -164,7 +205,7 @@ namespace MicrophoneProject
             {
                 average = this.progressBar.Maximum;
             }
-            else if(average < 0)
+            else if (average < 0)
             {
                 average = 0;
             }
@@ -172,6 +213,11 @@ namespace MicrophoneProject
             this.progressBar.Value = average;
         }
 
+        /// <summary>
+        /// Called when [play button clicked].
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void OnPlayButtonClicked(object sender, EventArgs e)
         {
             WaveServices.SoundPlayer.Play(this.sound);
