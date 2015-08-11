@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace BouncinessProject
+namespace Bounciness
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,8 +14,8 @@ namespace BouncinessProject
         {
             base.Initialize(application);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+			ScreenContext screenContext = new ScreenContext(new MyScene());	
+			WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
