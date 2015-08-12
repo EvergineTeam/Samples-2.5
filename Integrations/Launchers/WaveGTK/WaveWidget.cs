@@ -19,10 +19,9 @@ namespace WaveGTK
         [DllImport("libgdk-win32-2.0-0.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern IntPtr gdk_win32_drawable_get_handle(IntPtr d);
 
-        private bool isInitialized, isResized, rendering;
+        private bool isRendering;
 
         private GameApp gameApp;
-        private System.Threading.Tasks.Task renderTask;
         private WaveEngine.Framework.Services.Input input;
 
         public IntPtr WindowsHandler { get; private set; }
@@ -34,7 +33,6 @@ namespace WaveGTK
         /// </summary>
         public WaveWidget()
         {
-            this.isInitialized = false;
             this.WidthRequest = 800;
             this.HeightRequest = 600;
             this.CanFocus = true;
@@ -54,15 +52,15 @@ namespace WaveGTK
             }
             else
             {
-                if (!this.rendering  && !this.isMinimized)
+                if (!this.isRendering && !this.isMinimized)
                 {
                     System.Threading.Tasks.Task.Factory.StartNew(() =>
                     {
                         lock (this)
                         {
-                            this.rendering = true;
+                            this.isRendering = true;
                             this.gameApp.Render();
-                            this.rendering = false;
+                            this.isRendering = false;
                         }
                     });
                 }
@@ -92,7 +90,7 @@ namespace WaveGTK
 
             this.GdkWindow.Background = new Gdk.Color(0, 0, 0);
 
-            this.isInitialized = true;
+            this.isRendering = true;
 
             // 60 fps
             GLib.Timeout.Add(16, new GLib.TimeoutHandler(OnTimer));
@@ -121,13 +119,13 @@ namespace WaveGTK
         {
             bool result = base.OnConfigureEvent(evnt);
 
-            this.isResized = true;
+            this.isRendering = true;
             if (evnt.Width > 1 && evnt.Height > 1)
             {
                 this.gameApp.ResizeScreen(evnt.Width, evnt.Height);
             }
 
-            this.isResized = false;
+            this.isRendering = false;
 
             return result;
         }       
@@ -198,6 +196,13 @@ namespace WaveGTK
             {
                 this.input.MouseState.X = (int)evnt.X;
                 this.input.MouseState.Y = (int)evnt.Y;
+
+                this.input.TouchPanelState = new TouchPanelState() { IsConnected = true };
+
+                if (this.input.MouseState.LeftButton == WaveEngine.Common.Input.ButtonState.Pressed)
+                {
+                    this.input.TouchPanelState.AddTouchLocation(0, TouchLocationState.Pressed, (int)evnt.X, (int)evnt.Y);
+                }
             }
             else
             {

@@ -40,7 +40,7 @@ namespace WaveForm
             this.gameApp.Configure(this.Handle);
 
             this.isInitialized = true;
-        }        
+        }
 
         /// <summary>
         /// Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.
@@ -54,7 +54,7 @@ namespace WaveForm
             {
                 this.gameApp.ResizeScreen(this.Bounds.Width, this.Bounds.Height);
             }
-        }       
+        }
 
         /// <summary>
         /// Controls the render.
@@ -122,6 +122,13 @@ namespace WaveForm
             {
                 this.input.MouseState.X = e.X;
                 this.input.MouseState.Y = e.Y;
+
+                this.input.TouchPanelState = new TouchPanelState() { IsConnected = true };
+
+                if (this.input.MouseState.LeftButton == WaveEngine.Common.Input.ButtonState.Pressed)
+                {
+                    this.input.TouchPanelState.AddTouchLocation(0, TouchLocationState.Pressed, e.X, e.Y);
+                }
             }
             else
             {

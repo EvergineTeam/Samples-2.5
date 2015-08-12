@@ -1,38 +1,68 @@
-ï»¿#region Using Statements
-using System;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Common.Graphics;
-using WaveEngine.Framework.Services;
-using System.Reflection;
-using System.IO;
-using WaveEngine.Common.Input;
+#region File Description
+//-----------------------------------------------------------------------------
+// MainApp
+//
+// Copyright © 2013 Plain Concepts. All rights reserved.
+// Use is subject to license terms.
+//-----------------------------------------------------------------------------
 #endregion
 
-namespace WaveForm
-{
-    public class GameApp : WaveEngine.Adapter.FormApplication
-    {
-        CubeTestProject.Game game;
-        SpriteBatch spriteBatch;
-        Texture2D splashScreen;
-        bool splashState = true;
-        TimeSpan time;
-        Vector2 position;
-        Color backgroundSplashColor;
+using System;
+using System.IO;
+using System.Reflection;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Input;
+using WaveEngine.Common.Math;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Services;
 
-        public GameApp(int width, int height)
-            :base (width, height)
-        {          
+namespace WaveWPF
+{
+    /// <summary>
+    /// The MainGame app
+    /// </summary>
+    public class MainApp : WaveEngine.Adapter.WPFApplication
+    {
+        /// <summary>
+        /// Gets the game.
+        /// </summary>
+        /// <value>
+        /// The game.
+        /// </value>
+        public TeapotSample.Game Game
+        {
+            get;
+            private set;
         }
 
+        private SpriteBatch spriteBatch;
+        private Texture2D splashScreen;
+        private bool splashState = true;
+        private TimeSpan time;
+        private Vector2 position;
+        private Color backgroundSplashColor;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainApp"/> class.
+        /// </summary>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        public MainApp(int width, int height)
+            : base(width, height)
+        {
+        }
+
+        /// <summary>
+        /// Perform further custom initialize for this instance.
+        /// </summary>
+        /// <exception cref="System.InvalidProgramException">License terms not agreed.</exception>
         public override void Initialize()
         {
-            this.game = new CubeTestProject.Game();
-            this.game.Initialize(this);
+            this.Game = new TeapotSample.Game();
+            this.Game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color(32, 32, 32, 255);
+            this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -63,9 +93,13 @@ namespace WaveForm
             #endregion
         }
 
+        /// <summary>
+        /// Perform further custom update for this instance.
+        /// </summary>
+        /// <param name="elapsedTime">Elapsed time from the last update.</param>
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+            if (this.Game != null && !this.Game.HasExited)
             {
                 if (this.splashState)
                 {
@@ -79,14 +113,18 @@ namespace WaveForm
                 }
                 else
                 {
-                    this.game.UpdateFrame(elapsedTime);
+                    this.Game.UpdateFrame(elapsedTime);
                 }
             }
         }
 
+        /// <summary>
+        /// Perform further custom draw for this instance.
+        /// </summary>
+        /// <param name="elapsedTime">Elapsed time from the last draw.</param>
         public override void Draw(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+            if (this.Game != null && !this.Game.HasExited)
             {
                 if (this.splashState)
                 {
@@ -99,34 +137,9 @@ namespace WaveForm
                 }
                 else
                 {
-                    this.game.DrawFrame(elapsedTime);
+                    this.Game.DrawFrame(elapsedTime);
                 }
-            }
-        }
-
-        /// <summary>
-        /// Called when [activated].
-        /// </summary>
-        public override void OnActivated()
-        {
-            base.OnActivated();
-            if (this.game != null)
-            {
-                game.OnActivated();
-            }
-        }
-
-        /// <summary>
-        /// Called when [deactivate].
-        /// </summary>
-        public override void OnDeactivate()
-        {
-            base.OnDeactivate();
-            if (this.game != null)
-            {
-                game.OnDeactivated();
             }
         }
     }
 }
-

@@ -115,7 +115,7 @@ namespace WaveWPF
         /// <summary>
         /// Occurs when the wave game is loaded.
         /// </summary>
-        public event EventHandler<CubeTestProject.Game> GameLoaded;
+        public event EventHandler<TeapotSample.Game> GameLoaded;
 
         /// <summary>
         /// The resize delay timer
@@ -955,6 +955,13 @@ namespace WaveWPF
             var position = e.GetPosition(this);
             WaveServices.Input.MouseState.X = (int)position.X;
             WaveServices.Input.MouseState.Y = (int)position.Y;
+
+            WaveServices.Input.TouchPanelState = new TouchPanelState() { IsConnected = true };
+
+            if (WaveServices.Input.MouseState.LeftButton == ButtonState.Pressed)
+            {
+                WaveServices.Input.TouchPanelState.AddTouchLocation(0, WaveEngine.Common.Input.TouchLocationState.Pressed, (int)position.X, (int)position.Y);
+            }
         }
 
         /// <summary>

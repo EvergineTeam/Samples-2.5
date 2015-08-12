@@ -1,40 +1,41 @@
-﻿#region Using Statements
 using System;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Common.Graphics;
-using WaveEngine.Framework.Services;
-using System.Reflection;
 using System.IO;
+using System.Reflection;
+using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
-#endregion
+using WaveEngine.Common.Math;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Services;
 
-namespace WaveGTK
+namespace TeapotSample
 {
-    public class GameApp : WaveEngine.Adapter.FormApplication
+    public class App : WaveEngine.Adapter.Application
     {
-        CubeTestProject.Game game;
+        TeapotSample.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-
-        public GameApp(int Width, int Height)
-            : base(Width, Height)
+		
+        public App()
         {
+            this.Width = 1280;
+            this.Height = 720;
+			this.FullScreen = false;
+			this.WindowTitle = "TeapotSample";
         }
 
         public override void Initialize()
         {
-            this.game = new CubeTestProject.Game();
+            this.game = new TeapotSample.Game();
             this.game.Initialize(this);
-
-            #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color(32, 32, 32, 255);
+			
+			#region WAVE SOFTWARE LICENSE AGREEMENT
+            this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
+            
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -65,9 +66,14 @@ namespace WaveGTK
 
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+             if (this.game != null && !this.game.HasExited)
             {
-                if (this.splashState)
+                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
+                {
+                    this.FullScreen = !this.FullScreen;
+                }
+
+				if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -79,7 +85,14 @@ namespace WaveGTK
                 }
                 else
                 {
-                    this.game.UpdateFrame(elapsedTime);
+                    if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
+                    {
+                        WaveServices.Platform.Exit();
+                    }
+                    else
+                    {
+                        this.game.UpdateFrame(elapsedTime);
+                    }
                 }
             }
         }
@@ -126,7 +139,7 @@ namespace WaveGTK
             {
                 game.OnDeactivated();
             }
-        }        
-    }
+        }
+	}
 }
 
