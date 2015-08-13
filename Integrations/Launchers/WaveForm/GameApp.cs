@@ -7,13 +7,14 @@ using WaveEngine.Framework.Services;
 using System.Reflection;
 using System.IO;
 using WaveEngine.Common.Input;
+using ProjectGame = TeapotSample.Game;
 #endregion
 
 namespace WaveForm
 {
     public class GameApp : WaveEngine.Adapter.FormApplication
     {
-        TeapotSample.Game game;
+        ProjectGame game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -28,7 +29,7 @@ namespace WaveForm
 
         public override void Initialize()
         {
-            this.game = new TeapotSample.Game();
+            this.game = new ProjectGame();
             this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT

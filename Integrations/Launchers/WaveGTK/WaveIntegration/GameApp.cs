@@ -1,4 +1,13 @@
-﻿#region Using Statements
+﻿#region File Description
+//-----------------------------------------------------------------------------
+// GameApp
+//
+// Copyright © 2015 Wave Corporation
+// Use is subject to license terms.
+//-----------------------------------------------------------------------------
+#endregion
+
+#region Using Statements
 using System;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Common.Math;
@@ -7,13 +16,21 @@ using WaveEngine.Framework.Services;
 using System.Reflection;
 using System.IO;
 using WaveEngine.Common.Input;
+using ProjectGame = TeapotSample.Game;
 #endregion
 
-namespace WaveGTK
+namespace WaveGTK.WaveIntegration
 {
+    /// <summary>
+    /// GameApp class Wave interop with GTK
+    /// </summary>
+#if WINDOWS
     public class GameApp : WaveEngine.Adapter.FormApplication
+#elif LINUX || MAC
+    public class GameApp : WaveEngine.Adapter.BaseApplication
+#endif
     {
-        TeapotSample.Game game;
+        ProjectGame game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -21,17 +38,30 @@ namespace WaveGTK
         Vector2 position;
         Color backgroundSplashColor;
 
-        public GameApp(int Width, int Height)
-            : base(Width, Height)
+        /// <summary>
+        /// Occurs when [initialized].
+        /// </summary>
+        public event EventHandler<ProjectGame> Initialized;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GameApp" /> class.
+        /// </summary>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        public GameApp(int width, int height)
+            : base(width, height)
         {
         }
 
+        /// <summary>
+        /// Perform further custom initialize for this instance.
+        /// </summary>
         public override void Initialize()
         {
-            this.game = new TeapotSample.Game();
+            this.game = new ProjectGame();
             this.game.Initialize(this);
 
-            #region WAVE SOFTWARE LICENSE AGREEMENT            
+            #region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
@@ -63,6 +93,10 @@ namespace WaveGTK
             #endregion
         }
 
+        /// <summary>
+        /// Called when updating the main loop.
+        /// </summary>
+        /// <param name="elapsedTime">Elapsed time from the last update.</param>
         public override void Update(TimeSpan elapsedTime)
         {
             if (this.game != null && !this.game.HasExited)
@@ -84,6 +118,10 @@ namespace WaveGTK
             }
         }
 
+        /// <summary>
+        /// Called when drawing the main loop.
+        /// </summary>
+        /// <param name="elapsedTime">Elapsed time from the last draw.</param>
         public override void Draw(TimeSpan elapsedTime)
         {
             if (this.game != null && !this.game.HasExited)
@@ -112,7 +150,7 @@ namespace WaveGTK
             base.OnActivated();
             if (this.game != null)
             {
-                game.OnActivated();
+                this.game.OnActivated();
             }
         }
 
@@ -124,9 +162,8 @@ namespace WaveGTK
             base.OnDeactivate();
             if (this.game != null)
             {
-                game.OnDeactivated();
+                this.game.OnDeactivated();
             }
-        }        
+        }
     }
 }
-

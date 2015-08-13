@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region Using Statements
+using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Threading;
 using WaveEngine.Common.Input;
 using WaveEngine.Framework.Services;
-using NetTask = System.Threading.Tasks.Task;
+using ProjectGame = TeapotSample.Game; 
+#endregion
 
 namespace WaveWPF
 {
@@ -115,7 +112,7 @@ namespace WaveWPF
         /// <summary>
         /// Occurs when the wave game is loaded.
         /// </summary>
-        public event EventHandler<TeapotSample.Game> GameLoaded;
+        public event EventHandler<ProjectGame> GameLoaded;
 
         /// <summary>
         /// The resize delay timer

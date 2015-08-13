@@ -7,6 +7,7 @@
 //-----------------------------------------------------------------------------
 #endregion
 
+#region Using Statements
 using System;
 using System.IO;
 using System.Reflection;
@@ -15,6 +16,8 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using ProjectGame = TeapotSample.Game;
+#endregion
 
 namespace WaveWPF
 {
@@ -29,7 +32,7 @@ namespace WaveWPF
         /// <value>
         /// The game.
         /// </value>
-        public TeapotSample.Game Game
+        public ProjectGame Game
         {
             get;
             private set;
@@ -58,7 +61,7 @@ namespace WaveWPF
         /// <exception cref="System.InvalidProgramException">License terms not agreed.</exception>
         public override void Initialize()
         {
-            this.Game = new TeapotSample.Game();
+            this.Game = new ProjectGame();
             this.Game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
