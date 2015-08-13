@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TeapotSampleSource", "SharedSource\Main\TeapotSampleSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeapotSample", "Launchers\WaveGTK\TeapotSample.csproj", "{FE013552-949C-4A2E-A59F-92117BB65318}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedSource\Main\TeapotSampleSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
+		SharedSource\Main\TeapotSampleSource.projitems*{fe013552-949c-4a2e-a59f-92117bb65318}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|x86.ActiveCfg = Debug|x86
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|x86.Build.0 = Debug|x86
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|x86.ActiveCfg = Release|x86
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
