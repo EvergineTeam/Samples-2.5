@@ -24,11 +24,11 @@ using System.Linq;
 using System.Text;
 using WaveEngine.Framework.Sound;
 
-namespace KeyEventsAnimationProject
+namespace KeyEventsAnimation
 {
     public static class SoundsManager
     {
-        public static readonly SoundInfo FootStep1 = new SoundInfo("Content/footstep1.wpk");
-        public static readonly SoundInfo FootStep2 = new SoundInfo("Content/footstep2.wpk");
+        public static readonly SoundInfo FootStep1 = new SoundInfo("Content/Assets/Sounds/footstep1.wav");
+        public static readonly SoundInfo FootStep2 = new SoundInfo("Content/Assets/Sounds/footstep2.wav");
     }
 }

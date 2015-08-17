@@ -19,14 +19,16 @@
 // IN THE SOFTWARE.
 
 using System;
+using System.Runtime.Serialization;
 using WaveEngine.Common.Helpers;
 using WaveEngine.Components.Animation;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Services;
 
-namespace KeyEventsAnimationProject
+namespace KeyEventsAnimation
 {
+    [DataContract]
     public class IsisBehavior : Behavior
     {
         [RequiredComponent()]
@@ -42,6 +44,14 @@ namespace KeyEventsAnimationProject
         protected override void Initialize()
         {
             base.Initialize();
+
+            // Add the key frames. The first parameter is the name of the animation, the second the number of frames and the third the name of the event. As you can see, we raise two events when
+            // the animation is "Attack" ( see the Animation3D example for further information ). The first event is raised on frame 10 and the second on frame 25. See the SpankerBehavior class          
+            Animation.AddKeyFrameEvent("Jog", 1, "DoFootstep")
+            .AddKeyFrameEvent("Jog", 14, "DoFootstep")
+            .AddKeyFrameEvent("Jog", 26, "DoFootstep")
+            .AddKeyFrameEvent("Jog", 39, "DoFootstep");
+            
 
             // Add the event to the animation 3D. This event is captured on configured key event previously.
             Animation.OnKeyFrameEvent += new EventHandler<WaveEngine.Common.Helpers.StringEventArgs>(Animation_OnKeyFrameEvent);
