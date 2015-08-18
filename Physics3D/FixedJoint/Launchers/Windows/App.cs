@@ -1,13 +1,3 @@
-#region File Description
-//-----------------------------------------------------------------------------
-// MainApp
-//
-// Copyright © 2013 Plain Concepts. All rights reserved.
-// Use is subject to license terms.
-//-----------------------------------------------------------------------------
-#endregion
-
-#region Using Statements
 using System;
 using System.IO;
 using System.Reflection;
@@ -16,58 +6,36 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using ProjectGame = TeapotSample.Game;
-#endregion
 
-namespace WaveWPF
+namespace FixedJoint
 {
-    /// <summary>
-    /// The MainGame app
-    /// </summary>
-    public class MainApp : WaveEngine.Adapter.WPFApplication
+    public class App : WaveEngine.Adapter.Application
     {
-        /// <summary>
-        /// Gets the game.
-        /// </summary>
-        /// <value>
-        /// The game.
-        /// </value>
-        public ProjectGame Game
+        FixedJoint.Game game;
+        SpriteBatch spriteBatch;
+        Texture2D splashScreen;
+        bool splashState = true;
+        TimeSpan time;
+        Vector2 position;
+        Color backgroundSplashColor;
+		
+        public App()
         {
-            get;
-            private set;
+            this.Width = 1280;
+            this.Height = 720;
+			this.FullScreen = false;
+			this.WindowTitle = "FixedJoint";
         }
 
-        private SpriteBatch spriteBatch;
-        private Texture2D splashScreen;
-        private bool splashState = true;
-        private TimeSpan time;
-        private Vector2 position;
-        private Color backgroundSplashColor;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainApp"/> class.
-        /// </summary>
-        /// <param name="width">The width.</param>
-        /// <param name="height">The height.</param>
-        public MainApp(int width, int height)
-            : base(width, height)
-        {
-        }
-
-        /// <summary>
-        /// Perform further custom initialize for this instance.
-        /// </summary>
-        /// <exception cref="System.InvalidProgramException">License terms not agreed.</exception>
         public override void Initialize()
         {
-            this.Game = new ProjectGame();
-            this.Game.Initialize(this);
-
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+            this.game = new FixedJoint.Game();
+            this.game.Initialize(this);
+			
+			#region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
+            
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -96,15 +64,16 @@ namespace WaveWPF
             #endregion
         }
 
-        /// <summary>
-        /// Perform further custom update for this instance.
-        /// </summary>
-        /// <param name="elapsedTime">Elapsed time from the last update.</param>
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.Game != null && !this.Game.HasExited)
+             if (this.game != null && !this.game.HasExited)
             {
-                if (this.splashState)
+                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
+                {
+                    this.FullScreen = !this.FullScreen;
+                }
+
+				if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -116,18 +85,21 @@ namespace WaveWPF
                 }
                 else
                 {
-                    this.Game.UpdateFrame(elapsedTime);
+                    if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
+                    {
+                        WaveServices.Platform.Exit();
+                    }
+                    else
+                    {
+                        this.game.UpdateFrame(elapsedTime);
+                    }
                 }
             }
         }
 
-        /// <summary>
-        /// Perform further custom draw for this instance.
-        /// </summary>
-        /// <param name="elapsedTime">Elapsed time from the last draw.</param>
         public override void Draw(TimeSpan elapsedTime)
         {
-            if (this.Game != null && !this.Game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (this.splashState)
                 {
@@ -140,9 +112,34 @@ namespace WaveWPF
                 }
                 else
                 {
-                    this.Game.DrawFrame(elapsedTime);
+                    this.game.DrawFrame(elapsedTime);
                 }
             }
         }
-    }
+
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
+        {
+            base.OnActivated();
+            if (this.game != null)
+            {
+                game.OnActivated();
+            }
+        }
+
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
+        {
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                game.OnDeactivated();
+            }
+        }
+	}
 }
+

@@ -1,56 +1,54 @@
-#region File Description
+﻿#region File Description
 //-----------------------------------------------------------------------------
-// MainApp
+// GameApp
 //
-// Copyright � 2013 Plain Concepts. All rights reserved.
+// Copyright © 2015 Wave Corporation
 // Use is subject to license terms.
 //-----------------------------------------------------------------------------
 #endregion
 
 #region Using Statements
 using System;
-using System.IO;
-using System.Reflection;
-using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Input;
-using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Common.Graphics;
 using WaveEngine.Framework.Services;
+using System.Reflection;
+using System.IO;
+using WaveEngine.Common.Input;
 using ProjectGame = TeapotSample.Game;
 #endregion
 
-namespace WaveWPF
+namespace WaveGTK.WaveIntegration
 {
     /// <summary>
-    /// The MainGame app
+    /// GameApp class Wave interop with GTK
     /// </summary>
-    public class MainApp : WaveEngine.Adapter.WPFApplication
+#if WINDOWS
+    public class GameApp : WaveEngine.Adapter.FormApplication
+#elif LINUX || MAC
+    public class GameApp : WaveEngine.Adapter.BaseApplication
+#endif
     {
+        ProjectGame game;
+        SpriteBatch spriteBatch;
+        Texture2D splashScreen;
+        bool splashState = true;
+        TimeSpan time;
+        Vector2 position;
+        Color backgroundSplashColor;
+
         /// <summary>
-        /// Gets the game.
+        /// Occurs when [initialized].
         /// </summary>
-        /// <value>
-        /// The game.
-        /// </value>
-        public ProjectGame Game
-        {
-            get;
-            private set;
-        }
-
-        private SpriteBatch spriteBatch;
-        private Texture2D splashScreen;
-        private bool splashState = true;
-        private TimeSpan time;
-        private Vector2 position;
-        private Color backgroundSplashColor;
+        public event EventHandler<ProjectGame> Initialized;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MainApp"/> class.
+        /// Initializes a new instance of the <see cref="GameApp" /> class.
         /// </summary>
         /// <param name="width">The width.</param>
         /// <param name="height">The height.</param>
-        public MainApp(int width, int height)
+        public GameApp(int width, int height)
             : base(width, height)
         {
         }
@@ -58,11 +56,10 @@ namespace WaveWPF
         /// <summary>
         /// Perform further custom initialize for this instance.
         /// </summary>
-        /// <exception cref="System.InvalidProgramException">License terms not agreed.</exception>
         public override void Initialize()
         {
-            this.Game = new ProjectGame();
-            this.Game.Initialize(this);
+            this.game = new ProjectGame();
+            this.game.Initialize(this);
 
             #region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
@@ -97,12 +94,12 @@ namespace WaveWPF
         }
 
         /// <summary>
-        /// Perform further custom update for this instance.
+        /// Called when updating the main loop.
         /// </summary>
         /// <param name="elapsedTime">Elapsed time from the last update.</param>
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.Game != null && !this.Game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (this.splashState)
                 {
@@ -116,18 +113,18 @@ namespace WaveWPF
                 }
                 else
                 {
-                    this.Game.UpdateFrame(elapsedTime);
+                    this.game.UpdateFrame(elapsedTime);
                 }
             }
         }
 
         /// <summary>
-        /// Perform further custom draw for this instance.
+        /// Called when drawing the main loop.
         /// </summary>
         /// <param name="elapsedTime">Elapsed time from the last draw.</param>
         public override void Draw(TimeSpan elapsedTime)
         {
-            if (this.Game != null && !this.Game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (this.splashState)
                 {
@@ -140,8 +137,32 @@ namespace WaveWPF
                 }
                 else
                 {
-                    this.Game.DrawFrame(elapsedTime);
+                    this.game.DrawFrame(elapsedTime);
                 }
+            }
+        }
+
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
+        {
+            base.OnActivated();
+            if (this.game != null)
+            {
+                this.game.OnActivated();
+            }
+        }
+
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
+        {
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                this.game.OnDeactivated();
             }
         }
     }
