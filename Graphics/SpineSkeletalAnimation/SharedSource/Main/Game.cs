@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace SpineSkeletalAnimationProject
+namespace SpineSkeletalAnimation
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,11 +14,8 @@ namespace SpineSkeletalAnimationProject
         {
             base.Initialize(application);
 
-            ViewportManager vm = WaveServices.GetService<ViewportManager>();
-            vm.Activate(800, 480, ViewportManager.StretchMode.Fill);
-
-            ScreenContext screenContext = new ScreenContext(new MyScene());
-            WaveServices.ScreenContextManager.To(screenContext);
+			ScreenContext screenContext = new ScreenContext(new MyScene());	
+			WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

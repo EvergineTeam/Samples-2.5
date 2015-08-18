@@ -15,7 +15,7 @@ using WaveEngine.Framework.UI;
 using WaveEngine.Spine;
 #endregion
 
-namespace SpineSkeletalAnimationProject
+namespace SpineSkeletalAnimation
 {
     public class MyScene : Scene
     {
@@ -23,24 +23,7 @@ namespace SpineSkeletalAnimationProject
 
         protected override void CreateScene()
         {
-            FixedCamera2D camera2D = new FixedCamera2D("camera");
-            camera2D.BackgroundColor = Color.CornflowerBlue;
-            EntityManager.Add(camera2D);            
-
-            //"spineboy","walk"),
-            //"powerup","animation"),
-
-            string file = "spineboy";
-
-            var ratio = WaveServices.ViewportManager.RatioX;
-
-            this.skeleton = new Entity("Spine")
-                            .AddComponent(new Transform2D() { X = 350, Y = 460, XScale = 1, YScale = 1 })
-                            .AddComponent(new SkeletalData("Content/" + file + ".atlas"))
-                            .AddComponent(new SkeletalAnimation("Content/" + file + ".json"))
-                            .AddComponent(new SkeletalRenderer() { ActualDebugMode = SkeletalRenderer.DebugMode.None });
-
-            EntityManager.Add(this.skeleton);
+            this.Load(@"Content/Scenes/MyScene.wscene");
 
             #region UI
             Slider slider1 = new Slider()
