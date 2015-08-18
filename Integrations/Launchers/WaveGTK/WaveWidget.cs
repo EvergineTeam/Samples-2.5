@@ -10,23 +10,24 @@ using System.Threading;
 using System.Threading.Tasks;
 using WaveEngine.Common.Input;
 using WaveEngine.Framework.Services;
+using WaveGTK.WaveIntegration;
 #endregion
 
 namespace WaveGTK
 {
-    public class WaveWidget : DrawingArea
+    /// <summary>
+    /// WaveWidget for GTK
+    /// </summary>
+    [System.ComponentModel.ToolboxItem(true)]
+#if WINDOWS
+    public partial class WaveWidget : DirectXWidget
+#elif LINUX || MAC
+     public partial class WaveWidget : OpenTKWidget
+#endif
     {
-        [DllImport("libgdk-win32-2.0-0.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr gdk_win32_drawable_get_handle(IntPtr d);
-
-        private bool isRendering;
-
-        private GameApp gameApp;
         private WaveEngine.Framework.Services.Input input;
 
-        public IntPtr WindowsHandler { get; private set; }
         public bool isMinimized { get; set; }
-        public bool IsDisposed { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WaveWidget" /> class.
@@ -36,99 +37,14 @@ namespace WaveGTK
             this.WidthRequest = 800;
             this.HeightRequest = 600;
             this.CanFocus = true;
-
-            this.Realized += OnRealized;
-        }
-
-        /// <summary>
-        /// Called when [timer].
-        /// </summary>
-        /// <returns></returns>
-        private bool OnTimer()
-        {
-            if (this.IsDisposed)
-            {
-                return false;
-            }
-            else
-            {
-                if (!this.isRendering && !this.isMinimized)
-                {
-                    System.Threading.Tasks.Task.Factory.StartNew(() =>
-                    {
-                        lock (this)
-                        {
-                            this.isRendering = true;
-                            this.gameApp.Render();
-                            this.isRendering = false;
-                        }
-                    });
-                }
-                return true;
-            }
-        }
-
-        /// <summary>
-        /// Called when [realized].
-        /// </summary>
-        /// <param name="o">The o.</param>
-        /// <param name="args">The <see cref="EventArgs" /> instance containing the event data.</param>         
-        private void OnRealized(object o, EventArgs args)
-        {
-            this.WindowsHandler = gdk_win32_drawable_get_handle(this.GdkWindow.Handle);
-
-            this.gameApp = new GameApp(this.WidthRequest, this.HeightRequest);
-            this.gameApp.Configure(WindowsHandler);
-
             this.AddEvents((int)
-                            (EventMask.ButtonPressMask
-                            | EventMask.ButtonReleaseMask
-                            | EventMask.KeyPressMask
-                            | EventMask.KeyReleaseMask
-                            | EventMask.PointerMotionMask
-                            | EventMask.ScrollMask));
-
-            this.GdkWindow.Background = new Gdk.Color(0, 0, 0);
-
-            this.isRendering = true;
-
-            // 60 fps
-            GLib.Timeout.Add(16, new GLib.TimeoutHandler(OnTimer));
+                                (EventMask.ButtonPressMask
+                               | EventMask.ButtonReleaseMask
+                               | EventMask.KeyPressMask
+                               | EventMask.KeyReleaseMask
+                               | EventMask.PointerMotionMask
+                               | EventMask.ScrollMask));
         }
-
-        /// <summary>
-        /// Called when [expose event].
-        /// </summary>
-        /// <param name="evnt">The evnt.</param>
-        /// <returns></returns>
-        protected override bool OnExposeEvent(Gdk.EventExpose evnt)
-        {
-            bool result = base.OnExposeEvent(evnt);
-
-            evnt.Window.Display.Sync();
-
-            return result;
-        }
-
-        /// <summary>
-        /// Called when [configure event].
-        /// </summary>
-        /// <param name="evnt">The evnt.</param>
-        /// <returns></returns>
-        protected override bool OnConfigureEvent(EventConfigure evnt)
-        {
-            bool result = base.OnConfigureEvent(evnt);
-
-            this.isRendering = true;
-            if (evnt.Width > 1 && evnt.Height > 1)
-            {
-                this.gameApp.ResizeScreen(evnt.Width, evnt.Height);
-            }
-
-            this.isRendering = false;
-
-            return result;
-        }       
 
         #region MouseEvents
         /// <summary>
@@ -253,13 +169,22 @@ namespace WaveGTK
                 case Gdk.Key.a:
                     this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.A:
+                    this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.b:
+                    this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.B:
                     this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.BackSpace:
                     this.input.KeyboardState.Back = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.c:
+                    this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.C:
                     this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Shift_Lock:
@@ -269,6 +194,9 @@ namespace WaveGTK
                     this.input.KeyboardState.Crsel = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.d:
+                    this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.D:
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_0:
@@ -310,6 +238,9 @@ namespace WaveGTK
                 case Gdk.Key.e:
                     this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.E:
+                    this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.Return:
                     this.input.KeyboardState.Enter = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
@@ -320,6 +251,9 @@ namespace WaveGTK
                     this.input.KeyboardState.Execute = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.f:
+                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.F:
                     this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.F1:
@@ -361,19 +295,37 @@ namespace WaveGTK
                 case Gdk.Key.g:
                     this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.G:
+                    this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.h:
+                    this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.H:
                     this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.i:
                     this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.I:
+                    this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.j:
+                    this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.J:
                     this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.k:
                     this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.K:
+                    this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.l:
+                    this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.L:
                     this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Left:
@@ -391,19 +343,37 @@ namespace WaveGTK
                 case Gdk.Key.m:
                     this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.M:
+                    this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.n:
+                    this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.N:
                     this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.o:
                     this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.O:
+                    this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.p:
+                    this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.P:
                     this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.q:
                     this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.Q:
+                    this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.r:
+                    this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.R:
                     this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Right:
@@ -421,6 +391,9 @@ namespace WaveGTK
                 case Gdk.Key.s:
                     this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.S:
+                    this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.space:
                     this.input.KeyboardState.Space = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
@@ -430,10 +403,16 @@ namespace WaveGTK
                 case Gdk.Key.t:
                     this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.T:
+                    this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.Tab:
                     this.input.KeyboardState.Tab = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.u:
+                    this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.U:
                     this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Up:
@@ -442,22 +421,35 @@ namespace WaveGTK
                 case Gdk.Key.v:
                     this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.V:
+                    this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.w:
+                    this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.W:
                     this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.x:
                     this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.X:
+                    this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
                 case Gdk.Key.y:
+                    this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
+                case Gdk.Key.Y:
                     this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.z:
                     this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
+                case Gdk.Key.Z:
+                    this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Pressed;
+                    break;
             }
             #endregion
-
-            //System.Console.WriteLine("pressed {0}", evnt.Key);
 
             return base.OnKeyPressEvent(evnt);
         }
@@ -476,13 +468,22 @@ namespace WaveGTK
                 case Gdk.Key.a:
                     this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.A:
+                    this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.b:
+                    this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.B:
                     this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.BackSpace:
                     this.input.KeyboardState.Back = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.c:
+                    this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.C:
                     this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Shift_Lock:
@@ -492,6 +493,9 @@ namespace WaveGTK
                     this.input.KeyboardState.Crsel = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.d:
+                    this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.D:
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_0:
@@ -533,6 +537,9 @@ namespace WaveGTK
                 case Gdk.Key.e:
                     this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.E:
+                    this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.Return:
                     this.input.KeyboardState.Enter = WaveEngine.Common.Input.ButtonState.Release;
                     break;
@@ -543,6 +550,9 @@ namespace WaveGTK
                     this.input.KeyboardState.Execute = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.f:
+                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.F:
                     this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.F1:
@@ -584,19 +594,37 @@ namespace WaveGTK
                 case Gdk.Key.g:
                     this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.G:
+                    this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.h:
+                    this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.H:
                     this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.i:
                     this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.I:
+                    this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.j:
+                    this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.J:
                     this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.k:
                     this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.K:
+                    this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.l:
+                    this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.L:
                     this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Left:
@@ -614,19 +642,37 @@ namespace WaveGTK
                 case Gdk.Key.m:
                     this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.M:
+                    this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.n:
+                    this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.N:
                     this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.o:
                     this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.O:
+                    this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.p:
+                    this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.P:
                     this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.q:
                     this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.Q:
+                    this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.r:
+                    this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.R:
                     this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Right:
@@ -644,6 +690,9 @@ namespace WaveGTK
                 case Gdk.Key.s:
                     this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.S:
+                    this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.space:
                     this.input.KeyboardState.Space = WaveEngine.Common.Input.ButtonState.Release;
                     break;
@@ -653,10 +702,16 @@ namespace WaveGTK
                 case Gdk.Key.t:
                     this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.T:
+                    this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.Tab:
                     this.input.KeyboardState.Tab = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.u:
+                    this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.U:
                     this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Up:
@@ -665,16 +720,31 @@ namespace WaveGTK
                 case Gdk.Key.v:
                     this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.V:
+                    this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.w:
+                    this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.W:
                     this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.x:
                     this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.X:
+                    this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.y:
                     this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Release;
                     break;
+                case Gdk.Key.Y:
+                    this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
                 case Gdk.Key.z:
+                    this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Release;
+                    break;
+                case Gdk.Key.Z:
                     this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Release;
                     break;
             }
@@ -683,18 +753,5 @@ namespace WaveGTK
             return base.OnKeyReleaseEvent(evnt);
         }
         #endregion
-
-        /// <summary>
-        /// Called when [destroyed]. (Dispose)
-        /// </summary>
-        protected override void OnDestroyed()
-        {
-            base.OnDestroyed();
-
-            this.IsDisposed = true;
-
-            this.gameApp.OnDeactivate();
-            this.gameApp.Dispose();
-        }
     }
 }
