@@ -12,26 +12,63 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
+using WaveEngine.Materials;
 #endregion
 
 namespace VideoPlayer
 {
     public class MyScene : Scene
     {
+        /// <summary>
+        /// Gets or sets the play BTN.
+        /// </summary>
+        /// <value>
+        /// The play BTN.
+        /// </value>
         public Button PlayBtn { get; set; }
+
+        /// <summary>
+        /// Gets or sets the pause BTN.
+        /// </summary>
+        /// <value>
+        /// The pause BTN.
+        /// </value>
         public Button PauseBtn { get; set; }
-        public VideoInfo Video1 { get; set; }
-        public VideoInfo Video2 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the bunny video.
+        /// </summary>
+        /// <value>
+        /// The bunny video.
+        /// </value>
+        public VideoInfo bunnyVideo { get; set; }
+
+        /// <summary>
+        /// Gets or sets the bear video.
+        /// </summary>
+        /// <value>
+        /// The bear video.
+        /// </value>
+        public VideoInfo bearVideo { get; set; }
+
+        /// <summary>
+        /// The tv room entity
+        /// </summary>
+        Entity TvRoomEntity;
 
         protected override void CreateScene()
         {
             this.Load(@"Content/Scenes/MyScene.wscene");
 
-            this.Video1 = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bunny.mp4");
-            this.Video2 = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bear.mp4");
+            this.bunnyVideo = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bunny.mp4");
+            this.bearVideo = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bear.mp4");
+
+            this.TvRoomEntity = this.EntityManager.Find("tvEntity");
 
             WaveServices.VideoPlayer.IsLooped = true;
-            WaveServices.VideoPlayer.Play(this.Video1);
+            WaveServices.VideoPlayer.Play(this.bunnyVideo);
+
+
 
             StackPanel controlPanel = new StackPanel()
             {
@@ -65,7 +102,7 @@ namespace VideoPlayer
             };
             radioButton1.Checked += (e, s) =>
             {
-                WaveServices.VideoPlayer.Play(this.Video1);
+                WaveServices.VideoPlayer.Play(this.bunnyVideo);
 
             };
             controlPanel.Add(radioButton1);
@@ -78,7 +115,7 @@ namespace VideoPlayer
             };
             radioButton2.Checked += (e, s) =>
             {
-                WaveServices.VideoPlayer.Play(this.Video2);
+                WaveServices.VideoPlayer.Play(this.bearVideo);
             };
             controlPanel.Add(radioButton2);
 
@@ -116,6 +153,13 @@ namespace VideoPlayer
             controlPanel.Add(PauseBtn);
 
             EntityManager.Add(controlPanel);
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+
+            this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.VideoPlayer.VideoTexture);
         }
     }
 }

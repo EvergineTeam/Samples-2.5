@@ -138,7 +138,7 @@ namespace CameraCapture
                 WaveServices.VideoPlayer.OnComplete += (s, e) => { this.StopVideo(); };
                 WaveServices.CameraCapture.Start(CameraCaptureType.Front);
 
-                //this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new BasicMaterial(WaveServices.CameraCapture.PreviewTexture);
+                this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.CameraCapture.PreviewTexture);
                 this.TvRoomEntity.RefreshDependencies();
             }
         }
@@ -194,7 +194,7 @@ namespace CameraCapture
 
 
                 this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.VideoPlayer.VideoTexture);
-                
+
                 this.TvRoomEntity.RefreshDependencies();
 
                 this.PlayRecordedButton.Text = "Stop";
