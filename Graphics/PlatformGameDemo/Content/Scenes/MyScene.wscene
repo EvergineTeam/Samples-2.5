@@ -113,7 +113,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Sky.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Sky.jpg.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -169,7 +169,7 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:spriteSheetPath>Content/Assets/TimSpriteSheet.wpk</d5p1:spriteSheetPath>
+          <d5p1:spriteSheetPath>Content/Assets/TimSpriteSheet.spritesheet.wpk</d5p1:spriteSheetPath>
           <d5p1:textureName>slice01_01</d5p1:textureName>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteAtlasRenderer">
@@ -240,7 +240,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Floor.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Floor.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -297,7 +297,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Credits.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Credits.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
