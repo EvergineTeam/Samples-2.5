@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -7,12 +7,11 @@
     <ProjectGuid>{8F3605A3-8720-48F7-8799-A33CD4ACCB97}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpineSkeletalAnimation</RootNamespace>
-    <AssemblyName>SpineSkeletalAnimation</AssemblyName>
+    <RootNamespace>NormalMap</RootNamespace>
+    <AssemblyName>NormalMap</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>13138a26</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -36,21 +35,24 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Adapter, Version=1.9.11.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
+    <Reference Include="WaveEngine.Adapter">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.1.9.11-beta-4\lib\net45\WaveEngine.Adapter.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Common, Version=1.9.11.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
+    <Reference Include="WaveEngine.Common">
       <HintPath>..\..\packages\WaveEngine.Common.1.9.11-beta-4\lib\net45\WaveEngine.Common.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Components, Version=1.9.11.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Components.1.9.11-beta-4\lib\net45\WaveEngine.Components.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WaveEngine.Framework, Version=1.9.11.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
+    <Reference Include="WaveEngine.Framework">
       <HintPath>..\..\packages\WaveEngine.Framework.1.9.11-beta-4\lib\net45\WaveEngine.Framework.dll</HintPath>
-      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Components">
+      <HintPath>..\..\packages\WaveEngine.Components.1.9.11-beta-4\lib\net45\WaveEngine.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Materials">
+      <HintPath>..\..\packages\WaveEngine.Materials.1.9.11-beta-4\lib\net45\WaveEngine.Materials.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.1.9.11-beta-4\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,22 +61,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="WaveEngine.ImageEffects, Version=1.9.11.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.1.9.11-beta-4\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WaveEngine.Materials, Version=1.9.11.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Materials.1.9.11-beta-4\lib\net45\WaveEngine.Materials.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WaveEngine.Spine, Version=1.9.11.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Spine.1.9.11-beta-4\lib\net45\WaveEngine.Spine.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="WaveEngine.Targets.Tasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.1.9.11-beta-4\lib\WaveEngine.Targets.Tasks.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
@@ -82,13 +68,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
     <EmbeddedResource Include="SplashScreen.wpk" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="..\..\SharedSource\Main\SpineSkeletalAnimationSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\SpineSkeletalAnimationSource.projitems')" />
+  </ItemGroup>    
+  <Import Project="..\..\SharedSource\Main\NormalMapSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\NormalMapSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
   <Import Project="..\..\packages\WaveEngine.1.9.11-beta-4\build\net45\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.1.9.11-beta-4\build\net45\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -96,6 +79,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\WaveEngine.1.9.11-beta-4\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.1.9.11-beta-4\build\net45\WaveEngine.targets'))" />
   </Target>
+  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

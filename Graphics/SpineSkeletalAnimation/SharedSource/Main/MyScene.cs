@@ -25,6 +25,8 @@ namespace SpineSkeletalAnimation
         {
             this.Load(@"Content/Scenes/MyScene.wscene");
 
+            this.skeleton = EntityManager.Find("skeleton");
+
             #region UI
             Slider slider1 = new Slider()
             {
