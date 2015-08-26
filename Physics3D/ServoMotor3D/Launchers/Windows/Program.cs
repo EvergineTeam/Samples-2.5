@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace ServoMotor3DSample
+namespace ServoMotor3D
 {
     static class Program
     {
-        [STAThread]
+		[STAThread]
         static void Main()
         {
             using (App game = new App())
