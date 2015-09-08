@@ -11,31 +11,31 @@ namespace Lines
 {
     public class App : WaveEngine.Adapter.Application
     {
-        LinesProject.Game game;
+        Lines.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-
+		
         public App()
         {
-            this.Width = 800;
-            this.Height = 600;
-            this.FullScreen = false;
-            this.WindowTitle = "Lines";
+            this.Width = 1280;
+            this.Height = 720;
+			this.FullScreen = false;
+			this.WindowTitle = "Lines";
         }
 
         public override void Initialize()
         {
-            this.game = new LinesProject.Game();
+            this.game = new Lines.Game();
             this.game.Initialize(this);
-
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+			
+			#region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
+            
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -66,14 +66,14 @@ namespace Lines
 
         public override void Update(TimeSpan elapsedTime)
         {
-            if (this.game != null && !this.game.HasExited)
+             if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-                if (this.splashState)
+				if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -106,7 +106,7 @@ namespace Lines
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.DrawVM(this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render();
                     #endregion
                 }
@@ -140,6 +140,6 @@ namespace Lines
                 game.OnDeactivated();
             }
         }
-    }
+	}
 }
 

@@ -10,6 +10,7 @@
 #region Using Statements
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Diagnostic;
@@ -17,25 +18,40 @@ using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace LinesProject
+namespace Lines
 {
+    [DataContract]
     public class DrawableLines : Drawable3D
     {
-        private float size = 200;
+        public int StartingLinesCount { get; set; }
+
+        public int MaxLinesCount { get; set; }
+
+        public int Size { get; set; }
+
         private List<Line> lines;
         private Line l;
         private WaveEngine.Framework.Services.Random random;
-        private double time;
 
-        public DrawableLines(int numOfLines)
-            : base("DrawableLines")//, Layer.Opaque)
+        public DrawableLines()
+            : base("DrawableLines")
         {
+        }
+
+        protected override void DefaultValues()
+        {
+            StartingLinesCount = 1;
+            MaxLinesCount = 66000;
+            Size = 200;
             lines = new List<Line>();
             random = WaveServices.Random;
 
             l = new Line();
+        }
 
-            for (int i = 0; i < numOfLines; i++)
+        protected override void Initialize()
+        {
+            for (int i = 0; i < StartingLinesCount; i++)
             {
                 AddNewLine();
             }
@@ -43,6 +59,7 @@ namespace LinesProject
 
         private void AddNewLine()
         {
+            var size = Size;
             l.StartPoint = new Vector3((float)random.NextDouble() * size * (float)Math.Pow(-1, random.Next()),
                                         (float)random.NextDouble() * size * (float)Math.Pow(-1, random.Next()),
                                         (float)random.NextDouble() * size * (float)Math.Pow(-1, random.Next()));
@@ -58,7 +75,7 @@ namespace LinesProject
 
         public override void Draw(TimeSpan gameTime)
         {
-            if (lines.Count < 66000)
+            if (lines.Count < MaxLinesCount)
             {
                 for (int i = 0; i < 2; i++)
                 {

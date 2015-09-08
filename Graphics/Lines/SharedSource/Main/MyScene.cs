@@ -12,20 +12,13 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace LinesProject
+namespace Lines
 {
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {            
-            ViewCamera mainCamera = new ViewCamera("MainCamera", new Vector3(500, 500, 500), Vector3.Zero);
-            mainCamera.BackgroundColor = Color.Black;
-            EntityManager.Add(mainCamera.Entity);            
-
-            Entity drawable = new Entity("Drawable")
-                .AddComponent(new DrawableLines(1));
-
-            EntityManager.Add(drawable);
+        {
+            this.Load(WaveContent.Scenes.MyScene);           
         }
     }
 }
