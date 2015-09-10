@@ -1,1 +1,0 @@
-To play the application with Vuforia, launch the App on a iOS device, and print the pattern file (Pattern/stones.jpg)
