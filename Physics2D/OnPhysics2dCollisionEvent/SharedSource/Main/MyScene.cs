@@ -17,13 +17,10 @@ using WaveEngine.Framework.Services;
 namespace OnPhysics2dCollisionEvent
 {
     public class MyScene : Scene
-    {
-        private const string MARKER_TEXTURE = "Content/Assets/Mark";
-        private const string ARROW_TEXTURE = "Content/Assets/Arrow";
-
+    {                
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             var collidables = this.EntityManager.FindAllByTag("CollidableEntity");
 
@@ -64,13 +61,13 @@ namespace OnPhysics2dCollisionEvent
         {
             Entity mark = new Entity()
                 .AddComponent(new Transform2D() { X = x - 7, Y = y - 7 })
-                .AddComponent(new Sprite(MARKER_TEXTURE))
+                .AddComponent(new Sprite(WaveContent.Assets.Mark_png))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(mark);
 
             Entity arrow = new Entity()
                 .AddComponent(new Transform2D() { Origin = new Vector2(0.5f, 1), X = x, Y = y, Rotation = angle })
-                .AddComponent(new Sprite(ARROW_TEXTURE))
+                .AddComponent(new Sprite(WaveContent.Assets.Arrow_png))
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
             EntityManager.Add(arrow);
 

@@ -20,7 +20,7 @@ namespace BasicRigidBody
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
         }
     }
 }

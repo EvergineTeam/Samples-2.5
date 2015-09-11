@@ -18,7 +18,7 @@ namespace Bounciness
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");           
+            this.Load(WaveContent.Scenes.MyScene);           
         }
     }
 }
