@@ -48,7 +48,7 @@ namespace Rope
 
                     var direction = Camera.Transform.WorldTransform.Forward;
                     direction.Normalize();
-                    rigidBody.ApplyLinearImpulse(100 * direction);
+                    rigidBody.ApplyLinearImpulse(40 * direction);
                 }
             }
             else
