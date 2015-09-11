@@ -136,14 +136,14 @@
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.FBX.wpk</ModelPath>
+          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.fbx.wpk</ModelPath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-          <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
-          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:CurrentAnimation></d5p1:CurrentAnimation>
+          <d5p1:PlayAutomatically>false</d5p1:PlayAutomatically>
           <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
           <d5p1:animationPath i:nil="true" />
         </d2p1:Component>
@@ -834,7 +834,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -875,7 +875,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -916,7 +916,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -957,7 +957,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -998,7 +998,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -1039,7 +1039,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -1080,7 +1080,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
@@ -1121,7 +1121,7 @@
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
-              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+              <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.FBX.wpk</ModelPath>
