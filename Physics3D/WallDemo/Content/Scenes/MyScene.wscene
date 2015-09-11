@@ -9,15 +9,15 @@
       <d2p1:SerializeComponents>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.9522955</d6p1:W>
-            <d6p1:X>-0.305179149</d6p1:X>
+            <d6p1:W>0.977592945</d6p1:W>
+            <d6p1:X>-0.210504323</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>2.18155217</d6p1:Y>
-            <d6p1:Z>2.254171</d6p1:Z>
+            <d6p1:X>-0.762585461</d6p1:X>
+            <d6p1:Y>1.5798912</d6p1:Y>
+            <d6p1:Z>1.44506657</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -42,7 +42,7 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.43220341</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -6057,10 +6057,10 @@
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
+          <d5p1:EnableContinuousContact>true</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
+          <d5p1:Mass>2</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
