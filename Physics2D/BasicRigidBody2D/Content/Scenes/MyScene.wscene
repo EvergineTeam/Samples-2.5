@@ -212,7 +212,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/groundSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/groundSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -328,7 +328,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/circleSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/circleSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -436,7 +436,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -552,7 +552,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -668,7 +668,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -784,7 +784,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -900,7 +900,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1016,7 +1016,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1132,7 +1132,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1248,7 +1248,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/boxSprite.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/boxSprite.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
