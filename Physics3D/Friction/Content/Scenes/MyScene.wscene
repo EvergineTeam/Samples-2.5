@@ -229,11 +229,6 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>true</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
@@ -303,11 +298,6 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.04</d5p1:KineticFriction>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.04</d5p1:StaticFriction>
@@ -377,11 +367,6 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.1</d5p1:KineticFriction>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.1</d5p1:StaticFriction>
@@ -451,11 +436,6 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.2</d5p1:KineticFriction>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.2</d5p1:StaticFriction>
@@ -525,11 +505,6 @@
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.3</d5p1:StaticFriction>
