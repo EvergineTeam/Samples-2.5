@@ -18,7 +18,7 @@ namespace FixedMouseJoint2DSample
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             // Adds Mouse control. See MouseBehavior.cs for details.
             this.AddSceneBehavior(new MouseBehavior(), SceneBehavior.Order.PostUpdate);
