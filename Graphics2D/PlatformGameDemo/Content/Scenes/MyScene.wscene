@@ -151,8 +151,8 @@
           <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>69</d6p1:Height>
-            <d6p1:Width>41</d6p1:Width>
+            <d6p1:Height>137</d6p1:Height>
+            <d6p1:Width>81</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
@@ -169,8 +169,8 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:spriteSheetPath>Content/Assets/TimSpriteSheet.spritesheet.wpk</d5p1:spriteSheetPath>
-          <d5p1:textureName>slice01_01</d5p1:textureName>
+          <d5p1:spriteSheetPath>Content/Assets/Tim.spritesheet.wpk</d5p1:spriteSheetPath>
+          <d5p1:textureName>tim_01</d5p1:textureName>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteAtlasRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
