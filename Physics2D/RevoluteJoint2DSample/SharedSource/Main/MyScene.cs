@@ -19,18 +19,12 @@ namespace RevoluteJoint2DSample
     {
         private const int BRIDGE_CHAIN_LINKS = 30;
 
-        private const string BRIDGE_LINK1_FILENAME = "Content/Assets/Wood20x5a.wpk";
-        private const string BRIDGE_LINK2_FILENAME = "Content/Assets/Wood20x5b.wpk";
-        private const string BRIDGE_LINK3_FILENAME = "Content/Assets/Wood20x5c.wpk";
-        private const string CRATE1_FILENAME = "Content/Assets/CrateA.wpk";
-        private const string CRATE2_FILENAME = "Content/Assets/CrateB.wpk";
-
         // Instance count. Use to create different entity names.
         private static long instances = 0;
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             Entity pin01 = this.EntityManager.Find("pin01");
             Transform2D pin01Transform = pin01.FindComponent<Transform2D>();
@@ -119,19 +113,19 @@ namespace RevoluteJoint2DSample
         private string GetRandomLinkFileName()
         {
             double random = WaveServices.Random.NextDouble();
-            string result = BRIDGE_LINK1_FILENAME;
+            string result = WaveContent.Assets.Wood20x5a_png;
 
             if (random >= 0 && random < 1d / 3d)
             {
-                result = BRIDGE_LINK1_FILENAME;
+                result = WaveContent.Assets.Wood20x5a_png;
             }
             else if (random >= 1d / 3d && random < 2d / 3d)
             {
-                result = BRIDGE_LINK2_FILENAME;
+                result = WaveContent.Assets.Wood20x5b_png;
             }
             else
             {
-                result = BRIDGE_LINK3_FILENAME;
+                result = WaveContent.Assets.Wood20x5c_png;
             }
 
             return result;
@@ -144,11 +138,11 @@ namespace RevoluteJoint2DSample
         private string GetRandomCrateFileName()
         {
             double random = WaveServices.Random.NextDouble();
-            string result = CRATE1_FILENAME;
+            string result = WaveContent.Assets.CrateA_png;
 
             if (random >= 0.5d)
             {
-                result = CRATE2_FILENAME;
+                result = WaveContent.Assets.CrateB_png;
             }
 
             return result;
