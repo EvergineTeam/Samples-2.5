@@ -19,6 +19,8 @@ namespace StaticBatching
     {
         protected override void CreateScene()
         {
+            WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
+
             this.Load(WaveContent.Scenes.MyScene);
 
             // Now Activate All IsStatic entites

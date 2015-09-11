@@ -1,14 +1,13 @@
 using System;
-using System.Diagnostics;
-using System.Windows.Forms;
-using WaveEngine.Adapter;
 
-namespace FrustumCulling
+namespace StaticBatching
 {
     static class Program
     {
-		[STAThread]
-        static void Main()
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        static void Main(string[] args)
         {
             using (App game = new App())
             {

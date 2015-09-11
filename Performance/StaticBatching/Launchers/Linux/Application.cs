@@ -1,41 +1,42 @@
 using System;
+using System.Collections.Generic;
+using WaveEngine.Framework.Services;
 using System.IO;
 using System.Reflection;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Services;
 
-namespace FrustumCulling
+namespace StaticBatching
 {
     public class App : WaveEngine.Adapter.Application
     {
-        FrustumCulling.Game game;
+        StaticBatching.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-		
+
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-			this.FullScreen = false;
-			this.WindowTitle = "FrustumCulling";
+            this.FullScreen = false;
+            this.WindowTitle = "StaticBatching";
         }
 
         public override void Initialize()
         {
-            this.game = new FrustumCulling.Game();
+            this.game = new StaticBatching.Game();
             this.game.Initialize(this);
-			
-			#region WAVE SOFTWARE LICENSE AGREEMENT
+
+            #region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-            
+
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -57,25 +58,23 @@ namespace FrustumCulling
             {
                 this.splashScreen = WaveServices.Assets.Global.LoadAsset<Texture2D>(name, stream);
             }
-
-            position = new Vector2();
-            position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
-            position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
             #endregion
         }
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-				if (this.splashState)
+                if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
+					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
                     {
@@ -97,7 +96,7 @@ namespace FrustumCulling
             }
         }
 
-        public override void Draw(TimeSpan elapsedTime)
+		public override void Draw(TimeSpan elapsedTime)
         {
             if (this.game != null && !this.game.HasExited)
             {
@@ -106,8 +105,8 @@ namespace FrustumCulling
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
-                    this.spriteBatch.Render();
+                    this.spriteBatch.DrawVM (this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Render ();
                     #endregion
                 }
                 else
@@ -116,30 +115,6 @@ namespace FrustumCulling
                 }
             }
         }
-
-        /// <summary>
-        /// Called when [activated].
-        /// </summary>
-        public override void OnActivated()
-        {
-            base.OnActivated();
-            if (this.game != null)
-            {
-                game.OnActivated();
-            }
-        }
-
-        /// <summary>
-        /// Called when [deactivate].
-        /// </summary>
-        public override void OnDeactivate()
-        {
-            base.OnDeactivate();
-            if (this.game != null)
-            {
-                game.OnDeactivated();
-            }
-        }
-	}
+    }
 }
 
