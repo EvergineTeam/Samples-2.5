@@ -13,5 +13,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ShootBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TimeAliveBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
   </ItemGroup>
 </Project>
