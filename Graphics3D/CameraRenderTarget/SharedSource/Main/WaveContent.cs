@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/11/2015 7:04:56 PM
+// File generated on 9/11/2015 8:00:27 PM
 namespace CameraRengerTarget
 {
     using System;
@@ -23,54 +23,36 @@ namespace CameraRengerTarget
             public sealed class Models
             {
                 
-                /// <summary> Path to Content/Assets/Models/isis </summary>
-                public const string isis = "Content/Assets/Models/isis";
+                /// <summary> Path to Content/Assets/Models/isis.FBX </summary>
+                public const string isis_FBX = "Content/Assets/Models/isis.FBX";
                 
-                /// <summary> Path to Content/Assets/Models/Stage </summary>
-                public const string Stage = "Content/Assets/Models/Stage";
+                /// <summary> Path to Content/Assets/Models/Stage.FBX </summary>
+                public const string Stage_FBX = "Content/Assets/Models/Stage.FBX";
             }
             
             public sealed class Textures
             {
                 
-                /// <summary> Path to Content/Assets/Textures/isis-difuse </summary>
-                public const string isis_difuse = "Content/Assets/Textures/isis-difuse";
+                /// <summary> Path to Content/Assets/Textures/isis-difuse.png </summary>
+                public const string isis_difuse_png = "Content/Assets/Textures/isis-difuse.png";
                 
-                /// <summary> Path to Content/Assets/Textures/isis-normal </summary>
-                public const string isis_normal = "Content/Assets/Textures/isis-normal";
+                /// <summary> Path to Content/Assets/Textures/stageCeiling_Diffuse.png </summary>
+                public const string stageCeiling_Diffuse_png = "Content/Assets/Textures/stageCeiling_Diffuse.png";
                 
-                /// <summary> Path to Content/Assets/Textures/stageCeiling_Diffuse </summary>
-                public const string stageCeiling_Diffuse = "Content/Assets/Textures/stageCeiling_Diffuse";
+                /// <summary> Path to Content/Assets/Textures/stageDoor_Diffuse.png </summary>
+                public const string stageDoor_Diffuse_png = "Content/Assets/Textures/stageDoor_Diffuse.png";
                 
-                /// <summary> Path to Content/Assets/Textures/stageCeiling_NormSpec </summary>
-                public const string stageCeiling_NormSpec = "Content/Assets/Textures/stageCeiling_NormSpec";
+                /// <summary> Path to Content/Assets/Textures/stageFloor_Diffuse.png </summary>
+                public const string stageFloor_Diffuse_png = "Content/Assets/Textures/stageFloor_Diffuse.png";
                 
-                /// <summary> Path to Content/Assets/Textures/stageDoor_Diffuse </summary>
-                public const string stageDoor_Diffuse = "Content/Assets/Textures/stageDoor_Diffuse";
+                /// <summary> Path to Content/Assets/Textures/stageLightingMap.png </summary>
+                public const string stageLightingMap_png = "Content/Assets/Textures/stageLightingMap.png";
                 
-                /// <summary> Path to Content/Assets/Textures/stageDoor_NormSpec </summary>
-                public const string stageDoor_NormSpec = "Content/Assets/Textures/stageDoor_NormSpec";
+                /// <summary> Path to Content/Assets/Textures/stageWall2_Diffuse.png </summary>
+                public const string stageWall2_Diffuse_png = "Content/Assets/Textures/stageWall2_Diffuse.png";
                 
-                /// <summary> Path to Content/Assets/Textures/stageFloor_Diffuse </summary>
-                public const string stageFloor_Diffuse = "Content/Assets/Textures/stageFloor_Diffuse";
-                
-                /// <summary> Path to Content/Assets/Textures/stageFloor_NormSpec </summary>
-                public const string stageFloor_NormSpec = "Content/Assets/Textures/stageFloor_NormSpec";
-                
-                /// <summary> Path to Content/Assets/Textures/stageLightingMap </summary>
-                public const string stageLightingMap = "Content/Assets/Textures/stageLightingMap";
-                
-                /// <summary> Path to Content/Assets/Textures/stageWall2_Diffuse </summary>
-                public const string stageWall2_Diffuse = "Content/Assets/Textures/stageWall2_Diffuse";
-                
-                /// <summary> Path to Content/Assets/Textures/stageWall2_NormSpec </summary>
-                public const string stageWall2_NormSpec = "Content/Assets/Textures/stageWall2_NormSpec";
-                
-                /// <summary> Path to Content/Assets/Textures/stageWall_Diffuse </summary>
-                public const string stageWall_Diffuse = "Content/Assets/Textures/stageWall_Diffuse";
-                
-                /// <summary> Path to Content/Assets/Textures/stageWall_NormSpec </summary>
-                public const string stageWall_NormSpec = "Content/Assets/Textures/stageWall_NormSpec";
+                /// <summary> Path to Content/Assets/Textures/stageWall_Diffuse.png </summary>
+                public const string stageWall_Diffuse_png = "Content/Assets/Textures/stageWall_Diffuse.png";
             }
             
             public sealed class Materials
