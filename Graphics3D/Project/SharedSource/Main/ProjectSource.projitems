@@ -13,5 +13,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PickingBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RandomColorAndPositionComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
   </ItemGroup>
 </Project>

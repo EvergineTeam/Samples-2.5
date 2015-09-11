@@ -22,7 +22,7 @@ namespace Project
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             // Add the textbox to show the picked entity
             instructions = new TextBlock()
