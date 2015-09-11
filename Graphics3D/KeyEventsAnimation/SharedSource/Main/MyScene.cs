@@ -28,7 +28,5 @@ namespace KeyEventsAnimation
             spankerSlamSounds.Add(SoundsManager.FootStep2);
             WaveServices.SoundPlayer.RegisterSoundBank(spankerSlamSounds);
         }
-
-
     }
 }

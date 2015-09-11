@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/17/2015 2:31:31 PM
+// File generated on 9/11/2015 5:52:58 PM
 namespace KeyEventsAnimation
 {
     using System;
