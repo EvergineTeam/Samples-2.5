@@ -44,18 +44,6 @@ namespace Billboard
 
                 if (flareEntity != null)
                 {
-                    var billboard = flareEntity.FindComponent<WaveEngine.Components.Graphics2D.Billboard>();
-                    billboard.TexturePath = "Content/Assets/flare.png";
-
-                    // TODO: We need to recreate the renderer since cannot access to sampler mode 
-                    //       within the Editor
-                    var flareBillboardRenderer = new BillboardRenderer(DefaultLayers.Alpha,
-                        AddressMode.PointClamp);
-
-                    flareEntity.RemoveComponent<BillboardRenderer>();
-                    flareEntity.AddComponent(flareBillboardRenderer);
-                    flareEntity.RefreshDependencies();
-
                     // TODO: Editor crashes when adding this behavior from the it-self
                     flareEntity.AddComponent(new FlareBehavior { Angle = angle, Speed = 1 });
                 }

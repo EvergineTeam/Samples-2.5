@@ -194,6 +194,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>Axial_Orientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -201,13 +206,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath>Content/Assets/tree.png</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/tree.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />
@@ -238,6 +243,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -245,13 +255,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
@@ -282,6 +292,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -289,13 +304,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
@@ -326,6 +341,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -333,13 +353,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
@@ -370,6 +390,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -377,13 +402,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
@@ -414,6 +439,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -421,13 +451,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
@@ -458,6 +488,11 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Billboard">
           <d5p1:BillboardType>PointOrientation</d5p1:BillboardType>
+          <d5p1:Origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:Origin>
+          <d5p1:Rotation>0</d5p1:Rotation>
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
@@ -465,13 +500,13 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
           <d5p1:isGlobalAsset>false</d5p1:isGlobalAsset>
-          <d5p1:texturePath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/flare.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Shared.Graphic3D" i:type="d5p1:BillboardRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
           <d5p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</d5p1:LayerTypeName>
-          <d5p1:samplerMode>LinearClamp</d5p1:samplerMode>
+          <d5p1:samplerMode>PointClamp</d5p1:samplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>flares</d2p1:Tag>
