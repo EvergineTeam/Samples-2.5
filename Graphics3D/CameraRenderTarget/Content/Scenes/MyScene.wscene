@@ -178,7 +178,7 @@
               <d6p1:Value>Content/Assets/Materials/SecurityCam3Material.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
           </d5p1:MaterialsPath>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
