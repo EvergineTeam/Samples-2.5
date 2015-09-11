@@ -34,7 +34,7 @@ namespace CameraRengerTarget
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             this.cameras = new List<Camera3D>();
             this.cameraRenderTargets = new Dictionary<Camera3D, RenderTarget>();

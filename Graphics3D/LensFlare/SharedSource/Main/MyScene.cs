@@ -51,6 +51,7 @@ namespace LensFlare
             };
 
             skylight.AddComponent(flare);
+            skylight.AddComponent(new LensFlareBehavior());
             skylight.RefreshDependencies();
             
         }
