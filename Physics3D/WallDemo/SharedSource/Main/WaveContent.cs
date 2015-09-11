@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 28/08/2015 13:51:02
+// File generated on 11/09/2015 20:19:40
 namespace WallDemo
 {
     using System;

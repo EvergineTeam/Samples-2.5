@@ -43,12 +43,12 @@ namespace WallDemo
                         sphere = this.EntityManager.Find("ball");
                     }
 
-                    var rigidBody = sphere.FindComponent<RigidBody3D>();
+                    var rigidBody = sphere.FindComponent<RigidBody3D>();                    
                     rigidBody.ResetPosition(Camera.Position);
 
                     var direction = Camera.Transform.WorldTransform.Forward;
                     direction.Normalize();
-                    rigidBody.ApplyLinearImpulse(100 * direction);
+                    rigidBody.ApplyLinearImpulse(50 * direction);
                 }
             }
             else
