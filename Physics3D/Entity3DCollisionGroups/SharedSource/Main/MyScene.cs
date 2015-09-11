@@ -19,7 +19,7 @@ namespace Entity3DCollisionGroups
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             var groupA = new Physic3DCollisionGroup();
             var groupB = new Physic3DCollisionGroup();
