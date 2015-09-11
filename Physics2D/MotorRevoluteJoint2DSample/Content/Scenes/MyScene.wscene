@@ -42,7 +42,7 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.39285719</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -212,7 +212,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Ground.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Ground.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -328,7 +328,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Ground.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Ground.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -444,7 +444,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Ground.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Ground.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -560,7 +560,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Ground.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Ground.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -676,7 +676,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Ground.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Ground.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -792,7 +792,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/RectangleBody.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/RectangleBody.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -880,7 +880,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>710.999939</d6p1:X>
+            <d6p1:X>710.9899</d6p1:X>
             <d6p1:Y>400</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
@@ -911,7 +911,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Wheel.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Wheel.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -957,7 +957,7 @@
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
           <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
-          <d5p1:Damping>0</d5p1:Damping>
+          <d5p1:Damping>0.4</d5p1:Damping>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:Friction>2</d5p1:Friction>
@@ -966,10 +966,10 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:LinearVelocity>
-          <d5p1:Mass>0.001</d5p1:Mass>
+          <d5p1:Mass>0</d5p1:Mass>
           <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
           <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:massSet>false</d5p1:massSet>
+          <d5p1:massSet>true</d5p1:massSet>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:JointMap2D">
           <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -1008,7 +1008,7 @@
     <d2p1:Entity>
       <d2p1:IsStatic>false</d2p1:IsStatic>
       <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>wheel2</d2p1:Name>
+      <d2p1:Name>wheel02</d2p1:Name>
       <d2p1:SerializeChildrens />
       <d2p1:SerializeComponents>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
@@ -1050,7 +1050,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
-          <d5p1:texturePath>Content/Assets/Wheel.wpk</d5p1:texturePath>
+          <d5p1:texturePath>Content/Assets/Wheel.png.wpk</d5p1:texturePath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1096,7 +1096,7 @@
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
           <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
-          <d5p1:Damping>0</d5p1:Damping>
+          <d5p1:Damping>0.4</d5p1:Damping>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:Friction>1</d5p1:Friction>
@@ -1105,15 +1105,15 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:LinearVelocity>
-          <d5p1:Mass>0.001</d5p1:Mass>
+          <d5p1:Mass>0</d5p1:Mass>
           <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
           <d5p1:Restitution>0.3</d5p1:Restitution>
-          <d5p1:massSet>false</d5p1:massSet>
+          <d5p1:massSet>true</d5p1:massSet>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:JointMap2D">
           <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringJoint2DIdDD1zlo>
-              <d6p1:Key>RevoluteJoint2D_1</d6p1:Key>
+              <d6p1:Key>joint</d6p1:Key>
               <d6p1:Value i:type="d5p1:RevoluteJoint2D">
                 <d5p1:BreakPoint>3.40282347E+38</d5p1:BreakPoint>
                 <d5p1:entityPathB>carBody</d5p1:entityPathB>
@@ -1128,9 +1128,9 @@
                 <d5p1:limitsEnabled>false</d5p1:limitsEnabled>
                 <d5p1:lowerLimit>0</d5p1:lowerLimit>
                 <d5p1:motorEnabled>false</d5p1:motorEnabled>
-                <d5p1:motorMaxTorque>0</d5p1:motorMaxTorque>
+                <d5p1:motorMaxTorque>1000</d5p1:motorMaxTorque>
                 <d5p1:motorSpeed>0</d5p1:motorSpeed>
-                <d5p1:motorTorque>0</d5p1:motorTorque>
+                <d5p1:motorTorque>100</d5p1:motorTorque>
                 <d5p1:upperLimit>0</d5p1:upperLimit>
               </d6p1:Value>
             </d6p1:KeyValueOfstringJoint2DIdDD1zlo>
