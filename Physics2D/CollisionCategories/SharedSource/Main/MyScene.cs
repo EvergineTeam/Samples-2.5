@@ -18,7 +18,7 @@ namespace CollisionCategories
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             // Mouse drag controller
             this.AddSceneBehavior(new MouseBehavior(), SceneBehavior.Order.PostUpdate);
