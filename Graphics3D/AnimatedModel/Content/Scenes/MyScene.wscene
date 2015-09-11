@@ -42,7 +42,7 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.44986069</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -63,7 +63,7 @@
     <d2p1:Entity>
       <d2p1:IsStatic>false</d2p1:IsStatic>
       <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>isis</d2p1:Name>
+      <d2p1:Name>Isis</d2p1:Name>
       <d2p1:SerializeChildrens />
       <d2p1:SerializeComponents>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
@@ -75,8 +75,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>-0.0005338192</d6p1:Y>
+            <d6p1:Z>-0.0005340576</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -84,23 +84,23 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
+          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/isis.FBX.wpk</ModelPath>
+        </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/isisDifuseMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/isis.wpk</ModelPath>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-          <d5p1:CurrentAnimation>default</d5p1:CurrentAnimation>
+          <d5p1:CurrentAnimation i:nil="true" />
           <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
           <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
-          <d5p1:animationPath>Content/Assets/isis_animation.wpk</d5p1:animationPath>
+          <d5p1:animationPath i:nil="true" />
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
