@@ -10,8 +10,6 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.Materials;
-
 #endregion
 
 namespace Diagnostics
@@ -22,7 +20,7 @@ namespace Diagnostics
         {
             WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
 
-            this.Load(@"Content/Scenes/MyScene.wscene");            
+            this.Load(WaveContent.Scenes.MyScene);           
         }
     }
 }

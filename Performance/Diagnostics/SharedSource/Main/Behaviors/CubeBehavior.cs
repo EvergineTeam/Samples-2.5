@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
-using System.Threading.Tasks;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 
-namespace Diagnostics
+namespace Diagnostics.Behaviors
 {
     [DataContract]
     public class CubeBehavior : Behavior
@@ -36,15 +34,15 @@ namespace Diagnostics
             Vector3 aux = this.Transform.Position;
             if (Math.Abs(Transform.Position.X) > 0.001)
             {
-                aux.X = Transform.Position.X + ((float)Math.Cos(currentAngle)/10);
+                aux.X = Transform.Position.X + ((float)Math.Cos(currentAngle) / 10);
             }
             if (Math.Abs(Transform.Position.Y) > 0.001)
             {
-                aux.Y = Transform.Position.Y + ((float)Math.Sin(currentAngle)/10);
+                aux.Y = Transform.Position.Y + ((float)Math.Sin(currentAngle) / 10);
             }
             if (Math.Abs(Transform.Position.Z) > 0.001)
             {
-                aux.Z = Transform.Position.Z + ((float)Math.Cos(currentAngle)/10);
+                aux.Z = Transform.Position.Z + ((float)Math.Cos(currentAngle) / 10);
             }
             this.Transform.Position = aux;
 
