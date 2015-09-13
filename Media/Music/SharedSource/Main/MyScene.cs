@@ -19,9 +19,9 @@ namespace Music
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
-            MusicInfo musicInfo = new MusicInfo(@"Content/Assets/ByeByeBrain.mp3");
+            MusicInfo musicInfo = new MusicInfo(WaveContent.Assets.ByeByeBrain_mp3);
             WaveServices.MusicPlayer.Play(musicInfo);
         }
     }
