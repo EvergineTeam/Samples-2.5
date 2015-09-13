@@ -103,7 +103,7 @@
     <d2p1:Entity>
       <d2p1:IsStatic>false</d2p1:IsStatic>
       <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>tvEntity</d2p1:Name>
+      <d2p1:Name>model</d2p1:Name>
       <d2p1:SerializeChildrens />
       <d2p1:SerializeComponents>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
@@ -125,10 +125,31 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/table_diffuse.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>tv</d6p1:Key>
+              <d6p1:Value>Content/Assets/Materials/TVMaterial.wmat</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>tv_screen</d6p1:Key>
+              <d6p1:Value>Content/Assets/Materials/TVScreenMaterial.wmat</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>chair</d6p1:Key>
+              <d6p1:Value>Content/Assets/Materials/ChairMaterial.wmat</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>table</d6p1:Key>
+              <d6p1:Value>Content/Assets/Materials/TableMaterial.wmat</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+            <d6p1:KeyValueOfstringstring>
+              <d6p1:Key>floor</d6p1:Key>
+              <d6p1:Value>Content/Assets/Materials/ParketMaterial.wmat</d6p1:Value>
+            </d6p1:KeyValueOfstringstring>
+          </d5p1:MaterialsPath>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/TvRoom.fbx.wpk</ModelPath>

@@ -10,6 +10,7 @@ using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Models;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
@@ -51,25 +52,16 @@ namespace VideoPlayer
         /// </value>
         public VideoInfo bearVideo { get; set; }
 
-        /// <summary>
-        /// The tv room entity
-        /// </summary>
-        Entity TvRoomEntity;
-
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
 
             this.bunnyVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bear_mp4);
             this.bearVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bunny_mp4);
-
-            this.TvRoomEntity = this.EntityManager.Find("tvEntity");
-
+            
             WaveServices.VideoPlayer.IsLooped = true;
             WaveServices.VideoPlayer.Play(this.bunnyVideo);
-
-
-
+            
             StackPanel controlPanel = new StackPanel()
             {
                 VerticalAlignment = WaveEngine.Framework.UI.VerticalAlignment.Bottom,
@@ -159,7 +151,8 @@ namespace VideoPlayer
         {
             base.Start();
 
-            this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.VideoPlayer.VideoTexture);
+            var tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Materials.TVScreenMaterial).Material as StandardMaterial;
+            tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;
         }
     }
 }

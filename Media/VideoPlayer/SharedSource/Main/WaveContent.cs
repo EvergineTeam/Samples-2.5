@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 13/09/2015 12:22:44
+// File generated on 9/13/2015 5:18:40 PM
 namespace VideoPlayer
 {
     using System;
@@ -55,17 +55,20 @@ namespace VideoPlayer
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/black_diffuse.wmat </summary>
-                public const string black_diffuse = "Content/Assets/Materials/black_diffuse.wmat";
+                /// <summary> Path to Content/Assets/Materials/ChairMaterial.wmat </summary>
+                public const string ChairMaterial = "Content/Assets/Materials/ChairMaterial.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/chair_diffuse.wmat </summary>
-                public const string chair_diffuse = "Content/Assets/Materials/chair_diffuse.wmat";
+                /// <summary> Path to Content/Assets/Materials/ParketMaterial.wmat </summary>
+                public const string ParketMaterial = "Content/Assets/Materials/ParketMaterial.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/parket_diffuse.wmat </summary>
-                public const string parket_diffuse = "Content/Assets/Materials/parket_diffuse.wmat";
+                /// <summary> Path to Content/Assets/Materials/TableMaterial.wmat </summary>
+                public const string TableMaterial = "Content/Assets/Materials/TableMaterial.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/table_diffuse.wmat </summary>
-                public const string table_diffuse = "Content/Assets/Materials/table_diffuse.wmat";
+                /// <summary> Path to Content/Assets/Materials/TVMaterial.wmat </summary>
+                public const string TVMaterial = "Content/Assets/Materials/TVMaterial.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/TVScreenMaterial.wmat </summary>
+                public const string TVScreenMaterial = "Content/Assets/Materials/TVScreenMaterial.wmat";
             }
         }
         
