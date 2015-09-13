@@ -63,64 +63,6 @@
     <d2p1:Entity>
       <d2p1:IsStatic>false</d2p1:IsStatic>
       <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>Isis</d2p1:Name>
-      <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.976296</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0.21643959</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.15</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/IsisMaterial.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.FBX.wpk</ModelPath>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-          <d5p1:CurrentAnimation>default</d5p1:CurrentAnimation>
-          <d5p1:PlayAutomatically>false</d5p1:PlayAutomatically>
-          <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
-          <d5p1:animationPath i:nil="true" />
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModelRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-          <d5p1:LODEnabled>true</d5p1:LODEnabled>
-          <d5p1:LODMaxDistance>2000</d5p1:LODMaxDistance>
-          <d5p1:LODMinDistance>600</d5p1:LODMinDistance>
-          <d5p1:LineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>255</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:LineColor>
-        </d2p1:Component>
-      </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
       <d2p1:Name>Stage</d2p1:Name>
       <d2p1:SerializeChildrens />
       <d2p1:SerializeComponents>
@@ -456,6 +398,64 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
+        </d2p1:Component>
+      </d2p1:SerializeComponents>
+      <d2p1:Tag i:nil="true" />
+    </d2p1:Entity>
+    <d2p1:Entity>
+      <d2p1:IsStatic>false</d2p1:IsStatic>
+      <d2p1:IsVisible>true</d2p1:IsVisible>
+      <d2p1:Name>Isis</d2p1:Name>
+      <d2p1:SerializeChildrens />
+      <d2p1:SerializeComponents>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.9752944</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-0.220914975</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0.124245837</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+          <d5p1:DefaultMaterialPath>Content/Assets/Materials/IsisMaterial.wmat</d5p1:DefaultMaterialPath>
+          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
+          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.FBX.wpk</ModelPath>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:IsActive>true</d2p1:IsActive>
+          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+          <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
+          <d5p1:animationPath>Content/Assets/Models/isis.FBX_animation.wpk</d5p1:animationPath>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModelRenderer">
+          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
+          <d5p1:LODEnabled>true</d5p1:LODEnabled>
+          <d5p1:LODMaxDistance>2000</d5p1:LODMaxDistance>
+          <d5p1:LODMinDistance>600</d5p1:LODMinDistance>
+          <d5p1:LineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:LineColor>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />

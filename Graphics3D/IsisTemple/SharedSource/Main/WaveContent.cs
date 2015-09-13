@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/11/2015 6:23:22 PM
+// File generated on 9/13/2015 8:56:29 PM
 namespace IsisTemple
 {
     using System;
@@ -32,8 +32,8 @@ namespace IsisTemple
                 /// <summary> Path to Content/Assets/Models/floor.FBX </summary>
                 public const string floor_FBX = "Content/Assets/Models/floor.FBX";
                 
-                /// <summary> Path to Content/Assets/Models/isis.FBX </summary>
-                public const string isis_FBX = "Content/Assets/Models/isis.FBX";
+                /// <summary> Path to Content/Assets/Models/isis.fbx </summary>
+                public const string isis_fbx = "Content/Assets/Models/isis.fbx";
             }
             
             public sealed class Textures

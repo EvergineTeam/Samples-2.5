@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/11/2015 5:16:25 PM
+// File generated on 9/13/2015 8:06:47 PM
 namespace AnimatedModel
 {
     using System;
@@ -19,9 +19,6 @@ namespace AnimatedModel
         
         public sealed class Assets
         {
-            
-            /// <summary> Path to Content/Assets/isis-animations.FBX </summary>
-            public const string isis_animations_FBX = "Content/Assets/isis-animations.FBX";
             
             /// <summary> Path to Content/Assets/isis-difuse.png </summary>
             public const string isis_difuse_png = "Content/Assets/isis-difuse.png";
