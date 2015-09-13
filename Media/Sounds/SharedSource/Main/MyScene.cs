@@ -39,23 +39,23 @@ namespace Sounds
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             //Register bank
             SoundBank bank = new SoundBank(Assets);
             WaveServices.SoundPlayer.RegisterSoundBank(bank);
             
             //Register sounds
-            MenuSound = new SoundInfo(@"Content/Assets/Menu.wav.wpk");
+            MenuSound = new SoundInfo(WaveContent.Assets.Menu_wav);
             bank.Add(MenuSound);
 
-            pistolSound = new SoundInfo(@"Content/Assets/Pistol.wav.wpk");
+            pistolSound = new SoundInfo(WaveContent.Assets.Pistol_wav);
             bank.Add(pistolSound);
 
-            upgradeSound = new SoundInfo(@"Content/Assets/Upgrade.wav.wpk");
+            upgradeSound = new SoundInfo(WaveContent.Assets.Upgrade_wav);
             bank.Add(upgradeSound);
 
-            sellSound = new SoundInfo(@"Content/Assets/Sell.wav.wpk");
+            sellSound = new SoundInfo(WaveContent.Assets.Sell_wav);
             bank.Add(sellSound);
         }
 
