@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/20/2015 2:36:10 PM
+// File generated on 13/09/2015 11:19:42
 namespace NormalMap
 {
     using System;

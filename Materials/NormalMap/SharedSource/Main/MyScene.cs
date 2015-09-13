@@ -24,44 +24,44 @@ namespace NormalMap
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            Slider slider1 = new Slider()
-            {
-                Margin = new Thickness(10, 90, 0, 0),
-                Width = 500,
-                Minimum = 4,
-                Maximum = 40,
-                Value = 30
-            };
+            //Slider slider1 = new Slider()
+            //{
+            //    Margin = new Thickness(10, 90, 0, 0),
+            //    Width = 500,
+            //    Minimum = 4,
+            //    Maximum = 40,
+            //    Value = 30
+            //};
 
-            slider1.RealTimeValueChanged += (s, e) =>
-            {
-                var entity = EntityManager.Find("Light0");
-                var component = entity.FindComponent<PointLightProperties>();
-                component.Intensity = e.NewValue;
-            };
+            //slider1.RealTimeValueChanged += (s, e) =>
+            //{
+            //    var entity = EntityManager.Find("Light0");
+            //    var component = entity.FindComponent<PointLightProperties>();
+            //    component.Intensity = e.NewValue;
+            //};
 
-            EntityManager.Add(slider1);
+            //EntityManager.Add(slider1);
 
-            Slider slider2 = new Slider()
-            {
-                Margin = new Thickness(10, 140, 0, 0),
-                Width = 500,
-                Minimum = 1,
-                Maximum = 100
-            };
+            //Slider slider2 = new Slider()
+            //{
+            //    Margin = new Thickness(10, 140, 0, 0),
+            //    Width = 500,
+            //    Minimum = 1,
+            //    Maximum = 100
+            //};
 
-            slider2.RealTimeValueChanged += (s, e) =>
-            {
-                var entity = EntityManager.Find("Cube");
-                var component = entity.FindComponent<MaterialsMap>();
-                var material = (component.DefaultMaterial as DualMaterial);
+            //slider2.RealTimeValueChanged += (s, e) =>
+            //{
+            //    var entity = EntityManager.Find("Cube");
+            //    var component = entity.FindComponent<MaterialsMap>();
+            //    var material = (component.DefaultMaterial as DualMaterial);
 
-                float v = (float)e.NewValue / 100.0f;
-                Color c1 = new Color(v, v, v, 1);
-                material.AmbientColor = c1;
-            };
+            //    float v = (float)e.NewValue / 100.0f;
+            //    Color c1 = new Color(v, v, v, 1);
+            //    material.AmbientColor = c1;
+            //};
 
-            EntityManager.Add(slider2);
+            //EntityManager.Add(slider2);
 
             ToggleSwitch lightmapEnabled = new ToggleSwitch()
             {
