@@ -29,13 +29,15 @@ namespace LensFlare
 
             this.ConfigurePlanet("Earth", 10, Vector3.Zero, 0);
             this.ConfigurePlanet("Moon", 28, Vector3.Zero, 28);
+
+            EntityManager.Find("camera2D").FindComponent<Camera2D>().CenterScreen();
         }
 
         /// <summary>
         /// Creates the sun flare.
         /// </summary>
         private void CreateSunFlare()
-        {
+        {            
             var skylight = EntityManager.Find("skylight");
 
             var flare = new WaveEngine.Framework.Graphics.LensFlare();

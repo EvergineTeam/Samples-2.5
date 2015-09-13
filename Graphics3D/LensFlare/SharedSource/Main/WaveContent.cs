@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/11/2015 7:27:13 PM
+// File generated on 9/13/2015 7:46:01 PM
 namespace LensFlare
 {
     using System;
@@ -33,8 +33,20 @@ namespace LensFlare
                 /// <summary> Path to Content/Assets/Textures/EarthDiffuseMap.png </summary>
                 public const string EarthDiffuseMap_png = "Content/Assets/Textures/EarthDiffuseMap.png";
                 
+                /// <summary> Path to Content/Assets/Textures/EarthNormalMap.png </summary>
+                public const string EarthNormalMap_png = "Content/Assets/Textures/EarthNormalMap.png";
+                
+                /// <summary> Path to Content/Assets/Textures/EarthSpecMap.png </summary>
+                public const string EarthSpecMap_png = "Content/Assets/Textures/EarthSpecMap.png";
+                
                 /// <summary> Path to Content/Assets/Textures/MoonDiffuseMap.jpg </summary>
                 public const string MoonDiffuseMap_jpg = "Content/Assets/Textures/MoonDiffuseMap.jpg";
+                
+                /// <summary> Path to Content/Assets/Textures/MoonNormMap.png </summary>
+                public const string MoonNormMap_png = "Content/Assets/Textures/MoonNormMap.png";
+                
+                /// <summary> Path to Content/Assets/Textures/MoonSpecMap.png </summary>
+                public const string MoonSpecMap_png = "Content/Assets/Textures/MoonSpecMap.png";
                 
                 public sealed class Flares
                 {
