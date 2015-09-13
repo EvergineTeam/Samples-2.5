@@ -129,26 +129,26 @@
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>chair</d6p1:Key>
-              <d6p1:Value>Content/Assets/Material/chair_Difuse.wmat.wmat</d6p1:Value>
+              <d6p1:Value>Content/Assets/Material/ChairMaterial.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>table</d6p1:Key>
-              <d6p1:Value>Content/Assets/Material/table_Difuse.wmat.wmat</d6p1:Value>
+              <d6p1:Value>Content/Assets/Material/TableMaterial.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>floor</d6p1:Key>
-              <d6p1:Value>Content/Assets/Material/parketFloor_Difuse.wmat.wmat</d6p1:Value>
+              <d6p1:Value>Content/Assets/Material/ParketMaterial.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>tv</d6p1:Key>
-              <d6p1:Value>Content/Assets/Material/tv_Difuse.wmat</d6p1:Value>
+              <d6p1:Value>Content/Assets/Material/TVMaterial.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
             <d6p1:KeyValueOfstringstring>
               <d6p1:Key>tv_screen</d6p1:Key>
-              <d6p1:Value>Content/Assets/Material/black_Difuse.wmat.wmat</d6p1:Value>
+              <d6p1:Value>Content/Assets/Material/TVScreenMaterial.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
           </d5p1:MaterialsPath>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">

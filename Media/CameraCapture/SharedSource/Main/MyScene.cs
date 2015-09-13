@@ -10,6 +10,7 @@ using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Models;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
@@ -42,18 +43,13 @@ namespace CameraCapture
         /// <summary>
         /// The play recorded button
         /// </summary>
-        Button PlayRecordedButton;
+        private Button PlayRecordedButton;
 
-        /// <summary>
-        /// The tv room entity
-        /// </summary>
-        Entity TvRoomEntity;
+        private StandardMaterial tvScreenMaterial;
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
-
-            this.TvRoomEntity = this.EntityManager.Find("tvModel");
+            this.Load(WaveContent.Scenes.MyScene);
 
             if (WaveServices.CameraCapture.IsConnected)
             {
@@ -138,8 +134,8 @@ namespace CameraCapture
                 WaveServices.VideoPlayer.OnComplete += (s, e) => { this.StopVideo(); };
                 WaveServices.CameraCapture.Start(CameraCaptureType.Front);
 
-                this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.CameraCapture.PreviewTexture);
-                this.TvRoomEntity.RefreshDependencies();
+                this.tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Material.TVScreenMaterial).Material as StandardMaterial;
+                this.tvScreenMaterial.Diffuse = WaveServices.CameraCapture.PreviewTexture;
             }
         }
 
@@ -192,10 +188,7 @@ namespace CameraCapture
 
                 WaveServices.VideoPlayer.Play(videoInfo);
 
-
-                this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.VideoPlayer.VideoTexture);
-
-                this.TvRoomEntity.RefreshDependencies();
+                this.tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;                
 
                 this.PlayRecordedButton.Text = "Stop";
 
@@ -210,8 +203,7 @@ namespace CameraCapture
                 WaveServices.VideoPlayer.Stop();
             }
 
-            this.TvRoomEntity.FindComponent<MaterialsMap>().Materials["tv_screen"] = new StandardMaterial(DefaultLayers.Opaque, WaveServices.CameraCapture.PreviewTexture);
-            this.TvRoomEntity.RefreshDependencies();
+            this.tvScreenMaterial.Diffuse = WaveServices.CameraCapture.PreviewTexture;
 
             this.PlayRecordedButton.Text = "Play";
 
