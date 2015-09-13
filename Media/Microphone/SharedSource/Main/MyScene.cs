@@ -74,7 +74,7 @@ namespace Microphone
         /// </summary>
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             // Adds record button.
             this.recordButton = new Button("recordButton")
