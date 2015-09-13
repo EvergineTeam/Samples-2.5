@@ -66,7 +66,7 @@ namespace Touch
 
         private void ReloadTexture()
         {
-            if (this.texturePath != null)
+            if (this.Assets != null && this.texturePath != null)
             {
                 texture = Assets.LoadAsset<Texture2D>(texturePath);
                 origin = new Vector2(texture.Width / 2, texture.Height / 2);

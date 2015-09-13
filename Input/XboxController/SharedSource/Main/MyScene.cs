@@ -25,7 +25,7 @@ namespace XBoxController
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             this.leftJoystick = EntityManager.Find("leftJoystickParent").FindChild("leftJoystick");
             this.rightJoystick = EntityManager.Find("rightJoystickParent").FindChild("rightJoystick");

@@ -58,10 +58,10 @@ namespace VideoPlayer
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
-            this.bunnyVideo = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bunny.mp4");
-            this.bearVideo = WaveServices.VideoPlayer.VideoInfoFromPath(@"Content/Assets/Video/bear.mp4");
+            this.bunnyVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bear_mp4);
+            this.bearVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bunny_mp4);
 
             this.TvRoomEntity = this.EntityManager.Find("tvEntity");
 

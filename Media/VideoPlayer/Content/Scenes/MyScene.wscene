@@ -128,7 +128,7 @@
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/table_diffuse.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/TvRoom.fbx.wpk</ModelPath>

@@ -18,11 +18,7 @@ namespace Touch
     {
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
-
-           /* Entity e = new Entity()
-                .AddComponent(new TouchesRenderer() {TexturePath = ""});
-            EntityManager.Add(e);*/
+            this.Load(WaveContent.Scenes.MyScene);
         }
     }
 }
