@@ -44,7 +44,7 @@ namespace LensFlare
            
             flare.Flares = new FlareElement[]
             {
-                new FlareElement(0, new Vector2(3), new Color(1f,  1f,  1f), WaveContent.Assets.Textures.Flares.flareTexture_jpg),
+                new FlareElement(0, new Vector2(3), new Color(1f,  1f,  1f), WaveContent.Assets.Textures.Flares.flareTexture_png),
                 new FlareElement(0.2f, new Vector2(1), new Color(0.2f,  0.2f,  0.2f), WaveContent.Assets.Textures.Flares.flare5_png),
                 new FlareElement(0.5f, new Vector2(1), new Color(0.2f,  0.2f,  0.2f), WaveContent.Assets.Textures.Flares.flare3_png),
                 new FlareElement(0.8f, new Vector2(1), new Color(0.2f,  0.2f,  0.2f), WaveContent.Assets.Textures.Flares.flare4_png),

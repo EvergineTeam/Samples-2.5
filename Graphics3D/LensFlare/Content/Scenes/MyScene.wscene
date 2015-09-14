@@ -264,7 +264,7 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:Color>
-          <d5p1:Intensity>2</d5p1:Intensity>
+          <d5p1:Intensity>1.5</d5p1:Intensity>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>

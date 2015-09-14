@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/13/2015 7:46:01 PM
+// File generated on 9/14/2015 3:56:02 PM
 namespace LensFlare
 {
     using System;
@@ -66,8 +66,8 @@ namespace LensFlare
                     /// <summary> Path to Content/Assets/Textures/Flares/flare5.png </summary>
                     public const string flare5_png = "Content/Assets/Textures/Flares/flare5.png";
                     
-                    /// <summary> Path to Content/Assets/Textures/Flares/flareTexture.jpg </summary>
-                    public const string flareTexture_jpg = "Content/Assets/Textures/Flares/flareTexture.jpg";
+                    /// <summary> Path to Content/Assets/Textures/Flares/flareTexture.png </summary>
+                    public const string flareTexture_png = "Content/Assets/Textures/Flares/flareTexture.png";
                 }
             }
             
