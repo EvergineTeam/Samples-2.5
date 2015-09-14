@@ -41,8 +41,7 @@ namespace Project
         private TouchPanelState touchPanelState;
         private TouchLocation currentLocation;
         private Vector3 nearPoint;
-        private Vector3 farPoint;
-        private Matrix identity = Matrix.Identity;
+        private Vector3 farPoint;        
         private Vector3 direction;
         private Ray ray;
         private Entity currentEntity;

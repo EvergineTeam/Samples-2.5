@@ -32,7 +32,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
           <d5p1:FarPlane>10000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -43,9 +43,12 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:FarPlane>10000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
+          <d5p1:NearPlane>1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:GamepadRotationSpeed>0.55</d5p1:GamepadRotationSpeed>
@@ -53,12 +56,12 @@
           <d5p1:Speed>20</d5p1:Speed>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="Project" i:type="d5p1:PickingBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -79,9 +82,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-15</d6p1:X>
+            <d6p1:X>9</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>5</d6p1:Z>
+            <d6p1:Z>8</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -97,14 +100,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Cube</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -137,9 +141,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>2</d6p1:X>
+            <d6p1:X>13</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-9</d6p1:Z>
+            <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -155,14 +159,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Cube</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -195,9 +200,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>10</d6p1:X>
+            <d6p1:X>-24</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-7</d6p1:Z>
+            <d6p1:Z>-16</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -213,14 +218,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Cube</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -253,9 +259,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-19</d6p1:X>
+            <d6p1:X>-11</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-14</d6p1:Z>
+            <d6p1:Z>18</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -271,14 +277,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Cone</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Cone</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -311,9 +318,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-18</d6p1:X>
+            <d6p1:X>5</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>12</d6p1:Z>
+            <d6p1:Z>8</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -329,14 +336,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Cylinder</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Cylinder</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -369,9 +377,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-21</d6p1:X>
+            <d6p1:X>-12</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-15</d6p1:Z>
+            <d6p1:Z>-1</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -387,14 +395,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Pyramid</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Pyramid</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -427,9 +436,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>23</d6p1:X>
+            <d6p1:X>-9</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>4</d6p1:Z>
+            <d6p1:Z>8</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -445,14 +454,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Sphere</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Sphere</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -485,9 +495,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-22</d6p1:X>
+            <d6p1:X>11</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-5</d6p1:Z>
+            <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -503,14 +513,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Capsule</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Capsule</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -543,7 +554,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>8</d6p1:X>
+            <d6p1:X>-17</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>3</d6p1:Z>
           </d5p1:LocalPosition>
@@ -561,14 +572,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Capsule</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Capsule</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -601,9 +613,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>15</d6p1:X>
+            <d6p1:X>-2</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>13</d6p1:Z>
+            <d6p1:Z>19</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -619,14 +631,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Capsule</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Capsule</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -659,9 +672,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-19</d6p1:X>
+            <d6p1:X>-5</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>4</d6p1:Z>
+            <d6p1:Z>19</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -677,14 +690,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Torus</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Torus</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -717,9 +731,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-6</d6p1:X>
+            <d6p1:X>9</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Z>-20</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -735,14 +749,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Torus</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Torus</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -775,9 +790,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-3</d6p1:X>
+            <d6p1:X>-10</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Z>-21</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.5</d6p1:X>
@@ -793,14 +808,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Torus</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Torus</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -856,14 +872,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
-          <d5p1:ModelType>Plane</d5p1:ModelType>
+          <d5p1:ModelPath></d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Plane</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d2p1:Family>PriorityBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -884,7 +901,7 @@
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringISettingCategory>
         <d3p1:Key>Physics</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:PhysicCategory">
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
@@ -898,7 +915,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Gravity3D>
         </d3p1:Value>
-      </d3p1:KeyValueOfstringanyType>
+      </d3p1:KeyValueOfstringISettingCategory>
     </d2p1:Categories>
   </Settings>
 </Scene>
