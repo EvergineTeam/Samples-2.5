@@ -1,4 +1,4 @@
-<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>ca1e2372-d6d6-46d2-b894-6ae25ffff02f</Id>
   <Entities xmlns:d2p1="WaveEngine.Framework">
     <d2p1:Entity>
@@ -11,8 +11,8 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.923879564</d6p1:W>
             <d6p1:X>-0.3826834</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.51</d6p1:X>
@@ -32,7 +32,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
           <d5p1:FarPlane>10000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -42,10 +42,13 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.27806783</d5p1:AspectRatio>
+          <d5p1:FarPlane>10000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
+          <d5p1:NearPlane>1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:GamepadRotationSpeed>0.75</d5p1:GamepadRotationSpeed>
@@ -53,7 +56,7 @@
           <d5p1:Speed>3</d5p1:Speed>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -120,12 +123,13 @@
               <d6p1:Value>Content/Assets/Materials/SecurityCam3Material.wmat</d6p1:Value>
             </d6p1:KeyValueOfstringstring>
           </d5p1:MaterialsPath>
-          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/Stage.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
+          <d5p1:ModelPath>Content/Assets/Models/Stage.fbx.wpk</d5p1:ModelPath>
+          <d5p1:ModelType xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -144,7 +148,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -165,7 +169,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -176,9 +180,12 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:FarPlane>1000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
+          <d5p1:NearPlane>0.1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>false</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -206,7 +213,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -227,7 +234,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -238,9 +245,12 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:FarPlane>1000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
+          <d5p1:NearPlane>0.1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>false</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -289,7 +299,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -300,9 +310,12 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:FarPlane>1000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
+          <d5p1:NearPlane>0.1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>false</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -334,7 +347,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.9256287</d6p1:X>
+            <d6p1:X>-2.098735</d6p1:X>
             <d6p1:Y>2.5</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
@@ -348,51 +361,10 @@
           <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>255</d6p1:B>
-            <d6p1:G>242</d6p1:G>
-            <d6p1:R>240</d6p1:R>
+            <d6p1:G>250</d6p1:G>
+            <d6p1:R>249</d6p1:R>
           </d5p1:Color>
-          <d5p1:Intensity>0.7</d5p1:Intensity>
-          <d5p1:LightRange>20</d5p1:LightRange>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
-        </d2p1:Component>
-      </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>light2</d2p1:Name>
-      <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-1.46354342</d6p1:X>
-            <d6p1:Y>2.5</d6p1:Y>
-            <d6p1:Z>5.89458227</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightProperties">
-          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>255</d6p1:B>
-            <d6p1:G>242</d6p1:G>
-            <d6p1:R>240</d6p1:R>
-          </d5p1:Color>
-          <d5p1:Intensity>1.6</d5p1:Intensity>
+          <d5p1:Intensity>1.7</d5p1:Intensity>
           <d5p1:LightRange>20</d5p1:LightRange>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightRenderer">
@@ -434,13 +406,15 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.fbx.wpk</ModelPath>
+          <d5p1:ModelPath>Content/Assets/Models/isis.fbx.wpk</d5p1:ModelPath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
           <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
           <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
           <d5p1:animationPath>Content/Assets/Models/isis.fbx_animation.wpk</d5p1:animationPath>
         </d2p1:Component>
@@ -460,10 +434,51 @@
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />
     </d2p1:Entity>
+    <d2p1:Entity>
+      <d2p1:IsStatic>false</d2p1:IsStatic>
+      <d2p1:IsVisible>true</d2p1:IsVisible>
+      <d2p1:Name>light01</d2p1:Name>
+      <d2p1:SerializeChildrens />
+      <d2p1:SerializeComponents>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1.24446952</d6p1:X>
+            <d6p1:Y>1.914865</d6p1:Y>
+            <d6p1:Z>3.29331875</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightProperties">
+          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>180</d6p1:B>
+            <d6p1:G>232</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:Color>
+          <d5p1:Intensity>0.7</d5p1:Intensity>
+          <d5p1:LightRange>20</d5p1:LightRange>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:PointLightRenderer">
+          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
+        </d2p1:Component>
+      </d2p1:SerializeComponents>
+      <d2p1:Tag i:nil="true" />
+    </d2p1:Entity>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringISettingCategory>
         <d3p1:Key>Physics</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:PhysicCategory">
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
@@ -477,7 +492,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Gravity3D>
         </d3p1:Value>
-      </d3p1:KeyValueOfstringanyType>
+      </d3p1:KeyValueOfstringISettingCategory>
     </d2p1:Categories>
   </Settings>
 </Scene>
