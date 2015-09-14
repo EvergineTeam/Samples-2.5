@@ -91,7 +91,7 @@
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/isis.FBX.wpk</ModelPath>
+          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/isis.fbx.wpk</ModelPath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -100,7 +100,7 @@
           <d5p1:CurrentAnimation>Walk</d5p1:CurrentAnimation>
           <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
           <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
-          <d5p1:animationPath>Content/Assets/isis.FBX_animation.wpk</d5p1:animationPath>
+          <d5p1:animationPath>Content/Assets/isis.fbx_animation.wpk</d5p1:animationPath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModelRenderer">
           <d2p1:IsVisible>true</d2p1:IsVisible>
