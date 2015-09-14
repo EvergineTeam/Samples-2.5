@@ -15,8 +15,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>468.5</d6p1:X>
-            <d6p1:Y>246.5</d6p1:Y>
+            <d6p1:X>642.500061</d6p1:X>
+            <d6p1:Y>359.5</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -44,7 +44,7 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
+          <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
@@ -103,6 +103,39 @@
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
           </d5p1:origin>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/spineboy.atlas</d5p1:atlasPath>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:IsActive>true</d2p1:IsActive>
+          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+          <d5p1:CurrentAnimation>walk</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/spineboy.json</d5p1:animationPath>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
+          <d5p1:ActualDebugMode>Bones</d5p1:ActualDebugMode>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 14:30:21
+// File generated on 14/09/2015 9:04:39
 namespace StaticBatching
 {
     using System;
@@ -38,17 +38,11 @@ namespace StaticBatching
                 /// <summary> Path to Content/Assets/textures/column1_normal.png </summary>
                 public const string column1_normal_png = "Content/Assets/textures/column1_normal.png";
                 
-                /// <summary> Path to Content/Assets/textures/column1_normal_spec.png </summary>
-                public const string column1_normal_spec_png = "Content/Assets/textures/column1_normal_spec.png";
-                
                 /// <summary> Path to Content/Assets/textures/column2.png </summary>
                 public const string column2_png = "Content/Assets/textures/column2.png";
                 
                 /// <summary> Path to Content/Assets/textures/column2_normal.png </summary>
                 public const string column2_normal_png = "Content/Assets/textures/column2_normal.png";
-                
-                /// <summary> Path to Content/Assets/textures/column2_normal_spec.png </summary>
-                public const string column2_normal_spec_png = "Content/Assets/textures/column2_normal_spec.png";
             }
         }
         

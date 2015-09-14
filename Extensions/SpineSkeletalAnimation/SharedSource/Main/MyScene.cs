@@ -23,7 +23,7 @@ namespace SpineSkeletalAnimation
 
         protected override void CreateScene()
         {
-            this.Load(@"Content/Scenes/MyScene.wscene");
+            this.Load(WaveContent.Scenes.MyScene);
 
             this.skeleton = EntityManager.Find("skeleton");
 
