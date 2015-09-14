@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Diagnostics</RootNamespace>
-    <AssemblyName>Diagnostics</AssemblyName>
+    <RootNamespace>SpineSkeletalAnimation</RootNamespace>
+    <AssemblyName>SpineSkeletalAnimation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -30,7 +30,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\x86\Debug</OutputPath>
-    <DefineConstants>TRACE;LINUX;PROFILE</DefineConstants>
+    <DefineConstants>TRACE;LINUX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoStdLib>true</NoStdLib>
@@ -57,6 +57,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WaveEngine.Adapter">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.1.9.12-beta-6\lib\Mono\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
@@ -91,7 +92,7 @@
       <Target Name="AfterBuild">
       </Target>
     -->
-  <Import Project="..\..\SharedSource\Main\DiagnosticsSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\DiagnosticsSource.projitems')" />
+  <Import Project="..\..\SharedSource\Main\SpineSkeletalAnimationSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\SpineSkeletalAnimationSource.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.1.9.12-beta-6\build\Mono\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.1.9.12-beta-6\build\Mono\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

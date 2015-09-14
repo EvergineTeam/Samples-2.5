@@ -181,7 +181,7 @@ namespace Networking.Scenes
         private void PlayerSelected(int playerSpriteIndex)
         {
             //Show my selected sprite.
-            this.playerEntity.FindComponent<Sprite>().TexturePath = string.Format("Content/Assets/c{0}", playerSpriteIndex);
+            this.playerEntity.FindComponent<Sprite>().TexturePath = string.Format("Content/Assets/c{0}.png", playerSpriteIndex);
             this.playerEntity.IsVisible = true;
 
             //Wait 3 seconds and start game.

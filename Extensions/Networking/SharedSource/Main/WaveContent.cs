@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 14/09/2015 9:46:41
-namespace SpineSkeletalAnimation
+// File generated on 14/09/2015 11:10:36
+namespace Networking
 {
     using System;
     
@@ -20,14 +20,20 @@ namespace SpineSkeletalAnimation
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/spineboy.atlas </summary>
-            public const string spineboy_atlas = "Content/Assets/spineboy.atlas";
+            /// <summary> Path to Content/Assets/c1.png </summary>
+            public const string c1_png = "Content/Assets/c1.png";
             
-            /// <summary> Path to Content/Assets/spineboy.json </summary>
-            public const string spineboy_json = "Content/Assets/spineboy.json";
+            /// <summary> Path to Content/Assets/c2.png </summary>
+            public const string c2_png = "Content/Assets/c2.png";
             
-            /// <summary> Path to Content/Assets/spineboy.png </summary>
-            public const string spineboy_png = "Content/Assets/spineboy.png";
+            /// <summary> Path to Content/Assets/c3.png </summary>
+            public const string c3_png = "Content/Assets/c3.png";
+            
+            /// <summary> Path to Content/Assets/c4.png </summary>
+            public const string c4_png = "Content/Assets/c4.png";
+            
+            /// <summary> Path to Content/Assets/c5.png </summary>
+            public const string c5_png = "Content/Assets/c5.png";
         }
         
         public sealed class Scenes
