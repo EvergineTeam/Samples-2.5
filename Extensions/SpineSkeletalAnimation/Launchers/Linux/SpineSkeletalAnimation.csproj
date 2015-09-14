@@ -75,6 +75,9 @@
     <Reference Include="WaveEngine.ImageEffects">
       <HintPath>..\..\packages\WaveEngine.ImageEffects.1.9.12-beta-6\lib\Mono\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
+	<Reference Include="WaveEngine.Spine">
+      <HintPath>..\..\packages\WaveEngine.Spine.1.9.12-beta-6\lib\net45\WaveEngine.Spine.dll</HintPath>
+    </Reference> 
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
