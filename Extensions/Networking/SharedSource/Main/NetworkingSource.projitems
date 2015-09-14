@@ -16,5 +16,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\MainScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\SelectPlayerScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
   </ItemGroup>
 </Project>

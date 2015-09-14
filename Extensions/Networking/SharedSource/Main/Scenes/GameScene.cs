@@ -43,7 +43,7 @@ namespace Networking.Scenes
 
             //Create my entity with random start position.
             var random = WaveServices.Random;
-            var sprite = string.Format("Content/Assets/c{0}", this.playerSpriteIndex);
+            var sprite = string.Format("Content/Assets/c{0}.png", this.playerSpriteIndex);
             this.playerEntity = new Entity("Player_" + this.playerSpriteIndex)
                 .AddComponent(new Transform2D
                 {
