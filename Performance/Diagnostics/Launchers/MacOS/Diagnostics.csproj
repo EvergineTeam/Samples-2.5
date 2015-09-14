@@ -11,14 +11,14 @@
     <RootNamespace>Diagnostics</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <AssemblyName>Diagnostics</AssemblyName>
-    <SuppressXamMacMigration>True</SuppressXamMacMigration>    
+    <SuppressXamMacMigration>True</SuppressXamMacMigration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;PROFILE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -31,14 +31,13 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -54,9 +53,9 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -78,9 +77,9 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -91,9 +90,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Runtime.Serialization"/>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WaveEngine.Adapter">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
@@ -129,6 +127,6 @@
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\DiagnosticsSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\DiagnosticsSource.projitems')" />
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />  
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
 </Project>
