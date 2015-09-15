@@ -213,3 +213,14 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+
+Intermediate/
+packages/
+
+#Wave Editor intermediate folder
+generate.info
+generate.winfo
+
+
+

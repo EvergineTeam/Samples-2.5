@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="hexagonal" renderorder="right-down" width="20" height="20" tilewidth="14" tileheight="12" hexsidelength="6" staggeraxis="y" staggerindex="odd" nextobjectid="10">
+ <tileset firstgid="1" name="Default" tilewidth="18" tileheight="18">
+  <tileoffset x="0" y="1"/>
+  <image source="hexmini.png" width="106" height="72"/>
+  <tile id="0">
+   <objectgroup draworder="index"/>
+  </tile>
+ </tileset>
+ <layer name="Ground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyN01EOhCAMBNAGl6goiPe/7ELSJrPdAf2YGEWepcIlIpcmttSWW5NbtpbiEnUMY2OXzol6Xx8s8yK4xXk7eD0B8sbLZCyo3a8rPPOWfccsX2Nyc81b4b7A3Ci/9QdSX3LrO109CTxmMS/Jf2/feKw+/w20sCc9x8TD9+LEs/4H9Zhpa2T7oQhf2zHwurNrbL5fM+vXzEvgsXMz6j9ap7438ti/m8X2aQa3gJVlXpt3zOrnvU680f8Y1XY7c7TPvfEhz7I6FTxmMss8qw3nLMTDNePZR+sEayHBs4vZJmZ48LyFYX1kjuULWjAM4Q==
+  </data>
+ </layer>
+</map>
