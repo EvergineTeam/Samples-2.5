@@ -72,10 +72,12 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>0.1</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -138,6 +140,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>

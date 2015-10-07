@@ -32,10 +32,12 @@
             <d6p1:G>155</d6p1:G>
             <d6p1:R>136</d6p1:R>
           </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>200</d5p1:FarPlane>
           <d5p1:FieldOfView>0.8</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>1</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -143,10 +145,12 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -252,7 +256,8 @@
                   <d8p1:Value>Content/Assets/MyMaterial.wmat</d8p1:Value>
                 </d8p1:KeyValueOfstringstring>
               </d7p1:MaterialsPath>
-              <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
+              <d7p1:useDefaultMaterial>true</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
@@ -293,6 +298,7 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/MyMaterial(2).wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>

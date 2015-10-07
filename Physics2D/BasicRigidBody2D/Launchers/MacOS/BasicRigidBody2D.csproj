@@ -11,7 +11,7 @@
     <RootNamespace>BasicRigidBody2D</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <AssemblyName>BasicRigidBody2D</AssemblyName>
-    <SuppressXamMacMigration>True</SuppressXamMacMigration>    
+    <SuppressXamMacMigration>True</SuppressXamMacMigration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,9 +31,9 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -54,9 +54,9 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -78,9 +78,9 @@
     <UseRefCounting>false</UseRefCounting>
     <CustomCommands>
       <CustomCommands>
-        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor"/>
-        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/"/>
+        <Command type="BeforeBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveConstantsCMD.exe -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/SharedSource/Main" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="mono /Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/WaveExporterCMD.exe -m Project -t MacOS -i $(SolutionDir)/$(ProjectName).weproj -o $(SolutionDir)/Intermediate/Content/MacOS" workingdir="/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor" />
+        <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
@@ -91,25 +91,24 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Runtime.Serialization"/>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WaveEngine.Adapter">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\WaveEngine.Adapter.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.1.8\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.1.8\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.0.1.8\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.0.1.8\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.0.1.8\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.1.9.12-beta-6\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.1.8\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral" />
   </ItemGroup>
@@ -129,6 +128,6 @@
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\BasicRigidBody2DSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\BasicRigidBody2DSource.projitems')" />
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />  
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
 </Project>
