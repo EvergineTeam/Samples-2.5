@@ -39,12 +39,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.2.0.1.8\lib\net45\WaveEngine.Adapter.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Analytics, Version=2.0.2.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Analytics.2.0.2-alpha-20151014-104\lib\net45\WaveEngine.Analytics.dll</HintPath>
+    <Reference Include="WaveEngine.Analytics, Version=2.0.1.8, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
+      <HintPath>..\..\packages\WaveEngine.Analytics.2.0.1.8\lib\net45\WaveEngine.Analytics.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Common.2.0.2-alpha-20151014-104\lib\net45\WaveEngine.Common.dll</HintPath>
+    <Reference Include="WaveEngine.Common, Version=2.0.1.8, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=x86">
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.1.8\lib\net45\WaveEngine.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Framework">
