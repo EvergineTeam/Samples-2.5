@@ -103,7 +103,7 @@ namespace WaveGTK.WaveIntegration
                         lock (this)
                         {
                             this.rendering = true;
-                            this.gameApp.Render();
+                            this.gameApp.BaseRender();
                             this.rendering = false;
                         }
                     });

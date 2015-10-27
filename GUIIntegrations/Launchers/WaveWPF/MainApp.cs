@@ -144,5 +144,11 @@ namespace WaveWPF
                 }
             }
         }
+
+        public void AppRender()
+        {
+            base.Render();
+            base.RefreshImageSource();
+        }
     }
 }

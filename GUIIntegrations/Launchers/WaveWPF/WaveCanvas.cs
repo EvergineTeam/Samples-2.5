@@ -834,8 +834,7 @@ namespace WaveWPF
         /// </summary>
         private void Render()
         {
-            this.app.Render();
-            this.app.RefreshImageSource();
+            this.app.AppRender();
 
             if ((WaveServices.Platform == null) || WaveServices.Platform.HasExited)
             {
