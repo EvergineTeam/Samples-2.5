@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="6d7cca44-8333-4ff2-938e-752efba5f023" Publisher="CN=davila" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>CardboardCockpit</DisplayName>
+    <PublisherDisplayName>MyPublisher</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+    <Description>CardboardCockpit Launcher</Description>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Launcher.App">
+      <m2:VisualElements DisplayName="CardboardCockpit" Description="Project Template game app" BackgroundColor="#ebebeb" ForegroundText="dark" Square150x150Logo="Images\Logo.png" Square30x30Logo="Images\SmallLogo.png">
+        <m2:DefaultTile>
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen BackgroundColor="#ebebeb" Image="Images\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <!--<Capability Name="internetClient" />-->
+  </Capabilities>
+</Package>

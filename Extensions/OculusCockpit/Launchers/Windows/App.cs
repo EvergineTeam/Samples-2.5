@@ -19,24 +19,25 @@ namespace OculusCockpit
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-		
+
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-			this.FullScreen = false;
-			this.WindowTitle = "OculusCockpit";
+            this.FullScreen = false;
+            this.WindowTitle = "OculusCockpit";
+            this.msaaSampleCount = 4;
         }
 
         public override void Initialize()
         {
             this.game = new OculusCockpit.Game();
             this.game.Initialize(this);
-			
-			#region WAVE SOFTWARE LICENSE AGREEMENT
+
+            #region WAVE SOFTWARE LICENSE AGREEMENT
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-            
+
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -67,14 +68,14 @@ namespace OculusCockpit
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-				if (this.splashState)
+                if (this.splashState)
                 {
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     this.time += elapsedTime;
@@ -141,6 +142,6 @@ namespace OculusCockpit
                 game.OnDeactivated();
             }
         }
-	}
+    }
 }
 
