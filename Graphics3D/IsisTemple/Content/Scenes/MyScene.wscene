@@ -45,7 +45,7 @@
               <d7p1:FrustumCullingEnabled>true</d7p1:FrustumCullingEnabled>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/IsisTemple.Components" i:type="d7p1:TorchLightBehaviour">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
             </d2p1:Component>
@@ -79,28 +79,35 @@
             <d6p1:G>0</d6p1:G>
             <d6p1:R>0</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">Target DepthAndStencil All</d5p1:ClearFlags>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>10000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>1</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
-          <d5p1:FarPlane>10000</d5p1:FarPlane>
-          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
-          <d5p1:NearPlane>1</d5p1:NearPlane>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/IsisTemple.Components" i:type="d5p1:EntityFollowerBehavior">
-          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:FollowEntityPath>isis</d5p1:FollowEntityPath>
@@ -136,7 +143,7 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d7p1:Effect>
+              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>100</d8p1:Height>
@@ -151,7 +158,7 @@
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Sprite">
               <d7p1:IsGlobalAsset>false</d7p1:IsGlobalAsset>
-              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
               <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -165,7 +172,7 @@
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:type="d8p1:RectangleCollider2D" xmlns="WaveEngine.Framework.Graphics">
-                <d2p1:Family xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+                <d2p1:Family>PriorityBehavior</d2p1:Family>
                 <d2p1:IsActive>true</d2p1:IsActive>
                 <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
                 <d8p1:Center xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -183,10 +190,10 @@
                   <d9p1:Y>100</d9p1:Y>
                 </d8p1:Size>
               </collider2D>
-              <d7p1:SamplerMode xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">LinearClamp</d7p1:SamplerMode>
+              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+              <d2p1:Family>PriorityBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
               <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -205,10 +212,10 @@
               </d7p1:Size>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-              <d7p1:EnabledGestures xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Gestures">None</d7p1:EnabledGestures>
+              <d7p1:EnabledGestures>None</d7p1:EnabledGestures>
               <d7p1:ManualTouchOrder>false</d7p1:ManualTouchOrder>
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
@@ -241,7 +248,7 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d7p1:Effect>
+              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>100</d8p1:Height>
@@ -256,7 +263,7 @@
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Sprite">
               <d7p1:IsGlobalAsset>false</d7p1:IsGlobalAsset>
-              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
               <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -270,7 +277,7 @@
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:type="d8p1:RectangleCollider2D" xmlns="WaveEngine.Framework.Graphics">
-                <d2p1:Family xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+                <d2p1:Family>PriorityBehavior</d2p1:Family>
                 <d2p1:IsActive>true</d2p1:IsActive>
                 <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
                 <d8p1:Center xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -288,10 +295,10 @@
                   <d9p1:Y>100</d9p1:Y>
                 </d8p1:Size>
               </collider2D>
-              <d7p1:SamplerMode xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">LinearClamp</d7p1:SamplerMode>
+              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+              <d2p1:Family>PriorityBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
               <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -310,10 +317,10 @@
               </d7p1:Size>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-              <d7p1:EnabledGestures xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Gestures">None</d7p1:EnabledGestures>
+              <d7p1:EnabledGestures>None</d7p1:EnabledGestures>
               <d7p1:ManualTouchOrder>false</d7p1:ManualTouchOrder>
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
@@ -346,7 +353,7 @@
                 <d8p1:Y>0.9999992</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d7p1:Effect>
+              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>100</d8p1:Height>
@@ -361,7 +368,7 @@
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Sprite">
               <d7p1:IsGlobalAsset>false</d7p1:IsGlobalAsset>
-              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
               <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -375,7 +382,7 @@
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:type="d8p1:RectangleCollider2D" xmlns="WaveEngine.Framework.Graphics">
-                <d2p1:Family xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+                <d2p1:Family>PriorityBehavior</d2p1:Family>
                 <d2p1:IsActive>true</d2p1:IsActive>
                 <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
                 <d8p1:Center xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -393,10 +400,10 @@
                   <d9p1:Y>99.99992</d9p1:Y>
                 </d8p1:Size>
               </collider2D>
-              <d7p1:SamplerMode xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">LinearClamp</d7p1:SamplerMode>
+              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+              <d2p1:Family>PriorityBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
               <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -415,10 +422,10 @@
               </d7p1:Size>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-              <d7p1:EnabledGestures xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Gestures">None</d7p1:EnabledGestures>
+              <d7p1:EnabledGestures>None</d7p1:EnabledGestures>
               <d7p1:ManualTouchOrder>false</d7p1:ManualTouchOrder>
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
@@ -451,7 +458,7 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d7p1:Effect>
+              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>100</d8p1:Height>
@@ -466,7 +473,7 @@
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Sprite">
               <d7p1:IsGlobalAsset>false</d7p1:IsGlobalAsset>
-              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
               <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -480,7 +487,7 @@
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:type="d8p1:RectangleCollider2D" xmlns="WaveEngine.Framework.Graphics">
-                <d2p1:Family xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+                <d2p1:Family>PriorityBehavior</d2p1:Family>
                 <d2p1:IsActive>true</d2p1:IsActive>
                 <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
                 <d8p1:Center xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -498,10 +505,10 @@
                   <d9p1:Y>100</d9p1:Y>
                 </d8p1:Size>
               </collider2D>
-              <d7p1:SamplerMode xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">LinearClamp</d7p1:SamplerMode>
+              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+              <d2p1:Family>PriorityBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
               <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -520,10 +527,10 @@
               </d7p1:Size>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-              <d7p1:EnabledGestures xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Gestures">None</d7p1:EnabledGestures>
+              <d7p1:EnabledGestures>None</d7p1:EnabledGestures>
               <d7p1:ManualTouchOrder>false</d7p1:ManualTouchOrder>
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
@@ -556,7 +563,7 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d7p1:Effect>
+              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>100</d8p1:Height>
@@ -571,7 +578,7 @@
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Sprite">
               <d7p1:IsGlobalAsset>false</d7p1:IsGlobalAsset>
-              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+              <d7p1:SourceRectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
               <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>255</d8p1:B>
@@ -585,7 +592,7 @@
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:type="d8p1:RectangleCollider2D" xmlns="WaveEngine.Framework.Graphics">
-                <d2p1:Family xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+                <d2p1:Family>PriorityBehavior</d2p1:Family>
                 <d2p1:IsActive>true</d2p1:IsActive>
                 <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
                 <d8p1:Center xmlns:d9p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -603,10 +610,10 @@
                   <d9p1:Y>100</d9p1:Y>
                 </d8p1:Size>
               </collider2D>
-              <d7p1:SamplerMode xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">LinearClamp</d7p1:SamplerMode>
+              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">PriorityBehavior</d2p1:Family>
+              <d2p1:Family>PriorityBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
               <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -625,10 +632,10 @@
               </d7p1:Size>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
-              <d2p1:Family xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+              <d2p1:Family>DefaultBehavior</d2p1:Family>
               <d2p1:IsActive>true</d2p1:IsActive>
               <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-              <d7p1:EnabledGestures xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Gestures">None</d7p1:EnabledGestures>
+              <d7p1:EnabledGestures>None</d7p1:EnabledGestures>
               <d7p1:ManualTouchOrder>false</d7p1:ManualTouchOrder>
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
@@ -657,7 +664,7 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d5p1:Effect>
+          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>0</d6p1:Height>
@@ -689,7 +696,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Y>-80</d6p1:Y>
             <d6p1:Z>INF</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -697,7 +704,7 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">None</d5p1:Effect>
+          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>0</d6p1:Height>
@@ -717,16 +724,26 @@
             <d6p1:G>149</d6p1:G>
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
-          <d5p1:ClearFlags xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Graphics">DepthAndStencil</d5p1:ClearFlags>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
           <d5p1:distance>INF</d5p1:distance>
           <d5p1:rotation>0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -773,13 +790,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -815,13 +832,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -857,13 +874,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -899,13 +916,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -941,13 +958,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -983,13 +1000,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1025,13 +1042,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1067,13 +1084,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column2Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column2.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column2.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1109,13 +1126,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1151,13 +1168,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1193,13 +1210,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1235,13 +1252,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1277,13 +1294,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1319,13 +1336,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1361,13 +1378,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/FloorMaterial.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/floor.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/floor.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1403,13 +1420,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1445,13 +1462,13 @@
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/Materials/Column1Material.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
               <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/column1.fbx.wpk</ModelPath>
-              <d7p1:ModelPath>Content/Assets/Models/column1.fbx.wpk</d7p1:ModelPath>
-              <d7p1:ModelType xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Shared.Graphics">Custom</d7p1:ModelType>
+              <d7p1:ModelType>Custom</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
               <d2p1:IsVisible>true</d2p1:IsVisible>
@@ -1510,20 +1527,19 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/Materials/IsisMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:SkinnedModel">
           <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/isis.fbx.wpk</ModelPath>
-          <d5p1:ModelPath>Content/Assets/Models/isis.fbx.wpk</d5p1:ModelPath>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Animation" i:type="d5p1:Animation3D">
-          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
           <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
-          <d5p1:CurrentAnimation>Idle</d5p1:CurrentAnimation>
           <d5p1:FramesPerSecond>30</d5p1:FramesPerSecond>
           <d5p1:animationPath>Content/Assets/Models/isis.fbx_animation.wpk</d5p1:animationPath>
         </d2p1:Component>
@@ -1541,7 +1557,7 @@
           </d5p1:LineColor>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/IsisTemple.Components" i:type="d5p1:IsisControllerBehavior">
-          <d2p1:Family xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework">DefaultBehavior</d2p1:Family>
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
           <d2p1:IsActive>true</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
@@ -1550,22 +1566,6 @@
     </d2p1:Entity>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
-    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:KeyValueOfstringISettingCategory>
-        <d3p1:Key>Physics</d3p1:Key>
-        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:PhysicCategory">
-          <d5p1:AllowSleep>true</d5p1:AllowSleep>
-          <d5p1:Gravity2D xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>9.8</d6p1:Y>
-          </d5p1:Gravity2D>
-          <d5p1:Gravity3D xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-9.8</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:Gravity3D>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringISettingCategory>
-    </d2p1:Categories>
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </Settings>
 </Scene>

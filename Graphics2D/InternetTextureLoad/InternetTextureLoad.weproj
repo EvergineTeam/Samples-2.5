@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>27b4214c-382d-4db6-9ddb-61486ea3c019</Id>
   <Profiles>
     <Profile>
@@ -44,7 +44,7 @@
       <Platform>Linux</Platform>
     </Profile>
   </Profiles>
-  <ResourcesPath>Resources</ResourcesPath>
+  <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -58,4 +58,5 @@
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
   </Settings>
+  <WaveVersion>2.0.2.10</WaveVersion>
 </Project>

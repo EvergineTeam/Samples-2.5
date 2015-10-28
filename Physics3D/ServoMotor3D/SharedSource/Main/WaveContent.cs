@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 26/08/2015 12:28:44
+// File generated on 07/10/2015 18:02:49
 namespace ServoMotor3D
 {
     using System;

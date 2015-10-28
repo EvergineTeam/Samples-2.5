@@ -61,7 +61,7 @@ namespace WaveForm
         /// </summary>
         public void ControlRender()
         {
-            this.gameApp.Render();
+            this.gameApp.BaseRender();
         }
 
         /// <summary>
