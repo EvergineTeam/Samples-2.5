@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>2cbb74dc-0b24-46e9-9837-a5bcd9d30b67</Id>
   <Profiles>
     <Profile>
@@ -58,5 +58,5 @@
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
   </Settings>
-  <WaveVersion>2.0.1.8</WaveVersion>
+  <WaveVersion>2.0.2.10</WaveVersion>
 </Project>

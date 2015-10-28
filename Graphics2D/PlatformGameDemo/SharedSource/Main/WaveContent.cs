@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 15:04:30
+// File generated on 28/10/2015 17:33:30
 namespace PlatformGameDemo
 {
     using System;
@@ -26,8 +26,8 @@ namespace PlatformGameDemo
             /// <summary> Path to Content/Assets/Floor.png </summary>
             public const string Floor_png = "Content/Assets/Floor.png";
             
-            /// <summary> Path to Content/Assets/Sky.jpg </summary>
-            public const string Sky_jpg = "Content/Assets/Sky.jpg";
+            /// <summary> Path to Content/Assets/Sky.png </summary>
+            public const string Sky_png = "Content/Assets/Sky.png";
             
             /// <summary> Path to Content/Assets/Tim.spritesheet </summary>
             public const string Tim_spritesheet = "Content/Assets/Tim.spritesheet";
