@@ -19,13 +19,11 @@ namespace SpineSkeletalAnimation
 {
     public class MyScene : Scene
     {
-        Entity skeleton;
-
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            this.skeleton = EntityManager.Find("skeleton");
+            var skeleton = EntityManager.Find("skeleton");
 
             #region UI
             Slider slider1 = new Slider()
@@ -75,11 +73,11 @@ namespace SpineSkeletalAnimation
             {
                 if (o.Value)
                 {
-                    this.skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Bones;
+                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Bones;
                 }
                 else
                 {
-                    this.skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Quads;
+                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Quads;
                 }
             };
 
@@ -97,25 +95,16 @@ namespace SpineSkeletalAnimation
             {
                 if (o.Value)
                 {
-                    this.skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Quads;
+                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Quads;
                 }
                 else
                 {
-                    this.skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Bones;
+                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Bones;
                 }
             };
 
             EntityManager.Add(debugQuads);
             #endregion
-        }
-
-        protected override void Start()
-        {
-            base.Start();
-
-            var anim = this.skeleton.FindComponent<SkeletalAnimation>();
-            anim.CurrentAnimation = "walk";
-            anim.Play(true);
         }
     }
 }
