@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{A2713ED2-5D06-4FA8-A4B8-0791EDAE76CB}</ProjectGuid>
@@ -70,20 +70,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="WaveEngine.Adapter">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.2.10\lib\wpa\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.3.14\lib\wpa\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.0.2.10\lib\wpa\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.3.14\lib\wpa\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.0.2.10\lib\wpa\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.0.3.14\lib\wpa\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.0.2.10\lib\wpa\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.0.3.14\lib\wpa\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.0.2.10\lib\wpa\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.0.3.14\lib\wpa\WaveEngine.Materials.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -151,11 +150,11 @@
       </Target>
     -->
   <ItemGroup />
-  <Import Project="..\..\packages\WaveEngine.2.0.2.10\build\wpa\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.2.10\build\wpa\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.0.3.14\build\wpa\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.3.14\build\wpa\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.2.10\build\wpa\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.2.10\build\wpz\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.3.14\build\wpa\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.3.14\build\wpz\WaveEngine.targets'))" />
   </Target>
 </Project>
