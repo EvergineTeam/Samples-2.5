@@ -36,10 +36,12 @@ namespace PerPixelColliderSample
         public Entity ship;
         public Entity ground, ground2, ground3;
         public Entity explosion;
+        private Animation2D explodeAnimation;
 
         private SampleState state;
 
         public int countDown;
+
         public SampleState State
         {
             get
@@ -94,11 +96,10 @@ namespace PerPixelColliderSample
 
         protected override void CreateScene()
         {
-            RenderManager.DebugLines = true;
             this.Load(WaveContent.Scenes.MyScene);
 
-            this.CreateExplosion();
             this.CreateShip();
+            this.CreateExplosion();
 
             this.CreateGrounds();
             this.CreateObstacles();
@@ -175,10 +176,21 @@ namespace PerPixelColliderSample
         {
             this.explosion = EntityManager.Find("boom");
             this.explosion.Enabled = false;
+            this.explodeAnimation = this.explosion.FindComponent<Animation2D>();
+
+            this.explodeAnimation.AddKeyFrameEvent("boom", 14);
+
+            this.explodeAnimation.OnKeyFrameEvent += this.explodeAnimation_OnKeyFrameEvent;
+        }
+
+        public void explodeAnimation_OnKeyFrameEvent(object sender, WaveEngine.Common.Helpers.StringEventArgs e)
+        {
+            this.explosion.IsVisible = false;
         }
 
         public void Explosion()
         {
+            this.explosion.IsVisible = true;
             // Creates the explosions and adjusts to the ship position.
             this.explosion.Enabled = true;
 
@@ -188,9 +200,7 @@ namespace PerPixelColliderSample
             explosionTransform.X = shipTransform.X;
             explosionTransform.Y = shipTransform.Y;
 
-            var anim2D = this.explosion.FindComponent<Animation2D>();         
-            
-            anim2D.PlayAnimation("boom", false);
+            this.explodeAnimation.PlayAnimation("boom", false);
         }
     }
 }
