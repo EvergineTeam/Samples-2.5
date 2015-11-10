@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="SocialService.SocialService">
+	<uses-sdk />
+	<application android:icon="@drawable/Icon" android:label="SocialService"></application>
+	<!--Uncomment these lines if you need to use CameraCapture & Microphone features-->
+	<!--<uses-permission android:name="android.permission.CAMERA" />-->
+	<!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+	<!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+	<!--<uses-permission android:name="android.permission.STORAGE" />-->
+</manifest>
