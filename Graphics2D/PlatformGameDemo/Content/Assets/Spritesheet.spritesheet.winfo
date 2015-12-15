@@ -1,0 +1,28 @@
+﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>1c1bb250-da96-46df-ba26-9dbf383ca9bc</Id>
+  <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:SpriteSheet">
+    <d2p1:Animations xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
+      <d3p1:AtlasProfile>
+        <d3p1:Name i:nil="true" />
+        <d3p1:ZipCompress>true</d3p1:ZipCompress>
+        <d3p1:ForceSquare>false</d3p1:ForceSquare>
+        <d3p1:GenerateMipMaps>true</d3p1:GenerateMipMaps>
+        <d3p1:Height>0</d3p1:Height>
+        <d3p1:KeepOrder>false</d3p1:KeepOrder>
+        <d3p1:MaxHeight>2048</d3p1:MaxHeight>
+        <d3p1:MaxWidth>2048</d3p1:MaxWidth>
+        <d3p1:OutputFormat>Color32Bit</d3p1:OutputFormat>
+        <d3p1:Padding>2</d3p1:Padding>
+        <d3p1:RequiresPowerOfTwo>true</d3p1:RequiresPowerOfTwo>
+        <d3p1:Spacing>0</d3p1:Spacing>
+        <d3p1:Width>0</d3p1:Width>
+      </d3p1:AtlasProfile>
+    </d2p1:Profiles>
+    <d2p1:Resources xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <d2p1:Static>false</d2p1:Static>
+    <d2p1:Status>0</d2p1:Status>
+  </Asset>
+  <Thumbnail i:nil="true" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+</Asset>
