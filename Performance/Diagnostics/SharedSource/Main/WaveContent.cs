@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 14:01:36
+// File generated on 14/01/2016 10:48:38
 namespace Diagnostics
 {
     using System;
