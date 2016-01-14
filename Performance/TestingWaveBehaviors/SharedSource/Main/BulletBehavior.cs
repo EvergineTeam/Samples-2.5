@@ -13,14 +13,32 @@ namespace TestingWaveBehaviors
     {
         public float SpeedX;
         public float SpeedY;
+        public float screenWidth;
+        public float screenHeight;
 
         [RequiredComponent]
-        private Transform2D transform;
+        private Transform2D transform = null;
 
         public BulletBehavior()
             : base()
         {
             this.SpeedY = 15;
+        }
+
+        protected override void ResolveDependencies()
+        {
+            base.ResolveDependencies();
+
+            if (WaveServices.ViewportManager.IsActivated)
+            {
+                this.screenWidth = WaveServices.ViewportManager.ScreenWidth;
+                this.screenHeight = WaveServices.ViewportManager.ScreenHeight;
+            }
+            else
+            {
+                this.screenWidth = WaveServices.Platform.ScreenWidth;
+                this.screenHeight = WaveServices.Platform.ScreenHeight;
+            }
         }
 
         protected override void Update(TimeSpan gameTime)
@@ -33,8 +51,8 @@ namespace TestingWaveBehaviors
             int limit = 10;
             if (transform.Y < -limit ||
                 transform.X < -limit ||
-                transform.Y > WaveServices.ViewportManager.VirtualHeight + limit ||
-                transform.X > WaveServices.ViewportManager.VirtualWidth + limit)
+                transform.Y > this.screenHeight + limit ||
+                transform.X > this.screenWidth + limit)
             {
                 EntityManager.Remove(Owner);
             }
