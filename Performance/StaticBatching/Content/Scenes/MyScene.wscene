@@ -32,17 +32,27 @@
             <d6p1:G>0</d6p1:G>
             <d6p1:R>0</d6p1:R>
           </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>10000</d5p1:FarPlane>
           <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>1</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
+          <d5p1:AspectRatio>1.39285719</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -127,6 +137,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -168,6 +179,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -209,6 +221,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -250,6 +263,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -291,6 +305,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -332,6 +347,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -373,6 +389,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -414,6 +431,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -455,6 +473,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -496,6 +515,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -537,6 +557,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -578,6 +599,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -619,6 +641,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -660,6 +683,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -701,6 +725,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -742,6 +767,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -783,6 +809,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -824,6 +851,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -854,7 +882,7 @@
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-16</d6p1:X>
             <d6p1:Y>-0.0005338192</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -865,6 +893,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -906,6 +935,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -947,6 +977,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -988,6 +1019,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1029,6 +1061,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1070,6 +1103,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1111,6 +1145,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1152,6 +1187,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1193,6 +1229,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1234,6 +1271,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1275,6 +1313,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1316,6 +1355,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1357,6 +1397,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1398,6 +1439,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1439,6 +1481,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1480,6 +1523,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1521,6 +1565,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1562,6 +1607,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1603,6 +1649,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1644,6 +1691,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1685,6 +1733,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1726,6 +1775,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1767,6 +1817,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1808,6 +1859,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1849,6 +1901,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1890,6 +1943,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1931,6 +1985,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -1972,6 +2027,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2013,6 +2069,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2054,6 +2111,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2095,6 +2153,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2136,6 +2195,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2177,6 +2237,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2218,6 +2279,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2259,6 +2321,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2300,6 +2363,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2341,6 +2405,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2382,6 +2447,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2423,6 +2489,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2464,6 +2531,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2505,6 +2573,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2546,6 +2615,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2587,6 +2657,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2628,6 +2699,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material1.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
@@ -2669,6 +2741,7 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath>Content/Assets/material2.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
