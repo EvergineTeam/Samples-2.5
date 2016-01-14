@@ -14,7 +14,10 @@ namespace Touch
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
+            ViewportManager vm = WaveServices.ViewportManager;
+            vm.Activate(1280, 720, ViewportManager.StretchMode.UniformToFill);
+
+            ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

@@ -18,6 +18,8 @@ namespace Touch
     {
         protected override void CreateScene()
         {
+            WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
+
             this.Load(WaveContent.Scenes.MyScene);
         }
     }

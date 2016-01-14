@@ -24,6 +24,7 @@ using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
+using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
@@ -39,7 +40,7 @@ namespace Touch
 
         [DataMember]
         [RenderPropertyAsAsset(AssetType.Texture)]
-        public string TexturePath 
+        public string TexturePath
         {
             get
             {
@@ -75,14 +76,17 @@ namespace Touch
 
         public override void Draw(TimeSpan gameTime)
         {
-            TouchPanelState state = WaveServices.Input.TouchPanelState;
+            TouchPanelState state = WaveServices.Input.TouchPanelState;      
 
+            int index = 0;
             foreach (var touch in state)
             {
-                this.layer.SpriteBatch.Draw(
+                this.layer.SpriteBatch.DrawVM(
                         texture,
                         touch.Position - origin,
                         Color.White);
+
+                Labels.Add("Touch" + index++, touch.Position);
             }
         }
 
