@@ -41,7 +41,7 @@ namespace Lines
         protected override void DefaultValues()
         {
             StartingLinesCount = 1;
-            MaxLinesCount = 66000;
+            MaxLinesCount = 10000;
             Size = 200;
             lines = new List<Line>();
             random = WaveServices.Random;
