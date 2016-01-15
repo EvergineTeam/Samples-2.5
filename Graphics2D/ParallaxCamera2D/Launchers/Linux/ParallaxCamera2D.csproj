@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{D5CB11BC-0227-42AF-BE20-306B5744F50C}</ProjectGuid>
@@ -74,6 +74,10 @@
     <Reference Include="WaveEngine.ImageEffects">
       <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.4.20\lib\Mono\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.Spine">
+      <HintPath>..\..\packages\WaveEngine.Spine.2.0.4.20\lib\Mono\WaveEngine.Spine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
@@ -131,5 +135,6 @@
       <Link>Tao.Sdl.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
