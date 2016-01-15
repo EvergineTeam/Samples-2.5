@@ -135,6 +135,8 @@ namespace CameraRengerTarget
 
         private void SetActiveCamera(int cameraIndex)
         {
+            this.cameras[0].IsActive = (cameraIndex != 0) ? false : true;
+
             var activeCamera = this.cameras[cameraIndex];
             activeCamera.RenderTarget = null;
             activeCamera.LayerMask[DefaultLayers.GUI] = true;
