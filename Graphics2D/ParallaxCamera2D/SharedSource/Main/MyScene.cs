@@ -61,7 +61,7 @@ namespace ParallaxCamera2D
                 cameraEntity.AddComponent(new ChromaticAberrationLens() { AberrationStrength = 5.5f });
                 cameraEntity.AddComponent(new RadialBlurLens() { Center = new Vector2(0.5f, 0.75f), BlurWidth = 0.02f, Nsamples = 5 });
                 cameraEntity.AddComponent(ImageEffects.Vignette());
-                cameraEntity.AddComponent(new FilmGrainLens() { GrainIntensityMin = 0.075f, GrainIntensityMax = 0.15f });
+                //cameraEntity.AddComponent(new FilmGrainLens() { GrainIntensityMin = 0.075f, GrainIntensityMax = 0.15f });
             }
 
             cameraEntity.AddComponent(new CameraBehavior(this.yurei));
