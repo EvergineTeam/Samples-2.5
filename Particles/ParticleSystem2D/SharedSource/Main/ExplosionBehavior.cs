@@ -33,16 +33,31 @@ namespace ParticleSystem2DProject
         {
             base.Initialize();
 
-            this.particleSystem = this.Owner.FindChild("explosionParticles").FindComponent<WaveEngine.Components.Particles.ParticleSystem2D>();
-            this.particleSystem.Emit = false;
+            var explosionParticles = this.Owner.FindChild("explosionParticles");
+            if (explosionParticles != null)
+            {
+                this.particleSystem = explosionParticles.FindComponent<WaveEngine.Components.Particles.ParticleSystem2D>();
+                if (this.particleSystem != null)
+                {
+                    this.particleSystem.Emit = false;
+                }
+            }
 
-            this.dinos = this.Owner.FindChild("dinos").FindComponent<WaveEngine.Components.Particles.ParticleSystem2D>();
-            this.dinos.Emit = false;
+            var dinosEntity = this.Owner.FindChild("dinos");
+            if (dinosEntity != null)
+            {
+                this.dinos = dinosEntity.FindComponent<WaveEngine.Components.Particles.ParticleSystem2D>();
+                if (this.dinos != null)
+                {
+                    this.dinos.Emit = false;
+                }
+            }                        
         }
 
         public void Explode(float x, float y)
         {
-            if (this.particleSystem == null)
+            if (this.particleSystem == null || 
+                this.dinos == null)
             {
                 return;
             }
@@ -56,7 +71,7 @@ namespace ParticleSystem2DProject
 
         protected override void Update(TimeSpan gameTime)
         {
-            if (this.particleSystem.Emit)
+            if (this.particleSystem != null && this.particleSystem.Emit)
             {
                 this.explosionLeft = this.explosionLeft - gameTime.TotalSeconds;
                 

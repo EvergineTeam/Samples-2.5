@@ -21,8 +21,13 @@ namespace ParticleSystem2D
 {
     public class MyScene : Scene
     {
+        private MountainLayer mountainLayer;
+
         protected override void CreateScene()
         {
+            this.mountainLayer = new MountainLayer(this.RenderManager);
+            this.RenderManager.RegisterLayerBefore(this.mountainLayer, DefaultLayers.Alpha);
+
             this.Load(WaveContent.Scenes.MyScene);
 
             var textBlock = new TextBlock()
@@ -35,21 +40,9 @@ namespace ParticleSystem2D
             };
             this.EntityManager.Add(textBlock);
 
-            var smoke = EntityManager.Find("meteor.smoke");
-            smoke.AddComponent(new ParticleSystemRenderer2D());
-            smoke.AddComponent(ParticleSystemFactory.CreateSmokeParticle());
-
-            var fire = EntityManager.Find("meteor.fire");
-            fire.AddComponent(new ParticleSystemRenderer2D());
-            fire.AddComponent(ParticleSystemFactory.CreateFireParticle());
-
-            var explosionParticles = EntityManager.Find("explosion.explosionParticles");
-            explosionParticles.AddComponent(new ParticleSystemRenderer2D());
-            explosionParticles.AddComponent(ParticleSystemFactory.CreateExplosion());
-
-            var dinos = EntityManager.Find("explosion.dinos");
-            dinos.AddComponent(new ParticleSystemRenderer2D());
-            dinos.AddComponent(ParticleSystemFactory.CreateDinosaurs());
+            var mountains = EntityManager.Find("mountains");
+            var mountainsRenderer = mountains.FindComponent<SpriteRenderer>();
+            mountainsRenderer.LayerType = this.mountainLayer.GetType();           
         }
     }
 }
