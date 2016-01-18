@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/10/2015 17:28:45
+// File generated on 18/01/2016 11:58:09
 namespace Skybox
 {
     using System;
