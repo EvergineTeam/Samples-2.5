@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/10/2015 17:28:15
+// File generated on 18/01/2016 11:56:09
 namespace RenderTarget
 {
     using System;
