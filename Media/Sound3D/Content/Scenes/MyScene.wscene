@@ -319,7 +319,7 @@
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
-              <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+              <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <d7p1:ModelType>Torus</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:ModelRenderer">
