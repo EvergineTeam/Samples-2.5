@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 18:42:39
+// File generated on 1/18/2016 3:02:57 PM
 namespace EntityPicking
 {
     using System;

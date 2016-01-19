@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/10/2015 18:01:34
+// File generated on 1/19/2016 9:12:38 AM
 namespace Rope
 {
     using System;

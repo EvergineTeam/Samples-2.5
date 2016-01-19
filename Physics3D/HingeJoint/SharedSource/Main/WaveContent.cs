@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 19:26:41
+// File generated on 1/18/2016 3:22:20 PM
 namespace HingleJoint
 {
     using System;

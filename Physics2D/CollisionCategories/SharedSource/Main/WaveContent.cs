@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 17:09:21
+// File generated on 1/18/2016 1:08:18 PM
 namespace CollisionCategories
 {
     using System;

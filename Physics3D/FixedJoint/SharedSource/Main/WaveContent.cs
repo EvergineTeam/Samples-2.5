@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 18:52:06
+// File generated on 1/18/2016 3:15:47 PM
 namespace FixedJoint
 {
     using System;

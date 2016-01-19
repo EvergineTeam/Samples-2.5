@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 17:13:11
+// File generated on 1/18/2016 1:12:50 PM
 namespace DistanceJoint2DSample
 {
     using System;
