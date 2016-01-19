@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/01/2016 16:35:37
+// File generated on 19/01/2016 8:55:22
 namespace ParticleSystem2D
 {
     using System;
@@ -20,8 +20,8 @@ namespace ParticleSystem2D
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/backgroundMeteors.jpg </summary>
-            public const string backgroundMeteors_jpg = "Content/Assets/backgroundMeteors.jpg";
+            /// <summary> Path to Content/Assets/backgroundMeteors.png </summary>
+            public const string backgroundMeteors_png = "Content/Assets/backgroundMeteors.png";
             
             /// <summary> Path to Content/Assets/dinoParticle.png </summary>
             public const string dinoParticle_png = "Content/Assets/dinoParticle.png";
