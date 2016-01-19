@@ -12,7 +12,7 @@
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-150</d6p1:X>
@@ -152,7 +152,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -211,7 +211,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -270,7 +270,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -329,7 +329,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -388,7 +388,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -447,7 +447,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
@@ -491,7 +491,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.9999961</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0.00279252278</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -506,7 +506,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">

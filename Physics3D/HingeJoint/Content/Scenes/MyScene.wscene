@@ -11,8 +11,8 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.923879564</d6p1:W>
             <d6p1:X>-0.382683367</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0.3751849</d6p1:X>
@@ -44,6 +44,14 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
@@ -122,7 +130,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>640</d6p1:X>
-            <d6p1:Y>360</d6p1:Y>
+            <d6p1:Y>325.5</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -162,6 +170,14 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
           <d5p1:distance>0</d5p1:distance>
           <d5p1:rotation>0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
@@ -208,7 +224,7 @@
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Plane</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
@@ -278,7 +294,7 @@
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
@@ -348,7 +364,7 @@
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Cube</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
