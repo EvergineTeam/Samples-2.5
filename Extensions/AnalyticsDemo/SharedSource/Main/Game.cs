@@ -23,12 +23,12 @@ namespace AnalyticsDemo
             this.analyticsManager = new AnalyticsManager(application.Adapter);
             WaveServices.RegisterService<AnalyticsManager>(analyticsManager);
 
-            this.analyticsManager.SetAnalyticsSystem(new LocalyticsInfo(/*Insert your Localytics API KEY code here*/));
+            this.analyticsManager.SetAnalyticsSystem(new LocalyticsInfo("Insert your Localytics API KEY code here"));
             this.analyticsManager.Open();
             this.analyticsManager.Upload();
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
-			WaveServices.ScreenContextManager.To(screenContext);
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
 
         /// <summary>
@@ -53,6 +53,6 @@ namespace AnalyticsDemo
             base.OnDeactivated();
 
             analyticsManager.Close();
-        }        
+        }
     }
 }
