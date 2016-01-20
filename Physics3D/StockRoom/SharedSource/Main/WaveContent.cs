@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 11/09/2015 20:09:41
+// File generated on 1/20/2016 11:43:10 AM
 namespace StockRoom
 {
     using System;
@@ -20,36 +20,43 @@ namespace StockRoom
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/box.fbx </summary>
-            public const string box_fbx = "Content/Assets/box.fbx";
-            
-            /// <summary> Path to Content/Assets/boxTexture.png </summary>
-            public const string boxTexture_png = "Content/Assets/boxTexture.png";
-            
-            /// <summary> Path to Content/Assets/pallet.fbx </summary>
-            public const string pallet_fbx = "Content/Assets/pallet.fbx";
-            
-            /// <summary> Path to Content/Assets/PalletTexture.png </summary>
-            public const string PalletTexture_png = "Content/Assets/PalletTexture.png";
+            /// <summary> Path to Content/Assets/crate.png </summary>
+            public const string crate_png = "Content/Assets/crate.png";
             
             /// <summary> Path to Content/Assets/roomTexture.png </summary>
             public const string roomTexture_png = "Content/Assets/roomTexture.png";
             
-            /// <summary> Path to Content/Assets/stockRoom.fbx </summary>
-            public const string stockRoom_fbx = "Content/Assets/stockRoom.fbx";
-            
             /// <summary> Path to Content/Assets/stockRoomFull.fbx </summary>
             public const string stockRoomFull_fbx = "Content/Assets/stockRoomFull.fbx";
             
-            /// <summary> Path to Content/Assets/MyMaterial.wmat </summary>
-            public const string MyMaterial = "Content/Assets/MyMaterial.wmat";
+            public sealed class Material
+            {
+                
+                /// <summary> Path to Content/Assets/Material/CrateMat.wmat </summary>
+                public const string CrateMat = "Content/Assets/Material/CrateMat.wmat";
+                
+                /// <summary> Path to Content/Assets/Material/RoomMat.wmat </summary>
+                public const string RoomMat = "Content/Assets/Material/RoomMat.wmat";
+                
+                /// <summary> Path to Content/Assets/Material/RopeMat.wmat </summary>
+                public const string RopeMat = "Content/Assets/Material/RopeMat.wmat";
+                
+                /// <summary> Path to Content/Assets/Material/TableMaterial.wmat </summary>
+                public const string TableMaterial = "Content/Assets/Material/TableMaterial.wmat";
+            }
         }
         
         public sealed class Scenes
         {
             
-            /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
-            public const string MyScene = "Content/Scenes/MyScene.wscene";
+            /// <summary> Path to Content/Scenes/BridgeScene.wscene </summary>
+            public const string BridgeScene = "Content/Scenes/BridgeScene.wscene";
+            
+            /// <summary> Path to Content/Scenes/EmitterScene.wscene </summary>
+            public const string EmitterScene = "Content/Scenes/EmitterScene.wscene";
+            
+            /// <summary> Path to Content/Scenes/WallScene.wscene </summary>
+            public const string WallScene = "Content/Scenes/WallScene.wscene";
         }
     }
 }

@@ -17,14 +17,23 @@ using WaveEngine.Framework.UI;
 
 namespace StockRoom
 {
-    public class MyScene : Scene
+    public class StockScene : Scene
     {
+        public string ScenePath;
         public TextBlock helpText;
+
+        public StockScene(string scenePath)
+        { 
+            this.ScenePath = scenePath;
+        }
 
         protected override void CreateScene()
         {
-            this.Load(WaveContent.Scenes.MyScene);
+            this.PhysicsManager.Gravity3D = new Vector3(0, -14, 0);
+            this.Load(this.ScenePath); 
             this.CreateHelpText();
+
+            this.AddSceneBehavior(new ModeBehavior(), SceneBehavior.Order.PostUpdate);
         }
 
         /// <summary>
@@ -42,10 +51,7 @@ namespace StockRoom
                           "Key F6 Wall boxes scene \n" +
                           "Key F7 Bridge scene \n" +
                           "Key R restart scene \n" +
-                          "Key G change gravity direction \n" +
-                          "Key W, A, S, D move camera \n" +
-                          "Key 1 apply impulse mode \n" +
-                          "Key 2 launch ball mode"
+                          "Key G change gravity direction"
             };
             EntityManager.Add(helpText.Entity);
         }

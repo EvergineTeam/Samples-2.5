@@ -31,7 +31,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics3D;
 using WaveEngine.Framework.Services;
-using WaveEngine.Materials; 
+using WaveEngine.Materials;
 #endregion
 
 namespace StockRoomProject
@@ -45,12 +45,15 @@ namespace StockRoomProject
         {
             Entity primitive = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position, Scale = scale })
-                .AddComponent(new MaterialsMap(new StandardMaterial(DefaultLayers.Opaque, WaveContent.Assets.boxTexture_png) { LightingEnabled = false }))
-                .AddComponent(new Model(WaveContent.Assets.box_fbx))
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.Material.CrateMat })
+                .AddComponent(Model.CreateCube())
                 .AddComponent(new BoxCollider3D())
-                .AddComponent(new RigidBody3D() { EnableContinuousContact = true, Mass = mass,
-                                                  KineticFriction = friction,
-                                                  StaticFriction = friction
+                .AddComponent(new RigidBody3D()
+                {
+                    EnableContinuousContact = true,
+                    Mass = mass,
+                    KineticFriction = friction,
+                    StaticFriction = friction
                 })
                 .AddComponent(new ModelRenderer());
 

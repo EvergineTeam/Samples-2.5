@@ -56,7 +56,7 @@ namespace StockRoom.Behaviors
         protected override void DefaultValues()
         {
             base.DefaultValues();
-            ballSize = new Vector3(10);
+            ballSize = new Vector3(1);
         }
 
         protected override void Initialize()
@@ -84,7 +84,7 @@ namespace StockRoom.Behaviors
                      rigidBody.ResetPosition(Camera.Position);
                      var direction = Camera.Transform.WorldTransform.Forward;
                      direction.Normalize();
-                     rigidBody.ApplyLinearImpulse(100 * direction);                  
+                     rigidBody.ApplyLinearImpulse( direction * 100f);                  
                  }                 
              }
              else

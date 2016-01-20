@@ -31,139 +31,91 @@ using WaveEngine.Framework.Services;
 #endregion
 
 namespace StockRoom.Behaviors
-{
-    [DataContract(Namespace = "StockRoom.Behaviors")]
-    public class ModeBehavior : Behavior
+{    
+    public class ModeBehavior : SceneBehavior
     {
-        enum ModeState
-        {
-            EMITER,
-            WALL,
-            BRIDGE
-        }
-
-        [RequiredComponent]
-        private BridgeBehavior bridgeBehavior;
-
-        [RequiredComponent]
-        private StackBehavior stackBehavior;
-
-        [RequiredComponent]
-        private EmiterBehavior emiterBehavior;
-        
         private Input inputService;
+        private ScreenContextManager screenContextManager;
         private KeyboardState beforeKeyboardState;
         private bool diagnostics;
-        private ModeState modeState;
         private Vector3[] gravities;
         private int gravityIndex;
+        
 
         public ModeBehavior()
             : base("ModeBehavior")
         {
-        }
-        protected override void DefaultValues()
-        {
-            base.DefaultValues();
-            this.diagnostics = false;
-            this.modeState = ModeState.EMITER;
             this.gravityIndex = 0;
-            this.gravities = new Vector3[] { new Vector3(0,-120,0),
-                                                        new Vector3(120,0,0),
-                                                        new Vector3(-120,0,0),
-                                                        new Vector3(0,120,0)};
+            this.gravities = new Vector3[] { new Vector3(0,-14,0),
+                                             new Vector3(14,0,0),
+                                             new Vector3(-14,0,0),
+                                             new Vector3(0,14,0)};
+
+            this.diagnostics = false;
         }
 
-        protected override void Initialize()
+
+        protected override void ResolveDependencies()
         {
-            base.Initialize();
-            UpdateMode(this.modeState);
             WaveServices.ScreenContextManager.SetDiagnosticsActive(this.diagnostics);
+            this.inputService = WaveServices.Input;
+            this.screenContextManager = WaveServices.ScreenContextManager;
         }
 
         protected override void Update(TimeSpan gameTime)
         {
-            inputService = WaveServices.Input;
-
-            if (inputService.KeyboardState.IsConnected)
+            if (this.inputService.KeyboardState.IsConnected)
             {
                 // Key F1
-                if (inputService.KeyboardState.F1 == ButtonState.Pressed &&
+                if (this.inputService.KeyboardState.F1 == ButtonState.Pressed &&
                     beforeKeyboardState.F1 != ButtonState.Pressed)
                 {
                     this.diagnostics = !this.diagnostics;
-                    WaveServices.ScreenContextManager.SetDiagnosticsActive(this.diagnostics);
-                    this.Owner.Scene.RenderManager.DebugLines = this.diagnostics;
+                    this.screenContextManager.SetDiagnosticsActive(this.diagnostics);
+                    this.Scene.RenderManager.DebugLines = this.diagnostics;
                 }
                 // Key F5
-                else if (this.modeState != ModeState.EMITER &&
-                         inputService.KeyboardState.F5 == ButtonState.Pressed &&
+                else if (this.inputService.KeyboardState.F5 == ButtonState.Pressed &&
                          beforeKeyboardState.F5 != ButtonState.Pressed)
                 {
-                    this.modeState = ModeState.EMITER;
-                    this.UpdateMode(this.modeState);
+                    this.screenContextManager.To(new ScreenContext(new StockScene(WaveContent.Scenes.EmitterScene)));
                 }
                 // Key F6
-                else if (this.modeState != ModeState.WALL &&
-                         inputService.KeyboardState.F6 == ButtonState.Pressed &&
+                else if (this.inputService.KeyboardState.F6 == ButtonState.Pressed &&
                          beforeKeyboardState.F6 != ButtonState.Pressed)
                 {
-                    this.modeState = ModeState.WALL;
-                    this.UpdateMode(this.modeState);
+                    this.screenContextManager.To(new ScreenContext(new StockScene(WaveContent.Scenes.WallScene)));
                 }
                 // Key F7
-                else if (this.modeState != ModeState.BRIDGE &&
-                         inputService.KeyboardState.F7 == ButtonState.Pressed &&
+                else if (this.inputService.KeyboardState.F7 == ButtonState.Pressed &&
                          beforeKeyboardState.F7 != ButtonState.Pressed)
                 {
-                    this.modeState = ModeState.BRIDGE;
-                    this.UpdateMode(this.modeState);
+                    this.screenContextManager.To(new ScreenContext(new StockScene(WaveContent.Scenes.BridgeScene)));
                 }
                 // Key G
-                else if (inputService.KeyboardState.G == ButtonState.Pressed &&
+                else if (this.inputService.KeyboardState.G == ButtonState.Pressed &&
                          beforeKeyboardState.G != ButtonState.Pressed)
                 {
                     gravityIndex++;
-                    this.Owner.Scene.PhysicsManager.Gravity3D = gravities[gravityIndex % gravities.Length];
+                    this.Scene.PhysicsManager.Gravity3D = gravities[gravityIndex % gravities.Length];
                 }
                 // Key H
                 else if (inputService.KeyboardState.H == ButtonState.Pressed &&
                          beforeKeyboardState.H != ButtonState.Pressed)
                 {
-                    MyScene scene = this.Owner.Scene as MyScene;
+                    StockScene scene = this.Scene as StockScene;
                     scene.helpText.Entity.Enabled = !scene.helpText.Entity.Enabled;
+                }
+                // Key R
+                else if (inputService.KeyboardState.R == ButtonState.Pressed &&
+                         beforeKeyboardState.R != ButtonState.Pressed)
+                {
+                    StockScene scene = this.Scene as StockScene;
+                    this.screenContextManager.To(new ScreenContext(new StockScene(scene.ScenePath)));
                 }
             }
 
             beforeKeyboardState = inputService.KeyboardState;
-        }
-
-        private void UpdateMode(ModeState modeState)
-        {
-            if (modeState == ModeState.BRIDGE)
-            {
-                this.bridgeBehavior.IsActive = true;
-                this.stackBehavior.IsActive = false;
-                this.emiterBehavior.IsActive = false;
-                this.stackBehavior.RemoveWall();
-                this.emiterBehavior.ResetEmiter();
-            }
-            else if (modeState == ModeState.EMITER)
-            {
-                this.emiterBehavior.IsActive = true;
-                this.bridgeBehavior.IsActive = false;
-                this.stackBehavior.IsActive = false;
-                this.stackBehavior.RemoveWall();
-                this.bridgeBehavior.Reset();
-            }
-            else if (modeState == ModeState.WALL)
-            {
-                this.stackBehavior.IsActive = true;
-                this.bridgeBehavior.IsActive = false;
-                this.emiterBehavior.IsActive = false;
-                this.emiterBehavior.ResetEmiter();
-                this.bridgeBehavior.Reset();
-            }
         }
     }
 }
