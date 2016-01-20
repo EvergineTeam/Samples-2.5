@@ -43,7 +43,7 @@
               <d7p1:Radius>1</d7p1:Radius>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
-              <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+              <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <d7p1:ModelType>Sphere</d7p1:ModelType>
             </d2p1:Component>
             <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:RigidBody3D">
@@ -1261,7 +1261,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics"></ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Plane</d5p1:ModelType>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">

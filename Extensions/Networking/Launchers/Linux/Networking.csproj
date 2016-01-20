@@ -75,7 +75,7 @@
       <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.4.20\lib\Mono\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Networking">
-      <HintPath>..\..\packages\WaveEngine.Networking.2.0.4.20\lib\net45\WaveEngine.Networking.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Networking.2.0.4.20\lib\Mono\WaveEngine.Networking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
