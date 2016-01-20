@@ -57,6 +57,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WaveEngine.Adapter">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.2.0.4.20\lib\Mono\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
