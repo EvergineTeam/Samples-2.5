@@ -14,7 +14,7 @@ namespace StockRoom
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
+            ScreenContext screenContext = new ScreenContext(new StockScene(WaveContent.Scenes.EmitterScene));
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

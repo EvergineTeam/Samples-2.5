@@ -125,18 +125,18 @@
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
           <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-          <d5p1:lineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>0</d6p1:A>
-            <d6p1:B>255</d6p1:B>
-            <d6p1:G>0</d6p1:G>
+          <d5p1:LineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
-          </d5p1:lineColor>
-          <d5p1:pointColor xmlns:d6p1="WaveEngine.Common.Graphics">
+          </d5p1:LineColor>
+          <d5p1:PointColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
             <d6p1:G>0</d6p1:G>
             <d6p1:R>255</d6p1:R>
-          </d5p1:pointColor>
+          </d5p1:PointColor>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />
@@ -188,12 +188,12 @@
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
           <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-          <d5p1:lineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+          <d5p1:LineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>144</d6p1:B>
             <d6p1:G>238</d6p1:G>
             <d6p1:R>144</d6p1:R>
-          </d5p1:lineColor>
+          </d5p1:LineColor>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />

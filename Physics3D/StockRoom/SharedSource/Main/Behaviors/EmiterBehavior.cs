@@ -41,16 +41,50 @@ namespace StockRoom.Behaviors
     [DataContract(Namespace = "StockRoom.Behaviors")]
     public class EmiterBehavior : Behavior
     {
-        private const int INTERVAL = 250;
-        private const int NUM_BOXES = 50;
-        private const int MASS = 1;
-        private Vector3 box_size;
         private List<Entity> boxes;
-        private int secondsTime;
+        private double secondsTime;
         private int index;
         private System.Random random;
         private Input inputService;
         private KeyboardState beforeKeyboardState;
+
+        [DataMember]
+        public float Interval
+        {
+            get;
+            set;
+        }
+
+        [DataMember]
+        public float Mass
+        {
+            get;
+            set;
+        }
+
+        [DataMember]
+        public float ItemSize
+        {
+            get;
+            set;
+        }
+
+        [DataMember]
+        public int Count
+        {
+            get;
+            set;
+        }
+
+        [DataMember]
+        public Vector3 PositionRandom
+        {
+            get;
+            set;
+        }
+
+        [RequiredComponent]
+        private Transform3D transform;
 
         /// <summary>
         /// Constructor
@@ -63,11 +97,17 @@ namespace StockRoom.Behaviors
         protected override void DefaultValues()
         {
             base.DefaultValues();
+
+            this.Mass = 1;
+            this.Count = 50;
+            this.Interval = 0.25f;
+            this.ItemSize = 1.5f;
+            this.PositionRandom = new Vector3(20, 0, 0.5f);
+
             this.secondsTime = 0;
             this.index = 0;
             this.random = new System.Random();
-            this.box_size = Vector3.One;
-            this.boxes = new List<Entity>(NUM_BOXES);
+            this.boxes = new List<Entity>();
         }
 
         /// <summary>
@@ -76,13 +116,16 @@ namespace StockRoom.Behaviors
         /// <param name="gameTime"></param>
         protected override void Update(TimeSpan gameTime)
         {
-            this.secondsTime += gameTime.Milliseconds;
-            if (this.index < NUM_BOXES && secondsTime > INTERVAL)
+            this.secondsTime += gameTime.TotalSeconds;
+            if (this.index < this.Count && secondsTime > this.Interval)
             {
                 this.secondsTime = 0;
-                Entity box = Helpers.CreateBox("box" + this.index,
-                                                new Vector3(this.random.Next(-100, 0), 150, this.random.Next(0, 10)),
-                                                box_size, MASS, 3f);
+                var offsetPosition = new Vector3((float)((0.5f * this.random.NextDouble() - 0.5f) * this.PositionRandom.X), 
+                                                (float)((0.5f * this.random.NextDouble() - 0.5f) * this.PositionRandom.Y), 
+                                                (float)((0.5f * this.random.NextDouble() - 0.5f) * this.PositionRandom.Z));
+                var position = this.transform.Position + offsetPosition;
+
+                Entity box = Helpers.CreateBox("box" + this.index, position, Vector3.One * this.ItemSize, this.Mass, 3f);
                 boxes.Add(box);
                 EntityManager.Add(box);
                 this.index++;

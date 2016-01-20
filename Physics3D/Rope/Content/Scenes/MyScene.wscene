@@ -15,9 +15,9 @@
             <d6p1:Z>-0.06851205</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-0.6558614</d6p1:X>
-            <d6p1:Y>4.4847436</d6p1:Y>
-            <d6p1:Z>1.12234759</d6p1:Z>
+            <d6p1:X>-1.0630163</d6p1:X>
+            <d6p1:Y>4.43640757</d6p1:Y>
+            <d6p1:Z>1.81662226</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -56,7 +56,7 @@
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
+          <d2p1:IsActive>false</d2p1:IsActive>
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
           <d5p1:GamepadRotationSpeed>0.75</d5p1:GamepadRotationSpeed>
           <d5p1:RotationSpeed>0.004</d5p1:RotationSpeed>
@@ -278,6 +278,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -346,6 +361,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule01</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -368,9 +398,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.1</d6p1:X>
-            <d6p1:Y>0.1</d6p1:Y>
-            <d6p1:Z>0.1</d6p1:Z>
+            <d6p1:X>0.220251709</d6p1:X>
+            <d6p1:Y>0.220251709</d6p1:Y>
+            <d6p1:Z>0.223510489</d6p1:Z>
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
@@ -480,6 +510,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule02</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -547,6 +592,21 @@
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule03</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
@@ -616,6 +676,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule04</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -683,6 +758,21 @@
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule05</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
@@ -752,6 +842,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule06</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -820,6 +925,21 @@
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule07</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
+        </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>
     </d2p1:Entity>
@@ -887,6 +1007,21 @@
           <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:JointMap3D">
+          <d5p1:Joints xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+              <d6p1:Key>BallSocketJoint3D_1</d6p1:Key>
+              <d6p1:Value i:type="d5p1:BallSocketJoint3D">
+                <d5p1:entityPathB>capsule08</d5p1:entityPathB>
+                <d5p1:anchor xmlns:d9p1="WaveEngine.Common.Math">
+                  <d9p1:X>0</d9p1:X>
+                  <d9p1:Y>0.1</d9p1:Y>
+                  <d9p1:Z>0</d9p1:Z>
+                </d5p1:anchor>
+              </d6p1:Value>
+            </d6p1:KeyValueOfstringJoint3DNk19o_PWY>
+          </d5p1:Joints>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>rope</d2p1:Tag>

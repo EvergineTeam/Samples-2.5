@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 10/11/2015 16:21:22
+// File generated on 20/01/2016 11:36:03
 namespace SocialService
 {
     using System;
@@ -16,6 +16,23 @@ namespace SocialService
     
     public sealed class WaveContent
     {
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/arial.spr </summary>
+            public const string arial_spr = "Content/Assets/arial.spr";
+        }
+        
+        public sealed class Fonts
+        {
+            
+            /// <summary> Path to Content/Fonts/ahronbd.ttf </summary>
+            public const string ahronbd_ttf = "Content/Fonts/ahronbd.ttf";
+            
+            /// <summary> Path to Content/Fonts/arial.ttf </summary>
+            public const string arial_ttf = "Content/Fonts/arial.ttf";
+        }
         
         public sealed class Scenes
         {

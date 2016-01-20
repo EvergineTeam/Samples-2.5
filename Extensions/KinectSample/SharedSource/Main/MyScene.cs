@@ -1,8 +1,10 @@
 #region Using Statements
 using WaveEngine.Components.Graphics2D;
+using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.UI;
 using WaveEngine.Kinect;
 #endregion
 
@@ -29,6 +31,14 @@ namespace KinectSample
                                 .AddComponent(new Sprite(texture))
                                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));
             EntityManager.Add(sprite);
+
+            TextBlock label = new TextBlock()
+            {
+                Text = string.Format("Kinect sensor is available: {0} ", kinectService.IsAvailable.ToString()),
+                Margin = new Thickness(20, 20, 20, 20),
+                VerticalAlignment = VerticalAlignment.Bottom,
+            };
+            EntityManager.Add(label);
         }
     }
 }

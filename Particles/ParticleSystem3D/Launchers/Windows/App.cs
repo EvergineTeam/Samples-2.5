@@ -4,7 +4,6 @@ using System.Reflection;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
-using WaveEngine.Components.Particles;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
@@ -25,7 +24,7 @@ namespace ParticleSystem3D
             this.Width = 1280;
             this.Height = 720;
 			this.FullScreen = false;
-            this.WindowTitle = "ParticleSystem3D";
+			this.WindowTitle = "ParticleSystem3D";
         }
 
         public override void Initialize()
