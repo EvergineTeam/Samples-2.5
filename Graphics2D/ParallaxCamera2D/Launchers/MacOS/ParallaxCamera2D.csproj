@@ -36,6 +36,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -60,6 +61,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -85,6 +87,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -113,6 +116,9 @@
       <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.4.20\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral" />
+    <Reference Include="WaveEngine.Spine">
+      <HintPath>..\..\packages\WaveEngine.Spine.2.0.4.20\lib\Xamarin.Mac\WaveEngine.Spine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -122,6 +128,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SplashScreen.wpk" />

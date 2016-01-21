@@ -17,27 +17,9 @@ namespace ServoMotor3D
 {
     public class MyScene : Scene
     {
-        private Entity ball;
-        private Vector3 ballInitialPosition;
-        private Transform3D ballTransform3D;
-
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
-
-            this.ball = this.EntityManager.Find("ball");
-            this.ballTransform3D = this.ball.FindComponent<Transform3D>();
-            this.ballInitialPosition = this.ballTransform3D.Position;
-
-            WaveServices.TimerFactory.CreateTimer(TimeSpan.FromSeconds(3), 
-                () =>
-                {
-                    this.ball.RemoveComponent<RigidBody3D>();
-                    this.ballTransform3D.Position = this.ballInitialPosition;
-                    this.ball.AddComponent(new RigidBody3D());
-                    this.ball.RefreshDependencies();
-                },
-                true);
         }
     }
 }
