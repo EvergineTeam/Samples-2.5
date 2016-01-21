@@ -48,7 +48,7 @@ namespace InternetTextureLoad
 
         private void GetResponseCallback(IAsyncResult asynchronousResult)
         {
-            WaveServices.TaskScheduler.CreateTask(() =>
+			WaveServices.Dispatcher.RunOnWaveThread(() =>
             {
                 HttpWebRequest request = asynchronousResult.AsyncState as HttpWebRequest;
 
