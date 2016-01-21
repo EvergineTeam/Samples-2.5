@@ -36,6 +36,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -60,6 +61,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -85,6 +87,7 @@
         <Command type="AfterBuild" command="cp -r $(SolutionDir)/Intermediate/Content/MacOS /$(TargetDir)/$(ProjectName).app/Contents/Resources/Content/" />
       </CustomCommands>
     </CustomCommands>
+    <Profiling>false</Profiling>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -109,8 +112,8 @@
     <Reference Include="WaveEngine.Materials">
       <HintPath>..\..\packages\WaveEngine.Materials.2.0.4.20\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.4.20\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+    <Reference Include="WaveEngine.TiledMap">
+      <HintPath>..\..\packages\WaveEngine.TiledMap.2.0.4.20\lib\Xamarin.Mac\WaveEngine.TiledMap.dll</HintPath>
     </Reference>
     <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral" />
   </ItemGroup>
