@@ -38,7 +38,7 @@ namespace InternetTextureLoad
         {
             try
             {
-                this.webRequest = (HttpWebRequest)WebRequest.Create(url);
+                this.webRequest = WebRequest.CreateHttp(url);
                 this.webRequest.BeginGetResponse(new AsyncCallback(this.GetResponseCallback), this.webRequest);
             }
             catch (Exception)
