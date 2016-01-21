@@ -45,6 +45,8 @@ let processResults (path : string) (message : string) (flag : bool) =
 
     items.Add(report)
 
+let mutable OkProjects = 0;
+
 let printReport (l : List<sampleReport>) =
     printfn ""
     traceImportant "---------------------------------------------------------------------"
@@ -53,9 +55,12 @@ let printReport (l : List<sampleReport>) =
     l |> Seq.iteri (fun index item ->
         if l.[index].Result = status.Success then
             trace (index.ToString() + "-    Success " + l.[index].Path)
+            OkProjects <- OkProjects + 1
         else
             traceError (index.ToString() + "-    Failed " + l.[index].Path))
 
+    printfn ""
+    printfn "   Projects success: %i / %i" OkProjects l.Count
     traceImportant "---------------------------------------------------------------------"
     printfn ""
 
