@@ -10,11 +10,16 @@ open System.Linq
 open Fake.AssemblyInfoFile
 
 let configuration = "Release"
-let Platform = "x86"
+let architecture = "x86"
 
 let rootFolder = "../"
 
 let getFolder solutionFile= Path.GetDirectoryName(solutionFile)
+
+let Exec command args =
+    let result = Shell.Exec(command, args)
+
+    if result <> 0 then failwithf "%s exited with error %d" command result
 
 let RestorePackages solutionFile =
     RestoreMSSolutionPackages (fun p -> 
@@ -30,17 +35,15 @@ type sampleReport =
     {
         Result : status
         Path : string
-        ErrorMessage : string
     }
 
 let items = new List<sampleReport>()
 
-let processResults (path : string) (message : string) (flag : bool) =
+let processResults (path : string) (flag : bool) =
     let report : sampleReport = 
         {
             Result = if flag then status.Success else status.Failed
             Path = path
-            ErrorMessage = message
         }
 
     items.Add(report)
@@ -64,26 +67,29 @@ let printReport (l : List<sampleReport>) =
     traceImportant "---------------------------------------------------------------------"
     printfn ""
 
+let buildSample (platform: string, configuration : string, architecture : string, sample : string) = 
+    match platform with
+    | "Windows" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
+    | "Linux" -> Exec "xbuild" ("/p:Configuration=" + configuration + " " + sample)
+    | "MacOS" -> Exec "/Applications/Xamarin Studio.app/Contents/MacOS/mdtool" ("-v build -t:Build -c:" + configuration + " " + sample)
+    | _-> ()
+
 let buildsamples(platform: string) =
     for sample in Directory.GetFiles(rootFolder, ("*" + platform + ".sln"), SearchOption.AllDirectories) do
-        trace ("Project " + sample)
+        traceImportant ("Project " + sample)
 
-        trace ("restoring..")
+        traceImportant ("restoring..")
         RestorePackages sample
 
-        trace ("Building...")
+        traceImportant ("Building...")
         let mutable flag = true
-        let mutable error = String.Empty
+
         try
-            MSBuild null "Build" [("Configuration", configuration); ("Platform", Platform)] [sample] |> ignore
+            buildSample (platform, configuration, architecture, sample)
         with
-            | BuildException(errorMessage, errors) -> 
-                (
-                    flag <- false
-                    error <- ErrorMessage.ToString()
-                )
+            | _ -> flag <- false
         
-        processResults sample error flag
+        processResults sample flag
 
     printReport items
 
