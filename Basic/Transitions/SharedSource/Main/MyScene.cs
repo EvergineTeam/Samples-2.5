@@ -90,10 +90,10 @@ namespace Transition
         }
 
         protected override void CreateScene()
-        {
+        {            
             var scene = string.Format(@"Content/Scenes/Scene{0}.wscene", sceneIndex);
 
-            this.Load(scene);
+            this.Load(scene);            
 
             var button = new Button()
             {
@@ -116,10 +116,11 @@ namespace Transition
 
         public static void NextScene()
         {
-            sceneIndex = (sceneIndex + 1) % 16;
+            var transition = (WaveServices.ScreenContextManager.CurrentContext[0] as MyScene).transition;
 
+            sceneIndex = (sceneIndex + 1) % 16;
             var context = new ScreenContext(new MyScene(sceneIndex));
-            WaveServices.ScreenContextManager.To(context, (context[0] as MyScene).transition);
+            WaveServices.ScreenContextManager.To(context, transition);            
         }
     }
 }
