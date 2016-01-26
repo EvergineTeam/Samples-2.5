@@ -105,7 +105,7 @@ namespace Music
                     #region WAVE SOFTWARE LICENSE AGREEMENT
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.DrawVM (this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Draw (this.splashScreen, this.position, Color.White);
                     this.spriteBatch.Render ();
                     #endregion
                 }
