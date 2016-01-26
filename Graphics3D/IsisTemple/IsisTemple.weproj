@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>d52fc076-656f-4c5c-bdbe-c67a55b23b75</Id>
   <Profiles>
     <Profile>
@@ -48,5 +48,5 @@
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </Settings>
-  <WaveVersion>2.0.4.20</WaveVersion>
+  <WaveVersion>2.0.5-alpha-20160125-151</WaveVersion>
 </Project>
