@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>a601fd9e-c30d-4b83-9765-da6a73013f4b</Id>
   <Profiles>
     <Profile>
@@ -51,6 +51,7 @@
         <d3p1:Key>Viewport</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ViewportCategory">
           <d5p1:Enabled>true</d5p1:Enabled>
+          <d5p1:Expand>0</d5p1:Expand>
           <d5p1:Mode>UniformToFill</d5p1:Mode>
           <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
