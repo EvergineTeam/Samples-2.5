@@ -7,6 +7,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 
 namespace ParallaxCamera2D.Behaviors
@@ -21,7 +22,7 @@ namespace ParallaxCamera2D.Behaviors
 
         private const float CameraSpeed = 4;
 
-        private ViewportManager viewportManager;
+        private VirtualScreenManager virtualScreenManager;
         private Platform platform;
 
         [RequiredComponent]
@@ -41,7 +42,7 @@ namespace ParallaxCamera2D.Behaviors
 
             this.followTransform = this.followEntity.FindComponent<Transform2D>();
             
-            this.viewportManager = WaveServices.ViewportManager;
+            this.virtualScreenManager = this.Owner.Scene.VirtualScreenManager;
             this.platform = WaveServices.Platform;
 
             this.platform.OnScreenSizeChanged += OnScreenSizeChanged;
@@ -70,7 +71,7 @@ namespace ParallaxCamera2D.Behaviors
 
         private void RefreshCameraLimits()
         {
-            float halfScreenSize = (this.viewportManager.RightEdge - this.viewportManager.LeftEdge) / 2;
+            float halfScreenSize = (this.virtualScreenManager.RightEdge - this.virtualScreenManager.LeftEdge) / 2;
 
             this.limitMinX = minX + halfScreenSize;
             this.limitMaxX = maxX - halfScreenSize;
