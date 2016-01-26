@@ -69,10 +69,12 @@ namespace PerPixelColliderSample
             this.randomSpawn = randomSpawn;
             this.rotate = rotate;
             this.rotationSpeed = ((float)WaveServices.Random.NextDouble() * 2 * MAXSPEED) - MAXSPEED;
+        }
 
-            Vector2 topLeftCorner = Vector2.Zero;
-            WaveServices.ViewportManager.RecoverPosition(ref topLeftCorner);
-            this.leftCorner = topLeftCorner.X;
+        protected override void Initialize()
+        {
+            base.Initialize();
+            this.leftCorner = this.Owner.Scene.VirtualScreenManager.LeftEdge;
         }
 
         protected override void Update(TimeSpan gameTime)
@@ -87,7 +89,7 @@ namespace PerPixelColliderSample
                 transform2D.X += sceneWidth;
                 if (this.randomSpawn)
                 {
-                    transform2D.Y = (float)WaveServices.Random.NextDouble() * WaveServices.ViewportManager.VirtualHeight / WaveServices.ViewportManager.RatioY;
+                    transform2D.Y = (float)WaveServices.Random.NextDouble() * this.Owner.Scene.VirtualScreenManager.VirtualHeight / this.Owner.Scene.VirtualScreenManager.RatioY;
                 }
             }
 

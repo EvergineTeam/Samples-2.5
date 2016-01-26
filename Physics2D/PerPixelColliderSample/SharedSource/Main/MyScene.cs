@@ -125,7 +125,7 @@ namespace PerPixelColliderSample
             for (int i = 0; i < MAXOBSTACLES; i++)
             {
                 x = step * (i + 3);
-                float y = (float)(WaveServices.Random.NextDouble() * WaveServices.ViewportManager.VirtualHeight / WaveServices.ViewportManager.RatioY);
+                float y = (float)(WaveServices.Random.NextDouble() * this.VirtualScreenManager.VirtualHeight / this.VirtualScreenManager.RatioY);
                 float scale = ((float)WaveServices.Random.NextDouble() * 2f) + 0.5f;
                 var obstacle = new Entity("obstacle_" + i)
                 .AddComponent(new Transform2D() { X = x, Y = y, XScale = scale, YScale = scale, Origin = new WaveEngine.Common.Math.Vector2(0.5f, 0.5f) })
@@ -142,26 +142,20 @@ namespace PerPixelColliderSample
 
         private void CreateGrounds()
         {
-            Vector2 topLeftCorner = Vector2.Zero;
-            WaveServices.ViewportManager.RecoverPosition(ref topLeftCorner);
-
             this.ground = EntityManager.Find("ground1");
             this.ground2 = EntityManager.Find("ground2");
             this.ground3 = EntityManager.Find("ground3");
 
-            this.UpdateGround(this.ground, topLeftCorner.X);
-            this.UpdateGround(this.ground2, topLeftCorner.X + 1024);
-            this.UpdateGround(this.ground3, topLeftCorner.X + 2048);
+            this.UpdateGround(this.ground, this.VirtualScreenManager.TopEdge);
+            this.UpdateGround(this.ground2, this.VirtualScreenManager.TopEdge + 1024);
+            this.UpdateGround(this.ground3, this.VirtualScreenManager.TopEdge + 2048);
         }
 
         private void UpdateGround(Entity ground, float x)
         {
-            Vector2 bottomLeft = new Vector2(0, WaveServices.Platform.ScreenHeight);
-            WaveServices.ViewportManager.RecoverPosition(ref bottomLeft);
-
             var transform = ground.FindComponent<Transform2D>();
             transform.X = x;
-            transform.Y = bottomLeft.Y - 128;
+            transform.Y = this.VirtualScreenManager.BottomEdge - 128;
         }
 
         private void CreateShip()

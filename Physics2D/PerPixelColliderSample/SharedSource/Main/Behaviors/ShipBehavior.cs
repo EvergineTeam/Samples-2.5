@@ -26,7 +26,7 @@ namespace PerPixelColliderSample
         {
             this.speed = 0;
             Vector2 topLeftCorner = Vector2.Zero;
-            WaveServices.ViewportManager.RecoverPosition(ref topLeftCorner);
+            // TODO: WaveServices.ViewportManager.RecoverPosition(ref topLeftCorner);
             this.topMargin = topLeftCorner.Y;
         }
 

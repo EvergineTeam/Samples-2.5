@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>f0258dc7-0947-4696-820f-ae524004c56d</Id>
   <Profiles>
     <Profile>
@@ -46,17 +46,7 @@
   </Profiles>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
-    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:KeyValueOfstringanyType>
-        <d3p1:Key>Viewport</d3p1:Key>
-        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ViewportCategory">
-          <d5p1:Enabled>true</d5p1:Enabled>
-          <d5p1:Mode>UniformToFill</d5p1:Mode>
-          <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringanyType>
-    </d2p1:Categories>
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </Settings>
   <WaveVersion>2.0.5-alpha-20160126-152</WaveVersion>
 </Project>
