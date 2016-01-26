@@ -12,14 +12,14 @@ Global
 		SharedSource\Main\CustomMaterialSource.projitems*{d5cb11bc-0227-42af-be20-306b5744f50c}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|x86.ActiveCfg = Debug|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|x86.Build.0 = Debug|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|x86.ActiveCfg = Release|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
