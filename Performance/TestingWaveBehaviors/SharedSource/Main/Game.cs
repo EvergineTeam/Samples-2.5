@@ -12,9 +12,7 @@ namespace TestingWaveBehaviors
     {
         public override void Initialize(IApplication application)
         {
-            base.Initialize(application);
-
-            WaveServices.ViewportManager.Activate(1280, 720, ViewportManager.StretchMode.UniformToFill);
+            base.Initialize(application);            
 
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);

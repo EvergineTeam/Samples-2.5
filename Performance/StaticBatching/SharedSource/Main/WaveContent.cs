@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 14/01/2016 11:14:13
+// File generated on 26/01/2016 13:12:55
 namespace StaticBatching
 {
     using System;
