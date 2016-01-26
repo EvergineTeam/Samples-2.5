@@ -12,14 +12,14 @@ Global
 		SharedSource\Main\TeapotSampleSource.projitems*{fe013552-949c-4a2e-a59f-92117bb65318}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|x86.ActiveCfg = Debug|x86
-		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|x86.Build.0 = Debug|x86
-		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|x86.ActiveCfg = Release|x86
-		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|x86.Build.0 = Release|x86
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE013552-949C-4A2E-A59F-92117BB65318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
