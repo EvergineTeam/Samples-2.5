@@ -29,16 +29,10 @@ namespace TestingWaveBehaviors
         {
             base.ResolveDependencies();
 
-            if (WaveServices.ViewportManager.IsActivated)
-            {
-                this.screenWidth = WaveServices.ViewportManager.ScreenWidth;
-                this.screenHeight = WaveServices.ViewportManager.ScreenHeight;
-            }
-            else
-            {
-                this.screenWidth = WaveServices.Platform.ScreenWidth;
-                this.screenHeight = WaveServices.Platform.ScreenHeight;
-            }
+
+            var viewportManager = this.Owner.Scene.VirtualScreenManager;
+            this.screenWidth = viewportManager.ScreenWidth;
+            this.screenHeight = viewportManager.ScreenHeight;
         }
 
         protected override void Update(TimeSpan gameTime)
