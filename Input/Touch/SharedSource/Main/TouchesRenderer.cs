@@ -81,7 +81,7 @@ namespace Touch
             int index = 0;
             foreach (var touch in state)
             {
-                this.layer.SpriteBatch.DrawVM(
+                this.layer.SpriteBatch.Draw(
                         texture,
                         touch.Position - origin,
                         Color.White);
