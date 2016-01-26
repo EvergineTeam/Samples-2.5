@@ -70,19 +70,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5-alpha-20160125-151\lib\wpa\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5-alpha-20160126-152\lib\wpa\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.0.5-alpha-20160125-151\lib\wpa\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.5-alpha-20160126-152\lib\wpa\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.0.5-alpha-20160125-151\lib\wpa\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.0.5-alpha-20160126-152\lib\wpa\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.0.5-alpha-20160125-151\lib\wpa\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.0.5-alpha-20160126-152\lib\wpa\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.0.5-alpha-20160125-151\lib\wpa\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.0.5-alpha-20160126-152\lib\wpa\WaveEngine.Materials.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -150,11 +150,11 @@
       </Target>
     -->
   <ItemGroup />
-  <Import Project="..\..\packages\WaveEngine.2.0.5-alpha-20160125-151\build\wpa\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160125-151\build\wpa\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.0.5-alpha-20160126-152\build\wpa\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160126-152\build\wpa\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160125-151\build\wpa\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.5-alpha-20160125-151\build\wpz\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160126-152\build\wpa\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.5-alpha-20160126-152\build\wpz\WaveEngine.targets'))" />
   </Target>
 </Project>
