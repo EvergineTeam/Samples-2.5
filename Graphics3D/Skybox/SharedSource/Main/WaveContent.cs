@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/01/2016 11:58:09
+// File generated on 1/26/2016 9:48:28 PM
 namespace Skybox
 {
     using System;
@@ -22,6 +22,9 @@ namespace Skybox
             
             /// <summary> Path to Content/Assets/sky.cubemap </summary>
             public const string sky_cubemap = "Content/Assets/sky.cubemap";
+            
+            /// <summary> Path to Content/Assets/metal.wmat </summary>
+            public const string metal = "Content/Assets/metal.wmat";
         }
         
         public sealed class Scenes
