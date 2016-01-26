@@ -12,9 +12,7 @@ namespace InternetTextureLoad
     {
         public override void Initialize(IApplication application)
         {
-            base.Initialize(application);
-
-            WaveServices.ViewportManager.Activate(800, 600, ViewportManager.StretchMode.Uniform);
+            base.Initialize(application);            
 
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
