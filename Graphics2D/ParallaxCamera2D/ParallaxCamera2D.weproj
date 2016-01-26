@@ -45,6 +45,8 @@
     </Profile>
   </Profiles>
   <ResourcesPath>Content</ResourcesPath>
-  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings" i:nil="true" />
-  <WaveVersion>2.0.5-alpha-20160126-152</WaveVersion>
+  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  </Settings>
+  <WaveVersion>2.0.5-alpha-20160126-153</WaveVersion>
 </Project>

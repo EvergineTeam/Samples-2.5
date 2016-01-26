@@ -61,7 +61,7 @@ namespace PerPixelColliderSample
                     this.myScene.State = SampleState.Waiting;
                 }
 
-                if (this.myScene.ship.FindComponent<Transform2D>().Y > WaveServices.ViewportManager.ScreenHeight)
+                if (this.myScene.ship.FindComponent<Transform2D>().Y > this.Scene.VirtualScreenManager.ScreenHeight)
                 {
                     this.myScene.State = SampleState.Waiting;
                 }

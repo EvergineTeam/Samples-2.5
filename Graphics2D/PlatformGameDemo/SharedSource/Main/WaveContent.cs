@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 15/01/2016 12:53:49
+// File generated on 26/01/2016 16:41:54
 namespace PlatformGameDemo
 {
     using System;
