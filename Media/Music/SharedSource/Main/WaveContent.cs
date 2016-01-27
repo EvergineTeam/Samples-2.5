@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/01/2016 13:45:12
+// File generated on 27/01/2016 10:49:16
 namespace Music
 {
     using System;
