@@ -4,6 +4,7 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 
 namespace Networking.Behaviors
@@ -13,13 +14,22 @@ namespace Networking.Behaviors
         [RequiredComponent]
         protected Transform2D transform;
 
+        private VirtualScreenManager virtualScreenManager;
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+
+            this.virtualScreenManager = this.Owner.Scene.VirtualScreenManager;
+        }
+
         protected override void Update(TimeSpan gameTime)
         {
             var keyState = WaveServices.Input.KeyboardState;
             var touchState = WaveServices.Input.TouchPanelState;
 
-            var screenXCenter = WaveServices.ViewportManager.VirtualWidth / 2;
-            var screenYCenter = WaveServices.ViewportManager.VirtualHeight / 2;
+            var screenXCenter = this.virtualScreenManager.VirtualWidth / 2;
+            var screenYCenter = this.virtualScreenManager.VirtualHeight / 2;
 
             // Collect input
             float xinput = 0;
