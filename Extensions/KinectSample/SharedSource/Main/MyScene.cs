@@ -25,8 +25,8 @@ namespace KinectSample
             Entity sprite = new Entity()
                                 .AddComponent(new Transform2D()
                                 {
-                                    XScale = (float)WaveServices.ViewportManager.VirtualWidth / (float)texture.Width,
-                                    YScale = (float)WaveServices.ViewportManager.VirtualHeight / (float)texture.Height,
+                                    XScale = (float)this.VirtualScreenManager.VirtualWidth / (float)texture.Width,
+                                    YScale = (float)this.VirtualScreenManager.VirtualHeight / (float)texture.Height,
                                 })
                                 .AddComponent(new Sprite(texture))
                                 .AddComponent(new SpriteRenderer(DefaultLayers.Opaque));

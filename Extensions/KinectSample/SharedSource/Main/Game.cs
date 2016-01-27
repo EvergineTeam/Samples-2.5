@@ -11,11 +11,7 @@ namespace KinectSample
     {
         public override void Initialize(IApplication application)
         {
-            base.Initialize(application);
-
-            // Active viewport manager 1280x720
-            ViewportManager vm = WaveServices.ViewportManager;
-            vm.Activate(1280, 720, ViewportManager.StretchMode.Uniform);
+            base.Initialize(application);           
 
             // Register KinectServices
             var kinectService = new KinectService();

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 19/01/2016 14:04:53
+// File generated on 27/01/2016 15:44:29
 namespace KinectSample
 {
     using System;
