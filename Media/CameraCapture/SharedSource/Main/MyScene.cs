@@ -47,6 +47,8 @@ namespace CameraCapture
 
         private StandardMaterial tvScreenMaterial;
 
+        private int recordCount = 0;
+
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
@@ -154,7 +156,7 @@ namespace CameraCapture
             {
                 this.isRecording = true;
                 this.RecButton.Text = "Stop Rec";
-                WaveServices.CameraCapture.StartRecording("MyVideo.mp4");
+                WaveServices.CameraCapture.StartRecording(string.Format("MyVideo_{0}.mp4", this.recordCount++));
             }
         }
 
@@ -188,7 +190,7 @@ namespace CameraCapture
 
                 WaveServices.VideoPlayer.Play(videoInfo);
 
-                this.tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;                
+                this.tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;
 
                 this.PlayRecordedButton.Text = "Stop";
 
