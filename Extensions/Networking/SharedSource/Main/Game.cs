@@ -14,9 +14,7 @@ namespace Networking
             base.Initialize(application);
 
             this.RegisterServices();
-
-            ViewportManager vm = WaveServices.ViewportManager;
-            vm.Activate(1280, 720, ViewportManager.StretchMode.Uniform);
+          
 			ScreenContext screenContext = new ScreenContext(new MainScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
