@@ -26,7 +26,7 @@ namespace TiledMap
 
             this.EntityManager.Add(camera);
 
-            ViewportManager vm = WaveServices.ViewportManager;
+            var vm = this.VirtualScreenManager;
             float width = vm.RightEdge - vm.LeftEdge;
             float halfWidth = width / 2;
             float height = vm.BottomEdge - vm.TopEdge;

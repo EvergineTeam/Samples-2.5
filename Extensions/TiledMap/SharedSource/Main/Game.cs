@@ -14,10 +14,6 @@ namespace TiledMap
         {
             base.Initialize(application);
 
-            // ViewportManager is used to automatically adapt resolution to fit screen size
-            ViewportManager vm = WaveServices.ViewportManager;
-            vm.Activate(1280, 720, ViewportManager.StretchMode.UniformToFill);
-
             ScreenContext screenContext = new ScreenContext(new MyScene(), new JoystickScene());
             WaveServices.ScreenContextManager.To(screenContext);
         }

@@ -9,6 +9,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 
@@ -38,7 +39,7 @@ namespace TiledMap.Components
         private ControllerType controller;
 
         private SoundManager soundManager;
-        private ViewportManager vm;
+        private VirtualScreenManager vm;
 
         private bool OnFloor
         {
@@ -59,7 +60,7 @@ namespace TiledMap.Components
             base.Initialize();
 
             this.soundManager = this.EntityManager.Find("SoundManager").FindComponent<SoundManager>();
-            this.vm = WaveServices.ViewportManager;
+            this.vm = this.Owner.Scene.VirtualScreenManager;
 
             this.input = WaveServices.Input;
             this.initPosition = this.Transform2D.Position;

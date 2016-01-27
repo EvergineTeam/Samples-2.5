@@ -9,6 +9,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 
 namespace TiledMap.Components
@@ -22,7 +23,7 @@ namespace TiledMap.Components
 
         private const float CameraSpeed = 4;
 
-        private ViewportManager viewportManager;
+        private VirtualScreenManager viewportManager;
         private Platform platform;
 
         [RequiredComponent]
@@ -63,7 +64,7 @@ namespace TiledMap.Components
             this.tiledMapEntity = this.EntityManager.Find(this.TiledMapEntityPath);
             this.tiledMap = this.tiledMapEntity.FindComponent<WaveEngine.TiledMap.TiledMap>();            
 
-            this.viewportManager = WaveServices.ViewportManager;
+            this.viewportManager = this.Owner.Scene.VirtualScreenManager;
             this.platform = WaveServices.Platform;
 
             this.platform.OnScreenSizeChanged += OnScreenSizeChanged;
@@ -103,7 +104,7 @@ namespace TiledMap.Components
         private void RefreshCameraLimits()
         {
             this.limitRectangle = new RectangleF(0, 0, this.tiledMap.Width * this.tiledMap.TileWidth, this.tiledMap.Height * this.tiledMap.TileHeight);
-            var vm = WaveServices.ViewportManager;
+            var vm = this.Owner.Scene.VirtualScreenManager;
 
             var zoom = this.transform.LocalScale;
             float marginX = (vm.RightEdge - vm.LeftEdge) * zoom.X / 2;
