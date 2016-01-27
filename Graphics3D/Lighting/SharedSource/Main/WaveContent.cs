@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/01/2016 11:11:00
+// File generated on 1/26/2016 9:40:21 PM
 namespace Lighting
 {
     using System;

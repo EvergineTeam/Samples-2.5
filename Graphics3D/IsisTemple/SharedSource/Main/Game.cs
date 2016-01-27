@@ -14,8 +14,6 @@ namespace IsisTemple
         {
             base.Initialize(application);
 
-            WaveServices.ViewportManager.Activate(1280, 720, ViewportManager.StretchMode.Uniform);
-
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
