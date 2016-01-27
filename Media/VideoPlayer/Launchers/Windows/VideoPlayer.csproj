@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -75,10 +75,8 @@
   <Import Project="..\..\SharedSource\Main\VideoPlayerSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\VideoPlayerSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(SolutionDir)Libraries\libvlc.dll"  "$(TargetDir)"
-copy /Y "$(SolutionDir)Libraries\libvlccore.dll"  "$(TargetDir)"
-mkdir "$(TargetDir)\plugins"
-xcopy  "$(SolutionDir)Libraries\plugins" "$(TargetDir)plugins" /e /i /h /y /q</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\..\packages\WaveEngine.2.0.5-alpha-20160126-153\build\net45\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160126-153\build\net45\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
