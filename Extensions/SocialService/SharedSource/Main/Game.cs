@@ -12,11 +12,7 @@ namespace SocialService
     {
         public override void Initialize(IApplication application)
         {
-            base.Initialize(application);
-
-            // ViewportManager is used to automatically adapt resolution to fit screen size
-            ViewportManager vm = WaveServices.ViewportManager;
-            vm.Activate(1280, 720, ViewportManager.StretchMode.Uniform);
+            base.Initialize(application);          
 
             ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
