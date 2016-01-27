@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 18/01/2016 12:30:59
+// File generated on 1/27/2016 3:37:31 AM
 namespace EnvironmentMap
 {
     using System;
