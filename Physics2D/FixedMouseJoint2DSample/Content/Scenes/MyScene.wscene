@@ -1297,6 +1297,55 @@
       </d2p1:SerializeComponents>
       <d2p1:Tag>Draggable</d2p1:Tag>
     </d2p1:Entity>
+    <d2p1:Entity>
+      <d2p1:IsStatic>false</d2p1:IsStatic>
+      <d2p1:IsVisible>true</d2p1:IsVisible>
+      <d2p1:Name>Inputs</d2p1:Name>
+      <d2p1:SerializeChildrens />
+      <d2p1:SerializeComponents>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>615.600037</d6p1:X>
+            <d6p1:Y>372.400024</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>0</d6p1:Height>
+            <d6p1:Width>0</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/FixedMouseJoint2DSample" i:type="d5p1:MouseBehavior">
+          <d2p1:Family>DefaultBehavior</d2p1:Family>
+          <d2p1:IsActive>true</d2p1:IsActive>
+          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
+        </d2p1:Component>
+      </d2p1:SerializeComponents>
+      <d2p1:Tag i:nil="true" />
+    </d2p1:Entity>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -1318,11 +1367,11 @@
       <d3p1:KeyValueOfstringanyType>
         <d3p1:Key>VirtualScreen</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Managers" i:type="d5p1:VirtualScreenManager">
-          <d5p1:Enabled>false</d5p1:Enabled>
+          <d5p1:Enabled>true</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>728</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

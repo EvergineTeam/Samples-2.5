@@ -1,6 +1,7 @@
 ﻿#region Using Statements
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
@@ -13,7 +14,8 @@ namespace FixedMouseJoint2DSample
     /// <summary>
     /// Mouse Behavior
     /// </summary>
-    public class MouseBehavior : SceneBehavior
+    [DataContract]
+    public class MouseBehavior : Behavior
     {
         // input variables
         private Input input;
@@ -52,7 +54,7 @@ namespace FixedMouseJoint2DSample
                     // Udpates Mouse Position
                     this.touchPosition = this.touchState[0].Position;
 
-                    foreach (Entity entity in this.Scene.EntityManager.FindAllByTag("Draggable"))
+                    foreach (Entity entity in this.Owner.Scene.EntityManager.FindAllByTag("Draggable"))
                     {
                         Collider2D collider = entity.FindComponent<Collider2D>(false);
                         if (collider != null)
@@ -101,10 +103,6 @@ namespace FixedMouseJoint2DSample
                     this.mouseJoint.WorldAnchor = this.touchPosition;
                 }
             }
-        }
-
-        protected override void ResolveDependencies()
-        {
-        }
+        }      
     }
 }
