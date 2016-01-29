@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 #endregion
@@ -28,12 +29,24 @@ namespace FixedMouseJoint2DSample
         // Mouse position optimization
         private Vector2 touchPosition = Vector2.Zero;
 
+        private VirtualScreenManager vsm;
+
         /// <summary>
         /// Constructor
         /// </summary>
         public MouseBehavior()
             : base("MouseBehaviour")
         {
+        }
+
+        /// <summary>
+        /// Resolve Dependencies
+        /// </summary>
+        protected override void ResolveDependencies()
+        {
+            base.ResolveDependencies();
+
+            this.vsm = this.Owner.Scene.VirtualScreenManager;
         }
 
         /// <summary>
@@ -53,6 +66,7 @@ namespace FixedMouseJoint2DSample
                 {
                     // Udpates Mouse Position
                     this.touchPosition = this.touchState[0].Position;
+                    this.vsm.ToVirtualPosition(ref this.touchPosition);
 
                     foreach (Entity entity in this.Owner.Scene.EntityManager.FindAllByTag("Draggable"))
                     {
@@ -100,6 +114,7 @@ namespace FixedMouseJoint2DSample
                 if (this.mouseJoint != null)
                 {
                     this.touchPosition = this.touchState[0].Position;
+                    this.vsm.ToVirtualPosition(ref this.touchPosition);
                     this.mouseJoint.WorldAnchor = this.touchPosition;
                 }
             }
