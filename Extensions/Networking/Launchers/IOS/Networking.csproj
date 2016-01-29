@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -113,14 +113,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Core" />
-    <Reference Include="WaveEngine.Networking, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="WaveEngine.Networking">
       <HintPath>..\..\packages\WaveEngine.Networking.2.0.5-alpha-20160128-161\lib\Xamarin.iOS\WaveEngine.Networking.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
     <Reference Include="OpenTK-1.0" />
     <Reference Include="WaveEngine.Adapter">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5-alpha-20160128-161\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
