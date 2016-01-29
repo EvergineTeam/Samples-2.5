@@ -66,8 +66,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>640</d6p1:X>
-            <d6p1:Y>360</d6p1:Y>
+            <d6p1:X>641.300049</d6p1:X>
+            <d6p1:Y>359.999939</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -156,11 +156,11 @@
       <d3p1:KeyValueOfstringanyType>
         <d3p1:Key>VirtualScreen</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Managers" i:type="d5p1:VirtualScreenManager">
-          <d5p1:Enabled>false</d5p1:Enabled>
+          <d5p1:Enabled>true</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>493</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

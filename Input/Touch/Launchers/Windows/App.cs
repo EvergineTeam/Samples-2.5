@@ -21,8 +21,8 @@ namespace Touch
 		
         public App()
         {
-            this.Width = 1280;
-            this.Height = 720;
+            this.Width = 1024;
+            this.Height = 768;
 			this.FullScreen = false;
 			this.WindowTitle = "Touch";
         }

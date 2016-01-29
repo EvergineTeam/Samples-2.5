@@ -26,6 +26,7 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 
 namespace Touch
@@ -37,6 +38,8 @@ namespace Touch
         private Vector2 origin;
 
         private string texturePath;
+
+        private VirtualScreenManager vm;
 
         [DataMember]
         [RenderPropertyAsAsset(AssetType.Texture)]
@@ -63,6 +66,8 @@ namespace Touch
             base.Initialize();
 
             ReloadTexture();
+
+            this.vm = this.Owner.Scene.VirtualScreenManager;
         }
 
         private void ReloadTexture()
@@ -76,14 +81,17 @@ namespace Touch
 
         public override void Draw(TimeSpan gameTime)
         {
-            TouchPanelState state = WaveServices.Input.TouchPanelState;      
+            TouchPanelState state = WaveServices.Input.TouchPanelState;                  
 
             int index = 0;
             foreach (var touch in state)
             {
+                Vector2 touchPosition = touch.Position;
+                this.vm.ToVirtualPosition(ref touchPosition);
+
                 this.layer.SpriteBatch.Draw(
                         texture,
-                        touch.Position - origin,
+                        touchPosition - origin,
                         Color.White);
 
                 Labels.Add("Touch" + index++, touch.Position);
