@@ -50,28 +50,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5.21\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Cardboard">
-      <HintPath>..\..\packages\WaveEngine.Cardboard.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Cardboard.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Cardboard.2.0.5.21\lib\MonoAndroid\WaveEngine.Cardboard.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.5.21\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.0.5.21\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.0.5.21\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.0.5.21\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.5-alpha-20160128-161\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.0.5.21\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="DolbyAPI">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5-alpha-20160128-161\lib\MonoAndroid\DolbyAPI.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.5.21\lib\MonoAndroid\DolbyAPI.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
@@ -109,11 +109,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\..\packages\WaveEngine.2.0.5-alpha-20160128-161\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160128-161\build\MonoAndroid\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.0.5.21\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.5.21\build\MonoAndroid\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.5-alpha-20160128-161\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.5-alpha-20160128-161\build\MonoAndroid\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.5.21\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.5.21\build\MonoAndroid\WaveEngine.targets'))" />
   </Target>
 </Project>
