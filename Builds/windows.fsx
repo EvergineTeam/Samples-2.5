@@ -78,13 +78,14 @@ let buildsamples(platform: string) =
     for sample in Directory.GetFiles(rootFolder, ("*" + platform + ".sln"), SearchOption.AllDirectories) do
         traceImportant ("Project " + sample)
 
-        traceImportant ("restoring..")
+        try
+		traceImportant ("restoring..")
         RestorePackages sample
 
         traceImportant ("Building...")
         let mutable flag = true
 
-        try
+        
             buildSample (platform, configuration, architecture, sample)
         with
             | _ -> flag <- false
