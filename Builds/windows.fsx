@@ -10,7 +10,7 @@ open System.Linq
 open Fake.AssemblyInfoFile
 
 let configuration = "Release"
-let architecture = "x86"
+let architecture = "Any CPU"
 
 let rootFolder = "../"
 
