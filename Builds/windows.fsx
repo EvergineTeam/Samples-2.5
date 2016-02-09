@@ -14,8 +14,6 @@ let architecture = "Any CPU"
 
 let rootFolder = "../"
 
-"C:\BuildAgent\work\4f1e4a9d5a37fbd0\Binaries\WindowsEditor"
-
 let getFolder solutionFile= Path.GetDirectoryName(solutionFile)
 
 let Exec command args =
@@ -98,7 +96,7 @@ let buildsamples(platform: string) =
     printReport items
 
 Target "environment-var" (fun () ->
-    let variablePath = "C:/BuildAgent/work/4f1e4a9d5a37fbd0/Binaries/WindowsEditor/"
+    let variablePath = System.IO.Path.GetFullPath("/WaveEngine.Tools/");
     let variableName = "WaveEngine"
 
     setEnvironVar variableName variablePath
