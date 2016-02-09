@@ -96,7 +96,8 @@ let buildsamples(platform: string) =
     printReport items
 
 Target "environment-var" (fun () ->
-    let variablePath = System.IO.Path.GetFullPath("/WaveEngine.Tools/");
+    let variablePath = System.IO.Path.GetFullPath("WaveEngine.Tools/");
+    trace variablePath
     let variableName = "WaveEngine"
 
     setEnvironVar variableName variablePath
