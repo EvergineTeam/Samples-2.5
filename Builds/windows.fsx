@@ -76,24 +76,22 @@ let buildSample (platform: string, configuration : string, architecture : string
 
 let buildsamples(platform: string) =
     for sample in Directory.GetFiles(rootFolder, ("*" + platform + ".sln"), SearchOption.AllDirectories) do
-        let filename = System.IO.Path.GetFileName(sample);
-        if (not (filename.Contains("XXsafeprojectnameXX"))) then
-            traceImportant ("Project " + sample)
+        traceImportant ("Project " + sample)
 
-            let mutable flag = true
+        let mutable flag = true
 
-            try
-                traceImportant ("restoring..")
-                RestorePackages sample
+        try
+            traceImportant ("restoring..")
+            RestorePackages sample
 
-                traceImportant ("Building...")
+            traceImportant ("Building...")
             
 
-                buildSample (platform, configuration, architecture, sample)
-            with
-                | _ -> flag <- false
+            buildSample (platform, configuration, architecture, sample)
+        with
+            | _ -> flag <- false
         
-            processResults sample flag
+        processResults sample flag
 
     printReport items
 
