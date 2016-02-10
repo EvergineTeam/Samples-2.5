@@ -1,6 +1,9 @@
 @echo off
 cls
 
+REM Clean previous version
+rmdir /S /Q WaveEngine.Tools
+
 "NuGet\nuget.exe" "install" "WaveEngine.Tools" "-ExcludeVersion" "-ConfigFile" "NuGet\MyGet.NuGet.config"
 
 REM Copy WaveTools to accommodate to current Windows Wave Targets
