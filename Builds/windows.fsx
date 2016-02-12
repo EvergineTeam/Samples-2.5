@@ -24,6 +24,7 @@ let Exec command args =
 let RestorePackages solutionFile =
     RestoreMSSolutionPackages (fun p -> 
         { p with
+            Sources = "https://www.myget.org/F/waveengine-nightly/api/v2" :: p.Sources
             Retries = 5 
             OutputPath = Path.Combine(getFolder solutionFile, "packages") }) solutionFile
 
