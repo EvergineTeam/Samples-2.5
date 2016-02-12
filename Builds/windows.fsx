@@ -11,8 +11,8 @@ open Fake.AssemblyInfoFile
 
 let configuration = "Release"
 let architecture = "Any CPU"
-
 let rootFolder = "../"
+let WaveToolDirectory = "WaveEngine.WindowsTools"
 
 let getFolder solutionFile= Path.GetDirectoryName(solutionFile)
 
@@ -104,6 +104,26 @@ Target "environment-var" (fun () ->
     trace "Environment Variable created"
 )
 
+Target "restore-windowstools" (fun() ->
+    traceImportant "Clear tools directory"
+    DeleteDirs [WaveToolDirectory]
+
+    traceImportant "Get WaveEngine.WindowsTools nuget packages"
+    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -ConfigFile NuGet\NuGet.config"
+    trace nugetArgs
+    Exec "NuGet/nuget.exe" nugetArgs
+
+    traceImportant "Generate waveengine installation path"
+    let target = WaveToolDirectory + "/v2.0/Tools/VisualEditor/"
+    !! (WaveToolDirectory + "/tools/*.*")
+        |> CopyFiles target
+)
+
+Target "update-nightlypackages" (fun() ->
+    traceImportant "Update to nightly nuget packages"
+    Exec "WaveTools/UpdateToNightlyPackages.exe" rootFolder
+)
+
 Target "windows-samples" (fun () ->
     buildsamples("Windows")
 )
@@ -116,5 +136,8 @@ Target "linux-samples" (fun () ->
     buildsamples("Linux")
 )
 
-"environment-var"
+"restore-windowstools"
+    ==> "environment-var"
+    ==> "update-nightlypackages"
     ==> "windows-samples"
+ 
