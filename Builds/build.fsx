@@ -3,10 +3,4 @@
 #load "windows.fsx"
 open Fake
 
-let BinariesDir = "../Binaries/"
-
-Target "clean" (fun _ ->
-    DeleteDirs [BinariesDir]
-)
-
 RunTarget()
