@@ -159,37 +159,37 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6.23\lib\win81\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Cardboard">
-      <HintPath>..\..\packages\WaveEngine.Cardboard.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Cardboard.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Cardboard.2.0.6.23\lib\win81\WaveEngine.Cardboard.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.0.6.23\lib\win81\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.0.6.23\lib\win81\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.0.6.23\lib\win81\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.0.6-alpha-20160212-171\lib\win81\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.0.6.23\lib\win81\WaveEngine.Materials.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SharpDX">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6-alpha-20160212-171\lib\win81\SharpDX.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6.23\lib\win81\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Direct3D11">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6-alpha-20160212-171\lib\win81\SharpDX.Direct3D11.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6.23\lib\win81\SharpDX.Direct3D11.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.DXGI">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6-alpha-20160212-171\lib\win81\SharpDX.DXGI.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6.23\lib\win81\SharpDX.DXGI.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.XAudio2">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6-alpha-20160212-171\lib\win81\SharpDX.XAudio2.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.0.6.23\lib\win81\SharpDX.XAudio2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
@@ -207,11 +207,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\..\packages\WaveEngine.2.0.6-alpha-20160212-171\build\win81\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.6-alpha-20160212-171\build\win81\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.0.6.23\build\win81\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.0.6.23\build\win81\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.6-alpha-20160212-171\build\win81\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.6-alpha-20160212-171\build\win81\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.0.6.23\build\win81\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.0.6.23\build\win81\WaveEngine.targets'))" />
   </Target>
 </Project>
