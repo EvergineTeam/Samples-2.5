@@ -12,23 +12,24 @@ Target "mac-restore-tools" (fun() ->
     DeleteDirs [WaveToolDirectory]
 
     traceImportant "Get WaveEngine.MacTools nuget packages"
-    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -ConfigFile NuGet\NuGet.config"
+    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -ConfigFile NuGet/NuGet.config"
     trace nugetArgs
     Exec "NuGet/nuget.exe" nugetArgs
 
     traceImportant "Generate waveengine installation path"
-    let target = WaveToolDirectory + "/v2.0/Tools/VisualEditor/"
-    !! (WaveToolDirectory + "/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/*.*")
+    let target = "/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/"
+    !! (WaveToolDirectory + "/Tools/*.*")
         |> CopyFiles target
 )
 
 Target "mac-update-nightlypackages" (fun() ->
     traceImportant "Update to nightly nuget packages"
-    Exec "mono " "WaveTools/UpdateToNightlyPackages.exe rootFolder"
+    let args = "WaveTools/UpdateToNightlyPackages.exe " + rootFolder
+    Exec "mono" args
 )
 
 Target "mac-samples" (fun () ->
-    buildsamples("Mac")
+    buildsamples("MacOS")
 )
 
 "mac-restore-tools"
