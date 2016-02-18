@@ -16,6 +16,9 @@ Target "mac-restore-tools" (fun() ->
     trace nugetArgs
     Exec "NuGet/nuget.exe" nugetArgs
 
+    let chmodArgs = "+x " + WaveToolDirectory + "/tools/sox"
+    Exec "chmod" chmodArgs
+
     traceImportant "Generate waveengine installation path"
     let target = "/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/"
     !! (WaveToolDirectory + "/tools/*.*")
