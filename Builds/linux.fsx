@@ -18,7 +18,7 @@ Target "linux-restore-tools" (fun() ->
 
     traceImportant "Generate waveengine installation path"
     let target = "/usr/lib/WaveEngine/2.0/Tools/VisualEditor/"
-    !! (WaveToolDirectory + "/Tools/*.*")
+    !! (WaveToolDirectory + "/tools/*.*")
         |> CopyFiles target
 )
 

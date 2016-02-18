@@ -18,7 +18,7 @@ Target "mac-restore-tools" (fun() ->
 
     traceImportant "Generate waveengine installation path"
     let target = "/Library/Frameworks/WaveEngine.framework/v2.0/Tools/VisualEditor/"
-    !! (WaveToolDirectory + "/Tools/*.*")
+    !! (WaveToolDirectory + "/tools/*.*")
         |> CopyFiles target
 )
 
