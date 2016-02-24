@@ -25,6 +25,11 @@ namespace SpineSkeletalAnimation
 
             var skeleton = EntityManager.Find("skeleton");
 
+            var skeletalAnimation = skeleton.FindComponent<SkeletalAnimation>();
+            var skeletalRenderer = skeleton.FindComponent<SkeletalRenderer>();
+
+            skeletalAnimation.EventAnimation += this.SkeletalAnimation_EventAnimation;
+            
             #region UI
             Slider slider1 = new Slider()
             {
@@ -32,16 +37,14 @@ namespace SpineSkeletalAnimation
                 Width = 500,
                 Minimum = -25,
                 Maximum = 25,
-                Value = 0
+                Value = (int)skeletalAnimation.Speed * 10
             };
 
             slider1.RealTimeValueChanged += (s, e) =>
             {
                 var entity = EntityManager.Find("Light0");
-                var component = skeleton.FindComponent<SkeletalAnimation>();
-                component.Speed = e.NewValue / 10f;
+                skeletalAnimation.Speed = e.NewValue / 10f;
             };
-
             EntityManager.Add(slider1);
 
             ToggleSwitch debugMode = new ToggleSwitch()
@@ -73,11 +76,11 @@ namespace SpineSkeletalAnimation
             {
                 if (o.Value)
                 {
-                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Bones;
+                    skeletalRenderer.ActualDebugMode |= SkeletalRenderer.DebugMode.Bones;
                 }
                 else
                 {
-                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Quads;
+                    skeletalRenderer.ActualDebugMode &= SkeletalRenderer.DebugMode.Quads;
                 }
             };
 
@@ -95,16 +98,21 @@ namespace SpineSkeletalAnimation
             {
                 if (o.Value)
                 {
-                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode |= SkeletalRenderer.DebugMode.Quads;
+                    skeletalRenderer.ActualDebugMode |= SkeletalRenderer.DebugMode.Quads;
                 }
                 else
                 {
-                    skeleton.FindComponent<SkeletalRenderer>().ActualDebugMode &= SkeletalRenderer.DebugMode.Bones;
+                    skeletalRenderer.ActualDebugMode &= SkeletalRenderer.DebugMode.Bones;
                 }
             };
 
             EntityManager.Add(debugQuads);
             #endregion
+        }
+
+        private void SkeletalAnimation_EventAnimation(object sender, SpineEvent e)
+        {
+            Console.WriteLine("Spine event: " + e.Name);
         }
     }
 }

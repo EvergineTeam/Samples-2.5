@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 27/01/2016 16:08:44
+// File generated on 23/02/2016 20:35:28
 namespace SpineSkeletalAnimation
 {
     using System;
@@ -58,6 +58,27 @@ namespace SpineSkeletalAnimation
             
             /// <summary> Path to Content/Assets/goblins.png </summary>
             public const string goblins_png = "Content/Assets/goblins.png";
+            
+            /// <summary> Path to Content/Assets/hero-mesh.atlas </summary>
+            public const string hero_mesh_atlas = "Content/Assets/hero-mesh.atlas";
+            
+            /// <summary> Path to Content/Assets/hero-mesh.json </summary>
+            public const string hero_mesh_json = "Content/Assets/hero-mesh.json";
+            
+            /// <summary> Path to Content/Assets/hero-mesh.png </summary>
+            public const string hero_mesh_png = "Content/Assets/hero-mesh.png";
+            
+            /// <summary> Path to Content/Assets/hero-mesh.skel </summary>
+            public const string hero_mesh_skel = "Content/Assets/hero-mesh.skel";
+            
+            /// <summary> Path to Content/Assets/powerup.atlas </summary>
+            public const string powerup_atlas = "Content/Assets/powerup.atlas";
+            
+            /// <summary> Path to Content/Assets/powerup.json </summary>
+            public const string powerup_json = "Content/Assets/powerup.json";
+            
+            /// <summary> Path to Content/Assets/powerup.png </summary>
+            public const string powerup_png = "Content/Assets/powerup.png";
             
             /// <summary> Path to Content/Assets/raptor.atlas </summary>
             public const string raptor_atlas = "Content/Assets/raptor.atlas";
