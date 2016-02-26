@@ -8,6 +8,7 @@ using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
@@ -59,7 +60,10 @@ namespace SpineSkeletalAnimation
 
             debugMode.Toggled += (s, o) =>
             {
-                RenderManager.DebugLines = ((ToggleSwitch)s).IsOn;
+                var isOn = ((ToggleSwitch)s).IsOn;
+
+                WaveServices.ScreenContextManager.SetDiagnosticsActive(isOn);
+                RenderManager.DebugLines = isOn;
             };
 
             EntityManager.Add(debugMode);
@@ -112,7 +116,7 @@ namespace SpineSkeletalAnimation
 
         private void SkeletalAnimation_EventAnimation(object sender, SpineEvent e)
         {
-            Console.WriteLine("Spine event: " + e.Name);
+            Labels.Add("Spine event", e.Name);
         }
     }
 }
