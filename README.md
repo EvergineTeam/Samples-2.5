@@ -15,14 +15,14 @@ A collection of Wave engine sample projects
 		<img src="http://teamcity-win8.cloudapp.net/app/rest/builds/buildType:(id:WaveEngine_WindowsSamples)/statusIcon"/>
 	  </a>
     </td>
-	<td align="center">
-	  <a href="http://teamcity-win8.cloudapp.net/viewType.html?buildTypeId=WaveEngine_LinuxSamples&guest=1">
-		<img src="http://teamcity-win8.cloudapp.net/app/rest/builds/buildType:(id:WaveEngine_LinuxSamples)/statusIcon"/>
-	  </a>
-    </td>
-	<td align="center">
+    <td align="center">
 	  <a href="http://teamcity-win8.cloudapp.net/viewType.html?buildTypeId=WaveEngine_MacSamples&guest=1">
 		<img src="http://teamcity-win8.cloudapp.net/app/rest/builds/buildType:(id:WaveEngine_MacSamples)/statusIcon"/>
+	  </a>
+    </td>
+    <td align="center">
+	  <a href="http://teamcity-win8.cloudapp.net/viewType.html?buildTypeId=WaveEngine_LinuxSamples&guest=1">
+		<img src="http://teamcity-win8.cloudapp.net/app/rest/builds/buildType:(id:WaveEngine_LinuxSamples)/statusIcon"/>
 	  </a>
     </td>
    </tr>
