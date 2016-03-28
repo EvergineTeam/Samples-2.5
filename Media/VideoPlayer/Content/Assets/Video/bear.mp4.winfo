@@ -1,6 +1,11 @@
-﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>42cc9123-b180-43ee-b8fb-359c2f3d9d9a</Id>
-  <Asset i:nil="true" />
+  <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:nil="true" />
   <Thumbnail i:nil="true" />
-  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
 </Asset>

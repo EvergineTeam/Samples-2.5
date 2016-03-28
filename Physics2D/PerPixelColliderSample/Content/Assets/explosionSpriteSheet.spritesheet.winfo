@@ -1,253 +1,264 @@
-﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>9f2e835b-0431-4e95-8830-16d4536ac151</Id>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:SpriteSheet">
-    <d2p1:Animations xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
-      <d3p1:AtlasProfile>
+      <d3p1:ExportProfile i:type="d3p1:AtlasProfile">
         <d3p1:Name i:nil="true" />
-        <d3p1:ZipCompress>true</d3p1:ZipCompress>
-        <d3p1:ForceSquare>false</d3p1:ForceSquare>
-        <d3p1:GenerateMipMaps>true</d3p1:GenerateMipMaps>
-        <d3p1:Height>256</d3p1:Height>
-        <d3p1:KeepOrder>false</d3p1:KeepOrder>
-        <d3p1:MaxHeight>2048</d3p1:MaxHeight>
-        <d3p1:MaxWidth>2048</d3p1:MaxWidth>
         <d3p1:OutputFormat>Color32Bit</d3p1:OutputFormat>
-        <d3p1:Padding>2</d3p1:Padding>
+        <d3p1:ScaledHeight>0</d3p1:ScaledHeight>
+        <d3p1:ScaledPercentage>100</d3p1:ScaledPercentage>
+        <d3p1:ScaledWidth>0</d3p1:ScaledWidth>
+        <d3p1:ScalingType>Percentage</d3p1:ScalingType>
+        <d3p1:ForceSquare>false</d3p1:ForceSquare>
         <d3p1:RequiresPowerOfTwo>true</d3p1:RequiresPowerOfTwo>
-        <d3p1:Spacing>0</d3p1:Spacing>
-        <d3p1:Width>512</d3p1:Width>
-      </d3p1:AtlasProfile>
+      </d3p1:ExportProfile>
     </d2p1:Profiles>
-    <d2p1:Resources xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_01</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_01</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_02</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_02</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>66</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_03</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_03</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>132</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_04</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_04</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>66</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_05</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_05</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>66</d6p1:X>
-            <d6p1:Y>66</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_06</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_06</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>132</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_07</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_07</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>66</d6p1:X>
-            <d6p1:Y>132</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_08</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_08</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>132</d6p1:X>
-            <d6p1:Y>66</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_09</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_09</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>132</d6p1:X>
-            <d6p1:Y>132</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_10</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_10</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>198</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_11</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_11</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>198</d6p1:X>
-            <d6p1:Y>66</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_12</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_12</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>264</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_13</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_13</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>198</d6p1:X>
-            <d6p1:Y>132</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_14</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_14</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>264</d6p1:X>
-            <d6p1:Y>66</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_15</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_15</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>330</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-      <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-        <d3p1:Key>explosion_16</d3p1:Key>
-        <d3p1:Value>
-          <d2p1:Name>explosion_16</d2p1:Name>
-          <d2p1:OffsetX>0</d2p1:OffsetX>
-          <d2p1:OffsetY>0</d2p1:OffsetY>
-          <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>64</d6p1:Height>
-            <d6p1:Width>64</d6p1:Width>
-            <d6p1:X>396</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d2p1:Rectangle>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
-    </d2p1:Resources>
-    <d2p1:Static>false</d2p1:Static>
+    <d2p1:ZipCompress>true</d2p1:ZipCompress>
+    <d2p1:AntialiasType>Smooth</d2p1:AntialiasType>
+    <d2p1:GenerateMipMaps>true</d2p1:GenerateMipMaps>
+    <d2p1:Height>256</d2p1:Height>
+    <d2p1:PremultipliedAlpha>true</d2p1:PremultipliedAlpha>
+    <d2p1:Width>512</d2p1:Width>
+    <d2p1:Animations xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d2p1="WaveEngine.Framework.Models.Assets" />
+    <d2p1:KeepOrder>false</d2p1:KeepOrder>
+    <d2p1:MaxHeight>2048</d2p1:MaxHeight>
+    <d2p1:MaxWidth>2048</d2p1:MaxWidth>
+    <d2p1:Padding>2</d2p1:Padding>
+    <d2p1:Resources xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d2p1="WaveEngine.Framework.Models.Assets">
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_01</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_01</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>0</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_02</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_02</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>66</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_03</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_03</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>132</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_04</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_04</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>0</d6p1:X>
+        <d6p1:Y>66</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_05</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_05</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>66</d6p1:X>
+        <d6p1:Y>66</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_06</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_06</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>0</d6p1:X>
+        <d6p1:Y>132</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_07</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_07</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>66</d6p1:X>
+        <d6p1:Y>132</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_08</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_08</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>132</d6p1:X>
+        <d6p1:Y>66</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_09</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_09</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>132</d6p1:X>
+        <d6p1:Y>132</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_10</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_10</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>198</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_11</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_11</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>198</d6p1:X>
+        <d6p1:Y>66</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_12</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_12</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>264</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_13</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_13</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>198</d6p1:X>
+        <d6p1:Y>132</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_14</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_14</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>264</d6p1:X>
+        <d6p1:Y>66</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_15</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_15</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>330</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+  <d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+    <d3p1:Key>explosion_16</d3p1:Key>
+    <d3p1:Value>
+      <d2p1:Name>explosion_16</d2p1:Name>
+      <d2p1:OffsetX>0</d2p1:OffsetX>
+      <d2p1:OffsetY>0</d2p1:OffsetY>
+      <d2p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+        <d6p1:Height>64</d6p1:Height>
+        <d6p1:Width>64</d6p1:Width>
+        <d6p1:X>396</d6p1:X>
+        <d6p1:Y>0</d6p1:Y>
+      </d2p1:Rectangle>
+    </d3p1:Value>
+  </d3p1:KeyValueOfstringSpriteSheetResourceRsMycaeF>
+</d2p1:Resources>
+    <d2p1:Spacing>0</d2p1:Spacing>
+    <d2p1:Static xmlns:d2p1="WaveEngine.Framework.Models.Assets">false</d2p1:Static>
     <d2p1:Status>0</d2p1:Status>
   </Asset>
-  <Thumbnail i:nil="true" />
-  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Thumbnail i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
 </Asset>
