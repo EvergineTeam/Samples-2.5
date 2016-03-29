@@ -27,11 +27,11 @@ namespace DolbyTest
 		
         protected override void CreateScene()
         {
-            // this.Load(WaveContent.Scenes.MyScene);  
+            this.Load(WaveContent.Scenes.MyScene);  
 			WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
 
-			WaveServices.RegisterService (new DolbyService ());
-			this.dolbyService = WaveServices.GetService<DolbyService> ();
+            this.dolbyService = new DolbyService();
+			WaveServices.RegisterService (this.dolbyService);
 
 			var music = new MusicInfo (WaveContent.Assets.met_mp3);
 			WaveServices.MusicPlayer.Play (music);
@@ -39,7 +39,7 @@ namespace DolbyTest
 			Button button1 = this.AddButton ("Enable Dolby", 100, 200);
 			button1.Click += (s, o) =>
 			{
-				this.dolbyService.IsEnabled = true;
+                this.dolbyService.IsEnabled = true;
 				this.UpdateLabels();
 			};
 

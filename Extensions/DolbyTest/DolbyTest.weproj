@@ -1,5 +1,5 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>7bf3a3bf-f177-41cc-890b-a667d9a5d210</Id>
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>2e75ea52-82db-4aa5-8207-457fabd6cabf</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -7,44 +7,31 @@
         <d3p1:Key>Profiles</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
           <d5p1:Profiles>
-			<Profile>
-    <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-    <Name>Android</Name>
-    <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
-    <Platform>Android</Platform>
-</Profile>
-<Profile>
-    <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-    <Name>iOS</Name>
-    <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-    <Platform>iOS</Platform>
-</Profile>
-<Profile>
-    <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-    <Name>Linux</Name>
-    <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-    <Platform>Linux</Platform>
-</Profile>
-<Profile>
-    <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-    <Name>MacOS</Name>
-    <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-    <Platform>MacOS</Platform>
-</Profile>
-<Profile>
-    <AlphaCompressionFormat>DXT1</AlphaCompressionFormat>
-    <Name>UWP</Name>
-    <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
-    <Platform>UWP</Platform>
-</Profile>
-<Profile>
-    <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-    <Name>Windows</Name>
-    <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-    <Platform>Windows</Platform>
-</Profile>
-
-		  </d5p1:Profiles>
+            <Profile>
+              <AlphaCompressionFormat>B8G8R8A8</AlphaCompressionFormat>
+              <Name>WindowsProfile</Name>
+              <NonAlphaCompressionFormat>B8G8R8A8</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>ETC1RGB8</AlphaCompressionFormat>
+              <Name>AndroidProfile</Name>
+              <NonAlphaCompressionFormat>R4G4B4A4</NonAlphaCompressionFormat>
+              <Platform>Android</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>LinuxProfile</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Linux</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>MacOSProfile</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>MacOS</Platform>
+            </Profile>
+          </d5p1:Profiles>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
@@ -55,5 +42,5 @@
     <d2p1:_Minor>0</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.0.7-alpha-20160323-204</WaveVersion>
+  <WaveVersion>2.0.7-alpha-20160329-207</WaveVersion>
 </Project>
