@@ -35,7 +35,7 @@ namespace ServoMotor3D
 
         protected override void DefaultValues()
         {
-            base.DefaultValues();            
+            base.DefaultValues();
             this.timeTotal = TimeSpan.Zero;
             this.Interval = TimeSpan.FromSeconds(1);
 
@@ -51,7 +51,7 @@ namespace ServoMotor3D
                 this.EmitEntity();
                 this.timeTotal = TimeSpan.Zero;
             }
-            
+
         }
 
         private void EmitEntity()
@@ -67,7 +67,7 @@ namespace ServoMotor3D
                .AddComponent(new SphereCollider3D())
                .AddComponent(Model.CreateSphere())
                .AddComponent(new RigidBody3D())
-               .AddComponent(new MaterialsMap())
+               .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                .AddComponent(new ModelRenderer());
 
             this.EntityManager.Add(primitive);

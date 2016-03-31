@@ -47,7 +47,7 @@ namespace Entity3DCollision
                 .AddComponent(new SphereCollider3D())
                 .AddComponent(Model.CreateSphere())
                 .AddComponent(rigidBody = new RigidBody3D() { KineticFriction = 10, Restitution = 1 })
-                .AddComponent(new MaterialsMap())
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new TimeAliveBehavior())
                 .AddComponent(new ModelRenderer());
 

@@ -15,9 +15,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>640</d6p1:X>
-            <d6p1:Y>360</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:X>512</d6p1:X>
+            <d6p1:Y>384</d6p1:Y>
+            <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -37,8 +37,8 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:origin>
           <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
         </d2p1:Component>
@@ -98,8 +98,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>340.7999</d6p1:X>
-            <d6p1:Y>387.199951</d6p1:Y>
+            <d6p1:X>512</d6p1:X>
+            <d6p1:Y>600.199951</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -110,14 +110,14 @@
           <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>1052.36328</d6p1:Height>
-            <d6p1:Width>1223.71777</d6p1:Width>
-            <d6p1:X>-193.793213</d6p1:X>
-            <d6p1:Y>-455.605469</d6p1:Y>
+            <d6p1:Height>1052.07751</d6p1:Height>
+            <d6p1:Width>1223.67688</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:X>0.658384264</d6p1:X>
+            <d6p1:Y>0.9330916</d6p1:Y>
           </d5p1:origin>
           <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -158,6 +158,7 @@
             <d6p1:R>0</d6p1:R>
           </d5p1:DebugQuadColor>
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag i:nil="true" />
@@ -183,11 +184,11 @@
       <d3p1:KeyValueOfstringanyType>
         <d3p1:Key>VirtualScreen</d3p1:Key>
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Managers" i:type="d5p1:VirtualScreenManager">
-          <d5p1:Enabled>false</d5p1:Enabled>
+          <d5p1:Enabled>true</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>530</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>768</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1024</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

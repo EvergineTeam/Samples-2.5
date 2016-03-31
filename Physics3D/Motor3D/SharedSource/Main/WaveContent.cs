@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/27/2016 10:36:10 AM
+// File generated on 31/03/2016 15:51:03
 namespace Motor3D
 {
     using System;
@@ -20,8 +20,14 @@ namespace Motor3D
         public sealed class Assets
         {
             
+            /// <summary> Path to Content/Assets/checkered.jpg </summary>
+            public const string checkered_jpg = "Content/Assets/checkered.jpg";
+            
             /// <summary> Path to Content/Assets/Terrain.fbx </summary>
             public const string Terrain_fbx = "Content/Assets/Terrain.fbx";
+            
+            /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
+            public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
             
             /// <summary> Path to Content/Assets/GroundMaterial.wmat </summary>
             public const string GroundMaterial = "Content/Assets/GroundMaterial.wmat";

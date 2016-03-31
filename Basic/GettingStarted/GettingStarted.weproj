@@ -1,50 +1,40 @@
 <Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>71ffaea3-a152-41de-ab68-01b39efcf2f7</Id>
-  <Profiles>
-    <Profile>
-      <HighQualityCompressionFormat>R8G8B8A8</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>R8G8B8A8</LowQualityCompressionFormat>
-      <Name>Windows</Name>
-      <Platform>Windows</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>DXT5</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>DXT1</LowQualityCompressionFormat>
-      <Name>WP</Name>
-      <Platform>WP</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>DXT5</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>DXT1</LowQualityCompressionFormat>
-      <Name>Metro</Name>
-      <Platform>Metro</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>PVRTC4BPP</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>PVRTC2BPP</LowQualityCompressionFormat>
-      <Name>iOS</Name>
-      <Platform>iOS</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>R8G8B8A8</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>ETC1RGB8</LowQualityCompressionFormat>
-      <Name>Android</Name>
-      <Platform>Android</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>R8G8B8A8</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>R8G8B8A8</LowQualityCompressionFormat>
-      <Name>Mac</Name>
-      <Platform>Mac</Platform>
-    </Profile>
-    <Profile>
-      <HighQualityCompressionFormat>R8G8B8A8</HighQualityCompressionFormat>
-      <LowQualityCompressionFormat>R8G8B8A8</LowQualityCompressionFormat>
-      <Name>Linux</Name>
-      <Platform>Linux</Platform>
-    </Profile>
-  </Profiles>
   <ResourcesPath>Content</ResourcesPath>
-  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings" i:nil="true" />
-  <WaveVersion>2.0.6.23</WaveVersion>
+  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Profiles</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
+          <d5p1:Profiles>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>Linux</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Linux</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>MacOS</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>MacOS</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>Windows</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
+            </Profile>
+          </d5p1:Profiles>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+    </d2p1:Categories>
+  </Settings>
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
+  <WaveVersion>2.1.0.24</WaveVersion>
 </Project>

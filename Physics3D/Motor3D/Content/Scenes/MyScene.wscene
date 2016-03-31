@@ -28,9 +28,9 @@
         <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera3D">
           <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
-            <d6p1:B>237</d6p1:B>
-            <d6p1:G>149</d6p1:G>
-            <d6p1:R>100</d6p1:R>
+            <d6p1:B>183</d6p1:B>
+            <d6p1:G>183</d6p1:G>
+            <d6p1:R>183</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
@@ -52,7 +52,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.39285719</d5p1:AspectRatio>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
           <d2p1:Family>DefaultBehavior</d2p1:Family>
@@ -68,7 +68,7 @@
           <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
         </d2p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
+      <d2p1:Tag></d2p1:Tag>
     </d2p1:Entity>
     <d2p1:Entity>
       <d2p1:IsStatic>false</d2p1:IsStatic>
@@ -95,10 +95,10 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
@@ -160,7 +160,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
@@ -226,7 +226,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
@@ -296,7 +296,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
@@ -362,7 +362,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
@@ -428,7 +428,7 @@
           </d5p1:LocalScale>
         </d2p1:Component>
         <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath i:nil="true" />
+          <d5p1:DefaultMaterialPath>Content/Assets/basicMaterial.wmat</d5p1:DefaultMaterialPath>
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
@@ -468,6 +468,86 @@
         </d2p1:Component>
       </d2p1:SerializeComponents>
       <d2p1:Tag>wheel</d2p1:Tag>
+    </d2p1:Entity>
+    <d2p1:Entity>
+      <d2p1:IsStatic>false</d2p1:IsStatic>
+      <d2p1:IsVisible>true</d2p1:IsVisible>
+      <d2p1:Name>light</d2p1:Name>
+      <d2p1:SerializeChildrens />
+      <d2p1:SerializeComponents>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.345258564</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.938508332</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>2.527427</d6p1:X>
+            <d6p1:Y>10.4381561</d6p1:Y>
+            <d6p1:Z>17.9478073</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightProperties">
+          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:Color>
+          <d5p1:Intensity>1</d5p1:Intensity>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
+          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
+        </d2p1:Component>
+      </d2p1:SerializeComponents>
+      <d2p1:Tag i:nil="true" />
+    </d2p1:Entity>
+    <d2p1:Entity>
+      <d2p1:IsStatic>false</d2p1:IsStatic>
+      <d2p1:IsVisible>true</d2p1:IsVisible>
+      <d2p1:Name>light01</d2p1:Name>
+      <d2p1:SerializeChildrens />
+      <d2p1:SerializeComponents>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.8900068</d6p1:W>
+            <d6p1:X>0.07066855</d6p1:X>
+            <d6p1:Y>0.147818372</d6p1:Y>
+            <d6p1:Z>0.425491482</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>2.527427</d6p1:X>
+            <d6p1:Y>10.4381561</d6p1:Y>
+            <d6p1:Z>17.9478073</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightProperties">
+          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:Color>
+          <d5p1:Intensity>1</d5p1:Intensity>
+        </d2p1:Component>
+        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
+          <d2p1:IsVisible>true</d2p1:IsVisible>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
+        </d2p1:Component>
+      </d2p1:SerializeComponents>
+      <d2p1:Tag i:nil="true" />
     </d2p1:Entity>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">

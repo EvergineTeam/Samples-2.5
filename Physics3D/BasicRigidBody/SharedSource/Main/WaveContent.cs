@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/27/2016 10:27:08 AM
+// File generated on 31/03/2016 13:44:06
 namespace BasicRigidBody
 {
     using System;
@@ -16,6 +16,16 @@ namespace BasicRigidBody
     
     public sealed class WaveContent
     {
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/checkered.png </summary>
+            public const string checkered_png = "Content/Assets/checkered.png";
+            
+            /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
+            public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
+        }
         
         public sealed class Scenes
         {

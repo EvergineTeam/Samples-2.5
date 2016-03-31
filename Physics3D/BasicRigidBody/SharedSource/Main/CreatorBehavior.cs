@@ -64,7 +64,7 @@ namespace BasicRigidBody
                .AddComponent(collider)
                .AddComponent(model)
                .AddComponent(new RigidBody3D())
-               .AddComponent(new MaterialsMap())
+               .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                .AddComponent(new ModelRenderer());
 
             this.EntityManager.Add(primitive);

@@ -55,7 +55,7 @@ namespace MeshCollider
                 .AddComponent(new BoxCollider3D())
                 .AddComponent(Model.CreateCube())
                 .AddComponent(new RigidBody3D())
-                .AddComponent(new MaterialsMap())
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new ModelRenderer());
 
             EntityManager.Add(primitive);
@@ -68,7 +68,7 @@ namespace MeshCollider
                 .AddComponent(new CapsuleCollider3D())
                 .AddComponent(Model.CreateCapsule())
                 .AddComponent(new RigidBody3D())
-                .AddComponent(new MaterialsMap())
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new ModelRenderer());
 
             EntityManager.Add(primitive);
@@ -81,7 +81,7 @@ namespace MeshCollider
                 .AddComponent(new SphereCollider3D())
                 .AddComponent(Model.CreateSphere())
                 .AddComponent(new RigidBody3D())
-                .AddComponent(new MaterialsMap())
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new ModelRenderer());
 
             EntityManager.Add(primitive);

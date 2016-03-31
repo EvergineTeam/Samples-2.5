@@ -1,0 +1,28 @@
+<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>b65ab735-2c70-4613-a6c2-6d4a86eaa13f</Id>
+  <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Texture">
+    <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
+      <d3p1:ExportProfile i:type="d3p1:TextureProfile">
+        <d3p1:Name i:nil="true" />
+        <d3p1:OutputFormat>Color32Bit</d3p1:OutputFormat>
+        <d3p1:ScaledHeight>64</d3p1:ScaledHeight>
+        <d3p1:ScaledPercentage>100</d3p1:ScaledPercentage>
+        <d3p1:ScaledWidth>64</d3p1:ScaledWidth>
+        <d3p1:ScalingType>Percentage</d3p1:ScalingType>
+      </d3p1:ExportProfile>      
+    </d2p1:Profiles>
+    <d2p1:ZipCompress>true</d2p1:ZipCompress>
+    <d2p1:AntialiasType>Smooth</d2p1:AntialiasType>
+    <d2p1:GenerateMipMaps>true</d2p1:GenerateMipMaps>
+    <d2p1:Height>64</d2p1:Height>
+    <d2p1:PremultipliedAlpha>true</d2p1:PremultipliedAlpha>
+    <d2p1:Width>64</d2p1:Width>
+  </Asset>
+  <Thumbnail i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
+</Asset>
