@@ -18,7 +18,7 @@ namespace EntityPicking
         protected override void Initialize()
         {
             base.Initialize();
-         }
+        }
 
         protected override void Update(TimeSpan gameTime)
         {
@@ -46,7 +46,7 @@ namespace EntityPicking
                 .AddComponent(new Transform3D() { Position = position })
                 .AddComponent(new BoxCollider3D())
                 .AddComponent(Model.CreateCube())
-                .AddComponent(new MaterialsMap())
+                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new RigidBody3D() { Mass = 10 })
                 .AddComponent(new JointMap3D())
                 .AddComponent(new ModelRenderer());

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/27/2016 10:35:32 AM
+// File generated on 31/03/2016 15:48:09
 namespace MeshCollider
 {
     using System;
@@ -20,8 +20,14 @@ namespace MeshCollider
         public sealed class Assets
         {
             
+            /// <summary> Path to Content/Assets/checkered.jpg </summary>
+            public const string checkered_jpg = "Content/Assets/checkered.jpg";
+            
             /// <summary> Path to Content/Assets/Terrain.fbx </summary>
             public const string Terrain_fbx = "Content/Assets/Terrain.fbx";
+            
+            /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
+            public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
         }
         
         public sealed class Scenes
