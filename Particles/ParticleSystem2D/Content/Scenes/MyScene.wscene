@@ -1,13 +1,14 @@
 ﻿<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>ca1e2372-d6d6-46d2-b894-6ae25ffff02f</Id>
-  <Entities xmlns:d2p1="WaveEngine.Framework">
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>defaultCamera2D</d2p1:Name>
+  <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>defaultCamera2D</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -41,8 +42,8 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera2D">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera2D">
           <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -80,17 +81,17 @@
             <d6p1:X>1</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
           </d5p1:zoom>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>back</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>back</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -124,8 +125,8 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
           <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
           <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -134,30 +135,28 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
           <d5p1:texturePath>Content/Assets/backgroundMeteors.png.wpk</d5p1:texturePath>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.OpaqueLayer,WaveEngine.Framework</LayerTypeName>
           <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>meteor</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>smoke</d2p1:Name>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>smoke</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -191,15 +190,15 @@
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:screenPosition>
               <d7p1:transformMode>Standard</d7p1:transformMode>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/meteorSmoke_Texture.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -256,23 +255,23 @@
                 <d8p1:Y>0.1</d8p1:Y>
               </d7p1:RandomVelocity>
               <d7p1:SortEnabled>true</d7p1:SortEnabled>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>fire</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>fire</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -306,15 +305,15 @@
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:screenPosition>
               <d7p1:transformMode>Standard</d7p1:transformMode>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/particleFire_Texture.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -371,19 +370,22 @@
                 <d8p1:Y>0.4</d8p1:Y>
               </d7p1:RandomVelocity>
               <d7p1:SortEnabled>false</d7p1:SortEnabled>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
+        </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>meteor</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -417,34 +419,30 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/ParticleSystem2DProject" i:type="d5p1:MeteorBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/ParticleSystem2DProject" i:type="d5p1:MeteorBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>explosion</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>dinos</d2p1:Name>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>dinos</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -478,15 +476,15 @@
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:screenPosition>
               <d7p1:transformMode>Standard</d7p1:transformMode>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/dinoParticle_Texture.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -543,23 +541,23 @@
                 <d8p1:Y>1</d8p1:Y>
               </d7p1:RandomVelocity>
               <d7p1:SortEnabled>false</d7p1:SortEnabled>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
-        <d2p1:Entity>
-          <d2p1:IsStatic>false</d2p1:IsStatic>
-          <d2p1:IsVisible>true</d2p1:IsVisible>
-          <d2p1:Name>explosionParticles</d2p1:Name>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
-          <d2p1:SerializeComponents>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>explosionParticles</d2p1:name>
+          <d2p1:tag></d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
@@ -593,15 +591,15 @@
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:screenPosition>
               <d7p1:transformMode>Standard</d7p1:transformMode>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialsMap">
               <d7p1:DefaultMaterialPath>Content/Assets/particleFire_Texture.wmat</d7p1:DefaultMaterialPath>
               <d7p1:MaterialsPath xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
               <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Particles" i:type="d7p1:ParticleSystem2D">
               <d7p1:AlphaEnabled>true</d7p1:AlphaEnabled>
               <d7p1:Bounciness>0</d7p1:Bounciness>
               <d7p1:CollisionBehavior>Die</d7p1:CollisionBehavior>
@@ -658,19 +656,22 @@
                 <d8p1:Y>1.5</d8p1:Y>
               </d7p1:RandomVelocity>
               <d7p1:SortEnabled>false</d7p1:SortEnabled>
-            </d2p1:Component>
-            <d2p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
-              <d2p1:IsVisible>true</d2p1:IsVisible>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:ParticleSystemRenderer2D">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
               <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-            </d2p1:Component>
+            </d6p1:Component>
           </d2p1:SerializeComponents>
-          <d2p1:Tag i:nil="true" />
-        </d2p1:Entity>
+        </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>explosion</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -704,29 +705,28 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
           <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/ParticleSystem2DProject" i:type="d5p1:ExplosionBehavior">
-          <d2p1:Family>DefaultBehavior</d2p1:Family>
-          <d2p1:IsActive>true</d2p1:IsActive>
-          <d2p1:UpdateOrder>0.5</d2p1:UpdateOrder>
-        </d2p1:Component>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/ParticleSystem2DProject" i:type="d5p1:ExplosionBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
-    <d2p1:Entity>
-      <d2p1:IsStatic>false</d2p1:IsStatic>
-      <d2p1:IsVisible>true</d2p1:IsVisible>
-      <d2p1:Name>mountains</d2p1:Name>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
-      <d2p1:SerializeComponents>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>mountains</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
@@ -760,8 +760,8 @@
             <d6p1:Y>0</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
           <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
           <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
           <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -770,18 +770,18 @@
             <d6p1:G>255</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
           <d5p1:texturePath>Content/Assets/meteorMountains.png.wpk</d5p1:texturePath>
-        </d2p1:Component>
-        <d2p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
-          <d2p1:IsVisible>true</d2p1:IsVisible>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
           <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
-        </d2p1:Component>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
-      <d2p1:Tag i:nil="true" />
-    </d2p1:Entity>
+    </d2p1:BaseEntityModel>
   </Entities>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
