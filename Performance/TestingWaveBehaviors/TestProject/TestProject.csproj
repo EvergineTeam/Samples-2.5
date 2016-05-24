@@ -42,23 +42,23 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\packages\WaveEngine.Adapter.2.1.1.25\lib\net45\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\packages\WaveEngine.Adapter.2.2.0.26\lib\net45\WaveEngine.Adapter.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\packages\WaveEngine.Common.2.1.1.25\lib\net45\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\packages\WaveEngine.Common.2.2.0.26\lib\net45\WaveEngine.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\packages\WaveEngine.Components.2.1.1.25\lib\net45\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\packages\WaveEngine.Components.2.2.0.26\lib\net45\WaveEngine.Components.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\packages\WaveEngine.Framework.2.1.1.25\lib\net45\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\packages\WaveEngine.Framework.2.2.0.26\lib\net45\WaveEngine.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\packages\WaveEngine.Materials.2.1.1.25\lib\net45\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\packages\WaveEngine.Materials.2.2.0.26\lib\net45\WaveEngine.Materials.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -111,7 +111,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\WaveEngine.2.1.1.25\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WaveEngine.2.1.1.25\build\net45\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\packages\WaveEngine.2.2.0.26\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WaveEngine.2.2.0.26\build\net45\WaveEngine.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
