@@ -1,0 +1,104 @@
+```json
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"WaveEngine.Common","version":"2.2.0.26"},{"id":"WaveEngine.Adapter","version":"2.2.0.26"},{"id":"WaveEngine.Materials","version":"2.2.0.26"},{"id":"WaveEngine.Framework","version":"2.2.0.26"},{"id":"WaveEngine.Components","version":"2.2.0.26"}]}
+```
+
+## WaveEngine a cross-platform mobile graphics engine.
+
+The idea behind Wave Engine is to develop applications/games natively on Windows, MacOSX or Linux, and easily run those across every supported mobile device.
+
+First we need to load some required assemblies.
+
+```csharp
+#r "WaveEngine.Common"
+#r "WaveEngine.Adapter"
+#r "WaveEngine.Framework"
+#r "WaveEngine.Components"
+#r "WaveEngine.Materials"
+```
+
+Now we will load some namespaces.
+
+```csharp
+using WaveEngine.Framework; using WaveEngine.Components.Graphics3D;using WaveEngine.Framework.Graphics;using WaveEngine.Materials;using WaveEngine.Common.Graphics;using WaveEngine.Common.Math;using WaveEngine.Components.Cameras; using WaveEngine.Adapter.Basics; using WaveEngine.Framework.Services;
+```
+
+And we will create a basic application structure. Aplication contains a game class and this game class can handle one or more scenes.
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene() {}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+var app = await SimpleApp.RunAsync(game);
+```
+
+Once the application is created we can create and add a basic camera3D entity. To make it easy we will use the decorator FreeCamera3D, which builds a new entity with all the required components.
+
+```csharp
+var camera = new FreeCamera3D("Main", new Vector3(0,1,2.5f), Vector3.Zero){ BackgroundColor = Color.CornflowerBlue };
+game.scene.EntityManager.Add(camera.Entity);
+```
+
+We are going to add a directional light using a similar way.
+
+```csharp
+var light = new WaveEngine.Framework.Graphics.DirectionalLight("light1", new Vector3(1, 0, 0));
+game.scene.EntityManager.Add(light.Entity);
+```
+
+And finally we are going to add a basic cube primitive. This time we are going to build a custom entity.
+
+```csharp
+Entity cube = new Entity("Cube")
+		.AddComponent(new Transform3D())
+		.AddComponent(Model.CreateCube())
+		.AddComponent(new MaterialsMap(new StandardMaterial(Color.White, DefaultLayers.Opaque)))
+		.AddComponent(new ModelRenderer());
+```
+
+```csharp
+game.scene.EntityManager.Add(cube);
+```
+
+We can play with some properties of the cube like position, size or rotation easily.
+
+```csharp
+cube.FindComponent<Transform3D>().LocalPosition = new Vector3(1,0,0);
+```
+
+```csharp
+cube.FindComponent<Transform3D>().LocalPosition = Vector3.Zero;
+```
+
+We can also add component to our entity dynamically as you can see here.
+
+```csharp
+cube.AddComponent(new Spinner() {AxisTotalIncreases = new Vector3(1,2,3)})
+```
+
+Finally we are going to learn how change the model component of an entity in realtime. Just remove the old cube model, and the new teapot model and refrest the decependencies between all the entity components.
+
+```csharp
+cube.RemoveComponent<Model>();
+cube.AddComponent(Model.CreateTeapot());
+cube.RefreshDependencies();
+```

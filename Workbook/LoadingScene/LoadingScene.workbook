@@ -1,0 +1,47 @@
+```json
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[]}
+```
+
+## Load a visual editor Scene from Workbooks
+
+```csharp
+#r "WaveEngine.Common"
+#r "WaveEngine.Adapter"
+#r "WaveEngine.Framework"
+#r "WaveEngine.Components"
+#r "WaveEngine.Materials"
+```
+
+```csharp
+using WaveEngine.Framework; using WaveEngine.Adapter.Basics; using WaveEngine.Framework.Services;
+```
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene()
+	{
+		this.Load("Content/Scenes/MyScene.wscene");
+	}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+var app = await SimpleApp.RunAsync(game);
+```
