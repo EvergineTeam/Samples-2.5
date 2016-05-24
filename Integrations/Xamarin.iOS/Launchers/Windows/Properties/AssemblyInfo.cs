@@ -6,11 +6,11 @@ using WaveEngine.Common.Attributes;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sample")]
-[assembly: AssemblyProduct("Sample")]
+[assembly: AssemblyTitle("Xamarin_iOS")]
+[assembly: AssemblyProduct("Xamarin_iOS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

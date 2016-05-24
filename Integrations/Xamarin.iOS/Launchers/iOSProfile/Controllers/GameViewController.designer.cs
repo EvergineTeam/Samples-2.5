@@ -9,11 +9,15 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace Sample.Adapter
+namespace Sample
 {
-	[Register ("GameView")]
-	partial class GameView
+	[Register ("GameViewController")]
+	partial class GameViewController
 	{
+		[Action ("AutoRotateSwitchChanged:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void AutoRotateSwitchChanged (UISwitch sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 		}

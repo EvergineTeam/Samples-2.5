@@ -3,7 +3,7 @@ using Foundation;
 using UIKit;
 using System.Drawing;
 
-namespace Sample
+namespace Xamarin_iOS
 {
     public class Program
     {

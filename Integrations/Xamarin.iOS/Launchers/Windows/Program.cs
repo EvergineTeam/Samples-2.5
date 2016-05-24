@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace Sample
+namespace Xamarin_iOS
 {
     static class Program
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Sample
+namespace Xamarin_iOS
 {
     static class Program
     {

@@ -3,14 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DB5BF7A3-FBDD-4090-8449-CB7F0F829AC5}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sample</RootNamespace>
+    <RootNamespace>Xamarin_iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Sample</AssemblyName>
+    <AssemblyName>Xamarin_iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>
@@ -23,16 +21,7 @@
     <ConsolePause>False</ConsolePause>
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>True</MtouchProfiling>
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchSdkVersion>9.0</MtouchSdkVersion>
-    <MtouchFastDev>False</MtouchFastDev>
-    <MtouchArch>i386</MtouchArch>
-    <MtouchUseLlvm>False</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
-    <MtouchUseSGen>False</MtouchUseSGen>
-    <MtouchUseRefCounting>False</MtouchUseRefCounting>
-    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
-    <MtouchI18n />
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -56,23 +45,15 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>True</MtouchProfiling>
-    <MtouchSdkVersion>
-    </MtouchSdkVersion>
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchFastDev>False</MtouchFastDev>
     <MtouchEnableGenericValueTypeSharing>False</MtouchEnableGenericValueTypeSharing>
     <MtouchArch>ARMv7</MtouchArch>
-    <MtouchUseLlvm>False</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
-    <MtouchUseSGen>False</MtouchUseSGen>
-    <MtouchUseRefCounting>False</MtouchUseRefCounting>
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
-    <MtouchI18n />
+    <MtouchI18n>
+    </MtouchI18n>
     <CodesignProvision>
     </CodesignProvision>
-    <CodesignEntitlements />
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <CodesignExtraArgs>
+    </CodesignExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -82,25 +63,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
-    <CodesignKey>iPhone Developer: Anton Molleda (R7XN2CZ6GQ)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchSdkVersion>8.1</MtouchSdkVersion>
-    <MtouchLink>SdkOnly</MtouchLink>
-    <MtouchDebug>False</MtouchDebug>
-    <MtouchProfiling>False</MtouchProfiling>
-    <MtouchExtraArgs />
-    <MtouchFastDev>False</MtouchFastDev>
-    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
     <MtouchArch>Default, ARMv7, ARMv7s</MtouchArch>
     <MtouchUseLlvm>True</MtouchUseLlvm>
-    <MtouchUseThumb>False</MtouchUseThumb>
     <MtouchUseSGen>True</MtouchUseSGen>
-    <MtouchUseRefCounting>False</MtouchUseRefCounting>
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
-    <MtouchI18n />
-    <CodesignProvision />
-    <CodesignEntitlements />
-    <CodesignResourceRules />
-    <CodesignExtraArgs />
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -148,19 +120,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter\GameApplication.cs" />
-    <Compile Include="Adapter\GameView.cs" />
-    <Compile Include="GameViewController.cs" />
-    <Compile Include="GameViewController.designer.cs">
-      <DependentUpon>GameViewController.cs</DependentUpon>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\MainController.designer.cs">
+      <DependentUpon>MainController.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="Controllers\Main.storyboard" />
     <Compile Include="Program.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <InterfaceDefinition Include="Storyboard.storyboard" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Application.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -184,8 +152,7 @@
     <BundleResource Include="Resources\Icon-Small.png" />
     <BundleResource Include="Resources\Icon.png" />
   </ItemGroup>
-  <Import Project="..\..\Source\SampleSource.projitems" Label="Shared" Condition="Exists('..\..\Source\SampleSource.projitems')" />
-  <Import Project="..\..\SharedSource\Main\SampleSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\SampleSource.projitems')" />
+  <Import Project="..\..\SharedSource\Main\Xamarin_iOSSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\Xamarin_iOSSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup />
   <Import Project="..\..\packages\WaveEngine.2.2.0.26\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.2.0.26\build\Xamarin.iOS\WaveEngine.targets')" />

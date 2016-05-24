@@ -7,11 +7,11 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace Sample
+namespace Xamarin_iOS
 {
     public class App : WaveEngine.Adapter.Application
     {
-        Sample.Game game;
+        Xamarin_iOS.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -24,12 +24,12 @@ namespace Sample
             this.Width = 1280;
             this.Height = 720;
 			this.FullScreen = false;
-			this.WindowTitle = "Sample";
+			this.WindowTitle = "Xamarin_iOS";
         }
 
         public override void Initialize()
         {
-            this.game = new Sample.Game();
+            this.game = new Xamarin_iOS.Game();
             this.game.Initialize(this);
 			
 			#region WAVE SOFTWARE LICENSE AGREEMENT

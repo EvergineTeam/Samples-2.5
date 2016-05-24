@@ -1,5 +1,5 @@
 <Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>7fa93b07-1321-4a6b-a259-c3651ad94049</Id>
+  <Id>1afe448a-f46c-4356-8919-ec95d71ae627</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -9,27 +9,27 @@
           <d5p1:Profiles>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <Name>iOS</Name>
+              <Name>MacOS</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>MacOS</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R5G6B5</AlphaCompressionFormat>
+              <Name>iOSProfile</Name>
+              <NonAlphaCompressionFormat>R4G4B4A4</NonAlphaCompressionFormat>
               <Platform>iOS</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <Name>Windows</Name>
+              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <Name>MacOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>MacOS</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <Name>Windows</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Windows</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>

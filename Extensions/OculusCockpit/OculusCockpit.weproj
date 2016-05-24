@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>a4c786a4-51da-4df2-a309-70ec8b222427</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -9,6 +9,7 @@
           <d5p1:Profiles>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType i:nil="true" />
               <Name>Windows</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>

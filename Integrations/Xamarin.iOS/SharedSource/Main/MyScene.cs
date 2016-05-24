@@ -11,31 +11,33 @@ using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
+
+
 #endregion
 
-namespace Sample
+namespace Xamarin_iOS
 {
     public class MyScene : Scene
     {
-        private Spinner spinner;
+		private Spinner spinner;
 
-        protected override void CreateScene()
-        {
-            this.Load(WaveContent.Scenes.MyScene);
+		protected override void CreateScene()
+		{
+			this.Load(WaveContent.Scenes.MyScene);
 
-            this.spinner = new Spinner { IncreaseX = 1, IncreaseY = 1, IncreaseZ = 1 };
-            var green = new Color(76, 217, 100);
-            var cube = new Entity().AddComponent(Model.CreateCube())
-                                   .AddComponent(new ModelRenderer())
-                                   .AddComponent(new MaterialsMap(new StandardMaterial() { DiffuseColor = green, LightingEnabled = true }))
-                                   .AddComponent(new Transform3D())
-                                   .AddComponent(this.spinner);
-            this.EntityManager.Add(cube);
-        }
+			this.spinner = new Spinner { IncreaseX = 1, IncreaseY = 1, IncreaseZ = 1 };
+			var green = new Color(76, 217, 100);
+			var cube = new Entity().AddComponent(Model.CreateCube())
+				.AddComponent(new ModelRenderer())
+				.AddComponent(new MaterialsMap(new StandardMaterial() { DiffuseColor = green, LightingEnabled = true }))
+				.AddComponent(new Transform3D())
+				.AddComponent(this.spinner);
+			this.EntityManager.Add(cube);
+		}
 
-        internal void UpdateAutoRotation(bool enabled)
-        {
-            this.spinner.IsActive = enabled;
-        }
+		internal void UpdateAutoRotation(bool enabled)
+		{
+			this.spinner.IsActive = enabled;
+		}
     }
 }

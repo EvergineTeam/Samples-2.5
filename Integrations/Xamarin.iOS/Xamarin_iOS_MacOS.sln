@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SampleSource", "SharedSource\Main\SampleSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin_iOSSource", "SharedSource\Main\Xamarin_iOSSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Launchers\MacOS\Sample.csproj", "{24B87C78-E012-4BAD-9616-43F9BD6F6532}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_iOS", "Launchers\MacOS\Xamarin_iOS.csproj", "{24B87C78-E012-4BAD-9616-43F9BD6F6532}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

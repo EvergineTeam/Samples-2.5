@@ -4,7 +4,7 @@ using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
 
-namespace Sample
+namespace Xamarin_iOS
 {
 	class Program
 	{

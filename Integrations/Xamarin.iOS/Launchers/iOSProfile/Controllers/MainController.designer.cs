@@ -8,15 +8,16 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using WaveEngine.Adapter;
 
-namespace Sample
+namespace Xamarin_iOS
 {
-	[Register ("GameViewController")]
-	partial class GameViewController
+	[Register ("MainController")]
+	partial class MainController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		Sample.Adapter.GameView GameView { get; set; }
+		WaveEngine.Adapter.GLView glView { get; set; }
 
 		[Action ("AutoRotateSwitchChanged:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -24,9 +25,9 @@ namespace Sample
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (GameView != null) {
-				GameView.Dispose ();
-				GameView = null;
+			if (glView != null) {
+				glView.Dispose ();
+				glView = null;
 			}
 		}
 	}
