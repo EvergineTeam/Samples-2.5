@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+	  "WaveEngine": "2.2.1-alpha-20160523-243",
+	  "WaveEngine.ImageEffects": "2.2.1-alpha-20160523-243",
+	  "WaveEngine.Hololens": "2.2.1-alpha-20160523-243"
+  },
+  "frameworks": {
+    "uap10.0": {}
+  },
+  "runtimes": {
+    "win10-x86": {},
+    "win10-x86-aot": {}
+  }
+}
