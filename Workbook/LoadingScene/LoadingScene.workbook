@@ -5,11 +5,11 @@
 ## Load a visual editor Scene from Workbooks
 
 ```csharp
-#r "WaveEngine.Common"
-#r "WaveEngine.Adapter"
-#r "WaveEngine.Framework"
-#r "WaveEngine.Components"
-#r "WaveEngine.Materials"
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
 ```
 
 ```csharp
