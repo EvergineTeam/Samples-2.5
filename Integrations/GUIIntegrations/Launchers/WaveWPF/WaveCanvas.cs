@@ -302,43 +302,43 @@ namespace WaveWPF
                     WaveServices.Input.KeyboardState.C = ButtonState.Release;
                     break;
                 case Key.CapsLock:
-                    WaveServices.Input.KeyboardState.CapsLock = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.CapitalLock = ButtonState.Release;
                     break;
                 case Key.CrSel:
-                    WaveServices.Input.KeyboardState.Crsel = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Cancel = ButtonState.Release;
                     break;
                 case Key.D:
                     WaveServices.Input.KeyboardState.D = ButtonState.Release;
                     break;
                 case Key.D0:
-                    WaveServices.Input.KeyboardState.D0 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number0 = ButtonState.Release;
                     break;
                 case Key.D1:
-                    WaveServices.Input.KeyboardState.D1 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number1 = ButtonState.Release;
                     break;
                 case Key.D2:
-                    WaveServices.Input.KeyboardState.D2 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number2 = ButtonState.Release;
                     break;
                 case Key.D3:
-                    WaveServices.Input.KeyboardState.D3 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number3 = ButtonState.Release;
                     break;
                 case Key.D4:
-                    WaveServices.Input.KeyboardState.D4 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number4 = ButtonState.Release;
                     break;
                 case Key.D5:
-                    WaveServices.Input.KeyboardState.D5 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number5 = ButtonState.Release;
                     break;
                 case Key.D6:
-                    WaveServices.Input.KeyboardState.D6 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number6 = ButtonState.Release;
                     break;
                 case Key.D7:
-                    WaveServices.Input.KeyboardState.D7 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number7 = ButtonState.Release;
                     break;
                 case Key.D8:
-                    WaveServices.Input.KeyboardState.D8 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number8 = ButtonState.Release;
                     break;
                 case Key.D9:
-                    WaveServices.Input.KeyboardState.D9 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number9 = ButtonState.Release;
                     break;
                 case Key.Delete:
                     WaveServices.Input.KeyboardState.Delete = ButtonState.Release;
@@ -533,43 +533,43 @@ namespace WaveWPF
                     WaveServices.Input.KeyboardState.C = ButtonState.Pressed;
                     break;
                 case Key.CapsLock:
-                    WaveServices.Input.KeyboardState.CapsLock = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.CapitalLock = ButtonState.Pressed;
                     break;
                 case Key.CrSel:
-                    WaveServices.Input.KeyboardState.Crsel = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Cancel = ButtonState.Pressed;
                     break;
                 case Key.D:
                     WaveServices.Input.KeyboardState.D = ButtonState.Pressed;
                     break;
                 case Key.D0:
-                    WaveServices.Input.KeyboardState.D0 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number0 = ButtonState.Pressed;
                     break;
                 case Key.D1:
-                    WaveServices.Input.KeyboardState.D1 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number1 = ButtonState.Pressed;
                     break;
                 case Key.D2:
-                    WaveServices.Input.KeyboardState.D2 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number2 = ButtonState.Pressed;
                     break;
                 case Key.D3:
-                    WaveServices.Input.KeyboardState.D3 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number3 = ButtonState.Pressed;
                     break;
                 case Key.D4:
-                    WaveServices.Input.KeyboardState.D4 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number4 = ButtonState.Pressed;
                     break;
                 case Key.D5:
-                    WaveServices.Input.KeyboardState.D5 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number5 = ButtonState.Pressed;
                     break;
                 case Key.D6:
-                    WaveServices.Input.KeyboardState.D6 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number6 = ButtonState.Pressed;
                     break;
                 case Key.D7:
-                    WaveServices.Input.KeyboardState.D7 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number7 = ButtonState.Pressed;
                     break;
                 case Key.D8:
-                    WaveServices.Input.KeyboardState.D8 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number8 = ButtonState.Pressed;
                     break;
                 case Key.D9:
-                    WaveServices.Input.KeyboardState.D9 = ButtonState.Pressed;
+                    WaveServices.Input.KeyboardState.Number9 = ButtonState.Pressed;
                     break;
                 case Key.Delete:
                     WaveServices.Input.KeyboardState.Delete = ButtonState.Pressed;

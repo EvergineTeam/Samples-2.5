@@ -188,10 +188,10 @@ namespace WaveGTK
                     this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Shift_Lock:
-                    this.input.KeyboardState.CapsLock = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.CapitalLock = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Cancel:
-                    this.input.KeyboardState.Crsel = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Cancel = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.d:
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Pressed;
@@ -200,34 +200,34 @@ namespace WaveGTK
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_0:
-                    this.input.KeyboardState.D0 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number0 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_1:
-                    this.input.KeyboardState.D1 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number1 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_2:
-                    this.input.KeyboardState.D2 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number2 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_3:
-                    this.input.KeyboardState.D3 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number3 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_4:
-                    this.input.KeyboardState.D4 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number4 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_5:
-                    this.input.KeyboardState.D5 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number5 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_6:
-                    this.input.KeyboardState.D6 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number6 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_7:
-                    this.input.KeyboardState.D7 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number7 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_8:
-                    this.input.KeyboardState.D8 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number8 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Key_9:
-                    this.input.KeyboardState.D9 = WaveEngine.Common.Input.ButtonState.Pressed;
+                    this.input.KeyboardState.Number9 = WaveEngine.Common.Input.ButtonState.Pressed;
                     break;
                 case Gdk.Key.Delete:
                     this.input.KeyboardState.Delete = WaveEngine.Common.Input.ButtonState.Pressed;
@@ -487,10 +487,10 @@ namespace WaveGTK
                     this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Shift_Lock:
-                    this.input.KeyboardState.CapsLock = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.CapitalLock = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Cancel:
-                    this.input.KeyboardState.Crsel = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Cancel = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.d:
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Release;
@@ -499,34 +499,34 @@ namespace WaveGTK
                     this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_0:
-                    this.input.KeyboardState.D0 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number0 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_1:
-                    this.input.KeyboardState.D1 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number1 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_2:
-                    this.input.KeyboardState.D2 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number2 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_3:
-                    this.input.KeyboardState.D3 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number3 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_4:
-                    this.input.KeyboardState.D4 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number4 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_5:
-                    this.input.KeyboardState.D5 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number5 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_6:
-                    this.input.KeyboardState.D6 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number6 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_7:
-                    this.input.KeyboardState.D7 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number7 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_8:
-                    this.input.KeyboardState.D8 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number8 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Key_9:
-                    this.input.KeyboardState.D9 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number9 = WaveEngine.Common.Input.ButtonState.Release;
                     break;
                 case Gdk.Key.Delete:
                     this.input.KeyboardState.Delete = WaveEngine.Common.Input.ButtonState.Release;
