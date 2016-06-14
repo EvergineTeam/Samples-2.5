@@ -1,0 +1,14 @@
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Application>
+    <Assembly Name="*Application*" Dynamic="Required All"/>
+    
+    <!--Add a line for each namespace that contains classes that you want to include into Serialization & Reflection process.
+    That includes components and classes that you want to use in Wave Visual Editor or [RequiredComponent] label
+    For example:-->
+    <Namespace Name="CardboardCockpit" Dynamic="Required All" DataContractSerializer="Required All" />
+
+    <!--This is mandatory in .Net native compilation. In the following page you will find more information:
+    https://msdn.microsoft.com/en-us/library/dn600639(v=vs.110).aspx
+    -->
+  </Application>
+</Directives>

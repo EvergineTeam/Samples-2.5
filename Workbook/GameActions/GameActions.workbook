@@ -1,0 +1,162 @@
+```json
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[]}
+```
+
+## Introducing Wave Engine’s Game Actions. A Practical Approach
+
+Think of Game Actions as those Tasks you already have with .NET. In a game there is always a update-draw loop happening about ~60 times/sec. Instead of managing background work through threads it uses to be more suitable to spend a small amount of time in each update call.
+
+For this reason, among other ones, Game Actions try to fulfill the need of those Task you surely already how to manage in pure .NET, but adapted to games, in this case Wave Engine. A game action, for example, can be “continued with” another one, with an API which for sure will look familiar to those with some experience with C# and .NET in general.
+
+Initially, we need to consume a few DLLs which will contain everything needed within this document:
+
+```csharp
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
+```
+
+Also, a few “usings” will enable the context needed to consume Wave Engine’s basic needs:
+
+```csharp
+using WaveEngine.Adapter.Basics;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Framework;
+using WaveEngine.Framework.Services;
+```
+
+Every game is made of Scenes, so we will start by creating an empty one, which will build on top of.
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene()
+	{
+	}
+}
+```
+
+A “game” is a collection of scenes, agrouped in contexts. Since we have just 1 scene, we will directly push it so will be seen in the window created inmediately:
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+The scaffolding is done, fantastic! Let us then instantiate the game and run it in a way that we will be able to keep interacting with it dinamically:
+
+```csharp
+var game = new MyGame();
+var app = await SimpleApp.RunAsync(game);
+```
+
+“game” contains actually the top reference which will serve us as the entry-point to the rest of elements: the scene, entities, etc. It will help us to have a quick reference to such for the following paragraphs:
+
+```csharp
+var scene = game.scene
+```
+
+Currently our game is just black, empty. There is nothing in it. We will begin by how we look to the world, which is through a camera. Wave Engine bundles a nice amount of different cameras, 2D and 3D ones. Here we need a 2D one, which will be also fixed. And, to look pretier for the final goal, a white background is dessired (you can play around with different background colors):
+
+```csharp
+var camera = new FixedCamera2D("camera") { BackgroundColor = Color.White };
+scene.EntityManager.Add(camera)
+```
+
+Above you can see we added the camera to the scene’s entities. It is a must, and is translated as the way to put your entity in the road of update-draw calls.
+
+Along with the workbook there are three different assets: Wave Engine logo, Xamarin Workbooks one and a heart. We would like to make the representation of Wave Engine loving (<3) Xamarin Workbooks. Those assets are in WPK form, generated through Wave Visual Editor previously, so can be consumed directly here.
+
+Let us create the first one: an Entity which will draw Wave Engine sprite, and place it at the left side of the screen, centered vertically:
+
+```csharp
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Graphics2D;
+using WaveEngine.Framework.Graphics
+```
+
+```csharp
+var waveEngineLogo = new Entity("waveEngineLogo");
+waveEngineLogo.AddComponent(new Sprite("Content/Assets/WaveEngine.png"));
+waveEngineLogo.AddComponent(new SpriteRenderer());
+waveEngineLogo.AddComponent(new Transform2D());
+scene.EntityManager.Add(waveEngineLogo);
+waveEngineLogo.FindComponent<Transform2D>().Scale = Vector2.One / 2;
+waveEngineLogo.FindComponent<Transform2D>().Origin = Vector2.One / 2;
+waveEngineLogo.FindComponent<Transform2D>().Position = new Vector2(scene.VirtualScreenManager.VirtualWidth / 4, scene.VirtualScreenManager.VirtualHeight / 2)
+```
+
+Now, same steps with Workbooks one:
+
+```csharp
+var xamarinWorkbooksLogo = new Entity("xamarinWorkbooksLogo");
+xamarinWorkbooksLogo.AddComponent(new Sprite("Content/Assets/Inspector-Icon-300x276.png"));
+xamarinWorkbooksLogo.AddComponent(new SpriteRenderer());
+xamarinWorkbooksLogo.AddComponent(new Transform2D());
+scene.EntityManager.Add(xamarinWorkbooksLogo);
+xamarinWorkbooksLogo.FindComponent<Transform2D>().Position = new Vector2(scene.VirtualScreenManager.VirtualWidth / 4 * 3, scene.VirtualScreenManager.VirtualHeight / 2);
+xamarinWorkbooksLogo.FindComponent<Transform2D>().Origin = Vector2.One / 2;
+xamarinWorkbooksLogo.FindComponent<Transform2D>().Scale = Vector2.One / 1.75f
+```
+
+Finally, exactly the same for “love”:
+
+```csharp
+var love = new Entity("love");
+love.AddComponent(new Sprite("Content/Assets/heart-icon.png"));
+love.AddComponent(new SpriteRenderer());
+love.AddComponent(new Transform2D());
+scene.EntityManager.Add(love);
+love.FindComponent<Transform2D>().Origin = Vector2.One / 2;
+love.FindComponent<Transform2D>().Position = new Vector2(scene.VirtualScreenManager.VirtualWidth / 2, scene.VirtualScreenManager.VirtualHeight / 2);
+love.FindComponent<Transform2D>().Scale = Vector2.One / 12
+```
+
+With everything in place, it is time to add a little bit of animation. More specifically, to make the heart feel like beating. We start by adding a few more namespaces, and adding the animation object which will allow us to accomplish the scaling needed on the heart asset:
+
+```csharp
+using WaveEngine.Components.GameActions;
+using WaveEngine.Framework.Animation
+```
+
+```csharp
+love.AddComponent(new AnimationUI())
+```
+
+A heart-beat is made of a scale up animation (cubic if possible to represent the acceleration) followed inmediately by the scale down one, that is all. So, we define the animations needed to support this:
+
+```csharp
+var increaseZoomAnimation = new SingleAnimation(1 / 12f, 1 / 10f, TimeSpan.FromMilliseconds(500), EasingFunctions.Cubic);
+var decreaseZoomAnimation = new SingleAnimation(increaseZoomAnimation.To.Value, increaseZoomAnimation.From.Value, increaseZoomAnimation.Duration, EasingFunctions.Cubic)
+```
+
+As a last step, the animations are taken into Game Actions, which then can be chained to reproduce the heart-beat animation we wanted. For example, pay special attention to the way we can tell Wave Engine to wait for two game actions being run.
+
+```csharp
+var xScaleIncreaseAnimationAction = scene.CreateSingleAnimationGameAction(increaseZoomAnimation, love.FindComponent<AnimationUI>(), Transform2D.LocalXScaleProperty);
+var yScaleIncreaseAnimationAction = scene.CreateSingleAnimationGameAction(increaseZoomAnimation, love.FindComponent<AnimationUI>(), Transform2D.LocalYScaleProperty);
+var xScaleDecreaseAnimationAction = scene.CreateSingleAnimationGameAction(decreaseZoomAnimation, love.FindComponent<AnimationUI>(), Transform2D.LocalXScaleProperty);
+var yScaleDecreaseAnimationAction = scene.CreateSingleAnimationGameAction(decreaseZoomAnimation, love.FindComponent<AnimationUI>(), Transform2D.LocalYScaleProperty);
+var heartBeatIncreaseAnimationAction = scene.CreateParallelGameActions(xScaleIncreaseAnimationAction, yScaleIncreaseAnimationAction).WaitAll();
+var heartBeatDecreaseAnimationAction = scene.CreateParallelGameActions(xScaleDecreaseAnimationAction, yScaleDecreaseAnimationAction).WaitAll();
+heartBeatIncreaseAnimationAction.ContinueWith(heartBeatDecreaseAnimationAction).Run()
+```
+
+Wave Engine’s Game Actions is a beautiful way to introduce thread-less asynchrony in your games, and easily helps you build complex processes in a fluent way.
+
+We hope you have enjoyed this interactive workbook, we do writting it, thank you,
+
+\-The Wave Engine Team
