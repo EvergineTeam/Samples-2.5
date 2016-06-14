@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 26/01/2016 15:34:14
+// File generated on 14/06/2016 13:20:18
 namespace InternetTextureLoad
 {
     using System;

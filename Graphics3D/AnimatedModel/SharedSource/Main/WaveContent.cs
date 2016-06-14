@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/26/2016 5:24:03 PM
+// File generated on 14/06/2016 13:23:32
 namespace AnimatedModel
 {
     using System;

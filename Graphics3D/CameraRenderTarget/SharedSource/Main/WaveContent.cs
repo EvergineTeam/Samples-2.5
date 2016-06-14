@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 24/05/2016 15:34:55
+// File generated on 14/06/2016 13:25:36
 namespace CameraRengerTarget
 {
     using System;

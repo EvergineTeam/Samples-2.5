@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>ab790238-d84f-4b28-bbcc-eb4122d18888</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -9,18 +9,21 @@
           <d5p1:Profiles>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType i:nil="true" />
               <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType i:nil="true" />
               <Name>MacOS</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>MacOS</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType i:nil="true" />
               <Name>Windows</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
@@ -36,5 +39,5 @@
     <d2p1:_Minor>0</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.2.0.26</WaveVersion>
+  <WaveVersion>2.2.1.27</WaveVersion>
 </Project>

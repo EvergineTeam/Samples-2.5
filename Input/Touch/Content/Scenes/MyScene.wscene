@@ -47,7 +47,6 @@
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:TexturePath>Content/Assets/Touch.png.wpk</d5p1:TexturePath>
         </d4p1:Component>
       </d2p1:SerializeComponents>
@@ -67,7 +66,7 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>641.300049</d6p1:X>
+            <d6p1:X>640</d6p1:X>
             <d6p1:Y>359.999939</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
