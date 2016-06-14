@@ -55,7 +55,7 @@ namespace ParallaxCamera2D.Behaviors
             Vector3 desiredPosition = this.camera2D.Position;
             desiredPosition.X = Math.Max(this.limitMinX, Math.Min(this.limitMaxX, followTransform.X));
 
-            this.camera2D.Transform3D.Position = currentPosition + (desiredPosition - currentPosition) * MathHelper.Min((float)(gameTime.TotalSeconds * CameraSpeed), 1);
+            this.camera2D.Transform.Transform3D.Position = currentPosition + (desiredPosition - currentPosition) * MathHelper.Min((float)(gameTime.TotalSeconds * CameraSpeed), 1);
            
         }
 
