@@ -4,7 +4,7 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
   xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-  IgnorableNamespaces="uap mp">
+  IgnorableNamespaces="uap uap2 mp">
   <Identity Name="HololensSample" Publisher="CN=waveengine" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="996b0dfe-4912-4c6b-a034-e950d1d16874" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>

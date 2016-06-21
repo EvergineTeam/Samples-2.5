@@ -1878,21 +1878,21 @@
           }
         }
       },
-      "WaveEngine/2.2.1-alpha-20160523-243": {
+      "WaveEngine/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         }
       },
-      "WaveEngine.Adapter/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Adapter/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/SharpDX.DXGI.dll": {},
@@ -1917,7 +1917,7 @@
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Common/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Common/2.2.1.27": {
         "type": "package",
         "compile": {
           "lib/uap10.0/WaveEngine.Common.dll": {}
@@ -1926,12 +1926,12 @@
           "lib/uap10.0/WaveEngine.Common.dll": {}
         }
       },
-      "WaveEngine.Components/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Components/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -1940,10 +1940,10 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Framework/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
@@ -1960,13 +1960,13 @@
           "lib/uap10.0/Zlib.Portable.dll": {}
         }
       },
-      "WaveEngine.Hololens/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Hololens/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
@@ -1975,11 +1975,11 @@
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
         }
       },
-      "WaveEngine.ImageEffects/2.2.1-alpha-20160523-243": {
+      "WaveEngine.ImageEffects/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
@@ -1988,11 +1988,11 @@
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
         }
       },
-      "WaveEngine.Materials/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Materials/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -3753,21 +3753,21 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.2.1-alpha-20160523-243": {
+      "WaveEngine/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         }
       },
-      "WaveEngine.Adapter/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Adapter/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/SharpDX.DXGI.dll": {},
@@ -3792,7 +3792,7 @@
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Common/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Common/2.2.1.27": {
         "type": "package",
         "compile": {
           "lib/uap10.0/WaveEngine.Common.dll": {}
@@ -3801,12 +3801,12 @@
           "lib/uap10.0/WaveEngine.Common.dll": {}
         }
       },
-      "WaveEngine.Components/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Components/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -3815,10 +3815,10 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Framework/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
@@ -3835,13 +3835,13 @@
           "lib/uap10.0/Zlib.Portable.dll": {}
         }
       },
-      "WaveEngine.Hololens/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Hololens/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
@@ -3850,11 +3850,11 @@
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
         }
       },
-      "WaveEngine.ImageEffects/2.2.1-alpha-20160523-243": {
+      "WaveEngine.ImageEffects/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
@@ -3863,11 +3863,11 @@
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
         }
       },
-      "WaveEngine.Materials/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Materials/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -5576,21 +5576,21 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.2.1-alpha-20160523-243": {
+      "WaveEngine/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         }
       },
-      "WaveEngine.Adapter/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Adapter/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/SharpDX.DXGI.dll": {},
@@ -5615,7 +5615,7 @@
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Common/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Common/2.2.1.27": {
         "type": "package",
         "compile": {
           "lib/uap10.0/WaveEngine.Common.dll": {}
@@ -5624,12 +5624,12 @@
           "lib/uap10.0/WaveEngine.Common.dll": {}
         }
       },
-      "WaveEngine.Components/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Components/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Materials": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27",
+          "WaveEngine.Materials": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -5638,10 +5638,10 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Framework/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
@@ -5658,13 +5658,13 @@
           "lib/uap10.0/Zlib.Portable.dll": {}
         }
       },
-      "WaveEngine.Hololens/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Hololens/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Components": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Adapter": "2.2.1.27",
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Components": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
@@ -5673,11 +5673,11 @@
           "lib/uap10.0/WaveEngine.HoloLens.dll": {}
         }
       },
-      "WaveEngine.ImageEffects/2.2.1-alpha-20160523-243": {
+      "WaveEngine.ImageEffects/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
@@ -5686,11 +5686,11 @@
           "lib/uap10.0/WaveEngine.ImageEffects.dll": {}
         }
       },
-      "WaveEngine.Materials/2.2.1-alpha-20160523-243": {
+      "WaveEngine.Materials/2.2.1.27": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.2.1-alpha-20160523-243",
-          "WaveEngine.Framework": "2.2.1-alpha-20160523-243"
+          "WaveEngine.Common": "2.2.1.27",
+          "WaveEngine.Framework": "2.2.1.27"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -8745,11 +8745,11 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "WaveEngine/2.2.1-alpha-20160523-243": {
-      "sha512": "Ww1Dq/oQcn1mWPGILUrgRLwajUf7VZo9F+cEdA7y9kdlqaP3Li47x15RNEFEvDcwK2VrQ+KQIUGcgAKxDwb5bA==",
+    "WaveEngine/2.2.1.27": {
+      "sha512": "umS5QbQjdDm+7GhauGnvFKAy1kh9oxSfhQWT6z5HXEuoo5EhhLhf3oO22EgsQwXyqiwOW5VbshZfhd2Gtoj65Q==",
       "type": "package",
       "files": [
-        "WaveEngine.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.2.2.1.27.nupkg.sha512",
         "WaveEngine.nuspec",
         "build/Mono/WaveEngine.Targets.Tasks.dll",
         "build/Mono/WaveEngine.targets",
@@ -8764,11 +8764,11 @@
         "build/uap10.0/WaveEngine.targets"
       ]
     },
-    "WaveEngine.Adapter/2.2.1-alpha-20160523-243": {
-      "sha512": "1Tv2OQJj5FqQlufPgnVOi9yt00LUjOl3iD83nxzS7YXeCDblUBqW5JqgOHsKwgNOLNNslW5VcGDMGPT421ymnw==",
+    "WaveEngine.Adapter/2.2.1.27": {
+      "sha512": "YbWXwgEmRAPdZAF9BRrSFnELtA254mVIRS3Me9eMBt0derv0llR5BDTBKx2aMsC7+CJNYw2JjHtqw8MUXluevw==",
       "type": "package",
       "files": [
-        "WaveEngine.Adapter.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.Adapter.2.2.1.27.nupkg.sha512",
         "WaveEngine.Adapter.nuspec",
         "lib/Mono/OpenTK.dll",
         "lib/Mono/OpenTK.dll.config",
@@ -8813,11 +8813,11 @@
         "lib/uap10.0/WaveEngine.Adapter.xml"
       ]
     },
-    "WaveEngine.Common/2.2.1-alpha-20160523-243": {
-      "sha512": "lxEGYvwTzW+8/DMBnVWdyBhfH5KdrdqL9di2oVieps1VsSMubJhUQKewFPaMYQy1tmjl0rUHTK+qlMF57Mxr8A==",
+    "WaveEngine.Common/2.2.1.27": {
+      "sha512": "c49BWTOcq7832c+xX3kOtzxZtzRTNWnjD3urf+xWYCMZFF3Wz/kNtka6bO+rTjcny8S+NGrLXNP7WdDffyMfxA==",
       "type": "package",
       "files": [
-        "WaveEngine.Common.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.Common.2.2.1.27.nupkg.sha512",
         "WaveEngine.Common.nuspec",
         "lib/Mono/WaveEngine.Common.dll",
         "lib/Mono/WaveEngine.Common.xml",
@@ -8832,11 +8832,11 @@
         "lib/uap10.0/WaveEngine.Common.xml"
       ]
     },
-    "WaveEngine.Components/2.2.1-alpha-20160523-243": {
-      "sha512": "/YeR3AZj4NYE3wAq6fZChzVpt9W4t0y7Ri+93mvG5OnFFl9E/KoL66dHtKSaso/NrZ0SlJydSQQ5TPkUDzi/Pg==",
+    "WaveEngine.Components/2.2.1.27": {
+      "sha512": "0tNrx3iV0YuouuAqu9a68wL/WwfJPUF7l1+rER526P2WMPOhWJGp4/VsXUIVdswWUp0tgqt/uEMXQo2pnAUXCg==",
       "type": "package",
       "files": [
-        "WaveEngine.Components.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.Components.2.2.1.27.nupkg.sha512",
         "WaveEngine.Components.nuspec",
         "lib/Mono/WaveEngine.Components.dll",
         "lib/Mono/WaveEngine.Components.xml",
@@ -8851,11 +8851,11 @@
         "lib/uap10.0/WaveEngine.Components.xml"
       ]
     },
-    "WaveEngine.Framework/2.2.1-alpha-20160523-243": {
-      "sha512": "fB+QWlg6NVdMleDaoz4YO/zsA5da+hb+hVFPnIvTcM1HXwufQDQHFtoEZ9R3iDkduSLkuJa/qembNy0xBgNAAA==",
+    "WaveEngine.Framework/2.2.1.27": {
+      "sha512": "tB5YHXS9Ms8ZmNNbsohldL5NrBa97LGHhy/fkUVhgr+c/fPkqbBg5Qxi2ZiQ2UB4SR4/mdjN6g1OAKmb0B2hOw==",
       "type": "package",
       "files": [
-        "WaveEngine.Framework.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.Framework.2.2.1.27.nupkg.sha512",
         "WaveEngine.Framework.nuspec",
         "lib/Mono/WaveEngine.Bepu.dll",
         "lib/Mono/WaveEngine.Farseer.dll",
@@ -8899,12 +8899,12 @@
         "lib/uap10.0/Zlib.Portable.dll"
       ]
     },
-    "WaveEngine.Hololens/2.2.1-alpha-20160523-243": {
-      "sha512": "Z4YV+J0gFi7XraeXntjkOO79aCaOkU4ZboBYULjiU+rAY4SIU/5ZtlUPSPBONtaf45aUHsqms5iOlZ8L2kAdlQ==",
+    "WaveEngine.Hololens/2.2.1.27": {
+      "sha512": "/re8uBL8K82Gj5nEU0ikV6NU4pKQDLFXaWyv5unc5Gt66GwrDr/pV2oWUBjg1a1GagqhvekpJF9SSiOYXt1CGA==",
       "type": "package",
       "files": [
-        "WaveEngine.Hololens.2.2.1-alpha-20160523-243.nupkg.sha512",
-        "WaveEngine.Hololens.nuspec",
+        "WaveEngine.HoloLens.2.2.1.27.nupkg.sha512",
+        "WaveEngine.HoloLens.nuspec",
         "lib/Mono/WaveEngine.HoloLens.dll",
         "lib/Mono/WaveEngine.HoloLens.xml",
         "lib/net45/WaveEngine.HoloLens.dll",
@@ -8913,11 +8913,11 @@
         "lib/uap10.0/WaveEngine.HoloLens.xml"
       ]
     },
-    "WaveEngine.ImageEffects/2.2.1-alpha-20160523-243": {
-      "sha512": "o28I0mhJJv3YBt5hX15jR+UuSd4aiyFwMYcCeDvu+IwbEdOycOF5PycmVJr78aafMwLIj08JpSAlloSfDySwUw==",
+    "WaveEngine.ImageEffects/2.2.1.27": {
+      "sha512": "8Qm3U0rLVWhCIXClmVQ32kQc4Q3/MHPW318/J5EguGYK1E5t968euNOMvbGXF+NwsjqlbOt/djzsxx+GvnGRDA==",
       "type": "package",
       "files": [
-        "WaveEngine.ImageEffects.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.ImageEffects.2.2.1.27.nupkg.sha512",
         "WaveEngine.ImageEffects.nuspec",
         "lib/Mono/WaveEngine.ImageEffects.dll",
         "lib/Mono/WaveEngine.ImageEffects.xml",
@@ -8932,11 +8932,11 @@
         "lib/uap10.0/WaveEngine.ImageEffects.xml"
       ]
     },
-    "WaveEngine.Materials/2.2.1-alpha-20160523-243": {
-      "sha512": "0Lco7YND5XO15pbZLs4ZrSE4a7RysoW9cwY+Umyx6DKlLSvFC5Jn95+/R5EU6PYWtyP58oHG6kfzjdwTTjDmIg==",
+    "WaveEngine.Materials/2.2.1.27": {
+      "sha512": "sxLWGC9iynyBBq2rX5V3qWf9KtnuEWH7M00F3VGVIeDJO0vROB5LJW+LArYwAc3c9IMdo9zxBRnZK6R5bHpigA==",
       "type": "package",
       "files": [
-        "WaveEngine.Materials.2.2.1-alpha-20160523-243.nupkg.sha512",
+        "WaveEngine.Materials.2.2.1.27.nupkg.sha512",
         "WaveEngine.Materials.nuspec",
         "lib/Mono/WaveEngine.Materials.dll",
         "lib/Mono/WaveEngine.Materials.xml",
@@ -8955,9 +8955,9 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "WaveEngine >= 2.2.1-alpha-20160523-243",
-      "WaveEngine.Hololens >= 2.2.1-alpha-20160523-243",
-      "WaveEngine.ImageEffects >= 2.2.1-alpha-20160523-243"
+      "WaveEngine >= 2.2.1.27",
+      "WaveEngine.Hololens >= 2.2.1.27",
+      "WaveEngine.ImageEffects >= 2.2.1.27"
     ],
     "UAP,Version=v10.0": []
   }

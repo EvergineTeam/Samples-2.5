@@ -98,7 +98,7 @@ namespace HololensSample
 
                     HolographicFrame holographicFrame = this.holographicSpace.CreateNextFrame();
 
-                    this.main.UpdateAndDraw(ref holographicFrame);
+                    this.main.UpdateAndDraw();
                 }
                 else
                 {

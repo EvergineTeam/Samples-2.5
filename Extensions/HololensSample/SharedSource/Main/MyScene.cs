@@ -10,8 +10,8 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.HoloLens.Interaction;
-using WaveEngine.HoloLens.Speech;
+using WaveEngine.Hololens.Interaction;
+using WaveEngine.Hololens.Speech;
 #endregion
 
 namespace HololensSample

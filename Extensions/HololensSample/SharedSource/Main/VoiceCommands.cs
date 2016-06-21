@@ -9,9 +9,9 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Sound;
-using WaveEngine.HoloLens;
-using WaveEngine.HoloLens.Interaction;
-using WaveEngine.HoloLens.Speech;
+using WaveEngine.Hololens;
+using WaveEngine.Hololens.Interaction;
+using WaveEngine.Hololens.Speech;
 
 namespace HololensSample
 {
