@@ -1,5 +1,5 @@
 using System;
-using WaveEngine.HoloLens;
+using WaveEngine.Hololens;
 
 namespace HololensSample
 {

@@ -7,8 +7,8 @@ using WaveEngine.Components.VR;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using WaveEngine.HoloLens;
-using WaveEngine.HoloLens.Interaction;
+using WaveEngine.Hololens;
+using WaveEngine.Hololens.Interaction;
 
 namespace HololensSample
 {
