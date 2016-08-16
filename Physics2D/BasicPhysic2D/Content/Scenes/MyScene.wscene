@@ -625,6 +625,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -853,6 +854,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1063,6 +1065,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1273,6 +1276,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1302,8 +1306,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1150.29968</d6p1:X>
-            <d6p1:Y>-90.00025</d6p1:Y>
+            <d6p1:X>1036.39978</d6p1:X>
+            <d6p1:Y>-28.8002529</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -1483,6 +1487,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1693,6 +1698,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1796,6 +1802,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1895,6 +1902,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -1994,6 +2002,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2169,6 +2178,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2272,6 +2282,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2375,6 +2386,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2478,6 +2490,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2538,6 +2551,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2641,6 +2655,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2765,6 +2780,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2825,6 +2841,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -2903,6 +2920,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -3023,6 +3041,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -3143,6 +3162,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -3263,6 +3283,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
@@ -3575,6 +3596,7 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>

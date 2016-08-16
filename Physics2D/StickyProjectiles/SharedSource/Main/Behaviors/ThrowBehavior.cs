@@ -148,7 +148,7 @@ namespace StickyProjectiles.Behaviors
                 Vector2 arrowPointing = Vector2.Transform(Vector2.UnitX * 100, projectileTransform.WorldTransform);
                 Vector2 flightDirection = arrowPointing - projectileTransform.Position;
                 flightDirection.Normalize();
-                projectileBody.AngularDamping = 0;
+                //projectileBody.AngularDamping = 0;
 
                 Vector2 arrowTailPosition = Vector2.Transform(Vector2.UnitX * -35, projectileTransform.WorldTransform);
                 projectileBody.ApplyForce(flightDirection * this.Force, arrowTailPosition);
