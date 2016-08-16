@@ -82,7 +82,7 @@
             <d6p1:Y>1</d6p1:Y>
           </d5p1:zoom>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VehiclePhysics" i:type="d5p1:CarCameraBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VehiclePhysics2D" i:type="d5p1:CarCameraBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:MaxX>1400</d5p1:MaxX>
@@ -6093,7 +6093,7 @@
           <d5p1:maxMotorTorque>10</d5p1:maxMotorTorque>
           <d5p1:motorSpeed>0</d5p1:motorSpeed>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VehiclePhysics" i:type="d5p1:CarController">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VehiclePhysics2D" i:type="d5p1:CarController">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:MaxSpeed>20</d5p1:MaxSpeed>

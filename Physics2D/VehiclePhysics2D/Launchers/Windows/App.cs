@@ -7,11 +7,11 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     public class App : WaveEngine.Adapter.Application
     {
-        VehiclePhysics.Game game;
+        VehiclePhysics2D.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
@@ -30,7 +30,7 @@ namespace VehiclePhysics
 
         public override void Initialize()
         {
-            this.game = new VehiclePhysics.Game();
+            this.game = new VehiclePhysics2D.Game();
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN

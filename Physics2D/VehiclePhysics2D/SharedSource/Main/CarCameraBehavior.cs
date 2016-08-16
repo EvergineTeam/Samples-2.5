@@ -7,7 +7,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     [DataContract]
     public class CarCameraBehavior : Behavior

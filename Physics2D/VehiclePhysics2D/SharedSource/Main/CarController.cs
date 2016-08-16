@@ -10,7 +10,7 @@ using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     /// <summary>
     /// Controller class of the car

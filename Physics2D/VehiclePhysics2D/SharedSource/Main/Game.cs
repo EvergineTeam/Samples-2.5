@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     public class Game : WaveEngine.Framework.Game
     {

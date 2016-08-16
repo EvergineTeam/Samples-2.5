@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     static class Program
     {

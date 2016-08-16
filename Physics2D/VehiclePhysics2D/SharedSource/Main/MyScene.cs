@@ -12,7 +12,7 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace VehiclePhysics
+namespace VehiclePhysics2D
 {
     public class MyScene : Scene
     {
