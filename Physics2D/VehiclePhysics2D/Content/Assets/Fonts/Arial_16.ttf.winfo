@@ -1,0 +1,25 @@
+﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>9de198e4-9a63-4709-9816-33f0b41bc274</Id>
+  <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Font">
+    <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
+      <d3p1:ExportProfile i:type="d3p1:FontProfile">
+        <d3p1:Name i:nil="true" />
+      </d3p1:ExportProfile>
+    </d2p1:Profiles>
+    <d2p1:ZipCompress>true</d2p1:ZipCompress>
+    <d2p1:CharacterSet>Custom</d2p1:CharacterSet>
+    <d2p1:CustomSet>Cursor ↑: Accelerate ↓: Brake Space: Reset</d2p1:CustomSet>
+    <d2p1:DefaultCharacter>42</d2p1:DefaultCharacter>
+    <d2p1:FontFamily>Arial</d2p1:FontFamily>
+    <d2p1:FontSize>16</d2p1:FontSize>
+    <d2p1:InnerSpacing>0</d2p1:InnerSpacing>
+    <d2p1:Spacing>0</d2p1:Spacing>
+  </Asset>
+  <Thumbnail i:nil="true" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
+</Asset>
