@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using WaveEngine.Common.Attributes;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Models.Assets;
 using WaveEngine.Framework.Services;
 
@@ -10,6 +11,12 @@ namespace Tumbler
     [DataContract]
     public class EmitterBehavior : Behavior
     {
+        /// <summary>
+        /// The required trasnform
+        /// </summary>
+        [RequiredComponent]
+        protected Transform2D transform;
+
         /// <summary>
         /// The interval in seconds of the emitter
         /// </summary>
@@ -80,6 +87,13 @@ namespace Tumbler
                     }
 
                     entity.Name = "instance_" + this.instances++;
+
+                    var entityTransform = entity.FindComponent<Transform2D>();
+
+                    if (entityTransform != null)
+                    {
+                        entityTransform.Position = this.transform.Position;
+                    }
 
                     this.EntityManager.Add(entity);
                 }
