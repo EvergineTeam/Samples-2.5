@@ -94,13 +94,6 @@
           <d5p1:Smooth>0.2</d5p1:Smooth>
           <d5p1:TargetPath>Car</d5p1:TargetPath>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera2DBehavior">
-          <d4p1:IsActive>false</d4p1:IsActive>
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d5p1:RotationSpeed>0.004</d5p1:RotationSpeed>
-          <d5p1:Speed>10</d5p1:Speed>
-          <d5p1:WheelZoomSpeed>0</d5p1:WheelZoomSpeed>
-        </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
@@ -3293,8 +3286,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:X>0.4</d6p1:X>
+            <d6p1:Y>0.4</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Effect>None</d5p1:Effect>
@@ -6152,7 +6145,7 @@
       <d2p1:isStatic>true</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>text</d2p1:name>
-      <d2p1:tag i:nil="true" />
+      <d2p1:tag>InstructionsLabel</d2p1:tag>
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -6162,8 +6155,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>62.6460571</d6p1:X>
-            <d6p1:Y>-585.1366</d6p1:Y>
+            <d6p1:X>-1153.80017</d6p1:X>
+            <d6p1:Y>-1200.3</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -6176,12 +6169,12 @@
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>48</d6p1:Height>
             <d6p1:Width>198</d6p1:Width>
-            <d6p1:X>-99</d6p1:X>
-            <d6p1:Y>24</d6p1:Y>
+            <d6p1:X>-0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
           </d5p1:origin>
           <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.1</d6p1:X>
@@ -6199,8 +6192,8 @@
           </d5p1:foreground>
           <d5p1:lineSpacing>0</d5p1:lineSpacing>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
           </d5p1:origin>
           <d5p1:scale xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -6239,8 +6232,8 @@ Cursor ↓: Brake</d5p1:text>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:X>0.4</d6p1:X>
+            <d6p1:Y>0.4</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Effect>None</d5p1:Effect>
@@ -7545,8 +7538,8 @@ Cursor ↓: Brake</d5p1:text>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
+            <d6p1:X>0.8</d6p1:X>
+            <d6p1:Y>0.8</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Effect>None</d5p1:Effect>
