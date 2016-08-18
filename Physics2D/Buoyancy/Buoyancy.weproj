@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>97aedfb3-88b4-43b1-b041-d4bcf4562c85</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -25,5 +25,5 @@
     <d2p1:_Minor>0</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.2.2-alpha-20160809-302</WaveVersion>
+  <WaveVersion>2.2.2-alpha-20160817-309</WaveVersion>
 </Project>
