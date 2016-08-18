@@ -9,7 +9,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics; 
 #endregion
 
-namespace Bouyance
+namespace Buoyancy
 {
     [DataContract]
     public class MouseDrawable : Drawable2D

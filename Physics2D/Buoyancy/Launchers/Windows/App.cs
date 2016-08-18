@@ -7,30 +7,30 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace Bouyance
+namespace Buoyancy
 {
     public class App : WaveEngine.Adapter.Application
     {
-        Bouyance.Game game;
+        Buoyancy.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-		
+        
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-			this.FullScreen = false;
-			this.WindowTitle = "Bouyance";
+            this.FullScreen = false;
+            this.WindowTitle = "Bouyance";
             this.HasVideoSupport = true;
     }
 
         public override void Initialize()
         {
-            this.game = new Bouyance.Game();
+            this.game = new Buoyancy.Game();
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
@@ -74,7 +74,7 @@ namespace Bouyance
                     this.FullScreen = !this.FullScreen;
                 }
 
-				if (this.splashState)
+                if (this.splashState)
                 {
                     #region DEFAULT SPLASHSCREEN
                     this.time += elapsedTime;
@@ -141,6 +141,6 @@ namespace Bouyance
                 game.OnDeactivated();
             }
         }
-	}
+    }
 }
 

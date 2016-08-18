@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace Bouyance
+namespace Buoyancy
 {
     static class Program
     {

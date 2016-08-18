@@ -6,11 +6,11 @@
     <SharedGUID>846d34c8-e537-4dc7-b646-cff649ce42e4</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Bouyance</Import_RootNamespace>
+    <Import_RootNamespace>Buoyancy</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)BouyanceBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BouyanceRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BuoyancyBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BuoyancyRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MouseBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MouseDrawable.cs" />

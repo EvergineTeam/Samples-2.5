@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Bouyance
+namespace Buoyancy
 {
     public class Game : WaveEngine.Framework.Game
     {

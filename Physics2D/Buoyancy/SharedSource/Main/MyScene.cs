@@ -15,7 +15,7 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Bouyance
+namespace Buoyancy
 {
     public class MyScene : Scene
     {       

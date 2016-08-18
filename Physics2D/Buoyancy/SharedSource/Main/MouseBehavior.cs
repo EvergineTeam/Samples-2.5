@@ -13,7 +13,7 @@ using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Bouyance
+namespace Buoyancy
 {
     [DataContract]
     public class MouseBehavior : Behavior

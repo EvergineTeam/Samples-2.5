@@ -13,10 +13,10 @@ using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Diagnostic;
 #endregion
 
-namespace Bouyance
+namespace Buoyancy
 {
     [DataContract]
-    public class BouyanceBehavior : Behavior
+    public class BuoyancyBehavior : Behavior
     {
         private class Edge
         {

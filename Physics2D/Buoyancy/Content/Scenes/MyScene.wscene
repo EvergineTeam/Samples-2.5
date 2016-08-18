@@ -206,7 +206,7 @@
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Bouyance" i:type="d5p1:BouyanceBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:BuoyancyBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AreaDivisor>400</d5p1:AreaDivisor>
@@ -302,7 +302,7 @@
             </d6p1:Vector2>
           </d5p1:vertices>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Bouyance" i:type="d5p1:BouyanceRenderer">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:BuoyancyRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
@@ -1483,7 +1483,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.9979716</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0.06366061</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -2598,7 +2598,7 @@
             <d6p1:G>165</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:DebugLineColor>
-          <d5p1:Density>0.4</d5p1:Density>
+          <d5p1:Density>0.2</d5p1:Density>
           <d5p1:Friction>0.2</d5p1:Friction>
           <d5p1:GroupIndex>0</d5p1:GroupIndex>
           <d5p1:IsSensor>false</d5p1:IsSensor>
@@ -2801,7 +2801,7 @@
             <d6p1:G>165</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:DebugLineColor>
-          <d5p1:Density>0.4</d5p1:Density>
+          <d5p1:Density>0.2</d5p1:Density>
           <d5p1:Friction>0.2</d5p1:Friction>
           <d5p1:GroupIndex>0</d5p1:GroupIndex>
           <d5p1:IsSensor>false</d5p1:IsSensor>
@@ -3004,7 +3004,7 @@
             <d6p1:G>165</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:DebugLineColor>
-          <d5p1:Density>0.4</d5p1:Density>
+          <d5p1:Density>0.2</d5p1:Density>
           <d5p1:Friction>0.2</d5p1:Friction>
           <d5p1:GroupIndex>0</d5p1:GroupIndex>
           <d5p1:IsSensor>false</d5p1:IsSensor>
@@ -3207,7 +3207,7 @@
             <d6p1:G>165</d6p1:G>
             <d6p1:R>255</d6p1:R>
           </d5p1:DebugLineColor>
-          <d5p1:Density>0.4</d5p1:Density>
+          <d5p1:Density>0.2</d5p1:Density>
           <d5p1:Friction>0.2</d5p1:Friction>
           <d5p1:GroupIndex>0</d5p1:GroupIndex>
           <d5p1:IsSensor>false</d5p1:IsSensor>
@@ -3366,11 +3366,11 @@
           </d5p1:screenPosition>
           <d5p1:transformMode>Standard</d5p1:transformMode>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Bouyance" i:type="d5p1:MouseBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:MouseBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Bouyance" i:type="d5p1:MouseDrawable">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:MouseDrawable">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>

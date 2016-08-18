@@ -11,13 +11,13 @@ using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Diagnostic;
 
-namespace Bouyance
+namespace Buoyancy
 {
     [DataContract]
-    public class BouyanceRenderer : Drawable2D
+    public class BuoyancyRenderer : Drawable2D
     {
         [RequiredComponent]
-        private BouyanceBehavior behavior;        
+        private BuoyancyBehavior behavior;        
 
         public override void Draw(TimeSpan gameTime)
         {
@@ -34,15 +34,15 @@ namespace Bouyance
                 float density = fixtureA.Density;
 
                 Vector2[] intersectionPoints;
-                Vector2[] polygonPointsA = BouyanceBehavior.GetPolygonPoints(fixtureA);
-                Vector2[] polygonPointsB = BouyanceBehavior.GetPolygonPoints(fixtureB);
+                Vector2[] polygonPointsA = BuoyancyBehavior.GetPolygonPoints(fixtureA);
+                Vector2[] polygonPointsB = BuoyancyBehavior.GetPolygonPoints(fixtureB);
 
-                intersectionPoints = BouyanceBehavior.GetIntersectedPolygon(polygonPointsA, polygonPointsB);
+                intersectionPoints = BuoyancyBehavior.GetIntersectedPolygon(polygonPointsA, polygonPointsB);
                 if (intersectionPoints.Length > 0)
                 {
                     // find centroid
                     float area = 0;
-                    Vector2 centroid = BouyanceBehavior.ComputeCentroid(intersectionPoints, out area);                    
+                    Vector2 centroid = BuoyancyBehavior.ComputeCentroid(intersectionPoints, out area);                    
 
                     this.RenderManager.LineBatch2D.DrawPoint(centroid, 10, Color.Blue, 0);
                     //this.DrawPolygon(polygonPointsA, Color.Yellow);
