@@ -104,13 +104,7 @@ namespace StickyProjectiles.Behaviors
                     {
                         this.Force = 0;
                     }
-                }
-
-                if (currentKeyboardState.IsKeyPressed(Keys.O) &&
-                    this.lastKeyboardState.IsKeyReleased(Keys.O))
-                {
-                    this.RenderManager.DebugLines = !this.RenderManager.DebugLines;
-                }
+                }               
 
                 this.lastKeyboardState = currentKeyboardState;
             }

@@ -7,7 +7,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 #endregion
 
-namespace StickyProjectiles.Behaviors
+namespace PhysicExplosion.Behaviors
 {
     /// <summary>
     /// Mouse drawable class

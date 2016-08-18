@@ -13,7 +13,7 @@ using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace StickyProjectiles.Behaviors
+namespace BasicPhysic2D
 {
     /// <summary>
     /// Mouse Behavior class.

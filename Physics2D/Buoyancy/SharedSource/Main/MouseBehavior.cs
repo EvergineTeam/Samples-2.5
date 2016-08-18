@@ -27,7 +27,8 @@ namespace Buoyancy
         private VirtualScreenManager vsm;
 
         public Entity ConnectedEntity;
-        public Vector2 TouchPosition;                
+        public Vector2 TouchPosition;
+        private KeyboardState lastKeyboardState;
 
         /// <summary>
         /// Default values method
@@ -56,6 +57,18 @@ namespace Buoyancy
         protected override void Update(TimeSpan gameTime)
         {
             this.input = WaveServices.Input;
+
+            KeyboardState currentKeyboardState = this.input.KeyboardState;
+            if (currentKeyboardState.IsConnected)
+            {
+                if (currentKeyboardState.IsKeyPressed(Keys.O) &&
+                   this.lastKeyboardState.IsKeyReleased(Keys.O))
+                {
+                    this.RenderManager.DebugLines = !this.RenderManager.DebugLines;
+                }
+
+                this.lastKeyboardState = currentKeyboardState;
+            }
 
             if (this.input.TouchPanelState.IsConnected)
             {
