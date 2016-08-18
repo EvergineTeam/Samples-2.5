@@ -18,6 +18,10 @@ namespace Buoyancy
     [DataContract]
     public class BuoyancyBehavior : Behavior
     {
+        #region Internal class
+        /// <summary>
+        /// Edge class
+        /// </summary>
         private class Edge
         {
             public readonly Vector2 From;
@@ -28,42 +32,49 @@ namespace Buoyancy
                 this.From = from;
                 this.To = to;
             }
-        }
+        } 
+        #endregion
 
         public List<Tuple<ICollider2D, ICollider2D>> fixturePairs;
         private Vector2 gravity;     
 
         #region Properties
 
-        [DataMember]
-        public float DragMod { get; set; }
+        //[DataMember]
+        //public float DragMod { get; set; }
 
-        [DataMember]
-        public float LiftMod { get; set; }
+        //[DataMember]
+        //public float LiftMod { get; set; }
 
-        [DataMember]
-        public float MaxDrag { get; set; }
+        //[DataMember]
+        //public float MaxDrag { get; set; }
 
-        [DataMember]
-        public float MaxLift { get; set; }
+        //[DataMember]
+        //public float MaxLift { get; set; }
 
         [DataMember]
         public float AreaDivisor { get; set; }
 
         #endregion
         
+        /// <summary>
+        /// Default values
+        /// </summary>
         protected override void DefaultValues()
         {
             base.DefaultValues();
 
             this.fixturePairs = new List<Tuple<ICollider2D, ICollider2D>>();
-            this.DragMod = 0.25f;
-            this.LiftMod = 0.25f;
-            this.MaxDrag = 2000;
-            this.MaxLift = 500;
+            //this.DragMod = 0.25f;
+            //this.LiftMod = 0.25f;
+            //this.MaxDrag = 2000;
+            //this.MaxLift = 500;
             this.AreaDivisor = 400;
         }
 
+        /// <summary>
+        /// Initialize method
+        /// </summary>
         protected override void Initialize()
         {
             base.Initialize();
@@ -77,6 +88,10 @@ namespace Buoyancy
             }
         }
 
+        /// <summary>
+        /// Begin collision world event
+        /// </summary>
+        /// <param name="contact">contact instance</param>
         private void Simulate2D_BeginCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
             var fixtureA = contact.ColliderA;
@@ -92,6 +107,10 @@ namespace Buoyancy
             }
         }
 
+        /// <summary>
+        /// End collision world event
+        /// </summary>
+        /// <param name="contact">contact instance</param>
         private void Simulate2D_EndCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
             var fixtureA = contact.ColliderA;
@@ -109,6 +128,10 @@ namespace Buoyancy
             }
         }
 
+        /// <summary>
+        /// Update method
+        /// </summary>
+        /// <param name="gameTime">game time</param>
         protected override void Update(TimeSpan gameTime)
         {
             foreach (var tuple in this.fixturePairs)
@@ -135,58 +158,64 @@ namespace Buoyancy
                     float displacedMass = fixtureA.Density * area;
                     Vector2 buoyancyForce = displacedMass * -this.gravity;
                     fixtureB.RigidBody.ApplyForce(buoyancyForce, centroid);
-                    Labels.Add("buoyancyForce", buoyancyForce);
+                    Labels.Add("buoyancyForce", buoyancyForce);                   
 
                     // Apply complex drag                   
-                    for (int i = 0; i < intersectionPoints.Length; i++)
-                    {
-                        Vector2 v0 = intersectionPoints[i];
-                        Vector2 v1 = intersectionPoints[(i + 1) % intersectionPoints.Length];
-                        Vector2 midPoint = 0.5f * (v0 + v1);
+                    //for (int i = 0; i < intersectionPoints.Length; i++)
+                    //{
+                    //    Vector2 v0 = intersectionPoints[i];
+                    //    Vector2 v1 = intersectionPoints[(i + 1) % intersectionPoints.Length];
+                    //    Vector2 midPoint = 0.5f * (v0 + v1);
 
-                        //find relative velocity between object and fluid at edge midpoint
-                        Vector2 velDir = fixtureB.RigidBody.GetLinearVelocityFromWorldPoint(midPoint) - fixtureA.RigidBody.GetLinearVelocityFromWorldPoint(midPoint);
-                        float vel = velDir.Normalize();
+                    //    //find relative velocity between object and fluid at edge midpoint
+                    //    Vector2 velDir = fixtureB.RigidBody.GetLinearVelocityFromWorldPoint(midPoint) - fixtureA.RigidBody.GetLinearVelocityFromWorldPoint(midPoint);
+                    //    float vel = velDir.Normalize();
 
-                        Vector2 edge = v1 - v0;
-                        float edgeLength = edge.Normalize();
-                        Vector2 normal = b2Cross(-1, ref edge);
-                        float dragDot = Vector2.Dot(normal, velDir);
-                        if (dragDot < 0)
-                            continue;//normal points backwards - this is not a leading edge
+                    //    Vector2 edge = v1 - v0;
+                    //    float edgeLength = edge.Normalize();
+                    //    Vector2 normal = b2Cross(-1, ref edge);
+                    //    float dragDot = Vector2.Dot(normal, velDir);
+                    //    if (dragDot < 0)
+                    //        continue;//normal points backwards - this is not a leading edge
 
-                        //apply drag
-                        float dragMag = dragDot * this.DragMod * edgeLength * density * vel * vel;
-                        dragMag = Math.Min(dragMag, this.MaxDrag);
-                        Vector2 dragForce = dragMag * -velDir;
-                        if (!float.IsNaN(dragForce.X) && !float.IsNaN(dragForce.Y))
-                        {
-                            fixtureB.RigidBody.ApplyForce(dragForce, midPoint);
-                            Labels.Add("dragForce", dragForce);
-                        }
+                    //    //apply drag
+                    //    float dragMag = dragDot * this.DragMod * edgeLength * density * vel * vel;
+                    //    dragMag = Math.Min(dragMag, this.MaxDrag);
+                    //    Vector2 dragForce = dragMag * -velDir;
+                    //    if (!float.IsNaN(dragForce.X) && !float.IsNaN(dragForce.Y))
+                    //    {
+                    //        fixtureB.RigidBody.ApplyForce(dragForce, midPoint);
+                    //        Labels.Add("dragForce", dragForce);
+                    //    }
 
-                        //apply lift
-                        float liftDot = Vector2.Dot(edge, velDir);
-                        float liftMag = dragDot * liftDot * this.LiftMod * edgeLength * density * vel * vel;
-                        liftMag = Math.Min(liftMag, this.MaxLift);
-                        Vector2 liftDir = b2Cross(1, ref velDir);
-                        Vector2 liftForce = liftMag * liftDir;
-                        if (!float.IsNaN(liftForce.X) && !float.IsNaN(liftForce.Y))
-                        {
-                            fixtureB.RigidBody.ApplyForce(liftForce, midPoint);
-                            Labels.Add("liftForce", liftForce);
-                        }
-                    }
+                    //    //apply lift
+                    //    float liftDot = Vector2.Dot(edge, velDir);
+                    //    float liftMag = dragDot * liftDot * this.LiftMod * edgeLength * density * vel * vel;
+                    //    liftMag = Math.Min(liftMag, this.MaxLift);
+                    //    Vector2 liftDir = b2Cross(1, ref velDir);
+                    //    Vector2 liftForce = liftMag * liftDir;
+                    //    if (!float.IsNaN(liftForce.X) && !float.IsNaN(liftForce.Y))
+                    //    {
+                    //        fixtureB.RigidBody.ApplyForce(liftForce, midPoint);
+                    //        Labels.Add("liftForce", liftForce);
+                    //    }
+                    //}
                 }
             }
         }
 
+#region Helpers
         Vector2 b2Cross(float s, ref Vector2 a)
         {
             return new Vector2(-s * a.Y, s * a.X);
         }
 
 
+        /// <summary>
+        /// Get Polygon points of a physic collider
+        /// </summary>
+        /// <param name="collider">physic collider</param>
+        /// <returns>polygon points</returns>
         public static Vector2[] GetPolygonPoints(ICollider2D collider)
         {
             IPolygonColliderShape2D shape = (IPolygonColliderShape2D)collider.Shape;
@@ -281,6 +310,12 @@ namespace Buoyancy
             return outputList.ToArray();
         }
 
+        /// <summary>
+        /// Compute polygon centroid
+        /// </summary>
+        /// <param name="vs">polygon vertex</param>
+        /// <param name="area">polygon area</param>
+        /// <returns></returns>
         public static Vector2 ComputeCentroid(Vector2[] vs, out float area)
         {
             int count = (int)vs.Length;
@@ -328,29 +363,21 @@ namespace Buoyancy
         {
             if (IsClockwise(polygon))
             {
-                #region Already clockwise
-
                 for (int cntr = 0; cntr < polygon.Length - 1; cntr++)
                 {
                     yield return new Edge(polygon[cntr], polygon[cntr + 1]);
                 }
 
                 yield return new Edge(polygon[polygon.Length - 1], polygon[0]);
-
-                #endregion
             }
             else
-            {
-                #region Reverse
-
+            {               
                 for (int cntr = polygon.Length - 1; cntr > 0; cntr--)
                 {
                     yield return new Edge(polygon[cntr], polygon[cntr - 1]);
                 }
 
                 yield return new Edge(polygon[0], polygon[polygon.Length - 1]);
-
-                #endregion
             }
         }
 
@@ -412,7 +439,7 @@ namespace Buoyancy
                 }
             }
 
-            return false;
+            return true;
             //throw new ArgumentException("All the Vector2s in the polygon are colinear");
         }
 
@@ -445,5 +472,7 @@ namespace Buoyancy
         {
             return Math.Abs(testValue) <= .000000001d;
         }
+
+        #endregion
     }
 }

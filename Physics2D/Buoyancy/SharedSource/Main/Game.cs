@@ -14,8 +14,8 @@ namespace Buoyancy
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
-			WaveServices.ScreenContextManager.To(screenContext);
+            ScreenContext screenContext = new ScreenContext(new MyScene());	
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }

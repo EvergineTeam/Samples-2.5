@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region Using Statements
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -9,16 +10,24 @@ using WaveEngine.Common.Physics2D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
-using WaveEngine.Framework.Diagnostic;
+using WaveEngine.Framework.Diagnostic; 
+#endregion
 
 namespace Buoyancy
 {
+    /// <summary>
+    /// Bouyancy Renderer
+    /// </summary>
     [DataContract]
     public class BuoyancyRenderer : Drawable2D
     {
         [RequiredComponent]
-        private BuoyancyBehavior behavior;        
+        private BuoyancyBehavior behavior = null;        
 
+        /// <summary>
+        /// Draw method
+        /// </summary>
+        /// <param name="gameTime"></param>
         public override void Draw(TimeSpan gameTime)
         {
             if (this.behavior == null)
@@ -52,17 +61,28 @@ namespace Buoyancy
             }
         }
 
+        /// <summary>
+        /// Draw Polygon
+        /// </summary>
+        /// <param name="vertices">polygon vertex</param>
+        /// <param name="color">polygon color</param>
         private void DrawPolygon(Vector2[] vertices, Color color)
         {
             for (var i = 0; i < vertices.Length - 1; i++)
             {
-                this.DrawSegmentInternal(vertices[i], vertices[i + 1], ref color);
+                this.DrawSegment(vertices[i], vertices[i + 1], ref color);
             }
 
-            this.DrawSegmentInternal(vertices[0], vertices[vertices.Length - 1], ref color);
+            this.DrawSegment(vertices[0], vertices[vertices.Length - 1], ref color);
         }
 
-        private void DrawSegmentInternal(Vector2 p1, Vector2 p2, ref Color color)
+        /// <summary>
+        /// Draw Segment
+        /// </summary>
+        /// <param name="p1">start point</param>
+        /// <param name="p2">end point</param>
+        /// <param name="color">segment color</param>
+        private void DrawSegment(Vector2 p1, Vector2 p2, ref Color color)
         {
             if (this.RenderManager.LineBatch2D != null)
             {
@@ -70,6 +90,10 @@ namespace Buoyancy
             }
         }
 
+        /// <summary>
+        /// Dispose method
+        /// </summary>
+        /// <param name="disposing"></param>
         protected override void Dispose(bool disposing)
         {            
         }

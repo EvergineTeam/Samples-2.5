@@ -210,10 +210,6 @@
           <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AreaDivisor>400</d5p1:AreaDivisor>
-          <d5p1:DragMod>0.25</d5p1:DragMod>
-          <d5p1:LiftMod>0.25</d5p1:LiftMod>
-          <d5p1:MaxDrag>2000</d5p1:MaxDrag>
-          <d5p1:MaxLift>500</d5p1:MaxLift>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:IsActive>true</d4p1:IsActive>

@@ -15,6 +15,9 @@ using WaveEngine.Framework.Services;
 
 namespace Buoyancy
 {
+    /// <summary>
+    /// Mouse Behavior class.
+    /// </summary>
     [DataContract]
     public class MouseBehavior : Behavior
     {
@@ -26,6 +29,9 @@ namespace Buoyancy
         public Entity ConnectedEntity;
         public Vector2 TouchPosition;                
 
+        /// <summary>
+        /// Default values method
+        /// </summary>
         protected override void DefaultValues()
         {
             base.DefaultValues();
@@ -33,6 +39,9 @@ namespace Buoyancy
             this.TouchPosition = Vector2.Zero;
         }
 
+        /// <summary>
+        /// Resolve dependencies method
+        /// </summary>
         protected override void ResolveDependencies()
         {
             base.ResolveDependencies();
@@ -40,18 +49,13 @@ namespace Buoyancy
             this.vsm = this.Owner.Scene.VirtualScreenManager;
         }
 
+        /// <summary>
+        /// Update method
+        /// </summary>
+        /// <param name="gameTime">game time</param>
         protected override void Update(TimeSpan gameTime)
         {
             this.input = WaveServices.Input;
-
-            //this.line.Color = Color.Red;
-            ////this.line.StartPoint = touchPosition.ToVector3(0);
-            ////this.line.EndPoint = connectedEntity.FindComponent<Transform2D>().Position.ToVector3(0);
-            //this.line.StartPoint = Vector3.Zero;
-            //this.line.EndPoint = new Vector3(500);
-            //DebugLayer layer = this.RenderManager.FindLayer(DefaultLayers.Debug) as DebugLayer;
-            //layer.LineBatch2D.DrawLine(Vector2.Zero, Vector2.One * 500, line.Color, -5);
-
 
             if (this.input.TouchPanelState.IsConnected)
             {
@@ -60,7 +64,7 @@ namespace Buoyancy
                 if (this.touchState.Count > 0 && this.mouseJoint == null)
                 {
                     this.TouchPosition = this.touchState[0].Position;
-                    //this.vsm.ToVirtualPosition(ref this.TouchPosition);
+                    this.vsm.ToVirtualPosition(ref this.TouchPosition);
 
                     foreach (Entity entity in this.Owner.Scene.EntityManager.FindAllByTag("Draggable"))
                     {

@@ -1,16 +1,17 @@
 ﻿#region Using Statements
 using System;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Graphics; 
+using WaveEngine.Framework.Graphics;
 #endregion
 
 namespace Buoyancy
 {
+    /// <summary>
+    /// Mouse drawable class
+    /// </summary>
     [DataContract]
     public class MouseDrawable : Drawable2D
     {
@@ -19,6 +20,9 @@ namespace Buoyancy
 
         private Layer layer;
 
+        /// <summary>
+        /// Resolve dependencies method
+        /// </summary>
         protected override void ResolveDependencies()
         {
             base.ResolveDependencies();
@@ -26,6 +30,10 @@ namespace Buoyancy
             this.layer = this.RenderManager.FindLayer(DefaultLayers.Debug) as DebugLayer;                 
         }
 
+        /// <summary>
+        /// Draw method
+        /// </summary>
+        /// <param name="gameTime">game time</param>
         public override void Draw(TimeSpan gameTime)
         {           
             if (behavior != null && this.layer != null)
@@ -40,6 +48,10 @@ namespace Buoyancy
             }            
         }
 
+        /// <summary>
+        /// Dispose method
+        /// </summary>
+        /// <param name="disposing"></param>
         protected override void Dispose(bool disposing)
         {            
         }
