@@ -133,7 +133,7 @@ namespace PhysicExplosion.Behaviors
                             {
                                 PhysicBodyType = RigidBodyType2D.Dynamic,
                                 FixedRotation = true,
-                                EnableContinuousContact = true,
+                                IsBullet = true,
                                 LinearDamping = 7,
                                 GravityScale = 0,
                                 LinearVelocity = direction * blastPower,

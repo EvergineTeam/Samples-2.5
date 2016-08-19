@@ -23,7 +23,7 @@ namespace Buoyancy
     {
         private Input input;
         private TouchPanelState touchState;
-        public FixedMouseJoint2D mouseJoint;
+        public MouseJoint2D mouseJoint;
         private VirtualScreenManager vsm;
 
         public Entity ConnectedEntity;
@@ -94,7 +94,7 @@ namespace Buoyancy
                                         this.ConnectedEntity = entity;
 
                                         //Create Joint
-                                        this.mouseJoint = new FixedMouseJoint2D()
+                                        this.mouseJoint = new MouseJoint2D()
                                         {
                                             Target = this.TouchPosition,
                                             //MaxForce = 100,

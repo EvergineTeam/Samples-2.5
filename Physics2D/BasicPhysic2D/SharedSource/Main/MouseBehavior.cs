@@ -22,8 +22,8 @@ namespace BasicPhysic2D
     public class MouseBehavior : Behavior
     {
         private Input input;
-        private TouchPanelState touchState;
-        public FixedMouseJoint2D mouseJoint;
+        private TouchPanelState touchState;        
+        public MouseJoint2D mouseJoint;
         private VirtualScreenManager vsm;
 
         public Entity ConnectedEntity;
@@ -94,7 +94,7 @@ namespace BasicPhysic2D
                                         this.ConnectedEntity = entity;
 
                                         //Create Joint
-                                        this.mouseJoint = new FixedMouseJoint2D()
+                                        this.mouseJoint = new MouseJoint2D()
                                         {
                                             Target = this.TouchPosition,
                                             //MaxForce = 100,

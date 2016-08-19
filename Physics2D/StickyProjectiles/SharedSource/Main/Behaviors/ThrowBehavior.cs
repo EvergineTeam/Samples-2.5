@@ -173,7 +173,7 @@ namespace StickyProjectiles.Behaviors
                         Vector2 obstacleLocalPosition = Vector2.Transform(arrowHeadWorldPosition, obstacleTransform.WorldInverseTransform);
 
 
-                        FixedJoint2D distance = new FixedJoint2D()
+                        WeldJoint2D distance = new WeldJoint2D()
                         {
                             ConnectedEntityPath = obstacle.EntityPath,
                             Anchor = arrowHeadLocalPosition,

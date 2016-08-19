@@ -2472,9 +2472,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -2575,9 +2575,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -2678,9 +2678,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -3229,9 +3229,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -3333,9 +3333,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -3460,9 +3460,9 @@
               <d7p1:AngularDamping>0</d7p1:AngularDamping>
               <d7p1:AngularVelocity>0</d7p1:AngularVelocity>
               <d7p1:Awake>true</d7p1:Awake>
-              <d7p1:EnableContinuousContact>false</d7p1:EnableContinuousContact>
               <d7p1:FixedRotation>false</d7p1:FixedRotation>
               <d7p1:GravityScale>1</d7p1:GravityScale>
+              <d7p1:IsBullet>false</d7p1:IsBullet>
               <d7p1:LinearDamping>0</d7p1:LinearDamping>
               <d7p1:LinearVelocity xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -3538,9 +3538,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -4784,9 +4784,9 @@
               <d7p1:AngularDamping>0</d7p1:AngularDamping>
               <d7p1:AngularVelocity>0</d7p1:AngularVelocity>
               <d7p1:Awake>true</d7p1:Awake>
-              <d7p1:EnableContinuousContact>false</d7p1:EnableContinuousContact>
               <d7p1:FixedRotation>false</d7p1:FixedRotation>
               <d7p1:GravityScale>1</d7p1:GravityScale>
+              <d7p1:IsBullet>false</d7p1:IsBullet>
               <d7p1:LinearDamping>0</d7p1:LinearDamping>
               <d7p1:LinearVelocity xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -4884,9 +4884,9 @@
               <d7p1:AngularDamping>0</d7p1:AngularDamping>
               <d7p1:AngularVelocity>0</d7p1:AngularVelocity>
               <d7p1:Awake>true</d7p1:Awake>
-              <d7p1:EnableContinuousContact>false</d7p1:EnableContinuousContact>
               <d7p1:FixedRotation>false</d7p1:FixedRotation>
               <d7p1:GravityScale>1</d7p1:GravityScale>
+              <d7p1:IsBullet>false</d7p1:IsBullet>
               <d7p1:LinearDamping>0</d7p1:LinearDamping>
               <d7p1:LinearVelocity xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -6036,9 +6036,9 @@
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -6155,8 +6155,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>562.980042</d6p1:X>
-            <d6p1:Y>-454.18</d6p1:Y>
+            <d6p1:X>564.18</d6p1:X>
+            <d6p1:Y>-455.38</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -6279,9 +6279,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -6383,9 +6383,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -6612,9 +6612,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -6773,9 +6773,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -7084,9 +7084,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -7163,9 +7163,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -7374,9 +7374,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -7735,9 +7735,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -7814,9 +7814,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
           <d5p1:Awake>true</d5p1:Awake>
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:FixedRotation>false</d5p1:FixedRotation>
           <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
           <d5p1:LinearDamping>0</d5p1:LinearDamping>
           <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
