@@ -5,113 +5,6 @@
       <d2p1:SerializeChildrens />
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>defaultCamera3D</d2p1:name>
-      <d2p1:tag i:nil="true" />
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.923879564</d6p1:W>
-            <d6p1:X>-0.3826834</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-1.02072562E-07</d6p1:X>
-            <d6p1:Y>2</d6p1:Y>
-            <d6p1:Z>2</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera3D">
-          <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>237</d6p1:B>
-            <d6p1:G>149</d6p1:G>
-            <d6p1:R>100</d6p1:R>
-          </d5p1:BackgroundColor>
-          <d5p1:CameraOrder>0</d5p1:CameraOrder>
-          <d5p1:ClearFlags>All</d5p1:ClearFlags>
-          <d5p1:FarPlane>1000</d5p1:FarPlane>
-          <d5p1:FieldOfView>0.7853982</d5p1:FieldOfView>
-          <d5p1:IsActive>true</d5p1:IsActive>
-          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
-          <d5p1:NearPlane>1</d5p1:NearPlane>
-          <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:UpVector>
-          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
-            <d6p1:Width>1</d6p1:Width>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-          </d5p1:Viewport>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:FreeCamera3DBehavior">
-          <d4p1:IsActive>true</d4p1:IsActive>
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d5p1:GamepadRotationSpeed>0.75</d5p1:GamepadRotationSpeed>
-          <d5p1:RotationSpeed>0.004</d5p1:RotationSpeed>
-          <d5p1:Speed>20</d5p1:Speed>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>defaultLight</d2p1:name>
-      <d2p1:tag i:nil="true" />
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>4</d6p1:X>
-            <d6p1:Y>4</d6p1:Y>
-            <d6p1:Z>4</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightProperties">
-          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>255</d6p1:B>
-            <d6p1:G>255</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:Color>
-          <d5p1:Intensity>1</d5p1:Intensity>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>defaultCamera2D</d2p1:name>
       <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
@@ -158,7 +51,7 @@
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
-          <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
+          <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
           <d5p1:IsActive>true</d5p1:IsActive>
