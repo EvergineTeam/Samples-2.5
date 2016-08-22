@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 27/01/2016 16:34:12
+// File generated on 22/08/2016 11:26:25
 namespace TiledMap
 {
     using System;

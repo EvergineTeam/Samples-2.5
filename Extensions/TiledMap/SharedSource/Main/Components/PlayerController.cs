@@ -43,7 +43,11 @@ namespace TiledMap.Components
 
         private bool OnFloor
         {
-            get { return this.collisionCounter > 0; }
+            get
+            {
+                Labels.Add("CollisionCounter", collisionCounter);
+                return this.collisionCounter > 0;
+            }
         }
 
         [RequiredComponent]
@@ -65,14 +69,14 @@ namespace TiledMap.Components
             this.input = WaveServices.Input;
             this.initPosition = this.Transform2D.Position;
 
-            this.RigidBody.OnPhysic2DCollision += OnPhysic2DCollision;
-            this.RigidBody.OnPhysic2DSeparation += OnPhysic2DSeparation;
-        }
+            this.Collider.BeginCollision += Collider_BeginCollision;
+            this.Collider.EndCollision += Collider_EndCollision;
+        }        
 
         public void Reset()
         {
             this.RigidBody.ResetPosition(this.initPosition);
-            this.RigidBody.Rotation = 0;
+            this.RigidBody.Transform2D.Rotation = 0;
             this.collisionCounter = 0;
         }
 
@@ -90,8 +94,8 @@ namespace TiledMap.Components
                 var gamepadState = this.input.GamePadState;
 
                 if (this.OnFloor && (gamepadState.ThumbStricks.Left.X != 0))
-                {
-                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbStricks.Left.X);
+                {                    
+                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbStricks.Left.X, RigidBody.Transform2D.Position);
                 }
 
                 if (gamepadState.Buttons.A == ButtonState.Pressed)
@@ -125,7 +129,7 @@ namespace TiledMap.Components
             {
                 if (this.OnFloor && (joystick.Direction.X != 0))
                 {
-                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * joystick.Direction.X);
+                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * joystick.Direction.X, this.RigidBody.Transform2D.Position);
                 }
 
                 if (this.jumpButton.IsShooting)
@@ -180,7 +184,7 @@ namespace TiledMap.Components
         {
             if (!this.isJump && this.OnFloor)
             {
-                this.RigidBody.ApplyLinearImpulse(Vector2.UnitY * -JumpImpulse);
+                this.RigidBody.ApplyLinearImpulse(Vector2.UnitY * -JumpImpulse, this.RigidBody.Transform2D.Position);
                 this.soundManager.PlaySound(SoundType.Jump);
             }
         }
@@ -189,7 +193,7 @@ namespace TiledMap.Components
         {
             if (this.OnFloor)
             {
-                this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * -SideImpulse);
+                this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * -SideImpulse, this.RigidBody.Transform2D.Position);
             }
         }
 
@@ -197,19 +201,19 @@ namespace TiledMap.Components
         {
             if (this.OnFloor)
             {
-                this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse);
+                this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse, this.RigidBody.Transform2D.Position);
             }
         }
 
-        private void OnPhysic2DCollision(object sender, Physic2DCollisionEventArgs args)
+        private void Collider_BeginCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
             this.collisionCounter++;
             this.soundManager.PlaySound(SoundType.Contact);
         }
 
-        private void OnPhysic2DSeparation(object sender, Physic2DSeparationEventArgs args)
+        private void Collider_EndCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
             this.collisionCounter--;
-        }
+        }        
     }
 }
