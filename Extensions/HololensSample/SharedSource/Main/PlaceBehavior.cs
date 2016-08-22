@@ -45,16 +45,19 @@ namespace HololensSample
 
         protected override void Update(TimeSpan gameTime)
         {
-            var gesture = this.spatialInputManager.SpatialState;
-           
-            if (gesture.IsSelected && !lastState.IsSelected)
+            if (this.spatialInputManager != null)
             {
-                this.PlaceEntity();
+                var gesture = this.spatialInputManager.SpatialState;
+
+                if (gesture.IsSelected && !lastState.IsSelected)
+                {
+                    this.PlaceEntity();
+                }
+
+                this.hololensService.SetStabilizationPlane(transform.Position);
+
+                lastState = gesture;
             }
-
-            this.hololensService.SetStabilizationPlane(transform.Position);
-
-            lastState = gesture;
         }
 
         private void PlaceEntity()
