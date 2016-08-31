@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 19/08/2016 9:03:16
+// File generated on 8/26/2016 1:12:32 PM
 namespace LensFlare
 {
     using System;
@@ -23,8 +23,8 @@ namespace LensFlare
             public sealed class Models
             {
                 
-                /// <summary> Path to Content/Assets/Models/planet.FBX </summary>
-                public const string planet_FBX = "Content/Assets/Models/planet.FBX";
+                /// <summary> Path to Content/Assets/Models/planet.fbx </summary>
+                public const string planet_fbx = "Content/Assets/Models/planet.fbx";
             }
             
             public sealed class Textures

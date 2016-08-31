@@ -4711,7 +4711,7 @@
                 <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>264.99646</d8p1:X>
+                <d8p1:X>264.996155</d8p1:X>
                 <d8p1:Y>270</d8p1:Y>
                 <d8p1:Z>-1</d8p1:Z>
               </d7p1:LocalPosition>
@@ -4910,8 +4910,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>492.0501</d6p1:X>
-            <d6p1:Y>-100</d6p1:Y>
+            <d6p1:X>493.2501</d6p1:X>
+            <d6p1:Y>-99.2</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -6113,31 +6113,6 @@
           <d5p1:referenceAngle>0</d5p1:referenceAngle>
           <d5p1:upperAngle>0</d5p1:upperAngle>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
-          <d5p1:CollidesWith>All</d5p1:CollidesWith>
-          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>165</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Density>10</d5p1:Density>
-          <d5p1:Friction>0.2</d5p1:Friction>
-          <d5p1:GroupIndex>0</d5p1:GroupIndex>
-          <d5p1:IsSensor>false</d5p1:IsSensor>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:autoRefresh>true</d5p1:autoRefresh>
-          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>300</d6p1:X>
-            <d6p1:Y>100</d6p1:Y>
-          </d5p1:offset>
-          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0.2</d6p1:X>
-            <d6p1:Y>0.2</d6p1:Y>
-          </d5p1:Size>
-          <d5p1:rotationOffset>0</d5p1:rotationOffset>
-        </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
@@ -6155,8 +6130,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>564.18</d6p1:X>
-            <d6p1:Y>-455.38</d6p1:Y>
+            <d6p1:X>317.160248</d6p1:X>
+            <d6p1:Y>-202.659836</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">

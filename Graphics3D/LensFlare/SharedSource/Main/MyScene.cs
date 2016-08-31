@@ -21,6 +21,7 @@ namespace LensFlare
         /// </summary>
         protected override void CreateScene()
         {
+            this.RenderManager.DebugLines = true;
             this.Load(WaveContent.Scenes.MyScene);
 
             RenderManager.RegisterLayerBefore(new SkyLayer(this.RenderManager), DefaultLayers.Alpha);
