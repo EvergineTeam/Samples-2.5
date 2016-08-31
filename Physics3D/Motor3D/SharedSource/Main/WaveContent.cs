@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 31/03/2016 15:51:03
+// File generated on 24/08/2016 8:45:49
 namespace Motor3D
 {
     using System;
@@ -28,9 +28,6 @@ namespace Motor3D
             
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
-            
-            /// <summary> Path to Content/Assets/GroundMaterial.wmat </summary>
-            public const string GroundMaterial = "Content/Assets/GroundMaterial.wmat";
         }
         
         public sealed class Scenes
