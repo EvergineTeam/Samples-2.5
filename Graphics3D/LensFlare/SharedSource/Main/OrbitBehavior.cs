@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
@@ -11,6 +12,7 @@ namespace LensFlare
     /// <summary>
     /// Orbiting Behavior
     /// </summary>
+    [DataContract]
     public class OrbitBehavior : Behavior
     {
         [RequiredComponent]
@@ -52,20 +54,78 @@ namespace LensFlare
         private float rotationSpeed;
 
         /// <summary>
+        /// If it's necessary to calculate the orbital speeds.
+        /// </summary>
+        private bool calculateSpeed;
+
+        /// <summary>
         /// The radius
         /// </summary>
         private float radius;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="OrbitBehavior" /> class.
+        /// Gets or sets the day time.
         /// </summary>
-        /// <param name="dayTime">The day time.</param>
-        /// <param name="orbitCenter">The orbit center.</param>
-        /// <param name="yearTime">The year speed.</param>
-        public OrbitBehavior(float dayTime, Vector3 orbitCenter, float yearTime)
+        [DataMember]
+        public float DayTime
         {
-            this.orbitCenter = orbitCenter;
-            this.yearTime = yearTime;
+            get
+            {
+                return this.dayTime;
+            }
+
+            set
+            {
+                this.dayTime = value;
+                this.calculateSpeed = true;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the orbit center.
+        /// </summary>
+        [DataMember]
+        public Vector3 OrbitCenter
+        {
+            get
+            {
+                return this.orbitCenter;
+            }
+
+            set
+            {
+                this.orbitCenter = value;
+                this.calculateSpeed = true;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the year time.
+        /// </summary>
+        [DataMember]
+        public float YearTime
+        {
+            get
+            {
+                return this.yearTime;
+            }
+
+            set
+            {
+                this.yearTime = value;
+                this.calculateSpeed = true;
+            }
+        }
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+            this.calculateSpeed = true;
+        }
+
+        private void CalculateOrbitalSpeed()
+        {
+            this.radius = (this.Transform.Position - this.orbitCenter).Length();
             this.orbitAngle = 0;
             this.rotationAngle = (float)Math.PI;
 
@@ -80,13 +140,6 @@ namespace LensFlare
             }
         }
 
-        protected override void ResolveDependencies()
-        {
-            base.ResolveDependencies();
-
-            this.radius = (this.Transform.Position - this.orbitCenter).Length();
-        }
-
         /// <summary>
         /// Allows this instance to execute custom logic during its <c>Update</c>.
         /// </summary>
@@ -97,9 +150,15 @@ namespace LensFlare
         /// </remarks>
         protected override void Update(TimeSpan gameTime)
         {
+            if(this.calculateSpeed)
+            {
+                this.CalculateOrbitalSpeed();
+                this.calculateSpeed = false;
+            }
+
             if (this.orbitSpeed > 0)
             {
-                this.orbitAngle = this.orbitAngle + ((float)gameTime.TotalSeconds * this.orbitSpeed);                
+                this.orbitAngle = this.orbitAngle + ((float)gameTime.TotalSeconds * this.orbitSpeed);
             }
 
             Vector3 auxPosition = Vector3.Zero;
@@ -109,7 +168,7 @@ namespace LensFlare
 
             if (this.rotationSpeed > 0)
             {
-                this.rotationAngle = this.rotationAngle + ((float)gameTime.TotalSeconds * this.rotationSpeed);                
+                this.rotationAngle = this.rotationAngle + ((float)gameTime.TotalSeconds * this.rotationSpeed);
             }
 
             Vector3 auxRotation = this.Transform.Rotation;
