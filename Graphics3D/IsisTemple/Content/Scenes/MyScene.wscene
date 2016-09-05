@@ -175,22 +175,29 @@
               <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-              </d7p1:Center>
+              <d7p1:CollidesWith>All</d7p1:CollidesWith>
+              <d7p1:CollisionCategories>Cat1</d7p1:CollisionCategories>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
                 <d8p1:G>165</d8p1:G>
                 <d8p1:R>255</d8p1:R>
               </d7p1:DebugLineColor>
+              <d7p1:Density>1</d7p1:Density>
+              <d7p1:Friction>0.2</d7p1:Friction>
+              <d7p1:GroupIndex>0</d7p1:GroupIndex>
+              <d7p1:IsSensor>false</d7p1:IsSensor>
+              <d7p1:Restitution>0</d7p1:Restitution>
+              <d7p1:autoRefresh>true</d7p1:autoRefresh>
+              <d7p1:offset xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+              </d7p1:offset>
               <d7p1:Size xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>100</d8p1:X>
                 <d8p1:Y>100</d8p1:Y>
               </d7p1:Size>
+              <d7p1:rotationOffset>0</d7p1:rotationOffset>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
               <d6p1:IsActive>true</d6p1:IsActive>
@@ -265,22 +272,29 @@
               <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-              </d7p1:Center>
+              <d7p1:CollidesWith>All</d7p1:CollidesWith>
+              <d7p1:CollisionCategories>Cat1</d7p1:CollisionCategories>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
                 <d8p1:G>165</d8p1:G>
                 <d8p1:R>255</d8p1:R>
               </d7p1:DebugLineColor>
+              <d7p1:Density>1</d7p1:Density>
+              <d7p1:Friction>0.2</d7p1:Friction>
+              <d7p1:GroupIndex>0</d7p1:GroupIndex>
+              <d7p1:IsSensor>false</d7p1:IsSensor>
+              <d7p1:Restitution>0</d7p1:Restitution>
+              <d7p1:autoRefresh>true</d7p1:autoRefresh>
+              <d7p1:offset xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+              </d7p1:offset>
               <d7p1:Size xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>100</d8p1:X>
                 <d8p1:Y>100</d8p1:Y>
               </d7p1:Size>
+              <d7p1:rotationOffset>0</d7p1:rotationOffset>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
               <d6p1:IsActive>true</d6p1:IsActive>
@@ -355,22 +369,29 @@
               <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-              </d7p1:Center>
+              <d7p1:CollidesWith>All</d7p1:CollidesWith>
+              <d7p1:CollisionCategories>Cat1</d7p1:CollisionCategories>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
                 <d8p1:G>165</d8p1:G>
                 <d8p1:R>255</d8p1:R>
               </d7p1:DebugLineColor>
+              <d7p1:Density>1</d7p1:Density>
+              <d7p1:Friction>0.2</d7p1:Friction>
+              <d7p1:GroupIndex>0</d7p1:GroupIndex>
+              <d7p1:IsSensor>false</d7p1:IsSensor>
+              <d7p1:Restitution>0</d7p1:Restitution>
+              <d7p1:autoRefresh>true</d7p1:autoRefresh>
+              <d7p1:offset xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+              </d7p1:offset>
               <d7p1:Size xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>100</d8p1:X>
                 <d8p1:Y>99.99992</d8p1:Y>
               </d7p1:Size>
+              <d7p1:rotationOffset>0</d7p1:rotationOffset>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
               <d6p1:IsActive>true</d6p1:IsActive>
@@ -445,22 +466,29 @@
               <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-              </d7p1:Center>
+              <d7p1:CollidesWith>All</d7p1:CollidesWith>
+              <d7p1:CollisionCategories>Cat1</d7p1:CollisionCategories>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
                 <d8p1:G>165</d8p1:G>
                 <d8p1:R>255</d8p1:R>
               </d7p1:DebugLineColor>
+              <d7p1:Density>1</d7p1:Density>
+              <d7p1:Friction>0.2</d7p1:Friction>
+              <d7p1:GroupIndex>0</d7p1:GroupIndex>
+              <d7p1:IsSensor>false</d7p1:IsSensor>
+              <d7p1:Restitution>0</d7p1:Restitution>
+              <d7p1:autoRefresh>true</d7p1:autoRefresh>
+              <d7p1:offset xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+              </d7p1:offset>
               <d7p1:Size xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>100</d8p1:X>
                 <d8p1:Y>100</d8p1:Y>
               </d7p1:Size>
+              <d7p1:rotationOffset>0</d7p1:rotationOffset>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
               <d6p1:IsActive>true</d6p1:IsActive>
@@ -535,22 +563,29 @@
               <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:Center xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-              </d7p1:Center>
+              <d7p1:CollidesWith>All</d7p1:CollidesWith>
+              <d7p1:CollisionCategories>Cat1</d7p1:CollisionCategories>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
                 <d8p1:G>165</d8p1:G>
                 <d8p1:R>255</d8p1:R>
               </d7p1:DebugLineColor>
+              <d7p1:Density>1</d7p1:Density>
+              <d7p1:Friction>0.2</d7p1:Friction>
+              <d7p1:GroupIndex>0</d7p1:GroupIndex>
+              <d7p1:IsSensor>false</d7p1:IsSensor>
+              <d7p1:Restitution>0</d7p1:Restitution>
+              <d7p1:autoRefresh>true</d7p1:autoRefresh>
+              <d7p1:offset xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+              </d7p1:offset>
               <d7p1:Size xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>200</d8p1:X>
                 <d8p1:Y>100</d8p1:Y>
               </d7p1:Size>
+              <d7p1:rotationOffset>0</d7p1:rotationOffset>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Gestures" i:type="d7p1:TouchGestures">
               <d6p1:IsActive>true</d6p1:IsActive>
@@ -579,7 +614,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>318.5</d6p1:Y>
+            <d6p1:Y>363</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
