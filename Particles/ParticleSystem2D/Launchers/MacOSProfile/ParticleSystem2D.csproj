@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{F3CC4527-43AF-41CB-94C1-BFF310D5726A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ParticleSystem3D</RootNamespace>
+    <RootNamespace>ParticleSystem2D</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
-    <AssemblyName>ParticleSystem3D</AssemblyName>
+    <AssemblyName>ParticleSystem2D</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseXamMacFullFramework>true</UseXamMacFullFramework>
     <ProductVersion>8.0.30703</ProductVersion>
@@ -112,7 +112,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
-  <Import Project="..\..\SharedSource\Main\ParticleSystem3DSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\ParticleSystem3DSource.projitems')" />
+  <Import Project="..\..\SharedSource\Main\ParticleSystem2DSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\ParticleSystem2DSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.targets')" />
   <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />

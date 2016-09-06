@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>ParticleSystem3D</string>
+	<string>ParticleSystem2D</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon</string>
 	<key>CFBundleIdentifier</key>
-	<string>ParticleSystem3D.ParticleSystem3D</string>
+	<string>ParticleSystem2D.ParticleSystem2D</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ParticleSystem3D</string>
+	<string>ParticleSystem2D</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
