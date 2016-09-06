@@ -134,7 +134,7 @@
           </d5p1:LocalScale>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Terrain.FBX.wpk</ModelPath>
+          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:ModelType>Custom</d5p1:ModelType>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
@@ -195,8 +195,8 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>393</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>671</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>726</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

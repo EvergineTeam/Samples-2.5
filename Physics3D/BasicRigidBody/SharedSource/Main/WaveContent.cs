@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 31/03/2016 13:44:06
+// File generated on 9/6/2016 11:16:36 AM
 namespace BasicRigidBody
 {
     using System;
@@ -20,8 +20,8 @@ namespace BasicRigidBody
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/checkered.png </summary>
-            public const string checkered_png = "Content/Assets/checkered.png";
+            /// <summary> Path to Content/Assets/checkered.jpg </summary>
+            public const string checkered_jpg = "Content/Assets/checkered.jpg";
             
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
