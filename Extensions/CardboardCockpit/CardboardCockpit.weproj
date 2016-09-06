@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>537209f2-eef8-41e2-97fb-aebbf83affd4</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -10,27 +10,13 @@
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType i:nil="true" />
-              <Name>Android</Name>
-              <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
-              <Platform>Android</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>iOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>iOS</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
               <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <LauncherType>Default</LauncherType>
               <Name>MacOS</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>MacOS</Platform>
@@ -41,13 +27,6 @@
               <Name>Windows</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
-              <LauncherType>Default</LauncherType>
-              <Name>UWPProfile</Name>
-              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
-              <Platform>UWP</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
