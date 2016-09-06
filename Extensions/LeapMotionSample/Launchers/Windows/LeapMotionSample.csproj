@@ -68,6 +68,9 @@
     <Reference Include="WaveEngine.Box2D">
       <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\lib\net45\WaveEngine.Box2D.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20160906-329\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />

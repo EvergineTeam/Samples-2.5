@@ -116,6 +116,9 @@
     <Reference Include="WaveEngine.Box2D">
       <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -135,4 +138,5 @@
   <Import Project="..\..\SharedSource\Main\DolbyTestSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\DolbyTestSource.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets')" xmlns="" />
 </Project>
