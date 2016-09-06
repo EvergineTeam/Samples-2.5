@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 19/08/2016 10:30:35
+// File generated on 9/6/2016 10:49:33 AM
 namespace Sound3D
 {
     using System;

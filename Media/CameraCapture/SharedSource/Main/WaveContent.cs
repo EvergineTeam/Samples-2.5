@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/23/2016 11:30:23 AM
+// File generated on 9/6/2016 10:43:18 AM
 namespace CameraCapture
 {
     using System;

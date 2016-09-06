@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 19/08/2016 10:29:30
+// File generated on 9/6/2016 10:47:10 AM
 namespace Microphone
 {
     using System;

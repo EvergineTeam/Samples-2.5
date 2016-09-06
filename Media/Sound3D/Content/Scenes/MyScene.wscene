@@ -205,14 +205,14 @@
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Transform3D">
                   <d9p1:LocalOrientation xmlns:d10p1="WaveEngine.Common.Math">
                     <d10p1:W>1</d10p1:W>
-                    <d10p1:X>0</d10p1:X>
-                    <d10p1:Y>0</d10p1:Y>
-                    <d10p1:Z>0</d10p1:Z>
+                    <d10p1:X>-3.46389584E-13</d10p1:X>
+                    <d10p1:Y>3.69038133E-12</d10p1:Y>
+                    <d10p1:Z>-1.44757539E-08</d10p1:Z>
                   </d9p1:LocalOrientation>
                   <d9p1:LocalPosition xmlns:d10p1="WaveEngine.Common.Math">
-                    <d10p1:X>0</d10p1:X>
-                    <d10p1:Y>0</d10p1:Y>
-                    <d10p1:Z>0</d10p1:Z>
+                    <d10p1:X>-5.64918664E-05</d10p1:X>
+                    <d10p1:Y>1.59548824E-06</d10p1:Y>
+                    <d10p1:Z>7.956676</d10p1:Z>
                   </d9p1:LocalPosition>
                   <d9p1:LocalScale xmlns:d10p1="WaveEngine.Common.Math">
                     <d10p1:X>1</d10p1:X>
@@ -241,10 +241,10 @@
           <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>0.7071087</d8p1:W>
-                <d8p1:X>-5.26839621E-08</d8p1:X>
-                <d8p1:Y>-0.7071049</d8p1:Y>
-                <d8p1:Z>-5.2683685E-08</d8p1:Z>
+                <d8p1:W>0.6291855</d8p1:W>
+                <d8p1:X>0.322687984</d8p1:X>
+                <d8p1:Y>-0.629182041</d8p1:Y>
+                <d8p1:Z>-0.322686642</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -274,7 +274,7 @@
                 </d8p1:KeyValueOfstringstring>
               </d7p1:MaterialsPath>
               <d7p1:UseMaterialCopy>false</d7p1:UseMaterialCopy>
-              <d7p1:useDefaultMaterial>true</d7p1:useDefaultMaterial>
+              <d7p1:useDefaultMaterial>false</d7p1:useDefaultMaterial>
               <d7p1:useDummyMaterial>true</d7p1:useDummyMaterial>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:Model">
