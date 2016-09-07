@@ -183,4 +183,5 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\WaveEngine.2.3.1-alpha-20160906-329\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.3.1-alpha-20160906-329\build\Xamarin.iOS\WaveEngine.targets'))" />
   </Target>
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.iOS\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.iOS\WaveEngine.Box2D.targets')" xmlns="" />
 </Project>

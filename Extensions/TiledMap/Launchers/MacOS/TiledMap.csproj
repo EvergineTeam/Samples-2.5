@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -109,6 +109,9 @@
     <Reference Include="WaveEngine.Box2D">
       <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainWindow.xib" />
@@ -128,4 +131,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.targets')" />
   <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160902-325\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets')" xmlns="" />
 </Project>
