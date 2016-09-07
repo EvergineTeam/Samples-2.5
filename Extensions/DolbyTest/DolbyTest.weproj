@@ -15,13 +15,6 @@
               <Platform>Windows</Platform>
             </Profile>
             <Profile>
-              <AlphaCompressionFormat>ETC1RGB8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>AndroidProfile</Name>
-              <NonAlphaCompressionFormat>R4G4B4A4</NonAlphaCompressionFormat>
-              <Platform>Android</Platform>
-            </Profile>
-            <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType i:nil="true" />
               <Name>LinuxProfile</Name>
