@@ -57,11 +57,20 @@
     <Reference Include="OpenTK">
       <HintPath>..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\OpenTK.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+    </Reference>				
     <Reference Include="WaveEngine.Common">
       <HintPath>..\..\packages\WaveEngine.Common.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
     </Reference>
+    <Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
     <Reference Include="WaveEngine.Framework">
       <HintPath>..\..\packages\WaveEngine.Framework.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Adapter">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
       <HintPath>..\..\packages\WaveEngine.Materials.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
@@ -69,15 +78,9 @@
     <Reference Include="WaveEngine.Components">
       <HintPath>..\..\packages\WaveEngine.Components.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
+    <Reference Include="WaveEngine.HoloLens">
+      <HintPath>..\..\packages\WaveEngine.HoloLens.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20160906-329\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
-    </Reference>				
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -115,5 +118,4 @@
   <Import Project="..\..\SharedSource\Main\HololensSampleSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\HololensSampleSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.targets')" />
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20160906-329\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
 </Project>
