@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>1a93aa6b-415a-42f9-82f9-3210f7172d87</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -8,18 +8,18 @@
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
           <d5p1:Profiles>
             <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <AlphaCompressionFormat>PVRTC4BPP</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>iOS</Name>
+              <NonAlphaCompressionFormat>PVRTC4BPP</NonAlphaCompressionFormat>
+              <Platform>iOS</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R4G4B4A4</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
               <Name>Android</Name>
               <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
               <Platform>Android</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>iOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>iOS</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>

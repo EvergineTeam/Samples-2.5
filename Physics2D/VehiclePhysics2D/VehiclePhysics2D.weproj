@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>f322c710-2b62-424a-b845-9c0447d37e1a</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -27,6 +27,13 @@
               <Name>LinuxProfile</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R4G4B4A4</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>AndroidProfile</Name>
+              <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
+              <Platform>Android</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
