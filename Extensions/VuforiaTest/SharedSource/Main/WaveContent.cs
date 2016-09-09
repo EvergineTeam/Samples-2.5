@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 20/01/2016 12:48:56
+// File generated on 9/9/2016 1:38:40 PM
 namespace VuforiaTest
 {
     using System;

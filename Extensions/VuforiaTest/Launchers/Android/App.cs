@@ -29,22 +29,30 @@ public class AndroidActivity : WaveEngine.Adapter.Application
         this.LayoutId = Resource.Layout.Main;
     }
 
+    public override void OnWindowFocusChanged(bool hasFocus)
+    {
+        base.OnWindowFocusChanged(hasFocus);
+
+        if (hasFocus)
+        {
+            int options = (int)this.Window.DecorView.SystemUiVisibility;
+            options |= (int)SystemUiFlags.LowProfile;
+            options |= (int)SystemUiFlags.HideNavigation;
+
+            if ((int)Android.OS.Build.VERSION.SdkInt >= 19)
+            {
+                options |= (int)2048; // SystemUiFlags.Inmersive;
+                options |= (int)4096; // SystemUiFlags.ImmersiveSticky;
+            }
+
+            this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)options;
+        }
+    }
+
     protected override void OnCreate(Android.OS.Bundle savedInstanceState)
     {
         this.RequestWindowFeature(WindowFeatures.NoTitle);
         base.OnCreate(savedInstanceState);
-
-        int options = (int)this.Window.DecorView.SystemUiVisibility;
-        options |= (int)SystemUiFlags.LowProfile;
-        options |= (int)SystemUiFlags.HideNavigation;
-
-        if ((int)Android.OS.Build.VERSION.SdkInt >= 19)
-        {
-            options |= (int)2048; // SystemUiFlags.Inmersive;
-            options |= (int)4096; // SystemUiFlags.ImmersiveSticky;
-        }
-
-        this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)options;
     }
 
     public override void Initialize()
