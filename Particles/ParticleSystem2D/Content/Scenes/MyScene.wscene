@@ -142,7 +142,6 @@
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.OpaqueLayer,WaveEngine.Framework</LayerTypeName>
-          <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
       </d2p1:SerializeComponents>
@@ -260,7 +259,6 @@
               <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-              <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -375,7 +373,6 @@
               <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-              <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -428,7 +425,7 @@
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
       </d2p1:SerializeComponents>
@@ -546,7 +543,6 @@
               <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-              <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -661,7 +657,6 @@
               <d6p1:IsVisible>true</d6p1:IsVisible>
               <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
               <LayerTypeName i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-              <collider2D xmlns:d8p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -710,7 +705,7 @@
           <d5p1:DefaultMaterialPath i:nil="true" />
           <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
           <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>true</d5p1:useDefaultMaterial>
+          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
           <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/ParticleSystem2DProject" i:type="d5p1:ExplosionBehavior">
@@ -777,7 +772,6 @@
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
           <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <collider2D xmlns:d6p1="WaveEngine.Framework.Physics2D" i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
           <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
       </d2p1:SerializeComponents>

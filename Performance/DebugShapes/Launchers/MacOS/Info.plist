@@ -2,19 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>DebugShapes</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon</string>
+	<key>CFBundleIdentifier</key>
+	<string>DebugShapes.DebugShapes</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>DebugShapes</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.6</string>
+	<string>10.8</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>kmullins</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSMainNibFile</key>
-	<string></string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.games</string>
-	<key>CFBundleIconFile</key>
-	<string>Icon</string>
 </dict>
 </plist>

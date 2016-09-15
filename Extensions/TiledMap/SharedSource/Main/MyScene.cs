@@ -27,6 +27,7 @@ namespace TiledMap
 
         protected override void CreateScene()
         {
+            //WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
             this.Load(WaveContent.Scenes.MyScene);
         }
 
@@ -93,11 +94,11 @@ namespace TiledMap
                 .AddComponent(new Transform2D() { LocalPosition = new Vector2(obj.X, obj.Y), Rotation = (float)obj.Rotation, DrawOrder = -9 })
                 .AddComponent(new Sprite(WaveContent.Assets.tilesets.sceneTiles_png) { SourceRectangle = createRectangle })
                 .AddComponent(new SpriteRenderer(DefaultLayers.Alpha, AddressMode.PointWrap))
-                .AddComponent(new RectangleCollider2D())
-                .AddComponent(new RigidBody2D()
+                .AddComponent(new RectangleCollider2D()
                 {
-                    Mass = 0.003f
-                });
+                    Density = 0.3f,
+                })
+                .AddComponent(new RigidBody2D());
 
                 this.EntityManager.Add(crateEntity);
             }
@@ -133,7 +134,7 @@ namespace TiledMap
                 var colliderEntity = TiledMapUtils.CollisionEntityFromObject("collider_" + (i++), obj);
                 colliderEntity.Tag = "collider";
 
-                colliderEntity.AddComponent(new RigidBody2D() { PhysicBodyType = PhysicBodyType.Static });
+                colliderEntity.AddComponent(new RigidBody2D() { PhysicBodyType  = WaveEngine.Common.Physics2D.RigidBodyType2D.Static });
 
                 this.EntityManager.Add(colliderEntity);
             }

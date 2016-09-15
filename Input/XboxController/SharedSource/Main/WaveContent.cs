@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 26/01/2016 15:10:30
+// File generated on 9/5/2016 4:53:33 PM
 namespace XBoxController
 {
     using System;

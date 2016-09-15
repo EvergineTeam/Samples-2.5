@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/27/2016 10:39:07 AM
+// File generated on 9/6/2016 1:11:08 PM
 namespace StockRoom
 {
     using System;

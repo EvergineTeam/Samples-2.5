@@ -99,12 +99,12 @@ namespace TiledMap
                     foreach (var crate in result)
                     {
                         Entity crateEntity = crate as Entity;
-                        var rigidBody = crateEntity.FindComponent<RigidBody2D>();
-                        rigidBody.OnPhysic2DCollision += this.OnCrateCollision;
+                        var collider = crateEntity.FindComponent<Collider2D>(false);
+                        collider.BeginCollision += Collider_BeginCollision;                        
                     }
 
                 }, false);
-        }
+        }       
 
         private void InitTraps()
         {
@@ -174,17 +174,16 @@ namespace TiledMap
         {
             this.soundManager.PlaySound(SoundType.Crash);
             this.ResetGame();
-        }
+        }    
 
-        private void OnCrateCollision(object sender, Physic2DCollisionEventArgs args)
+        private void Collider_BeginCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
-            var velocity = args.Body2DB.LinearVelocity;
+            var velocity = contact.ColliderB.RigidBody.LinearVelocity;
             float length = velocity.Length();
-            float volume = Math.Min(1, length/ 5);
+            float volume = Math.Min(1, length / 5);
 
             var instance = this.soundManager.PlaySound(SoundType.CrateDrop, volume);
         }
-
 
         private void ResetGame()
         {
@@ -201,7 +200,7 @@ namespace TiledMap
 
                 var crateBody = crate.FindComponent<RigidBody2D>();
                 crateBody.ResetPosition(this.initCratePositions[i]);
-                crateBody.Rotation = 0;
+                crateBody.Transform2D.Rotation = 0;
             }
         }
     }

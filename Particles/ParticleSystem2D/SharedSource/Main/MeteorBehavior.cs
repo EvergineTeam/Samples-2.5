@@ -6,6 +6,7 @@ using System.Text;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 
@@ -19,6 +20,7 @@ namespace ParticleSystem2DProject
         private ExplosionBehavior explosionBehavior;
         private const float RANDOMX = 0.2f;
         private const float FALLSPEED = 0.3f;
+        private VirtualScreenManager vsm;
 
         [RequiredComponent]
         public Transform2D transform;
@@ -35,6 +37,8 @@ namespace ParticleSystem2DProject
         {
             base.Initialize();
 
+            this.vsm = this.Owner.Scene.VirtualScreenManager;
+
             var explosion = this.Owner.Scene.EntityManager.Find("explosion");
             this.explosionBehavior = explosion.FindComponent<ExplosionBehavior>();
         }
@@ -43,9 +47,10 @@ namespace ParticleSystem2DProject
         {
             if (WaveServices.Input.TouchPanelState.Count > 0)
             {
-                var touch = WaveServices.Input.TouchPanelState.First();
-                this.transform.X = touch.Position.X;
-                this.transform.Y = touch.Position.Y;
+                var touchPosition = WaveServices.Input.TouchPanelState.First().Position;
+                this.vsm.ToVirtualPosition(ref touchPosition);
+                this.transform.X = touchPosition.X;
+                this.transform.Y = touchPosition.Y;
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>ab790238-d84f-4b28-bbcc-eb4122d18888</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -16,7 +16,7 @@
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <LauncherType>Default</LauncherType>
               <Name>MacOS</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>MacOS</Platform>
@@ -36,8 +36,8 @@
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>0</d2p1:_Build>
     <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Minor>3</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.2.1.27</WaveVersion>
+  <WaveVersion>2.3.0.29</WaveVersion>
 </Project>

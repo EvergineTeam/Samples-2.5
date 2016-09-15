@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 14/06/2016 13:40:09
+// File generated on 9/5/2016 6:05:12 PM
 namespace LensFlare
 {
     using System;

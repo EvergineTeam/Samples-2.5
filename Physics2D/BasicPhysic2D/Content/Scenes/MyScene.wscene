@@ -1,0 +1,3678 @@
+﻿<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>ca1e2372-d6d6-46d2-b894-6ae25ffff02f</Id>
+  <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>defaultCamera2D</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>640</d6p1:X>
+            <d6p1:Y>360</d6p1:Y>
+            <d6p1:Z>-10</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>0</d6p1:Height>
+            <d6p1:Width>0</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera2D">
+          <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>237</d6p1:B>
+            <d6p1:G>149</d6p1:G>
+            <d6p1:R>100</d6p1:R>
+          </d5p1:BackgroundColor>
+          <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:FarPlane>1000</d5p1:FarPlane>
+          <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:IsActive>true</d5p1:IsActive>
+          <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
+          <d5p1:NearPlane>-1000</d5p1:NearPlane>
+          <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:UpVector>
+          <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:Height>1</d6p1:Height>
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+            <d6p1:Width>1</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Viewport>
+          <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:vanishingPoint>
+          <d5p1:zoom xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:zoom>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>background</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>636.7002</d6p1:X>
+            <d6p1:Y>484.69986</d6p1:Y>
+            <d6p1:Z>0.6</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1.26015568</d6p1:X>
+            <d6p1:Y>1.26015568</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>1024</d6p1:Height>
+            <d6p1:Width>1024</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/blue_land.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>grass</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>638.644043</d6p1:X>
+            <d6p1:Y>885.010742</d6p1:Y>
+            <d6p1:Z>0.5</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1.25347364</d6p1:X>
+            <d6p1:Y>1.253474</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>418</d6p1:Height>
+            <d6p1:Width>1024</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/grass.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/grass.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>803.5</d6p1:X>
+                <d6p1:Y>62.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>973.5</d6p1:X>
+                <d6p1:Y>31.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1004.5</d6p1:X>
+                <d6p1:Y>26.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1022.5</d6p1:X>
+                <d6p1:Y>25.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>757.5</d6p1:X>
+                <d6p1:Y>68.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>803.5</d6p1:X>
+                <d6p1:Y>62.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>699.5</d6p1:X>
+                <d6p1:Y>73.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>757.5</d6p1:X>
+                <d6p1:Y>68.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>641.5</d6p1:X>
+                <d6p1:Y>75.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>699.5</d6p1:X>
+                <d6p1:Y>73.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>600.5</d6p1:X>
+                <d6p1:Y>74.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>641.5</d6p1:X>
+                <d6p1:Y>75.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>560.5</d6p1:X>
+                <d6p1:Y>71.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>600.5</d6p1:X>
+                <d6p1:Y>74.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1023.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>417.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>24.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>22.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>510.5</d6p1:X>
+                <d6p1:Y>64.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>560.5</d6p1:X>
+                <d6p1:Y>71.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>22.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>106.5</d6p1:X>
+                <d6p1:Y>5.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>139.5</d6p1:X>
+                <d6p1:Y>2.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>450.5</d6p1:X>
+                <d6p1:Y>52.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>510.5</d6p1:X>
+                <d6p1:Y>64.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>139.5</d6p1:X>
+                <d6p1:Y>2.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>397.5</d6p1:X>
+                <d6p1:Y>39.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>450.5</d6p1:X>
+                <d6p1:Y>52.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>139.5</d6p1:X>
+                <d6p1:Y>2.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>162.5</d6p1:X>
+                <d6p1:Y>1.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>204.5</d6p1:X>
+                <d6p1:Y>2.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>253.5</d6p1:X>
+                <d6p1:Y>7.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>303.5</d6p1:X>
+                <d6p1:Y>15.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>360.5</d6p1:X>
+                <d6p1:Y>28.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>397.5</d6p1:X>
+                <d6p1:Y>39.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>162.5</d6p1:X>
+              <d6p1:Y>1.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>204.5</d6p1:X>
+              <d6p1:Y>2.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>253.5</d6p1:X>
+              <d6p1:Y>7.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>303.5</d6p1:X>
+              <d6p1:Y>15.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>360.5</d6p1:X>
+              <d6p1:Y>28.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>397.5</d6p1:X>
+              <d6p1:Y>39.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>450.5</d6p1:X>
+              <d6p1:Y>52.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>510.5</d6p1:X>
+              <d6p1:Y>64.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>560.5</d6p1:X>
+              <d6p1:Y>71.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>600.5</d6p1:X>
+              <d6p1:Y>74.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>641.5</d6p1:X>
+              <d6p1:Y>75.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>699.5</d6p1:X>
+              <d6p1:Y>73.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>757.5</d6p1:X>
+              <d6p1:Y>68.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>803.5</d6p1:X>
+              <d6p1:Y>62.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>973.5</d6p1:X>
+              <d6p1:Y>31.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1004.5</d6p1:X>
+              <d6p1:Y>26.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1022.5</d6p1:X>
+              <d6p1:Y>25.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1023.5</d6p1:X>
+              <d6p1:Y>417.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>417.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>24.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>22.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>106.5</d6p1:X>
+              <d6p1:Y>5.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>139.5</d6p1:X>
+              <d6p1:Y>2.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Static</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>debris01</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>796.100159</d6p1:X>
+            <d6p1:Y>166.099655</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>56</d6p1:Height>
+            <d6p1:Width>64</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/debrisWood_1.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.8</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/debrisWood_1.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>31.5</d6p1:X>
+                <d6p1:Y>8.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>41.5</d6p1:X>
+                <d6p1:Y>1.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>48.5</d6p1:X>
+                <d6p1:Y>1.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>61.5</d6p1:X>
+                <d6p1:Y>10.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>61.5</d6p1:X>
+                <d6p1:Y>20.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>61.5</d6p1:X>
+                <d6p1:Y>20.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>31.5</d6p1:X>
+                <d6p1:Y>55.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>25.5</d6p1:X>
+                <d6p1:Y>54.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>38.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>35.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>31.5</d6p1:X>
+                <d6p1:Y>8.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>35.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>9.5</d6p1:X>
+                <d6p1:Y>7.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>12.5</d6p1:X>
+                <d6p1:Y>3.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>19.5</d6p1:X>
+                <d6p1:Y>3.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>31.5</d6p1:X>
+                <d6p1:Y>8.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>41.5</d6p1:X>
+              <d6p1:Y>1.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>48.5</d6p1:X>
+              <d6p1:Y>1.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>61.5</d6p1:X>
+              <d6p1:Y>10.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>61.5</d6p1:X>
+              <d6p1:Y>20.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>31.5</d6p1:X>
+              <d6p1:Y>55.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>25.5</d6p1:X>
+              <d6p1:Y>54.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>38.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>35.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>9.5</d6p1:X>
+              <d6p1:Y>7.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>12.5</d6p1:X>
+              <d6p1:Y>3.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>19.5</d6p1:X>
+              <d6p1:Y>3.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>31.5</d6p1:X>
+              <d6p1:Y>8.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>debris02</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>808.9002</d6p1:X>
+            <d6p1:Y>92.4996948</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>61</d6p1:Height>
+            <d6p1:Width>55</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/debrisWood_2.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.8</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/debrisWood_2.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>32.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>38.5</d6p1:X>
+                <d6p1:Y>1.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>53.5</d6p1:X>
+                <d6p1:Y>27.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>54.5</d6p1:X>
+                <d6p1:Y>32.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>42.5</d6p1:X>
+                <d6p1:Y>58.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>34.5</d6p1:X>
+                <d6p1:Y>59.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>34.5</d6p1:X>
+                <d6p1:Y>59.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>17.5</d6p1:X>
+                <d6p1:Y>55.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>3.5</d6p1:X>
+                <d6p1:Y>51.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>47.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>2.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>24.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>32.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>32.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>38.5</d6p1:X>
+              <d6p1:Y>1.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>53.5</d6p1:X>
+              <d6p1:Y>27.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>54.5</d6p1:X>
+              <d6p1:Y>32.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>42.5</d6p1:X>
+              <d6p1:Y>58.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>34.5</d6p1:X>
+              <d6p1:Y>59.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>17.5</d6p1:X>
+              <d6p1:Y>55.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>3.5</d6p1:X>
+              <d6p1:Y>51.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>47.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>2.5</d6p1:X>
+              <d6p1:Y>40.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>24.5</d6p1:X>
+              <d6p1:Y>9.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>debris03</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>280.900238</d6p1:X>
+            <d6p1:Y>306.899658</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>52</d6p1:Height>
+            <d6p1:Width>59</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.8</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>46.5</d6p1:X>
+                <d6p1:Y>4.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>55.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>57.5</d6p1:X>
+                <d6p1:Y>36.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>27.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>18.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>25.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>21.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>19.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>28.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>46.5</d6p1:X>
+              <d6p1:Y>4.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>55.5</d6p1:X>
+              <d6p1:Y>9.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>57.5</d6p1:X>
+              <d6p1:Y>36.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>40.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>27.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>18.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>25.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>21.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>19.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>debris04</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1036.39978</d6p1:X>
+            <d6p1:Y>-28.8002529</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>52</d6p1:Height>
+            <d6p1:Width>59</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.8</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>46.5</d6p1:X>
+                <d6p1:Y>4.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>55.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>57.5</d6p1:X>
+                <d6p1:Y>36.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>27.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>18.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>25.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>21.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>19.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>28.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>46.5</d6p1:X>
+              <d6p1:Y>4.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>55.5</d6p1:X>
+              <d6p1:Y>9.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>57.5</d6p1:X>
+              <d6p1:Y>36.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>40.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>27.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>18.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>25.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>21.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>19.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>debris05</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>569.9001</d6p1:X>
+            <d6p1:Y>116.499725</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>52</d6p1:Height>
+            <d6p1:Width>59</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.8</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/debrisWood_3.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>46.5</d6p1:X>
+                <d6p1:Y>4.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>55.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>57.5</d6p1:X>
+                <d6p1:Y>36.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>52.5</d6p1:X>
+                <d6p1:Y>40.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>27.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>18.5</d6p1:X>
+                <d6p1:Y>50.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>25.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>1.5</d6p1:X>
+                <d6p1:Y>21.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>19.5</d6p1:X>
+                <d6p1:Y>6.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>28.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>46.5</d6p1:X>
+              <d6p1:Y>4.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>55.5</d6p1:X>
+              <d6p1:Y>9.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>57.5</d6p1:X>
+              <d6p1:Y>36.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>40.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>27.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>18.5</d6p1:X>
+              <d6p1:Y>50.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>25.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>21.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>19.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>block01</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>278.999969</d6p1:X>
+            <d6p1:Y>374.599548</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>220</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone013.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Kinematic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>pin01</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>286.5001</d6p1:X>
+            <d6p1:Y>54.2995644</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone001.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:CircleCollider2D">
+          <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
+          <CollisionCategories xmlns="WaveEngine.Framework.Physics2D">Cat1</CollisionCategories>
+          <DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics" xmlns="WaveEngine.Framework.Physics2D">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </DebugLineColor>
+          <Density xmlns="WaveEngine.Framework.Physics2D">1</Density>
+          <Friction xmlns="WaveEngine.Framework.Physics2D">0.2</Friction>
+          <GroupIndex xmlns="WaveEngine.Framework.Physics2D">0</GroupIndex>
+          <IsSensor xmlns="WaveEngine.Framework.Physics2D">false</IsSensor>
+          <Restitution xmlns="WaveEngine.Framework.Physics2D">0</Restitution>
+          <autoRefresh xmlns="WaveEngine.Framework.Physics2D">true</autoRefresh>
+          <offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" xmlns="WaveEngine.Framework.Physics2D">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </offset>
+          <d5p1:Radius>1</d5p1:Radius>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Static</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>alien01</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>69.3499</d6p1:X>
+            <d6p1:Y>120.849655</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1.385715</d6p1:X>
+            <d6p1:Y>1.38571429</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/alienPink_round.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:CircleCollider2D">
+          <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
+          <CollisionCategories xmlns="WaveEngine.Framework.Physics2D">Cat1</CollisionCategories>
+          <DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics" xmlns="WaveEngine.Framework.Physics2D">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </DebugLineColor>
+          <Density xmlns="WaveEngine.Framework.Physics2D">1</Density>
+          <Friction xmlns="WaveEngine.Framework.Physics2D">0.2</Friction>
+          <GroupIndex xmlns="WaveEngine.Framework.Physics2D">0</GroupIndex>
+          <IsSensor xmlns="WaveEngine.Framework.Physics2D">false</IsSensor>
+          <Restitution xmlns="WaveEngine.Framework.Physics2D">0</Restitution>
+          <autoRefresh xmlns="WaveEngine.Framework.Physics2D">true</autoRefresh>
+          <offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" xmlns="WaveEngine.Framework.Physics2D">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </offset>
+          <d5p1:Radius>1</d5p1:Radius>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RopeJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>pin01</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:maxLength>0</d5p1:maxLength>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>triangleBlock</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.9961886</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>-0.087225534</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>862.9001</d6p1:X>
+            <d6p1:Y>662.799561</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>140</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone000.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/elementStone000.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>69.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>139.5</d6p1:X>
+                <d6p1:Y>67.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>138.5</d6p1:X>
+                <d6p1:Y>69.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>2.5</d6p1:X>
+                <d6p1:Y>69.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>0.5</d6p1:X>
+                <d6p1:Y>68.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>19.5</d6p1:X>
+                <d6p1:Y>48.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>69.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>139.5</d6p1:X>
+              <d6p1:Y>67.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>138.5</d6p1:X>
+              <d6p1:Y>69.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>2.5</d6p1:X>
+              <d6p1:Y>69.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>68.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>19.5</d6p1:X>
+              <d6p1:Y>48.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>block02</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1040.8999</d6p1:X>
+            <d6p1:Y>597.099548</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>140</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone033.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>block03</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1108.49988</d6p1:X>
+            <d6p1:Y>454.399536</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>220</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementWood012.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>block04</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1184.8999</d6p1:X>
+            <d6p1:Y>574.6996</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>140</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone033.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>pin02</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>656.600159</d6p1:X>
+            <d6p1:Y>477.5999</d6p1:Y>
+            <d6p1:Z>0.1</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Static</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>spin01</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>656.4002</d6p1:X>
+            <d6p1:Y>476.899933</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>220</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/elementStone032.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.8</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0.2</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RevoluteJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>pin02</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:enableLimits>true</d5p1:enableLimits>
+          <d5p1:enableMotor>false</d5p1:enableMotor>
+          <d5p1:lowerAngle>-0.785398066</d5p1:lowerAngle>
+          <d5p1:maxMotorTorque>0</d5p1:maxMotorTorque>
+          <d5p1:motorSpeed>0</d5p1:motorSpeed>
+          <d5p1:referenceAngle>0</d5p1:referenceAngle>
+          <d5p1:upperAngle>0.785398066</d5p1:upperAngle>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>alien02</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>218.775833</d6p1:X>
+            <d6p1:Y>561.424744</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1.52499986</d6p1:X>
+            <d6p1:Y>1.52499938</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/alienBeige_suit.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>pin03</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1100.09973</d6p1:X>
+            <d6p1:Y>38.19999</d6p1:Y>
+            <d6p1:Z>0.1</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Static</d5p1:PhysicBodyType>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>chain01</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.990268052</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.13917309</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1095.10107</d6p1:X>
+            <d6p1:Y>56.2996864</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>36</d6p1:Height>
+            <d6p1:Width>20</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/chain.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>2</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:DistanceJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-17.5</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>pin03</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:dampingRatio>0</d5p1:dampingRatio>
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:frequencyHz>0</d5p1:frequencyHz>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>chain02</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.990268052</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.13917309</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1083.801</d6p1:X>
+            <d6p1:Y>91.7997055</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>36</d6p1:Height>
+            <d6p1:Width>20</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/chain.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>2</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:DistanceJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-17.5</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>17.5</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>chain01</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:dampingRatio>0</d5p1:dampingRatio>
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:frequencyHz>0</d5p1:frequencyHz>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>chain03</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.990268052</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.13917309</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1073.301</d6p1:X>
+            <d6p1:Y>126.599731</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>36</d6p1:Height>
+            <d6p1:Width>20</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/chain.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>2</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:DistanceJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-17.5</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>17.5</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>chain02</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:dampingRatio>0</d5p1:dampingRatio>
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:frequencyHz>0</d5p1:frequencyHz>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>chain04</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.990268052</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.13917309</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1062.5011</d6p1:X>
+            <d6p1:Y>161.399689</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>36</d6p1:Height>
+            <d6p1:Width>20</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/chain.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>2</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:DistanceJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-17.5</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>17.5</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>chain03</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:dampingRatio>0</d5p1:dampingRatio>
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:frequencyHz>0</d5p1:frequencyHz>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>weight</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.990268052</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0.13917309</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1045.40112</d6p1:X>
+            <d6p1:Y>219.799759</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/Textures/weightChained.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>0.1</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/Textures/weightChained.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>10.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>41.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>56.5</d6p1:X>
+                <d6p1:Y>11.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>66.5</d6p1:X>
+                <d6p1:Y>52.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>67.5</d6p1:X>
+                <d6p1:Y>64.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>64.5</d6p1:X>
+                <d6p1:Y>68.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>64.5</d6p1:X>
+                <d6p1:Y>68.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>7.5</d6p1:X>
+                <d6p1:Y>69.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>3.5</d6p1:X>
+                <d6p1:Y>66.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>2.5</d6p1:X>
+                <d6p1:Y>58.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>11.5</d6p1:X>
+                <d6p1:Y>14.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>10.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>11.5</d6p1:X>
+                <d6p1:Y>14.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>13.5</d6p1:X>
+                <d6p1:Y>11.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>10.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+            <d6p1:ArrayOfVector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>10.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>28.5</d6p1:X>
+                <d6p1:Y>5.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>31.5</d6p1:X>
+                <d6p1:Y>1.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>32.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>37.5</d6p1:X>
+                <d6p1:Y>0.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>40.5</d6p1:X>
+                <d6p1:Y>2.5</d6p1:Y>
+              </d6p1:Vector2>
+              <d6p1:Vector2>
+                <d6p1:X>41.5</d6p1:X>
+                <d6p1:Y>9.5</d6p1:Y>
+              </d6p1:Vector2>
+            </d6p1:ArrayOfVector2>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>0.5</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>32.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>37.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>40.5</d6p1:X>
+              <d6p1:Y>2.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>41.5</d6p1:X>
+              <d6p1:Y>9.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>56.5</d6p1:X>
+              <d6p1:Y>11.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>66.5</d6p1:X>
+              <d6p1:Y>52.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>67.5</d6p1:X>
+              <d6p1:Y>64.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>64.5</d6p1:X>
+              <d6p1:Y>68.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>7.5</d6p1:X>
+              <d6p1:Y>69.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>3.5</d6p1:X>
+              <d6p1:Y>66.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>2.5</d6p1:X>
+              <d6p1:Y>58.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>11.5</d6p1:X>
+              <d6p1:Y>14.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>13.5</d6p1:X>
+              <d6p1:Y>11.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>28.5</d6p1:X>
+              <d6p1:Y>10.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>28.5</d6p1:X>
+              <d6p1:Y>5.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>31.5</d6p1:X>
+              <d6p1:Y>1.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:AngularDamping>0</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>0</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:DistanceJoint2D">
+          <d5p1:anchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-35</d6p1:Y>
+          </d5p1:anchor>
+          <d5p1:breakpoint>0</d5p1:breakpoint>
+          <d5p1:collideConnected>false</d5p1:collideConnected>
+          <d5p1:connectedAnchor xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>17.5</d6p1:Y>
+          </d5p1:connectedAnchor>
+          <d5p1:connectedEntityPath>chain04</d5p1:connectedEntityPath>
+          <d5p1:isActive>true</d5p1:isActive>
+          <d5p1:dampingRatio>0</d5p1:dampingRatio>
+          <d5p1:distance>0</d5p1:distance>
+          <d5p1:frequencyHz>0</d5p1:frequencyHz>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>input</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>645.600159</d6p1:X>
+            <d6p1:Y>407.699982</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>0</d6p1:Height>
+            <d6p1:Width>0</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/BasicPhysic2D" i:type="d5p1:MouseBehavior">
+          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/BasicPhysic2D" i:type="d5p1:MouseDrawable">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>text</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1335.10022</d6p1:X>
+            <d6p1:Y>1068.70044</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Effect>None</d5p1:Effect>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>21</d6p1:Height>
+            <d6p1:Width>366</d6p1:Width>
+            <d6p1:X>-402.6</d6p1:X>
+            <d6p1:Y>42</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Screen</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextComponent">
+          <d5p1:fontPath i:nil="true" />
+          <d5p1:foreground xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>59</d6p1:B>
+            <d6p1:G>100</d6p1:G>
+            <d6p1:R>142</d6p1:R>
+          </d5p1:foreground>
+          <d5p1:lineSpacing>0</d5p1:lineSpacing>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1.1</d6p1:X>
+            <d6p1:Y>2</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:scale xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:scale>
+          <d5p1:text>Textures made by Kenney (www.kenney.nl)</d5p1:text>
+          <d5p1:textAlignment>Left</d5p1:textAlignment>
+          <d5p1:textWrapping>false</d5p1:textWrapping>
+          <d5p1:width>300</d5p1:width>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextRenderer2D">
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
+          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+  </Entities>
+  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>VirtualScreen</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Managers" i:type="d5p1:VirtualScreenManager">
+          <d5p1:Enabled>true</d5p1:Enabled>
+          <d5p1:Expand>true</d5p1:Expand>
+          <d5p1:Stretch>Uniform</d5p1:Stretch>
+          <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Physics</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:PhysicCategory">
+          <d5p1:AllowSleep>true</d5p1:AllowSleep>
+          <d5p1:Gravity2D xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>9.8</d6p1:Y>
+          </d5p1:Gravity2D>
+          <d5p1:Gravity3D xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-9.8</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:Gravity3D>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+    </d2p1:Categories>
+  </Settings>
+</Scene>

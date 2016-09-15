@@ -119,9 +119,7 @@ namespace SocialService
                 BackgroundColor = _backgroundColor,
             };
             login.Click += async (s, e) =>
-            {
-                var properties = new Dictionary<string, string>();
-                _socialService.Initialize(properties);
+            {                
                 var loggedIn = await _socialService.Login();
                 if (!loggedIn)
                 {
