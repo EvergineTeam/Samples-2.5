@@ -1,5 +1,5 @@
 ```json
-{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"WaveEngine.Common","version":"2.2.0.26"},{"id":"WaveEngine.Adapter","version":"2.2.0.26"},{"id":"WaveEngine.Materials","version":"2.2.0.26"},{"id":"WaveEngine.Framework","version":"2.2.0.26"},{"id":"WaveEngine.Components","version":"2.2.0.26"}]}
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"WaveEngine.Common","version":"2.3.0.29"},{"id":"WaveEngine.Adapter","version":"2.3.0.29"},{"id":"WaveEngine.Materials","version":"2.3.0.29"},{"id":"WaveEngine.Framework","version":"2.3.0.29"},{"id":"WaveEngine.Components","version":"2.3.0.29"}]}
 ```
 
 ## WaveEngine a cross-platform mobile graphics engine.
