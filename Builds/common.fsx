@@ -9,6 +9,8 @@ open System.IO
 open System.Linq
 open Fake.AssemblyInfoFile
 
+exception BuildException of string
+
 let configuration = "Debug"
 let architecture = "Any CPU"
 let rootFolder = "../"
@@ -65,6 +67,7 @@ let printReport (l : List<sampleReport>) =
     printfn "   Projects success: %i / %i" OkProjects l.Count
     traceImportant "---------------------------------------------------------------------"
     printfn ""
+    if (OkProjects < l.Count) then raise (BuildException("All samples not passed")) 
 
 let buildSample (platform: string, configuration : string, architecture : string, sample : string) = 
     match platform with
@@ -74,7 +77,7 @@ let buildSample (platform: string, configuration : string, architecture : string
     | _-> ()
 
 let buildsamples(platform: string) =
-    for sample in Directory.GetFiles(rootFolder, ("*" + platform + ".sln"), SearchOption.AllDirectories) do
+    for sample in Directory.GetFiles(rootFolder, ("*" + platform + "*.sln"), SearchOption.AllDirectories) do
         traceImportant ("Project " + sample)
 
         let mutable flag = true
