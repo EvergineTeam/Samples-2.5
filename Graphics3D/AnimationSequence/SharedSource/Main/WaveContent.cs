@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/5/2016 5:51:54 PM
+// File generated on 22/09/2016 13:00:21
 namespace AnimationSequence
 {
     using System;

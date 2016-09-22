@@ -33,7 +33,7 @@ namespace AnimationSequence
             this.game = new AnimationSequence.Game();
             this.game.Initialize(this);
 
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+            #region DEFAULT SPLASHSCREEN
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
@@ -72,8 +72,8 @@ namespace AnimationSequence
 
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
-					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+                    #region DEFAULT SPLASHSCREEN
+                    position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
 					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
@@ -102,7 +102,7 @@ namespace AnimationSequence
             {
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
                     this.spriteBatch.Draw (this.splashScreen, this.position, Color.White);
