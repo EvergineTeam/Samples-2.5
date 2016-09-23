@@ -1,4 +1,4 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>f57fa088-c006-4ad6-9ad1-e39fc1eb4114</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -10,7 +10,7 @@
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType>Default</LauncherType>
-              <Name>MacOS</Name>
+              <Name>MacOSProfile</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>MacOS</Platform>
             </Profile>
