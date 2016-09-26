@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{F3CC4527-43AF-41CB-94C1-BFF310D5726A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InternetTextureLoad</RootNamespace>
+    <RootNamespace>PlatformGameDemo</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
-    <AssemblyName>InternetTextureLoad</AssemblyName>
+    <AssemblyName>PlatformGameDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseXamMacFullFramework>true</UseXamMacFullFramework>
     <ProductVersion>8.0.30703</ProductVersion>
@@ -77,13 +77,13 @@
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
       <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.0.29\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
-    </Reference>
+    </Reference>				
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />    
     <Compile Include="MainWindow.cs" />
     <Compile Include="MainWindow.designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
@@ -112,7 +112,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
-  <Import Project="..\..\SharedSource\Main\InternetTextureLoadSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\InternetTextureLoadSource.projitems')" />
+  <Import Project="..\..\SharedSource\Main\PlatformGameDemoSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\PlatformGameDemoSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.Mac\WaveEngine.targets')" />
   <Import Project="..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />

@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PlatformGameDemoSource", "SharedSource\Main\PlatformGameDemoSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ParallaxCamera2DSource", "SharedSource\Main\ParallaxCamera2DSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformGameDemo", "Launchers\MacOS\PlatformGameDemo.csproj", "{F3CC4527-43AF-41CB-94C1-BFF310D5726A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallaxCamera2D", "Launchers\MacOSProfile\ParallaxCamera2D.csproj", "{F3CC4527-43AF-41CB-94C1-BFF310D5726A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
