@@ -58,7 +58,7 @@ let mutable reportString = "\n";
 let printReport (l : List<sampleReport>) =
    
     reportString <- sprintf "%s\n---------------------------------------------------------------------" reportString
-    reportString <- sprintf "%s\Samples Report:" reportString
+    reportString <- sprintf "%s\nSamples Report:" reportString
     reportString <- sprintf "%s\n---------------------------------------------------------------------" reportString
     l |> Seq.iteri (fun index item ->
 
