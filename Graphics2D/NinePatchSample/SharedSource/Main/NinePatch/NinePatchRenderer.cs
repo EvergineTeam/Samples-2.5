@@ -219,7 +219,7 @@ namespace NinePatchSample.NinePatch
             float originCorrectionWidth = origin.X * halfWidth;
             float originCorrectionHeight = origin.Y * halfHeight;
 
-            Color color = new Color(this.lastTransformOpacity, this.lastTransformOpacity, this.lastTransformOpacity, this.lastTransformOpacity);
+            Color color = this.ninePatch.TintColor * this.lastTransformOpacity;
 
             var outputRectangle = new RectangleF(
                     0,
