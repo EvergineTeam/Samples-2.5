@@ -68,6 +68,9 @@
     <Reference Include="WaveEngine.Components">
       <HintPath>..\..\packages\WaveEngine.Components.2.3.0.29\lib\Mono\WaveEngine.Components.dll</HintPath>
     </Reference>
+	<Reference Include="WaveEngine.HoloLens">
+      <HintPath>..\..\packages\WaveEngine.HoloLens.2.3.0.29\lib\Mono\WaveEngine.HoloLens.dll</HintPath>      
+    </Reference>
     <Reference Include="WaveEngine.Materials">
       <HintPath>..\..\packages\WaveEngine.Materials.2.3.0.29\lib\Mono\WaveEngine.Materials.dll</HintPath>
     </Reference>

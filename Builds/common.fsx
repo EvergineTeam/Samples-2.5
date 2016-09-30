@@ -14,6 +14,9 @@ exception BuildException of string
 let configuration = "Debug"
 let architecture = "Any CPU"
 let rootFolder = "../"
+let deployDir = "../Deploy/"
+let artifactPath = deployDir + "report.txt"
+
 let getFolder solutionFile= Path.GetDirectoryName(solutionFile)
 
 let Exec command args =
@@ -50,23 +53,41 @@ let processResults (path : string) (flag : bool) =
     items.Add(report)
 
 let mutable OkProjects = 0;
+let mutable reportString = "\n";
 
 let printReport (l : List<sampleReport>) =
-    printfn ""
-    traceImportant "---------------------------------------------------------------------"
-    traceImportant "Samples Report:"
-    traceImportant "---------------------------------------------------------------------"
+   
+    reportString <- sprintf "%s\n---------------------------------------------------------------------" reportString
+    reportString <- sprintf "%s\nSamples Report:" reportString
+    reportString <- sprintf "%s\n---------------------------------------------------------------------" reportString
     l |> Seq.iteri (fun index item ->
+
         if l.[index].Result = status.Success then
-            trace (index.ToString() + "-    Success " + l.[index].Path)
+            let r = String.Format("\n {0} -      Success - {1}", index.ToString(), l.[index].Path)   
+            reportString <- sprintf "%s%s" reportString r               
             OkProjects <- OkProjects + 1
         else
-            traceError (index.ToString() + "-    Failed " + l.[index].Path))
+            let r = String.Format("\n {0} -      Failed - {1}", index.ToString(), l.[index].Path)   
+            reportString <- sprintf "%s%s" reportString r                    
+        )
 
-    printfn ""
-    printfn "   Projects success: %i / %i" OkProjects l.Count
-    traceImportant "---------------------------------------------------------------------"
-    printfn ""
+    reportString <- sprintf "%s\n" reportString
+    let r = sprintf "\n   Projects success: %i / %i" OkProjects l.Count
+    reportString <- sprintf "%s%s" reportString r
+    reportString <- sprintf "%s\n---------------------------------------------------------------------" reportString
+    reportString <- sprintf "%s\n" reportString
+
+    // Print report
+    printfn "%s" reportString
+
+    // Create report file
+    Fake.FileHelper.CreateDir deployDir    
+    File.WriteAllText(artifactPath, reportString);  
+
+    // Publish reports
+    let absoluteArtifactPath = System.IO.Path.GetFullPath(artifactPath)
+    TeamCityHelper.PublishArtifact (absoluteArtifactPath)  
+
     if (OkProjects < l.Count) then raise (BuildException("All samples not passed")) 
 
 let buildSample (platform: string, configuration : string, architecture : string, sample : string) = 
