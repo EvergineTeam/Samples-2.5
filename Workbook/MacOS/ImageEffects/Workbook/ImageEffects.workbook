@@ -1,0 +1,419 @@
+---
+uti: com.xamarin.workbook
+platform: MacNet45
+packages: []
+---
+
+## WaveEngine Image Effect
+
+In this workbook we are going to learn how make your games look better using a great set of image effect lenses.
+
+First load the basic libraries.
+
+```csharp
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
+```
+
+Now we are going to load the image effect library extension.
+
+```csharp
+#r "WaveEngine.ImageEffects.dll"
+```
+
+```csharp
+using WaveEngine.Framework; 
+using WaveEngine.Adapter; 
+using WaveEngine.Framework.Services; 
+using WaveEngine.Common.Graphics;
+```
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene()	{	}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+var app = await SimpleApp.RunAsync(game, 960, 540);
+```
+
+```csharp
+game.scene.Load("Content/Scenes/MyScene.wscene");
+```
+
+Once the application is created, we are going to extract the reference of the main 3D camera. (Use the mouse to move the camera).
+
+```csharp
+var camera = game.scene.EntityManager.Find("camera3D");
+```
+
+A lens is a graphics component that applies an image filter to the camera. First, we are going to start with two basic lenses. (the first line adds the lens and the second line removes the lens. By the way, you can add one or more lenses to a single camera).
+
+#### GrayScale
+
+```csharp
+camera.AddComponent(new WaveEngine.ImageEffects.GrayScaleLens());
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.GrayScaleLens>();
+```
+
+#### Invert
+
+```csharp
+camera.AddComponent(new WaveEngine.ImageEffects.InvertLens());
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.InvertLens>();
+```
+
+Now we are going to try something different. First, create the lens instance to play with its parameters, this is the best way to learn what the options of each effect are.
+
+#### Pixelate
+
+```csharp
+var pixelate = new WaveEngine.ImageEffects.PixelateLens();
+camera.AddComponent(pixelate);
+```
+
+```csharp
+pixelate.PixelSize //try to change this value
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.PixelateLens>();
+```
+
+#### Bloom
+
+Blooming is the optical effect where light from a bright source (such as a glint) appears to leak into surrounding objects.
+
+```csharp
+var bloom = new WaveEngine.ImageEffects.BloomLens();
+camera.AddComponent(bloom);
+```
+
+```csharp
+bloom.BloomThreshold  //try to change this value
+```
+
+```csharp
+bloom.BloomTint // try with = Color.Orange.ToVector3();
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.BloomLens>();
+```
+
+#### Gaussian Blur
+
+GaussianBlur is the result of blurring an image by a gaussian function. This filter uses two passes, the horizontal one and the vertical one.
+
+```csharp
+var gaussian = new WaveEngine.ImageEffects.GaussianBlurLens();
+camera.AddComponent(gaussian);
+```
+
+```csharp
+gaussian.Factor  //try to change this value
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.GaussianBlurLens>();
+```
+
+GaussianBlur is expensive so there is another technique which is faster to blur an image with decent results called Fast blur, recomended for mobile games.
+
+```csharp
+camera.AddComponent(new WaveEngine.ImageEffects.FastBlurLens());
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.FastBlurLens>();
+```
+
+##### Play with the next lens to understand how its work and which are its parameters.
+
+#### Sobel or Edge detection
+
+```csharp
+var sobel = new WaveEngine.ImageEffects.SobelLens();
+camera.AddComponent(sobel);
+```
+
+```csharp
+sobel.Effect = WaveEngine.ImageEffects.SobelMaterial.SobelEffect.SobelEdge
+```
+
+```csharp
+sobel.Threshold  //try to change this value
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.SobelLens>();
+```
+
+#### Chromatic Aberration
+
+```csharp
+var chormatic = new WaveEngine.ImageEffects.ChromaticAberrationLens();
+camera.AddComponent(chormatic);
+```
+
+```csharp
+chormatic.AberrationStrength
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.ChromaticAberrationLens>();
+```
+
+#### Posterize
+
+```csharp
+var posterize = new WaveEngine.ImageEffects.PosterizeLens();
+camera.AddComponent(posterize);
+```
+
+```csharp
+posterize.Gamma
+```
+
+```csharp
+posterize.Regions
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.PosterizeLens>();
+```
+
+#### ToneMapping
+
+```csharp
+var ToneMapping = new WaveEngine.ImageEffects.ToneMappingLens();
+camera.AddComponent(ToneMapping);
+```
+
+```csharp
+ToneMapping.Exposure
+```
+
+```csharp
+ToneMapping.Operator = WaveEngine.ImageEffects.ToneMappingMaterial.OperatorType.Filmic;
+```
+
+```csharp
+ToneMapping.Operator = WaveEngine.ImageEffects.ToneMappingMaterial.OperatorType.Photography;
+```
+
+```csharp
+ToneMapping.Operator = WaveEngine.ImageEffects.ToneMappingMaterial.OperatorType.Uncharted2;
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.ToneMappingLens>();
+```
+
+#### Radial Blur
+
+```csharp
+var radial = new WaveEngine.ImageEffects.RadialBlurLens();
+camera.AddComponent(radial);
+```
+
+```csharp
+radial.BlurWidth
+```
+
+```csharp
+radial.Nsamples
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.RadialBlurLens>();
+```
+
+#### Film Grain
+
+```csharp
+var grain = new WaveEngine.ImageEffects.FilmGrainLens();
+camera.AddComponent(grain);
+```
+
+```csharp
+grain.GrainIntensityMin
+```
+
+```csharp
+grain.GrainIntensityMax
+```
+
+```csharp
+grain.GrainSize
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.FilmGrainLens>();
+```
+
+#### Sepia
+
+```csharp
+var sepia = new WaveEngine.ImageEffects.SepiaLens();
+camera.AddComponent(sepia);
+```
+
+```csharp
+sepia.Desaturation
+```
+
+```csharp
+sepia.GreyTransfer
+```
+
+```csharp
+sepia.Toning
+```
+
+```csharp
+sepia.DarkTone //try with Color.Orange.ToVector3()
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.SepiaLens>();
+```
+
+#### Scanline
+
+```csharp
+var scanline = new WaveEngine.ImageEffects.ScanlinesLens();
+camera.AddComponent(scanline);
+```
+
+```csharp
+scanline.Attenuation
+```
+
+```csharp
+scanline.LinesFactor
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.ScanlinesLens>();
+```
+
+#### Vignette
+
+```csharp
+var vignette = new WaveEngine.ImageEffects.VignetteLens();
+camera.AddComponent(vignette);
+```
+
+```csharp
+vignette.Power
+```
+
+```csharp
+vignette.Radio
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.VignetteLens>();
+```
+
+#### Convolution Matrix
+
+```csharp
+var convolution = new WaveEngine.ImageEffects.ConvolutionLens();
+camera.AddComponent(convolution);
+```
+
+```csharp
+convolution.Scale
+```
+
+```csharp
+convolution.Filter
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.ConvolutionLens>();
+```
+
+#### Fish Eye
+
+```csharp
+var fisheye = new WaveEngine.ImageEffects.FishEyeLens();
+camera.AddComponent(fisheye);
+```
+
+```csharp
+fisheye.StrengthX
+```
+
+```csharp
+fisheye.StrengthY
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.FishEyeLens>();
+```
+
+#### Antialiasing
+
+```csharp
+var motion = new WaveEngine.ImageEffects.AntialiasingLens();
+camera.AddComponent(motion);
+```
+
+```csharp
+camera.RemoveComponent<WaveEngine.ImageEffects.AntialiasingLens>();
+```
+
+#### Depth of Field
+
+```csharp
+var DoF = new WaveEngine.ImageEffects.DepthOfFieldLens();
+camera.AddComponent(DoF);
+```
+
+```csharp
+DoF.FocusDistance = 12
+```
+
+```csharp
+DoF.FocusRange = 5
+```
+
+```csharp
+DoF.BlurScale
+```
+
+```csharp
+DoF.BlurScale
+```
+
+There are more interesting image effects to discover but we hope you had fun playing with some of them. Use WaveEngine image effect library to improve the visual quality of your games using WaveEngine.
