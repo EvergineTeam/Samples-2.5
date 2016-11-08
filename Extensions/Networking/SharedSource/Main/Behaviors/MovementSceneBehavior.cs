@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.Serialization;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
@@ -9,6 +10,7 @@ using WaveEngine.Framework.Services;
 
 namespace Networking.Behaviors
 {
+    [DataContract]
     public class MovementBehavior : Behavior
     {
         [RequiredComponent]
