@@ -115,6 +115,8 @@ namespace NavigationFlow
                     {
                         this.game.UpdateFrame(elapsedTime);
                     }
+                    
+                    this.lastKeyboardState = keyboardState;
                 }
             }
         }
