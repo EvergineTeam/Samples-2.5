@@ -316,22 +316,26 @@ namespace NavigationFlow.Navigation
 
             var scenesInitialized = false;
 
+			var preloadAction = new Action(() =>
+			{ 
+				this.PreloadGlobalAssets();
+
+				for (int i = 0; i < nextScreenConxtext.Count; i++)
+				{
+					var contextScene = nextScreenConxtext[i];
+					contextScene.Initialize(WaveServices.GraphicsDevice);
+				}
+
+				scenesInitialized = true;
+			});
+
 #if UWP
-            System.Threading.Tasks.Task.Factory.StartNew(() =>
+			System.Threading.Tasks.Task.Factory.StartNew(preloadAction);
+#elif __UNIFIED__
+			preloadAction();
 #else
-            WaveServices.TaskScheduler.CreateTask(() =>
+            WaveServices.TaskScheduler.CreateTask(preloadAction);
 #endif
-            {
-                this.PreloadGlobalAssets();
-
-                for (int i = 0; i < nextScreenConxtext.Count; i++)
-                {
-                    var contextScene = nextScreenConxtext[i];
-                    contextScene.Initialize(WaveServices.GraphicsDevice);
-                }
-
-                scenesInitialized = true;
-            });
 
             this.CreateContextAnimation(false, WaveServices.ScreenContextManager.CurrentContext)
                 .AndWaitCondition(() => scenesInitialized)

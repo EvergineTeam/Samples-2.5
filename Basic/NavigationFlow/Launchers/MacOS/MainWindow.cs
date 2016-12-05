@@ -103,7 +103,6 @@ namespace NavigationFlow
                     if (keyboardState.IsKeyReleased(Keys.Escape) &&
                        this.lastKeyboardState.IsKeyPressed(Keys.Escape))
                     {
-                        WaveServices.Platform.Exit();
                         var navService = WaveServices.GetService<NavigationService>();
 
                         if (navService.CanNavigate(NavigateCommands.Back))
