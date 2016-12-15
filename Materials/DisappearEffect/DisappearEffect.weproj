@@ -1,5 +1,5 @@
 ﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>ec1219fc-3885-488e-a49e-1b17aa3ef464</Id>
+  <Id>551d9630-d621-4c30-8396-8a1ccb06f319</Id>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -13,20 +13,6 @@
               <Name>Windows</Name>
               <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType>Default</LauncherType>
-              <Name>Linux</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Linux</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType>Default</LauncherType>
-              <Name>MacOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>MacOS</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
