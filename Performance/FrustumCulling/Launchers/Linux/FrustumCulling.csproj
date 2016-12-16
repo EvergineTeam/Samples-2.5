@@ -57,25 +57,25 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.3.0.29\lib\Mono\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.3.0.29\lib\Mono\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.3.0.29\lib\Mono\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.3.0.29\lib\Mono\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.3.0.29\lib\Mono\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.0.29\lib\Mono\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.3.0.29\lib\Mono\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20161215-393\lib\Mono\WaveEngine.Box2D.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -97,12 +97,12 @@
     -->
   <Import Project="..\..\SharedSource\Main\FrustumCullingSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\FrustumCullingSource.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\packages\WaveEngine.2.3.0.29\build\Mono\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.0.29\build\Mono\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.3.0.29\build\Mono\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.3.0.29\build\Mono\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.targets'))" />
   </Target>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -122,18 +122,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\packages\WaveEngine.Adapter.2.3.0.29\lib\Mono\OpenTK.dll.config">
+    <None Include="..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20161215-393\lib\Mono\OpenTK.dll.config">
       <Link>OpenTK.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\packages\WaveEngine.Adapter.2.3.0.29\lib\Mono\SdlDotNet.dll.config">
+    <None Include="..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20161215-393\lib\Mono\SdlDotNet.dll.config">
       <Link>SdlDotNet.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\packages\WaveEngine.Adapter.2.3.0.29\lib\Mono\Tao.Sdl.dll.config">
+    <None Include="..\..\packages\WaveEngine.Adapter.2.3.1-alpha-20161215-393\lib\Mono\Tao.Sdl.dll.config">
       <Link>Tao.Sdl.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Mono\WaveEngine.Box2D.targets')" xmlns="" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.1-alpha-20161215-393\build\Mono\WaveEngine.Box2D.targets')" xmlns="" />
 </Project>

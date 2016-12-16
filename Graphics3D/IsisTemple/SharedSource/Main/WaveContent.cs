@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/5/2016 6:01:56 PM
+// File generated on 16/12/2016 11:31:30
 namespace IsisTemple
 {
     using System;

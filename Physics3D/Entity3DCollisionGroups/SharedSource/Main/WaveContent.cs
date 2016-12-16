@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/6/2016 11:23:21 AM
+// File generated on 16/12/2016 11:38:16
 namespace Entity3DCollisionGroups
 {
     using System;

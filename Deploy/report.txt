@@ -1,0 +1,85 @@
+
+
+---------------------------------------------------------------------
+Samples Report:
+---------------------------------------------------------------------
+ 0 -      Success - ../Basic\GettingStarted\GettingStarted_Windows.sln
+ 1 -      Success - ../Basic\NavigationFlow\NavigationFlow_Windows.sln
+ 2 -      Success - ../Basic\Transitions\Transition_Windows.sln
+ 3 -      Success - ../Extensions\CardboardCockpit\CardboardCockpit_Windows.sln
+ 4 -      Success - ../Extensions\DolbyTest\DolbyTest_WindowsProfile.sln
+ 5 -      Success - ../Extensions\HololensSample\HololensSample_Windows.sln
+ 6 -      Success - ../Extensions\KinectSample\KinectSample_Windows.sln
+ 7 -      Success - ../Extensions\LeapMotionSample\LeapMotionSample_Windows.sln
+ 8 -      Success - ../Extensions\Networking\Networking_Windows.sln
+ 9 -      Success - ../Extensions\OculusCockpit\OculusCockpit_Windows.sln
+ 10 -      Success - ../Extensions\SocialService\SocialService_Windows.sln
+ 11 -      Success - ../Extensions\SpineSkeletalAnimation\SpineSkeletalAnimation_Windows.sln
+ 12 -      Success - ../Extensions\TiledMap\TiledMap_Windows.sln
+ 13 -      Success - ../Extensions\VuforiaTest\VuforiaTest_Windows.sln
+ 14 -      Success - ../Extensions\WaveOculusDemo\WaveOculusDemo_Windows.sln
+ 15 -      Success - ../Graphics2D\InternetTextureLoad\InternetTextureLoad_Windows.sln
+ 16 -      Success - ../Graphics2D\Lines\Lines_Windows.sln
+ 17 -      Success - ../Graphics2D\NinePatchSample\NinePatchSample_Windows.sln
+ 18 -      Success - ../Graphics2D\ParallaxCamera2D\ParallaxCamera2D_Windows.sln
+ 19 -      Success - ../Graphics2D\PlatformGameDemo\PlatformGameDemo_Windows.sln
+ 20 -      Success - ../Graphics3D\AnimatedModel\AnimatedModel_Windows.sln
+ 21 -      Success - ../Graphics3D\AnimationSequence\AnimationSequence_Windows.sln
+ 22 -      Success - ../Graphics3D\Billboard\Billboard_Windows.sln
+ 23 -      Success - ../Graphics3D\CameraRenderTarget\CameraRengerTarget_Windows.sln
+ 24 -      Success - ../Graphics3D\CustomGeometry\CustomGeometry_Windows.sln
+ 25 -      Success - ../Graphics3D\IsisTemple\IsisTemple_Windows.sln
+ 26 -      Success - ../Graphics3D\KeyEventsAnimation\KeyEventsAnimation_Windows.sln
+ 27 -      Success - ../Graphics3D\LensFlare\LensFlare_Windows.sln
+ 28 -      Success - ../Graphics3D\Lighting\Lighting_Windows.sln
+ 29 -      Success - ../Graphics3D\Project\Project_Windows.sln
+ 30 -      Success - ../Graphics3D\RenderTarget\RenderTarget_Windows.sln
+ 31 -      Success - ../Graphics3D\Skybox\Skybox_Windows.sln
+ 32 -      Success - ../Input\Accelerometer\Accelerometer_Windows.sln
+ 33 -      Success - ../Input\Touch\Touch_Windows.sln
+ 34 -      Success - ../Input\XboxController\XBoxController_Windows.sln
+ 35 -      Success - ../Integrations\GUIIntegrations\TeapotSample_Windows.sln
+ 36 -      Success - ../Integrations\Xamarin_iOS\Xamarin_iOS_Windows.sln
+ 37 -      Success - ../Materials\CustomMaterial\CustomMaterial_Windows.sln
+ 38 -      Success - ../Materials\DisappearEffect\DisappearEffect_Windows.sln
+ 39 -      Success - ../Materials\EnviromentMap\EnvironmentMap_Windows.sln
+ 40 -      Success - ../Materials\IBLSample\IBLSample_Windows.sln
+ 41 -      Success - ../Materials\NormalMap\NormalMap_Windows.sln
+ 42 -      Success - ../Media\CameraCapture\CameraCapture_Windows.sln
+ 43 -      Success - ../Media\Microphone\Microphone_Windows.sln
+ 44 -      Success - ../Media\Music\Music_Windows.sln
+ 45 -      Success - ../Media\Sound3D\Sound3D_Windows.sln
+ 46 -      Success - ../Media\Sounds\Sounds_Windows.sln
+ 47 -      Success - ../Media\VideoPlayer\VideoPlayer_Windows.sln
+ 48 -      Success - ../Particles\ParticleSystem2D\ParticleSystem2D_Windows.sln
+ 49 -      Success - ../Particles\ParticleSystem3D\ParticleSystem3D_Windows.sln
+ 50 -      Success - ../Performance\DebugShapes\DebugShapes_Windows.sln
+ 51 -      Success - ../Performance\Diagnostics\Diagnostics_Windows.sln
+ 52 -      Success - ../Performance\FrustumCulling\FrustumCulling_Windows.sln
+ 53 -      Success - ../Performance\Loading\Loading_Windows.sln
+ 54 -      Success - ../Performance\StaticBatching\StaticBatching_Windows.sln
+ 55 -      Failed - ../Performance\TestingWaveBehaviors\TestingWaveBehaviors_Windows.sln
+ 56 -      Success - ../Physics2D\BasicPhysic2D\BasicPhysic2D_Windows.sln
+ 57 -      Success - ../Physics2D\Buoyancy\Buoyancy_Windows.sln
+ 58 -      Success - ../Physics2D\PhysicExplosion\PhysicExplosion_Windows.sln
+ 59 -      Success - ../Physics2D\StickyProjectiles\StickyProjectiles_Windows.sln
+ 60 -      Success - ../Physics2D\Tumbler\Tumbler_Windows.sln
+ 61 -      Success - ../Physics2D\VehiclePhysics2D\VehiclePhysics2D_Windows.sln
+ 62 -      Success - ../Physics3D\BasicRigidBody\BasicRigidBody_Windows.sln
+ 63 -      Success - ../Physics3D\Bounciness\Bounciness_Windows.sln
+ 64 -      Success - ../Physics3D\Entity3DCollision\Entity3DCollision_Windows.sln
+ 65 -      Success - ../Physics3D\Entity3DCollisionGroups\Entity3DCollisionGroups_Windows.sln
+ 66 -      Success - ../Physics3D\EntityPicking\EntityPicking_Windows.sln
+ 67 -      Success - ../Physics3D\FixedJoint\FixedJoint_Windows.sln
+ 68 -      Success - ../Physics3D\Friction\Friction_Windows.sln
+ 69 -      Success - ../Physics3D\HingeJoint\HingleJoint_Windows.sln
+ 70 -      Success - ../Physics3D\Jenga\Jenga_Windows.sln
+ 71 -      Success - ../Physics3D\MeshCollider\MeshCollider_Windows.sln
+ 72 -      Success - ../Physics3D\Motor3D\Motor3D_Windows.sln
+ 73 -      Success - ../Physics3D\Rope\Rope_Windows.sln
+ 74 -      Success - ../Physics3D\ServoMotor3D\ServoMotor3D_Windows.sln
+ 75 -      Success - ../Physics3D\StockRoom\StockRoom_Windows.sln
+ 76 -      Success - ../Physics3D\WallDemo\WallDemo_Windows.sln
+
+   Projects success: 76 / 77
+---------------------------------------------------------------------

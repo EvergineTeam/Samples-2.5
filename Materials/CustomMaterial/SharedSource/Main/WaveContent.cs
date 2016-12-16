@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/7/2016 3:30:22 PM
+// File generated on 16/12/2016 11:33:27
 namespace CustomMaterial
 {
     using System;

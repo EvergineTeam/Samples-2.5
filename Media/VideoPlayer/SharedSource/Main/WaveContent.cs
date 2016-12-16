@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/6/2016 10:52:09 AM
+// File generated on 16/12/2016 11:35:07
 namespace VideoPlayer
 {
     using System;

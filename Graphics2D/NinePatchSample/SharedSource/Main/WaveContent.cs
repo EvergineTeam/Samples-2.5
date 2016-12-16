@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 29/09/2016 16:03:33
+// File generated on 16/12/2016 11:30:01
 namespace NinePatchSample
 {
     using System;
@@ -16,6 +16,13 @@ namespace NinePatchSample
     
     public sealed class WaveContent
     {
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/ninePatchImage.9.png </summary>
+            public const string ninePatchImage_9_png = "Content/Assets/ninePatchImage.9.png";
+        }
         
         public sealed class Scenes
         {
