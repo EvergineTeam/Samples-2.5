@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 23/09/2016 12:32:08
+// File generated on 16/12/2016 10:16:58
 namespace Xamarin_iOS
 {
     using System;
