@@ -54,7 +54,7 @@ float4 psDisappear(VS_OUT input) : SV_Target0
 	float4 color = DiffuseTexture.Sample(Sampler1, input.TexCoord1);
 	float4 ramp = OpacityRamp.Sample(Sampler2, input.TexCoord2);
 
-	half test = ramp.z - Threshold;
+	half test = ramp.x - Threshold;
 
 	clip(test);
 

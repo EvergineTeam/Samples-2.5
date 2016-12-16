@@ -15,6 +15,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\GLSL\DisappearMaterial\psDisappear.frag" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\GLSL\DisappearMaterial\vsDisappear.vert" />
     <None Include="$(MSBuildThisFileDirectory)Shaders\HLSL\DisappearMaterial\DisappearMaterial.fx" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\DisappearMaterial\psDisappear.fxo" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\DisappearMaterial\vsDisappear.fxo" />

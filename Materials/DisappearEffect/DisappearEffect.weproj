@@ -14,6 +14,27 @@
               <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
             </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>LinuxProfile</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Linux</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>MacOSProfile</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>MacOS</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R4G4B4A4</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>AndroidProfile</Name>
+              <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
+              <Platform>Android</Platform>
+            </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
