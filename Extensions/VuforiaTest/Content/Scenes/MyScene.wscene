@@ -108,6 +108,7 @@
             <d6p1:Y>0</d6p1:Y>
           </Viewport>
           <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.78217816</AspectRatio>
+          <d5p1:renderVideoCameraBackground>true</d5p1:renderVideoCameraBackground>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VuforiaTest" i:type="d5p1:FireBehavior">
           <d4p1:IsActive>true</d4p1:IsActive>
@@ -1259,6 +1260,7 @@
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" i:nil="true" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -1282,8 +1284,8 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>726</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>628</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

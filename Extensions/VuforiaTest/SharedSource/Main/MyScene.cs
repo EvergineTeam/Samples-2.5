@@ -1,5 +1,6 @@
 #region Using Statements
 using System;
+using System.Diagnostics;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -29,14 +30,14 @@ namespace VuforiaTest
             var vuforiaService = WaveServices.GetService<VuforiaService>();
             if (vuforiaService != null && vuforiaService.IsSupported)
             {
-                vuforiaService.StartTrack();
-                vuforiaService.TrackNameChanged += this.OnTrackNameChanged;
+                vuforiaService.StartTrack(true);
+                vuforiaService.TrackNameChanged += VuforiaService_TrackNameChanged;
             }
         }
 
-        public void OnTrackNameChanged(string newTrackName)
+        private void VuforiaService_TrackNameChanged(object sender, string newTrackName)
         {
-            Console.WriteLine("TRACK: " + newTrackName);
+            Debug.WriteLine("TRACK: " + newTrackName);
         }
     }
 }
