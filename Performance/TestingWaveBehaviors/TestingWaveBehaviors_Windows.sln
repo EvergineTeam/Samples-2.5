@@ -6,8 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingWaveBehaviors", "Lau
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TestingWaveBehaviorsSource", "SharedSource\Main\TestingWaveBehaviorsSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{DCB9F1C7-1569-4AB5-A6BA-7711A50DD567}"
-EndProject
+#Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{DCB9F1C7-1569-4AB5-A6BA-7711A50DD567}"
+#EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SharedSource\Main\TestingWaveBehaviorsSource.projitems*{8f3605a3-8720-48f7-8799-a33cd4accb97}*SharedItemsImports = 4
