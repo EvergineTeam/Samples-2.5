@@ -28,8 +28,7 @@ namespace Networking.Scenes
 
         protected override void CreateScene()
         {
-            var camera2D = new FixedCamera2D("Camera2D") { BackgroundColor = Color.CornflowerBlue };
-            this.EntityManager.Add(camera2D);
+            this.Load(WaveContent.Scenes.MainScene);
 
             this.CreateUi();
         }
