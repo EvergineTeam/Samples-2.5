@@ -11,7 +11,7 @@ namespace TestProject
         [TestMethod]
         public void IfThereAreBulletsAShootSucceed()
         {
-            var fireControllerMock = new Mock<IFire>();
+            Mock<IFire> fireControllerMock = new Mock<IFire>();
 
             GunController controller = new GunController();
             controller.fireController = fireControllerMock.Object;
@@ -26,7 +26,7 @@ namespace TestProject
         [TestMethod]
         public void IfThereAreNoBullets_ShootFail()
         {
-            var fireControllerMock = new Mock<IFire>();
+            Mock<IFire> fireControllerMock = new Mock<IFire>();
 
             GunController controller = new GunController();
             controller.bulletsLeft = 0;
