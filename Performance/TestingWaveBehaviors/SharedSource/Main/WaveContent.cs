@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 25/01/2017 16:42:09
+// File generated on 07/02/2017 16:02:39
 namespace TestingWaveBehaviors
 {
     using System;
