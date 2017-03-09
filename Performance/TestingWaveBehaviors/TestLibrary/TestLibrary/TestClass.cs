@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TestingWaveBehaviors;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using TestingWaveBehaviors;
 
-namespace TestProject
+namespace TestLibrary
 {
     [TestClass]
     public class TestClass
@@ -34,7 +33,7 @@ namespace TestProject
 
             controller.ApplyFire();
 
-            fireControllerMock.Verify(c => c.Fire(), Times.Never);
+            fireControllerMock.Verify(c => c.Fire(), Times.Never);            
         }
     }
 }
