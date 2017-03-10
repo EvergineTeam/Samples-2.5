@@ -1,13 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
+﻿using Moq;
+using NUnit.Framework;
 using TestingWaveBehaviors;
 
 namespace TestLibrary
 {
-    [TestClass]
+    [TestFixture]
     public class TestClass
     {
-        [TestMethod]
+        [Test]
         public void IfThereAreBulletsAShootSucceed()
         {
             var fireControllerMock = new Mock<IFire>();
@@ -22,7 +22,7 @@ namespace TestLibrary
             fireControllerMock.Verify(c => c.Fire());
         }
 
-        [TestMethod]
+        [Test]
         public void IfThereAreNoBullets_ShootFail()
         {
             var fireControllerMock = new Mock<IFire>();
