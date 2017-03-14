@@ -28,7 +28,7 @@ let Exec command args =
 let RestorePackages solutionFile =
     RestoreMSSolutionPackages (fun p -> 
         { p with
-            Sources = "https://www.myget.org/F/waveengine-nightly/api/v2" :: p.Sources
+            Sources = ["https://www.myget.org/F/waveengine-nightly/api/v2"; "https://www.nuget.org/api/v2/"]
             Retries = 5 
             OutputPath = Path.Combine(getFolder solutionFile, "packages") }) solutionFile
 
@@ -99,7 +99,7 @@ let buildSample (platform: string, configuration : string, architecture : string
     | _-> ()
 
 let buildsamples(platform: string) =
-    for sample in Directory.GetFiles(rootFolder, ("*" + platform + "*.sln"), SearchOption.AllDirectories) do
+    for sample in Directory.GetFiles(rootFolder, ("*TestingWaveBehaviors_" + platform + "*.sln"), SearchOption.AllDirectories) do
         traceImportant ("Project " + sample)        
 
         let mutable flag = true
