@@ -3,6 +3,7 @@
   <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>defaultCamera3D</d2p1:name>
@@ -53,7 +54,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.39178085</d5p1:AspectRatio>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
           <d4p1:IsActive>true</d4p1:IsActive>
@@ -70,6 +71,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>defaultLight</d2p1:name>
@@ -101,11 +103,13 @@
             <d6p1:R>125</d6p1:R>
           </d5p1:Color>
           <d5p1:Intensity>1.5</d5p1:Intensity>
+          <d5p1:IsLightEnabled>true</d5p1:IsLightEnabled>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>defaultCamera2D</d2p1:name>
@@ -199,6 +203,7 @@
                       <d2p1:SerializeChildrens>
                         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
                           <d2p1:SerializeChildrens />
+                          <d2p1:isDisabled>false</d2p1:isDisabled>
                           <d2p1:isStatic>false</d2p1:isStatic>
                           <d2p1:isVisible>false</d2p1:isVisible>
                           <d2p1:name>cube2</d2p1:name>
@@ -206,15 +211,15 @@
                           <d2p1:SerializeComponents xmlns:d14p1="WaveEngine.Framework">
                             <d14p1:Component xmlns:d15p1="WaveEngine.Framework.Graphics" i:type="d15p1:Transform3D">
                               <d15p1:LocalOrientation xmlns:d16p1="WaveEngine.Common.Math">
-                                <d16p1:W>0.995342851</d16p1:W>
-                                <d16p1:X>0</d16p1:X>
-                                <d16p1:Y>0</d16p1:Y>
-                                <d16p1:Z>0.09639746</d16p1:Z>
+                                <d16p1:W>0.9979505</d16p1:W>
+                                <d16p1:X>1.71659866E-15</d16p1:X>
+                                <d16p1:Y>-4.902136E-15</d16p1:Y>
+                                <d16p1:Z>0.0639939457</d16p1:Z>
                               </d15p1:LocalOrientation>
                               <d15p1:LocalPosition xmlns:d16p1="WaveEngine.Common.Math">
-                                <d16p1:X>-1.99197784E-05</d16p1:X>
-                                <d16p1:Y>-35.4446144</d16p1:Y>
-                                <d16p1:Z>4.12078E-19</d16p1:Z>
+                                <d16p1:X>-0.3874564</d16p1:X>
+                                <d16p1:Y>-34.12114</d16p1:Y>
+                                <d16p1:Z>1.67265916E-05</d16p1:Z>
                               </d15p1:LocalPosition>
                               <d15p1:LocalScale xmlns:d16p1="WaveEngine.Common.Math">
                                 <d16p1:X>10</d16p1:X>
@@ -240,6 +245,7 @@
                           </d2p1:SerializeComponents>
                         </d2p1:BaseEntityModel>
                       </d2p1:SerializeChildrens>
+                      <d2p1:isDisabled>false</d2p1:isDisabled>
                       <d2p1:isStatic>false</d2p1:isStatic>
                       <d2p1:isVisible>true</d2p1:isVisible>
                       <d2p1:name>zone3</d2p1:name>
@@ -247,10 +253,10 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1</d14p1:W>
-                            <d14p1:X>-2.11758237E-22</d14p1:X>
-                            <d14p1:Y>5.194E-15</d14p1:Y>
-                            <d14p1:Z>1.0998723E-36</d14p1:Z>
+                            <d14p1:W>0.9710029</d14p1:W>
+                            <d14p1:X>-1.24171441E-15</d14p1:X>
+                            <d14p1:Y>5.043388E-15</d14p1:Y>
+                            <d14p1:Z>-0.239067346</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>-30.7989712</d14p1:X>
@@ -291,13 +297,10 @@
                           <d12p1:IsVisible>true</d12p1:IsVisible>
                           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
                         </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/AnimationSequence.Animations" i:type="d13p1:Animation3DBehavior">
-                          <d12p1:IsActive>true</d12p1:IsActive>
-                          <d12p1:UpdateOrder>0.5</d12p1:UpdateOrder>
-                        </d12p1:Component>
                       </d2p1:SerializeComponents>
                     </d2p1:BaseEntityModel>
                   </d2p1:SerializeChildrens>
+                  <d2p1:isDisabled>false</d2p1:isDisabled>
                   <d2p1:isStatic>false</d2p1:isStatic>
                   <d2p1:isVisible>true</d2p1:isVisible>
                   <d2p1:name>zone2</d2p1:name>
@@ -305,10 +308,10 @@
                   <d2p1:SerializeComponents xmlns:d10p1="WaveEngine.Framework">
                     <d10p1:Component xmlns:d11p1="WaveEngine.Framework.Graphics" i:type="d11p1:Transform3D">
                       <d11p1:LocalOrientation xmlns:d12p1="WaveEngine.Common.Math">
-                        <d12p1:W>0.9848077</d12p1:W>
+                        <d12p1:W>0.9985867</d12p1:W>
                         <d12p1:X>0</d12p1:X>
                         <d12p1:Y>0</d12p1:Y>
-                        <d12p1:Z>-0.173648164</d12p1:Z>
+                        <d12p1:Z>-0.0531583056</d12p1:Z>
                       </d11p1:LocalOrientation>
                       <d11p1:LocalPosition xmlns:d12p1="WaveEngine.Common.Math">
                         <d12p1:X>0</d12p1:X>
@@ -349,13 +352,10 @@
                       <d10p1:IsVisible>true</d10p1:IsVisible>
                       <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
                     </d10p1:Component>
-                    <d10p1:Component xmlns:d11p1="http://schemas.datacontract.org/2004/07/AnimationSequence.Animations" i:type="d11p1:Animation3DBehavior">
-                      <d10p1:IsActive>true</d10p1:IsActive>
-                      <d10p1:UpdateOrder>0.5</d10p1:UpdateOrder>
-                    </d10p1:Component>
                   </d2p1:SerializeComponents>
                 </d2p1:BaseEntityModel>
               </d2p1:SerializeChildrens>
+              <d2p1:isDisabled>false</d2p1:isDisabled>
               <d2p1:isStatic>false</d2p1:isStatic>
               <d2p1:isVisible>true</d2p1:isVisible>
               <d2p1:name>zone1</d2p1:name>
@@ -363,10 +363,10 @@
               <d2p1:SerializeComponents xmlns:d8p1="WaveEngine.Framework">
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Transform3D">
                   <d9p1:LocalOrientation xmlns:d10p1="WaveEngine.Common.Math">
-                    <d10p1:W>1</d10p1:W>
+                    <d10p1:W>0.9992762</d10p1:W>
                     <d10p1:X>0</d10p1:X>
                     <d10p1:Y>0</d10p1:Y>
-                    <d10p1:Z>0</d10p1:Z>
+                    <d10p1:Z>0.03803996</d10p1:Z>
                   </d9p1:LocalOrientation>
                   <d9p1:LocalPosition xmlns:d10p1="WaveEngine.Common.Math">
                     <d10p1:X>-0.955404043</d10p1:X>
@@ -407,13 +407,10 @@
                   <d8p1:IsVisible>true</d8p1:IsVisible>
                   <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
                 </d8p1:Component>
-                <d8p1:Component xmlns:d9p1="http://schemas.datacontract.org/2004/07/AnimationSequence.Animations" i:type="d9p1:Animation3DBehavior">
-                  <d8p1:IsActive>true</d8p1:IsActive>
-                  <d8p1:UpdateOrder>0.5</d8p1:UpdateOrder>
-                </d8p1:Component>
               </d2p1:SerializeComponents>
             </d2p1:BaseEntityModel>
           </d2p1:SerializeChildrens>
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>zone0</d2p1:name>
@@ -424,7 +421,7 @@
                 <d8p1:W>1</d8p1:W>
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
+                <d8p1:Z>-0</d8p1:Z>
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
@@ -465,13 +462,10 @@
               <d6p1:IsVisible>true</d6p1:IsVisible>
               <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
             </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/AnimationSequence.Animations" i:type="d7p1:Animation3DBehavior">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-            </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>base</d2p1:name>
@@ -523,6 +517,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>floor</d2p1:name>
@@ -565,6 +560,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>cube1</d2p1:name>
@@ -607,6 +603,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>light</d2p1:name>
@@ -638,6 +635,7 @@
             <d6p1:R>162</d6p1:R>
           </d5p1:Color>
           <d5p1:Intensity>0.8</d5p1:Intensity>
+          <d5p1:IsLightEnabled>true</d5p1:IsLightEnabled>
           <d5p1:lightConeAngle>1.5</d5p1:lightConeAngle>
           <d5p1:lightRange>200</d5p1:lightRange>
         </d4p1:Component>
@@ -648,6 +646,7 @@
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -656,8 +655,8 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>637</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
       <d3p1:KeyValueOfstringanyType>
