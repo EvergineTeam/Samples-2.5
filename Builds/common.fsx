@@ -99,7 +99,7 @@ let buildSample (platform: string, configuration : string, architecture : string
     | _-> ()
 
 let buildsamples(platform: string) =
-    for sample in Directory.GetFiles(rootFolder, ("*TestingWaveBehaviors_" + platform + "*.sln"), SearchOption.AllDirectories) do
+    for sample in Directory.GetFiles(rootFolder, ("*" + platform + "*.sln"), SearchOption.AllDirectories) do
         traceImportant ("Project " + sample)        
 
         let mutable flag = true
