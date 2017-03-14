@@ -28,8 +28,7 @@ namespace TestingWaveBehaviors
         }
 
         protected override void Update(TimeSpan gameTime)
-        {
-            var keyboardState = WaveServices.Input.KeyboardState;
+        {            
             var mouseState = WaveServices.Input.MouseState;
 
             this.Transform.X = mouseState.X;
