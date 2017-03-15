@@ -63,6 +63,12 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Launchers\MacOSProfile\TestingWaveBehaviors.csproj">
+      <Project>{F3CC4527-43AF-41CB-94C1-BFF310D5726A}</Project>
+      <Name>TestingWaveBehaviors</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -71,10 +77,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <ProjectReference Include="..\Launchers\LinuxProfile\TestingWaveBehaviors.csproj">
-      <Project>{D5CB11BC-0227-42AF-BE20-306B5744F50C}</Project>
-      <Name>TestingWaveBehaviors</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
