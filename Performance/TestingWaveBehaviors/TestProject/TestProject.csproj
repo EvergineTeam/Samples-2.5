@@ -64,8 +64,8 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Launchers\MacOSProfile\TestingWaveBehaviors.csproj">
-      <Project>{F3CC4527-43AF-41CB-94C1-BFF310D5726A}</Project>
+    <ProjectReference Include="..\Launchers\Windows\TestingWaveBehaviors.csproj">
+      <Project>{8f3605a3-8720-48f7-8799-a33cd4accb97}</Project>
       <Name>TestingWaveBehaviors</Name>
     </ProjectReference>
   </ItemGroup>
