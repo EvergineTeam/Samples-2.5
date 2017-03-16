@@ -18,7 +18,7 @@ namespace VuforiaTest
             ScreenContext screenContext = new ScreenContext(new MyScene());
             WaveServices.ScreenContextManager.To(screenContext);
 
-            string liscenseKey = "Afv3YtH/////AAAAAd6O5swHskO5iA9kEPTrLhUfL0+AXF0Kmbc37H865djR8OyOWZxNgHLluSS1NML85StoInIgPw/UPEmcMfjV6KNwSn/enTSseboJxd8zrYfPY8v4iuhuZlyJ7K918/xnwDUS17Qx3o/6Fx2eVqU4puzoZNsLoMhpFTZbBgrpbZ5aCsLhz0jxsVZO729c6EXPZvMgLDaseU3DRgbSbk4cnn8LiQNhpeYVo5sxl3eqZKnu4HyDLhdCuGdtKEOChFKQShd7QcXnlxijV7+q6j1yI8GP8H75YFg5kYXf5nDquvbOGX7tXU17E/x62mRW+U0rJJ9ZYCQ857eo+PPKL4ZsEpAvGURGYpeSxtFgH0L8uyQ0";
+            string liscenseKey = "AeRNu+n/////AAAAGfmXotSIvkSQp6D3annJaEEIdl9kN9/8PT8UYO0GOlbvz/n/w4oqvYxTLeLJ/mcx6ulZ+nPitOux8SEyXlTbeYvrM7qO63OkYLluwhT/ULICxNp+z9UIKaLiJDPSKdBdlH3h0I2xzzmo46D7urlvhOxt0l+sNDchaqrQLbV2o7lkvnhGJCzAQl/ZDjsYrEWU+98ZT45DSMNBnHOuvnG1IDoQpsdW7e58yH7bwxqLSbCoBJqWD0iFL9IBXrkbOtrqyrA0UCDqeKl8JeIb4+UKQKJR+WV6Hdml3FafdiDAUoPBwK92363ndni2ai+fEtkTmJFRUxJunoaqEpzC6kr1QYvL/d7JwaBCGfZRKfcp7QD1";
             WaveServices.RegisterService(new VuforiaService(WaveContent.Assets.AR.TestVuforia_xml, liscenseKey));
         }
     }

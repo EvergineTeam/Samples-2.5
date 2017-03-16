@@ -17,26 +17,9 @@ namespace AnimationSequence
         {
             this.Load(WaveContent.Scenes.Scene1);
 
-            AnimationSlot animationSlot1 = new AnimationSlot()
-            {
-                TransformationType = AnimationSlot.TransformationTypes.Position,
-                TotalTime = TimeSpan.FromSeconds(1.5f),
-                StartPosition = new Vector3(0, 0, 0),
-                EndPosition = new Vector3(0, 2, 0),
-            };
-
-            AnimationSlot animationSlot2 = new AnimationSlot()
-            {
-                TransformationType = AnimationSlot.TransformationTypes.Rotation,
-                TotalTime = TimeSpan.FromSeconds(1.5f),
-                StartRotation = new Vector3(0, 0, 0),
-                EndRotation = new Vector3(0, (float)Math.PI * 2, 0),
-            };
-
-            Animation3DBehavior cubeAnimationBehavior = this.EntityManager.Find("cube").FindComponent<Animation3DBehavior>();
-
-            this.animationSequence = this.CreateGameAction(this.CreateGameAction(new Animation3DGameAction(animationSlot1, cubeAnimationBehavior)))
-                                                    .ContinueWith(new Animation3DGameAction(animationSlot2, cubeAnimationBehavior));
+            var cube = this.EntityManager.Find("cube");
+            this.animationSequence = new MoveTo3DGameAction(cube, new Vector3(0, 2, 0), TimeSpan.FromSeconds(1.5), EaseFunction.SineInOutEase)
+                .ContinueWith(new RotateTo3DGameAction(cube, new Vector3(0, (float)Math.PI * 2, 0), TimeSpan.FromSeconds(1.5), EaseFunction.SineInOutEase));
         }
 
         protected override void Start()

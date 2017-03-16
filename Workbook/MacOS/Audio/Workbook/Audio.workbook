@@ -1,0 +1,98 @@
+---
+uti: com.xamarin.workbook
+platform: MacNet45
+packages: []
+---
+
+## WaveEngine Audio sample workbook
+
+WaveEngine also supports 3D sounds, wich is not covered on this recipe. 
+
+This workbook will show you how to play sound and music using WaveEngine audio service.
+
+```csharp
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
+```
+
+Now we will load some namespaces.
+
+```csharp
+using WaveEngine.Framework; 
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Materials;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras; 
+using WaveEngine.Adapter; 
+using WaveEngine.Framework.Services;
+using WaveEngine.Common.Media;
+using WaveEngine.Framework.Sound;
+```
+
+And we will create a basic application structure. Aplication contains a game class and this game class can handle one or more scenes.
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene() {}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+var app = await SimpleApp.RunAsync(game);
+```
+
+Once the application is created we can add the code to create a set of sounds in a soundbank. The sound files were added throught WaveVisualEditor.
+
+```csharp
+System.Environment.CurrentDirectory
+```
+
+```csharp
+var soundBank = new SoundBank();
+            
+var sound = new SoundInfo("Content/Assets/Pistol.wav");
+var sound2 = new SoundInfo("Content/Assets/Sell.wav");
+var sound3 = new SoundInfo("Content/Assets/Upgrade.wav");
+
+soundBank.Add(sound);
+soundBank.Add(sound2);
+soundBank.Add(sound3);
+
+WaveServices.SoundPlayer.RegisterSoundBank(soundBank);
+```
+
+Now we can play sounds from soundbank by SoundPlayer service.
+
+```csharp
+WaveServices.SoundPlayer.Play(sound);
+```
+
+```csharp
+WaveServices.SoundPlayer.Play(sound2);
+```
+
+```csharp
+WaveServices.SoundPlayer.Play(sound3);
+```

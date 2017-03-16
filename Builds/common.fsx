@@ -2,6 +2,7 @@ module Common
 #r @"FAKE.3.26.1/tools/FakeLib.dll"
 
 open Fake
+open Fake.Git
 open Fake.XamarinHelper
 open System
 open System.Collections.Generic
@@ -27,7 +28,7 @@ let Exec command args =
 let RestorePackages solutionFile =
     RestoreMSSolutionPackages (fun p -> 
         { p with
-            Sources = "https://www.myget.org/F/waveengine-nightly/api/v2" :: p.Sources
+            Sources = ["https://www.myget.org/F/waveengine-nightly/api/v2"; "https://www.nuget.org/api/v2/"]
             Retries = 5 
             OutputPath = Path.Combine(getFolder solutionFile, "packages") }) solutionFile
 
@@ -99,7 +100,7 @@ let buildSample (platform: string, configuration : string, architecture : string
 
 let buildsamples(platform: string) =
     for sample in Directory.GetFiles(rootFolder, ("*" + platform + "*.sln"), SearchOption.AllDirectories) do
-        traceImportant ("Project " + sample)
+        traceImportant ("Project " + sample)        
 
         let mutable flag = true
 
@@ -115,5 +116,9 @@ let buildsamples(platform: string) =
             | _ -> flag <- false
         
         processResults sample flag
+
+        let sampleFolder = System.IO.Path.GetDirectoryName(sample)
+        traceImportant ("git clean -xdf " + sampleFolder)        
+        sprintf "clean -xdf" |> gitCommand sampleFolder
 
     printReport items

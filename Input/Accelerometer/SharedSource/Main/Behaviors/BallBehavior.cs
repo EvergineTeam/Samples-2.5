@@ -92,10 +92,7 @@ namespace AccelerometerProject.Behaviors
 
             Transform.Position = newPosition;
             seconds = 0f;
-            weight = random.Next(1, 10) / 10f;
-
-            WaveServices.Input.DisplayOrientationState.Orientation = DisplayOrientation.LandscapeLeft;
-
+            weight = random.Next(1, 10) / 10f;            
         }
     }
 }

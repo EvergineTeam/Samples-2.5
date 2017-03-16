@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/5/2016 4:49:50 PM
+// File generated on 07/02/2017 15:59:01
 namespace Touch
 {
     using System;

@@ -1,0 +1,170 @@
+---
+uti: com.xamarin.workbook
+platform: MacNet45
+packages: []
+---
+
+### Add a 3D Particle System with WaveEngine
+
+Particle systems allow us to give dynamism to a game by creating good-looking effects.
+
+Whitin this woorbook you will learn how to create a 3D particles system in your game and how to customize its looking to fit your effect needs.
+
+First we need to load some required assemblies.
+
+```csharp
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
+```
+
+Now we will load some namespaces.
+
+```csharp
+using WaveEngine.Framework; 
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Materials;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Adapter; 
+using WaveEngine.Framework.Services;
+using WaveEngine.Components.Particles;
+```
+
+And we will create a basic application structure. Aplication contains a game class and this game class can handle one or more scenes.
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene() {	}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+var app = await SimpleApp.RunAsync(game);
+```
+
+```csharp
+game.scene.Load("Content/Scenes/fountain.wscene");
+```
+
+Once the application is created we can see a simple scene with a fountain in the center. We are going to add a particle system to simulate water flowing from the fountain.
+
+First create a ParticleSystem3D component:
+
+```csharp
+ParticleSystem3D pSystem = new ParticleSystem3D()
+{
+	Emit = true,
+	NumParticles = 300,
+	EmitRate = 0,    
+    MinLife = 0.2f,
+    MaxLife = 1.0f,	
+    LocalVelocity = new Vector3(0.0f, 0.3f, 0.0f),
+    RandomVelocity = new Vector3(0.1f, 0.1f, 0.1f),
+    MinSize = 0.05f,
+    MaxSize = 0.1f,
+    EndDeltaScale = 0.0f,
+    EmitterSize = new Vector2(0.1f),
+    EmitterShape = ParticleSystem3D.Shape.FillCircle,	
+};
+```
+
+And then create a Entity and add the particleSystem3D component and a particleSystemRenderer3D:
+
+```csharp
+Entity particleEmitter = new Entity()
+		.AddComponent(new Transform3D() { LocalPosition = new Vector3(0, 4.46f,0) })
+	    .AddComponent(new MaterialsMap() { DefaultMaterialPath = "Content/Assets/Materials/waterSpark.wmat"})
+		.AddComponent(pSystem)
+	    .AddComponent(new ParticleSystemRenderer3D());
+game.scene.EntityManager.Add(particleEmitter);
+```
+
+**Properties**
+
+The ParticleSystem3D component has a lots of property that allow you configurate your custom effect:
+
+**NumParticles**: Maximum amount of particles generated at same time.
+
+**EmitRate**: Particles emitted per second.
+
+**MinLife / MaxLife**: Minimum and maximum, respectivelly, live tiem on each particle.
+
+**Gravity**: Direction and strength of the gravity effect.
+
+**LocalVelocity**: Space the particles will move in X, Y and Z axes.
+
+**RandomVelocity**: Velocity spent randomly on particles (independent between those).
+
+**MinSize / MaxSize**: Minimum and maximum, respectivelly, size each particle can have.
+
+**EndDeltaScale**: Scale the particle will have just before dying.
+
+**EmitterSize**: Particle source size.
+
+**EmitterShape**: The shape the emitter will have: rectangle (its edges), fileed rectangle, circle (its perimeter) or filled circle.
+
+We are going to play with some particle system properties:
+
+**Emit**
+
+Indicate whether particle system emit particles or not
+
+```csharp
+pSystem.NumParticles = 5;
+```
+
+```csharp
+pSystem.NumParticles = 350;
+```
+
+#### **Gravity**
+
+Direction and strength of the gravity effect
+
+```csharp
+pSystem.Gravity = new Vector3(0.0f,-0.02f,0.0f);
+```
+
+#### Collision
+
+Finally we are going to set collision plane to particle system, so we need add some additional parameters:
+
+**CollisionBehavior**: What happens on collision: bounce or die.
+
+**CollisionType**: Limits bounding box defined in CollisionMin/CollisionMax.
+
+**CollisionMin/CollisionMax:** Ends which define a bounding box to detect collisions between particles.
+
+**Bounciness**: Value between 0 and 1 indicating losses of energy before bounce.
+
+```csharp
+pSystem.CollisionType = ParticleSystem3D.ParticleCollisionFlags.MinY;
+pSystem.CollisionMin = new Vector3(0,1,0);
+pSystem.CollisionBehavior = ParticleSystem3D.ParticleCollisionBehavior.Bounce;
+pSystem.Bounciness = 0.3f;
+```
+
+#### Conclusion
+
+We have learned how to add a 3D particles system, and which are the most relevant properties to customize it.

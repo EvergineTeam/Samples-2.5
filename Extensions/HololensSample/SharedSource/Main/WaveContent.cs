@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 22/08/2016 8:46:09
+// File generated on 07/02/2017 15:53:42
 namespace HololensSample
 {
     using System;

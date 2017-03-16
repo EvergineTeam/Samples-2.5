@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 9/6/2016 1:53:59 PM
+// File generated on 07/02/2017 15:54:15
 namespace LeapMotionSample
 {
     using System;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
@@ -93,11 +94,7 @@ namespace Networking.Scenes
 
         protected override void CreateScene()
         {
-            var camera2D = new FixedCamera2D("Camera2D")
-            {
-                BackgroundColor = Color.CornflowerBlue
-            };
-            this.EntityManager.Add(camera2D);
+            this.Load(WaveContent.Scenes.SelectPlayerScene);
 
             this.messageTextBlock = new TextBlock()
             {
@@ -109,21 +106,13 @@ namespace Networking.Scenes
             };
             this.EntityManager.Add(this.messageTextBlock);
 
-            this.playerEntity = new Entity("SelectedPlayer")
-                .AddComponent(new Transform2D
-                {
-                    Position = new Vector2(100, 100),
-                })
-                .AddComponent(new Sprite())
-                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha));
-            this.EntityManager.Add(this.playerEntity);
-
             this.SendHelloToServer();
         }
 
         private void SendHelloToServer()
         {
-            messageTextBlock.Text = "Waiting player assignment...";
+            this.messageTextBlock.Text = "Waiting player assignment...";
+
             //The player send a random sprite index to the host. The host return the assigned player.
             this.SelectPlayer(WaveServices.Random.Next(MinSpriteIndex, MaxSpriteIndex));
         }
@@ -180,8 +169,10 @@ namespace Networking.Scenes
 
         private void PlayerSelected(int playerSpriteIndex)
         {
-            //Show my selected sprite.
-            this.playerEntity.FindComponent<Sprite>().TexturePath = string.Format("Content/Assets/c{0}.png", playerSpriteIndex);
+            // Set player entity texture
+            this.playerEntity = this.EntityManager.Find("PlayerEntity");
+            var spriteAtlas = this.playerEntity.FindComponent<SpriteAtlas>();
+            spriteAtlas.TextureName = string.Format("c{0}", playerSpriteIndex);
             this.playerEntity.IsVisible = true;
 
             //Wait 3 seconds and start game.

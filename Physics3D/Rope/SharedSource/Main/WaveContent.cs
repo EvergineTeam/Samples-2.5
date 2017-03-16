@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 1/19/2016 9:12:38 AM
+// File generated on 07/02/2017 16:05:23
 namespace Rope
 {
     using System;
@@ -16,6 +16,16 @@ namespace Rope
     
     public sealed class WaveContent
     {
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/checkered.jpg </summary>
+            public const string checkered_jpg = "Content/Assets/checkered.jpg";
+            
+            /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
+            public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
+        }
         
         public sealed class Scenes
         {

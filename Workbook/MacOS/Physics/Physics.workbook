@@ -1,0 +1,142 @@
+---
+uti: com.xamarin.workbook
+platform: MacNet45
+packages: []
+---
+
+### WaveEngine Physic Entities sample workbook
+
+First we need to load some required assemblies.
+
+```csharp
+#r "WaveEngine.Common"
+#r "WaveEngine.Adapter"
+#r "WaveEngine.Framework"
+#r "WaveEngine.Components"
+#r "WaveEngine.Materials"
+```
+
+Now we will load some namespaces.
+
+```csharp
+using WaveEngine.Framework; 
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Materials;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras; 
+using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Physics3D;
+```
+
+And we will create an Scene class to spawn the physic entities.We need to create the new Entity and append it the Transform3D, model, material and renderer components.
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene() { }
+}
+```
+
+WaveEngine will run by a Game class to instantiate the MyScene class and **initialize** the context.
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+WaveEngine.Adapter.SimpleApp.Run(game);
+```
+
+Once the application is created we can create and add a basic camera3D entity. To make it easy we will use the decorator **FreeCamera3D**, which builds a new entity with all the required components.
+
+```csharp
+var camera = new FreeCamera3D("Main", new Vector3(0,1,2.5f), Vector3.Zero)
+{ 
+	BackgroundColor = Color.CornflowerBlue 
+};
+
+game.scene.EntityManager.Add(camera.Entity);
+```
+
+We are going to add a directional light using a similar way. Remember will need to add the **LightingEnabled** property in the Material of every entitity to see the effect.
+
+```csharp
+var light = new WaveEngine.Framework.Graphics.DirectionalLight("light1", new Vector3(0.1f, 0.1f, 0.4f));
+
+game.scene.EntityManager.Add(light.Entity);
+```
+
+And finally we are going to add the physic entities. This time we are going to build a physic floor of white color. The floor should not fall by gravity as other entities do, so the floor will be a **Kinematic RigidBody**.
+
+```csharp
+Entity floor = new Entity()
+	.AddComponent(new Transform3D() 
+		{ 
+			Position = new Vector3(0.0f, -1.0f, 0.0f), 
+			Scale = new Vector3(3f, 1f, 3f) 
+		})
+	.AddComponent(Model.CreatePlane())
+	.AddComponent(new MaterialsMap(new StandardMaterial() 
+		{ 
+			LightingEnabled = true, 
+			DiffuseColor = Color.White 
+		}))
+	.AddComponent(new BoxCollider3D() )
+	.AddComponent(new RigidBody3D() { IsKinematic = true })
+	.AddComponent(new ModelRenderer());
+```
+
+```csharp
+game.scene.EntityManager.Add(floor);
+```
+
+We can play with application by creating some entites.
+
+```csharp
+Entity sphere = new Entity()
+	.AddComponent(new Transform3D()
+	{
+		Position = new Vector3(0.0f, 3.0f, 0.0f)
+	})
+	.AddComponent(Model.CreateSphere(0.5f))
+	.AddComponent(new SphereCollider3D())
+	.AddComponent(new RigidBody3D() { Restitution = 0.5f })
+	.AddComponent(new MaterialsMap(new StandardMaterial() { LightingEnabled = true, DiffuseColor = Color.Blue }))
+	.AddComponent(new ModelRenderer());
+
+game.scene.EntityManager.Add(sphere);
+```
+
+Or try other entity shapes.
+
+```csharp
+Entity box = new Entity()
+	.AddComponent(new Transform3D()
+	{
+		Position = new Vector3(0.0f, 2.0f, 0.0f),
+		Rotation = new Vector3(1, 1, 1)
+	})
+	.AddComponent(Model.CreateCube(0.5f))
+	.AddComponent(new BoxCollider3D())
+	.AddComponent(new RigidBody3D())
+	.AddComponent(new MaterialsMap(new StandardMaterial() { LightingEnabled = true, DiffuseColor = Color.Red }))
+	.AddComponent(new ModelRenderer());
+
+game.scene.EntityManager.Add(box);
+```
+
+We can also add entities with other shapes and sizes to create complex a world and games. We add a FreeCamera3D, you can move the camera around the scene using mouse and WASD keyboard keys. **Enjoy**.

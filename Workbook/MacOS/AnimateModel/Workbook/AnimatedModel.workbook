@@ -1,0 +1,107 @@
+---
+uti: com.xamarin.workbook
+platform: MacNet45
+packages: []
+---
+
+### WaveEngine 3D animations
+
+In this workbook we are going to learn how to play 3d animations and how to add key events in a specific frame. \
+\
+First load the basic libraries.
+
+```csharp
+#r "WaveEngine.Common.dll"
+#r "WaveEngine.Adapter.dll"
+#r "WaveEngine.Framework.dll"
+#r "WaveEngine.Components.dll"
+#r "WaveEngine.Materials.dll"
+```
+
+Now we are going to create a simple application.
+
+```csharp
+using WaveEngine.Framework; 
+using WaveEngine.Framework.Services; 
+using WaveEngine.Common.Graphics;
+```
+
+```csharp
+public class MyScene : Scene
+{
+	protected override void CreateScene()	{	}
+}
+```
+
+```csharp
+public class MyGame : WaveEngine.Framework.Game
+{
+	public MyScene scene;
+	
+	public override void Initialize(WaveEngine.Common.IApplication application)
+	{
+		base.Initialize(application);
+
+		this.scene = new MyScene();
+		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
+	}
+}
+```
+
+```csharp
+MyGame game = new MyGame();
+```
+
+```csharp
+var directory = WaveEngine.Adapter.SimpleApp.GetCurrentDirectory();
+```
+
+```csharp
+WaveEngine.Adapter.SimpleApp.Run(game);
+```
+
+```csharp
+game.scene.Load("Content/Scenes/MyScene.wscene");
+```
+
+**Animations** \
+Once the application is running we can get the model and Animation3D component reference.
+
+```csharp
+var model = game.scene.EntityManager.Find("model");
+```
+
+```csharp
+using WaveEngine.Components.Animation;
+```
+
+```csharp
+var animation3D = model.FindComponent<Animation3D>();
+```
+
+```csharp
+animation3D.CurrentAnimation;
+```
+
+We will play one of the model animations and change some of its parameters, for example change the value of the FramePerSeconds property.
+
+```csharp
+animation3D.PlayAnimation("Walk");
+```
+
+```csharp
+animation3D.CurrentAnimation;
+```
+
+```csharp
+animation3D.FramesPerSecond
+```
+
+```csharp
+animation3D.State
+```
+
+```csharp
+animation3D.StopAnimation();
+```
+
