@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 16/12/2016 11:30:01
+// File generated on 3/14/2017 3:41:06 PM
 namespace NinePatchSample
 {
     using System;

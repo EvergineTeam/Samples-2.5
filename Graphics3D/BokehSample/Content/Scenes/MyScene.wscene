@@ -3,6 +3,7 @@
   <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>defaultLight</d2p1:name>
@@ -34,6 +35,7 @@
             <d6p1:R>255</d6p1:R>
           </d5p1:Color>
           <d5p1:Intensity>1</d5p1:Intensity>
+          <d5p1:IsLightEnabled>true</d5p1:IsLightEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
@@ -43,6 +45,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>model</d2p1:name>
@@ -87,6 +90,7 @@
       <d2p1:SerializeChildrens>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isActive>true</d2p1:isActive>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>defaultCamera3D</d2p1:name>
@@ -152,16 +156,19 @@
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.ImageEffects" i:type="d7p1:BokehLens">
               <d7p1:Active>true</d7p1:Active>
-              <d7p1:FStops>0.5</d7p1:FStops>
-              <d7p1:FilmWidth>0.026</d7p1:FilmWidth>
+              <d7p1:FStops>3.7</d7p1:FStops>
+              <d7p1:FilmWidth>0.6</d7p1:FilmWidth>
               <d7p1:FocalDistance>6.5</d7p1:FocalDistance>
-              <d7p1:FocalLength>0.107</d7p1:FocalLength>
-              <d7p1:MaxBlur>0.024</d7p1:MaxBlur>
+              <d7p1:FocalLength>8.7</d7p1:FocalLength>
+              <d7p1:MaxBlur>18.8</d7p1:MaxBlur>
               <d7p1:Quality>High</d7p1:Quality>
+              <d7p1:ShineAmount>1</d7p1:ShineAmount>
+              <d7p1:ShineThreshold>0.5</d7p1:ShineThreshold>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>cameraCenter</d2p1:name>
@@ -186,7 +193,7 @@
           </d5p1:LocalScale>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d4p1:IsActive>true</d4p1:IsActive>
+          <d4p1:IsActive>false</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -198,6 +205,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>skydome</d2p1:name>
@@ -240,6 +248,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>particle3D</d2p1:name>
@@ -297,6 +306,7 @@
             <d6p1:X>10</d6p1:X>
             <d6p1:Y>10</d6p1:Y>
           </d5p1:EmitterSize>
+          <d5p1:EndDeltaScale>0</d5p1:EndDeltaScale>
           <d5p1:Gravity xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -344,6 +354,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>particle3D01</d2p1:name>
@@ -401,6 +412,7 @@
             <d6p1:X>10</d6p1:X>
             <d6p1:Y>10</d6p1:Y>
           </d5p1:EmitterSize>
+          <d5p1:EndDeltaScale>0</d5p1:EndDeltaScale>
           <d5p1:Gravity xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -448,6 +460,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isActive>true</d2p1:isActive>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>particle3D02</d2p1:name>
@@ -505,6 +518,7 @@
             <d6p1:X>10</d6p1:X>
             <d6p1:Y>10</d6p1:Y>
           </d5p1:EmitterSize>
+          <d5p1:EndDeltaScale>0</d5p1:EndDeltaScale>
           <d5p1:Gravity xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -551,6 +565,7 @@
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>

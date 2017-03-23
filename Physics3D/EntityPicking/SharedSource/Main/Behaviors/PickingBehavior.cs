@@ -106,7 +106,7 @@ namespace EntityPicking.Behaviors
                 }
 
                 // Left Button Released
-                if (this.mouseState.LeftButton == ButtonState.Release && continousPressed)
+                if (this.mouseState.LeftButton == ButtonState.Released && continousPressed)
                 {
                     this.RemoveSelected();
                 }

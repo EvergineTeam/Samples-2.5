@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 16/12/2016 11:38:46
+// File generated on 07/02/2017 16:04:37
 namespace Friction
 {
     using System;
