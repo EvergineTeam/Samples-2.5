@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsProfileSample", "Launchers\AndroidProfile\XamarinFormsProfileSample.csproj", "{0A7838B8-16A9-44E4-91A1-22BC0A141C21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsProfileSample.Droid", "Launchers\AndroidProfile\XamarinFormsProfileSample.Droid.csproj", "{0A7838B8-16A9-44E4-91A1-22BC0A141C21}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormsProfileSampleSource", "SharedSource\Main\XamarinFormsProfileSampleSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject

@@ -73,7 +73,7 @@
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d5p1:GamepadRotationSpeed>0.75</d5p1:GamepadRotationSpeed>
           <d5p1:RotationSpeed>0.004</d5p1:RotationSpeed>
-          <d5p1:Speed>20</d5p1:Speed>
+          <d5p1:Speed>0</d5p1:Speed>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
