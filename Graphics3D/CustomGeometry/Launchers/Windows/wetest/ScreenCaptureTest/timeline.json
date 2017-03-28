@@ -1,0 +1,2155 @@
+{
+  "$type": "ScreenShot.Models.Timeline, WaveEngine.VisualTest",
+  "Updates": {
+    "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.Update, WaveEngine.VisualTest]], mscorlib",
+    "$values": [
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 0
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 566774
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 35985
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 172028
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160957
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169185
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166572
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166183
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171216
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161060
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169865
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160589
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165828
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 178704
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167162
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166482
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167666
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169330
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 157904
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171567
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 157579
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164019
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169860
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164434
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 180423
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166974
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166709
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164493
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163916
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 181415
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 158220
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161658
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 174740
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160538
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166366
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166392
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168180
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166713
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166473
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168847
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165610
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165875
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163677
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167320
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 175544
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 158335
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167581
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166392
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166422
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164994
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166315
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 173521
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167867
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 150381
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 175839
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162283
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164643
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168676
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 174590
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 154974
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162017
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 182698
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 158100
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160628
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170095
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162612
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165657
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171250
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167979
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164694
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166897
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167106
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160991
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166114
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 180936
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166294
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163561
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171460
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163660
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166820
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166388
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165977
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166914
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171472
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163630
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169416
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166337
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161025
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171652
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167247
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163416
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165071
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167743
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168612
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167838
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166760
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166080
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168372
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 173089
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 151981
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167089
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 157968
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170202
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 176574
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164682
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165875
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169723
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164297
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166234
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169792
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168111
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165387
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170664
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168594
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 149188
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167974
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 179546
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161290
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166756
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 175330
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160452
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 3331243
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167316
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 157048
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166136
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 178516
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167500
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162351
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171656
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164968
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169946
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169428
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160747
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166974
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163459
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166760
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168975
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167795
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162911
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170134
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166007
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166606
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 176420
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 155150
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168881
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168765
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166563
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162791
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167688
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166610
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165456
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169018
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165528
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166148
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168825
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163749
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170211
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167046
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165015
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169095
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 166041
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 163309
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 164455
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 172191
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 164049
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 165755
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 166093
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 169082
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 169257
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 174124
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 149757
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 98,
+                    "State": 0
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 169484
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.ScreenshotState, WaveEngine.VisualTest",
+              "Id": 0
+            }
+          ]
+        },
+        "Instant": 154739
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 319276
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 179144
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167756
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165896
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 178922
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165229
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164630
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167812
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165759
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169989
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168842
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167662
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164865
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 158015
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 176313
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161752
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167140
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171596
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160961
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 172738
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163959
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167889
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167316
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168851
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163890
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169856
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165691
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169317
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164109
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162531
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169625
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168667
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 162167
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167568
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164344
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169693
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166567
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171887
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 160978
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169244
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165588
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165203
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 170031
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165674
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167547
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163967
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164348
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 168034
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 172016
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164134
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169552
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 159045
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169176
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165391
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169339
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167346
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163916
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 169929
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164446
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 164797
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 165682
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 173743
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 161115
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 171194
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 163022
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166187
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166165
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166067
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 167709
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 166319
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": [
+            {
+              "$type": "ScreenShot.Models.States.InputState, WaveEngine.VisualTest",
+              "InputEvents": {
+                "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.IInputEvent, WaveEngine.VisualTest]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "ScreenShot.Models.KeyboardEvent, WaveEngine.VisualTest",
+                    "Key": 14,
+                    "State": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Instant": 204764
+      },
+      {
+        "$type": "ScreenShot.Models.Update, WaveEngine.VisualTest",
+        "States": {
+          "$type": "System.Collections.Generic.List`1[[ScreenShot.Models.States.IState, WaveEngine.VisualTest]], mscorlib",
+          "$values": []
+        },
+        "Instant": 128649
+      }
+    ]
+  }
+}
