@@ -5,6 +5,7 @@
       <d2p1:SerializeChildrens>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>CameraCollision</d2p1:name>
@@ -29,8 +30,8 @@
               </d7p1:LocalScale>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:SphereCollider3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
               <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
               <d7p1:DebugLineColor xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:A>255</d8p1:A>
                 <d8p1:B>0</d8p1:B>
@@ -44,8 +45,8 @@
               <d7p1:ModelType>Sphere</d7p1:ModelType>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:RigidBody3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
               <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
               <d7p1:CollisionGroup xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
               <d7p1:EnableContinuousContact>false</d7p1:EnableContinuousContact>
               <d7p1:IsKinematic>true</d7p1:IsKinematic>
@@ -57,6 +58,7 @@
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>ARCamera</d2p1:name>
@@ -107,12 +109,20 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </Viewport>
-          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.78217816</AspectRatio>
+          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.39178085</AspectRatio>
+          <d5p1:StartTrackingAutomatically>true</d5p1:StartTrackingAutomatically>
+          <d5p1:dataSetPath>Content/Assets/AR/TestVuforia.xml</d5p1:dataSetPath>
+          <d5p1:extendedTracking>true</d5p1:extendedTracking>
+          <d5p1:licenseKey>AeRNu+n/////AAAAGfmXotSIvkSQp6D3annJaEEIdl9kN9/8PT8UYO0GOlbvz/n/w4oqvYxTLeLJ/mcx6ulZ+nPitOux8SEyXlTbeYvrM7qO63OkYLluwhT/ULICxNp+z9UIKaLiJDPSKdBdlH3h0I2xzzmo46D7urlvhOxt0l+sNDchaqrQLbV2o7lkvnhGJCzAQl/ZDjsYrEWU+98ZT45DSMNBnHOuvnG1IDoQpsdW7e58yH7bwxqLSbCoBJqWD0iFL9IBXrkbOtrqyrA0UCDqeKl8JeIb4+UKQKJR+WV6Hdml3FafdiDAUoPBwK92363ndni2ai+fEtkTmJFRUxJunoaqEpzC6kr1QYvL/d7JwaBCGfZRKfcp7QD1</d5p1:licenseKey>
+          <d5p1:maxSimultaneousImageTargets>1</d5p1:maxSimultaneousImageTargets>
+          <d5p1:maxSimultaneousObjectTargets>0</d5p1:maxSimultaneousObjectTargets>
           <d5p1:renderVideoCameraBackground>true</d5p1:renderVideoCameraBackground>
+          <d5p1:worldCenterEntityPath i:nil="true" />
+          <d5p1:worldCenterMode>FirstTarget</d5p1:worldCenterMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/VuforiaTest" i:type="d5p1:FireBehavior">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:FiredEntityPath>ball</d5p1:FiredEntityPath>
           <d5p1:Impulse>100</d5p1:Impulse>
         </d4p1:Component>
@@ -120,6 +130,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_00</d2p1:name>
@@ -159,8 +170,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -174,8 +185,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -188,6 +199,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_01</d2p1:name>
@@ -227,8 +239,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -242,8 +254,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -256,6 +268,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_02</d2p1:name>
@@ -295,8 +308,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -310,8 +323,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -324,6 +337,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_03</d2p1:name>
@@ -363,8 +377,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -378,8 +392,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -392,6 +406,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_04</d2p1:name>
@@ -431,8 +446,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -446,8 +461,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -460,6 +475,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_05</d2p1:name>
@@ -499,8 +515,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -514,8 +530,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -528,6 +544,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_10</d2p1:name>
@@ -567,8 +584,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -582,8 +599,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -596,6 +613,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_11</d2p1:name>
@@ -635,8 +653,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -650,8 +668,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -664,6 +682,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_12</d2p1:name>
@@ -703,8 +722,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -718,8 +737,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -732,6 +751,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_13</d2p1:name>
@@ -771,8 +791,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -786,8 +806,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -800,6 +820,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_14</d2p1:name>
@@ -839,8 +860,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -854,8 +875,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -868,6 +889,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_15</d2p1:name>
@@ -907,8 +929,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -922,8 +944,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -936,6 +958,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_16</d2p1:name>
@@ -975,8 +998,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -990,8 +1013,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -1004,6 +1027,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_17</d2p1:name>
@@ -1043,8 +1067,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -1058,8 +1082,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -1072,6 +1096,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>crate_18</d2p1:name>
@@ -1111,8 +1136,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -1126,8 +1151,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -1140,6 +1165,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>ball</d2p1:name>
@@ -1179,8 +1205,8 @@
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:SphereCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -1190,8 +1216,8 @@
           <d5p1:Radius>1</d5p1:Radius>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>true</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
@@ -1204,6 +1230,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>floor</d2p1:name>
@@ -1232,8 +1259,8 @@
           <d5p1:ModelType>Plane</d5p1:ModelType>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -1247,8 +1274,8 @@
           </d5p1:Size>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
           <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>true</d5p1:IsKinematic>
@@ -1260,7 +1287,7 @@
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
-  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" i:nil="true" />
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -1284,7 +1311,7 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>628</d5p1:VirtualHeight>
+          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
