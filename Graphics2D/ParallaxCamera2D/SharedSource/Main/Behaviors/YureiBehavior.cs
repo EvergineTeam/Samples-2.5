@@ -221,12 +221,12 @@ namespace ParallaxCamera2D.Behaviors
             var gamepad = this.input.GamePadState;
             if (gamepad.IsConnected)
             {
-                if (gamepad.ThumbStricks.Left.X > 0)
+                if (gamepad.ThumbSticks.Left.X > 0)
                 {
                     this.yureiControl = YureiControl.Gamepad;
                     this.State = YureiState.RunRight;
                 }
-                else if (gamepad.ThumbStricks.Left.X < 0)
+                else if (gamepad.ThumbSticks.Left.X < 0)
                 {
                     this.yureiControl = YureiControl.Gamepad;
                     this.State = YureiState.RunLeft;

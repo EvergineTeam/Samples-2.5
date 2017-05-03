@@ -70,7 +70,7 @@ namespace HololensSample
         
         private void TurnEngines(bool state)
         {
-            foreach (Entity soundEntity in this.Owner.FindAllChildrenByTag(EngineTag))
+            foreach (Entity soundEntity in this.Owner.FindChildrenByTag(EngineTag))
             {
                 var emitter = soundEntity.FindComponent<SoundEmitter3D>();
                 if (state)
