@@ -68,6 +68,9 @@
       <HintPath>..\..\packages\WaveEngine.Materials.2.3.1.32\lib\net45\WaveEngine.Materials.dll</HintPath>
       <Private>True</Private>
     </Reference>
+	<Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.3.1.32\lib\net45\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
