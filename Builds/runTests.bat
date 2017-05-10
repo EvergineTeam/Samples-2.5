@@ -1,4 +1,4 @@
-REM @echo off
+@echo off
 
 if [%1]==[] goto :blank
 
