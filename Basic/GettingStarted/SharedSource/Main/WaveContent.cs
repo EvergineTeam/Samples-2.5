@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:52:43
+// File generated on 11/05/2017 10:16:20
 namespace GettingStarted
 {
     using System;
@@ -16,6 +16,9 @@ namespace GettingStarted
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to  </summary>
+        public const string GameInfo = null;
         
         public sealed class Assets
         {

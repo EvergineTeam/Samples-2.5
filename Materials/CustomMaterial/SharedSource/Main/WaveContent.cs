@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:38
+// File generated on 11/05/2017 09:57:51
 namespace CustomMaterial
 {
     using System;
@@ -16,6 +16,9 @@ namespace CustomMaterial
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to  </summary>
+        public const string GameInfo = null;
         
         public sealed class Assets
         {
