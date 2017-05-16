@@ -17,8 +17,8 @@ WaveEngine.VisualTestManager\tools\TestManager.exe batch --path %testFolder% --p
 set reportTXT=%~dp0%testFolder%\report.txt
 set reportZIP=%~dp0%testFolder%\report.zip
 
-echo ##teamcity[publishArtifacts %reportTXT%]
-echo ##teamcity[publishArtifacts %reportZIP%]
+echo ##teamcity[publishArtifacts %%reportTXT%%]
+echo ##teamcity[publishArtifacts %%reportZIP%%]
 
 :blank
 exit /b
