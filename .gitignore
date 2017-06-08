@@ -36,8 +36,11 @@ $RECYCLE.BIN/
 
 WaveEngine.Tools/
 
+.wetest
+.vs/
 
-
+*.nuget.targets
+*.lock.json
 
 
 WaveContent.cs
