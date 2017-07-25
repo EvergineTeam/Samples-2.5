@@ -38,6 +38,8 @@ namespace NoesisSample
                     camEntity.RemoveComponent<Camera3D>();
                 }
             }
+
+            // The camera3D must be the default camera
             this.RenderManager.SetActiveCamera3D(this.EntityManager.Find("camera3D"));
         }
     }

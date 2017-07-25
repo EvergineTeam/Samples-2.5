@@ -13,6 +13,9 @@ using WaveEngine.Framework.Services;
 
 namespace NoesisSample.Behaviors
 {
+    /// <summary>
+    /// Class that moves the camera through the different states
+    /// </summary>
     [DataContract]
     public class CameraManager : Component
     {
@@ -23,8 +26,6 @@ namespace NoesisSample.Behaviors
         private Transform3D spiritCamera;
         private Transform3D globalSurveyorCamera;
         private Transform3D atmosphereCamera;
-
-        ////private Dictionary<CameraEnum, Transform3D> cameraTransforms;
 
         private MissionEnum currentState;
 
@@ -45,6 +46,7 @@ namespace NoesisSample.Behaviors
             }
         }
 
+        // Camera paths
         [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" })]
         [DataMember]
         public string CuriosityPath { get; set; }
@@ -68,7 +70,6 @@ namespace NoesisSample.Behaviors
             base.Initialize();
 
             // Gets the path camera transforms
-
             if (!string.IsNullOrEmpty(this.CuriosityPath)
                 && !string.IsNullOrEmpty(this.CuriosityPath)
                 && !string.IsNullOrEmpty(this.CuriosityPath)
@@ -141,8 +142,10 @@ namespace NoesisSample.Behaviors
                     break;
             }
 
+            // Animates the camera
             if (secondTarget != null)
             {
+                // The camera navigates through 2 different points
                 this.Owner.Scene.CreateParallelGameActions(
                     new MoveTo3DGameAction(this.Owner, firstTarget.Position, firstDuration, EaseFunction.QuinticInOutEase),
                     new RotateTo3DGameAction(this.Owner, firstTarget.Rotation, firstDuration, EaseFunction.CubicInOutEase))
@@ -154,6 +157,7 @@ namespace NoesisSample.Behaviors
                 )
                 .ContinueWithAction(() =>
                 {
+                    // We mark the camera animation finished
                     StateManager.Instance.StateInitialized(state);
                 }).Run();
             }
@@ -165,6 +169,7 @@ namespace NoesisSample.Behaviors
                 .WaitAll()
                 .ContinueWithAction(() =>
                 {
+                    // We mark the camera animation finished
                     StateManager.Instance.StateInitialized(state);
                 }).Run();
             }

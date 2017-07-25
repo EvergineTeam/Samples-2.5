@@ -9,6 +9,9 @@ using WaveEngine.NoesisGUI;
 
 namespace NoesisSample.Components
 {
+    /// <summary>
+    /// Camera that adds a Mission view model to a Noesis Panel
+    /// </summary>
     [DataContract]
     public class MissionComponent : Component
     {
