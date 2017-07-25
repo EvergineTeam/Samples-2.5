@@ -12,9 +12,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\MainHUD.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\MissionPanel.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\PlanetHUD.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MissionEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MissionFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MissionInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MissionEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MissionInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StateManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MissionVM.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPanelVM.cs" />
