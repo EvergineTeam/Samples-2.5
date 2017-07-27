@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:01
+// File generated on 7/26/2017 2:49:17 PM
 namespace Touch
 {
     using System;
@@ -16,6 +16,9 @@ namespace Touch
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to  </summary>
+        public const string GameInfo = null;
         
         public sealed class Assets
         {

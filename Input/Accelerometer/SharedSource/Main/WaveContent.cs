@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:52
+// File generated on 7/26/2017 3:15:32 PM
 namespace Accelerometer
 {
     using System;
@@ -16,6 +16,9 @@ namespace Accelerometer
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to  </summary>
+        public const string GameInfo = null;
         
         public sealed class Assets
         {
