@@ -1,14 +1,14 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>671044ed-73c0-4dae-830e-96f668c7dadd</Id>
+  <Id>f0a7796e-6212-4d8b-90ca-f6e4dc238ebc</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Texture">
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:TextureProfile">
         <d3p1:Name i:nil="true" />
         <d3p1:OutputFormat>Color32Bit</d3p1:OutputFormat>
-        <d3p1:ScaledHeight>1024</d3p1:ScaledHeight>
+        <d3p1:ScaledHeight>2048</d3p1:ScaledHeight>
         <d3p1:ScaledPercentage>100</d3p1:ScaledPercentage>
-        <d3p1:ScaledWidth>2048</d3p1:ScaledWidth>
+        <d3p1:ScaledWidth>4096</d3p1:ScaledWidth>
         <d3p1:ScalingType>Percentage</d3p1:ScalingType>
       </d3p1:ExportProfile>
     </d2p1:Profiles>
@@ -16,6 +16,7 @@
     <d2p1:AntialiasType>Smooth</d2p1:AntialiasType>
     <d2p1:GenerateMipMaps>true</d2p1:GenerateMipMaps>
     <d2p1:Height>2048</d2p1:Height>
+    <d2p1:NinePatchType>None</d2p1:NinePatchType>
     <d2p1:PremultipliedAlpha>true</d2p1:PremultipliedAlpha>
     <d2p1:Width>4096</d2p1:Width>
   </Asset>
