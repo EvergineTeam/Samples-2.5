@@ -19,80 +19,75 @@
 // IN THE SOFTWARE.
 
 using System;
+using System.Runtime.Serialization;
+using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
+using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Materials;
 
 namespace AccelerometerProject.Behaviors
 {
+    [DataContract]
     public class BallBehavior : Behavior
     {
         [RequiredComponent()]
         public Transform3D Transform;
+
+        [RequiredComponent]
+        public MaterialComponent material;
+
         private Vector3 input;
         private float seconds;
-        private float weight;
-
-        //private RigidBody body;
-
-        public BallBehavior(string name)
-            : base(name)
-        { }
 
         protected override void Update(TimeSpan gameTime)
         {
-            seconds = ((float)gameTime.Milliseconds / 10);
+            this.seconds = ((float)gameTime.Milliseconds / 10);
 
             if (WaveServices.Input.AccelerometerState.IsConnected)
-                input = WaveServices.Input.AccelerometerState.RawAcceleration * (seconds*10);
+            {
+                this.input = WaveServices.Input.AccelerometerState.RawAcceleration * (this.seconds * 10);
+            }
             else
             {
-                input.X = WaveServices.Input.KeyboardState.A == ButtonState.Pressed ? 1.0f :
+                this.input.X = WaveServices.Input.KeyboardState.A == ButtonState.Pressed ? 1.0f :
                     WaveServices.Input.KeyboardState.Z == ButtonState.Pressed ? -1.0f : 0f;
-                input.Y = WaveServices.Input.KeyboardState.S == ButtonState.Pressed ? 2.0f :
+                this.input.Y = WaveServices.Input.KeyboardState.S == ButtonState.Pressed ? 2.0f :
                     WaveServices.Input.KeyboardState.X == ButtonState.Pressed ? -1.0f : 0f;
-                input.Z = WaveServices.Input.KeyboardState.D == ButtonState.Pressed ? 1.0f :
+                this.input.Z = WaveServices.Input.KeyboardState.D == ButtonState.Pressed ? 1.0f :
                     WaveServices.Input.KeyboardState.C == ButtonState.Pressed ? -1.0f : 0f;
             }
-
-            
-            //transform.Position += input*seconds * weight;
-            //transform.Position.Y -= .98f * (seconds);
-            
-            
-            //if (transform.Position.X < -50f) transform.Position.X = -50f;
-            //if (transform.Position.X > 50f) transform.Position.X = 50f;
-            //if (transform.Position.Z < -30f) transform.Position.Z = -30f;
-            //if (transform.Position.Z > 30f) transform.Position.Z = 30f;
-            //if (transform.Position.Y < 0) transform.Position.Y = 0f;
         }
 
         protected override void Initialize()
         {
-            input = new Vector3();
-
             var random = WaveServices.Random;
 
-            Vector3 newPosition = new Vector3();
+            if (!WaveServices.Platform.IsEditor)
+            {
+                this.input = new Vector3();
 
-            newPosition.X = random.Next(0, 100);
-            newPosition.Z = random.Next(0, 100);
-            newPosition.Y = random.Next(0, 100);
+                Vector3 newPosition = new Vector3();
 
-            if (random.NextBool())
-                newPosition.X *= -1f;
+                newPosition.X = random.Next(-100, 100);
+                newPosition.Z = random.Next(-100, 100);
+                newPosition.Y = random.Next(-100, 100);
 
-            if (random.NextBool())
-                newPosition.Z *= -1f;
+                Transform.Position = newPosition;
+                this.seconds = 0f;
+            }
 
-            if (random.NextBool())
-                newPosition.Y *= -1f;
-
-            Transform.Position = newPosition;
-            seconds = 0f;
-            weight = random.Next(1, 10) / 10f;            
+            if (material.Material != null)
+            {
+                (material.Material as ForwardMaterial).DiffuseColor = new Color(
+                    (float)random.NextDouble(), 
+                    (float)random.NextDouble(), 
+                    (float)random.NextDouble(), 
+                    1f);
+            }
         }
     }
 }
