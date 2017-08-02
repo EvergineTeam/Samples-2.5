@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:10
+// File generated on 8/2/2017 9:00:04 AM
 namespace XBoxController
 {
     using System;
@@ -16,6 +16,9 @@ namespace XBoxController
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/XBoxController.wgame </summary>
+        public const string GameInfo = "Content/XBoxController.wgame";
         
         public sealed class Assets
         {
