@@ -1,5 +1,5 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>87d3eb34-e6a7-4dac-81a2-a934d8867f51</Id>
+  <Id>f316d794-367c-4c58-9a6a-b19aa10b2a6b</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
@@ -144,7 +144,7 @@
         <d2p1:SpecularTextureFile i:nil="true" />
       </d2p1:Material>
     </d2p1:Materials>
-    <d2p1:Meshes>
+    <d2p1:Nodes>
       <d2p1:Node>
         <d2p1:Children />
         <d2p1:Meshes>
@@ -248,7 +248,7 @@
         <d2p1:Name>marsGlobalSurveyor</d2p1:Name>
         <d2p1:Parent i:nil="true" />
       </d2p1:Node>
-    </d2p1:Meshes>
+    </d2p1:Nodes>
     <d2p1:NumFrames>0</d2p1:NumFrames>
     <d2p1:SwapWindingOrder>true</d2p1:SwapWindingOrder>
   </Asset>
