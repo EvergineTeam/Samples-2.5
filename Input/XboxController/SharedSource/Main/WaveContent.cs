@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/2/2017 9:00:04 AM
+// File generated on 8/2/2017 9:56:11 AM
 namespace XBoxController
 {
     using System;
@@ -28,6 +28,9 @@ namespace XBoxController
             
             /// <summary> Path to Content/Assets/FrontController.png </summary>
             public const string FrontController_png = "Content/Assets/FrontController.png";
+            
+            /// <summary> Path to Content/Assets/Segoe UI_16.ttf </summary>
+            public const string Segoe_UI_16_ttf = "Content/Assets/Segoe UI_16.ttf";
             
             /// <summary> Path to Content/Assets/TopController.png </summary>
             public const string TopController_png = "Content/Assets/TopController.png";
