@@ -41,6 +41,9 @@
       <HintPath>..\..\packages\WaveEngine.Adapter.2.4.1-alpha-20170802-554\lib\net45\WaveEngine.Adapter.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170802-554\lib\net45\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
     <Reference Include="WaveEngine.Common">
       <HintPath>..\..\packages\WaveEngine.Common.2.4.1-alpha-20170802-554\lib\net45\WaveEngine.Common.dll</HintPath>
       <Private>True</Private>
@@ -74,10 +77,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\GettingStartedSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\GettingStartedSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
