@@ -10,6 +10,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Threading;
 #endregion
 
 namespace NavigationFlow.Navigation
@@ -334,7 +335,8 @@ namespace NavigationFlow.Navigation
 #elif __UNIFIED__
 			preloadAction();
 #else
-            WaveServices.TaskScheduler.CreateTask(preloadAction);
+            
+            WaveBackgroundTask.Run(preloadAction);
 #endif
 
             this.CreateContextAnimation(false, WaveServices.ScreenContextManager.CurrentContext)

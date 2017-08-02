@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:52:43
+// File generated on 02/08/2017 13:35:28
 namespace GettingStarted
 {
     using System;
@@ -16,6 +16,9 @@ namespace GettingStarted
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/GettingStarted.wgame </summary>
+        public const string GameInfo = "Content/GettingStarted.wgame";
         
         public sealed class Assets
         {
