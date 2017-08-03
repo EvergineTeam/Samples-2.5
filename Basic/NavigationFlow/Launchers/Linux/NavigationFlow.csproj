@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{D5CB11BC-0227-42AF-BE20-306B5744F50C}</ProjectGuid>
@@ -85,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
   </ItemGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -135,5 +134,8 @@
       <Link>Tao.Sdl.dll.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
 </Project>
