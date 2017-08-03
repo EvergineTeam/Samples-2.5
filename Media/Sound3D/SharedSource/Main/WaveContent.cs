@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:00:59
+// File generated on 8/3/2017 12:56:53 PM
 namespace Sound3D
 {
     using System;
@@ -17,14 +17,14 @@ namespace Sound3D
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/Sound3D.wgame </summary>
+        public const string GameInfo = "Content/Sound3D.wgame";
+        
         public sealed class Assets
         {
             
             /// <summary> Path to Content/Assets/engines_1.wav </summary>
             public const string engines_1_wav = "Content/Assets/engines_1.wav";
-            
-            /// <summary> Path to Content/Assets/Fighter.fbx </summary>
-            public const string Fighter_fbx = "Content/Assets/Fighter.fbx";
             
             /// <summary> Path to Content/Assets/fighter_diffuse.png </summary>
             public const string fighter_diffuse_png = "Content/Assets/fighter_diffuse.png";
@@ -35,17 +35,20 @@ namespace Sound3D
             /// <summary> Path to Content/Assets/fighter_spec.png </summary>
             public const string fighter_spec_png = "Content/Assets/fighter_spec.png";
             
+            /// <summary> Path to Content/Assets/spaceship.fbx </summary>
+            public const string spaceship_fbx = "Content/Assets/spaceship.fbx";
+            
             /// <summary> Path to Content/Assets/Thrust.png </summary>
             public const string Thrust_png = "Content/Assets/Thrust.png";
             
-            /// <summary> Path to Content/Assets/MyMaterial(1).wmat </summary>
-            public const string MyMaterial_1_ = "Content/Assets/MyMaterial(1).wmat";
+            /// <summary> Path to Content/Assets/RedMat.wmat </summary>
+            public const string RedMat = "Content/Assets/RedMat.wmat";
             
-            /// <summary> Path to Content/Assets/MyMaterial(2).wmat </summary>
-            public const string MyMaterial_2_ = "Content/Assets/MyMaterial(2).wmat";
+            /// <summary> Path to Content/Assets/ShipMat.wmat </summary>
+            public const string ShipMat = "Content/Assets/ShipMat.wmat";
             
-            /// <summary> Path to Content/Assets/MyMaterial.wmat </summary>
-            public const string MyMaterial = "Content/Assets/MyMaterial.wmat";
+            /// <summary> Path to Content/Assets/ThrustMat.wmat </summary>
+            public const string ThrustMat = "Content/Assets/ThrustMat.wmat";
         }
         
         public sealed class Scenes

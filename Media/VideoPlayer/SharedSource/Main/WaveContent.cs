@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:01:18
+// File generated on 8/3/2017 1:06:16 PM
 namespace VideoPlayer
 {
     using System;
@@ -16,6 +16,9 @@ namespace VideoPlayer
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/VideoPlayer.wgame </summary>
+        public const string GameInfo = "Content/VideoPlayer.wgame";
         
         public sealed class Assets
         {
