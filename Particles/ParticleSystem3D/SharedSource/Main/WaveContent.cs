@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:01:37
+// File generated on 8/3/2017 9:34:28 PM
 namespace ParticleSystem3D
 {
     using System;
@@ -16,6 +16,9 @@ namespace ParticleSystem3D
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/ParticleSystem3D.wgame </summary>
+        public const string GameInfo = "Content/ParticleSystem3D.wgame";
         
         public sealed class Assets
         {
