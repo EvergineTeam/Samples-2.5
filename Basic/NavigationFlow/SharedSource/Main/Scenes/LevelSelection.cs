@@ -18,6 +18,8 @@ namespace NavigationFlow.Scenes
     {
         protected override void CreateScene()
         {
+            this.RenderManager.DebugLines = true;
+
             this.Load(WaveContent.Scenes.LevelSelection);           
         }
     }
