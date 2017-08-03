@@ -245,9 +245,9 @@ namespace WaveWPF
 
                 WaveServices.Input.MouseState.X = 0;
                 WaveServices.Input.MouseState.Y = 0;
-                WaveServices.Input.MouseState.LeftButton = ButtonState.Release;
-                WaveServices.Input.MouseState.MiddleButton = ButtonState.Release;
-                WaveServices.Input.MouseState.RightButton = ButtonState.Release;
+                WaveServices.Input.MouseState.LeftButton = ButtonState.Released;
+                WaveServices.Input.MouseState.MiddleButton = ButtonState.Released;
+                WaveServices.Input.MouseState.RightButton = ButtonState.Released;
 
                 this.counters--;
             }
@@ -290,214 +290,214 @@ namespace WaveWPF
             switch (e.Key)
             {
                 case Key.A:
-                    WaveServices.Input.KeyboardState.A = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.A = ButtonState.Released;
                     break;
                 case Key.B:
-                    WaveServices.Input.KeyboardState.B = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.B = ButtonState.Released;
                     break;
                 case Key.Back:
-                    WaveServices.Input.KeyboardState.Back = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Back = ButtonState.Released;
                     break;
                 case Key.C:
-                    WaveServices.Input.KeyboardState.C = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.C = ButtonState.Released;
                     break;
                 case Key.CapsLock:
-                    WaveServices.Input.KeyboardState.CapitalLock = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.CapitalLock = ButtonState.Released;
                     break;
                 case Key.CrSel:
-                    WaveServices.Input.KeyboardState.Cancel = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Cancel = ButtonState.Released;
                     break;
                 case Key.D:
-                    WaveServices.Input.KeyboardState.D = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.D = ButtonState.Released;
                     break;
                 case Key.D0:
-                    WaveServices.Input.KeyboardState.Number0 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number0 = ButtonState.Released;
                     break;
                 case Key.D1:
-                    WaveServices.Input.KeyboardState.Number1 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number1 = ButtonState.Released;
                     break;
                 case Key.D2:
-                    WaveServices.Input.KeyboardState.Number2 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number2 = ButtonState.Released;
                     break;
                 case Key.D3:
-                    WaveServices.Input.KeyboardState.Number3 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number3 = ButtonState.Released;
                     break;
                 case Key.D4:
-                    WaveServices.Input.KeyboardState.Number4 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number4 = ButtonState.Released;
                     break;
                 case Key.D5:
-                    WaveServices.Input.KeyboardState.Number5 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number5 = ButtonState.Released;
                     break;
                 case Key.D6:
-                    WaveServices.Input.KeyboardState.Number6 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number6 = ButtonState.Released;
                     break;
                 case Key.D7:
-                    WaveServices.Input.KeyboardState.Number7 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number7 = ButtonState.Released;
                     break;
                 case Key.D8:
-                    WaveServices.Input.KeyboardState.Number8 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number8 = ButtonState.Released;
                     break;
                 case Key.D9:
-                    WaveServices.Input.KeyboardState.Number9 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Number9 = ButtonState.Released;
                     break;
                 case Key.Delete:
-                    WaveServices.Input.KeyboardState.Delete = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Delete = ButtonState.Released;
                     break;
                 case Key.Down:
-                    WaveServices.Input.KeyboardState.Down = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Down = ButtonState.Released;
                     break;
                 case Key.E:
-                    WaveServices.Input.KeyboardState.E = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.E = ButtonState.Released;
                     break;
                 case Key.Enter:
-                    WaveServices.Input.KeyboardState.Enter = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Enter = ButtonState.Released;
                     break;
                 case Key.Escape:
-                    WaveServices.Input.KeyboardState.Escape = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Escape = ButtonState.Released;
                     break;
                 case Key.Execute:
-                    WaveServices.Input.KeyboardState.Execute = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Execute = ButtonState.Released;
                     break;
                 case Key.F:
-                    WaveServices.Input.KeyboardState.F = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F = ButtonState.Released;
                     break;
                 case Key.F1:
-                    WaveServices.Input.KeyboardState.F = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F = ButtonState.Released;
                     break;
                 case Key.F10:
-                    WaveServices.Input.KeyboardState.F10 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F10 = ButtonState.Released;
                     break;
                 case Key.F11:
-                    WaveServices.Input.KeyboardState.F11 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F11 = ButtonState.Released;
                     break;
                 case Key.F12:
-                    WaveServices.Input.KeyboardState.F12 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F12 = ButtonState.Released;
                     break;
                 case Key.F2:
-                    WaveServices.Input.KeyboardState.F2 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F2 = ButtonState.Released;
                     break;
                 case Key.F3:
-                    WaveServices.Input.KeyboardState.F3 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F3 = ButtonState.Released;
                     break;
                 case Key.F4:
-                    WaveServices.Input.KeyboardState.F4 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F4 = ButtonState.Released;
                     break;
                 case Key.F5:
-                    WaveServices.Input.KeyboardState.F5 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F5 = ButtonState.Released;
                     break;
                 case Key.F6:
-                    WaveServices.Input.KeyboardState.F6 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F6 = ButtonState.Released;
                     break;
                 case Key.F7:
-                    WaveServices.Input.KeyboardState.F7 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F7 = ButtonState.Released;
                     break;
                 case Key.F8:
-                    WaveServices.Input.KeyboardState.F8 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F8 = ButtonState.Released;
                     break;
                 case Key.F9:
-                    WaveServices.Input.KeyboardState.F9 = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.F9 = ButtonState.Released;
                     break;
                 case Key.G:
-                    WaveServices.Input.KeyboardState.G = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.G = ButtonState.Released;
                     break;
                 case Key.H:
-                    WaveServices.Input.KeyboardState.H = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.H = ButtonState.Released;
                     break;
                 case Key.I:
-                    WaveServices.Input.KeyboardState.I = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.I = ButtonState.Released;
                     break;
                 case Key.J:
-                    WaveServices.Input.KeyboardState.J = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.J = ButtonState.Released;
                     break;
                 case Key.K:
-                    WaveServices.Input.KeyboardState.K = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.K = ButtonState.Released;
                     break;
                 case Key.L:
-                    WaveServices.Input.KeyboardState.L = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.L = ButtonState.Released;
                     break;
                 case Key.Left:
-                    WaveServices.Input.KeyboardState.Left = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Left = ButtonState.Released;
                     break;
                 case Key.LeftAlt:
-                    WaveServices.Input.KeyboardState.LeftAlt = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.LeftAlt = ButtonState.Released;
                     break;
                 case Key.LeftCtrl:
-                    WaveServices.Input.KeyboardState.LeftControl = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.LeftControl = ButtonState.Released;
                     break;
                 case Key.LeftShift:
-                    WaveServices.Input.KeyboardState.LeftShift = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.LeftShift = ButtonState.Released;
                     break;
                 case Key.LWin:
-                    WaveServices.Input.KeyboardState.LeftWindows = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.LeftWindows = ButtonState.Released;
                     break;
                 case Key.M:
-                    WaveServices.Input.KeyboardState.M = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.M = ButtonState.Released;
                     break;
                 case Key.N:
-                    WaveServices.Input.KeyboardState.N = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.N = ButtonState.Released;
                     break;
                 case Key.O:
-                    WaveServices.Input.KeyboardState.O = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.O = ButtonState.Released;
                     break;
                 case Key.P:
-                    WaveServices.Input.KeyboardState.P = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.P = ButtonState.Released;
                     break;
                 case Key.Q:
-                    WaveServices.Input.KeyboardState.Q = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Q = ButtonState.Released;
                     break;
                 case Key.R:
-                    WaveServices.Input.KeyboardState.R = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.R = ButtonState.Released;
                     break;
                 case Key.Right:
-                    WaveServices.Input.KeyboardState.Right = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Right = ButtonState.Released;
                     break;
                 case Key.RightAlt:
-                    WaveServices.Input.KeyboardState.RightAlt = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.RightAlt = ButtonState.Released;
                     break;
                 case Key.RightCtrl:
-                    WaveServices.Input.KeyboardState.RightControl = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.RightControl = ButtonState.Released;
                     break;
                 case Key.RightShift:
-                    WaveServices.Input.KeyboardState.RightShift = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.RightShift = ButtonState.Released;
                     break;
                 case Key.RWin:
-                    WaveServices.Input.KeyboardState.RightWindows = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.RightWindows = ButtonState.Released;
                     break;
                 case Key.S:
-                    WaveServices.Input.KeyboardState.S = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.S = ButtonState.Released;
                     break;
                 case Key.Space:
-                    WaveServices.Input.KeyboardState.Space = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Space = ButtonState.Released;
                     break;
                 case Key.Subtract:
-                    WaveServices.Input.KeyboardState.Subtract = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Subtract = ButtonState.Released;
                     break;
                 case Key.T:
-                    WaveServices.Input.KeyboardState.T = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.T = ButtonState.Released;
                     break;
                 case Key.Tab:
-                    WaveServices.Input.KeyboardState.Tab = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Tab = ButtonState.Released;
                     break;
                 case Key.U:
-                    WaveServices.Input.KeyboardState.U = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.U = ButtonState.Released;
                     break;
                 case Key.Up:
-                    WaveServices.Input.KeyboardState.Up = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Up = ButtonState.Released;
                     break;
                 case Key.V:
-                    WaveServices.Input.KeyboardState.V = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.V = ButtonState.Released;
                     break;
                 case Key.W:
-                    WaveServices.Input.KeyboardState.W = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.W = ButtonState.Released;
                     break;
                 case Key.X:
-                    WaveServices.Input.KeyboardState.X = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.X = ButtonState.Released;
                     break;
                 case Key.Y:
-                    WaveServices.Input.KeyboardState.Y = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Y = ButtonState.Released;
                     break;
                 case Key.Z:
-                    WaveServices.Input.KeyboardState.Z = ButtonState.Release;
+                    WaveServices.Input.KeyboardState.Z = ButtonState.Released;
                     break;
             }
         }
@@ -928,13 +928,13 @@ namespace WaveWPF
             switch (e.ChangedButton)
             {
                 case MouseButton.Left:
-                    WaveServices.Input.MouseState.LeftButton = WaveEngine.Common.Input.ButtonState.Release;
+                    WaveServices.Input.MouseState.LeftButton = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case MouseButton.Middle:
-                    WaveServices.Input.MouseState.MiddleButton = WaveEngine.Common.Input.ButtonState.Release;
+                    WaveServices.Input.MouseState.MiddleButton = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case MouseButton.Right:
-                    WaveServices.Input.MouseState.RightButton = WaveEngine.Common.Input.ButtonState.Release;
+                    WaveServices.Input.MouseState.RightButton = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 default:
                     break;

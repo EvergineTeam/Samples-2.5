@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:00:22
+// File generated on 8/3/2017 11:12:22 AM
 namespace NormalMap
 {
     using System;
@@ -16,6 +16,9 @@ namespace NormalMap
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/NormalMap.wgame </summary>
+        public const string GameInfo = "Content/NormalMap.wgame";
         
         public sealed class Assets
         {

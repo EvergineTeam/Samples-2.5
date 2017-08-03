@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:21
+// File generated on 8/2/2017 2:12:44 PM
 namespace TeapotSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace TeapotSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/TeapotSample.wgame </summary>
+        public const string GameInfo = "Content/TeapotSample.wgame";
         
         public sealed class Assets
         {

@@ -14,8 +14,8 @@ namespace Sound3D
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
-			WaveServices.ScreenContextManager.To(screenContext);
+            ScreenContext screenContext = new ScreenContext(new MyScene());
+            WaveServices.ScreenContextManager.To(screenContext);
         }
     }
 }
