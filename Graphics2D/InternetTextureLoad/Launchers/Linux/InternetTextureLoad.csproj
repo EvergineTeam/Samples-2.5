@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{D5CB11BC-0227-42AF-BE20-306B5744F50C}</ProjectGuid>
@@ -85,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
   </ItemGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -135,5 +134,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170803-555\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170803-555\build\Mono\WaveEngine.Box2D.targets')" xmlns="" />
+  <ItemGroup>
+    <EmbeddedResource Include="SplashScreen.png" />
+  </ItemGroup>
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170803-555\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170803-555\build\Mono\WaveEngine.Box2D.targets')" />
 </Project>
