@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:00:07
+// File generated on 8/3/2017 12:28:06 PM
 namespace IBLSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace IBLSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/IBLSample.wgame </summary>
+        public const string GameInfo = "Content/IBLSample.wgame";
         
         public sealed class Assets
         {
