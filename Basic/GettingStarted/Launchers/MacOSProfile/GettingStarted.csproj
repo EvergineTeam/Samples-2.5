@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -108,7 +108,7 @@
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SplashScreen.png" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\GettingStartedSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\GettingStartedSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
