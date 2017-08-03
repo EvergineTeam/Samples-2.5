@@ -43,7 +43,7 @@ namespace OculusCockpit
 
             foreach (string item in resourceNames)
             {
-                if (item.Contains("SplashScreen.wpk"))
+                if (item.Contains("SplashScreen.png"))
                 {
                     name = item;
                     break;
@@ -57,7 +57,7 @@ namespace OculusCockpit
 
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
             {
-                this.splashScreen = WaveServices.Assets.Global.LoadAsset<Texture2D>(name, stream);
+                this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
             }
 
             position = new Vector2();

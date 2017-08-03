@@ -113,7 +113,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon.icns" />
