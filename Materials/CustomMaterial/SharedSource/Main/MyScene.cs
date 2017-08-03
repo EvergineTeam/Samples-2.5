@@ -20,13 +20,9 @@ namespace CustomMaterial
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            Entity testShape = new Entity("TestShape")
-                   .AddComponent(new Transform3D())
-                   .AddComponent(Model.CreateSphere(5, 32))
-                   .AddComponent(new MaterialsMap(new MyMaterial(WaveContent.Assets.DefaultTexture_png)))
-                   .AddComponent(new ModelRenderer());
+            var materialComponent = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("sphere");
 
-            this.EntityManager.Add(testShape);
+            materialComponent.Material = new MyMaterial(WaveContent.Assets.DefaultTexture_png);
         }
     }
 }
