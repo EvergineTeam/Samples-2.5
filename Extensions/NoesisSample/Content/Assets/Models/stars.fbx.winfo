@@ -1,5 +1,5 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>1b72ee92-fac9-4140-ac38-535d279cf918</Id>
+  <Id>fafbd4f7-d7f1-4d6c-9c43-e6355b69c38e</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
@@ -48,7 +48,7 @@
         <d2p1:SpecularTextureFile i:nil="true" />
       </d2p1:Material>
     </d2p1:Materials>
-    <d2p1:Meshes>
+    <d2p1:Nodes>
       <d2p1:Node>
         <d2p1:Children />
         <d2p1:Meshes>
@@ -152,7 +152,7 @@
         <d2p1:Name>Plane002</d2p1:Name>
         <d2p1:Parent i:nil="true" />
       </d2p1:Node>
-    </d2p1:Meshes>
+    </d2p1:Nodes>
     <d2p1:NumFrames>0</d2p1:NumFrames>
     <d2p1:SwapWindingOrder>true</d2p1:SwapWindingOrder>
   </Asset>
