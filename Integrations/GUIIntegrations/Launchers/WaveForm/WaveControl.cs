@@ -152,15 +152,15 @@ namespace WaveForm
             {
                 if (e.Button == MouseButtons.Left)
                 {
-                    this.input.MouseState.LeftButton = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.MouseState.LeftButton = WaveEngine.Common.Input.ButtonState.Released;
                 }
                 else if (e.Button == MouseButtons.Middle)
                 {
-                    this.input.MouseState.MiddleButton = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.MouseState.MiddleButton = WaveEngine.Common.Input.ButtonState.Released;
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
-                    this.input.MouseState.RightButton = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.MouseState.RightButton = WaveEngine.Common.Input.ButtonState.Released;
                 }
             }
             else
@@ -254,214 +254,214 @@ namespace WaveForm
             switch (e.KeyCode)
             {
                 case System.Windows.Forms.Keys.A:
-                    this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.A = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.B:
-                    this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.B = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Back:
-                    this.input.KeyboardState.Back = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Back = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.C:
-                    this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.C = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.CapsLock:
-                    this.input.KeyboardState.CapitalLock = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.CapitalLock = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Crsel:
-                    this.input.KeyboardState.Cancel = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Cancel = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D:
-                    this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.D = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D0:
-                    this.input.KeyboardState.Number0 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number0 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D1:
-                    this.input.KeyboardState.Number1 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number1 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D2:
-                    this.input.KeyboardState.Number2 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number2 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D3:
-                    this.input.KeyboardState.Number3 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number3 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D4:
-                    this.input.KeyboardState.Number4 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number4 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D5:
-                    this.input.KeyboardState.Number5 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number5 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D6:
-                    this.input.KeyboardState.Number6 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number6 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D7:
-                    this.input.KeyboardState.Number7 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number7 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D8:
-                    this.input.KeyboardState.Number8 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number8 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.D9:
-                    this.input.KeyboardState.Number9 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Number9 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Delete:
-                    this.input.KeyboardState.Delete = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Delete = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Down:
-                    this.input.KeyboardState.Down = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Down = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.E:
-                    this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.E = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Enter:
-                    this.input.KeyboardState.Enter = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Enter = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Escape:
-                    this.input.KeyboardState.Escape = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Escape = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Execute:
-                    this.input.KeyboardState.Execute = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Execute = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F:
-                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F1:
-                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F10:
-                    this.input.KeyboardState.F10 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F10 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F11:
-                    this.input.KeyboardState.F11 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F11 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F12:
-                    this.input.KeyboardState.F12 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F12 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F2:
-                    this.input.KeyboardState.F2 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F2 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F3:
-                    this.input.KeyboardState.F3 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F3 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F4:
-                    this.input.KeyboardState.F4 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F4 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F5:
-                    this.input.KeyboardState.F5 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F5 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F6:
-                    this.input.KeyboardState.F6 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F6 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F7:
-                    this.input.KeyboardState.F7 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F7 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F8:
-                    this.input.KeyboardState.F8 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F8 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.F9:
-                    this.input.KeyboardState.F9 = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.F9 = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.G:
-                    this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.G = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.H:
-                    this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.H = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.I:
-                    this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.I = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.J:
-                    this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.J = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.K:
-                    this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.K = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.L:
-                    this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.L = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Left:
-                    this.input.KeyboardState.Left = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Left = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.LMenu:
-                    this.input.KeyboardState.LeftAlt = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.LeftAlt = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.LControlKey:
-                    this.input.KeyboardState.LeftControl = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.LeftControl = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.LShiftKey:
-                    this.input.KeyboardState.LeftShift = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.LeftShift = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.LWin:
-                    this.input.KeyboardState.LeftWindows = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.LeftWindows = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.M:
-                    this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.M = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.N:
-                    this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.N = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.O:
-                    this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.O = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.P:
-                    this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.P = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Q:
-                    this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Q = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.R:
-                    this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.R = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Right:
-                    this.input.KeyboardState.Right = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Right = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.RMenu:
-                    this.input.KeyboardState.RightAlt = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.RightAlt = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.RControlKey:
-                    this.input.KeyboardState.RightControl = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.RightControl = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.RShiftKey:
-                    this.input.KeyboardState.RightShift = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.RightShift = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.RWin:
-                    this.input.KeyboardState.RightWindows = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.RightWindows = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.S:
-                    this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.S = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Space:
-                    this.input.KeyboardState.Space = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Space = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Subtract:
-                    this.input.KeyboardState.Subtract = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Subtract = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.T:
-                    this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.T = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Tab:
-                    this.input.KeyboardState.Tab = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Tab = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.U:
-                    this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.U = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Up:
-                    this.input.KeyboardState.Up = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Up = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.V:
-                    this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.V = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.W:
-                    this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.W = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.X:
-                    this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.X = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Y:
-                    this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Y = WaveEngine.Common.Input.ButtonState.Released;
                     break;
                 case System.Windows.Forms.Keys.Z:
-                    this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Release;
+                    this.input.KeyboardState.Z = WaveEngine.Common.Input.ButtonState.Released;
                     break;
             #endregion
 
