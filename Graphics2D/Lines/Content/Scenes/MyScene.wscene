@@ -3,6 +3,7 @@
   <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>drawable</d2p1:name>
@@ -34,6 +35,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>camera3D</d2p1:name>
@@ -42,9 +44,9 @@
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.880476236</d6p1:W>
-            <d6p1:X>-0.279848158</d6p1:X>
+            <d6p1:X>-0.279848129</d6p1:X>
             <d6p1:Y>0.3647052</d6p1:Y>
-            <d6p1:Z>0.11591693</d6p1:Z>
+            <d6p1:Z>0.1159169</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>500</d6p1:X>
@@ -87,18 +89,18 @@
           <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Cameras" i:type="d5p1:ViewCamera3DBehavior">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:RotationSpeed>1</d5p1:RotationSpeed>
-          <d5p1:isDragging>false</d5p1:isDragging>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -122,8 +124,8 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>726</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
