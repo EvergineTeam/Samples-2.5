@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>744a4954-b71b-4cae-8c08-cd4e9f5df5b6</Id>
   <GameInfoPath>NormalMap.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -40,5 +40,5 @@
     <d2p1:_Minor>4</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.1-alpha-20170803-555</WaveVersion>
+  <WaveVersion>2.4.1-alpha-20170804-557</WaveVersion>
 </Project>
