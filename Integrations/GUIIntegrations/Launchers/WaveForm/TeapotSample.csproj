@@ -107,7 +107,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

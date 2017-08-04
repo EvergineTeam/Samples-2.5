@@ -2,7 +2,7 @@
 //-----------------------------------------------------------------------------
 // MainApp
 //
-// Copyright © 2013 Plain Concepts. All rights reserved.
+// Copyright ï¿½ 2013 Plain Concepts. All rights reserved.
 // Use is subject to license terms.
 //-----------------------------------------------------------------------------
 #endregion
@@ -73,7 +73,7 @@ namespace WaveWPF
 
             foreach (string item in resourceNames)
             {
-                if (item.Contains("SplashScreen.wpk"))
+                if (item.Contains("SplashScreen.png"))
                 {
                     name = item;
                     break;
@@ -87,7 +87,7 @@ namespace WaveWPF
 
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
             {
-                this.splashScreen = WaveServices.Assets.Global.LoadAsset<Texture2D>(name, stream);
+                this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
             }
 
             position = new Vector2();

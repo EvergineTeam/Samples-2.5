@@ -114,7 +114,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

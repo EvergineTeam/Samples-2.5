@@ -74,7 +74,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

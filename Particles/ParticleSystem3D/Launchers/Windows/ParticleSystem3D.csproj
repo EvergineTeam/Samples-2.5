@@ -69,7 +69,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\ParticleSystem3DSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\ParticleSystem3DSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

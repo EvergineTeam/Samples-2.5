@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Game.ico" />
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <!--
       To modify your build process, add your task inside one of the targets below and uncomment it. 

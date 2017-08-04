@@ -130,7 +130,7 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SplashScreen.wpk" />
+    <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon.icns" />
