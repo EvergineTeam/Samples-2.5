@@ -31,7 +31,7 @@ namespace CustomGeometry
         /// The material
         /// </summary>
         [RequiredComponent]
-        public MaterialsMap Material;
+        public MaterialComponent MaterialComponent;
 
         /// <summary>
         /// The disposed
@@ -106,7 +106,7 @@ namespace CustomGeometry
         public override void Draw(TimeSpan gameTime)
         {            
             Matrix localWorld = this.Transform3D.WorldTransform;
-            this.RenderManager.DrawMesh(this.mesh, this.Material.DefaultMaterial, ref localWorld);
+            this.RenderManager.DrawMesh(this.mesh, this.MaterialComponent.Material, ref localWorld);
         }
 
         /// <summary>
