@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:04:03
+// File generated on 8/8/2017 12:35:55 PM
 namespace Entity3DCollision
 {
     using System;
@@ -17,11 +17,14 @@ namespace Entity3DCollision
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/Entity3DCollision.wgame </summary>
+        public const string GameInfo = "Content/Entity3DCollision.wgame";
+        
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/checkered.jpg </summary>
-            public const string checkered_jpg = "Content/Assets/checkered.jpg";
+            /// <summary> Path to Content/Assets/checkered.png </summary>
+            public const string checkered_png = "Content/Assets/checkered.png";
             
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
