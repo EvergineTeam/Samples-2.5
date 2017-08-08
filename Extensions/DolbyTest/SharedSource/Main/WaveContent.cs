@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:53:34
+// File generated on 08/08/2017 14:14:40
 namespace DolbyTest
 {
     using System;
@@ -16,6 +16,9 @@ namespace DolbyTest
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/DolbyTest.wgame </summary>
+        public const string GameInfo = "Content/DolbyTest.wgame";
         
         public sealed class Assets
         {
