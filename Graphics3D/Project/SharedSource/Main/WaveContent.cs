@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:26
+// File generated on 08/08/2017 11:42:12
 namespace Project
 {
     using System;
@@ -17,11 +17,35 @@ namespace Project
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/Project.wgame </summary>
+        public const string GameInfo = "Content/Project.wgame";
+        
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/MyMaterial.wmat </summary>
-            public const string MyMaterial = "Content/Assets/MyMaterial.wmat";
+            /// <summary> Path to Content/Assets/blueMat.wmat </summary>
+            public const string blueMat = "Content/Assets/blueMat.wmat";
+            
+            /// <summary> Path to Content/Assets/grayMat.wmat </summary>
+            public const string grayMat = "Content/Assets/grayMat.wmat";
+            
+            /// <summary> Path to Content/Assets/greenMat.wmat </summary>
+            public const string greenMat = "Content/Assets/greenMat.wmat";
+            
+            /// <summary> Path to Content/Assets/lightBlueMat.wmat </summary>
+            public const string lightBlueMat = "Content/Assets/lightBlueMat.wmat";
+            
+            /// <summary> Path to Content/Assets/orangeMat.wmat </summary>
+            public const string orangeMat = "Content/Assets/orangeMat.wmat";
+            
+            /// <summary> Path to Content/Assets/redMat.wmat </summary>
+            public const string redMat = "Content/Assets/redMat.wmat";
+            
+            /// <summary> Path to Content/Assets/violetMat.wmat </summary>
+            public const string violetMat = "Content/Assets/violetMat.wmat";
+            
+            /// <summary> Path to Content/Assets/yellowMat.wmat </summary>
+            public const string yellowMat = "Content/Assets/yellowMat.wmat";
         }
         
         public sealed class Scenes
