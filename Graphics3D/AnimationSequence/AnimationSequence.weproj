@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>5ca9375a-0655-45e1-b35c-d7923b64dff9</Id>
   <GameInfoPath>AnimationSequence.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -40,5 +40,5 @@
     <d2p1:_Minor>4</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.1-alpha-20170807-559</WaveVersion>
+  <WaveVersion>2.4.1-alpha-20170808-561</WaveVersion>
 </Project>
