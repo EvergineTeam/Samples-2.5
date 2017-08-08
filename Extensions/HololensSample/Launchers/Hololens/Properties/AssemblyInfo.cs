@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using WaveEngine.Common.Attributes;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -11,10 +12,13 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("")]
 
 [assembly: AssemblyProduct("HololensSample")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+
+// This line is necessary to mark this assembly as a Wave Engine game assembly
+[assembly: WaveEngineAssembly]
 
 // Version information for an assembly consists of the following four values:
 //
