@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:05:14
+// File generated on 8/8/2017 2:19:20 PM
 namespace Motor3D
 {
     using System;
@@ -16,6 +16,9 @@ namespace Motor3D
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Motor3D.wgame </summary>
+        public const string GameInfo = "Content/Motor3D.wgame";
         
         public sealed class Assets
         {
@@ -28,6 +31,13 @@ namespace Motor3D
             
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
+            
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/DefaultMaterial.wmat </summary>
+                public const string DefaultMaterial = "Content/Assets/Materials/DefaultMaterial.wmat";
+            }
         }
         
         public sealed class Scenes
