@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:03:16
+// File generated on 8/8/2017 12:06:24 PM
 namespace StickyProjectiles
 {
     using System;
@@ -16,6 +16,9 @@ namespace StickyProjectiles
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/StickyProjectiles.wgame </summary>
+        public const string GameInfo = "Content/StickyProjectiles.wgame";
         
         public sealed class Assets
         {
