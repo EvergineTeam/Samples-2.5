@@ -25,7 +25,7 @@ namespace Project
         private Vector3 direction;
         private Ray ray;
         private Entity currentEntity;
-        private BoxCollider3D entityCollider;
+        private Collider3D entityCollider;
         private float bestValue;
         private float? collisionResult;
         private MyScene myScene;
@@ -62,12 +62,20 @@ namespace Project
                 {
                     currentEntity = EntityManager.EntityGraph.ElementAt(i); ;
 
-                    entityCollider = currentEntity.FindComponent<BoxCollider3D>();
+                    entityCollider = currentEntity.FindComponent<Collider3D>(false);
                     // ... but only a collidable entities ( entities which have a boxCollider component)
                     if (entityCollider != null)
                     {
-                        // Intersect our calculated ray with the entity's boxCollider
-                        collisionResult = entityCollider.Intersects(ref ray);
+                        if (entityCollider is BoxCollider3D)
+                        {
+                            // Intersect our calculated ray with the entity's boxCollider
+                            collisionResult = (entityCollider as BoxCollider3D).Intersects(ref ray);
+                        }
+                        else if (entityCollider is SphereCollider3D)
+                        {
+                            collisionResult = (entityCollider as SphereCollider3D).Intersects(ref ray);
+                        }                        
+
                         // If any collision
                         if (collisionResult.HasValue)
                         {
