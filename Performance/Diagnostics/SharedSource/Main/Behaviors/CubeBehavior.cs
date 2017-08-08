@@ -6,48 +6,62 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Services;
 
 namespace Diagnostics.Behaviors
 {
     [DataContract]
     public class CubeBehavior : Behavior
     {
+        [RequiredService]
+        private Clock clock;
+
         [RequiredComponent]
         public Transform3D Transform;
 
-        [DataMember]
-        public float AngleStep { get; set; }
+        private Vector3 initPosition;
 
         [DataMember]
-        public float Speed { get; set; }
+        public float Frequency { get; set; }
+
+        [DataMember]
+        public Vector3 Amplitude { get; set; }
 
         private float currentAngle;
 
         public CubeBehavior() { }
 
+        protected override void DefaultValues()
+        {
+            base.DefaultValues();
+            this.Frequency = 1;
+            this.Amplitude = Vector3.UnitX;
+        }
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+
+            this.initPosition = this.Transform.Position;
+        }
+
         protected override void Update(TimeSpan gameTime)
         {
             Timers.BeginTimer("Cube Behavior Update");
-            var timeLapse = (gameTime.Milliseconds / 1000f);
-            currentAngle = currentAngle + (AngleStep * Speed * timeLapse);
 
-            Vector3 aux = this.Transform.Position;
-            if (Math.Abs(Transform.Position.X) > 0.001)
-            {
-                aux.X = Transform.Position.X + ((float)Math.Cos(currentAngle) / 10);
-            }
-            if (Math.Abs(Transform.Position.Y) > 0.001)
-            {
-                aux.Y = Transform.Position.Y + ((float)Math.Sin(currentAngle) / 10);
-            }
-            if (Math.Abs(Transform.Position.Z) > 0.001)
-            {
-                aux.Z = Transform.Position.Z + ((float)Math.Cos(currentAngle) / 10);
-            }
-            this.Transform.Position = aux;
+            currentAngle = (float)(clock.TotalTime.TotalSeconds) * this.Frequency;
+            float sinAngle = (float)Math.Sin(currentAngle);
+            float cosAngle = (float)Math.Cos(currentAngle);
+
+            Vector3 aux;            
+            aux.X = initPosition.X + (sinAngle * this.Amplitude.X);
+            aux.Y = initPosition.Y + (cosAngle * this.Amplitude.Y);
+            aux.Z = initPosition.Z + (sinAngle * this.Amplitude.Z);
+
+            this.Transform.Position = aux;          
 
             Timers.EndTimer("Cube Behavior Update");
-            Labels.Add("First cube position", this.Transform.Position.ToString());
+            Labels.Add("First cube position", this.Transform.Position);
         }
     }
 }
