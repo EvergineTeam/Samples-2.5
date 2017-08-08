@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:02:27
+// File generated on 8/8/2017 11:41:42 AM
 namespace StaticBatching
 {
     using System;
@@ -16,6 +16,9 @@ namespace StaticBatching
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/StaticBatching.wgame </summary>
+        public const string GameInfo = "Content/StaticBatching.wgame";
         
         public sealed class Assets
         {
@@ -26,23 +29,21 @@ namespace StaticBatching
             /// <summary> Path to Content/Assets/material1.wmat </summary>
             public const string material1 = "Content/Assets/material1.wmat";
             
-            /// <summary> Path to Content/Assets/material2.wmat </summary>
-            public const string material2 = "Content/Assets/material2.wmat";
-            
             public sealed class textures
             {
-                
-                /// <summary> Path to Content/Assets/textures/column1.png </summary>
-                public const string column1_png = "Content/Assets/textures/column1.png";
-                
-                /// <summary> Path to Content/Assets/textures/column1_normal.png </summary>
-                public const string column1_normal_png = "Content/Assets/textures/column1_normal.png";
                 
                 /// <summary> Path to Content/Assets/textures/column2.png </summary>
                 public const string column2_png = "Content/Assets/textures/column2.png";
                 
                 /// <summary> Path to Content/Assets/textures/column2_normal.png </summary>
                 public const string column2_normal_png = "Content/Assets/textures/column2_normal.png";
+            }
+            
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/MainColumn.wmat </summary>
+                public const string MainColumn = "Content/Assets/Materials/MainColumn.wmat";
             }
         }
         

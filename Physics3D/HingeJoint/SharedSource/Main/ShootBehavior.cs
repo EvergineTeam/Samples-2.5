@@ -31,12 +31,12 @@ namespace HingleJoint
 
                     var sphere = new Entity()
                           .AddComponent(new Transform3D() { Scale = new Vector3(1) })
-                          .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
-                          .AddComponent(Model.CreateSphere())
+                          .AddComponent(new MaterialComponent() { MaterialPath= WaveContent.Assets.basicMaterial })
+                          .AddComponent(new SphereMesh())
                           .AddComponent(new SphereCollider3D())
                           .AddComponent(new RigidBody3D() { Mass = 2, EnableContinuousContact = true })
                           .AddComponent(new TimeAliveBehavior())
-                          .AddComponent(new ModelRenderer());
+                          .AddComponent(new MeshRenderer());
 
                     this.EntityManager.Add(sphere);
 
