@@ -51,25 +51,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Box2D.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.4.1-alpha-20170807-559\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.4.1-alpha-20170808-561\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
@@ -105,12 +105,12 @@
   </Target>
   -->
   <ItemGroup />
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.Box2D.targets')" />
-  <Import Project="..\..\packages\WaveEngine.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.4.1-alpha-20170807-559\build\MonoAndroid\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.4.1-alpha-20170808-561\build\MonoAndroid\WaveEngine.targets'))" />
   </Target>
 </Project>
