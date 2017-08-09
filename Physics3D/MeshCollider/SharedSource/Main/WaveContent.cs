@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:05:05
+// File generated on 8/8/2017 1:53:59 PM
 namespace MeshCollider
 {
     using System;
@@ -17,17 +17,26 @@ namespace MeshCollider
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/MeshCollider.wgame </summary>
+        public const string GameInfo = "Content/MeshCollider.wgame";
+        
         public sealed class Assets
         {
             
             /// <summary> Path to Content/Assets/checkered.jpg </summary>
             public const string checkered_jpg = "Content/Assets/checkered.jpg";
             
-            /// <summary> Path to Content/Assets/Terrain.fbx </summary>
-            public const string Terrain_fbx = "Content/Assets/Terrain.fbx";
-            
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
+            
+            /// <summary> Path to Content/Assets/capsule.wpref </summary>
+            public const string capsule = "Content/Assets/capsule.wpref";
+            
+            /// <summary> Path to Content/Assets/cube.wpref </summary>
+            public const string cube = "Content/Assets/cube.wpref";
+            
+            /// <summary> Path to Content/Assets/sphere.wpref </summary>
+            public const string sphere = "Content/Assets/sphere.wpref";
         }
         
         public sealed class Scenes
