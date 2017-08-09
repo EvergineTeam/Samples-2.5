@@ -127,14 +127,20 @@ namespace LeapMotionSample
         /// <returns>Entity.</returns>
         private Entity CreateNode(string handName, Color color, float scale)
         {
-            return new Entity() { IsVisible = true , Tag = handName}
+            return new Entity() { IsVisible = true, Tag = handName }
                             .AddComponent(new Transform3D()
                             {
                                 Scale = new Vector3(scale),
-                            })                            
-                            .AddComponent(new MaterialsMap(new StandardMaterial(color, DefaultLayers.Opaque) { AmbientColor = Color.Gray }))
-                            .AddComponent(Model.CreateSphere())
-                            .AddComponent(new ModelRenderer());
+                            })
+                            .AddComponent(new MaterialComponent()
+                            {
+                                Material = new StandardMaterial(color, DefaultLayers.Opaque)
+                                {
+                                    AmbientColor = Color.Gray
+                                }
+                            })
+                            .AddComponent(new SphereMesh())
+                            .AddComponent(new MeshRenderer());
         }
 
         /// <summary>
@@ -147,10 +153,16 @@ namespace LeapMotionSample
                             .AddComponent(new Transform3D()
                             {
                                 Scale = new Vector3(0.01f)
-                            })                            
-                            .AddComponent(new MaterialsMap(new StandardMaterial(Color.LightGray, DefaultLayers.Opaque) { AmbientColor = Color.Gray }))
-                            .AddComponent(Model.CreateCube())
-                            .AddComponent(new ModelRenderer());
+                            })
+                            .AddComponent(new MaterialComponent()
+                            {
+                                Material = new StandardMaterial(Color.LightGray, DefaultLayers.Opaque)
+                                {
+                                    AmbientColor = Color.Gray
+                                }
+                             })
+                            .AddComponent(new CubeMesh())
+                            .AddComponent(new MeshRenderer());
         }
 
         /// <summary>
@@ -180,8 +192,8 @@ namespace LeapMotionSample
 
                                 // Fingers
                                 UpdateFingers(hand);
-                            }                            
-                        }                        
+                            }
+                        }
                         else
                         {
                             this.UpdateVisibility(handName, false);
@@ -272,7 +284,7 @@ namespace LeapMotionSample
         {
             Entity node = this.entities[nodeName];
             var transform = node.FindComponent<Transform3D>();
-            transform.Position = leapMotionPosition;            
+            transform.Position = leapMotionPosition;
         }
 
         /// <summary>
@@ -284,7 +296,7 @@ namespace LeapMotionSample
         private void UpdateEdge(string edgeName, Vector3 start, Vector3 end)
         {
             Entity edge = this.entities[edgeName];
-            var transform = edge.FindComponent<Transform3D>();            
+            var transform = edge.FindComponent<Transform3D>();
 
             Vector3 direction = end - start;
             Vector3 position = start + (direction / 2);
@@ -307,7 +319,7 @@ namespace LeapMotionSample
         private void UpdateVisibility(string tag, bool value)
         {
             var entities = this.Owner.FindChildrenByTag(tag);
-            foreach(Entity e in entities)
+            foreach (Entity e in entities)
             {
                 e.IsVisible = value;
             }
