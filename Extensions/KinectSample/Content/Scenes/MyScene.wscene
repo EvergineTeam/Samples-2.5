@@ -132,6 +132,11 @@
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CurrentSource>Color</d5p1:CurrentSource>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1016</d6p1:X>
+            <d6p1:Y>730</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:UseVirtualScreenSize>true</d5p1:UseVirtualScreenSize>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Kinect.Drawables" i:type="d5p1:KinectSkeletonsDrawable2D">
           <d4p1:IsVisible>true</d4p1:IsVisible>
@@ -199,6 +204,11 @@
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:CurrentSource>Color</d5p1:CurrentSource>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1016</d6p1:X>
+            <d6p1:Y>730</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:UseVirtualScreenSize>true</d5p1:UseVirtualScreenSize>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Kinect.Drawables" i:type="d5p1:KinectFaceDrawable2D">
           <d4p1:IsVisible>true</d4p1:IsVisible>
