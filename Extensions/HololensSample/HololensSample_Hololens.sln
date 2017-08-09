@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensSample", "Launchers\HololensProfile\HololensSample.csproj", "{A0B16364-D32D-4563-83DA-9447D54D0403}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensSample", "Launchers\Hololens\HololensSample.csproj", "{A0B16364-D32D-4563-83DA-9447D54D0403}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HololensSampleSource", "SharedSource\Main\HololensSampleSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject

@@ -4,219 +4,10 @@
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>Engine00</d2p1:name>
-          <d2p1:tag>Engine</d2p1:tag>
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>0</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>1</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>-0.316116631</d8p1:X>
-                <d8p1:Y>-0.05821352</d8p1:Y>
-                <d8p1:Z>-0.124369271</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.75</d8p1:X>
-                <d8p1:Y>0.75</d8p1:Y>
-                <d8p1:Z>0.75</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:DistanceScale>1</d7p1:DistanceScale>
-              <d7p1:DopplerScale>1</d7p1:DopplerScale>
-              <d7p1:IsMuted>false</d7p1:IsMuted>
-              <d7p1:Loop>true</d7p1:Loop>
-              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
-              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
-              <d7p1:Volume>1</d7p1:Volume>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>Engine01</d2p1:name>
-          <d2p1:tag>Engine</d2p1:tag>
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>0</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>1</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>-0.551890969</d8p1:X>
-                <d8p1:Y>-5.28274668E-09</d8p1:Y>
-                <d8p1:Z>9.370797E-08</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.75</d8p1:X>
-                <d8p1:Y>0.75</d8p1:Y>
-                <d8p1:Z>0.75</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:DistanceScale>1</d7p1:DistanceScale>
-              <d7p1:DopplerScale>1</d7p1:DopplerScale>
-              <d7p1:IsMuted>false</d7p1:IsMuted>
-              <d7p1:Loop>true</d7p1:Loop>
-              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
-              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
-              <d7p1:Volume>1</d7p1:Volume>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>Engine02</d2p1:name>
-          <d2p1:tag>Engine</d2p1:tag>
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>0</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>1</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.31001544</d8p1:X>
-                <d8p1:Y>-0.05821352</d8p1:Y>
-                <d8p1:Z>-0.135550767</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.75</d8p1:X>
-                <d8p1:Y>0.75</d8p1:Y>
-                <d8p1:Z>0.75</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:DistanceScale>1</d7p1:DistanceScale>
-              <d7p1:DopplerScale>1</d7p1:DopplerScale>
-              <d7p1:IsMuted>false</d7p1:IsMuted>
-              <d7p1:Loop>true</d7p1:Loop>
-              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
-              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
-              <d7p1:Volume>1</d7p1:Volume>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>Engine03</d2p1:name>
-          <d2p1:tag>Engine</d2p1:tag>
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>0</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>1</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.5349247</d8p1:X>
-                <d8p1:Y>-0.05821352</d8p1:Y>
-                <d8p1:Z>0.0366897136</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0.75</d8p1:X>
-                <d8p1:Y>0.75</d8p1:Y>
-                <d8p1:Z>0.75</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
-              <d6p1:IsActive>true</d6p1:IsActive>
-              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
-              <d7p1:DistanceScale>1</d7p1:DistanceScale>
-              <d7p1:DopplerScale>1</d7p1:DopplerScale>
-              <d7p1:IsMuted>false</d7p1:IsMuted>
-              <d7p1:Loop>true</d7p1:Loop>
-              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
-              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
-              <d7p1:Volume>1</d7p1:Volume>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-      </d2p1:SerializeChildrens>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>a380</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.7071068</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.7071067</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-2.73792362</d6p1:X>
-            <d6p1:Y>6.757707</d6p1:Y>
-            <d6p1:Z>-6.46093559</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.75</d6p1:X>
-            <d6p1:Y>0.75</d6p1:Y>
-            <d6p1:Z>0.75</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/A380Mat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/a380.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Spinner">
-          <d4p1:IsActive>true</d4p1:IsActive>
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d5p1:AxisTotalIncreases xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.523598731</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:AxisTotalIncreases>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/HololensSample" i:type="d5p1:PlaceBehavior">
-          <d4p1:IsActive>true</d4p1:IsActive>
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d5p1:PlaceDistance>1</d5p1:PlaceDistance>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/HololensSample" i:type="d5p1:VoiceCommands" />
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens>
             <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
               <d2p1:SerializeChildrens />
+              <d2p1:isDisabled>false</d2p1:isDisabled>
               <d2p1:isStatic>false</d2p1:isStatic>
               <d2p1:isVisible>true</d2p1:isVisible>
               <d2p1:name>LeftEyeAnchor</d2p1:name>
@@ -273,6 +64,7 @@
             </d2p1:BaseEntityModel>
             <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
               <d2p1:SerializeChildrens />
+              <d2p1:isDisabled>false</d2p1:isDisabled>
               <d2p1:isStatic>false</d2p1:isStatic>
               <d2p1:isVisible>true</d2p1:isVisible>
               <d2p1:name>CenterEyeAnchor</d2p1:name>
@@ -297,8 +89,8 @@
                   </d9p1:LocalScale>
                 </d8p1:Component>
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Sound" i:type="d9p1:SoundListener3D">
-                  <d8p1:IsActive>true</d8p1:IsActive>
                   <d8p1:UpdateOrder>0.5</d8p1:UpdateOrder>
+                  <d8p1:isDisabled>false</d8p1:isDisabled>
                 </d8p1:Component>
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Camera3D">
                   <d9p1:BackgroundColor xmlns:d10p1="WaveEngine.Common.Graphics">
@@ -333,6 +125,7 @@
             </d2p1:BaseEntityModel>
             <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
               <d2p1:SerializeChildrens />
+              <d2p1:isDisabled>false</d2p1:isDisabled>
               <d2p1:isStatic>false</d2p1:isStatic>
               <d2p1:isVisible>true</d2p1:isVisible>
               <d2p1:name>RightEyeAnchor</d2p1:name>
@@ -389,6 +182,7 @@
             </d2p1:BaseEntityModel>
             <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
               <d2p1:SerializeChildrens />
+              <d2p1:isDisabled>false</d2p1:isDisabled>
               <d2p1:isStatic>false</d2p1:isStatic>
               <d2p1:isVisible>true</d2p1:isVisible>
               <d2p1:name>TrackerAnchor</d2p1:name>
@@ -415,6 +209,7 @@
               </d2p1:SerializeComponents>
             </d2p1:BaseEntityModel>
           </d2p1:SerializeChildrens>
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>TrackingSpace</d2p1:name>
@@ -441,6 +236,7 @@
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>CameraRig</d2p1:name>
@@ -465,8 +261,8 @@
           </d5p1:LocalScale>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.VR" i:type="d5p1:VRCameraRig">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:Disable>false</d5p1:Disable>
           <d5p1:Monoscopic>false</d5p1:Monoscopic>
           <d5p1:backgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
@@ -481,12 +277,246 @@
           <d5p1:vrMode>HmdMode</d5p1:vrMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Hololens" i:type="d5p1:HololensProvider">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+          <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>Engine03</d2p1:name>
+          <d2p1:tag>Engine</d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:W>-2.503257E-08</d8p1:W>
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>1</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalOrientation>
+              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.537733555</d8p1:X>
+                <d8p1:Y>-0.06102241</d8p1:Y>
+                <d8p1:Z>0.0366897136</d8p1:Z>
+              </d7p1:LocalPosition>
+              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.75</d8p1:X>
+                <d8p1:Y>0.75</d8p1:Y>
+                <d8p1:Z>0.75</d8p1:Z>
+              </d7p1:LocalScale>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
+              <d7p1:DistanceScale>1</d7p1:DistanceScale>
+              <d7p1:DopplerScale>1</d7p1:DopplerScale>
+              <d7p1:IsMuted>false</d7p1:IsMuted>
+              <d7p1:Loop>true</d7p1:Loop>
+              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
+              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
+              <d7p1:Volume>1</d7p1:Volume>
+            </d6p1:Component>
+          </d2p1:SerializeComponents>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+          <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>Engine02</d2p1:name>
+          <d2p1:tag>Engine</d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:W>-2.503257E-08</d8p1:W>
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>1</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalOrientation>
+              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.312824368</d8p1:X>
+                <d8p1:Y>-0.06102241</d8p1:Y>
+                <d8p1:Z>-0.135550767</d8p1:Z>
+              </d7p1:LocalPosition>
+              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.75</d8p1:X>
+                <d8p1:Y>0.75</d8p1:Y>
+                <d8p1:Z>0.75</d8p1:Z>
+              </d7p1:LocalScale>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
+              <d7p1:DistanceScale>1</d7p1:DistanceScale>
+              <d7p1:DopplerScale>1</d7p1:DopplerScale>
+              <d7p1:IsMuted>false</d7p1:IsMuted>
+              <d7p1:Loop>true</d7p1:Loop>
+              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
+              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
+              <d7p1:Volume>1</d7p1:Volume>
+            </d6p1:Component>
+          </d2p1:SerializeComponents>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+          <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>Engine01</d2p1:name>
+          <d2p1:tag>Engine</d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:W>-2.503257E-08</d8p1:W>
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>1</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalOrientation>
+              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>-0.5490821</d8p1:X>
+                <d8p1:Y>-0.00280885585</d8p1:Y>
+                <d8p1:Z>9.320577E-08</d8p1:Z>
+              </d7p1:LocalPosition>
+              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.75</d8p1:X>
+                <d8p1:Y>0.75</d8p1:Y>
+                <d8p1:Z>0.75</d8p1:Z>
+              </d7p1:LocalScale>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
+              <d7p1:DistanceScale>1</d7p1:DistanceScale>
+              <d7p1:DopplerScale>1</d7p1:DopplerScale>
+              <d7p1:IsMuted>false</d7p1:IsMuted>
+              <d7p1:Loop>true</d7p1:Loop>
+              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
+              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
+              <d7p1:Volume>1</d7p1:Volume>
+            </d6p1:Component>
+          </d2p1:SerializeComponents>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+          <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>Engine</d2p1:name>
+          <d2p1:tag>Engine</d2p1:tag>
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:W>-2.503257E-08</d8p1:W>
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>1</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalOrientation>
+              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>-0.3133077</d8p1:X>
+                <d8p1:Y>-0.06102241</d8p1:Y>
+                <d8p1:Z>-0.124369271</d8p1:Z>
+              </d7p1:LocalPosition>
+              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0.75</d8p1:X>
+                <d8p1:Y>0.75</d8p1:Y>
+                <d8p1:Z>0.75</d8p1:Z>
+              </d7p1:LocalScale>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Sound" i:type="d7p1:SoundEmitter3D">
+              <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
+              <d6p1:isDisabled>false</d6p1:isDisabled>
+              <d7p1:DistanceScale>1</d7p1:DistanceScale>
+              <d7p1:DopplerScale>1</d7p1:DopplerScale>
+              <d7p1:IsMuted>false</d7p1:IsMuted>
+              <d7p1:Loop>true</d7p1:Loop>
+              <d7p1:PlayAutomatically>true</d7p1:PlayAutomatically>
+              <d7p1:SoundPath>Content/Assets/engines.wav.wpk</d7p1:SoundPath>
+              <d7p1:Volume>1</d7p1:Volume>
+            </d6p1:Component>
+          </d2p1:SerializeComponents>
+        </d2p1:BaseEntityModel>
+        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+          <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
+          <d2p1:isStatic>false</d2p1:isStatic>
+          <d2p1:isVisible>true</d2p1:isVisible>
+          <d2p1:name>Airbus</d2p1:name>
+          <d2p1:tag i:nil="true" />
+          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
+            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
+              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:W>0.707106769</d8p1:W>
+                <d8p1:X>-0.707106769</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalOrientation>
+              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>0</d8p1:X>
+                <d8p1:Y>0</d8p1:Y>
+                <d8p1:Z>0</d8p1:Z>
+              </d7p1:LocalPosition>
+              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
+                <d8p1:X>1</d8p1:X>
+                <d8p1:Y>1</d8p1:Y>
+                <d8p1:Z>1</d8p1:Z>
+              </d7p1:LocalScale>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:FileMesh">
+              <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Airbus</ModelMeshName>
+              <d7p1:ModelPath>Content/Assets/a380.fbx.wpk</d7p1:ModelPath>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialComponent">
+              <d7p1:AsignedTo>16 - Default</d7p1:AsignedTo>
+              <d7p1:MaterialPath>Content/Assets/A380Mat.wmat</d7p1:MaterialPath>
+              <d7p1:UseCopy>false</d7p1:UseCopy>
+              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
+              <d6p1:IsVisible>true</d6p1:IsVisible>
+              <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
+            </d6p1:Component>
+            <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:MaterialComponent">
+              <d7p1:AsignedTo>16 - Default</d7p1:AsignedTo>
+              <d7p1:MaterialPath>Content/Assets/A380Mat.wmat</d7p1:MaterialPath>
+              <d7p1:UseCopy>false</d7p1:UseCopy>
+              <d7p1:useDummyMaterial>false</d7p1:useDummyMaterial>
+            </d6p1:Component>
+          </d2p1:SerializeComponents>
+        </d2p1:BaseEntityModel>
+      </d2p1:SerializeChildrens>
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>a381</d2p1:name>
+      <d2p1:tag></d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.7071068</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0.7071067</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>2.64041631E-07</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>-1.47662747</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.75</d6p1:X>
+            <d6p1:Y>0.75</d6p1:Y>
+            <d6p1:Z>0.75</d6p1:Z>
+          </d5p1:LocalScale>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
