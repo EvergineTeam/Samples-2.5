@@ -29,9 +29,9 @@ namespace Networking.Scenes
 
         public SelectPlayerScene()
         {
-            this.networkService = WaveServices.GetService<NetworkService>();
-            this.networkService.HostMessageReceived += this.HostMessageReceived;
-            this.networkService.ClientMessageReceived += this.ClientMessageReceived;
+            this.networkService = WaveServices.GetService<NetworkService>();            
+            this.networkService.MessageReceivedFromClient += this.HostMessageReceived;
+            this.networkService.MessageReceivedFromHost += this.ClientMessageReceived;
 
             this.assignedPlayerSprites = new Dictionary<int, string>();
         }
@@ -41,7 +41,7 @@ namespace Networking.Scenes
         /// <summary>
         /// Handles the messages received from the clients. Only when this player is the host.
         /// </summary>
-        private void HostMessageReceived(object sender, IncomingMessage receivedMessage)
+        private void HostMessageReceived(object sender, NetworkEndpoint fromEndpoint, IncomingMessage receivedMessage)
         {
             var playerIdentifier = receivedMessage.ReadString();
             var playerSpriteIndex = receivedMessage.ReadInt32();
@@ -129,7 +129,7 @@ namespace Networking.Scenes
         /// <summary>
         /// Handles the messages received from the host.
         /// </summary>
-        private void ClientMessageReceived(object sender, IncomingMessage receivedMessage)
+        private void ClientMessageReceived(object sender, NetworkEndpoint fromEndpoint, IncomingMessage receivedMessage)
         {
             var playerIdentifier = receivedMessage.ReadString();
             var playerSpriteIndex = receivedMessage.ReadInt32();

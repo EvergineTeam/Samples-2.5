@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>4c6f6a1d-f479-418b-ac09-b9d0bf1ef417</Id>
   <GameInfoPath>BasicPhysic2D.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -40,5 +40,5 @@
     <d2p1:_Minor>4</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.1-alpha-20170808-561</WaveVersion>
+  <WaveVersion>2.4.1-alpha-20170809-563</WaveVersion>
 </Project>

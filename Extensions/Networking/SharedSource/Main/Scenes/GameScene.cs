@@ -30,7 +30,7 @@ namespace Networking.Scenes
         {
             this.playerSpriteIndex = playerSpriteIndex;
 
-            this.networkService = WaveServices.GetService<NetworkService>();
+            this.networkService = WaveServices.GetService<NetworkService>();            
             //Register the scene to use the synchronization components. This scene sync the entities in the scenes with the same sceneId in other clients.
             this.networkManager = this.networkService.RegisterScene(this, GameSceneIdentifier);
             this.networkManager.AddFactory(PlayerFactoryIdentifier, this.CreatePlayer);

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:30:31 PM
+// File generated on 09/08/2017 14:41:52
 namespace SpineSkeletalAnimation
 {
     using System;
@@ -16,6 +16,9 @@ namespace SpineSkeletalAnimation
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/SpineSkeletalAnimation.wgame </summary>
+        public const string GameInfo = "Content/SpineSkeletalAnimation.wgame";
         
         public sealed class Assets
         {
