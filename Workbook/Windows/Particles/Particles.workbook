@@ -90,7 +90,7 @@ And then create a Entity and add the particleSystem3D component and a particleSy
 ```csharp
 Entity particleEmitter = new Entity()
 		.AddComponent(new Transform3D() { LocalPosition = new Vector3(0, 4.46f,0) })
-	    .AddComponent(new MaterialsMap() { DefaultMaterialPath = "Content/Assets/Materials/waterSpark.wmat"})
+	    .AddComponent(new MaterialComponent() { MaterialPath = "Content/Assets/Materials/waterSpark.wmat"})
 		.AddComponent(pSystem)
 	    .AddComponent(new ParticleSystemRenderer3D());
 game.scene.EntityManager.Add(particleEmitter);
