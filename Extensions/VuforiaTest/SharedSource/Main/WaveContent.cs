@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:55:22
+// File generated on 10/08/2017 14:59:24
 namespace VuforiaTest
 {
     using System;
@@ -17,17 +17,20 @@ namespace VuforiaTest
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/VuforiaTest.wgame </summary>
+        public const string GameInfo = "Content/VuforiaTest.wgame";
+        
         public sealed class Assets
         {
             
             public sealed class AR
             {
                 
-                /// <summary> Path to Content/Assets/AR/TestVuforia.dat </summary>
-                public const string TestVuforia_dat = "Content/Assets/AR/TestVuforia.dat";
+                /// <summary> Path to Content/Assets/AR/StonesAndChips.dat </summary>
+                public const string StonesAndChips_dat = "Content/Assets/AR/StonesAndChips.dat";
                 
-                /// <summary> Path to Content/Assets/AR/TestVuforia.xml </summary>
-                public const string TestVuforia_xml = "Content/Assets/AR/TestVuforia.xml";
+                /// <summary> Path to Content/Assets/AR/StonesAndChips.xml </summary>
+                public const string StonesAndChips_xml = "Content/Assets/AR/StonesAndChips.xml";
             }
             
             public sealed class Models
@@ -46,6 +49,12 @@ namespace VuforiaTest
                 /// <summary> Path to Content/Assets/Textures/ball_diffuse.png </summary>
                 public const string ball_diffuse_png = "Content/Assets/Textures/ball_diffuse.png";
                 
+                /// <summary> Path to Content/Assets/Textures/chips_scaled.jpg </summary>
+                public const string chips_scaled_jpg = "Content/Assets/Textures/chips_scaled.jpg";
+                
+                /// <summary> Path to Content/Assets/Textures/stones_scaled.jpg </summary>
+                public const string stones_scaled_jpg = "Content/Assets/Textures/stones_scaled.jpg";
+                
                 /// <summary> Path to Content/Assets/Textures/woodCrate_diffuse.png </summary>
                 public const string woodCrate_diffuse_png = "Content/Assets/Textures/woodCrate_diffuse.png";
             }
@@ -56,8 +65,14 @@ namespace VuforiaTest
                 /// <summary> Path to Content/Assets/Materials/ballMat.wmat </summary>
                 public const string ballMat = "Content/Assets/Materials/ballMat.wmat";
                 
+                /// <summary> Path to Content/Assets/Materials/chipsPatternMat.wmat </summary>
+                public const string chipsPatternMat = "Content/Assets/Materials/chipsPatternMat.wmat";
+                
                 /// <summary> Path to Content/Assets/Materials/crateMat.wmat </summary>
                 public const string crateMat = "Content/Assets/Materials/crateMat.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/stonesPatternMat.wmat </summary>
+                public const string stonesPatternMat = "Content/Assets/Materials/stonesPatternMat.wmat";
             }
         }
         

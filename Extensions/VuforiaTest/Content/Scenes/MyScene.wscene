@@ -109,7 +109,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </Viewport>
-          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.53242838</AspectRatio>
+          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.39178085</AspectRatio>
           <d5p1:StartTrackingAutomatically>true</d5p1:StartTrackingAutomatically>
           <d5p1:renderVideoCameraBackground>true</d5p1:renderVideoCameraBackground>
           <d5p1:worldCenterEntityPath i:nil="true" />
@@ -128,8 +128,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_00</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate01</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -139,8 +139,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-1.979559</d6p1:X>
-            <d6p1:Y>1.60140312</d6p1:Y>
+            <d6p1:X>-1.53164935</d6p1:X>
+            <d6p1:Y>0.5197232</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -149,18 +149,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -197,8 +196,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_01</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate02</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -208,8 +207,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-0.979559362</d6p1:X>
-            <d6p1:Y>1.60140312</d6p1:Y>
+            <d6p1:X>-0.5064878</d6p1:X>
+            <d6p1:Y>0.5197232</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -218,18 +217,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -266,8 +264,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_02</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate03</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -277,8 +275,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.0204410031</d6p1:X>
-            <d6p1:Y>1.60140312</d6p1:Y>
+            <d6p1:X>0.517672956</d6p1:X>
+            <d6p1:Y>0.5197232</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -287,18 +285,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -335,8 +332,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_03</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate04</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -346,8 +343,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1.02044129</d6p1:X>
-            <d6p1:Y>1.60140312</d6p1:Y>
+            <d6p1:X>1.56457913</d6p1:X>
+            <d6p1:Y>0.5197232</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -356,18 +353,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -404,8 +400,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_04</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate05</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -415,8 +411,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>2.02044082</d6p1:X>
-            <d6p1:Y>1.60140312</d6p1:Y>
+            <d6p1:X>1.020552</d6p1:X>
+            <d6p1:Y>1.58434868</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -425,18 +421,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -473,8 +468,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_05</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate06</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -484,8 +479,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-1.47955918</d6p1:X>
-            <d6p1:Y>2.60140443</d6p1:Y>
+            <d6p1:X>-0.022717664</d6p1:X>
+            <d6p1:Y>1.58434868</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -494,18 +489,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -542,8 +536,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_10</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate07</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -553,8 +547,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-0.4795591</d6p1:X>
-            <d6p1:Y>2.60140443</d6p1:Y>
+            <d6p1:X>-1.05428684</d6p1:X>
+            <d6p1:Y>1.58434868</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -563,18 +557,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -611,8 +604,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_11</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate08</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -622,8 +615,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.5204409</d6p1:X>
-            <d6p1:Y>2.60140443</d6p1:Y>
+            <d6p1:X>-0.5074505</d6p1:X>
+            <d6p1:Y>2.6308732</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -632,18 +625,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -680,8 +672,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_12</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate09</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -691,8 +683,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1.520441</d6p1:X>
-            <d6p1:Y>2.60140443</d6p1:Y>
+            <d6p1:X>0.531529546</d6p1:X>
+            <d6p1:Y>2.6308732</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -701,18 +693,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -749,8 +740,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_13</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>crate10</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -760,8 +751,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-0.979559362</d6p1:X>
-            <d6p1:Y>3.60140586</d6p1:Y>
+            <d6p1:X>0.0016384609</d6p1:X>
+            <d6p1:Y>3.65719962</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -770,363 +761,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Box001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/crate.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #0</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>0</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Size xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:Size>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
-          <d5p1:IsKinematic>false</d5p1:IsKinematic>
-          <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_14</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.0204410031</d6p1:X>
-            <d6p1:Y>3.60140586</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>0</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Size xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:Size>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
-          <d5p1:IsKinematic>false</d5p1:IsKinematic>
-          <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_15</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1.02044129</d6p1:X>
-            <d6p1:Y>3.60140586</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>0</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Size xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:Size>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
-          <d5p1:IsKinematic>false</d5p1:IsKinematic>
-          <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_16</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-0.4795591</d6p1:X>
-            <d6p1:Y>4.601406</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>0</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Size xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:Size>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
-          <d5p1:IsKinematic>false</d5p1:IsKinematic>
-          <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_17</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.5204409</d6p1:X>
-            <d6p1:Y>4.601406</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-          <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
-            <d6p1:A>255</d6p1:A>
-            <d6p1:B>0</d6p1:B>
-            <d6p1:G>0</d6p1:G>
-            <d6p1:R>255</d6p1:R>
-          </d5p1:DebugLineColor>
-          <d5p1:Size xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:Size>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CollisionGroup xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
-          <d5p1:EnableContinuousContact>false</d5p1:EnableContinuousContact>
-          <d5p1:IsKinematic>false</d5p1:IsKinematic>
-          <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>1</d5p1:Mass>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens />
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>crate_18</d2p1:name>
-      <d2p1:tag></d2p1:tag>
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.0204410031</d6p1:X>
-            <d6p1:Y>5.601406</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/crateMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/crate.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -1164,38 +809,37 @@
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>ball</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
+            <d6p1:W>0.707106769</d6p1:W>
+            <d6p1:X>-0.707106769</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0.676590562</d6p1:Y>
-            <d6p1:Z>1.75571954</d6p1:Z>
+            <d6p1:X>0.017585557</d6p1:X>
+            <d6p1:Y>0.188175827</d6p1:Y>
+            <d6p1:Z>2.32266831</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.25</d6p1:X>
-            <d6p1:Y>0.25</d6p1:Y>
-            <d6p1:Z>0.25</d6p1:Z>
+            <d6p1:X>0.2</d6p1:X>
+            <d6p1:Y>0.2</d6p1:Y>
+            <d6p1:Z>0.2</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialsMap">
-          <d5p1:DefaultMaterialPath>Content/Assets/Materials/ballMat.wmat</d5p1:DefaultMaterialPath>
-          <d5p1:MaterialsPath xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-          <d5p1:UseMaterialCopy>false</d5p1:UseMaterialCopy>
-          <d5p1:useDefaultMaterial>false</d5p1:useDefaultMaterial>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Sphere001</ModelMeshName>
+          <d5p1:ModelPath>Content/Assets/Models/ball.fbx.wpk</d5p1:ModelPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
+          <d5p1:AsignedTo>Material #26</d5p1:AsignedTo>
+          <d5p1:MaterialPath>Content/Assets/Materials/ballMat.wmat</d5p1:MaterialPath>
+          <d5p1:UseCopy>false</d5p1:UseCopy>
           <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath xmlns="WaveEngine.Framework.Graphics">Content/Assets/Models/ball.fbx.wpk</ModelPath>
-          <d5p1:ModelType>Custom</d5p1:ModelType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:ModelRenderer">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
           <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
         </d4p1:Component>
@@ -1217,7 +861,7 @@
           <d5p1:EnableContinuousContact>true</d5p1:EnableContinuousContact>
           <d5p1:IsKinematic>false</d5p1:IsKinematic>
           <d5p1:KineticFriction>0.3</d5p1:KineticFriction>
-          <d5p1:Mass>2</d5p1:Mass>
+          <d5p1:Mass>1</d5p1:Mass>
           <d5p1:Restitution>0</d5p1:Restitution>
           <d5p1:StaticFriction>0.6</d5p1:StaticFriction>
         </d4p1:Component>
@@ -1229,7 +873,7 @@
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>floor</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -1244,14 +888,23 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>100</d6p1:X>
-            <d6p1:Y>100</d6p1:Y>
-            <d6p1:Z>100</d6p1:Z>
+            <d6p1:X>15</d6p1:X>
+            <d6p1:Y>15</d6p1:Y>
+            <d6p1:Z>15</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:Model">
-          <ModelPath i:nil="true" xmlns="WaveEngine.Framework.Graphics" />
-          <d5p1:ModelType>Plane</d5p1:ModelType>
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:PlaneMesh">
+          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
+          <d5p1:Height>1</d5p1:Height>
+          <d5p1:Normal xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:Normal>
+          <d5p1:TwoSides>false</d5p1:TwoSides>
+          <d5p1:UVHorizontalFlip>false</d5p1:UVHorizontalFlip>
+          <d5p1:UVVerticalFlip>false</d5p1:UVVerticalFlip>
+          <d5p1:Width>1</d5p1:Width>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:BoxCollider3D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -1306,7 +959,7 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>663</d5p1:VirtualHeight>
+          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>

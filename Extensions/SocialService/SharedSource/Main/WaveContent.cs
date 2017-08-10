@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 10/08/2017 13:41:24
+// File generated on 10/08/2017 15:01:45
 namespace SocialService
 {
     using System;
