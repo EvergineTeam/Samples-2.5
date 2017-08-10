@@ -1,5 +1,5 @@
 ﻿<Scene xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>ca1e2372-d6d6-46d2-b894-6ae25ffff02f</Id>
+  <Id>ca1e2372-d6d6-46d2-b894-6ae25aefa02f</Id>
   <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens>
@@ -109,13 +109,8 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </Viewport>
-          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.39178085</AspectRatio>
+          <AspectRatio xmlns="WaveEngine.Framework.Graphics">1.53242838</AspectRatio>
           <d5p1:StartTrackingAutomatically>true</d5p1:StartTrackingAutomatically>
-          <d5p1:dataSetPath>Content/Assets/AR/TestVuforia.xml</d5p1:dataSetPath>
-          <d5p1:extendedTracking>true</d5p1:extendedTracking>
-          <d5p1:licenseKey>AeRNu+n/////AAAAGfmXotSIvkSQp6D3annJaEEIdl9kN9/8PT8UYO0GOlbvz/n/w4oqvYxTLeLJ/mcx6ulZ+nPitOux8SEyXlTbeYvrM7qO63OkYLluwhT/ULICxNp+z9UIKaLiJDPSKdBdlH3h0I2xzzmo46D7urlvhOxt0l+sNDchaqrQLbV2o7lkvnhGJCzAQl/ZDjsYrEWU+98ZT45DSMNBnHOuvnG1IDoQpsdW7e58yH7bwxqLSbCoBJqWD0iFL9IBXrkbOtrqyrA0UCDqeKl8JeIb4+UKQKJR+WV6Hdml3FafdiDAUoPBwK92363ndni2ai+fEtkTmJFRUxJunoaqEpzC6kr1QYvL/d7JwaBCGfZRKfcp7QD1</d5p1:licenseKey>
-          <d5p1:maxSimultaneousImageTargets>1</d5p1:maxSimultaneousImageTargets>
-          <d5p1:maxSimultaneousObjectTargets>0</d5p1:maxSimultaneousObjectTargets>
           <d5p1:renderVideoCameraBackground>true</d5p1:renderVideoCameraBackground>
           <d5p1:worldCenterEntityPath i:nil="true" />
           <d5p1:worldCenterMode>FirstTarget</d5p1:worldCenterMode>
@@ -1311,7 +1306,7 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualHeight>663</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
