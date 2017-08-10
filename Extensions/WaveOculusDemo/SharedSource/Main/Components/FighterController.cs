@@ -33,9 +33,6 @@ namespace WaveOculusDemoProject.Components
         private TrailManager trailManager;
 
         [RequiredComponent]
-        private MaterialsMap materialsMap;
-
-        [RequiredComponent]
         private AnimatedParamBehavior laserTrigger;
 
         private SoundEmitter3D engineSoundEmitter;
