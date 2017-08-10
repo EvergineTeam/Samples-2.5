@@ -1,5 +1,6 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>d9296b0d-5f76-41bc-ab05-324bd271ee38</Id>
+  <Id>123a8a78-7a9a-45f8-be5e-ee56c404a9b2</Id>
+  <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Texture">
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:TextureProfile">
@@ -15,6 +16,7 @@
     <d2p1:AntialiasType>Smooth</d2p1:AntialiasType>
     <d2p1:GenerateMipMaps>true</d2p1:GenerateMipMaps>
     <d2p1:Height>32</d2p1:Height>
+    <d2p1:NinePatchType>None</d2p1:NinePatchType>
     <d2p1:PremultipliedAlpha>true</d2p1:PremultipliedAlpha>
     <d2p1:Width>32</d2p1:Width>
   </Asset>

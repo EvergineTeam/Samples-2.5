@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cb5e1dd4-5f99-41ec-aa22-7fe8d3581892</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NoesisWPFLibrary</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\MainHUD.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\MissionPanel.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeBehind\PlanetHUD.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MissionFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MissionEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MissionInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MissionVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPanelVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MissionCommand.cs" />
+  </ItemGroup>
+</Project>

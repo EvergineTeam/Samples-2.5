@@ -65,10 +65,10 @@ namespace ServoMotor3D
             Entity primitive = new Entity()
                .AddComponent(new Transform3D() { Position = this.transform.Position + offset })
                .AddComponent(new SphereCollider3D())
-               .AddComponent(Model.CreateSphere())
+               .AddComponent(new SphereMesh())
                .AddComponent(new RigidBody3D())
-               .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
-               .AddComponent(new ModelRenderer());
+               .AddComponent(new MaterialComponent() { MaterialPath= WaveContent.Assets.basicMaterial })
+               .AddComponent(new MeshRenderer());
 
             this.EntityManager.Add(primitive);
         }

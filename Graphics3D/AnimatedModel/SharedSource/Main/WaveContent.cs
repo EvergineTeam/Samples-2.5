@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:48:54 PM
+// File generated on 03/08/2017 14:52:34
 namespace AnimatedModel
 {
     using System;
@@ -17,17 +17,34 @@ namespace AnimatedModel
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/AnimatedModel.wgame </summary>
+        public const string GameInfo = "Content/AnimatedModel.wgame";
+        
         public sealed class Assets
         {
-            
-            /// <summary> Path to Content/Assets/isis-difuse.png </summary>
-            public const string isis_difuse_png = "Content/Assets/isis-difuse.png";
             
             /// <summary> Path to Content/Assets/isis.fbx </summary>
             public const string isis_fbx = "Content/Assets/isis.fbx";
             
-            /// <summary> Path to Content/Assets/isisDifuseMaterial.wmat </summary>
-            public const string isisDifuseMaterial = "Content/Assets/isisDifuseMaterial.wmat";
+            public sealed class Textures
+            {
+                
+                /// <summary> Path to Content/Assets/Textures/isis-difuse.png </summary>
+                public const string isis_difuse_png = "Content/Assets/Textures/isis-difuse.png";
+                
+                /// <summary> Path to Content/Assets/Textures/isis_normal.png </summary>
+                public const string isis_normal_png = "Content/Assets/Textures/isis_normal.png";
+                
+                /// <summary> Path to Content/Assets/Textures/isis_spec.png </summary>
+                public const string isis_spec_png = "Content/Assets/Textures/isis_spec.png";
+            }
+            
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/Isis.wmat </summary>
+                public const string Isis = "Content/Assets/Materials/Isis.wmat";
+            }
         }
         
         public sealed class Scenes

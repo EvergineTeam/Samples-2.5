@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:54:15
+// File generated on 09/08/2017 13:00:27
 namespace LeapMotionSample
 {
     using System;
@@ -16,6 +16,16 @@ namespace LeapMotionSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/LeapMotionSample.wgame </summary>
+        public const string GameInfo = "Content/LeapMotionSample.wgame";
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/BasicMat.wmat </summary>
+            public const string BasicMat = "Content/Assets/BasicMat.wmat";
+        }
         
         public sealed class Scenes
         {

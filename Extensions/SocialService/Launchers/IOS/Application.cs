@@ -7,7 +7,7 @@ using UIKit;
 namespace SocialService
 {
     [Register("AppDelegate")]
-    public class Application : WaveEngine.Adapter.Application
+    public class Application : WaveEngine.Adapter.WaveApplicationDelegate
     {
         private static void IncludeAssemblies()
         {

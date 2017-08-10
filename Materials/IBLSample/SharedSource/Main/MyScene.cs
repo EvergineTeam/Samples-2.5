@@ -96,10 +96,10 @@ namespace IBLSample
                 Margin = new WaveEngine.Framework.UI.Thickness(10),
                 Width = 200
             };
-            EntityManager.Add(changeSkyButton);           
+            EntityManager.Add(changeSkyButton);
 
             changeSkyButton.Click += (o, e) => { this.ChangeEnvironment(); };
-            
+
         }
 
         /// <summary>
@@ -116,11 +116,9 @@ namespace IBLSample
         /// </summary>
         private void UpdateMaterials()
         {
-            var skybox = this.camera.FindComponent<Skybox>();
-            skybox.CubemapPath = this.skyboxMaps[currentEnv];            
+            this.camera.FindComponent<Skybox>().CubemapPath = this.skyboxMaps[this.currentEnv];
 
-            var material = this.venus.FindComponent<MaterialsMap>();
-            material.DefaultMaterialPath = this.venusMaps[currentEnv];
+            this.venus.FindComponent<MaterialComponent>().MaterialPath = this.venusMaps[this.currentEnv];
         }
 
         /// <summary>

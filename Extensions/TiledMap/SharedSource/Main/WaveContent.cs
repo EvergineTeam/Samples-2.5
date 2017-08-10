@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:33:24 PM
+// File generated on 09/08/2017 14:54:35
 namespace TiledMap
 {
     using System;
@@ -16,6 +16,9 @@ namespace TiledMap
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/TiledMap.wgame </summary>
+        public const string GameInfo = "Content/TiledMap.wgame";
         
         public sealed class Assets
         {

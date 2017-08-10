@@ -30,9 +30,6 @@ namespace WaveOculusDemoProject.Components
         [RequiredComponent]
         private TrailManager manager = null;
 
-        [RequiredComponent]
-        private MaterialsMap materials = null;
-
         private Material material;
 
         private VertexPositionColorTexture[] vertices;

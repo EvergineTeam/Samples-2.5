@@ -266,13 +266,16 @@ namespace ParallaxCamera2D
                     InterpolationColors = new List<Color>() { Color.Transparent, SceneResources.DustParticleColor, Color.Transparent },
                     LinearColorEnabled = true,
                 })
-                .AddComponent(new MaterialsMap(new StandardMaterial()
-                                                    {
-                                                        LightingEnabled = false,
-                                                        LayerType = DefaultLayers.Additive,
-                                                        DiffusePath = WaveContent.Assets.Textures.DustParticle_png,
-                                                        VertexColorEnable = true
-                                                    }))
+                 .AddComponent(new MaterialComponent()
+                 {
+                     Material = new StandardMaterial()
+                     {
+                         LightingEnabled = false,
+                         LayerType = DefaultLayers.Additive,
+                         DiffusePath = WaveContent.Assets.Textures.DustParticle_png,
+                         VertexColorEnable = true
+                     }
+                 })
                 .AddComponent(new ParticleSystemRenderer2D());
 
             EntityManager.Add(dust);

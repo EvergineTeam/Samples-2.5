@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:54:10 PM
+// File generated on 08/08/2017 9:36:27
 namespace KeyEventsAnimation
 {
     using System;
@@ -16,6 +16,9 @@ namespace KeyEventsAnimation
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/KeyEventsAnimation.wgame </summary>
+        public const string GameInfo = "Content/KeyEventsAnimation.wgame";
         
         public sealed class Assets
         {

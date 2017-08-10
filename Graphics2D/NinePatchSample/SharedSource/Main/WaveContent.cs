@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:41:06 PM
+// File generated on 03/08/2017 13:46:42
 namespace NinePatchSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace NinePatchSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/NinePatchSample.wgame </summary>
+        public const string GameInfo = "Content/NinePatchSample.wgame";
         
         public sealed class Assets
         {

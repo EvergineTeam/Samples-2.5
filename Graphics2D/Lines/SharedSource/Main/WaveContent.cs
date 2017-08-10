@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:40:17 PM
+// File generated on 03/08/2017 13:38:36
 namespace Lines
 {
     using System;
@@ -16,6 +16,9 @@ namespace Lines
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Lines.wgame </summary>
+        public const string GameInfo = "Content/Lines.wgame";
         
         public sealed class Scenes
         {

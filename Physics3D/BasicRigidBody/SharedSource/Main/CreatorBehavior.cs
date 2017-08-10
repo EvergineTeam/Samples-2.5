@@ -35,13 +35,13 @@ namespace BasicRigidBody
                 switch (typeIndexer)
                 {
                     case 0:
-                        this.CreateModel(new Vector3(0.1f, 15, 0), Model.CreateCube(), new BoxCollider3D());
+                        this.CreateModel(new Vector3(0.1f, 15, 0), new CubeMesh(), new BoxCollider3D());
                         break;
                     case 1:
-                        this.CreateModel(new Vector3(0.01f, 18, 0), Model.CreateSphere(), new SphereCollider3D());
+                        this.CreateModel(new Vector3(0.01f, 18, 0), new SphereMesh(), new SphereCollider3D());
                         break;
                     case 2:
-                        this.CreateModel(new Vector3(0, 20, 0), Model.CreateCapsule(), new CapsuleCollider3D());
+                        this.CreateModel(new Vector3(0, 20, 0), new CapsuleMesh(), new CapsuleCollider3D());
                         break;
                     default:
                         throw new InvalidCastException("Invalid type.");
@@ -55,17 +55,17 @@ namespace BasicRigidBody
         /// Creates a new Model
         /// </summary>
         /// <param name="position">model initial position</param>
-        /// <param name="model">the model mesh</param>
+        /// <param name="meshComponent">the model mesh</param>
         /// <param name="collider">the model collider</param>
-        private void CreateModel(Vector3 position, Model model, Collider3D collider)
+        private void CreateModel(Vector3 position, MeshComponent meshComponent, Collider3D collider)
         {
             Entity primitive = new Entity()
                .AddComponent(new Transform3D() { Position = position })
                .AddComponent(collider)
-               .AddComponent(model)
+               .AddComponent(meshComponent)
                .AddComponent(new RigidBody3D())
-               .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
-               .AddComponent(new ModelRenderer());
+               .AddComponent(new MaterialComponent() { MaterialPath = WaveContent.Assets.basicMaterial })
+               .AddComponent(new MeshRenderer());
 
             this.EntityManager.Add(primitive);
         }

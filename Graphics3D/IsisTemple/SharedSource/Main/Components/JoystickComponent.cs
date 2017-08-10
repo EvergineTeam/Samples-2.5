@@ -18,7 +18,7 @@ namespace IsisTemple.Components
 
         protected override void Initialize()
         {
-            base.Initialize();
+            base.Initialize();            
 
             if (!this.isInitialized)
             {
@@ -51,7 +51,7 @@ namespace IsisTemple.Components
                     (o, e) => { isisControllerBehavior.Run = false; });
             }
         }
-
+       
         private void AddTouchEvents(Entity buttonEntity, EventHandler<GestureEventArgs> pressed, EventHandler<GestureEventArgs> released)
         {
             var touchGestures = buttonEntity.FindComponent<TouchGestures>();

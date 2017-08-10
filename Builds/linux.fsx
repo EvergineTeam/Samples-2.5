@@ -12,7 +12,7 @@ Target "linux-restore-tools" (fun() ->
     DeleteDirs [WaveToolDirectory]
 
     traceImportant "Get WaveEngine.LinuxTools nuget packages"
-    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -ConfigFile NuGet/NuGet.config"
+    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -PreRelease -ConfigFile NuGet/NuGet.config"
     trace nugetArgs
     Exec "NuGet/nuget.exe" nugetArgs
 

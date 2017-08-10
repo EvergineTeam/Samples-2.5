@@ -11,6 +11,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Physics2D;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Threading;
 #endregion
 
 namespace StickyProjectiles.Behaviors
@@ -104,7 +105,7 @@ namespace StickyProjectiles.Behaviors
                     {
                         this.Force = 0;
                     }
-                }               
+                }
 
                 this.lastKeyboardState = currentKeyboardState;
             }
@@ -152,7 +153,7 @@ namespace StickyProjectiles.Behaviors
 
         private void Collider_BeginCollision(ICollisionInfo2D contact)
         {
-            WaveServices.Dispatcher.RunOnWaveThread(() =>
+            WaveForegroundTask.Run(() =>
             {
                 var colliderA = contact.ColliderA; // Obstacle
                 var colliderB = contact.ColliderB; // Arrow
@@ -163,24 +164,24 @@ namespace StickyProjectiles.Behaviors
                     var physicBodyB = colliderB.RigidBody.UserData as RigidBody2D;
                     //if (physicBodyB.LinearVelocity.Length() > 250.0f)
                     //{
-                        Entity obstacle = physicBodyA.Owner;
-                        Entity arrow = physicBodyB.Owner;
-                        Transform2D obstacleTransform = obstacle.FindComponent<Transform2D>();
-                        Transform2D arrowTransform = arrow.FindComponent<Transform2D>();
+                    Entity obstacle = physicBodyA.Owner;
+                    Entity arrow = physicBodyB.Owner;
+                    Transform2D obstacleTransform = obstacle.FindComponent<Transform2D>();
+                    Transform2D arrowTransform = arrow.FindComponent<Transform2D>();
 
-                        Vector2 arrowHeadLocalPosition = Vector2.UnitX * 178;
-                        Vector2 arrowHeadWorldPosition = Vector2.Transform(arrowHeadLocalPosition, arrowTransform.WorldTransform);
-                        Vector2 obstacleLocalPosition = Vector2.Transform(arrowHeadWorldPosition, obstacleTransform.WorldInverseTransform);
+                    Vector2 arrowHeadLocalPosition = Vector2.UnitX * 178;
+                    Vector2 arrowHeadWorldPosition = Vector2.Transform(arrowHeadLocalPosition, arrowTransform.WorldTransform);
+                    Vector2 obstacleLocalPosition = Vector2.Transform(arrowHeadWorldPosition, obstacleTransform.WorldInverseTransform);
 
 
-                        WeldJoint2D distance = new WeldJoint2D()
-                        {
-                            ConnectedEntityPath = obstacle.EntityPath,
-                            Anchor = arrowHeadLocalPosition,
-                            ConnectedAnchor = obstacleLocalPosition,
-                            ReferenceAngle = obstacleTransform.LocalRotation - arrowTransform.LocalRotation,
-                        };
-                        arrow.AddComponent(distance);
+                    WeldJoint2D distance = new WeldJoint2D()
+                    {
+                        ConnectedEntityPath = obstacle.EntityPath,
+                        Anchor = arrowHeadLocalPosition,
+                        ConnectedAnchor = obstacleLocalPosition,
+                        ReferenceAngle = obstacleTransform.LocalRotation - arrowTransform.LocalRotation,
+                    };
+                    arrow.AddComponent(distance);
                     //}
                 }
             });

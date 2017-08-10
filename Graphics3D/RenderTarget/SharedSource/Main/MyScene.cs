@@ -29,7 +29,7 @@ namespace RenderTarget
 
             // Finally, retrieve the cube from the current scene, and set the marial.
             var cube = this.EntityManager.Find("cube");
-            cube.FindComponent<MaterialsMap>().DefaultMaterial = renderTargetMaterial;
+            cube.FindComponent<MaterialComponent>().Material = renderTargetMaterial;
         }
     }
 }

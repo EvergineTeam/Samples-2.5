@@ -45,11 +45,11 @@ namespace Entity3DCollision
             Entity primitive = new Entity()
                 .AddComponent(new Transform3D() { Position = position, Scale = Vector3.One / 2 })
                 .AddComponent(new SphereCollider3D())
-                .AddComponent(Model.CreateSphere())
+                .AddComponent(new SphereMesh())
                 .AddComponent(rigidBody = new RigidBody3D() { KineticFriction = 10, Restitution = 1 })
-                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
+                .AddComponent(new MaterialComponent() { MaterialPath = WaveContent.Assets.basicMaterial })
                 .AddComponent(new TimeAliveBehavior())
-                .AddComponent(new ModelRenderer());
+                .AddComponent(new MeshRenderer());
 
             this.EntityManager.Add(primitive);
 

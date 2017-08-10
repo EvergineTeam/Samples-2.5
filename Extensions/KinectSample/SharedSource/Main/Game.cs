@@ -16,7 +16,7 @@ namespace KinectSample
             // Register KinectServices
             var kinectService = new KinectService();
             WaveServices.RegisterService(kinectService);
-            kinectService.StartSensor(KinectSources.Color | KinectSources.Body);//| KinectSources.Face);
+            kinectService.StartSensor(KinectSources.Color | KinectSources.Body | KinectSources.Face);
 
             ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
