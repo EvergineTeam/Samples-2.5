@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>83696486-14d5-42e4-a952-137f30963f7e</Id>
   <GameInfoPath>FixedJoint.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -40,5 +40,5 @@
     <d2p1:_Minor>4</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.1-alpha-20170808-561</WaveVersion>
+  <WaveVersion>2.4.1-alpha-20170809-563</WaveVersion>
 </Project>
