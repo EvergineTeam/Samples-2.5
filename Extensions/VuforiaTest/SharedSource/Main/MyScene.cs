@@ -22,22 +22,5 @@ namespace VuforiaTest
         {
             this.Load(WaveContent.Scenes.MyScene);
         }
-
-        protected override void Start()
-        {
-            base.Start();
-
-            var vuforiaService = WaveServices.GetService<VuforiaService>();
-            if (vuforiaService != null && vuforiaService.IsSupported)
-            {
-                vuforiaService.StartTrack(true);
-                vuforiaService.TrackNameChanged += VuforiaService_TrackNameChanged;
-            }
-        }
-
-        private void VuforiaService_TrackNameChanged(object sender, string newTrackName)
-        {
-            Debug.WriteLine("TRACK: " + newTrackName);
-        }
     }
 }

@@ -34,7 +34,7 @@ namespace WaveOculusDemoProject.Components
         private ProjectileManager manager = null;
         
         [RequiredComponent]
-        private MaterialsMap materials = null;
+        private MaterialComponent materialComponent = null;
 
         private int maxProjectiles;
         private VertexPositionColorTexture[] vertices;
@@ -162,7 +162,7 @@ namespace WaveOculusDemoProject.Components
             this.mesh.VertexBuffer.SetData(this.vertices, nProjectiles * VerticesPerProjectile, 0);
             this.RenderManager.GraphicsDevice.BindVertexBuffer(this.mesh.VertexBuffer);
 
-            this.RenderManager.DrawMesh(this.mesh, this.materials.DefaultMaterial, ref identity);
+            this.RenderManager.DrawMesh(this.mesh, this.materialComponent.Material, ref identity);
         }
 
         /// <summary>
