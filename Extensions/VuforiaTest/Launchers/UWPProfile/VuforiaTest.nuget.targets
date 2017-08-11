@@ -4,8 +4,8 @@
     <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
   </PropertyGroup>
   <ImportGroup>
-    <Import Project="$(NuGetPackageRoot)\WaveEngine\2.3.1\build\uap10.0\WaveEngine.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine\2.3.1\build\uap10.0\WaveEngine.targets')" />
-    <Import Project="$(NuGetPackageRoot)\WaveEngine.Box2D\2.3.1\build\uap10.0\WaveEngine.Box2D.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine.Box2D\2.3.1\build\uap10.0\WaveEngine.Box2D.targets')" />
-    <Import Project="$(NuGetPackageRoot)\WaveEngine.Vuforia\2.3.1\build\uap10.0\WaveEngine.Vuforia.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine.Vuforia\2.3.1\build\uap10.0\WaveEngine.Vuforia.targets')" />
+    <Import Project="$(NuGetPackageRoot)\WaveEngine\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.targets')" />
+    <Import Project="$(NuGetPackageRoot)\WaveEngine.Box2D\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.Box2D.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine.Box2D\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.Box2D.targets')" />
+    <Import Project="$(NuGetPackageRoot)\WaveEngine.Vuforia\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.Vuforia.targets" Condition="Exists('$(NuGetPackageRoot)\WaveEngine.Vuforia\2.4.1-alpha-20170809-563\build\uap10.0\WaveEngine.Vuforia.targets')" />
   </ImportGroup>
 </Project>

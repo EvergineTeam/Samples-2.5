@@ -61,7 +61,7 @@ namespace WaveOculusDemoProject.Components
         private Mesh mesh;
 
         [RequiredComponent]
-        private MaterialsMap materials = null;
+        private MaterialComponent materialComponent = null;
 
         [RequiredComponent]
         private Transform3D transform = null;
@@ -144,7 +144,7 @@ namespace WaveOculusDemoProject.Components
         public override void Draw(TimeSpan gameTime)
         {
             Matrix worldTranasform = this.transform.WorldTransform;
-            this.RenderManager.DrawMesh(this.mesh, this.materials.DefaultMaterial, ref worldTranasform);
+            this.RenderManager.DrawMesh(this.mesh, this.materialComponent.Material, ref worldTranasform);
         }
 
         /// <summary>
