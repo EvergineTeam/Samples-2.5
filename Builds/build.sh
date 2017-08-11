@@ -1,3 +1,3 @@
 #!/bin/sh
 clear
-mono FAKE.3.26.1/tools/FAKE.exe build.fsx $@
+mono FAKE.4.63/tools/FAKE.exe build.fsx $@

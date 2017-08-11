@@ -1,4 +1,4 @@
-#r @"FAKE.3.26.1/tools/FakeLib.dll"
+#r @"FAKE.4.63/tools/FakeLib.dll"
 #load "common.fsx"
 
 open Fake
