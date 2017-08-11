@@ -17,7 +17,16 @@ First we need to load some required assemblies.
 Now we will load some namespaces.
 
 ```csharp
-using WaveEngine.Framework; using WaveEngine.Components.Graphics3D;using WaveEngine.Framework.Graphics;using WaveEngine.Materials;using WaveEngine.Common.Graphics;using WaveEngine.Common.Math;using WaveEngine.Components.Cameras; using WaveEngine.Adapter.Basics; using WaveEngine.Framework.Services;using WaveEngine.Framework.Physics3D;
+using WaveEngine.Framework; 
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Materials;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Adapter.Basics;
+using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Physics3D;
 ```
 
 And we will create an Scene class to spawn the physic entities.We need to create the new Entity and append it the Transform3D, model, material and renderer components.
@@ -38,7 +47,7 @@ public class MyGame : WaveEngine.Framework.Game
 	
 	public override void Initialize(WaveEngine.Common.IApplication application)
 	{
-		base.Initialize(application);
+		base.Initialize(application);		
 
 		this.scene = new MyScene();
 		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));

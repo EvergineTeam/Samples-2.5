@@ -23,18 +23,27 @@ Now we are going to load the image effect library extension.
 ```
 
 ```csharp
-using WaveEngine.Framework; using WaveEngine.Adapter.Basics; using WaveEngine.Framework.Services; using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.Cameras;
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Framework;
+using WaveEngine.Framework.Graphics;
+using WaveEngine.Framework.Services;
+using WaveEngine.Materials;
+using WaveEngine.Adapter.Basics;
 ```
+
+And we will create an Scene class to spawn the physic entities.We need to create the new Entity and append it the Transform3D, model, material and renderer components.
 
 ```csharp
 public class MyScene : Scene
 {
-	protected override void CreateScene()
-	{
-		this.Load("Content/Scenes/MyScene.wscene");
-	}
+	protected override void CreateScene() { }
 }
 ```
+
+WaveEngine will run by a Game class to instantiate the MyScene class and initialize the context.
 
 ```csharp
 public class MyGame : WaveEngine.Framework.Game
@@ -43,7 +52,7 @@ public class MyGame : WaveEngine.Framework.Game
 	
 	public override void Initialize(WaveEngine.Common.IApplication application)
 	{
-		base.Initialize(application);
+		base.Initialize(application);		
 
 		this.scene = new MyScene();
 		WaveServices.ScreenContextManager.To(new ScreenContext(this.scene));
@@ -53,13 +62,34 @@ public class MyGame : WaveEngine.Framework.Game
 
 ```csharp
 MyGame game = new MyGame();
-var app = await SimpleApp.RunAsync(game, 960, 540);
+var app = await SimpleApp.RunAsync(game);
 ```
 
-Once the application is created, we are going to extract the reference of the main 3D camera. (Use the mouse to move the camera).
+Once the application is created we can create and add a basic entities. In that case we will create a simple scene with a teapot, a directional light and a free camera.
 
 ```csharp
-var camera = game.scene.EntityManager.Find("camera3D");
+// Teapot
+Entity teapot = new Entity()
+	.AddComponent(new Transform3D())
+	.AddComponent(new TeapotMesh())
+	.AddComponent(new MaterialComponent() { Material = new StandardMaterial() { LightingEnabled = true, DiffuseColor = Color.White } })
+	.AddComponent(new MeshRenderer())
+	.AddComponent(new Spinner() { IncreaseY = MathHelper.PiOver2 });
+
+// Camera
+var freeCamera = new FreeCamera3D("Camera", new Vector3(2, 2, 2), Vector3.Zero)
+{
+	BackgroundColor = Color.CornflowerBlue
+};
+
+var camera = freeCamera.Entity;
+
+// Light
+var light = new DirectionalLight("Light", new Vector3(0.1f, 0.1f, 0.4f));
+
+game.scene.EntityManager.Add(teapot);
+game.scene.EntityManager.Add(camera);
+game.scene.EntityManager.Add(light.Entity);
 ```
 
 A lens is a graphics component that applies an image filter to the camera. First, we are going to start with two basic lenses. (the first line adds the lens and the second line removes the lens. By the way, you can add one or more lenses to a single camera).
