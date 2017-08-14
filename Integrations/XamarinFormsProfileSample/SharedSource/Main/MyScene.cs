@@ -17,7 +17,7 @@ namespace XamarinFormsProfileSample
     public class MyScene : Scene
     {
         protected override void CreateScene()
-        {
+        {            
             this.Load(WaveContent.Scenes.MyScene);           
         }
     }

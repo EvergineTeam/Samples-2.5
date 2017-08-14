@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 14/08/2017 15:06:31
+// File generated on 14/08/2017 15:13:12
 namespace XamarinFormsProfileSample
 {
     using System;

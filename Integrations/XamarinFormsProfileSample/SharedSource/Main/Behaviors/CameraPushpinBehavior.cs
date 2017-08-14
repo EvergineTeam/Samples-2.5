@@ -15,7 +15,7 @@ namespace XamarinFormsProfileSample.Behaviors
     [DataContract]
     public class CameraPushpinBehavior : Behavior
     {
-        private MaterialsMap _materialsMap;
+        private MaterialComponent _materialComponent;
         private Ray _ray;
         private Vector3 _nearPosition;
         private Vector3 _farPosition;
@@ -66,7 +66,7 @@ namespace XamarinFormsProfileSample.Behaviors
 
                 if (_entityBoxCollider != null)
                 {
-                    _materialsMap = entity.FindComponent<MaterialsMap>();
+                    _materialComponent = entity.FindComponent<MaterialComponent>();
 
                     _collisionResult = _entityBoxCollider.Intersects(ref _ray);
 
