@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:54:49
+// File generated on 10/08/2017 15:01:45
 namespace SocialService
 {
     using System;
@@ -16,6 +16,9 @@ namespace SocialService
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/SocialService.wgame </summary>
+        public const string GameInfo = "Content/SocialService.wgame";
         
         public sealed class Assets
         {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:28:28 PM
+// File generated on 09/08/2017 12:22:05
 namespace KinectSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace KinectSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/KinectSample.wgame </summary>
+        public const string GameInfo = "Content/KinectSample.wgame";
         
         public sealed class Scenes
         {

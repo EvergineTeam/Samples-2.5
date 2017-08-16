@@ -1,4 +1,4 @@
-#r @"FAKE.3.26.1/tools/FakeLib.dll"
+#r @"FAKE.4.63/tools/FakeLib.dll"
 
 #load "common.fsx"
 
@@ -12,7 +12,7 @@ Target "linux-restore-tools" (fun() ->
     DeleteDirs [WaveToolDirectory]
 
     traceImportant "Get WaveEngine.LinuxTools nuget packages"
-    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -ConfigFile NuGet/NuGet.config"
+    let nugetArgs = " install " + WaveToolDirectory + " -ExcludeVersion -PreRelease -ConfigFile NuGet/NuGet.config"
     trace nugetArgs
     Exec "NuGet/nuget.exe" nugetArgs
 

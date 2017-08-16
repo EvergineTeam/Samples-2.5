@@ -1,0 +1,13 @@
+﻿<GameInfoModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>53cc47ef-72bc-44a1-80a1-42b310972ed4</Id>
+  <GameSettings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Services</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ServicesData">
+          <d5p1:ServiceItems xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common" />
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+    </d2p1:Categories>
+  </GameSettings>
+</GameInfoModel>

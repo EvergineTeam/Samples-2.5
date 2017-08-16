@@ -45,11 +45,11 @@ namespace EntityPicking
             Entity box = new Entity()
                 .AddComponent(new Transform3D() { Position = position })
                 .AddComponent(new BoxCollider3D())
-                .AddComponent(Model.CreateCube())
-                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.basicMaterial })
+                .AddComponent(new CubeMesh())
+                .AddComponent(new MaterialComponent() { MaterialPath= WaveContent.Assets.basicMaterial })
                 .AddComponent(new RigidBody3D() { Mass = 10 })
                 .AddComponent(new JointMap3D())
-                .AddComponent(new ModelRenderer());
+                .AddComponent(new MeshRenderer());
             return box;
         }
     }

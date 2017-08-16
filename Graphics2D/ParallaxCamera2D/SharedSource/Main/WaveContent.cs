@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:43:56 PM
+// File generated on 03/08/2017 14:05:25
 namespace ParallaxCamera2D
 {
     using System;
@@ -16,6 +16,9 @@ namespace ParallaxCamera2D
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/ParallaxCamera2D.wgame </summary>
+        public const string GameInfo = "Content/ParallaxCamera2D.wgame";
         
         public sealed class Assets
         {

@@ -4,16 +4,16 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormsProfileSampleSource", "SharedSource\Main\XamarinFormsProfileSampleSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormsProfileSampleXamarinForms", "Launchers\ProfileXamarinForms\XamarinFormsProfileSampleXamarinForms.shproj", "{C280384A-B34B-4E2E-A23B-19FC3D74FA06}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormsProfileSampleXamarinForms", "Launchers\ProfileXamarinForms\XamarinFormsProfileSampleXamarinForms.shproj", "{3F6FB4B0-B14A-454D-A895-A3A7685ECB9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsProfileSample", "Launchers\UWPProfile\XamarinFormsProfileSample.csproj", "{41DF8CED-881D-4422-AE36-B3EEA4394FEE}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Launchers\ProfileXamarinForms\XamarinFormsProfileSampleXamarinForms.projitems*{3f6fb4b0-b14a-454d-a895-a3a7685ecb9f}*SharedItemsImports = 13
 		Launchers\ProfileXamarinForms\XamarinFormsProfileSampleXamarinForms.projitems*{41df8ced-881d-4422-ae36-b3eea4394fee}*SharedItemsImports = 4
 		SharedSource\Main\XamarinFormsProfileSampleSource.projitems*{41df8ced-881d-4422-ae36-b3eea4394fee}*SharedItemsImports = 4
 		SharedSource\Main\XamarinFormsProfileSampleSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
-		Launchers\ProfileXamarinForms\XamarinFormsProfileSampleXamarinForms.projitems*{c280384a-b34b-4e2e-a23b-19fc3d74fa06}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

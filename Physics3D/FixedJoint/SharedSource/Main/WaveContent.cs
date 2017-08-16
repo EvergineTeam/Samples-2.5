@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/13/2017 4:41:04 PM
+// File generated on 8/8/2017 1:08:18 PM
 namespace FixedJoint
 {
     using System;
@@ -16,6 +16,9 @@ namespace FixedJoint
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/FixedJoint.wgame </summary>
+        public const string GameInfo = "Content/FixedJoint.wgame";
         
         public sealed class Assets
         {

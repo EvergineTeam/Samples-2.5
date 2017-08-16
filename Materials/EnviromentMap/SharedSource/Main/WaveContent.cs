@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:55
+// File generated on 8/3/2017 12:17:46 PM
 namespace EnvironmentMap
 {
     using System;
@@ -17,11 +17,14 @@ namespace EnvironmentMap
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/EnvironmentMap.wgame </summary>
+        public const string GameInfo = "Content/EnvironmentMap.wgame";
+        
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/CupeMap.cubemap </summary>
-            public const string CupeMap_cubemap = "Content/Assets/CupeMap.cubemap";
+            /// <summary> Path to Content/Assets/CubeMap.cubemap </summary>
+            public const string CubeMap_cubemap = "Content/Assets/CubeMap.cubemap";
             
             /// <summary> Path to Content/Assets/tile1.png </summary>
             public const string tile1_png = "Content/Assets/tile1.png";

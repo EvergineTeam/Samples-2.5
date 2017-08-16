@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:04:54
+// File generated on 8/8/2017 1:49:30 PM
 namespace Jenga
 {
     using System;
@@ -16,6 +16,9 @@ namespace Jenga
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Jenga.wgame </summary>
+        public const string GameInfo = "Content/Jenga.wgame";
         
         public sealed class Assets
         {
@@ -25,6 +28,9 @@ namespace Jenga
             
             /// <summary> Path to Content/Assets/wood.jpg </summary>
             public const string wood_jpg = "Content/Assets/wood.jpg";
+            
+            /// <summary> Path to Content/Assets/ball_mat.wmat </summary>
+            public const string ball_mat = "Content/Assets/ball_mat.wmat";
             
             /// <summary> Path to Content/Assets/brick_mat.wmat </summary>
             public const string brick_mat = "Content/Assets/brick_mat.wmat";

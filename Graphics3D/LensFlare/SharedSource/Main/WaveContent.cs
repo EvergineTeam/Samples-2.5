@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:06
+// File generated on 08/08/2017 9:43:22
 namespace LensFlare
 {
     using System;
@@ -16,6 +16,9 @@ namespace LensFlare
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/LensFlare.wgame </summary>
+        public const string GameInfo = "Content/LensFlare.wgame";
         
         public sealed class Assets
         {

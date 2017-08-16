@@ -1,6 +1,5 @@
 #region Using Statements
 using System;
-using AccelerometerProject.Factories;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -20,12 +19,6 @@ namespace Accelerometer
         protected override void CreateScene()
         {
             this.Load(@"Content/Scenes/MyScene.wscene");
-
-            for (int i = 0; i < 100; i++)
-            {
-                var ball1 = EntitiesFactory.CreateBall("ball" + i);
-                EntityManager.Add(ball1);
-            }
         }
     }
 }

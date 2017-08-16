@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:57:41
+// File generated on 08/08/2017 8:56:15
 namespace IsisTemple
 {
     using System;
@@ -16,6 +16,9 @@ namespace IsisTemple
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/IsisTemple.wgame </summary>
+        public const string GameInfo = "Content/IsisTemple.wgame";
         
         public sealed class Assets
         {

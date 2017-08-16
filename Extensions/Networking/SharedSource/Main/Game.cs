@@ -12,16 +12,11 @@ namespace Networking
         public override void Initialize(IApplication application)
         {
             base.Initialize(application);
-
-            this.RegisterServices();
+            
+            this.Load(WaveContent.GameInfo);
           
 			ScreenContext screenContext = new ScreenContext(new MainScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
-        }
-
-        private void RegisterServices()
-        {
-            WaveServices.RegisterService(new NetworkService());
         }
     }
 }

@@ -123,14 +123,20 @@ namespace CameraRengerTarget
 
         private void AddCamerasToStageMaterials()
         {
-            var materialsMap = EntityManager.Find("Stage").FindComponent<MaterialsMap>();
+            var screen0 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_0");
+            StandardMaterial material0 = screen0.Material as StandardMaterial;
+            material0.LightingEnabled = false;
+            material0.Diffuse = this.cameras[1].RenderTarget;
 
-            for (int i = 0; i < 3; i++)
-            {
-                var material = (StandardMaterial)materialsMap.Materials["screen_" + i];
-                material.LightingEnabled = false;
-                material.Diffuse = this.cameras[i + 1].RenderTarget;
-            }
+            var screen1 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_1");
+            StandardMaterial material1 = screen1.Material as StandardMaterial;
+            material1.LightingEnabled = false;
+            material1.Diffuse = this.cameras[2].RenderTarget;
+
+            var screen2 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_2");
+            StandardMaterial material2 = screen2.Material as StandardMaterial;
+            material2.LightingEnabled = false;
+            material2.Diffuse = this.cameras[3].RenderTarget;
         }
 
         private void SetActiveCamera(int cameraIndex)

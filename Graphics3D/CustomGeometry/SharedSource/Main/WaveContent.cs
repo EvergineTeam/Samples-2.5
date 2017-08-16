@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:57:30
+// File generated on 07/08/2017 15:02:41
 namespace CustomGeometry
 {
     using System;
@@ -16,6 +16,9 @@ namespace CustomGeometry
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/CustomGeometry.wgame </summary>
+        public const string GameInfo = "Content/CustomGeometry.wgame";
         
         public sealed class Assets
         {

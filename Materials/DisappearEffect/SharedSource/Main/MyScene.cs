@@ -24,11 +24,11 @@ namespace DisappearEffect
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            this.teapot = this.EntityManager.Find("teapot");
             this.disappearMaterial = new DisappearMaterial(WaveContent.Assets.Textures.tile1_png,
                                                                         WaveContent.Assets.Textures.Noise_png,
                                                                         WaveContent.Assets.Textures.Burn_png);
-            teapot.FindComponent<MaterialsMap>().DefaultMaterial = disappearMaterial;
+            this.teapot = this.EntityManager.Find("Teapot");
+            this.teapot.FindComponent<MaterialComponent>().Material = disappearMaterial;
         }
 
         protected override void Start()
@@ -44,8 +44,8 @@ namespace DisappearEffect
                                  {
                                      this.disappearMaterial.Threshold = v;
                                  }));
-            
-            action.Run();                                 
+
+            action.Run();
         }
     }
 }

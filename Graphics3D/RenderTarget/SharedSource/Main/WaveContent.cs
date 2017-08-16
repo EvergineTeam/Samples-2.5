@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:35
+// File generated on 08/08/2017 13:45:04
 namespace RenderTarget
 {
     using System;
@@ -17,11 +17,14 @@ namespace RenderTarget
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/RenderTarget.wgame </summary>
+        public const string GameInfo = "Content/RenderTarget.wgame";
+        
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/MyMaterial.wmat </summary>
-            public const string MyMaterial = "Content/Assets/MyMaterial.wmat";
+            /// <summary> Path to Content/Assets/BasicMaterial.wmat </summary>
+            public const string BasicMaterial = "Content/Assets/BasicMaterial.wmat";
         }
         
         public sealed class Scenes

@@ -33,12 +33,12 @@ namespace Jenga
 
                     var sphere = new Entity()
                           .AddComponent(new Transform3D() { Scale = new Vector3(1) })
-                          .AddComponent(new MaterialsMap(new StandardMaterial(Color.Red, DefaultLayers.Opaque)))
-                          .AddComponent(Model.CreateSphere())
+                          .AddComponent(new MaterialComponent() { MaterialPath = WaveContent.Assets.ball_mat })
+                          .AddComponent(new SphereMesh())
                           .AddComponent(new SphereCollider3D())
                           .AddComponent(new RigidBody3D() { Mass = 2, EnableContinuousContact = true })
                           .AddComponent(new TimeAliveBehavior())
-                          .AddComponent(new ModelRenderer());
+                          .AddComponent(new MeshRenderer());
 
                     this.EntityManager.Add(sphere);
 

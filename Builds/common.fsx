@@ -1,5 +1,5 @@
 module Common
-#r @"FAKE.3.26.1/tools/FakeLib.dll"
+#r @"FAKE.4.63/tools/FakeLib.dll"
 
 open Fake
 open Fake.Git
@@ -28,7 +28,7 @@ let Exec command args =
 let RestorePackages solutionFile =
     RestoreMSSolutionPackages (fun p -> 
         { p with
-            Sources = ["https://www.myget.org/F/waveengine-nightly/api/v2"; "https://www.nuget.org/api/v2/"]
+            Sources = ["https://www.myget.org/F/waveengine-nightly/api/v3/index.json"; "https://api.nuget.org/v3/index.json"]
             Retries = 5 
             OutputPath = Path.Combine(getFolder solutionFile, "packages") }) solutionFile
 

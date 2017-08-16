@@ -26,7 +26,7 @@ namespace WaveOculusDemoProject.Components
         private Transform3D transform;
 
         [RequiredComponent]
-        private MaterialsMap materials;
+        private MaterialComponent materialComponent;
 
         private StandardMaterial material;    
         private double timeLeft;
@@ -48,7 +48,7 @@ namespace WaveOculusDemoProject.Components
         {
             base.Initialize();
 
-            this.material = this.materials.DefaultMaterial as StandardMaterial;
+            this.material = this.materialComponent.Material as StandardMaterial;
         }
 
         /// <summary>

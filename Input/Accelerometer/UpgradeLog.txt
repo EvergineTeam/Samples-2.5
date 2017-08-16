@@ -1,0 +1,108 @@
+Start upgrade to 2.4.0.0 .....................OK
+Version notes: =====================================
+This version introduces some changes in code that are explained in the next link:
+ https://geeks.ms/waveengineteam/2016/09/15/waveengine-2-2-1-to-2-3-cheatsheet/
+====================================================
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+Add Dependency MyMaterial.wmat <- DefaultMaterialPath
+Add Dependency MyMaterial(1).wmat <- DefaultMaterialPath
+Add Dependency MyMaterial(2).wmat <- DefaultMaterialPath
+Add Dependency MyMaterial(3).wmat <- DefaultMaterialPath
+Add Dependency MyMaterial(4).wmat <- DefaultMaterialPath
+Add Dependency MyMaterial(5).wmat <- DefaultMaterialPath
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+RENAME cubePlane empty
+Set PropertyVM LocalPosition: {X:-19.77639 Y:19.37799 Z:14.68396}
+Set PropertyVM LocalPosition: {X:0 Y:19.37799 Z:14.68396}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:14.68396}
+Set PropertyVM LocalPosition: {X:0 Y:-250 Z:-0.0005340576}
+Set PropertyVM LocalOrientation: {X:0 Y:0 Z:0 W:1}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM LocalPosition: {X:0 Y:250 Z:-0.0005340576}
+Set PropertyVM LocalOrientation: {X:0 Y:0 Z:-1 W:1.947072E-07}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM LocalPosition: {X:-250 Y:-0.0005338192 Z:-0.0005340576}
+Set PropertyVM LocalOrientation: {X:0 Y:0 Z:-0.7071067 W:0.7071068}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM LocalPosition: {X:250 Y:-0.0005338192 Z:-0.0005340576}
+Set PropertyVM LocalOrientation: {X:0 Y:0 Z:0.7071066 W:0.7071069}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM LocalPosition: {X:0 Y:-0.0005338192 Z:-250}
+Set PropertyVM LocalOrientation: {X:0.7071067 Y:0 Z:0 W:0.7071068}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM LocalPosition: {X:0 Y:-0.0005338192 Z:250}
+Set PropertyVM LocalOrientation: {X:-0.7071068 Y:9.473208E-08 Z:9.473208E-08 W:0.7071068}
+Set PropertyVM LocalScale: {X:500 Y:1 Z:500}
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial(1).wmat
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial(2).wmat
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial(3).wmat
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial(4).wmat
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial(5).wmat
+Set PropertyVM DefaultMaterialPath: Content/Assets/Materials/MyMaterial.wmat
+Set PropertyVM MaterialPath: 
+Add Dependency BlueMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:-32.994 Y:26.9534 Z:34.9143}
+Set PropertyVM LocalPosition: {X:0 Y:26.9534 Z:34.9143}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:34.9143}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:0}
+Set PropertyVM Width: 1
+Set PropertyVM Height: 1
+Set PropertyVM Width: 250
+Set PropertyVM Height: 250
+Add Dependency BlueMat.wmat <- MaterialPath
+Remove Dependency BlueMat.wmat <- MaterialPath
+Set PropertyVM MaterialPath: Content/Assets/Materials/BlueMat.wmat
+Add Dependency RedMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:0 Y:-250 Z:0}
+Set PropertyVM PlaneNormal: Y
+Add Dependency RedMat.wmat <- MaterialPath
+Remove Dependency RedMat.wmat <- MaterialPath
+Set PropertyVM MaterialPath: Content/Assets/Materials/RedMat.wmat
+Add Dependency YellowMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:0 Y:250 Z:0}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:0}
+Set PropertyVM PlaneNormal: -Y
+Set PropertyVM PlaneNormal: X
+Set PropertyVM PlaneNormal: -X
+Set PropertyVM PlaneNormal: -Y
+Set PropertyVM PlaneNormal: -Z
+Set PropertyVM PlaneNormal: Z
+Add Dependency YellowMat.wmat <- MaterialPath
+Remove Dependency YellowMat.wmat <- MaterialPath
+Set PropertyVM MaterialPath: Content/Assets/Materials/YellowMat.wmat
+Add Dependency GreenMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:-250 Y:0 Z:0}
+Set PropertyVM PlaneNormal: X
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+INFO: The WaveEngine lib with name VisualTest is not available.
+Add Dependency GreenMat.wmat <- MaterialPath
+Remove Dependency GreenMat.wmat <- MaterialPath
+Set PropertyVM MaterialPath: Content/Assets/Materials/GreenMat.wmat
+Add Dependency PinkMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:250 Y:0 Z:0}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:0}
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:250}
+Set PropertyVM PlaneNormal: -X
+Set PropertyVM PlaneNormal: -Z
+Set PropertyVM PlaneNormal: Z
+Set PropertyVM TwoSides: False
+Set PropertyVM TwoSides: True
+Set PropertyVM PlaneNormal: -Z
+Set PropertyVM TwoSides: False
+Add Dependency PinkMat.wmat <- MaterialPath
+Remove Dependency PinkMat.wmat <- MaterialPath
+Set PropertyVM MaterialPath: Content/Assets/Materials/PinkMat.wmat
+Add Dependency CyanMat.wmat <- MaterialPath
+Set PropertyVM LocalPosition: {X:0 Y:0 Z:-250}
+Set PropertyVM PlaneNormal: Z
+INFO: The WaveEngine lib with name VisualTest is not available.

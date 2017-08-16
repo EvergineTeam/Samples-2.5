@@ -45,8 +45,8 @@ namespace StockRoomProject
         {
             Entity primitive = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position, Scale = scale })
-                .AddComponent(new MaterialsMap() { DefaultMaterialPath = WaveContent.Assets.Material.CrateMat })
-                .AddComponent(Model.CreateCube())
+                .AddComponent(new MaterialComponent() { MaterialPath = WaveContent.Assets.Material.CrateMat })
+                .AddComponent(new CubeMesh())
                 .AddComponent(new BoxCollider3D())
                 .AddComponent(new RigidBody3D()
                 {
@@ -55,7 +55,7 @@ namespace StockRoomProject
                     KineticFriction = friction,
                     StaticFriction = friction
                 })
-                .AddComponent(new ModelRenderer());
+                .AddComponent(new MeshRenderer());
 
             return primitive;
         }
