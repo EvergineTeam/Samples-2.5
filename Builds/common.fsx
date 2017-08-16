@@ -1,5 +1,5 @@
 module Common
-#r @"FAKE.3.26.1/tools/FakeLib.dll"
+#r @"FAKE.4.63/tools/FakeLib.dll"
 
 open Fake
 open Fake.Git

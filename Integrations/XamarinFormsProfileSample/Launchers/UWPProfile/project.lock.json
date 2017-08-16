@@ -1,4 +1,5 @@
 {
+  "locked": false,
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
@@ -340,6 +341,101 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -2181,49 +2277,41 @@
           }
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -2234,21 +2322,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -2257,32 +2347,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -2304,6 +2391,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -2900,6 +2996,101 @@
         "type": "package",
         "native": {
           "runtimes/win8-arm/native/clrcompression.dll": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -4595,49 +4786,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -4648,21 +4831,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -4671,32 +4856,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -4718,6 +4900,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -5353,6 +5544,101 @@
         },
         "native": {
           "runtimes/win8-arm-aot/native/_._": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -7048,49 +7334,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -7101,21 +7379,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -7124,32 +7404,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -7171,6 +7448,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -7776,6 +8062,101 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -9471,49 +9852,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -9524,21 +9897,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -9547,32 +9922,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -9594,6 +9966,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -10240,6 +10621,101 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        }
+      },
       "Splat/1.6.2": {
         "type": "package",
         "compile": {
@@ -11933,49 +12409,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -11986,21 +12454,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -12009,32 +12479,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -12056,6 +12523,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -12661,6 +13137,101 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -14356,49 +14927,41 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -14409,21 +14972,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -14432,32 +14997,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -14479,6 +15041,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     },
@@ -15123,6 +15694,101 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "SharpDX/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.DXGI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "SharpDX.MediaFoundation/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll": {}
+        }
+      },
+      "SharpDX.XAudio2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll": {}
+        }
+      },
+      "SharpDX.XInput/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "3.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -16818,49 +17484,41 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "WaveEngine/2.3.0.29": {
+      "WaveEngine/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Adapter": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Components": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Adapter": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Components": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         }
       },
-      "WaveEngine.Adapter/2.3.0.29": {
+      "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "SharpDX": "3.0.0",
+          "SharpDX.DXGI": "3.0.0",
+          "SharpDX.Direct2D1": "3.0.0",
+          "SharpDX.Direct3D11": "3.0.0",
+          "SharpDX.Mathematics": "3.0.0",
+          "SharpDX.MediaFoundation": "3.0.0",
+          "SharpDX.XAudio2": "3.0.0",
+          "SharpDX.XInput": "3.0.0",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SharpDX.DXGI.dll": {},
-          "lib/uap10.0/SharpDX.Direct2D1.dll": {},
-          "lib/uap10.0/SharpDX.Direct3D11.dll": {},
-          "lib/uap10.0/SharpDX.Mathematics.dll": {},
-          "lib/uap10.0/SharpDX.MediaFoundation.dll": {},
-          "lib/uap10.0/SharpDX.XAudio2.dll": {},
-          "lib/uap10.0/SharpDX.XInput.dll": {},
-          "lib/uap10.0/SharpDX.dll": {},
           "lib/uap10.0/WaveEngine.Adapter.dll": {}
         }
       },
-      "WaveEngine.Box2D/2.3.0.29": {
+      "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Box2D.dll": {},
@@ -16871,21 +17529,23 @@
           "lib/uap10.0/WaveEngine.Box2DSharp.dll": {}
         }
       },
-      "WaveEngine.Common/2.3.0.29": {
+      "WaveEngine.Common/2.4.1-alpha-20170812-566": {
         "type": "package",
         "compile": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/WaveEngine.Common.dll": {}
+          "lib/uap10.0/WaveEngine.Common.dll": {},
+          "lib/uap10.0/protobuf-net.dll": {}
         }
       },
-      "WaveEngine.Components/2.3.0.29": {
+      "WaveEngine.Components/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29",
-          "WaveEngine.Materials": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Materials": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Components.dll": {}
@@ -16894,32 +17554,29 @@
           "lib/uap10.0/WaveEngine.Components.dll": {}
         }
       },
-      "WaveEngine.Framework/2.3.0.29": {
+      "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Box2D": "2.3.0.29",
-          "WaveEngine.Common": "2.3.0.29"
+          "WaveEngine.Box2D": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "Zlib.Portable": "1.11.0"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         },
         "runtime": {
           "lib/uap10.0/WaveEngine.Bepu.dll": {},
-          "lib/uap10.0/WaveEngine.Box2D.dll": {},
           "lib/uap10.0/WaveEngine.Framework.dll": {},
-          "lib/uap10.0/WaveEngine.Physics.dll": {},
-          "lib/uap10.0/Zlib.Portable.dll": {}
+          "lib/uap10.0/WaveEngine.Physics.dll": {}
         }
       },
-      "WaveEngine.Materials/2.3.0.29": {
+      "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
         "type": "package",
         "dependencies": {
-          "WaveEngine.Common": "2.3.0.29",
-          "WaveEngine.Framework": "2.3.0.29"
+          "WaveEngine.Common": "2.4.1-alpha-20170812-566",
+          "WaveEngine.Framework": "2.4.1-alpha-20170812-566"
         },
         "compile": {
           "lib/uap10.0/WaveEngine.Materials.dll": {}
@@ -16941,6 +17598,15 @@
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Zlib.Portable/1.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
         }
       }
     }
@@ -18312,6 +18978,102 @@
         "runtime.win8-arm.runtime.native.System.IO.Compression.4.0.1.nupkg.sha512",
         "runtime.win8-arm.runtime.native.System.IO.Compression.nuspec",
         "runtimes/win8-arm/native/clrcompression.dll"
+      ]
+    },
+    "SharpDX/3.0.0": {
+      "sha512": "HjBoC6dxcssXWZvBD0rkRQciXXygaTvjOlfaHb8WWMFNJCZQBWFiTE1sFsoqwQMdSvt0KCko9X/+EvROHR16ng==",
+      "type": "package",
+      "files": [
+        "SharpDX.3.0.0.nupkg.sha512",
+        "SharpDX.nuspec",
+        "lib/net45/SharpDX.dll",
+        "lib/net45/SharpDX.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.xml"
+      ]
+    },
+    "SharpDX.Direct2D1/3.0.0": {
+      "sha512": "eq08/vzV+BSkvVhFa81+eL7xkxZ+ABxJVdcJWv/700475EnpC3Ojb1dsvtTJzIRjOa8tHUgEQliI0hyZCkl5IQ==",
+      "type": "package",
+      "files": [
+        "SharpDX.Direct2D1.3.0.0.nupkg.sha512",
+        "SharpDX.Direct2D1.nuspec",
+        "lib/net45/SharpDX.Direct2D1.dll",
+        "lib/net45/SharpDX.Direct2D1.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct2D1.xml"
+      ]
+    },
+    "SharpDX.Direct3D11/3.0.0": {
+      "sha512": "4WyPEjj7i5eDuWWsxEJ4tACKS9BqiF0OYyUWvh2MRVMgm0eJUYPtwsfKkjCFWqOFlDlkgGj5v5uxFRfBOWPFNw==",
+      "type": "package",
+      "files": [
+        "SharpDX.Direct3D11.3.0.0.nupkg.sha512",
+        "SharpDX.Direct3D11.nuspec",
+        "lib/net45/SharpDX.Direct3D11.dll",
+        "lib/net45/SharpDX.Direct3D11.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Direct3D11.xml"
+      ]
+    },
+    "SharpDX.DXGI/3.0.0": {
+      "sha512": "m3eXW7hT8OSZCrqqnHofpu6M095omztmberjrtDxuwlerdkGcw43Io13FkgCH6IrahfxDWZXQ3O4RIq+ClCNlA==",
+      "type": "package",
+      "files": [
+        "SharpDX.DXGI.3.0.0.nupkg.sha512",
+        "SharpDX.DXGI.nuspec",
+        "lib/net45/SharpDX.DXGI.dll",
+        "lib/net45/SharpDX.DXGI.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.DXGI.xml"
+      ]
+    },
+    "SharpDX.Mathematics/3.0.0": {
+      "sha512": "51gUpPFDbNTkKtmD4mvrp3qyxwW/t72ItbLeN2xZGF855p6jDgYAmdIAqjV5KqPLJ31crgltE7u/iX3dUgNgmg==",
+      "type": "package",
+      "files": [
+        "SharpDX.Mathematics.3.0.0.nupkg.sha512",
+        "SharpDX.Mathematics.nuspec",
+        "lib/net45/SharpDX.Mathematics.dll",
+        "lib/net45/SharpDX.Mathematics.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.Mathematics.xml"
+      ]
+    },
+    "SharpDX.MediaFoundation/3.0.0": {
+      "sha512": "iK0wIqY5WLk7o2K41ee7De+Ya5L6vkhSTWyKzz3JHiwABeSTA8+5jR+Wr7+SD32FTS7hj+BVKZ6j7N+w1USMSg==",
+      "type": "package",
+      "files": [
+        "SharpDX.MediaFoundation.3.0.0.nupkg.sha512",
+        "SharpDX.MediaFoundation.nuspec",
+        "lib/net45/SharpDX.MediaFoundation.dll",
+        "lib/net45/SharpDX.MediaFoundation.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.MediaFoundation.xml"
+      ]
+    },
+    "SharpDX.XAudio2/3.0.0": {
+      "sha512": "u+4EsrcNjwI4j1eE6dyzKhimFkfzSj2dobBY6Ia2tRBRuaQMyYA3+D3BBC/yWK+SS0FauQEoFj6LSZZZ2MZejg==",
+      "type": "package",
+      "files": [
+        "SharpDX.XAudio2.3.0.0.nupkg.sha512",
+        "SharpDX.XAudio2.nuspec",
+        "lib/net45/SharpDX.XAudio2.dll",
+        "lib/net45/SharpDX.XAudio2.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XAudio2.xml"
+      ]
+    },
+    "SharpDX.XInput/3.0.0": {
+      "sha512": "kE/kJa0wkvLHkBUSbvDFQ9nTLJwP51oBdMAZ8Sh12OBeXZnzpDFT07D2QyvbFok1FWkKPnAmN6kgN5LkR+WmRg==",
+      "type": "package",
+      "files": [
+        "SharpDX.XInput.3.0.0.nupkg.sha512",
+        "SharpDX.XInput.nuspec",
+        "lib/net45/SharpDX.XInput.dll",
+        "lib/net45/SharpDX.XInput.xml",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid1+MonoTouch1/SharpDX.XInput.xml"
       ]
     },
     "Splat/1.6.2": {
@@ -23247,34 +24009,60 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "WaveEngine/2.3.0.29": {
-      "sha512": "uYVvexjgTqyVq2pgMiDLlVPKpFJt0aJHSe/rLhP1dO3zg0qJd0FWv+KbxXf+z648wZivZgwr83+yxeuRnhXqHw==",
+    "WaveEngine/2.4.1-alpha-20170812-566": {
+      "sha512": "bgaQftb1PVUHs7Vs9proH8CQkxUVP5AZqsTmthcu+EQ0f0tGaeK2CDeBzzcb33ifgEHcHBTHW0wBqEPGDbuxnA==",
       "type": "package",
-      "path": "waveengine/2.3.0.29",
       "files": [
-        "WaveEngine.2.3.0.29.nupkg.sha512",
-        "WaveEngine.nuspec",
+        "build/Mono/Mono.Cecil.dll",
+        "build/Mono/WaveEditor.ProtoExporter.dll",
+        "build/Mono/WaveEngine.Common.dll",
+        "build/Mono/WaveEngine.Common.targets",
         "build/Mono/WaveEngine.Targets.Tasks.dll",
         "build/Mono/WaveEngine.targets",
+        "build/Mono/protobuf-net.dll",
+        "build/MonoAndroid/Mono.Cecil.dll",
+        "build/MonoAndroid/WaveEditor.ProtoExporter.dll",
+        "build/MonoAndroid/WaveEngine.Common.dll",
+        "build/MonoAndroid/WaveEngine.Common.targets",
         "build/MonoAndroid/WaveEngine.Targets.Tasks.dll",
         "build/MonoAndroid/WaveEngine.targets",
+        "build/MonoAndroid/protobuf-net.dll",
+        "build/Xamarin.Mac/Mono.Cecil.dll",
+        "build/Xamarin.Mac/WaveEditor.ProtoExporter.dll",
+        "build/Xamarin.Mac/WaveEngine.Common.dll",
+        "build/Xamarin.Mac/WaveEngine.Common.targets",
         "build/Xamarin.Mac/WaveEngine.Targets.Tasks.dll",
         "build/Xamarin.Mac/WaveEngine.targets",
+        "build/Xamarin.Mac/protobuf-net.dll",
+        "build/Xamarin.iOS/Mono.Cecil.dll",
+        "build/Xamarin.iOS/WaveEditor.ProtoExporter.dll",
+        "build/Xamarin.iOS/WaveEngine.Common.dll",
+        "build/Xamarin.iOS/WaveEngine.Common.targets",
         "build/Xamarin.iOS/WaveEngine.Targets.Tasks.dll",
         "build/Xamarin.iOS/WaveEngine.targets",
+        "build/Xamarin.iOS/protobuf-net.dll",
+        "build/net45/Mono.Cecil.dll",
+        "build/net45/WaveEditor.ProtoExporter.dll",
+        "build/net45/WaveEngine.Common.dll",
+        "build/net45/WaveEngine.Common.targets",
         "build/net45/WaveEngine.Targets.Tasks.dll",
         "build/net45/WaveEngine.targets",
+        "build/net45/protobuf-net.dll",
+        "build/uap10.0/Mono.Cecil.dll",
+        "build/uap10.0/WaveEditor.ProtoExporter.dll",
+        "build/uap10.0/WaveEngine.Common.dll",
+        "build/uap10.0/WaveEngine.Common.targets",
         "build/uap10.0/WaveEngine.Targets.Tasks.dll",
-        "build/uap10.0/WaveEngine.targets"
+        "build/uap10.0/WaveEngine.targets",
+        "build/uap10.0/protobuf-net.dll",
+        "waveengine.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.nuspec"
       ]
     },
-    "WaveEngine.Adapter/2.3.0.29": {
-      "sha512": "V02MAZ/wsbOAJ2Z0sClt0ghlcRh6wmjHPz/LQDSYn21F5kDBbMUFmanEI7s2wOZYptMCzd3njzc5GTPmdLI96g==",
+    "WaveEngine.Adapter/2.4.1-alpha-20170812-566": {
+      "sha512": "ESsUdUYMp7Y9addOW8ivpLqHHw5m7WXxHWh0/LHS3yLShxrMlBm9isPyWg/1wBbSRntSGi15cNeeehiwCWGD2g==",
       "type": "package",
-      "path": "waveengine.adapter/2.3.0.29",
       "files": [
-        "WaveEngine.Adapter.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Adapter.nuspec",
         "lib/Mono/OpenTK.dll",
         "lib/Mono/OpenTK.dll.config",
         "lib/Mono/OpenTK.xml",
@@ -23289,6 +24077,7 @@
         "lib/MonoAndroid/WaveEngine.Adapter.xml",
         "lib/MonoAndroid/play.billing.v3.dll",
         "lib/Xamarin.Mac/OpenTK.dll",
+        "lib/Xamarin.Mac/OpenTK.xml",
         "lib/Xamarin.Mac/WaveEngine.Adapter.dll",
         "lib/Xamarin.iOS/WaveEngine.Adapter.dll",
         "lib/Xamarin.iOS/WaveEngine.Adapter.xml",
@@ -23309,25 +24098,18 @@
         "lib/net45/SharpDX.dll",
         "lib/net45/WaveEngine.Adapter.dll",
         "lib/net45/WaveEngine.Adapter.xml",
-        "lib/uap10.0/SharpDX.DXGI.dll",
-        "lib/uap10.0/SharpDX.Direct2D1.dll",
-        "lib/uap10.0/SharpDX.Direct3D11.dll",
-        "lib/uap10.0/SharpDX.Mathematics.dll",
-        "lib/uap10.0/SharpDX.MediaFoundation.dll",
-        "lib/uap10.0/SharpDX.XAudio2.dll",
-        "lib/uap10.0/SharpDX.XInput.dll",
-        "lib/uap10.0/SharpDX.dll",
+        "lib/net45/WaveEngine.WinGLAdapter.dll",
+        "lib/net45/WaveEngine.WinGLAdapter.xml",
         "lib/uap10.0/WaveEngine.Adapter.dll",
-        "lib/uap10.0/WaveEngine.Adapter.xml"
+        "lib/uap10.0/WaveEngine.Adapter.xml",
+        "waveengine.adapter.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.adapter.nuspec"
       ]
     },
-    "WaveEngine.Box2D/2.3.0.29": {
-      "sha512": "tKKG9mL/okKrAfCCdPb2zWa/V3u/VuxHReWrN1LnTDTfamlbGYDbXRL3DeBHRuahKHN5gqqbXTW4+Ga6XI/Cxw==",
+    "WaveEngine.Box2D/2.4.1-alpha-20170812-566": {
+      "sha512": "JgSLHVsYqif0Rdl8dT1thjkwWNS9A/gVA2Ay3lnhoawXBqmdeIXqko3qL/aDfmLvrX8xNoXWuXdIJdztIKvUGQ==",
       "type": "package",
-      "path": "waveengine.box2d/2.3.0.29",
       "files": [
-        "WaveEngine.Box2D.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Box2D.nuspec",
         "build/Mono/Box2D/libBox2D.so",
         "build/Mono/WaveEngine.Box2D.targets",
         "build/MonoAndroid/Box2D/arm/libBox2D.so",
@@ -23358,36 +24140,46 @@
         "lib/net45/WaveEngine.Box2DSharp.dll",
         "lib/uap10.0/WaveEngine.Box2D.dll",
         "lib/uap10.0/WaveEngine.Box2D.xml",
-        "lib/uap10.0/WaveEngine.Box2DSharp.dll"
+        "lib/uap10.0/WaveEngine.Box2DSharp.dll",
+        "waveengine.box2d.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.box2d.nuspec"
       ]
     },
-    "WaveEngine.Common/2.3.0.29": {
-      "sha512": "+4UP3Tl41mw3CerRGuETn8Z564Lk4eDGCllx9szmwQ7D3dh5oo2XO9vQ7+GGZvGL8DWDLFfkGctHIFDXxuUobg==",
+    "WaveEngine.Common/2.4.1-alpha-20170812-566": {
+      "sha512": "LPaGOeFaB0onV/fex5Y3K82ZID6fRZVlfpXHhN0r+Iq29tTppcIY2f+lE8B4/ndEcDGHdkwpR4CcLvfkJeF0Gw==",
       "type": "package",
-      "path": "waveengine.common/2.3.0.29",
       "files": [
-        "WaveEngine.Common.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Common.nuspec",
         "lib/Mono/WaveEngine.Common.dll",
         "lib/Mono/WaveEngine.Common.xml",
+        "lib/Mono/protobuf-net.dll",
+        "lib/Mono/protobuf-net.xml",
         "lib/MonoAndroid/WaveEngine.Common.dll",
         "lib/MonoAndroid/WaveEngine.Common.xml",
+        "lib/MonoAndroid/protobuf-net.dll",
+        "lib/MonoAndroid/protobuf-net.xml",
         "lib/Xamarin.Mac/WaveEngine.Common.dll",
+        "lib/Xamarin.Mac/protobuf-net.dll",
+        "lib/Xamarin.Mac/protobuf-net.xml",
         "lib/Xamarin.iOS/WaveEngine.Common.dll",
         "lib/Xamarin.iOS/WaveEngine.Common.xml",
+        "lib/Xamarin.iOS/protobuf-net.dll",
+        "lib/Xamarin.iOS/protobuf-net.xml",
         "lib/net45/WaveEngine.Common.dll",
         "lib/net45/WaveEngine.Common.xml",
+        "lib/net45/protobuf-net.dll",
+        "lib/net45/protobuf-net.xml",
         "lib/uap10.0/WaveEngine.Common.dll",
-        "lib/uap10.0/WaveEngine.Common.xml"
+        "lib/uap10.0/WaveEngine.Common.xml",
+        "lib/uap10.0/protobuf-net.dll",
+        "lib/uap10.0/protobuf-net.xml",
+        "waveengine.common.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.common.nuspec"
       ]
     },
-    "WaveEngine.Components/2.3.0.29": {
-      "sha512": "CrX86UBhOk8NvYhjZ4p/Ofb+V6JhbWubslz2dViVZ78kzER9xTgllBM1Wj0WrRiHvEIf0iQhLnfxyik/C7FOvg==",
+    "WaveEngine.Components/2.4.1-alpha-20170812-566": {
+      "sha512": "pFogApxy0UAjtbjoGCEWcpHbZKWwCGGIznsGkfKXfh/RFZXYqguY4TKvbBcIRQ8T0BoNXxdp7Z017sDKGd3QqA==",
       "type": "package",
-      "path": "waveengine.components/2.3.0.29",
       "files": [
-        "WaveEngine.Components.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Components.nuspec",
         "lib/Mono/WaveEngine.Components.dll",
         "lib/Mono/WaveEngine.Components.xml",
         "lib/MonoAndroid/WaveEngine.Components.dll",
@@ -23398,65 +24190,56 @@
         "lib/net45/WaveEngine.Components.dll",
         "lib/net45/WaveEngine.Components.xml",
         "lib/uap10.0/WaveEngine.Components.dll",
-        "lib/uap10.0/WaveEngine.Components.xml"
+        "lib/uap10.0/WaveEngine.Components.xml",
+        "waveengine.components.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.components.nuspec"
       ]
     },
-    "WaveEngine.Framework/2.3.0.29": {
-      "sha512": "tHDQ621UIW6Ox9KXjEcssMIbPKydHPplx2IOcwQ6OLqVKSCzwO9E9K4byhnn7P9+HAlO8oCZ2AKBWO1jPD0trQ==",
+    "WaveEngine.Framework/2.4.1-alpha-20170812-566": {
+      "sha512": "P2WcC4jODzuD7ebaaooOcQuhs3BduGpyAwIx3xcLbAzUP4ToetfRukOi12URfU4FlWUfsw31deJrkZB8fJ1nzw==",
       "type": "package",
-      "path": "waveengine.framework/2.3.0.29",
       "files": [
-        "WaveEngine.Framework.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Framework.nuspec",
         "lib/Mono/WaveEngine.Bepu.dll",
-        "lib/Mono/WaveEngine.Box2D.dll",
         "lib/Mono/WaveEngine.Framework.dll",
         "lib/Mono/WaveEngine.Framework.xml",
         "lib/Mono/WaveEngine.Physics.dll",
         "lib/Mono/WaveEngine.Physics.xml",
         "lib/Mono/Zlib.Portable.dll",
         "lib/MonoAndroid/WaveEngine.Bepu.dll",
-        "lib/MonoAndroid/WaveEngine.Box2D.dll",
         "lib/MonoAndroid/WaveEngine.Framework.dll",
         "lib/MonoAndroid/WaveEngine.Framework.xml",
         "lib/MonoAndroid/WaveEngine.Physics.dll",
         "lib/MonoAndroid/WaveEngine.Physics.xml",
         "lib/MonoAndroid/Zlib.Portable.dll",
         "lib/Xamarin.Mac/WaveEngine.Bepu.dll",
-        "lib/Xamarin.Mac/WaveEngine.Box2D.dll",
         "lib/Xamarin.Mac/WaveEngine.Framework.dll",
         "lib/Xamarin.Mac/WaveEngine.Physics.dll",
         "lib/Xamarin.Mac/Zlib.Portable.dll",
         "lib/Xamarin.iOS/WaveEngine.Bepu.dll",
-        "lib/Xamarin.iOS/WaveEngine.Box2D.dll",
         "lib/Xamarin.iOS/WaveEngine.Framework.dll",
         "lib/Xamarin.iOS/WaveEngine.Framework.xml",
         "lib/Xamarin.iOS/WaveEngine.Physics.dll",
         "lib/Xamarin.iOS/WaveEngine.Physics.xml",
         "lib/Xamarin.iOS/Zlib.Portable.dll",
         "lib/net45/WaveEngine.Bepu.dll",
-        "lib/net45/WaveEngine.Box2D.dll",
         "lib/net45/WaveEngine.Framework.dll",
         "lib/net45/WaveEngine.Framework.xml",
         "lib/net45/WaveEngine.Physics.dll",
         "lib/net45/WaveEngine.Physics.xml",
         "lib/net45/Zlib.Portable.dll",
         "lib/uap10.0/WaveEngine.Bepu.dll",
-        "lib/uap10.0/WaveEngine.Box2D.dll",
         "lib/uap10.0/WaveEngine.Framework.dll",
         "lib/uap10.0/WaveEngine.Framework.xml",
         "lib/uap10.0/WaveEngine.Physics.dll",
         "lib/uap10.0/WaveEngine.Physics.xml",
-        "lib/uap10.0/Zlib.Portable.dll"
+        "waveengine.framework.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.framework.nuspec"
       ]
     },
-    "WaveEngine.Materials/2.3.0.29": {
-      "sha512": "ZdoBl+Nb8B91cGo8YI4t6WgAyAlxa9fGK0TFiesFBfiHSJ5OUVtHzdAgu79b5/RFGbMh4lUNc5J1bIkZLxkyNg==",
+    "WaveEngine.Materials/2.4.1-alpha-20170812-566": {
+      "sha512": "lt1m6ssbQ7Z+xuq3iRFirOPOjG+UzBV3Qk4MOPWuO5TZz+vjYr2bPjLvjwMIUBNgzcJeGNAtVKHSUIy5ec6DHA==",
       "type": "package",
-      "path": "waveengine.materials/2.3.0.29",
       "files": [
-        "WaveEngine.Materials.2.3.0.29.nupkg.sha512",
-        "WaveEngine.Materials.nuspec",
         "lib/Mono/WaveEngine.Materials.dll",
         "lib/Mono/WaveEngine.Materials.xml",
         "lib/MonoAndroid/WaveEngine.Materials.dll",
@@ -23467,7 +24250,9 @@
         "lib/net45/WaveEngine.Materials.dll",
         "lib/net45/WaveEngine.Materials.xml",
         "lib/uap10.0/WaveEngine.Materials.dll",
-        "lib/uap10.0/WaveEngine.Materials.xml"
+        "lib/uap10.0/WaveEngine.Materials.xml",
+        "waveengine.materials.2.4.1-alpha-20170812-566.nupkg.sha512",
+        "waveengine.materials.nuspec"
       ]
     },
     "Xamarin.Forms/2.3.3.180": {
@@ -23636,24 +24421,29 @@
         "xamarin.forms.2.3.3.180.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Zlib.Portable/1.11.0": {
+      "sha512": "T8FoSv/7DuP4ItfacfiD1a5Ra29e3ogZnK8KnaOhxooxHbNOf0Kj00DIyQqZupzVGB5BkluKJ1/aAFVtMYFUTw==",
+      "type": "package",
+      "files": [
+        "Zlib.Portable.1.11.0.nupkg.sha512",
+        "Zlib.Portable.nuspec",
+        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll",
+        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.xml"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Acr.XamForms.UserDialogs >= 5.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
-      "WaveEngine >= 2.3.0.29",
-      "WaveEngine.Common >= 2.3.0.29",
-      "WaveEngine.Components >= 2.3.0.29",
-      "WaveEngine.Framework >= 2.3.0.29",
-      "WaveEngine.Materials >= 2.3.0.29",
+      "WaveEngine >= 2.4.1-alpha-20170812-566",
+      "WaveEngine.Common >= 2.4.1-alpha-20170812-566",
+      "WaveEngine.Components >= 2.4.1-alpha-20170812-566",
+      "WaveEngine.Framework >= 2.4.1-alpha-20170812-566",
+      "WaveEngine.Materials >= 2.4.1-alpha-20170812-566",
       "Xamarin.Forms >= 2.3.3.180"
     ],
     "UAP,Version=v10.0": []
-  },
-  "tools": {},
-  "projectFileToolGroups": {},
-  "packageFolders": {
-    "C:\\Users\\jsuarez\\.nuget\\packages\\": {}
   }
 }

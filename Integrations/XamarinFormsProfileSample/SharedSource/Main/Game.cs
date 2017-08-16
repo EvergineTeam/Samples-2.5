@@ -1,6 +1,7 @@
 #region Using Statements
 using System;
 using WaveEngine.Common;
+using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
@@ -11,6 +12,8 @@ namespace XamarinFormsProfileSample
         private MyScene _scene;
         public override void Initialize(IApplication application)
         {
+            SerializerFactory.DefaultSerializationType = SerializationType.DATACONTRACT;
+
             base.Initialize(application);
 
             _scene = new MyScene();

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/2/2017 12:30:31 PM
+// File generated on 8/11/2017 1:24:22 PM
 namespace Accelerometer
 {
     using System;
