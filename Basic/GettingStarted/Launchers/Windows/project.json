@@ -1,8 +1,8 @@
-﻿{
+{
   "dependencies": {
-    "WaveEngine": "2.3.2-alpha-20170530-506",
-    "WaveEngine.ImageEffects": "2.3.2-alpha-20170530-506",
-    "WaveEngine.VisualTest": "2.3.2-alpha-20170530-506"
+    "WaveEngine": "2.4.1-alpha-20170812-566",
+    "WaveEngine.ImageEffects": "2.4.1-alpha-20170812-566",
+    "WaveEngine.VisualTest": "2.4.1-alpha-20170812-566"
   },
   "frameworks": {
     "net45": {}
