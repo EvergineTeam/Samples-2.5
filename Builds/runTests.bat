@@ -4,7 +4,7 @@ if [%1]==[] goto :blank
 
 set testFolder=%1
 
-NuGet\nuget.exe install WaveEngine.WindowsTools -ExcludeVersion -ConfigFile NuGet\NuGet.config
+NuGet\nuget.exe install WaveEngine.WindowsTools -ExcludeVersion -ConfigFile NuGet\NuGet.config -PreRelease
 
 xcopy  WaveEngine.WindowsTools\tools  WaveEngine.WindowsTools\v2.0\Tools\VisualEditor /Y /I
 
