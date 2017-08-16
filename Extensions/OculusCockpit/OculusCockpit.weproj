@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>a4c786a4-51da-4df2-a309-70ec8b222427</Id>
   <GameInfoPath>OculusCockpit.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -26,5 +26,5 @@
     <d2p1:_Minor>4</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.1-alpha-20170808-561</WaveVersion>
+  <WaveVersion>2.4.1-alpha-20170812-566</WaveVersion>
 </Project>
