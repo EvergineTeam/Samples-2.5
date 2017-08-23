@@ -1,5 +1,5 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>fce5eeca-5ee0-4f1c-a6cc-6b6f0d0712f3</Id>
+  <Id>2c650e93-b8dd-4e8b-86f8-9ea40d0adc1f</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
@@ -14,24 +14,97 @@
     <d2p1:FramesPerSecond>0</d2p1:FramesPerSecond>
     <d2p1:GenerateTangentSpace>true</d2p1:GenerateTangentSpace>
     <d2p1:IsAnimated>false</d2p1:IsAnimated>
-    <d2p1:Materials xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <d3p1:string>Material__507</d3p1:string>
-      <d3p1:string>Material__507</d3p1:string>
+    <d2p1:Materials>
+      <d2p1:Material>
+        <d2p1:AmbientColor xmlns:d5p1="WaveEngine.Common.Graphics">
+          <d5p1:A>255</d5p1:A>
+          <d5p1:B>150</d5p1:B>
+          <d5p1:G>150</d5p1:G>
+          <d5p1:R>150</d5p1:R>
+        </d2p1:AmbientColor>
+        <d2p1:AmbientTextureFile i:nil="true" />
+        <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
+          <d5p1:A>255</d5p1:A>
+          <d5p1:B>150</d5p1:B>
+          <d5p1:G>150</d5p1:G>
+          <d5p1:R>150</d5p1:R>
+        </d2p1:DiffuseColor>
+        <d2p1:DiffuseTextureFile i:nil="true" />
+        <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
+          <d5p1:A>255</d5p1:A>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
+        </d2p1:EmissiveColor>
+        <d2p1:EmissiveTextureFile i:nil="true" />
+        <d2p1:Name>Material__507</d2p1:Name>
+        <d2p1:Opacity>1</d2p1:Opacity>
+        <d2p1:SpecularColor xmlns:d5p1="WaveEngine.Common.Graphics">
+          <d5p1:A>255</d5p1:A>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
+        </d2p1:SpecularColor>
+        <d2p1:SpecularTextureFile i:nil="true" />
+      </d2p1:Material>
     </d2p1:Materials>
-    <d2p1:Meshes>
-      <d2p1:Mesh>
-        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
+    <d2p1:Nodes>
+      <d2p1:Node>
+        <d2p1:Children />
+        <d2p1:Meshes>
+          <d2p1:Mesh>
+            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+              <d7p1:M11>1</d7p1:M11>
+              <d7p1:M12>0</d7p1:M12>
+              <d7p1:M13>0</d7p1:M13>
+              <d7p1:M14>0</d7p1:M14>
+              <d7p1:M21>0</d7p1:M21>
+              <d7p1:M22>1</d7p1:M22>
+              <d7p1:M23>0</d7p1:M23>
+              <d7p1:M24>0</d7p1:M24>
+              <d7p1:M31>0</d7p1:M31>
+              <d7p1:M32>0</d7p1:M32>
+              <d7p1:M33>1</d7p1:M33>
+              <d7p1:M34>0</d7p1:M34>
+              <d7p1:M41>-177.29744</d7p1:M41>
+              <d7p1:M42>20.9096985</d7p1:M42>
+              <d7p1:M43>4.76837158E-06</d7p1:M43>
+              <d7p1:M44>1</d7p1:M44>
+            </d2p1:LocalTransform>
+            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
+            <d2p1:Name></d2p1:Name>
+            <d2p1:NumFaces>86537</d2p1:NumFaces>
+            <d2p1:NumVertices>65534</d2p1:NumVertices>
+          </d2p1:Mesh>
+          <d2p1:Mesh>
+            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+              <d7p1:M11>1</d7p1:M11>
+              <d7p1:M12>0</d7p1:M12>
+              <d7p1:M13>0</d7p1:M13>
+              <d7p1:M14>0</d7p1:M14>
+              <d7p1:M21>0</d7p1:M21>
+              <d7p1:M22>1</d7p1:M22>
+              <d7p1:M23>0</d7p1:M23>
+              <d7p1:M24>0</d7p1:M24>
+              <d7p1:M31>0</d7p1:M31>
+              <d7p1:M32>0</d7p1:M32>
+              <d7p1:M33>1</d7p1:M33>
+              <d7p1:M34>0</d7p1:M34>
+              <d7p1:M41>-177.29744</d7p1:M41>
+              <d7p1:M42>20.9096985</d7p1:M42>
+              <d7p1:M43>4.76837158E-06</d7p1:M43>
+              <d7p1:M44>1</d7p1:M44>
+            </d2p1:LocalTransform>
+            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
+            <d2p1:Name></d2p1:Name>
+            <d2p1:NumFaces>65182</d2p1:NumFaces>
+            <d2p1:NumVertices>51086</d2p1:NumVertices>
+          </d2p1:Mesh>
+        </d2p1:Meshes>
         <d2p1:Name>forest</d2p1:Name>
-        <d2p1:NumFaces>86537</d2p1:NumFaces>
-        <d2p1:NumVertices>65534</d2p1:NumVertices>
-      </d2p1:Mesh>
-      <d2p1:Mesh>
-        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-        <d2p1:Name>forest</d2p1:Name>
-        <d2p1:NumFaces>65182</d2p1:NumFaces>
-        <d2p1:NumVertices>51086</d2p1:NumVertices>
-      </d2p1:Mesh>
-    </d2p1:Meshes>
+        <d2p1:Parent i:nil="true" />
+      </d2p1:Node>
+    </d2p1:Nodes>
     <d2p1:NumFrames>0</d2p1:NumFrames>
     <d2p1:SwapWindingOrder>true</d2p1:SwapWindingOrder>
   </Asset>

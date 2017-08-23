@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:43
+// File generated on 08/08/2017 13:50:15
 namespace Skybox
 {
     using System;
@@ -16,6 +16,9 @@ namespace Skybox
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Skybox.wgame </summary>
+        public const string GameInfo = "Content/Skybox.wgame";
         
         public sealed class Assets
         {

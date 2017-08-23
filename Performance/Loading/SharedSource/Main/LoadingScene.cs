@@ -1,17 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Threading;
 
 namespace Loading
 {
@@ -35,13 +28,12 @@ namespace Loading
 
             StartAnimation();
 
-            WaveServices.TaskScheduler.CreateTask(() =>
+            WaveBackgroundTask.Run(() =>
             {
                 gameScene = new GameScene();
                 gameScene.Initialize(WaveServices.GraphicsDevice);
                 Thread.Sleep(5000);
-            })
-            .ContinueWith(() =>
+            }).ContinueWith((t) =>
             {
                 EndAnimation();
             });

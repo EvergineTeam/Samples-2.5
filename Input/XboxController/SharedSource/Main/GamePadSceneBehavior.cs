@@ -168,13 +168,13 @@ namespace XboxControllerProject
                 }
 
                 // Sticks                              
-                myscene.leftJoystick.FindComponent<Transform2D>().LocalX = inputService.GamePadState.ThumbStricks.Left.X * 10;
-                myscene.leftJoystick.FindComponent<Transform2D>().LocalY = -inputService.GamePadState.ThumbStricks.Left.Y * 10;
-                myscene.leftStickText.Text = "LeftStick: " + inputService.GamePadState.ThumbStricks.Left;
+                myscene.leftJoystick.FindComponent<Transform2D>().LocalX = inputService.GamePadState.ThumbSticks.Left.X * 10;
+                myscene.leftJoystick.FindComponent<Transform2D>().LocalY = -inputService.GamePadState.ThumbSticks.Left.Y * 10;
+                myscene.leftStickText.Text = "LeftStick: " + inputService.GamePadState.ThumbSticks.Left;
 
-                myscene.rightJoystick.FindComponent<Transform2D>().LocalX = inputService.GamePadState.ThumbStricks.Right.X * 10;
-                myscene.rightJoystick.FindComponent<Transform2D>().LocalY = -inputService.GamePadState.ThumbStricks.Right.Y * 10;
-                myscene.rightStickText.Text = "RightStick: " + inputService.GamePadState.ThumbStricks.Right;
+                myscene.rightJoystick.FindComponent<Transform2D>().LocalX = inputService.GamePadState.ThumbSticks.Right.X * 10;
+                myscene.rightJoystick.FindComponent<Transform2D>().LocalY = -inputService.GamePadState.ThumbSticks.Right.Y * 10;
+                myscene.rightStickText.Text = "RightStick: " + inputService.GamePadState.ThumbSticks.Right;
 
 
                 beforeGamepadState = inputService.GamePadState;

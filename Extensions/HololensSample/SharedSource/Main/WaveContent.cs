@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:53:42
+// File generated on 08/08/2017 14:57:49
 namespace HololensSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace HololensSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/HololensSample.wgame </summary>
+        public const string GameInfo = "Content/HololensSample.wgame";
         
         public sealed class Assets
         {

@@ -21,9 +21,13 @@ namespace HololensSample
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
-            
-            WaveServices.RegisterService(new SpatialInputService());
-            WaveServices.RegisterService(new KeywordRecognizerService());            
+
+#if !UWP
+            this.EntityManager.Remove("CameraRig");
+
+            FreeCamera3D mainCamera = new FreeCamera3D("main", Vector3.Zero, -Vector3.UnitZ);
+            this.EntityManager.Add(mainCamera);
+#endif
         }
     }
 }

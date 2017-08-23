@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:04:12
+// File generated on 8/8/2017 12:51:19 PM
 namespace Entity3DCollisionGroups
 {
     using System;
@@ -16,6 +16,9 @@ namespace Entity3DCollisionGroups
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Entity3DCollisionGroups.wgame </summary>
+        public const string GameInfo = "Content/Entity3DCollisionGroups.wgame";
         
         public sealed class Assets
         {

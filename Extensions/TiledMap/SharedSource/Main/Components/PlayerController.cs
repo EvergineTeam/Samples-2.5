@@ -93,9 +93,9 @@ namespace TiledMap.Components
             {
                 var gamepadState = this.input.GamePadState;
 
-                if (this.OnFloor && (gamepadState.ThumbStricks.Left.X != 0))
+                if (this.OnFloor && (gamepadState.ThumbSticks.Left.X != 0))
                 {                    
-                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbStricks.Left.X, RigidBody.Transform2D.Position);
+                    this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbSticks.Left.X, RigidBody.Transform2D.Position);
                 }
 
                 if (gamepadState.Buttons.A == ButtonState.Pressed)

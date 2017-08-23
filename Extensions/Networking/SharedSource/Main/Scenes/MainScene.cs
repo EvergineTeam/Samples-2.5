@@ -97,7 +97,7 @@ namespace Networking.Scenes
         private void DiscoverHosts()
         {
             this.CleanErrorMessage();
-            this.DisableHostDiscoveryAndCleanButtons();
+            this.DisableHostDiscoveryAndCleanButtons();            
             this.networkService.HostDiscovered += this.OnHostDiscovered;
             this.networkService.DiscoveryHosts(NetworkConfiguration.GameIdentifier, NetworkConfiguration.Port);
         }
@@ -113,7 +113,7 @@ namespace Networking.Scenes
             this.discoveredHostButtons.Clear();
         }
 
-        private void OnHostDiscovered(object sender, Host host)
+        private void OnHostDiscovered(object sender, NetworkEndpoint host)
         {
             var clientButton = new Button
             {
@@ -130,7 +130,7 @@ namespace Networking.Scenes
             WaveServices.Layout.PerformLayout(this);
         }
 
-        private async void OnConnectToHostClicked(Host host)
+        private async void OnConnectToHostClicked(NetworkEndpoint host)
         {
             try
             {

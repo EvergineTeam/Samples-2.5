@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:05:41
+// File generated on 8/9/2017 1:31:57 PM
 namespace StockRoom
 {
     using System;
@@ -16,6 +16,9 @@ namespace StockRoom
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/StockRoom.wgame </summary>
+        public const string GameInfo = "Content/StockRoom.wgame";
         
         public sealed class Assets
         {
@@ -43,6 +46,13 @@ namespace StockRoom
                 
                 /// <summary> Path to Content/Assets/Material/TableMaterial.wmat </summary>
                 public const string TableMaterial = "Content/Assets/Material/TableMaterial.wmat";
+            }
+            
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/Mesh1Mat.wmat </summary>
+                public const string Mesh1Mat = "Content/Assets/Materials/Mesh1Mat.wmat";
             }
         }
         

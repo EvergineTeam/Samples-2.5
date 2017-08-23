@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:52
+// File generated on 8/11/2017 1:24:22 PM
 namespace Accelerometer
 {
     using System;
@@ -17,29 +17,42 @@ namespace Accelerometer
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/Accelerometer.wgame </summary>
+        public const string GameInfo = "Content/Accelerometer.wgame";
+        
         public sealed class Assets
         {
             
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial(1).wmat </summary>
-                public const string MyMaterial_1_ = "Content/Assets/Materials/MyMaterial(1).wmat";
+                /// <summary> Path to Content/Assets/Materials/BallMat.wmat </summary>
+                public const string BallMat = "Content/Assets/Materials/BallMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial(2).wmat </summary>
-                public const string MyMaterial_2_ = "Content/Assets/Materials/MyMaterial(2).wmat";
+                /// <summary> Path to Content/Assets/Materials/BlueMat.wmat </summary>
+                public const string BlueMat = "Content/Assets/Materials/BlueMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial(3).wmat </summary>
-                public const string MyMaterial_3_ = "Content/Assets/Materials/MyMaterial(3).wmat";
+                /// <summary> Path to Content/Assets/Materials/CyanMat.wmat </summary>
+                public const string CyanMat = "Content/Assets/Materials/CyanMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial(4).wmat </summary>
-                public const string MyMaterial_4_ = "Content/Assets/Materials/MyMaterial(4).wmat";
+                /// <summary> Path to Content/Assets/Materials/GreenMat.wmat </summary>
+                public const string GreenMat = "Content/Assets/Materials/GreenMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial(5).wmat </summary>
-                public const string MyMaterial_5_ = "Content/Assets/Materials/MyMaterial(5).wmat";
+                /// <summary> Path to Content/Assets/Materials/PinkMat.wmat </summary>
+                public const string PinkMat = "Content/Assets/Materials/PinkMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/MyMaterial.wmat </summary>
-                public const string MyMaterial = "Content/Assets/Materials/MyMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/RedMat.wmat </summary>
+                public const string RedMat = "Content/Assets/Materials/RedMat.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/YellowMat.wmat </summary>
+                public const string YellowMat = "Content/Assets/Materials/YellowMat.wmat";
+            }
+            
+            public sealed class Prefabs
+            {
+                
+                /// <summary> Path to Content/Assets/Prefabs/ball.wpref </summary>
+                public const string ball = "Content/Assets/Prefabs/ball.wpref";
             }
         }
         

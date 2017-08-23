@@ -61,7 +61,7 @@ MyGame game = new MyGame();
 WaveEngine.Adapter.SimpleApp.Run(game);
 ```
 
-Once the application is created we can create and add a basic camera3D entity. To make it easy we will use the decorator **FreeCamera3D**, which builds a new entity with all the required components.
+Once the application is created we can create and add a basic camera3D entity. To make it easy we will use the decorator FreeCamera3D, which builds a new entity with all the required components.
 
 ```csharp
 var camera = new FreeCamera3D("Main", new Vector3(0,1,2.5f), Vector3.Zero)
@@ -72,7 +72,7 @@ var camera = new FreeCamera3D("Main", new Vector3(0,1,2.5f), Vector3.Zero)
 game.scene.EntityManager.Add(camera.Entity);
 ```
 
-We are going to add a directional light using a similar way. Remember will need to add the **LightingEnabled** property in the Material of every entitity to see the effect.
+We are going to add a directional light using a similar way. Remember will need to add the LightingEnabled property in the Material of every entitity to see the effect.
 
 ```csharp
 var light = new WaveEngine.Framework.Graphics.DirectionalLight("light1", new Vector3(0.1f, 0.1f, 0.4f));
@@ -80,24 +80,30 @@ var light = new WaveEngine.Framework.Graphics.DirectionalLight("light1", new Vec
 game.scene.EntityManager.Add(light.Entity);
 ```
 
-And finally we are going to add the physic entities. This time we are going to build a physic floor of white color. The floor should not fall by gravity as other entities do, so the floor will be a **Kinematic RigidBody**.
+And finally we are going to add the physic entities. This time we are going to build a physic floor of white color. The floor should not fall by gravity as other entities do, so the floor will be a Kinematic RigidBody.
 
 ```csharp
 Entity floor = new Entity()
 	.AddComponent(new Transform3D() 
 		{ 
-			Position = new Vector3(0.0f, -1.0f, 0.0f), 
-			Scale = new Vector3(3f, 1f, 3f) 
+			Position = new Vector3(0.0f, -1.0f, 0.0f) 
 		})
-	.AddComponent(Model.CreatePlane())
-	.AddComponent(new MaterialsMap(new StandardMaterial() 
+	.AddComponent(new PlaneMesh() 
 		{ 
-			LightingEnabled = true, 
-			DiffuseColor = Color.White 
-		}))
+			Width = 3, 
+			Height = 3
+		})
+	.AddComponent(new MaterialComponent()
+		{
+			Material = new StandardMaterial() 
+			{ 
+				LightingEnabled = true, 
+				DiffuseColor = Color.White 
+			}
+		})
 	.AddComponent(new BoxCollider3D() )
 	.AddComponent(new RigidBody3D() { IsKinematic = true })
-	.AddComponent(new ModelRenderer());
+	.AddComponent(new MeshRenderer());
 ```
 
 ```csharp
@@ -109,14 +115,24 @@ We can play with application by creating some entites.
 ```csharp
 Entity sphere = new Entity()
 	.AddComponent(new Transform3D()
-	{
-		Position = new Vector3(0.0f, 3.0f, 0.0f)
-	})
-	.AddComponent(Model.CreateSphere(0.5f))
+		{
+			Position = new Vector3(0.0f, 3.0f, 0.0f)
+		})
+	.AddComponent(new SphereMesh() 
+		{ 
+			Diameter = 0.5f
+		})	
 	.AddComponent(new SphereCollider3D())
 	.AddComponent(new RigidBody3D() { Restitution = 0.5f })
-	.AddComponent(new MaterialsMap(new StandardMaterial() { LightingEnabled = true, DiffuseColor = Color.Blue }))
-	.AddComponent(new ModelRenderer());
+	.AddComponent(new MaterialComponent()
+		{
+			Material = new StandardMaterial() 
+			{ 
+				LightingEnabled = true, 
+				DiffuseColor = Color.Blue 
+			}
+		})
+		.AddComponent(new MeshRenderer());
 
 game.scene.EntityManager.Add(sphere);
 ```
@@ -130,13 +146,24 @@ Entity box = new Entity()
 		Position = new Vector3(0.0f, 2.0f, 0.0f),
 		Rotation = new Vector3(1, 1, 1)
 	})
-	.AddComponent(Model.CreateCube(0.5f))
+	.AddComponent(new CubeMesh()
+		{
+			Size = 0.5f
+		})
 	.AddComponent(new BoxCollider3D())
 	.AddComponent(new RigidBody3D())
-	.AddComponent(new MaterialsMap(new StandardMaterial() { LightingEnabled = true, DiffuseColor = Color.Red }))
-	.AddComponent(new ModelRenderer());
+	.AddComponent(new MaterialComponent()
+		{
+			Material = new StandardMaterial() 
+			{ 
+				LightingEnabled = true, 
+				DiffuseColor = Color.Red 
+			}
+		})
+	.AddComponent(new MeshRenderer());
 
 game.scene.EntityManager.Add(box);
 ```
 
-We can also add entities with other shapes and sizes to create complex a world and games. We add a FreeCamera3D, you can move the camera around the scene using mouse and WASD keyboard keys. **Enjoy**.
+We can also add entities with other shapes and sizes to create complex a world and games. We add a FreeCamera3D, you can move the camera around the scene using mouse and WASD keyboard keys. Enjoy.
+

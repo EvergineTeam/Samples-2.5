@@ -14,6 +14,7 @@ using WaveEngine.Components.UI;
 using WaveEngine.Framework.UI;
 using System.Collections.Generic;
 using WaveEngine.ImageEffects;
+using WaveEngine.Framework.Threading;
 #endregion
 
 namespace ImageEffects
@@ -50,7 +51,7 @@ namespace ImageEffects
             {
                 if (!this.flag)
                 {
-                    WaveServices.Dispatcher.RunOnWaveThread(() =>
+                    WaveForegroundTask.Run(() =>                    
                     {
                         this.flag = true;
 

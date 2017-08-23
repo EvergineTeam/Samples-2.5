@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 1:43:33 PM
+// File generated on 03/08/2017 12:20:15
 namespace Transition
 {
     using System;
@@ -16,6 +16,16 @@ namespace Transition
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Transition.wgame </summary>
+        public const string GameInfo = "Content/Transition.wgame";
+        
+        public sealed class Assets
+        {
+            
+            /// <summary> Path to Content/Assets/BasicMaterial.wmat </summary>
+            public const string BasicMaterial = "Content/Assets/BasicMaterial.wmat";
+        }
         
         public sealed class Scenes
         {

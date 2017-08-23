@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:57:10
+// File generated on 07/08/2017 14:15:41
 namespace Billboard
 {
     using System;
@@ -16,6 +16,9 @@ namespace Billboard
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Billboard.wgame </summary>
+        public const string GameInfo = "Content/Billboard.wgame";
         
         public sealed class Assets
         {

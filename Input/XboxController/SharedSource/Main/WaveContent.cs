@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:59:10
+// File generated on 8/2/2017 1:55:16 PM
 namespace XBoxController
 {
     using System;
@@ -16,6 +16,9 @@ namespace XBoxController
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/XBoxController.wgame </summary>
+        public const string GameInfo = "Content/XBoxController.wgame";
         
         public sealed class Assets
         {
@@ -25,6 +28,9 @@ namespace XBoxController
             
             /// <summary> Path to Content/Assets/FrontController.png </summary>
             public const string FrontController_png = "Content/Assets/FrontController.png";
+            
+            /// <summary> Path to Content/Assets/Segoe UI_16.ttf </summary>
+            public const string Segoe_UI_16_ttf = "Content/Assets/Segoe UI_16.ttf";
             
             /// <summary> Path to Content/Assets/TopController.png </summary>
             public const string TopController_png = "Content/Assets/TopController.png";

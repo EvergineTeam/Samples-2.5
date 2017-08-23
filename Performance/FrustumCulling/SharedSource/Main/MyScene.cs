@@ -51,10 +51,13 @@ namespace FrustumCulling
         {
             Entity cube = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position })
-                .AddComponent(Model.CreateCube())
+                .AddComponent(new CubeMesh())
                 .AddComponent(new BoxCollider3D())
-                .AddComponent(new MaterialsMap(new StandardMaterial() { DiffuseColor = GetRandomColor() }))
-                .AddComponent(new ModelRenderer());
+                .AddComponent(new MaterialComponent()
+                {
+                    Material = new StandardMaterial() { DiffuseColor = GetRandomColor() }
+                })
+                .AddComponent(new MeshRenderer());
             return cube;
         }
 
@@ -62,10 +65,13 @@ namespace FrustumCulling
         {
             Entity sphere = new Entity(name)
                 .AddComponent(new Transform3D() { Position = position })
-                .AddComponent(Model.CreateSphere())
-                .AddComponent(new SphereCollider3D())
-                .AddComponent(new MaterialsMap(new StandardMaterial() { DiffuseColor = GetRandomColor() }))
-                .AddComponent(new ModelRenderer());
+                .AddComponent(new SphereMesh())
+                .AddComponent(new BoxCollider3D())
+                .AddComponent(new MaterialComponent()
+                {
+                    Material = new StandardMaterial() { DiffuseColor = GetRandomColor() }
+                })
+                .AddComponent(new MeshRenderer());
             return sphere;
         }
 

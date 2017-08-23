@@ -1,0 +1,72 @@
+﻿<Prefab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models.Assets">
+  <Id xmlns="WaveEngine.Framework.Models">ee73b6dd-02d4-4c8f-95c4-f8101968920f</Id>
+  <EntityModel xmlns:d2p1="WaveEngine.Framework.Models.Entities">
+    <d2p1:SerializeChildrens />
+    <d2p1:isDisabled>false</d2p1:isDisabled>
+    <d2p1:isStatic>false</d2p1:isStatic>
+    <d2p1:isVisible>true</d2p1:isVisible>
+    <d2p1:name>capsule</d2p1:name>
+    <d2p1:tag i:nil="true" />
+    <d2p1:SerializeComponents xmlns:d3p1="WaveEngine.Framework">
+      <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Graphics" i:type="d4p1:Transform3D">
+        <d4p1:LocalOrientation xmlns:d5p1="WaveEngine.Common.Math">
+          <d5p1:W>1</d5p1:W>
+          <d5p1:X>0</d5p1:X>
+          <d5p1:Y>0</d5p1:Y>
+          <d5p1:Z>0</d5p1:Z>
+        </d4p1:LocalOrientation>
+        <d4p1:LocalPosition xmlns:d5p1="WaveEngine.Common.Math">
+          <d5p1:X>0</d5p1:X>
+          <d5p1:Y>0</d5p1:Y>
+          <d5p1:Z>0</d5p1:Z>
+        </d4p1:LocalPosition>
+        <d4p1:LocalScale xmlns:d5p1="WaveEngine.Common.Math">
+          <d5p1:X>1</d5p1:X>
+          <d5p1:Y>1</d5p1:Y>
+          <d5p1:Z>1</d5p1:Z>
+        </d4p1:LocalScale>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d4p1:CapsuleMesh">
+        <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
+        <d4p1:Height>1</d4p1:Height>
+        <d4p1:Radius>0.5</d4p1:Radius>
+        <d4p1:Tessellation>16</d4p1:Tessellation>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d4p1:MaterialComponent">
+        <d4p1:AsignedTo i:nil="true" />
+        <d4p1:MaterialPath>Content/Assets/basicMaterial.wmat</d4p1:MaterialPath>
+        <d4p1:UseCopy>false</d4p1:UseCopy>
+        <d4p1:useDummyMaterial>false</d4p1:useDummyMaterial>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="WaveEngine.Components.Graphics3D" i:type="d4p1:MeshRenderer">
+        <d3p1:IsVisible>true</d3p1:IsVisible>
+        <FrustumCullingEnabled xmlns="WaveEngine.Framework.Graphics">true</FrustumCullingEnabled>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Physics3D" i:type="d4p1:CapsuleCollider3D">
+        <d3p1:UpdateOrder>0.5</d3p1:UpdateOrder>
+        <d3p1:isDisabled>false</d3p1:isDisabled>
+        <d4p1:DebugLineColor xmlns:d5p1="WaveEngine.Common.Graphics">
+          <d5p1:A>255</d5p1:A>
+          <d5p1:B>128</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>128</d5p1:R>
+        </d4p1:DebugLineColor>
+        <d4p1:Direction>YAxis</d4p1:Direction>
+        <d4p1:Length>2</d4p1:Length>
+        <d4p1:Radius>0.5</d4p1:Radius>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Physics3D" i:type="d4p1:RigidBody3D">
+        <d3p1:UpdateOrder>0.5</d3p1:UpdateOrder>
+        <d3p1:isDisabled>false</d3p1:isDisabled>
+        <d4p1:CollisionGroup xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics3D" />
+        <d4p1:EnableContinuousContact>false</d4p1:EnableContinuousContact>
+        <d4p1:IsKinematic>false</d4p1:IsKinematic>
+        <d4p1:KineticFriction>0.3</d4p1:KineticFriction>
+        <d4p1:Mass>1</d4p1:Mass>
+        <d4p1:Restitution>0</d4p1:Restitution>
+        <d4p1:StaticFriction>0.6</d4p1:StaticFriction>
+      </d3p1:Component>
+    </d2p1:SerializeComponents>
+  </EntityModel>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
+</Prefab>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:04:46
+// File generated on 8/8/2017 1:36:44 PM
 namespace HingleJoint
 {
     using System;
@@ -17,14 +17,20 @@ namespace HingleJoint
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/HingleJoint.wgame </summary>
+        public const string GameInfo = "Content/HingleJoint.wgame";
+        
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/checkered.jpg </summary>
-            public const string checkered_jpg = "Content/Assets/checkered.jpg";
+            /// <summary> Path to Content/Assets/checkered.png </summary>
+            public const string checkered_png = "Content/Assets/checkered.png";
             
             /// <summary> Path to Content/Assets/basicMaterial.wmat </summary>
             public const string basicMaterial = "Content/Assets/basicMaterial.wmat";
+            
+            /// <summary> Path to Content/Assets/groundMaterial.wmat </summary>
+            public const string groundMaterial = "Content/Assets/groundMaterial.wmat";
         }
         
         public sealed class Scenes

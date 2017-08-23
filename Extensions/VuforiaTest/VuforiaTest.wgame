@@ -1,0 +1,21 @@
+﻿<GameInfoModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>0bca3e5f-cd75-4382-8bdc-753ac29210fe</Id>
+  <GameSettings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Services</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ServicesData">
+          <d5p1:ServiceItems xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common">
+            <d6p1:Service xmlns:d7p1="WaveEngine.Vuforia" i:type="d7p1:VuforiaService">
+              <d7p1:dataSetPath>Content/Assets/AR/StonesAndChips.xml</d7p1:dataSetPath>
+              <d7p1:extendedTracking>true</d7p1:extendedTracking>
+              <d7p1:licenseKey>AeRNu+n/////AAAAGfmXotSIvkSQp6D3annJaEEIdl9kN9/8PT8UYO0GOlbvz/n/w4oqvYxTLeLJ/mcx6ulZ+nPitOux8SEyXlTbeYvrM7qO63OkYLluwhT/ULICxNp+z9UIKaLiJDPSKdBdlH3h0I2xzzmo46D7urlvhOxt0l+sNDchaqrQLbV2o7lkvnhGJCzAQl/ZDjsYrEWU+98ZT45DSMNBnHOuvnG1IDoQpsdW7e58yH7bwxqLSbCoBJqWD0iFL9IBXrkbOtrqyrA0UCDqeKl8JeIb4+UKQKJR+WV6Hdml3FafdiDAUoPBwK92363ndni2ai+fEtkTmJFRUxJunoaqEpzC6kr1QYvL/d7JwaBCGfZRKfcp7QD1</d7p1:licenseKey>
+              <d7p1:maxSimultaneousImageTargets>1</d7p1:maxSimultaneousImageTargets>
+              <d7p1:maxSimultaneousObjectTargets>0</d7p1:maxSimultaneousObjectTargets>
+            </d6p1:Service>
+          </d5p1:ServiceItems>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+    </d2p1:Categories>
+  </GameSettings>
+</GameInfoModel>

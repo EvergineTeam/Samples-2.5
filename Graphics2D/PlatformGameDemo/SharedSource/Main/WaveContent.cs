@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/14/2017 3:47:51 PM
+// File generated on 03/08/2017 14:21:00
 namespace PlatformGameDemo
 {
     using System;
@@ -16,6 +16,9 @@ namespace PlatformGameDemo
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/PlatformGameDemo.wgame </summary>
+        public const string GameInfo = "Content/PlatformGameDemo.wgame";
         
         public sealed class Assets
         {

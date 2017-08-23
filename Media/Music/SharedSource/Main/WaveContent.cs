@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:00:50
+// File generated on 8/3/2017 12:40:55 PM
 namespace Music
 {
     using System;
@@ -16,6 +16,9 @@ namespace Music
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Music.wgame </summary>
+        public const string GameInfo = "Content/Music.wgame";
         
         public sealed class Assets
         {

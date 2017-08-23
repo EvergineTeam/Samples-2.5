@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:54:32
+// File generated on 8/10/2017 11:00:10 AM
 namespace OculusCockpit
 {
     using System;
@@ -16,6 +16,9 @@ namespace OculusCockpit
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/OculusCockpit.wgame </summary>
+        public const string GameInfo = "Content/OculusCockpit.wgame";
         
         public sealed class Assets
         {

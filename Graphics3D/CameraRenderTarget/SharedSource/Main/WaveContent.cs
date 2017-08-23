@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:57:19
+// File generated on 07/08/2017 14:55:15
 namespace CameraRengerTarget
 {
     using System;
@@ -16,6 +16,9 @@ namespace CameraRengerTarget
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/CameraRengerTarget.wgame </summary>
+        public const string GameInfo = "Content/CameraRengerTarget.wgame";
         
         public sealed class Assets
         {

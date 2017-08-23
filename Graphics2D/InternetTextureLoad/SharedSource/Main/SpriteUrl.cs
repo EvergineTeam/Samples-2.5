@@ -13,6 +13,7 @@ using WaveEngine.Common.Graphics;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.Threading;
 #endregion
 
 namespace InternetTextureLoad
@@ -47,8 +48,8 @@ namespace InternetTextureLoad
         }
 
         private void GetResponseCallback(IAsyncResult asynchronousResult)
-        {
-			WaveServices.Dispatcher.RunOnWaveThread(() =>
+        {			
+            WaveForegroundTask.Run(() =>
             {
                 HttpWebRequest request = asynchronousResult.AsyncState as HttpWebRequest;
 

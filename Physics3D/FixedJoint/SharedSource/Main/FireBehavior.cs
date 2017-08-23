@@ -78,7 +78,7 @@ namespace FixedJoint
 
                     var direction = Camera.Transform.WorldTransform.Forward;
                     direction.Normalize();
-                    rigidBody.ApplyLinearImpulse(100 * direction);
+                    rigidBody.ApplyLinearImpulse(60 * direction);
                 }
             }
             else

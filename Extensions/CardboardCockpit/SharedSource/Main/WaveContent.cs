@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:53:16
+// File generated on 08/08/2017 14:12:13
 namespace CardboardCockpit
 {
     using System;
@@ -16,6 +16,9 @@ namespace CardboardCockpit
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/CardboardCockpit.wgame </summary>
+        public const string GameInfo = "Content/CardboardCockpit.wgame";
         
         public sealed class Assets
         {
