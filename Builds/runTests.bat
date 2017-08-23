@@ -12,7 +12,6 @@ SET WaveEngine=%~dp0\WaveEngine.WindowsTools\
 
 
 NuGet\nuget.exe install WaveEngine.VisualTestManager -ExcludeVersion -ConfigFile NuGet\NuGet.config
-WaveEngine.VisualTestManager\tools\UpgrateToProjectJson.exe %testFolder%
 WaveEngine.VisualTestManager\tools\TestManager.exe batch --path %testFolder% --platform Windows
 
 
