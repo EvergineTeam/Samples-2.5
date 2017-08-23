@@ -120,11 +120,9 @@
     <Error Condition="!Exists('..\..\packages\WaveEngine.2.4.1-alpha-20170812-566\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.4.1-alpha-20170812-566\build\net45\WaveEngine.targets'))" />
     <Error Condition="!Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170822-572\build\Mono\WaveEngine.Box2D.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170822-572\build\Mono\WaveEngine.Box2D.targets'))" />
     <Error Condition="!Exists('..\..\packages\WaveEngine.VisualTest.2.4.1-alpha-20170822-572\build\net45\WaveEngine.VisualTest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.VisualTest.2.4.1-alpha-20170822-572\build\net45\WaveEngine.VisualTest.targets'))" />
-    <Error Condition="!Exists('..\..\packages\WaveEngine.WindowsTools.2.4.1-alpha-20170822-29\build\WaveEngine.WindowsTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.WindowsTools.2.4.1-alpha-20170822-29\build\WaveEngine.WindowsTools.targets'))" />
   </Target>
   <Import Project="..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170822-572\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.4.1-alpha-20170822-572\build\Mono\WaveEngine.Box2D.targets')" />
   <Import Project="..\..\packages\WaveEngine.VisualTest.2.4.1-alpha-20170822-572\build\net45\WaveEngine.VisualTest.targets" Condition="Exists('..\..\packages\WaveEngine.VisualTest.2.4.1-alpha-20170822-572\build\net45\WaveEngine.VisualTest.targets')" />
-  <Import Project="..\..\packages\WaveEngine.WindowsTools.2.4.1-alpha-20170822-29\build\WaveEngine.WindowsTools.targets" Condition="Exists('..\..\packages\WaveEngine.WindowsTools.2.4.1-alpha-20170822-29\build\WaveEngine.WindowsTools.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
