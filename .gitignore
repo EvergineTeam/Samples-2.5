@@ -41,8 +41,17 @@ WaveEngine.Tools/
 UpgradeLog.backup.zip
 UpgradeLog.txt
 
+*.bak
+*.nuget.targets
+*.nuget.props
+*.lock.json
+
+.wetest
+wetest/
 
 
 
+WaveEngine.VisualTestManager/
+WaveEngine.WindowsTools/
 
 WaveContent.cs
