@@ -230,6 +230,8 @@
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:CubeMesh">
           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
           <d5p1:Size>1</d5p1:Size>
+          <d5p1:UVHorizontalFlip>false</d5p1:UVHorizontalFlip>
+          <d5p1:UVVerticalFlip>false</d5p1:UVVerticalFlip>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
           <d4p1:IsVisible>true</d4p1:IsVisible>
@@ -271,7 +273,7 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualHeight>714</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
