@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -35,26 +37,81 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\WaveEngine.Adapter.dll</HintPath>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\AForge.Video.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.4.0.34\lib\net45\WaveEngine.Box2D.dll</HintPath>
+    <Reference Include="Aforge.Video.DirectShow">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\Aforge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.4.0.34\lib\net45\WaveEngine.Common.dll</HintPath>
+    <Reference Include="NAudio">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\NAudio.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.4.0.34\lib\net45\WaveEngine.Framework.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.4.0.34\lib\net45\WaveEngine.Components.dll</HintPath>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.Bson.1.0.1\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.4.0.34\lib\net45\WaveEngine.Materials.dll</HintPath>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\OpenTK.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.4.0.34\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\..\..\packages\WaveEngine.Common.2.4.0.34\lib\net45\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Desktop">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.DXGI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.Mathematics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.XAudio2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XInput">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\SharpDX.XInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sockets.Plugin">
+      <HintPath>..\..\..\..\packages\rda.SocketsForPCL.2.0.2\lib\net45\Sockets.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions">
+      <HintPath>..\..\..\..\packages\rda.SocketsForPCL.2.0.2\lib\net45\Sockets.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,6 +120,58 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="WaveEngine.Adapter">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\WaveEngine.Adapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Bepu">
+      <HintPath>..\..\..\..\packages\WaveEngine.Framework.2.4.0.34\lib\net45\WaveEngine.Bepu.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\lib\net45\WaveEngine.Box2D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Box2DSharp">
+      <HintPath>..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\lib\net45\WaveEngine.Box2DSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Common">
+      <HintPath>..\..\..\..\packages\WaveEngine.Common.2.4.0.34\lib\net45\WaveEngine.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Components">
+      <HintPath>..\..\..\..\packages\WaveEngine.Components.2.4.0.34\lib\net45\WaveEngine.Components.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Framework">
+      <HintPath>..\..\..\..\packages\WaveEngine.Framework.2.4.0.34\lib\net45\WaveEngine.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\..\..\packages\WaveEngine.ImageEffects.2.4.0.34\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Materials">
+      <HintPath>..\..\..\..\packages\WaveEngine.Materials.2.4.0.34\lib\net45\WaveEngine.Materials.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Physics">
+      <HintPath>..\..\..\..\packages\WaveEngine.Framework.2.4.0.34\lib\net45\WaveEngine.Physics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.VisualTest">
+      <HintPath>..\..\..\..\packages\WaveEngine.VisualTest.2.4.0.34\lib\net45\WaveEngine.VisualTest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.WinGLAdapter">
+      <HintPath>..\..\..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\net45\WaveEngine.WinGLAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\..\..\..\packages\WaveEngine.Framework.2.4.0.34\lib\net45\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
@@ -70,6 +179,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
     <EmbeddedResource Include="SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\TumblerSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\TumblerSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -79,7 +191,13 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\build\Mono\WaveEngine.Box2D.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\build\Mono\WaveEngine.Box2D.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\packages\WaveEngine.VisualTest.2.4.0.34\build\net45\WaveEngine.VisualTest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\WaveEngine.VisualTest.2.4.0.34\build\net45\WaveEngine.VisualTest.targets'))" />
   </Target>
+  <Import Project="..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\..\..\packages\WaveEngine.Box2D.2.4.0.34\build\Mono\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets" Condition="Exists('..\..\..\..\packages\WaveEngine.2.4.0.34\build\net45\WaveEngine.targets')" />
+  <Import Project="..\..\..\..\packages\WaveEngine.VisualTest.2.4.0.34\build\net45\WaveEngine.VisualTest.targets" Condition="Exists('..\..\..\..\packages\WaveEngine.VisualTest.2.4.0.34\build\net45\WaveEngine.VisualTest.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
