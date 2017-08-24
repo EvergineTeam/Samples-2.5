@@ -3,11 +3,11 @@ generate.info
 generate.winfo
 Intermediate/
 
-
 # User-specific files
 *.suo
 *.user
 *.sln.docstates
+.vs/
 
 # Build results
 [Dd]ebug/
