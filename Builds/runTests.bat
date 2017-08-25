@@ -11,7 +11,7 @@ SET WaveEngine=%~dp0\WaveEngine.WindowsTools\
 
 rmdir /s /q WaveEngine.VisualTestManager
 NuGet\nuget.exe install WaveEngine.VisualTestManager -ExcludeVersion -ConfigFile NuGet\NuGet.config
-WaveEngine.VisualTestManager\tools\TestManager.exe batch --path %testFolder% --platform Windows
+WaveEngine.VisualTestManager\tools\TestManager.exe batch --path %testFolder% --platform Windows -t 8
 
 
 set reportTXT=%~dp0%testFolder%\summary.txt
