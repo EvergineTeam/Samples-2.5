@@ -4,11 +4,12 @@ generate.winfo
 Intermediate/
 .vs/
 
-
 # User-specific files
 *.suo
 *.user
 *.sln.docstates
+.vs/
+.fake/
 
 # Build results
 [Dd]ebug/
@@ -49,8 +50,6 @@ UpgradeLog.txt
 
 .wetest
 wetest/
-
-
 
 WaveEngine.VisualTestManager/
 WaveEngine.WindowsTools/
