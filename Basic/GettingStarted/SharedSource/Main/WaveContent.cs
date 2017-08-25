@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 23/08/2017 10:27:12
+// File generated on 24/08/2017 10:49:30
 namespace GettingStarted
 {
     using System;
