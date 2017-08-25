@@ -8,6 +8,7 @@ Intermediate/
 *.user
 *.sln.docstates
 .vs/
+.fake/
 
 # Build results
 [Dd]ebug/
@@ -48,8 +49,6 @@ UpgradeLog.txt
 
 .wetest
 wetest/
-
-
 
 WaveEngine.VisualTestManager/
 WaveEngine.WindowsTools/
