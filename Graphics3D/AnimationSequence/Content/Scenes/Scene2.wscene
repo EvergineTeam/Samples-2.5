@@ -631,6 +631,17 @@
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
         </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundEmitter3D">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:DistanceScale>20</d5p1:DistanceScale>
+          <d5p1:DopplerScale>3</d5p1:DopplerScale>
+          <d5p1:IsMuted>false</d5p1:IsMuted>
+          <d5p1:Loop>false</d5p1:Loop>
+          <d5p1:PlayAutomatically>false</d5p1:PlayAutomatically>
+          <d5p1:SoundPath>Content/Assets/arm.wav.wpk</d5p1:SoundPath>
+          <d5p1:Volume>1</d5p1:Volume>
+        </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">

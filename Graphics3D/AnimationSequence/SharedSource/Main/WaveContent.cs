@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/08/2017 14:12:19
+// File generated on 21/11/2017 17:02:30
 namespace AnimationSequence
 {
     using System;
@@ -22,6 +22,12 @@ namespace AnimationSequence
         
         public sealed class Assets
         {
+            
+            /// <summary> Path to Content/Assets/arm.wav </summary>
+            public const string arm_wav = "Content/Assets/arm.wav";
+            
+            /// <summary> Path to Content/Assets/coin.wav </summary>
+            public const string coin_wav = "Content/Assets/coin.wav";
             
             /// <summary> Path to Content/Assets/robotic.fbx </summary>
             public const string robotic_fbx = "Content/Assets/robotic.fbx";
