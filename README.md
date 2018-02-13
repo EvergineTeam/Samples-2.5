@@ -1,8 +1,8 @@
 # Wave Engine Samples
 Welcome to the Wave Engine Samples repository.
 
-WaveEngine has everything you need to create amazing cross-platform games, made by game developers for you.
-You can use WaveEngine with the new Visual Editor on your favorite operating system and is available for Windows, MacOS and Linux.
+Wave Engine has everything you need to create amazing cross-platform games, made by game developers for you.
+You can use Wave Engine with the new Visual Editor on your favorite operating system and is available for Windows, MacOS and Linux.
 
 Wave Engine is a C# component-based modern game engine which allows you to create cross-platform games and apps for many platforms: Xbox ONE, Hololens, Windows, Linux, MacOS, iOS, Android and Windows Universal Platform.
 Wave Engine supports the same set of features on all of its platforms to easily port all your projects to order supported platforms.
