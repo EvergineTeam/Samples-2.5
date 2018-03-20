@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 03/08/2017 12:49:25
+// File generated on 13/03/2018 17:29:54
 namespace InternetTextureLoad
 {
     using System;
@@ -25,6 +25,10 @@ namespace InternetTextureLoad
             
             /// <summary> Path to Content/Assets/Loading.png </summary>
             public const string Loading_png = "Content/Assets/Loading.png";
+        }
+        
+        public sealed class RenderLayers
+        {
         }
         
         public sealed class Scenes

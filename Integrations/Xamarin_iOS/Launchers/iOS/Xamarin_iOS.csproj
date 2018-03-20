@@ -116,41 +116,41 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="OpenTK-1.0" />
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.4.0.34\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
-      <HintPath>..\..\packages\WaveEngi2.4.0.34\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngi2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.4.0.34\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.4.0.34\lib\Xamarin.iOS\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Box2D.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -190,13 +190,13 @@
   <Import Project="..\..\SharedSource\Main\Xamarin_iOSSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\Xamarin_iOSSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup />
-  <Import Project="..\..\packages\WaveEngine.2.4.0.34\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.4.0.34\build\Xamarin.iOS\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets')" />
   <Import Project="..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.iOS\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.4.0.34\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.4.0.34\build\Xamarin.iOS\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets'))" />
     <Error Condition="!Exists('..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.3.0.29\build\Xamarin.iOS\WaveEngine.targets'))" />
   </Target>
   <Import Project="..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Xamarin.iOS\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.3.0.29\build\Xamarin.iOS\WaveEngine.Box2D.targets')" xmlns="" />
