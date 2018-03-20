@@ -46,7 +46,7 @@ namespace ParallaxCamera2D
 			this.game = new ParallaxCamera2D.Game();
 			this.game.Initialize(this);
 
-			#region WAVE SOFTWARE LICENSE AGREEMENT
+			#region DEFAULT SPLASHSCREEN
 			this.backgroundSplashColor = new Color("#ebebeb");
 			this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
@@ -69,8 +69,8 @@ namespace ParallaxCamera2D
 
 			using (Stream stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
 			{
-				this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
-            }
+				this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);			
+			}
 			#endregion
 		}
 
@@ -84,7 +84,7 @@ namespace ParallaxCamera2D
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
 					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
 					this.time += elapsedTime;
@@ -117,7 +117,7 @@ namespace ParallaxCamera2D
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
 					WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
 					this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
