@@ -1,14 +1,7 @@
 #region Using Statements
-using System;
-using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
-using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework.UI;
@@ -25,7 +18,7 @@ namespace ImageEffects
         private List<Lens> effects;
 
         private int currentEffectIndex;
-        private Lens lastEffects;
+        private Lens lastEffect;
         private Button effectButton;
         private bool flag;
 
@@ -51,23 +44,23 @@ namespace ImageEffects
             {
                 if (!this.flag)
                 {
-                    WaveForegroundTask.Run(() =>                    
+                    WaveForegroundTask.Run(() =>
                     {
                         this.flag = true;
 
-                        if (this.lastEffects != null)
+                        if (this.lastEffect != null)
                         {
-                            this.camera3DEntity.RemoveComponent(this.lastEffects);
+                            this.camera3DEntity.RemoveComponent(this.lastEffect);
                         }
 
-                        this.lastEffects = this.effects[this.currentEffectIndex];
+                        this.lastEffect = this.effects[this.currentEffectIndex];
                         this.currentEffectIndex = (this.currentEffectIndex + 1) % this.effects.Count;
-                        this.effectButton.Text = this.lastEffects.GetType().Name;
+                        this.effectButton.Text = this.lastEffect.GetType().Name;
                         WaveServices.Layout.PerformLayout();
 
-                        if (this.lastEffects != null)
+                        if (this.lastEffect != null)
                         {
-                            this.camera3DEntity.AddComponent(this.lastEffects);
+                            this.camera3DEntity.AddComponent(this.lastEffect);
                         }
 
                         this.flag = false;
