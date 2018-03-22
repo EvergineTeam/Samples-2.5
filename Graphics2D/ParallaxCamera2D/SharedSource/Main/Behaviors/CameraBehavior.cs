@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
@@ -12,6 +14,7 @@ using WaveEngine.Framework.Services;
 
 namespace ParallaxCamera2D.Behaviors
 {
+    [DataContract]
     public class CameraBehavior : Behavior, IDisposable
     {
         private const float minX = 0;
@@ -27,41 +30,72 @@ namespace ParallaxCamera2D.Behaviors
 
         [RequiredComponent]
         private Camera2D camera2D = null;
-                
-        private Entity followEntity;
+
+        [DataMember]
+        private string followEntityPath;
+
         private Transform2D followTransform;
 
-        public CameraBehavior(Entity followEntity)
+        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Transform3D" })]
+        public string FollowEntityPath
         {
-            this.followEntity = followEntity;
+            get
+            {
+                return this.followEntityPath;
+            }
+            set
+            {
+                this.followEntityPath = value;
+
+                if (this.isInitialized)
+                {
+                    this.RefreshFollowEntity();
+                }
+            }
         }
 
         protected override void Initialize()
         {
             base.Initialize();
 
-            this.followTransform = this.followEntity.FindComponent<Transform2D>();
-            
             this.virtualScreenManager = this.Owner.Scene.VirtualScreenManager;
             this.platform = WaveServices.Platform;
 
-            this.platform.OnScreenSizeChanged += OnScreenSizeChanged;
+            this.RefreshFollowEntity();
+
+            this.platform.OnScreenSizeChanged += this.OnScreenSizeChanged;
             this.RefreshCameraLimits();
-        }        
+        }
 
         protected override void Update(TimeSpan gameTime)
         {
+            if (this.followTransform == null)
+            {
+                return;
+            }
+
             Vector3 currentPosition = this.camera2D.Position;
             Vector3 desiredPosition = this.camera2D.Position;
             desiredPosition.X = Math.Max(this.limitMinX, Math.Min(this.limitMaxX, followTransform.X));
 
-            this.camera2D.Transform.Transform3D.Position = currentPosition + (desiredPosition - currentPosition) * MathHelper.Min((float)(gameTime.TotalSeconds * CameraSpeed), 1);
-           
+            var elapsed = MathHelper.Min((float)(gameTime.TotalSeconds * CameraSpeed), 1);
+            this.camera2D.Transform.Transform3D.Position = currentPosition + (desiredPosition - currentPosition) * elapsed;
         }
 
         public void Dispose()
         {
-            this.platform.OnScreenSizeChanged -= OnScreenSizeChanged;
+            this.platform.OnScreenSizeChanged -= this.OnScreenSizeChanged;
+        }
+
+        private void RefreshFollowEntity()
+        {
+            this.followTransform = null;
+
+            if (!string.IsNullOrEmpty(this.followEntityPath))
+            {
+                var followEntity = this.EntityManager.Find(this.followEntityPath, this.Owner);
+                this.followTransform = followEntity?.FindComponent<Transform2D>();
+            }
         }
 
         private void OnScreenSizeChanged(object sender, WaveEngine.Common.Helpers.SizeEventArgs e)

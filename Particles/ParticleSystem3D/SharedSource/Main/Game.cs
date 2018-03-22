@@ -14,7 +14,9 @@ namespace ParticleSystem3D
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
+            this.Load(WaveContent.GameInfo);
+
+			ScreenContext screenContext = new ScreenContext(new MyScene());
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

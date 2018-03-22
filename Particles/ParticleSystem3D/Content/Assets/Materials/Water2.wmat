@@ -1,9 +1,9 @@
-﻿<Material xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Material xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>49cbdeb4-f3f3-44c0-9d6e-330e501fbe87</Id>
   <Material xmlns:d2p1="WaveEngine.Framework.Graphics" xmlns:d2p2="WaveEngine.Materials" i:type="d2p2:StandardMaterial">
     <SamplerMode xmlns="WaveEngine.Common.Graphics">LinearWrap</SamplerMode>
     <d2p1:AssetPath i:nil="true" />
-    <d2p1:LayerTypeName>WaveEngine.Framework.Graphics.AlphaLayer</d2p1:LayerTypeName>
+    <d2p1:layerId>2</d2p1:layerId>
     <d2p2:Alpha>1</d2p2:Alpha>
     <d2p2:LightingEnabled>false</d2p2:LightingEnabled>
     <d2p2:ReferenceAlpha>0</d2p2:ReferenceAlpha>
