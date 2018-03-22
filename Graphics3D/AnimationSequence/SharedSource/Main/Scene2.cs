@@ -30,13 +30,13 @@ namespace AnimationSequence
             var camera3d = this.EntityManager.Find("defaultCamera3D").FindComponent<Transform3D>();
             var cube1 = this.EntityManager.Find("cube1");
             var cube1Transform = cube1.FindComponent<Transform3D>();
-            var cube2 = this.EntityManager.Find("robotic.base.zone0.zone1.zone2.zone3.cube2");
+            var cube2 = this.EntityManager.Find("robotic.zone0.zone1.zone2.zone3.cube2");
             var cube2Transform = cube2.FindComponent<Transform3D>();
-            var robot = this.EntityManager.Find("robotic.base");
-            var joint0 = this.EntityManager.Find("robotic.base.zone0");
-            var joint1 = this.EntityManager.Find("robotic.base.zone0.zone1");
-            var joint2 = this.EntityManager.Find("robotic.base.zone0.zone1.zone2");
-            var joint3 = this.EntityManager.Find("robotic.base.zone0.zone1.zone2.zone3");
+            var robot = this.EntityManager.Find("robotic");
+            var joint0 = this.EntityManager.Find("robotic.zone0");
+            var joint1 = this.EntityManager.Find("robotic.zone0.zone1");
+            var joint2 = this.EntityManager.Find("robotic.zone0.zone1.zone2");
+            var joint3 = this.EntityManager.Find("robotic.zone0.zone1.zone2.zone3");
 
             this.animationSequence = this.CreateParallelGameActions(
                                     new RotateTo3DGameAction(joint0, new Vector3(0, 0, MathHelper.ToRadians(180)), TimeSpan.FromSeconds(1.5), EaseFunction.SineInOutEase, true),
