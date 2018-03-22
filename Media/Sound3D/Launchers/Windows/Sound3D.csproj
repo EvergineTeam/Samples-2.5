@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -35,23 +37,84 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Adapter.dll</HintPath>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\AForge.Video.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Common.dll</HintPath>
+    <Reference Include="Aforge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\Aforge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Framework.dll</HintPath>
+    <Reference Include="BulletSharpPInvoke, Version=0.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\lib\net45\BulletSharpPInvoke.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Components.dll</HintPath>
+    <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\NAudio.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Materials.dll</HintPath>
+    <Reference Include="OpenTK, Version=3.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\OpenTK.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180320-620\lib\net45\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Desktop, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.DirectInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.DXGI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.Mathematics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.XAudio2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\SharpDX.XInput.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Adapter, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Adapter.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Box2D, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Box2DSharp, Version=2.0.6.16153, Culture=neutral, PublicKeyToken=6e72eaf7d6c3c55b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Box2DSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WaveEngine.Bullet, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Bullet.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Common, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,8 +123,25 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180208-617\lib\net45\WaveEngine.Box2D.dll</HintPath>
+    <Reference Include="WaveEngine.Components, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Framework, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.ImageEffects, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Materials, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.Materials.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.WinGLAdapter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180320-620\lib\net45\WaveEngine.WinGLAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180320-620\lib\net45\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,15 +151,22 @@
     <EmbeddedResource Include="Game.ico" />
     <EmbeddedResource Include="SplashScreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="..\..\SharedSource\Main\Sound3DSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\Sound3DSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\net45\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\net45\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\net45\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Bullet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Bullet.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Box2D.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Box2D.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180320-620\build\net45\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180320-620\build\net45\WaveEngine.targets'))" />
   </Target>
+  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Bullet.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180320-620\build\Mono\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180320-620\build\net45\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180320-620\build\net45\WaveEngine.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
