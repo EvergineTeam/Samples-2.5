@@ -18,7 +18,8 @@ namespace AnimationSequence
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
-        Color backgroundSplashColor;
+		Color backgroundSplashColor;
+		bool lastKeyF10Pressed = false;
 
         public App()
         {
@@ -65,10 +66,13 @@ namespace AnimationSequence
         {
             if (this.game != null && !this.game.HasExited)
             {
-                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
-                {
-                    this.FullScreen = !this.FullScreen;
-                }
+				bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
+				if (keyF10Pressed && !this.lastKeyF10Pressed)
+				{
+					this.FullScreen = !this.FullScreen;
+				}
+
+				this.lastKeyF10Pressed = keyF10Pressed;
 
                 if (this.splashState)
                 {

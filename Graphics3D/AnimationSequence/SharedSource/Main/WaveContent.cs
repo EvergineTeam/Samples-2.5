@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 23/11/2017 17:05:50
+// File generated on 3/22/2018 5:11:56 PM
 namespace AnimationSequence
 {
     using System;
@@ -53,6 +53,28 @@ namespace AnimationSequence
                 /// <summary> Path to Content/Assets/Materials/rubber.wmat </summary>
                 public const string rubber = "Content/Assets/Materials/rubber.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes
