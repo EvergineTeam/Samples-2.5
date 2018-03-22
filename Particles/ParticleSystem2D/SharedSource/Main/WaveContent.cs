@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 9:16:05 PM
+// File generated on 22/03/2018 17:06:39
 namespace ParticleSystem2D
 {
     using System;
@@ -46,6 +46,31 @@ namespace ParticleSystem2D
             
             /// <summary> Path to Content/Assets/particleFire_Texture.wmat </summary>
             public const string particleFire_Texture = "Content/Assets/particleFire_Texture.wmat";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
+            
+            /// <summary>Id of Montain</summary>
+            public const int Montain = 1001;
         }
         
         public sealed class Scenes

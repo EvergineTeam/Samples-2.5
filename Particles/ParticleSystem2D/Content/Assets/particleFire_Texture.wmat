@@ -1,36 +1,46 @@
 ﻿<Material xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>bc624229-8426-4b19-b6a7-7821a362ef7d</Id>
   <Material xmlns:d2p1="WaveEngine.Framework.Graphics" xmlns:d2p2="WaveEngine.Materials" i:type="d2p2:StandardMaterial">
-    <SamplerMode xmlns="WaveEngine.Common.Graphics">LinearWrap</SamplerMode>
     <d2p1:AssetPath i:nil="true" />
-    <d2p1:LayerTypeName>WaveEngine.Framework.Graphics.AdditiveLayer</d2p1:LayerTypeName>
+    <d2p1:layerId>3</d2p1:layerId>
     <d2p2:Alpha>1</d2p2:Alpha>
+    <d2p2:EffectMode>Lightmap</d2p2:EffectMode>
+    <d2p2:EnvironmentAmount>1</d2p2:EnvironmentAmount>
+    <d2p2:FresnelFactor>1</d2p2:FresnelFactor>
+    <d2p2:FresnelTermEnabled>false</d2p2:FresnelTermEnabled>
+    <d2p2:IBLFactor>1</d2p2:IBLFactor>
     <d2p2:LightingEnabled>false</d2p2:LightingEnabled>
     <d2p2:ReferenceAlpha>0</d2p2:ReferenceAlpha>
     <d2p2:SpecularPower>64</d2p2:SpecularPower>
-    <d2p2:TexcoordOffset xmlns:d3p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+    <d2p2:TexcoordOffset1 xmlns:d3p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
       <d3p1:X>0</d3p1:X>
       <d3p1:Y>0</d3p1:Y>
-    </d2p2:TexcoordOffset>
+    </d2p2:TexcoordOffset1>
+    <d2p2:TexcoordOffset2 xmlns:d3p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+      <d3p1:X>0</d3p1:X>
+      <d3p1:Y>0</d3p1:Y>
+    </d2p2:TexcoordOffset2>
     <d2p2:VertexColorEnable>true</d2p2:VertexColorEnable>
     <d2p2:ambientColor xmlns:d3p1="WaveEngine.Common.Math">
       <d3p1:X>0</d3p1:X>
       <d3p1:Y>0</d3p1:Y>
       <d3p1:Z>0</d3p1:Z>
     </d2p2:ambientColor>
-    <d2p2:ambientPath i:nil="true" />
+    <d2p2:diffuse1Path>Content/Assets/particleFire.png.wpk</d2p2:diffuse1Path>
+    <d2p2:diffuse2Path i:nil="true" />
     <d2p2:diffuseColor xmlns:d3p1="WaveEngine.Common.Math">
       <d3p1:X>1</d3p1:X>
       <d3p1:Y>1</d3p1:Y>
       <d3p1:Z>1</d3p1:Z>
     </d2p2:diffuseColor>
-    <d2p2:diffusePath>Content/Assets/particleFire.png.wpk</d2p2:diffusePath>
     <d2p2:emissiveColor xmlns:d3p1="WaveEngine.Common.Math">
       <d3p1:X>1</d3p1:X>
       <d3p1:Y>1</d3p1:Y>
       <d3p1:Z>1</d3p1:Z>
     </d2p2:emissiveColor>
     <d2p2:emissivePath i:nil="true" />
+    <d2p2:environmentPath i:nil="true" />
+    <d2p2:iblPath i:nil="true" />
     <d2p2:normalPath i:nil="true" />
     <d2p2:specularPath i:nil="true" />
   </Material>
