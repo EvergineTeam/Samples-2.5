@@ -1,6 +1,6 @@
 using AppKit;
 
-namespace Transition
+namespace Transitions
 {
 	static class MainClass
 	{

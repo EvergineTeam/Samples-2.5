@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 03/08/2017 12:20:15
-namespace Transition
+// File generated on 22/03/2018 18:07:34
+namespace Transitions
 {
     using System;
     
@@ -17,8 +17,30 @@ namespace Transition
     public sealed class WaveContent
     {
         
-        /// <summary> Path to Content/Transition.wgame </summary>
-        public const string GameInfo = "Content/Transition.wgame";
+        /// <summary> Path to Content/Transitions.wgame </summary>
+        public const string GameInfo = "Content/Transitions.wgame";
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
+        }
         
         public sealed class Assets
         {
@@ -29,6 +51,9 @@ namespace Transition
         
         public sealed class Scenes
         {
+            
+            /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
+            public const string MyScene = "Content/Scenes/MyScene.wscene";
             
             /// <summary> Path to Content/Scenes/Scene0.wscene </summary>
             public const string Scene0 = "Content/Scenes/Scene0.wscene";

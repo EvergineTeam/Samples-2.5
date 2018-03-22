@@ -1,34 +1,25 @@
 #region Using Statements
 using System;
-using System.Collections.Generic;
-using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
-using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.Transitions;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
-
 #endregion
 
-namespace Transition
+namespace Transitions
 {
     public class MyScene : Scene
     {
-        private static readonly TimeSpan TRANSITIONTIME = new TimeSpan(0, 0, 0, 1, 200);
-
-        private ScreenTransition transition;
+        private static readonly TimeSpan TRANSITIONTIME = TimeSpan.FromSeconds(1.2);
 
         private static int sceneIndex = 0;
 
         private static EasingFunctionBase easeFunction = new CubicEase() { EasingMode = EasingMode.EaseInOut };
+
+        private ScreenTransition transition;
 
         public MyScene(int index)
         {
@@ -82,22 +73,18 @@ namespace Transition
                 case 15:
                     this.transition = new ChequeredAppearTransition(TRANSITIONTIME);
                     break;
-                default:
-                    break;
             }
 
             this.transition.EaseFunction = easeFunction;
         }
 
         protected override void CreateScene()
-        {            
-            var scene = string.Format(@"Content/Scenes/Scene{0}.wscene", sceneIndex);
-
-            this.Load(scene);            
+        {
+            this.Load($"Content/Scenes/Scene{sceneIndex}.wscene");
 
             var button = new Button()
             {
-                Text = string.Format("Next scene with {0}", this.transition.GetType().Name),
+                Text = $"Next scene with {this.transition.GetType().Name}",
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Bottom,
                 Width = 400,
@@ -120,7 +107,7 @@ namespace Transition
 
             sceneIndex = (sceneIndex + 1) % 16;
             var context = new ScreenContext(new MyScene(sceneIndex));
-            WaveServices.ScreenContextManager.To(context, transition);            
+            WaveServices.ScreenContextManager.To(context, transition);
         }
     }
 }

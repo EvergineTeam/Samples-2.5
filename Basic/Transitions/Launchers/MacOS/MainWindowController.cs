@@ -3,7 +3,7 @@ using System;
 using Foundation;
 using AppKit;
 
-namespace Transition
+namespace Transitions
 {
 	public partial class MainWindowController : NSWindowController
 	{

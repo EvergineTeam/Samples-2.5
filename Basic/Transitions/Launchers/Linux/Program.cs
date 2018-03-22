@@ -1,6 +1,6 @@
 using System;
 
-namespace Transition
+namespace Transitions
 {
     static class Program
     {
