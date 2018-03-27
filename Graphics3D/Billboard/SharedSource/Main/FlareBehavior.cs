@@ -21,7 +21,7 @@ namespace Billboard
 
         [DataMember]
         public float Speed { get; set; }
-        
+
         public FlareBehavior()
         {
         }
