@@ -29,45 +29,29 @@ using WaveEngine.Framework.Services;
 namespace KeyEventsAnimation
 {
     [DataContract]
-    public class IsisBehavior : Behavior
+    public class IsisFootstepsComponent : Component
     {
         [RequiredComponent()]
         public Animation3D Animation;
 
         #region Initialization
-        public IsisBehavior()
+        public IsisFootstepsComponent()
             : base("IsisBehavior")
         { }
         #endregion
 
         #region Private methods
-        protected override void Initialize()
+        protected override void ResolveDependencies()
         {
-            base.Initialize();
-
-            // Add the key frames. The first parameter is the name of the animation, the second the number of frames and the third the name of the event. As you can see, we raise two events when
-            // the animation is "Attack" ( see the Animation3D example for further information ). The first event is raised on frame 10 and the second on frame 25. See the SpankerBehavior class          
-            Animation.AddKeyFrameEvent("Jog", 1, "DoFootstep")
-            .AddKeyFrameEvent("Jog", 14, "DoFootstep")
-            .AddKeyFrameEvent("Jog", 26, "DoFootstep")
-            .AddKeyFrameEvent("Jog", 39, "DoFootstep");
-            
-
-            // Add the event to the animation 3D. This event is captured on configured key event previously.
-            Animation.OnKeyFrameEvent += new EventHandler<WaveEngine.Common.Helpers.StringEventArgs>(Animation_OnKeyFrameEvent);
-
-            Animation.PlayAnimation("Jog", true);
+            base.ResolveDependencies();
+            Animation.OnKeyFrameEvent += this.Animation_OnKeyFrameEvent;
         }
 
-        protected override void Update(TimeSpan gameTime)
-        {
-        }
-
-        private void Animation_OnKeyFrameEvent(object sender, StringEventArgs e)
+        private void Animation_OnKeyFrameEvent(object sender, AnimationKeyframeEvent e)
         {
             var random = WaveServices.Random;
-            // if the keyevents calls "DoFootstep", play a sound.
-            if (e.Value == "DoFootstep")
+            // if the keyevents calls "Footstep", play a sound.
+            if (e.Tag == "Footstep")
             {
                 switch (random.Next(0, 2))
                 {
