@@ -52,28 +52,33 @@
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -141,11 +146,10 @@
           <d5p1:texturePath>Content/Assets/colored_desert.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -205,11 +209,10 @@
           <d5p1:texturePath>Content/Assets/ground.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -311,11 +314,10 @@
           <d5p1:texturePath>Content/Assets/bomb.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/PhysicExplosion.Behaviors" i:type="d5p1:ExplosionBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -691,11 +693,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -797,11 +798,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -903,11 +903,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1009,11 +1008,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1115,11 +1113,10 @@
           <d5p1:texturePath>Content/Assets/elementMetal013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1221,11 +1218,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1327,11 +1323,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1433,11 +1428,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1539,11 +1533,10 @@
           <d5p1:texturePath>Content/Assets/alienYellow_round.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:CircleCollider2D">
           <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -1656,11 +1649,10 @@
           <d5p1:texturePath>Content/Assets/alienGreen_square.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1777,11 +1769,10 @@
           <d5p1:texturePath>Content/Assets/alienBlue_round.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:CircleCollider2D">
           <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -1894,11 +1885,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2000,11 +1990,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2106,11 +2095,10 @@
           <d5p1:texturePath>Content/Assets/elementWood013.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2204,9 +2192,9 @@
           <d4p1:isDisabled>false</d4p1:isDisabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/PhysicExplosion.Behaviors" i:type="d5p1:MouseDrawable">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">5</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -2226,8 +2214,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-248.900116</d6p1:X>
-            <d6p1:Y>-388.600067</d6p1:Y>
+            <d6p1:X>-1658.29993</d6p1:X>
+            <d6p1:Y>-1029.5</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -2277,9 +2265,9 @@
           <d5p1:width>300</d5p1:width>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextRenderer2D">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -2310,6 +2298,811 @@
             <d6p1:Y>-9.8</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Gravity3D>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Render Layers</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:SceneRenderLayerData">
+          <d5p1:RenderLayers xmlns:d6p1="WaveEngine.Framework.Graphics.Layer">
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>0</d6p1:Id>
+              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
+              <d6p1:Name>Opaque</d6p1:Name>
+              <d6p1:blendMode>Opaque</d6p1:blendMode>
+              <d6p1:depthStencilMode>Write</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>CullBack</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>true</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>Back</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0.999</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>1</d6p1:Id>
+              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
+              <d6p1:Name>Skybox</d6p1:Name>
+              <d6p1:blendMode>Opaque</d6p1:blendMode>
+              <d6p1:depthStencilMode>Write</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>CullFront</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0.999</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>true</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>Front</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>2</d6p1:Id>
+              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
+              <d6p1:Name>Alpha</d6p1:Name>
+              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
+              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>InverseSourceAlpha</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>None</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>3</d6p1:Id>
+              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
+              <d6p1:Name>Additive</d6p1:Name>
+              <d6p1:blendMode>Additive</d6p1:blendMode>
+              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>One</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>One</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>None</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>4</d6p1:Id>
+              <d6p1:IsGUILayer>true</d6p1:IsGUILayer>
+              <d6p1:Name>GUI</d6p1:Name>
+              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
+              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>InverseSourceAlpha</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>None</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+            <d6p1:RenderLayerDescription>
+              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                <d8p1:MinDepth>0</d8p1:MinDepth>
+              </d6p1:DepthRange>
+              <d6p1:Id>5</d6p1:Id>
+              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
+              <d6p1:Name>Debug</d6p1:Name>
+              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
+              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
+              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
+              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
+                <d8p1:BlendState>
+                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
+                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
+                  <d8p1:RenderTarget0>
+                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>InverseSourceAlpha</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget0>
+                  <d8p1:RenderTarget1>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget1>
+                  <d8p1:RenderTarget2>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget2>
+                  <d8p1:RenderTarget3>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget3>
+                  <d8p1:RenderTarget4>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget4>
+                  <d8p1:RenderTarget5>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget5>
+                  <d8p1:RenderTarget6>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget6>
+                  <d8p1:RenderTarget7>
+                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
+                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
+                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
+                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
+                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
+                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
+                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
+                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
+                  </d8p1:RenderTarget7>
+                </d8p1:BlendState>
+                <d8p1:DepthRange>
+                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
+                  <d8p1:MinDepth>0</d8p1:MinDepth>
+                </d8p1:DepthRange>
+                <d8p1:DepthStencilState>
+                  <d8p1:BackFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:BackFace>
+                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
+                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
+                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
+                  <d8p1:FrontFace>
+                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
+                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
+                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
+                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
+                  </d8p1:FrontFace>
+                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
+                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
+                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
+                </d8p1:DepthStencilState>
+                <d8p1:RasterizerState>
+                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
+                  <d8p1:CullMode>None</d8p1:CullMode>
+                  <d8p1:DepthBias>0</d8p1:DepthBias>
+                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
+                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
+                  <d8p1:FillMode>Solid</d8p1:FillMode>
+                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
+                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
+                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
+                </d8p1:RasterizerState>
+              </d6p1:renderState>
+            </d6p1:RenderLayerDescription>
+          </d5p1:RenderLayers>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
