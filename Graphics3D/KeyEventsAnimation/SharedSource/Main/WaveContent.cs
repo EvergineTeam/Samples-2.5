@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 08/08/2017 9:36:27
+// File generated on 27/03/2018 17:27:03
 namespace KeyEventsAnimation
 {
     using System;
@@ -28,6 +28,13 @@ namespace KeyEventsAnimation
                 
                 /// <summary> Path to Content/Assets/Models/isis.fbx </summary>
                 public const string isis_fbx = "Content/Assets/Models/isis.fbx";
+                
+                public sealed class Materials
+                {
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/Isis.wmat </summary>
+                    public const string Isis = "Content/Assets/Models/Materials/Isis.wmat";
+                }
             }
             
             public sealed class Sounds
@@ -59,6 +66,28 @@ namespace KeyEventsAnimation
                 /// <summary> Path to Content/Assets/Material/IsisMaterial.wmat </summary>
                 public const string IsisMaterial = "Content/Assets/Material/IsisMaterial.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

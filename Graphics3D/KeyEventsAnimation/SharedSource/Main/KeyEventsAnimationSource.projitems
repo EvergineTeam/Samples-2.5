@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IsisBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsisFootstepsComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SoundsManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
