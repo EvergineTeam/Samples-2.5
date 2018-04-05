@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/8/2017 12:06:24 PM
+// File generated on 05/04/2018 17:46:33
 namespace StickyProjectiles
 {
     using System;
@@ -58,6 +58,28 @@ namespace StickyProjectiles
             
             /// <summary> Path to Content/Assets/arrow2.wpref </summary>
             public const string arrow2 = "Content/Assets/arrow2.wpref";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

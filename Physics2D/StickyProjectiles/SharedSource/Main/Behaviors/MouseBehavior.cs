@@ -32,7 +32,7 @@ namespace StickyProjectiles.Behaviors
 
         /// <summary>
         /// Default values method
-        /// </summary>
+        /// </summary>S
         protected override void DefaultValues()
         {
             base.DefaultValues();
