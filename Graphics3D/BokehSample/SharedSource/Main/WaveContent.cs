@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 22/09/2016 13:07:35
+// File generated on 4/5/2018 4:26:05 PM
 namespace BokehSample
 {
     using System;
@@ -16,6 +16,9 @@ namespace BokehSample
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/BokehSample.wgame </summary>
+        public const string GameInfo = "Content/BokehSample.wgame";
         
         public sealed class Assets
         {
@@ -41,14 +44,46 @@ namespace BokehSample
             /// <summary> Path to Content/Assets/skydome.fbx </summary>
             public const string skydome_fbx = "Content/Assets/skydome.fbx";
             
-            /// <summary> Path to Content/Assets/dustMaterial.wmat </summary>
-            public const string dustMaterial = "Content/Assets/dustMaterial.wmat";
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/01 - Default.wmat </summary>
+                public const string _01_Default = "Content/Assets/Materials/01 - Default.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/DefaultMaterial.wmat </summary>
+                public const string DefaultMaterial = "Content/Assets/Materials/DefaultMaterial.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/dustMaterial.wmat </summary>
+                public const string dustMaterial = "Content/Assets/Materials/dustMaterial.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/Material__507.wmat </summary>
+                public const string Material__507 = "Content/Assets/Materials/Material__507.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/skyBox.wmat </summary>
+                public const string skyBox = "Content/Assets/Materials/skyBox.wmat";
+            }
+        }
+        
+        public sealed class RenderLayers
+        {
             
-            /// <summary> Path to Content/Assets/forest.wmat </summary>
-            public const string forest = "Content/Assets/forest.wmat";
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
             
-            /// <summary> Path to Content/Assets/skybox.wmat </summary>
-            public const string skybox = "Content/Assets/skybox.wmat";
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes
