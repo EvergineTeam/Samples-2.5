@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 1:06:16 PM
+// File generated on 10/04/2018 16:22:26
 namespace VideoPlayer
 {
     using System;
@@ -58,21 +58,43 @@ namespace VideoPlayer
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/ChairMaterial.wmat </summary>
-                public const string ChairMaterial = "Content/Assets/Materials/ChairMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/02 - Default.wmat </summary>
+                public const string _02_Default = "Content/Assets/Materials/02 - Default.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/ParketMaterial.wmat </summary>
-                public const string ParketMaterial = "Content/Assets/Materials/ParketMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/Material #1.wmat </summary>
+                public const string Material_1 = "Content/Assets/Materials/Material #1.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/TableMaterial.wmat </summary>
-                public const string TableMaterial = "Content/Assets/Materials/TableMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/Material #2.wmat </summary>
+                public const string Material_2 = "Content/Assets/Materials/Material #2.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/TVMaterial.wmat </summary>
-                public const string TVMaterial = "Content/Assets/Materials/TVMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/Material #28.wmat </summary>
+                public const string Material_28 = "Content/Assets/Materials/Material #28.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/TVScreenMaterial.wmat </summary>
-                public const string TVScreenMaterial = "Content/Assets/Materials/TVScreenMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/_TVtv.wmat </summary>
+                public const string _TVtv = "Content/Assets/Materials/_TVtv.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

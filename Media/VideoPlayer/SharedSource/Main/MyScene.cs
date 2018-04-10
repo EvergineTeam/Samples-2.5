@@ -20,48 +20,24 @@ namespace VideoPlayer
 {
     public class MyScene : Scene
     {
-        /// <summary>
-        /// Gets or sets the play BTN.
-        /// </summary>
-        /// <value>
-        /// The play BTN.
-        /// </value>
-        public Button PlayBtn { get; set; }
+        private Button playBtn { get; set; }
 
-        /// <summary>
-        /// Gets or sets the pause BTN.
-        /// </summary>
-        /// <value>
-        /// The pause BTN.
-        /// </value>
-        public Button PauseBtn { get; set; }
+        private Button pauseBtn { get; set; }
 
-        /// <summary>
-        /// Gets or sets the bunny video.
-        /// </summary>
-        /// <value>
-        /// The bunny video.
-        /// </value>
-        public VideoInfo bunnyVideo { get; set; }
+        private VideoInfo bunnyVideo { get; set; }
 
-        /// <summary>
-        /// Gets or sets the bear video.
-        /// </summary>
-        /// <value>
-        /// The bear video.
-        /// </value>
-        public VideoInfo bearVideo { get; set; }
+        private VideoInfo bearVideo { get; set; }
 
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
-
+            
             this.bunnyVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bear_mp4);
             this.bearVideo = WaveServices.VideoPlayer.VideoInfoFromPath(WaveContent.Assets.Video.bunny_mp4);
-            
+
             WaveServices.VideoPlayer.IsLooped = true;
             WaveServices.VideoPlayer.Play(this.bunnyVideo);
-            
+
             StackPanel controlPanel = new StackPanel()
             {
                 VerticalAlignment = WaveEngine.Framework.UI.VerticalAlignment.Bottom,
@@ -111,7 +87,7 @@ namespace VideoPlayer
             };
             controlPanel.Add(radioButton2);
 
-            PlayBtn = new Button("playBtn")
+            playBtn = new Button("playBtn")
             {
                 Text = "Play",
                 Opacity = 0.5f,
@@ -119,30 +95,30 @@ namespace VideoPlayer
                 Width = 170
             };
 
-            PlayBtn.Click += (e, s) =>
+            playBtn.Click += (e, s) =>
             {
                 WaveServices.VideoPlayer.Resume();
-                PlayBtn.Opacity = 0.5f;
-                PauseBtn.Opacity = 1f;
+                playBtn.Opacity = 0.5f;
+                pauseBtn.Opacity = 1f;
             };
 
-            controlPanel.Add(PlayBtn);
+            controlPanel.Add(playBtn);
 
-            PauseBtn = new Button("pauseBtn")
+            pauseBtn = new Button("pauseBtn")
             {
                 Text = "Pause",
                 Width = 170,
                 Margin = new WaveEngine.Framework.UI.Thickness(5, 0, 5, 5),
             };
 
-            PauseBtn.Click += (e, s) =>
+            pauseBtn.Click += (e, s) =>
             {
                 WaveServices.VideoPlayer.Pause();
-                PlayBtn.Opacity = 1f;
-                PauseBtn.Opacity = 0.5f;
+                playBtn.Opacity = 1f;
+                pauseBtn.Opacity = 0.5f;
             };
 
-            controlPanel.Add(PauseBtn);
+            controlPanel.Add(pauseBtn);
 
             EntityManager.Add(controlPanel);
         }
@@ -151,8 +127,8 @@ namespace VideoPlayer
         {
             base.Start();
 
-            var tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Materials.TVScreenMaterial).Material as StandardMaterial;
-            tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;
+            var tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Materials._02_Default).Material as StandardMaterial;
+            tvScreenMaterial.Diffuse1 = WaveServices.VideoPlayer.VideoTexture;
         }
     }
 }
