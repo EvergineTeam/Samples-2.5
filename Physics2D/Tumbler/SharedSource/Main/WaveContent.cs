@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/13/2017 5:21:28 PM
+// File generated on 10/04/2018 17:38:25
 namespace Tumbler
 {
     using System;
@@ -16,6 +16,9 @@ namespace Tumbler
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Tumbler.wgame </summary>
+        public const string GameInfo = "Content/Tumbler.wgame";
         
         public sealed class Assets
         {
@@ -34,6 +37,28 @@ namespace Tumbler
             
             /// <summary> Path to Content/Assets/suited.png </summary>
             public const string suited_png = "Content/Assets/suited.png";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Prefabs
