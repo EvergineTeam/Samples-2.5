@@ -6,6 +6,7 @@ using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
+using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
@@ -20,7 +21,7 @@ namespace Sounds
         /// <summary>
         /// The menu sound
         /// </summary>
-        SoundInfo MenuSound;
+        SoundInfo menuSound;
 
         /// <summary>
         /// The pistol sound
@@ -44,41 +45,55 @@ namespace Sounds
             //Register bank
             SoundBank bank = new SoundBank(Assets);
             WaveServices.SoundPlayer.RegisterSoundBank(bank);
-            
-            //Register sounds
-            MenuSound = new SoundInfo(WaveContent.Assets.Menu_wav);
-            bank.Add(MenuSound);
 
-            pistolSound = new SoundInfo(WaveContent.Assets.Pistol_wav);
+            //Register sounds
+            this.menuSound = new SoundInfo(WaveContent.Assets.Menu_wav);
+            bank.Add(menuSound);
+
+            this.pistolSound = new SoundInfo(WaveContent.Assets.Pistol_wav);
             bank.Add(pistolSound);
 
-            upgradeSound = new SoundInfo(WaveContent.Assets.Upgrade_wav);
+            this.upgradeSound = new SoundInfo(WaveContent.Assets.Upgrade_wav);
             bank.Add(upgradeSound);
 
-            sellSound = new SoundInfo(WaveContent.Assets.Sell_wav);
+            this.sellSound = new SoundInfo(WaveContent.Assets.Sell_wav);
             bank.Add(sellSound);
+
+            StackPanel controlPanel = new StackPanel()
+            {
+                VerticalAlignment = WaveEngine.Framework.UI.VerticalAlignment.Center,
+                HorizontalAlignment = WaveEngine.Framework.UI.HorizontalAlignment.Center,
+                Margin = new WaveEngine.Framework.UI.Thickness(0, 0, 30, 30),
+                BorderColor = Color.White,
+                IsBorder = true,
+            };
+
+            this.AddButton("Play Menu", this.menuSound, controlPanel);
+            this.AddButton("Play Pistol", this.pistolSound, controlPanel);
+            this.AddButton("Play Upgrade", this.upgradeSound, controlPanel);
+            this.AddButton("Play Sell", this.sellSound, controlPanel);
+
+            EntityManager.Add(controlPanel);
         }
 
-        protected override void Start()
+        private Button AddButton(String name, SoundInfo info, StackPanel panel)
         {
-            base.Start();
-
-            // Play Sound
-            WaveServices.SoundPlayer.Play(MenuSound);
-            WaveServices.SoundPlayer.Play(pistolSound);
-
-            WaveServices.TimerFactory.CreateTimer("Timer1", TimeSpan.FromSeconds(4),
-            () =>
+            var btn = new Button(name)
             {
-                WaveServices.SoundPlayer.Play(upgradeSound);
-            });
+                Text = name,
+                Opacity = 1,
+                Margin = new WaveEngine.Framework.UI.Thickness(5, 0, 5, 0),
+                Width = 170,
+            };
 
-            WaveServices.TimerFactory.CreateTimer("Timer2", TimeSpan.FromSeconds(2),
-            () =>
+            btn.Click += (e, s) =>
             {
-                WaveServices.SoundPlayer.Play(sellSound);
-            },
-            false);
+                WaveServices.SoundPlayer.Play(info);
+            };
+
+            panel.Add(btn);
+
+            return btn;
         }
     }
 }
