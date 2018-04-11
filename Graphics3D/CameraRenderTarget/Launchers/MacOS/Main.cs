@@ -1,6 +1,6 @@
 using AppKit;
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
 	static class MainClass
 	{
