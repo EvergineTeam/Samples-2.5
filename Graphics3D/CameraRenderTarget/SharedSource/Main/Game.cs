@@ -6,13 +6,15 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
     public class Game : WaveEngine.Framework.Game
     {
         public override void Initialize(IApplication application)
         {
             base.Initialize(application);
+
+            this.Load(WaveContent.GameInfo);
 
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);

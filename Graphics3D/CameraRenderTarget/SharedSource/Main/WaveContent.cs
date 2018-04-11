@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/08/2017 14:55:15
-namespace CameraRengerTarget
+// File generated on 4/11/2018 3:46:23 PM
+namespace CameraRenderTarget
 {
     using System;
     
@@ -17,8 +17,8 @@ namespace CameraRengerTarget
     public sealed class WaveContent
     {
         
-        /// <summary> Path to Content/CameraRengerTarget.wgame </summary>
-        public const string GameInfo = "Content/CameraRengerTarget.wgame";
+        /// <summary> Path to Content/CameraRenderTarget.wgame </summary>
+        public const string GameInfo = "Content/CameraRenderTarget.wgame";
         
         public sealed class Assets
         {
@@ -94,6 +94,28 @@ namespace CameraRengerTarget
                 /// <summary> Path to Content/Assets/Materials/StageWallMaterial.wmat </summary>
                 public const string StageWallMaterial = "Content/Assets/Materials/StageWallMaterial.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

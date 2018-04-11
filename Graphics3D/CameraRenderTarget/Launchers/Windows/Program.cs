@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
     static class Program
     {

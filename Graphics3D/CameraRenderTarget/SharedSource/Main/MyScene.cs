@@ -1,4 +1,5 @@
 #region Using Statements
+using CameraRengerTarget;
 using System;
 using System.Collections.Generic;
 using WaveEngine.Common;
@@ -10,14 +11,12 @@ using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Models;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.ImageEffects;
 using WaveEngine.Materials;
 #endregion
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
     public class MyScene : Scene
     {
@@ -47,8 +46,8 @@ namespace CameraRengerTarget
             this.CreateUI();
 
             this.CreateCameras();
-
         }
+
         private void CreateUI()
         {
             Button changeCameraBtn = new Button()
@@ -126,17 +125,17 @@ namespace CameraRengerTarget
             var screen0 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_0");
             StandardMaterial material0 = screen0.Material as StandardMaterial;
             material0.LightingEnabled = false;
-            material0.Diffuse = this.cameras[1].RenderTarget;
+            material0.Diffuse1 = this.cameras[1].RenderTarget;
 
             var screen1 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_1");
             StandardMaterial material1 = screen1.Material as StandardMaterial;
             material1.LightingEnabled = false;
-            material1.Diffuse = this.cameras[2].RenderTarget;
+            material1.Diffuse1 = this.cameras[2].RenderTarget;
 
             var screen2 = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("Stage.screen_2");
             StandardMaterial material2 = screen2.Material as StandardMaterial;
             material2.LightingEnabled = false;
-            material2.Diffuse = this.cameras[3].RenderTarget;
+            material2.Diffuse1 = this.cameras[3].RenderTarget;
         }
 
         private void SetActiveCamera(int cameraIndex)
