@@ -18,7 +18,7 @@ namespace BasicPhysic2D
         [RequiredComponent]
         private MouseBehavior behavior = null;
 
-        private Layer layer;
+        private RenderLayer layer;
 
         /// <summary>
         /// Resolve dependencies method
@@ -27,7 +27,7 @@ namespace BasicPhysic2D
         {
             base.ResolveDependencies();
 
-            this.layer = this.RenderManager.FindLayer(DefaultLayers.Debug) as DebugLayer;                 
+            this.layer = this.RenderManager.FindLayer(DefaultLayers.Debug);                 
         }
 
         /// <summary>
