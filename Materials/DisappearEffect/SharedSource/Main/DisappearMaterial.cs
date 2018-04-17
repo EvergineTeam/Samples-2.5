@@ -1,12 +1,10 @@
 ﻿#region Using Statements
 using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Text;
 using WaveEngine.Common.Graphics;
+using WaveEngine.Common.Graphics.VertexFormats;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using WaveEngine.Materials.VertexFormats;
 #endregion
 
 namespace DisappearEffect
@@ -62,8 +60,6 @@ namespace DisappearEffect
         public DisappearMaterial(string diffuseMap, string opacityMap, string burnMap)
             : base(DefaultLayers.Opaque)
         {
-            this.SamplerMode = AddressMode.LinearClamp;
-
             this.diffuseMapPath = diffuseMap;
             this.opacityMapPath = opacityMap;
             this.burnMapPath = burnMap;
