@@ -6,11 +6,11 @@ using WaveEngine.Common.Attributes;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EnvironmentMap")]
-[assembly: AssemblyProduct("EnvironmentMap")]
+[assembly: AssemblyTitle("EnviromentMap")]
+[assembly: AssemblyProduct("EnviromentMap")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
