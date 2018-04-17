@@ -14,6 +14,8 @@ namespace Loading
         {
             base.Initialize(application);
 
+            this.Load(WaveContent.GameInfo);
+
 			ScreenContext screenContext = new ScreenContext(new LoadingScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
