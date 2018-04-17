@@ -52,28 +52,33 @@
             <d6p1:R>213</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>1.8</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>288.059082</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.8</d6p1:Y>
@@ -154,10 +159,9 @@
               <d7p1:textureName>cloud2</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -216,10 +220,9 @@
               <d7p1:textureName>cloud1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -278,10 +281,9 @@
               <d7p1:textureName>cloud1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:PolygonCollider2D">
               <d7p1:CollidesWith>All</d7p1:CollidesWith>
@@ -416,10 +418,9 @@
               <d7p1:textureName>box</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -440,7 +441,7 @@
               </d7p1:LocalOrientation>
               <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>585.198</d8p1:X>
-                <d8p1:Y>-353.600159</d8p1:Y>
+                <d8p1:Y>-353.6002</d8p1:Y>
                 <d8p1:Z>0</d8p1:Z>
               </d7p1:LocalPosition>
               <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
@@ -478,10 +479,9 @@
               <d7p1:textureName>sun</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -491,7 +491,7 @@
           <d2p1:isStatic>true</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>backClouds</d2p1:name>
-          <d2p1:tag i:nil="true" />
+          <d2p1:tag></d2p1:tag>
           <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform2D">
               <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
@@ -540,10 +540,9 @@
               <d7p1:textureName>clouds1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -602,10 +601,9 @@
               <d7p1:textureName>pointy_mountains</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -710,10 +708,9 @@
               <d7p1:textureName>box</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -772,10 +769,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -834,10 +830,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -896,10 +891,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -958,10 +952,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1066,10 +1059,9 @@
               <d7p1:textureName>box</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1128,10 +1120,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1190,10 +1181,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1298,10 +1288,9 @@
               <d7p1:textureName>house_grey_front</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1360,10 +1349,9 @@
               <d7p1:textureName>house_beige_side</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1422,10 +1410,9 @@
               <d7p1:textureName>tree13</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1484,10 +1471,9 @@
               <d7p1:textureName>tree34</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1546,10 +1532,9 @@
               <d7p1:textureName>tree13</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1608,10 +1593,9 @@
               <d7p1:textureName>tree20</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1670,10 +1654,9 @@
               <d7p1:textureName>tree02</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1732,10 +1715,9 @@
               <d7p1:textureName>tree10</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1794,10 +1776,9 @@
               <d7p1:textureName>tree08</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -1901,11 +1882,10 @@
           <d5p1:texturePath>Content/Assets/Textures/road.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2605,10 +2585,9 @@
           <d5p1:textureName>fence</d5p1:textureName>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteAtlasRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2709,10 +2688,9 @@
           <d5p1:textureName>fence</d5p1:textureName>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteAtlasRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -2815,10 +2793,9 @@
               <d7p1:textureName>box</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -2877,10 +2854,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -2939,10 +2915,9 @@
               <d7p1:textureName>grass6</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -3001,10 +2976,9 @@
               <d7p1:textureName>grass6</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -3063,10 +3037,9 @@
               <d7p1:textureName>hills1</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -3125,10 +3098,9 @@
               <d7p1:textureName>tree29</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -3187,10 +3159,9 @@
               <d7p1:textureName>grass5</d7p1:textureName>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteAtlasRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -3294,11 +3265,10 @@
           <d5p1:texturePath>Content/Assets/Textures/elementWood010.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -3400,11 +3370,10 @@
           <d5p1:texturePath>Content/Assets/Textures/elementMetal014.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -3508,11 +3477,10 @@
               <d7p1:texturePath>Content/Assets/Textures/wheel.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:CircleCollider2D">
               <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -3609,11 +3577,10 @@
           <d5p1:texturePath>Content/Assets/Textures/trailer.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -4896,11 +4863,10 @@
               <d7p1:texturePath>Content/Assets/Textures/wheel.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:CircleCollider2D">
               <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -4998,11 +4964,10 @@
               <d7p1:texturePath>Content/Assets/Textures/wheel.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics3D" i:type="d7p1:CircleCollider2D">
               <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -5099,11 +5064,10 @@
           <d5p1:texturePath>Content/Assets/Textures/car.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -6339,8 +6303,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-13.3201094</d6p1:X>
-            <d6p1:Y>-1006.09979</d6p1:Y>
+            <d6p1:X>-2489.16016</d6p1:X>
+            <d6p1:Y>-1588.19971</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -6391,9 +6355,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:width>300</d5p1:width>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextRenderer2D">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -6453,11 +6417,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/elementMetal014.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -6559,11 +6522,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_1.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -6796,11 +6758,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/elementWood054.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -6961,11 +6922,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/elementWood054.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -7126,11 +7086,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_1.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -7363,11 +7322,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -7580,11 +7538,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_3.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -7797,11 +7754,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_1.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -8034,11 +7990,10 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:texturePath>Content/Assets/Textures/debrisStone_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -8211,8 +8166,8 @@ Cursor ↓: Brake</d5p1:text>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-13.3201094</d6p1:X>
-            <d6p1:Y>-813.379761</d6p1:Y>
+            <d6p1:X>-2489.16016</d6p1:X>
+            <d6p1:Y>-1389.63977</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -8263,9 +8218,9 @@ Cursor ↓: Brake</d5p1:text>
           <d5p1:width>300</d5p1:width>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextRenderer2D">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
