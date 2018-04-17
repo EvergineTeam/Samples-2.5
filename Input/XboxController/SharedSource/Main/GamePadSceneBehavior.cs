@@ -14,7 +14,7 @@ using XBoxController;
 
 #endregion
 
-namespace XboxControllerProject
+namespace XBoxController
 {
     public class GamePadSceneBehavior : SceneBehavior
     {

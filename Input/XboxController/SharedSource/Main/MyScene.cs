@@ -7,22 +7,38 @@ using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.Toolkit;
-using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.Framework.UI;
-using XboxControllerProject;
-
 #endregion
 
 namespace XBoxController
 {
     public class MyScene : Scene
     {
-        public TextComponent leftStickText, rightStickText, leftTriggerText, rightTriggerText;
-        public Entity leftJoystick, rightJoystick, buttonA, buttonB, buttonX, buttonY, buttonBack, buttonStart, dpadUp, dpadDown, dpadLeft, dpadRight, leftShoulder, rightShoulder, leftTrigger, rightTrigger;
+        public TextComponent leftStickText;
+        public TextComponent rightStickText;
+        public TextComponent leftTriggerText;
+        public TextComponent rightTriggerText;
+
+        public Entity leftJoystick;
+        public Entity rightJoystick;
+        public Entity buttonA;
+        public Entity buttonB;
+        public Entity buttonX;
+        public Entity buttonY;
+        public Entity buttonBack;
+        public Entity buttonStart;
+        public Entity dpadUp;
+        public Entity dpadDown;
+        public Entity dpadLeft;
+        public Entity dpadRight;
+        public Entity leftShoulder;
+        public Entity rightShoulder;
+        public Entity leftTrigger;
+        public Entity rightTrigger;
+
 
         protected override void CreateScene()
         {
@@ -51,7 +67,6 @@ namespace XBoxController
             this.rightStickText = this.EntityManager.Find("rightStickText").FindComponent<TextComponent>();
 
             this.AddSceneBehavior(new GamePadSceneBehavior(), SceneBehavior.Order.PostUpdate);
-
         }
     }
 }
