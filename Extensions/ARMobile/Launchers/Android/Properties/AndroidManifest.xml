@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="ARMobile.ARMobile">
+	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
+	<uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+	<application android:icon="@drawable/Icon" android:label="ARMobile">
+    <meta-data android:name="com.google.ar.core" android:value="required" />
+  </application>
+	<!--Uncomment these lines if you need to use CameraCapture & Microphone features-->
+	<uses-permission android:name="android.permission.CAMERA" />
+	<!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+	<!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+	<!--<uses-permission android:name="android.permission.STORAGE" />-->
+</manifest>
