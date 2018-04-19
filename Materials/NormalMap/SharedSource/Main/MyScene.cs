@@ -19,50 +19,11 @@ namespace NormalMap
 {
     public class MyScene : Scene
     {
-        
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            //Slider slider1 = new Slider()
-            //{
-            //    Margin = new Thickness(10, 90, 0, 0),
-            //    Width = 500,
-            //    Minimum = 4,
-            //    Maximum = 40,
-            //    Value = 30
-            //};
-
-            //slider1.RealTimeValueChanged += (s, e) =>
-            //{
-            //    var entity = EntityManager.Find("Light0");
-            //    var component = entity.FindComponent<PointLightProperties>();
-            //    component.Intensity = e.NewValue;
-            //};
-
-            //EntityManager.Add(slider1);
-
-            //Slider slider2 = new Slider()
-            //{
-            //    Margin = new Thickness(10, 140, 0, 0),
-            //    Width = 500,
-            //    Minimum = 1,
-            //    Maximum = 100
-            //};
-
-            //slider2.RealTimeValueChanged += (s, e) =>
-            //{
-            //    var entity = EntityManager.Find("Cube");
-            //    var component = entity.FindComponent<MaterialsMap>();
-            //    var material = (component.DefaultMaterial as DualMaterial);
-
-            //    float v = (float)e.NewValue / 100.0f;
-            //    Color c1 = new Color(v, v, v, 1);
-            //    material.AmbientColor = c1;
-            //};
-
-            //EntityManager.Add(slider2);
-
+            var entity = EntityManager.Find("cube");
             ToggleSwitch lightmapEnabled = new ToggleSwitch()
             {
                 Margin = new Thickness(10, 10, 0, 0),
@@ -73,9 +34,8 @@ namespace NormalMap
 
             lightmapEnabled.Toggled += (s, e) =>
             {
-                var entity = EntityManager.Find("Cube");
-                var component = entity.FindComponent<MaterialsMap>();
-                var material = (component.DefaultMaterial as DualMaterial);
+                var component = entity.FindComponent<MaterialComponent>();
+                var material = component.Material as StandardMaterial;
                 if (!string.IsNullOrEmpty(material.Diffuse2Path))
                 {
                     material.Diffuse2Path = string.Empty;
@@ -86,21 +46,20 @@ namespace NormalMap
                 }
             };
 
-            EntityManager.Add(lightmapEnabled);
+            this.EntityManager.Add(lightmapEnabled);
 
             ToggleSwitch textureEnabled = new ToggleSwitch()
             {
                 Margin = new Thickness(10, 40, 0, 0),
                 IsOn = true,
                 OnText = "Texture On",
-                OffText = "Texture Off"
+                OffText = "Texture Off",
             };
 
             textureEnabled.Toggled += (s, o) =>
             {
-                var entity = EntityManager.Find("Cube");
-                var component = entity.FindComponent<MaterialsMap>();
-                var material = (component.DefaultMaterial as DualMaterial);
+                var component = entity.FindComponent<MaterialComponent>();
+                var material = component.Material as StandardMaterial;
 
                 if (!string.IsNullOrEmpty(material.Diffuse1Path))
                 {
@@ -112,21 +71,20 @@ namespace NormalMap
                 }
             };
 
-            EntityManager.Add(textureEnabled);
+            this.EntityManager.Add(textureEnabled);
 
             ToggleSwitch normalMapEnabled = new ToggleSwitch()
             {
                 Margin = new Thickness(300, 10, 0, 0),
                 IsOn = true,
                 OnText = "NormalMap On",
-                OffText = "NormalMap Off"
+                OffText = "NormalMap Off",
             };
 
             normalMapEnabled.Toggled += (s, o) =>
             {
-                var entity = EntityManager.Find("Cube");
-                var component = entity.FindComponent<MaterialsMap>();
-                var material = (component.DefaultMaterial as DualMaterial);
+                var component = entity.FindComponent<MaterialComponent>();
+                var material = component.Material as StandardMaterial;
                 if (!string.IsNullOrEmpty(material.NormalPath))
                 {
                     material.NormalPath = string.Empty;
@@ -137,7 +95,7 @@ namespace NormalMap
                 }
             };
 
-            EntityManager.Add(normalMapEnabled);
+            this.EntityManager.Add(normalMapEnabled);
         }
     }
 }
