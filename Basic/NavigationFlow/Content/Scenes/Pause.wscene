@@ -52,28 +52,33 @@
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -141,11 +146,10 @@
           <d5p1:texturePath>Content/Assets/GUI/Window_11.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearWrap</d5p1:SamplerMode>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -205,11 +209,10 @@
           <d5p1:texturePath i:nil="true" />
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearWrap</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -244,7 +247,7 @@
           <d5p1:MaxScale>5</d5p1:MaxScale>
           <d5p1:MinScale>0.1</d5p1:MinScale>
           <d5p1:ProjectCamera>true</d5p1:ProjectCamera>
-          <d5p1:TouchOrder>500</d5p1:TouchOrder>
+          <d5p1:TouchOrder>200</d5p1:TouchOrder>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/NavigationFlow.Components" i:type="d5p1:NavigationComponent">
           <d5p1:NavigationCommand>Back</d5p1:NavigationCommand>
@@ -308,11 +311,10 @@
           <d5p1:texturePath i:nil="true" />
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearWrap</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -347,7 +349,7 @@
           <d5p1:MaxScale>5</d5p1:MaxScale>
           <d5p1:MinScale>0.1</d5p1:MinScale>
           <d5p1:ProjectCamera>true</d5p1:ProjectCamera>
-          <d5p1:TouchOrder>500</d5p1:TouchOrder>
+          <d5p1:TouchOrder>200</d5p1:TouchOrder>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/NavigationFlow.Components" i:type="d5p1:NavigationComponent">
           <d5p1:NavigationCommand>Back</d5p1:NavigationCommand>
@@ -411,11 +413,10 @@
           <d5p1:texturePath i:nil="true" />
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearWrap</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -450,7 +451,7 @@
           <d5p1:MaxScale>5</d5p1:MaxScale>
           <d5p1:MinScale>0.1</d5p1:MinScale>
           <d5p1:ProjectCamera>true</d5p1:ProjectCamera>
-          <d5p1:TouchOrder>500</d5p1:TouchOrder>
+          <d5p1:TouchOrder>200</d5p1:TouchOrder>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/NavigationFlow.Components" i:type="d5p1:NavigationComponent">
           <d5p1:NavigationCommand>ReturnMainMenu</d5p1:NavigationCommand>

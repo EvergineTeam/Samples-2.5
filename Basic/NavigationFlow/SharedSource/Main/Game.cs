@@ -15,11 +15,12 @@ namespace NavigationFlow
         {
             base.Initialize(application);
 
-            var navigationService = new NavigationService();
+            this.Load(WaveContent.GameInfo);
+			
+			var navigationService = new NavigationService();
             WaveServices.RegisterService(navigationService);
 
-            WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
-
+			WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
             navigationService.StartNavigation();
         }
     }
