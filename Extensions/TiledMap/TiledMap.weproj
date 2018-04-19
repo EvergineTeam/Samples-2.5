@@ -1,5 +1,5 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>024e9a4e-6644-4dd7-a81c-379c4eeae114</Id>
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>ed858e12-3a82-42fc-9a5c-03949dd4bb52</Id>
   <GameInfoPath>TiledMap.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -9,24 +9,10 @@
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
           <d5p1:Profiles>
             <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>Linux</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Linux</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType>Default</LauncherType>
-              <Name>MacOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>MacOS</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
+              <LauncherType>DirectX</LauncherType>
               <Name>Windows</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
             </Profile>
           </d5p1:Profiles>
@@ -37,8 +23,8 @@
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>0</d2p1:_Build>
     <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>4</d2p1:_Minor>
+    <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180208-617</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180419-632</WaveVersion>
 </Project>
