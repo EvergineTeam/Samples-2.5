@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using TiledMap;
 using WaveEngine.Common.Media;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;

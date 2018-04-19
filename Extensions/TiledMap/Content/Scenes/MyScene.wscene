@@ -3,6 +3,7 @@
   <Entities xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>Camera2D</d2p1:name>
@@ -25,7 +26,6 @@
             <d6p1:Y>0.4</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>0</d6p1:Height>
@@ -33,6 +33,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -51,28 +52,33 @@
             <d6p1:R>90</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -83,8 +89,8 @@
           </d5p1:zoom>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TiledMap.Components" i:type="d5p1:CameraBehavior">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:FollowEntityPath>Player</d5p1:FollowEntityPath>
           <d5p1:TiledMapEntityPath>Map</d5p1:TiledMapEntityPath>
         </d4p1:Component>
@@ -92,6 +98,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>SoundManager</d2p1:name>
@@ -114,7 +121,6 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>0</d6p1:Height>
@@ -122,6 +128,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -139,6 +146,7 @@
       <d2p1:SerializeChildrens>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>Background</d2p1:name>
@@ -164,7 +172,6 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>320</d8p1:Height>
@@ -172,6 +179,7 @@
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:Rectangle>
+              <d7p1:effect>None</d7p1:effect>
               <d7p1:origin xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
@@ -183,14 +191,15 @@
               <d7p1:transformMode>Standard</d7p1:transformMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.TiledMap" i:type="d7p1:TiledMapLayerRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>3rdLayer</d2p1:name>
@@ -216,7 +225,6 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>320</d8p1:Height>
@@ -224,6 +232,7 @@
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:Rectangle>
+              <d7p1:effect>None</d7p1:effect>
               <d7p1:origin xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
@@ -235,14 +244,15 @@
               <d7p1:transformMode>Standard</d7p1:transformMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.TiledMap" i:type="d7p1:TiledMapLayerRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>2ndLayer</d2p1:name>
@@ -268,7 +278,6 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>320</d8p1:Height>
@@ -276,6 +285,7 @@
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:Rectangle>
+              <d7p1:effect>None</d7p1:effect>
               <d7p1:origin xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
@@ -287,14 +297,15 @@
               <d7p1:transformMode>Standard</d7p1:transformMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.TiledMap" i:type="d7p1:TiledMapLayerRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
         <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
           <d2p1:SerializeChildrens />
+          <d2p1:isDisabled>false</d2p1:isDisabled>
           <d2p1:isStatic>false</d2p1:isStatic>
           <d2p1:isVisible>true</d2p1:isVisible>
           <d2p1:name>Foreground</d2p1:name>
@@ -320,7 +331,6 @@
                 <d8p1:Y>1</d8p1:Y>
                 <d8p1:Z>1</d8p1:Z>
               </d7p1:LocalScale>
-              <d7p1:Effect>None</d7p1:Effect>
               <d7p1:Opacity>1</d7p1:Opacity>
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>320</d8p1:Height>
@@ -328,6 +338,7 @@
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:Rectangle>
+              <d7p1:effect>None</d7p1:effect>
               <d7p1:origin xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
@@ -339,13 +350,14 @@
               <d7p1:transformMode>Standard</d7p1:transformMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.TiledMap" i:type="d7p1:TiledMapLayerRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
       </d2p1:SerializeChildrens>
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>Map</d2p1:name>
@@ -368,7 +380,6 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>320</d6p1:Height>
@@ -376,6 +387,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -395,6 +407,7 @@
     </d2p1:BaseEntityModel>
     <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
       <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>Player</d2p1:name>
@@ -417,7 +430,6 @@
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
-          <d5p1:Effect>None</d5p1:Effect>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>16</d6p1:Height>
@@ -425,6 +437,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -448,10 +461,10 @@
           <d5p1:texturePath>Content/Assets/ball.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <d5p1:SamplerMode>PointClamp</d5p1:SamplerMode>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DrawMode>Simple</d5p1:DrawMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:CircleCollider2D">
           <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -475,8 +488,8 @@
           <d5p1:Radius>1</d5p1:Radius>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:AllowSleep>true</d5p1:AllowSleep>
           <d5p1:AngularDamping>0</d5p1:AngularDamping>
           <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
@@ -492,12 +505,13 @@
           <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/TiledMap.Components" i:type="d5p1:PlayerController">
-          <d4p1:IsActive>true</d4p1:IsActive>
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
   </Entities>
+  <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -521,8 +535,8 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>726</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1014</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
