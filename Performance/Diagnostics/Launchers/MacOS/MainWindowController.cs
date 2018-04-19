@@ -3,7 +3,7 @@ using System;
 using Foundation;
 using AppKit;
 
-namespace Diagnostics
+namespace Diagnostic
 {
 	public partial class MainWindowController : NSWindowController
 	{
