@@ -1,6 +1,6 @@
 using AppKit;
 
-namespace Diagnostics
+namespace Diagnostic
 {
 	static class MainClass
 	{

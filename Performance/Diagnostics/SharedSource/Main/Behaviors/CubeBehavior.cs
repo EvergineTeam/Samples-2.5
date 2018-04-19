@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace Diagnostics.Behaviors
+namespace Diagnostic.Behaviors
 {
     [DataContract]
     public class CubeBehavior : Behavior

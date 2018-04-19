@@ -1,6 +1,6 @@
 using System;
 
-namespace Diagnostics
+namespace Diagnostic
 {
     static class Program
     {
