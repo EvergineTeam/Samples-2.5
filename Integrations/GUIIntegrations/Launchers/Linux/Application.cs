@@ -8,32 +8,33 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 
-namespace TeapotSample
+namespace GUIIntegrations
 {
     public class App : WaveEngine.Adapter.Application
     {
-        TeapotSample.Game game;
+        GUIIntegrations.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
-        Color backgroundSplashColor;
+		Color backgroundSplashColor;
+		bool lastKeyF10Pressed = false;
 
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
             this.FullScreen = false;
-            this.WindowTitle = "TeapotSample";
+            this.WindowTitle = "GUIIntegrations";
         }
 
         public override void Initialize()
         {
-            this.game = new TeapotSample.Game();
+            this.game = new GUIIntegrations.Game();
             this.game.Initialize(this);
 
-            #region WAVE SOFTWARE LICENSE AGREEMENT
+            #region DEFAULT SPLASHSCREEN
             this.backgroundSplashColor = new Color("#ebebeb");
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
@@ -65,15 +66,18 @@ namespace TeapotSample
         {
             if (this.game != null && !this.game.HasExited)
             {
-                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
-                {
-                    this.FullScreen = !this.FullScreen;
-                }
+				bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
+				if (keyF10Pressed && !this.lastKeyF10Pressed)
+				{
+					this.FullScreen = !this.FullScreen;
+				}
+
+				this.lastKeyF10Pressed = keyF10Pressed;
 
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
-					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+                    #region DEFAULT SPLASHSCREEN
+                    position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
 					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
@@ -102,7 +106,7 @@ namespace TeapotSample
             {
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
                     this.spriteBatch.Draw (this.splashScreen, this.position, Color.White);

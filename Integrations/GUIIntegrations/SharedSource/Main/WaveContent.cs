@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/2/2017 2:12:44 PM
-namespace TeapotSample
+// File generated on 19/04/2018 17:12:12
+namespace GUIIntegrations
 {
     using System;
     
@@ -17,8 +17,8 @@ namespace TeapotSample
     public sealed class WaveContent
     {
         
-        /// <summary> Path to Content/TeapotSample.wgame </summary>
-        public const string GameInfo = "Content/TeapotSample.wgame";
+        /// <summary> Path to Content/GUIIntegrations.wgame </summary>
+        public const string GameInfo = "Content/GUIIntegrations.wgame";
         
         public sealed class Assets
         {
@@ -36,9 +36,31 @@ namespace TeapotSample
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/MetalMaterial.wmat </summary>
-                public const string MetalMaterial = "Content/Assets/Materials/MetalMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/MyMaterial.wmat </summary>
+                public const string MyMaterial = "Content/Assets/Materials/MyMaterial.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

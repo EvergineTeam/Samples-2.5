@@ -1,6 +1,6 @@
 using System;
 
-namespace TeapotSample
+namespace GUIIntegrations
 {
     static class Program
     {
