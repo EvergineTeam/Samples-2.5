@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
+using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 
 namespace LensFlare
@@ -165,6 +166,7 @@ namespace LensFlare
             auxPosition.X = this.radius * ((float)Math.Sin(this.orbitAngle));
             auxPosition.Z = this.radius * ((float)Math.Cos(this.orbitAngle));
             this.Transform.Position = auxPosition;
+            Labels.Add("Position", auxPosition);
 
             if (this.rotationSpeed > 0)
             {
@@ -174,6 +176,9 @@ namespace LensFlare
             Vector3 auxRotation = this.Transform.Rotation;
             auxRotation.Y = this.rotationAngle;
             this.Transform.Rotation = auxRotation;
+
+            Labels.Add("Rotation", rotationAngle);
+            Labels.Add("RotaitonEntity", auxRotation);
         }
     }
 }
