@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 12:31:17 PM
+// File generated on 19/04/2018 15:34:03
 namespace IBLSample
 {
     using System;
@@ -41,15 +41,11 @@ namespace IBLSample
             /// <summary> Path to Content/Assets/Environment3Light.cubemap </summary>
             public const string Environment3Light_cubemap = "Content/Assets/Environment3Light.cubemap";
             
+            /// <summary> Path to Content/Assets/venus.fbx </summary>
+            public const string venus_fbx = "Content/Assets/venus.fbx";
+            
             /// <summary> Path to Content/Assets/venusLightingMap.png </summary>
             public const string venusLightingMap_png = "Content/Assets/venusLightingMap.png";
-            
-            public sealed class Models
-            {
-                
-                /// <summary> Path to Content/Assets/Models/venus.fbx </summary>
-                public const string venus_fbx = "Content/Assets/Models/venus.fbx";
-            }
             
             public sealed class Materials
             {
@@ -62,7 +58,32 @@ namespace IBLSample
                 
                 /// <summary> Path to Content/Assets/Materials/Environment3.wmat </summary>
                 public const string Environment3 = "Content/Assets/Materials/Environment3.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/venus.wmat </summary>
+                public const string venus = "Content/Assets/Materials/venus.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes
