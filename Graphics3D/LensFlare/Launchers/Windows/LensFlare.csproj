@@ -35,33 +35,29 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="WaveEngine.Adapter, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Adapter.dll</HintPath>
+   <Reference Include="WaveEngine.Adapter">      
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Adapter.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Box2D, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Box2D.dll</HintPath>
+    <Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Box2D.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Bullet, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Bullet.dll</HintPath>
+    <Reference Include="WaveEngine.Bullet">
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Bullet.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Common, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Common.dll</HintPath>
+    <Reference Include="WaveEngine.Common">
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Common.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Components, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Components.dll</HintPath>
+    <Reference Include="WaveEngine.Framework">
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.Framework, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.Framework.dll</HintPath>
+    <Reference Include="WaveEngine.Components">
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Components.dll</HintPath>
     </Reference>
-    <Reference Include="WaveEngine.ImageEffects, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\WaveEngine\v2.0\Lib\Windows\WaveEngine.ImageEffects.dll</HintPath>
+    <Reference Include="WaveEngine.Materials">
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.Materials.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.ImageEffects">
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180403-626\lib\net45\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
