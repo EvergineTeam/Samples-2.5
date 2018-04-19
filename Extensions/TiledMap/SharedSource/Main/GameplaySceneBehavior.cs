@@ -95,16 +95,16 @@ namespace TiledMap
             }
 
             WaveServices.TimerFactory.CreateTimer("cratesounds", TimeSpan.FromSeconds(2), () =>
+            {
+                foreach (var crate in result)
                 {
-                    foreach (var crate in result)
-                    {
-                        Entity crateEntity = crate as Entity;
-                        var collider = crateEntity.FindComponent<Collider2D>(false);
-                        collider.BeginCollision += Collider_BeginCollision;                        
-                    }
+                    Entity crateEntity = crate as Entity;
+                    var collider = crateEntity.FindComponent<Collider2D>(false);
+                    collider.BeginCollision += Collider_BeginCollision;
+                }
 
-                }, false);
-        }       
+            }, false);
+        }
 
         private void InitTraps()
         {
@@ -174,7 +174,7 @@ namespace TiledMap
         {
             this.soundManager.PlaySound(SoundType.Crash);
             this.ResetGame();
-        }    
+        }
 
         private void Collider_BeginCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {

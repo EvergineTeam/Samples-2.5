@@ -69,7 +69,7 @@ namespace TiledMap
                 .AddComponent(new Transform2D() { LocalPosition = new Vector2(obj.X, obj.Y), Origin = Vector2.Center, DrawOrder = -9 })
                 .AddComponent(new SpriteAtlas(WaveContent.Assets.coin_spritesheet))
                 .AddComponent(new Animation2D() { PlayAutomatically = true, CurrentAnimation = "Flip" })
-                .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha, AddressMode.PointClamp))
+                .AddComponent(new SpriteAtlasRenderer(DefaultLayers.Alpha)) //, AddressMode.PointClamp))
                 .AddComponent(new CircleCollider2D())
                 ;
 
@@ -93,7 +93,7 @@ namespace TiledMap
                 Entity crateEntity = new Entity("crate_" + (i++)) { Tag = "crate" }
                 .AddComponent(new Transform2D() { LocalPosition = new Vector2(obj.X, obj.Y), Rotation = (float)obj.Rotation, DrawOrder = -9 })
                 .AddComponent(new Sprite(WaveContent.Assets.tilesets.sceneTiles_png) { SourceRectangle = createRectangle })
-                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha, AddressMode.PointWrap))
+                .AddComponent(new SpriteRenderer(DefaultLayers.Alpha)) // , AddressMode.PointWrap))
                 .AddComponent(new RectangleCollider2D()
                 {
                     Density = 0.3f,
@@ -134,7 +134,7 @@ namespace TiledMap
                 var colliderEntity = TiledMapUtils.CollisionEntityFromObject("collider_" + (i++), obj);
                 colliderEntity.Tag = "collider";
 
-                colliderEntity.AddComponent(new RigidBody2D() { PhysicBodyType  = WaveEngine.Common.Physics2D.RigidBodyType2D.Static });
+                colliderEntity.AddComponent(new RigidBody2D() { PhysicBodyType = WaveEngine.Common.Physics2D.RigidBodyType2D.Static });
 
                 this.EntityManager.Add(colliderEntity);
             }

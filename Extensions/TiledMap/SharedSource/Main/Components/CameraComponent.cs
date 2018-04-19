@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
@@ -62,7 +57,7 @@ namespace TiledMap.Components
             this.followTransform = this.followEntity.FindComponent<Transform2D>();
 
             this.tiledMapEntity = this.EntityManager.Find(this.TiledMapEntityPath);
-            this.tiledMap = this.tiledMapEntity.FindComponent<WaveEngine.TiledMap.TiledMap>();            
+            this.tiledMap = this.tiledMapEntity.FindComponent<WaveEngine.TiledMap.TiledMap>();
 
             this.viewportManager = this.Owner.Scene.VirtualScreenManager;
             this.platform = WaveServices.Platform;
