@@ -8,16 +8,16 @@ using WaveEngine.Framework.Services;
 
 namespace XBoxController
 {
-    public class Game : WaveEngine.Framework.Game
-    {
-        public override void Initialize(IApplication application)
-        {
-            base.Initialize(application);
+	public class Game : WaveEngine.Framework.Game
+	{
+		public override void Initialize(IApplication application)
+		{
+			base.Initialize(application);
 
-            this.Load(WaveContent.GameInfo);
+			this.Load(WaveContent.GameInfo);
 
-            ScreenContext screenContext = new ScreenContext(new MyScene());	
+			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
-        }
-    }
+		}
+	}
 }

@@ -7,7 +7,7 @@ using System.IO;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 
-namespace EnvironmentMap
+namespace EnviromentMap
 {
 	public partial class MainWindow : WaveEngine.Adapter.Application, WaveEngine.Common.IApplication
 	{
@@ -19,14 +19,14 @@ namespace EnvironmentMap
 		private Vector2 position;
 		private Color backgroundSplashColor;
 
-		private EnvironmentMap.Game game;
+		private EnviromentMap.Game game;
 		#endregion
 
 		#region Constructors
 
 		public MainWindow (IntPtr handle) : base (handle)
 		{
-			this.WindowTitle = "EnvironmentMap";
+			this.WindowTitle = "EnviromentMap";
 			this.ResizeScreen(1280, 720);
 		}
 
@@ -43,10 +43,10 @@ namespace EnvironmentMap
 		/// </summary>
 		public override void Initialize()
 		{
-			this.game = new EnvironmentMap.Game();
+			this.game = new EnviromentMap.Game();
 			this.game.Initialize(this);
 
-			#region WAVE SOFTWARE LICENSE AGREEMENT
+			#region DEFAULT SPLASHSCREEN
 			this.backgroundSplashColor = new Color("#ebebeb");
 			this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
@@ -84,7 +84,7 @@ namespace EnvironmentMap
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
 					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
 					this.time += elapsedTime;
@@ -117,7 +117,7 @@ namespace EnvironmentMap
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
 					WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
 					this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);

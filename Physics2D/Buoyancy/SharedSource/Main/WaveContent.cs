@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:02:59
+// File generated on 17/04/2018 15:30:31
 namespace Buoyancy
 {
     using System;
@@ -16,6 +16,9 @@ namespace Buoyancy
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/Buoyancy.wgame </summary>
+        public const string GameInfo = "Content/Buoyancy.wgame";
         
         public sealed class Assets
         {
@@ -51,11 +54,36 @@ namespace Buoyancy
             public const string water_png = "Content/Assets/water.png";
         }
         
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
+        }
+        
         public sealed class Scenes
         {
             
             /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
             public const string MyScene = "Content/Scenes/MyScene.wscene";
+            
+            /// <summary> Path to Content/Scenes/MyScene01.wscene </summary>
+            public const string MyScene01 = "Content/Scenes/MyScene01.wscene";
         }
     }
 }

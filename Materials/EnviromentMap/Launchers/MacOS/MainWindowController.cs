@@ -3,7 +3,7 @@ using System;
 using Foundation;
 using AppKit;
 
-namespace EnvironmentMap
+namespace EnviromentMap
 {
 	public partial class MainWindowController : NSWindowController
 	{

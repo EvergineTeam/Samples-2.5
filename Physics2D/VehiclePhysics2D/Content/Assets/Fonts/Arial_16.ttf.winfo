@@ -1,8 +1,11 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>9de198e4-9a63-4709-9816-33f0b41bc274</Id>
+  <Id>aeb8b52b-bfa4-4fc9-9484-21f31535f38a</Id>
+  <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Font">
+    <d2p1:AssociatedFiles xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:FontProfile">
+        <d3p1:ExcludeAsset>false</d3p1:ExcludeAsset>
         <d3p1:Name i:nil="true" />
       </d3p1:ExportProfile>
     </d2p1:Profiles>

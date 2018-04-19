@@ -12,7 +12,7 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace EnvironmentMap
+namespace EnviromentMap
 {
     public class MyScene : Scene
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace EnvironmentMap
+namespace EnviromentMap
 {
     static class Program
     {

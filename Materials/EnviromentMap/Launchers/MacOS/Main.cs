@@ -1,6 +1,6 @@
 using AppKit;
 
-namespace EnvironmentMap
+namespace EnviromentMap
 {
 	static class MainClass
 	{
