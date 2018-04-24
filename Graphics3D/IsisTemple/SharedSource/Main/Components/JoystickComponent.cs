@@ -38,7 +38,7 @@ namespace IsisTemple.Components
                 var leftButton = this.Owner.FindChild("leftButton");
                 this.AddTouchEvents(leftButton,
                     (o, e) => { isisControllerBehavior.GoLeft = true; },
-                    (o, e) => { isisControllerBehavior.GoLeft = false; });
+                    (o, e) => { isisControllerBehavior.GoLeft = false; }); 
 
                 var rightButton = this.Owner.FindChild("rightButton");
                 this.AddTouchEvents(rightButton,
