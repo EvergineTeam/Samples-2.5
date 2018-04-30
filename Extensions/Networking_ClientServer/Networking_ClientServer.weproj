@@ -1,0 +1,44 @@
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>11d291f2-93aa-4a60-a1aa-ccc73af17dbb</Id>
+  <GameInfoPath>Networking_ClientServer.wgame</GameInfoPath>
+  <ResourcesPath>Content</ResourcesPath>
+  <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
+    <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Profiles</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
+          <d5p1:Profiles>
+            <Profile>
+              <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
+              <LauncherType>DirectX</LauncherType>
+              <Name>Windows</Name>
+              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>Linux</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Linux</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>MacOS</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>MacOS</Platform>
+            </Profile>
+          </d5p1:Profiles>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
+    </d2p1:Categories>
+  </Settings>
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>0</d2p1:_Build>
+    <d2p1:_Major>2</d2p1:_Major>
+    <d2p1:_Minor>5</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </Version>
+  <WaveVersion>2.5.1-alpha-20180419-632</WaveVersion>
+</Project>
