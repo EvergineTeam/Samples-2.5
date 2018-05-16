@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedModel", "Launchers\Linux\AnimatedModel.csproj", "{D5CB11BC-0227-42AF-BE20-306B5744F50C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedModel", "Launchers\LinuxProfile\AnimatedModel.csproj", "{D5CB11BC-0227-42AF-BE20-306B5744F50C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AnimatedModelSource", "SharedSource\Main\AnimatedModelSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject
