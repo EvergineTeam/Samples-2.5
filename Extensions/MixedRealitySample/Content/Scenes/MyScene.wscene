@@ -118,9 +118,9 @@
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Camera3D">
                   <d9p1:BackgroundColor xmlns:d10p1="WaveEngine.Common.Graphics">
                     <d10p1:A>255</d10p1:A>
-                    <d10p1:B>78</d10p1:B>
-                    <d10p1:G>78</d10p1:G>
-                    <d10p1:R>78</d10p1:R>
+                    <d10p1:B>0</d10p1:B>
+                    <d10p1:G>0</d10p1:G>
+                    <d10p1:R>0</d10p1:R>
                   </d9p1:BackgroundColor>
                   <d9p1:CameraOrder>0</d9p1:CameraOrder>
                   <d9p1:ClearDepth>1</d9p1:ClearDepth>
@@ -228,9 +228,9 @@
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Camera3D">
                   <d9p1:BackgroundColor xmlns:d10p1="WaveEngine.Common.Graphics">
                     <d10p1:A>255</d10p1:A>
-                    <d10p1:B>78</d10p1:B>
-                    <d10p1:G>78</d10p1:G>
-                    <d10p1:R>78</d10p1:R>
+                    <d10p1:B>0</d10p1:B>
+                    <d10p1:G>0</d10p1:G>
+                    <d10p1:R>0</d10p1:R>
                   </d9p1:BackgroundColor>
                   <d9p1:CameraOrder>0</d9p1:CameraOrder>
                   <d9p1:ClearDepth>1</d9p1:ClearDepth>
@@ -290,9 +290,9 @@
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Camera3D">
                   <d9p1:BackgroundColor xmlns:d10p1="WaveEngine.Common.Graphics">
                     <d10p1:A>255</d10p1:A>
-                    <d10p1:B>78</d10p1:B>
-                    <d10p1:G>78</d10p1:G>
-                    <d10p1:R>78</d10p1:R>
+                    <d10p1:B>0</d10p1:B>
+                    <d10p1:G>0</d10p1:G>
+                    <d10p1:R>0</d10p1:R>
                   </d9p1:BackgroundColor>
                   <d9p1:CameraOrder>0.1</d9p1:CameraOrder>
                   <d9p1:ClearDepth>1</d9p1:ClearDepth>
@@ -398,9 +398,11 @@
                                 <d16p1:Z>-1</d16p1:Z>
                               </d15p1:Normal>
                               <d15p1:TwoSides>false</d15p1:TwoSides>
+                              <d15p1:UTile>1</d15p1:UTile>
                               <d15p1:UVHorizontalFlip>false</d15p1:UVHorizontalFlip>
                               <d15p1:UVVerticalFlip>false</d15p1:UVVerticalFlip>
                               <d15p1:Width>1</d15p1:Width>
+                              <d15p1:YTile>1</d15p1:YTile>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="WaveEngine.Components.Graphics3D" i:type="d15p1:MeshRenderer">
                               <d14p1:FrustumCullingEnabled>true</d14p1:FrustumCullingEnabled>
@@ -417,15 +419,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.65632613E-07</d14p1:W>
-                            <d14p1:X>-5.081899E-09</d14p1:X>
-                            <d14p1:Y>-0.953716934</d14p1:Y>
-                            <d14p1:Z>0.300705761</d14p1:Z>
+                            <d14p1:W>1.8499334E-07</d14p1:W>
+                            <d14p1:X>5.63224347E-08</d14p1:X>
+                            <d14p1:Y>0.953717</d14p1:Y>
+                            <d14p1:Z>-0.300705731</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0358190462</d14p1:X>
-                            <d14p1:Y>-0.104330614</d14p1:Y>
-                            <d14p1:Z>-0.277616858</d14p1:Z>
+                            <d14p1:X>-2.75982774E-08</d14p1:X>
+                            <d14p1:Y>-0.0266</d14p1:Y>
+                            <d14p1:Z>-0.0602</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0.3</d14p1:X>
@@ -445,10 +447,10 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707184E-07</d14p1:W>
-                            <d14p1:X>1.16054534E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>6.211317E-15</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-1.0331604E-07</d14p1:Z>
+                            <d14p1:Z>-8.146034E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0</d14p1:X>
@@ -461,15 +463,15 @@
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Controller</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -487,73 +489,31 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.122654468</d14p1:W>
-                            <d14p1:X>-0.0446426235</d14p1:X>
+                            <d14p1:W>0.122654475</d14p1:W>
+                            <d14p1:X>-0.04464263</d14p1:X>
                             <d14p1:Y>0.93165344</d14p1:Y>
-                            <d14p1:Z>-0.339094043</d14p1:Z>
+                            <d14p1:Z>-0.339094</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0533634573</d14p1:X>
-                            <d14p1:Y>0.0309536383</d14p1:Y>
-                            <d14p1:Z>-0.11108952</d14p1:Z>
+                            <d14p1:X>0.0162651818</d14p1:X>
+                            <d14p1:Y>0.009434669</d14p1:Y>
+                            <d14p1:Z>-0.0338600874</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>1</d14p1:X>
-                            <d14p1:Y>1.00000012</d14p1:Y>
-                            <d14p1:Z>1</d14p1:Z>
+                            <d14p1:Y>0.99999994</d14p1:Y>
+                            <d14p1:Z>0.99999994</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Menu</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
-                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
-                          <d12p1:IsVisible>true</d12p1:IsVisible>
-                        </d12p1:Component>
-                      </d2p1:SerializeComponents>
-                    </d2p1:BaseEntityModel>
-                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-                      <d2p1:SerializeChildrens />
-                      <d2p1:isDisabled>false</d2p1:isDisabled>
-                      <d2p1:isStatic>false</d2p1:isStatic>
-                      <d2p1:isVisible>true</d2p1:isVisible>
-                      <d2p1:name>Shines</d2p1:name>
-                      <d2p1:tag i:nil="true" />
-                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
-                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.365664244</d14p1:W>
-                            <d14p1:X>0.774468839</d14p1:X>
-                            <d14p1:Y>-0.487085849</d14p1:Y>
-                            <d14p1:Z>0.170982689</d14p1:Z>
-                          </d13p1:LocalOrientation>
-                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.09608616</d14p1:X>
-                            <d14p1:Y>-0.18383649</d14p1:Y>
-                            <d14p1:Z>-0.24023211</d14p1:Z>
-                          </d13p1:LocalPosition>
-                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>1</d14p1:X>
-                            <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>0.99999994</d14p1:Z>
-                          </d13p1:LocalScale>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
-                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Shines</ModelMeshName>
-                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>Material #3</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/shineMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -571,31 +531,31 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.122654483</d14p1:W>
+                            <d14p1:W>0.12265446</d14p1:W>
                             <d14p1:X>-0.04464259</d14p1:X>
                             <d14p1:Y>0.9316534</d14p1:Y>
-                            <d14p1:Z>-0.339094281</d14p1:Z>
+                            <d14p1:Z>-0.339094251</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0995505</d14p1:X>
-                            <d14p1:Y>-0.013876915</d14p1:Y>
-                            <d14p1:Z>-0.110111073</d14p1:Z>
+                            <d14p1:X>0.0303429924</d14p1:X>
+                            <d14p1:Y>-0.004229684</d14p1:Y>
+                            <d14p1:Z>-0.0335618556</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>1</d14p1:X>
-                            <d14p1:Y>1.00000012</d14p1:Y>
+                            <d14p1:X>0.9999999</d14p1:X>
+                            <d14p1:Y>1</d14p1:Y>
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Thumbstick</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -613,15 +573,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707184E-07</d14p1:W>
-                            <d14p1:X>4.64218135E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>1.97113918E-14</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-2.82129974E-07</d14p1:Z>
+                            <d14p1:Z>-2.60274277E-07</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0116467774</d14p1:X>
-                            <d14p1:Y>-0.06927872</d14p1:Y>
-                            <d14p1:Z>-0.191407531</d14p1:Z>
+                            <d14p1:X>0.00354993786</d14p1:X>
+                            <d14p1:Y>-0.0211161524</d14p1:Y>
+                            <d14p1:Z>-0.0583410151</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>1</d14p1:X>
@@ -629,15 +589,15 @@
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Trigger</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -655,15 +615,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707184E-07</d14p1:W>
-                            <d14p1:X>1.16054534E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>6.211317E-15</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-1.0331604E-07</d14p1:Z>
+                            <d14p1:Z>-8.146034E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.028930068</d14p1:X>
-                            <d14p1:Y>-0.03332288</d14p1:Y>
-                            <d14p1:Z>-0.00159388036</d14p1:Z>
+                            <d14p1:X>0.008817885</d14p1:X>
+                            <d14p1:Y>-0.0101568131</d14p1:Y>
+                            <d14p1:Z>-0.000485814729</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>1</d14p1:X>
@@ -671,15 +631,15 @@
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Grab</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -706,17 +666,17 @@
                               </d15p1:LocalOrientation>
                               <d15p1:LocalPosition xmlns:d16p1="WaveEngine.Common.Math">
                                 <d16p1:X>0</d16p1:X>
-                                <d16p1:Y>0.01</d16p1:Y>
-                                <d16p1:Z>0</d16p1:Z>
+                                <d16p1:Y>0.0025</d16p1:Y>
+                                <d16p1:Z>-1.4568994E-08</d16p1:Z>
                               </d15p1:LocalPosition>
                               <d15p1:LocalScale xmlns:d16p1="WaveEngine.Common.Math">
-                                <d16p1:X>0.03</d16p1:X>
-                                <d16p1:Y>0.03</d16p1:Y>
-                                <d16p1:Z>0.03</d16p1:Z>
+                                <d16p1:X>0.006</d16p1:X>
+                                <d16p1:Y>0.006</d16p1:Y>
+                                <d16p1:Z>0.006</d16p1:Z>
                               </d15p1:LocalScale>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d15p1:MaterialComponent">
-                              <d15p1:AsignedTo>Default</d15p1:AsignedTo>
+                              <d15p1:AsignedTo i:nil="true" />
                               <d15p1:MaterialPath>Content/Assets/MotionControllers/Materials/dotMat.wmat</d15p1:MaterialPath>
                               <d15p1:UseCopy>false</d15p1:UseCopy>
                               <d15p1:useDummyMaterial>false</d15p1:useDummyMaterial>
@@ -730,9 +690,11 @@
                                 <d16p1:Z>0</d16p1:Z>
                               </d15p1:Normal>
                               <d15p1:TwoSides>false</d15p1:TwoSides>
+                              <d15p1:UTile>1</d15p1:UTile>
                               <d15p1:UVHorizontalFlip>false</d15p1:UVHorizontalFlip>
                               <d15p1:UVVerticalFlip>false</d15p1:UVVerticalFlip>
                               <d15p1:Width>1</d15p1:Width>
+                              <d15p1:YTile>1</d15p1:YTile>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="WaveEngine.Components.Graphics3D" i:type="d15p1:MeshRenderer">
                               <d14p1:FrustumCullingEnabled>true</d14p1:FrustumCullingEnabled>
@@ -749,31 +711,31 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.09802732</d14p1:W>
-                            <d14p1:X>-0.043310184</d14p1:X>
+                            <d14p1:W>0.0980273262</d14p1:W>
+                            <d14p1:X>-0.04331018</d14p1:X>
                             <d14p1:Y>0.9453806</d14p1:Y>
-                            <d14p1:Z>-0.307847947</d14p1:Z>
+                            <d14p1:Z>-0.307847917</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.00129965041</d14p1:X>
-                            <d14p1:Y>0.00146532059</d14p1:Y>
-                            <d14p1:Z>-0.154732972</d14p1:Z>
+                            <d14p1:X>0.000396133459</d14p1:X>
+                            <d14p1:Y>0.0004466297</d14p1:Y>
+                            <d14p1:Z>-0.04716261</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.99999994</d14p1:X>
+                            <d14p1:X>1</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>1</d14p1:Z>
+                            <d14p1:Z>0.99999994</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Touchpad</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -792,30 +754,30 @@
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:W>0.1244849</d14p1:W>
-                            <d14p1:X>-0.03924993</d14p1:X>
-                            <d14p1:Y>0.9455578</d14p1:Y>
-                            <d14p1:Z>-0.298133254</d14p1:Z>
+                            <d14p1:X>-0.0392499231</d14p1:X>
+                            <d14p1:Y>0.945557833</d14p1:Y>
+                            <d14p1:Z>-0.2981332</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.057460703</d14p1:X>
-                            <d14p1:Y>-0.14473629</d14p1:Y>
-                            <d14p1:Z>-0.242245182</d14p1:Z>
+                            <d14p1:X>0.0176599436</d14p1:X>
+                            <d14p1:Y>-0.04411562</d14p1:Y>
+                            <d14p1:Z>-0.073836334</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.99999994</d14p1:X>
-                            <d14p1:Y>1</d14p1:Y>
+                            <d14p1:X>0.9999999</d14p1:X>
+                            <d14p1:Y>1.00000024</d14p1:Y>
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>Material #2</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/Material #2.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Ring</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -833,15 +795,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>2.20521045E-07</d14p1:W>
+                            <d14p1:W>1.89718136E-07</d14p1:W>
                             <d14p1:X>-0.043619372</d14p1:X>
                             <d14p1:Y>0.999048233</d14p1:Y>
-                            <d14p1:Z>-6.476419E-07</d14p1:Z>
+                            <d14p1:Z>-6.244206E-07</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.004349311</d14p1:X>
-                            <d14p1:Y>0.0304070748</d14p1:Y>
-                            <d14p1:Z>-0.06721789</d14p1:Z>
+                            <d14p1:X>-0.00132566993</d14p1:X>
+                            <d14p1:Y>0.009268076</d14p1:Y>
+                            <d14p1:Z>-0.0204880126</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>1</d14p1:X>
@@ -849,15 +811,15 @@
                             <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Windows</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/LeftCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -869,46 +831,37 @@
                       <d2p1:SerializeChildrens />
                       <d2p1:isDisabled>false</d2p1:isDisabled>
                       <d2p1:isStatic>false</d2p1:isStatic>
-                      <d2p1:isVisible>false</d2p1:isVisible>
-                      <d2p1:name>Gaze</d2p1:name>
+                      <d2p1:isVisible>true</d2p1:isVisible>
+                      <d2p1:name>Shines</d2p1:name>
                       <d2p1:tag i:nil="true" />
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.707106769</d14p1:W>
-                            <d14p1:X>0.707106769</d14p1:X>
-                            <d14p1:Y>0</d14p1:Y>
-                            <d14p1:Z>0</d14p1:Z>
+                            <d14p1:W>0.7071067</d14p1:W>
+                            <d14p1:X>-0.7071068</d14p1:X>
+                            <d14p1:Y>-5.024296E-15</d14p1:Y>
+                            <d14p1:Z>6.181724E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0</d14p1:X>
-                            <d14p1:Y>0</d14p1:Y>
-                            <d14p1:Z>-2</d14p1:Z>
+                            <d14p1:X>0.0186814275</d14p1:X>
+                            <d14p1:Y>-0.0395813473</d14p1:Y>
+                            <d14p1:Z>-0.07444992</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.1</d14p1:X>
-                            <d14p1:Y>0.1</d14p1:Y>
-                            <d14p1:Z>0.1</d14p1:Z>
+                            <d14p1:X>1</d14p1:X>
+                            <d14p1:Y>1</d14p1:Y>
+                            <d14p1:Z>1</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>Default</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/gazeMat.wmat</d13p1:MaterialPath>
+                          <d13p1:AsignedTo>Material #3</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/Material #3.wmat</d13p1:MaterialPath>
                           <d13p1:UseCopy>false</d13p1:UseCopy>
                           <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:PlaneMesh">
-                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
-                          <d13p1:Height>1</d13p1:Height>
-                          <d13p1:Normal xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0</d14p1:X>
-                            <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>0</d14p1:Z>
-                          </d13p1:Normal>
-                          <d13p1:TwoSides>false</d13p1:TwoSides>
-                          <d13p1:UVHorizontalFlip>false</d13p1:UVHorizontalFlip>
-                          <d13p1:UVVerticalFlip>false</d13p1:UVVerticalFlip>
-                          <d13p1:Width>1</d13p1:Width>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
+                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Shines</ModelMeshName>
+                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/LeftController.fbx.wpk</d13p1:ModelPath>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -936,9 +889,9 @@
                         <d12p1:Z>0</d12p1:Z>
                       </d11p1:LocalPosition>
                       <d11p1:LocalScale xmlns:d12p1="WaveEngine.Common.Math">
-                        <d12p1:X>0.3</d12p1:X>
-                        <d12p1:Y>0.3</d12p1:Y>
-                        <d12p1:Z>0.3</d12p1:Z>
+                        <d12p1:X>1</d12p1:X>
+                        <d12p1:Y>1</d12p1:Y>
+                        <d12p1:Z>1</d12p1:Z>
                       </d11p1:LocalScale>
                     </d10p1:Component>
                     <d10p1:Component xmlns:d11p1="http://schemas.datacontract.org/2004/07/MixedRealitySample.Behaviors" i:type="d11p1:ControllerBehavior">
@@ -1027,9 +980,11 @@
                                 <d16p1:Z>-1</d16p1:Z>
                               </d15p1:Normal>
                               <d15p1:TwoSides>false</d15p1:TwoSides>
+                              <d15p1:UTile>1</d15p1:UTile>
                               <d15p1:UVHorizontalFlip>false</d15p1:UVHorizontalFlip>
                               <d15p1:UVVerticalFlip>false</d15p1:UVVerticalFlip>
                               <d15p1:Width>1</d15p1:Width>
+                              <d15p1:YTile>1</d15p1:YTile>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="WaveEngine.Components.Graphics3D" i:type="d15p1:MeshRenderer">
                               <d14p1:FrustumCullingEnabled>true</d14p1:FrustumCullingEnabled>
@@ -1052,9 +1007,9 @@
                             <d14p1:Z>0.300705761</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.0231924932</d14p1:X>
-                            <d14p1:Y>-0.114057437</d14p1:Y>
-                            <d14p1:Z>-0.2764228</d14p1:Z>
+                            <d14p1:X>-9.09003E-09</d14p1:X>
+                            <d14p1:Y>-0.0265535619</d14p1:Y>
+                            <d14p1:Z>-0.06020058</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0.3000547</d14p1:X>
@@ -1074,10 +1029,10 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707169E-07</d14p1:W>
-                            <d14p1:X>1.16054534E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>6.211317E-15</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-1.0331604E-07</d14p1:Z>
+                            <d14p1:Z>-8.146034E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0</d14p1:X>
@@ -1090,57 +1045,15 @@
                             <d14p1:Z>0.08930204</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Controller</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
-                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
-                          <d12p1:IsVisible>true</d12p1:IsVisible>
-                        </d12p1:Component>
-                      </d2p1:SerializeComponents>
-                    </d2p1:BaseEntityModel>
-                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-                      <d2p1:SerializeChildrens />
-                      <d2p1:isDisabled>false</d2p1:isDisabled>
-                      <d2p1:isStatic>false</d2p1:isStatic>
-                      <d2p1:isVisible>true</d2p1:isVisible>
-                      <d2p1:name>Shines</d2p1:name>
-                      <d2p1:tag i:nil="true" />
-                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
-                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.5228961</d14p1:W>
-                            <d14p1:X>-0.397117168</d14p1:X>
-                            <d14p1:Y>0.6006543</d14p1:Y>
-                            <d14p1:Z>0.456171036</d14p1:Z>
-                          </d13p1:LocalOrientation>
-                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.0119516551</d14p1:X>
-                            <d14p1:Y>0.0268449783</d14p1:Y>
-                            <d14p1:Z>-0.320471346</d14p1:Z>
-                          </d13p1:LocalPosition>
-                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>1</d14p1:X>
-                            <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>1</d14p1:Z>
-                          </d13p1:LocalScale>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
-                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Shines</ModelMeshName>
-                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>Material #3</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/shineMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1167,17 +1080,17 @@
                               </d15p1:LocalOrientation>
                               <d15p1:LocalPosition xmlns:d16p1="WaveEngine.Common.Math">
                                 <d16p1:X>0</d16p1:X>
-                                <d16p1:Y>0.08</d16p1:Y>
+                                <d16p1:Y>0.025</d16p1:Y>
                                 <d16p1:Z>0</d16p1:Z>
                               </d15p1:LocalPosition>
                               <d15p1:LocalScale xmlns:d16p1="WaveEngine.Common.Math">
-                                <d16p1:X>0.3</d16p1:X>
-                                <d16p1:Y>0.3</d16p1:Y>
-                                <d16p1:Z>0.3</d16p1:Z>
+                                <d16p1:X>0.06</d16p1:X>
+                                <d16p1:Y>0.06</d16p1:Y>
+                                <d16p1:Z>0.06</d16p1:Z>
                               </d15p1:LocalScale>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d15p1:MaterialComponent">
-                              <d15p1:AsignedTo>Default</d15p1:AsignedTo>
+                              <d15p1:AsignedTo i:nil="true" />
                               <d15p1:MaterialPath>Content/Assets/MotionControllers/Materials/dotMat.wmat</d15p1:MaterialPath>
                               <d15p1:UseCopy>false</d15p1:UseCopy>
                               <d15p1:useDummyMaterial>false</d15p1:useDummyMaterial>
@@ -1191,9 +1104,11 @@
                                 <d16p1:Z>0</d16p1:Z>
                               </d15p1:Normal>
                               <d15p1:TwoSides>false</d15p1:TwoSides>
+                              <d15p1:UTile>1</d15p1:UTile>
                               <d15p1:UVHorizontalFlip>false</d15p1:UVHorizontalFlip>
                               <d15p1:UVVerticalFlip>false</d15p1:UVVerticalFlip>
                               <d15p1:Width>1</d15p1:Width>
+                              <d15p1:YTile>1</d15p1:YTile>
                             </d14p1:Component>
                             <d14p1:Component xmlns:d15p1="WaveEngine.Components.Graphics3D" i:type="d15p1:MeshRenderer">
                               <d14p1:FrustumCullingEnabled>true</d14p1:FrustumCullingEnabled>
@@ -1210,15 +1125,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>-0.09802735</d14p1:W>
-                            <d14p1:X>0.04331011</d14p1:X>
-                            <d14p1:Y>0.945380449</d14p1:Y>
-                            <d14p1:Z>-0.3078486</d14p1:Z>
+                            <d14p1:W>-0.098027356</d14p1:W>
+                            <d14p1:X>0.0433101</d14p1:X>
+                            <d14p1:Y>0.9453804</d14p1:Y>
+                            <d14p1:Z>-0.307848662</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.00130547211</d14p1:X>
-                            <d14p1:Y>0.00147235394</d14p1:Y>
-                            <d14p1:Z>-0.155369312</d14p1:Z>
+                            <d14p1:X>-0.000397904485</d14p1:X>
+                            <d14p1:Y>0.0004487735</d14p1:Y>
+                            <d14p1:Z>-0.04735657</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0.08930199</d14p1:X>
@@ -1226,15 +1141,15 @@
                             <d14p1:Z>0.08930209</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Touchpad</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1252,15 +1167,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707169E-07</d14p1:W>
-                            <d14p1:X>1.16054534E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>6.211317E-15</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-1.0331604E-07</d14p1:Z>
+                            <d14p1:Z>-8.146034E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.0116949975</d14p1:X>
-                            <d14p1:Y>-0.0695641041</d14p1:Y>
-                            <d14p1:Z>-0.192194343</d14p1:Z>
+                            <d14p1:X>-0.00356464437</d14p1:X>
+                            <d14p1:Y>-0.02120314</d14p1:Y>
+                            <d14p1:Z>-0.05858084</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0.08930204</d14p1:X>
@@ -1268,15 +1183,15 @@
                             <d14p1:Z>0.08930204</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Trigger</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1295,30 +1210,30 @@
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:W>-0.122654378</d14p1:W>
-                            <d14p1:X>0.04464266</d14p1:X>
+                            <d14p1:X>0.0446426645</d14p1:X>
                             <d14p1:Y>0.93165344</d14p1:Y>
                             <d14p1:Z>-0.339094</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.0535831451</d14p1:X>
-                            <d14p1:Y>0.0310812</d14p1:Y>
-                            <d14p1:Z>-0.111546651</d14p1:Z>
+                            <d14p1:X>-0.0163321421</d14p1:X>
+                            <d14p1:Y>0.00947355</d14p1:Y>
+                            <d14p1:Z>-0.03399942</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0893021</d14p1:X>
-                            <d14p1:Y>0.0893021</d14p1:Y>
+                            <d14p1:X>0.08930209</d14p1:X>
+                            <d14p1:Y>0.08930209</d14p1:Y>
                             <d14p1:Z>0.08930206</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Menu</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1336,15 +1251,15 @@
                       <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.94707169E-07</d14p1:W>
-                            <d14p1:X>1.16054534E-14</d14p1:X>
+                            <d14p1:W>7.54979E-08</d14p1:W>
+                            <d14p1:X>6.211317E-15</d14p1:X>
                             <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>-1.0331604E-07</d14p1:Z>
+                            <d14p1:Z>-8.146034E-08</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.0290491283</d14p1:X>
-                            <d14p1:Y>-0.03345999</d14p1:Y>
-                            <d14p1:Z>-0.00160127878</d14p1:Z>
+                            <d14p1:X>-0.008854183</d14p1:X>
+                            <d14p1:Y>-0.0101986052</d14p1:Y>
+                            <d14p1:Z>-0.000488069782</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>0.08930204</d14p1:X>
@@ -1352,15 +1267,15 @@
                             <d14p1:Z>0.08930204</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Grab</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1379,30 +1294,114 @@
                         <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:W>-0.122654378</d14p1:W>
-                            <d14p1:X>0.04464266</d14p1:X>
+                            <d14p1:X>0.0446426645</d14p1:X>
                             <d14p1:Y>0.93165344</d14p1:Y>
                             <d14p1:Z>-0.339094</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.09995997</d14p1:X>
-                            <d14p1:Y>-0.0139340162</d14p1:Y>
-                            <d14p1:Z>-0.110563666</d14p1:Z>
+                            <d14p1:X>-0.0304677989</d14p1:X>
+                            <d14p1:Y>-0.004247088</d14p1:Y>
+                            <d14p1:Z>-0.0336998068</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.0893021</d14p1:X>
-                            <d14p1:Y>0.0893021</d14p1:Y>
+                            <d14p1:X>0.08930209</d14p1:X>
+                            <d14p1:Y>0.08930209</d14p1:Y>
                             <d14p1:Z>0.08930206</d14p1:Z>
                           </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Thumbstick</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
+                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
+                          <d12p1:IsVisible>true</d12p1:IsVisible>
+                        </d12p1:Component>
+                      </d2p1:SerializeComponents>
+                    </d2p1:BaseEntityModel>
+                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+                      <d2p1:SerializeChildrens />
+                      <d2p1:isDisabled>false</d2p1:isDisabled>
+                      <d2p1:isStatic>false</d2p1:isStatic>
+                      <d2p1:isVisible>true</d2p1:isVisible>
+                      <d2p1:name>Windows</d2p1:name>
+                      <d2p1:tag i:nil="true" />
+                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
+                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
+                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:W>0.9961947</d14p1:W>
+                            <d14p1:X>2.58299366E-07</d14p1:X>
+                            <d14p1:Y>2.25982628E-08</d14p1:Y>
+                            <d14p1:Z>-0.08715573</d14p1:Z>
+                          </d13p1:LocalOrientation>
+                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:X>0.00133095076</d14p1:X>
+                            <d14p1:Y>0.009306263</d14p1:Y>
+                            <d14p1:Z>-0.020572219</d14p1:Z>
+                          </d13p1:LocalPosition>
+                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:X>0.08930213</d14p1:X>
+                            <d14p1:Y>0.08930213</d14p1:Y>
+                            <d14p1:Z>0.08930204</d14p1:Z>
+                          </d13p1:LocalScale>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
                           <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/M0_0_0_0.wmat</d13p1:MaterialPath>
                           <d13p1:UseCopy>false</d13p1:UseCopy>
                           <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
+                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Windows</ModelMeshName>
+                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
+                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
+                          <d12p1:IsVisible>true</d12p1:IsVisible>
+                        </d12p1:Component>
+                      </d2p1:SerializeComponents>
+                    </d2p1:BaseEntityModel>
+                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+                      <d2p1:SerializeChildrens />
+                      <d2p1:isDisabled>false</d2p1:isDisabled>
+                      <d2p1:isStatic>false</d2p1:isStatic>
+                      <d2p1:isVisible>true</d2p1:isVisible>
+                      <d2p1:name>Shines</d2p1:name>
+                      <d2p1:tag i:nil="true" />
+                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
+                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
+                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:W>0.5228961</d14p1:W>
+                            <d14p1:X>-0.3971171</d14p1:X>
+                            <d14p1:Y>0.600654244</d14p1:Y>
+                            <d14p1:Z>0.456171066</d14p1:Z>
+                          </d13p1:LocalOrientation>
+                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:X>-0.00364286453</d14p1:X>
+                            <d14p1:Y>0.00818235</d14p1:Y>
+                            <d14p1:Z>-0.09767967</d14p1:Z>
+                          </d13p1:LocalPosition>
+                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
+                            <d14p1:X>0.99999994</d14p1:X>
+                            <d14p1:Y>0.9999998</d14p1:Y>
+                            <d14p1:Z>1.00000012</d14p1:Z>
+                          </d13p1:LocalScale>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>Material #3</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/Material #3.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
+                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Shines</ModelMeshName>
+                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1423,121 +1422,28 @@
                             <d14p1:W>-0.124485</d14p1:W>
                             <d14p1:X>0.03924987</d14p1:X>
                             <d14p1:Y>0.9455578</d14p1:Y>
-                            <d14p1:Z>-0.2981333</d14p1:Z>
+                            <d14p1:Z>-0.298133284</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-0.05769652</d14p1:X>
-                            <d14p1:Y>-0.145331144</d14p1:Y>
-                            <d14p1:Z>-0.243240237</d14p1:Z>
+                            <d14p1:X>-0.0175859183</d14p1:X>
+                            <d14p1:Y>-0.0442969352</d14p1:Y>
+                            <d14p1:Z>-0.0741396248</d14p1:Z>
                           </d13p1:LocalPosition>
                           <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.089302</d14p1:X>
+                            <d14p1:X>0.08930199</d14p1:X>
                             <d14p1:Y>0.0893020555</d14p1:Y>
                             <d14p1:Z>0.0893020555</d14p1:Z>
                           </d13p1:LocalScale>
                         </d12p1:Component>
+                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
+                          <d13p1:AsignedTo>Material #2</d13p1:AsignedTo>
+                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Models/Materials/Material #2.wmat</d13p1:MaterialPath>
+                          <d13p1:UseCopy>false</d13p1:UseCopy>
+                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
+                        </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
                           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Ring</ModelMeshName>
                           <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
-                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
-                          <d12p1:IsVisible>true</d12p1:IsVisible>
-                        </d12p1:Component>
-                      </d2p1:SerializeComponents>
-                    </d2p1:BaseEntityModel>
-                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-                      <d2p1:SerializeChildrens />
-                      <d2p1:isDisabled>false</d2p1:isDisabled>
-                      <d2p1:isStatic>false</d2p1:isStatic>
-                      <d2p1:isVisible>true</d2p1:isVisible>
-                      <d2p1:name>Windows</d2p1:name>
-                      <d2p1:tag i:nil="true" />
-                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
-                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>1.84122229E-07</d14p1:W>
-                            <d14p1:X>0.04361938</d14p1:X>
-                            <d14p1:Y>0.999048233</d14p1:Y>
-                            <d14p1:Z>-2.73368471E-07</d14p1:Z>
-                          </d13p1:LocalOrientation>
-                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.004366681</d14p1:X>
-                            <d14p1:Y>0.03053236</d14p1:Y>
-                            <d14p1:Z>-0.067494154</d14p1:Z>
-                          </d13p1:LocalPosition>
-                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.08930213</d14p1:X>
-                            <d14p1:Y>0.08930213</d14p1:Y>
-                            <d14p1:Z>0.08930204</d14p1:Z>
-                          </d13p1:LocalScale>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:FileMesh">
-                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Windows</ModelMeshName>
-                          <d13p1:ModelPath>Content/Assets/MotionControllers/Models/RightController.fbx.wpk</d13p1:ModelPath>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>M0_0_0_0</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/RightCtrMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
-                          <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
-                          <d12p1:IsVisible>true</d12p1:IsVisible>
-                        </d12p1:Component>
-                      </d2p1:SerializeComponents>
-                    </d2p1:BaseEntityModel>
-                    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-                      <d2p1:SerializeChildrens />
-                      <d2p1:isDisabled>false</d2p1:isDisabled>
-                      <d2p1:isStatic>false</d2p1:isStatic>
-                      <d2p1:isVisible>false</d2p1:isVisible>
-                      <d2p1:name>Gaze</d2p1:name>
-                      <d2p1:tag i:nil="true" />
-                      <d2p1:SerializeComponents xmlns:d12p1="WaveEngine.Framework">
-                        <d12p1:Component xmlns:d13p1="WaveEngine.Framework.Graphics" i:type="d13p1:Transform3D">
-                          <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:W>0.7071068</d14p1:W>
-                            <d14p1:X>0.7071067</d14p1:X>
-                            <d14p1:Y>0</d14p1:Y>
-                            <d14p1:Z>0</d14p1:Z>
-                          </d13p1:LocalOrientation>
-                          <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>-4.59949752E-06</d14p1:X>
-                            <d14p1:Y>0</d14p1:Y>
-                            <d14p1:Z>-2</d14p1:Z>
-                          </d13p1:LocalPosition>
-                          <d13p1:LocalScale xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0.1</d14p1:X>
-                            <d14p1:Y>0.1</d14p1:Y>
-                            <d14p1:Z>0.1</d14p1:Z>
-                          </d13p1:LocalScale>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:MaterialComponent">
-                          <d13p1:AsignedTo>Default</d13p1:AsignedTo>
-                          <d13p1:MaterialPath>Content/Assets/MotionControllers/Materials/gazeMat.wmat</d13p1:MaterialPath>
-                          <d13p1:UseCopy>false</d13p1:UseCopy>
-                          <d13p1:useDummyMaterial>false</d13p1:useDummyMaterial>
-                        </d12p1:Component>
-                        <d12p1:Component xmlns:d13p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d13p1:PlaneMesh">
-                          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
-                          <d13p1:Height>1</d13p1:Height>
-                          <d13p1:Normal xmlns:d14p1="WaveEngine.Common.Math">
-                            <d14p1:X>0</d14p1:X>
-                            <d14p1:Y>1</d14p1:Y>
-                            <d14p1:Z>0</d14p1:Z>
-                          </d13p1:Normal>
-                          <d13p1:TwoSides>false</d13p1:TwoSides>
-                          <d13p1:UVHorizontalFlip>false</d13p1:UVHorizontalFlip>
-                          <d13p1:UVVerticalFlip>false</d13p1:UVVerticalFlip>
-                          <d13p1:Width>1</d13p1:Width>
                         </d12p1:Component>
                         <d12p1:Component xmlns:d13p1="WaveEngine.Components.Graphics3D" i:type="d13p1:MeshRenderer">
                           <d12p1:FrustumCullingEnabled>true</d12p1:FrustumCullingEnabled>
@@ -1565,9 +1471,9 @@
                         <d12p1:Z>0</d12p1:Z>
                       </d11p1:LocalPosition>
                       <d11p1:LocalScale xmlns:d12p1="WaveEngine.Common.Math">
-                        <d12p1:X>0.3</d12p1:X>
-                        <d12p1:Y>0.3</d12p1:Y>
-                        <d12p1:Z>0.3</d12p1:Z>
+                        <d12p1:X>1</d12p1:X>
+                        <d12p1:Y>1</d12p1:Y>
+                        <d12p1:Z>1</d12p1:Z>
                       </d11p1:LocalScale>
                     </d10p1:Component>
                     <d10p1:Component xmlns:d11p1="http://schemas.datacontract.org/2004/07/MixedRealitySample.Behaviors" i:type="d11p1:ControllerBehavior">
@@ -1668,9 +1574,9 @@
           <d5p1:Monoscopic>false</d5p1:Monoscopic>
           <d5p1:backgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
-            <d6p1:B>78</d6p1:B>
-            <d6p1:G>78</d6p1:G>
-            <d6p1:R>78</d6p1:R>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
           </d5p1:backgroundColor>
           <d5p1:clearFlags>All</d5p1:clearFlags>
           <d5p1:farPlane>500</d5p1:farPlane>
@@ -1720,8 +1626,10 @@
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:CubeMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
               <d7p1:Size>1</d7p1:Size>
+              <d7p1:UTile>1</d7p1:UTile>
               <d7p1:UVHorizontalFlip>false</d7p1:UVHorizontalFlip>
               <d7p1:UVVerticalFlip>false</d7p1:UVVerticalFlip>
+              <d7p1:YTile>1</d7p1:YTile>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
@@ -1839,8 +1747,10 @@
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:CubeMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
               <d7p1:Size>1</d7p1:Size>
+              <d7p1:UTile>1</d7p1:UTile>
               <d7p1:UVHorizontalFlip>false</d7p1:UVHorizontalFlip>
               <d7p1:UVVerticalFlip>false</d7p1:UVVerticalFlip>
+              <d7p1:YTile>1</d7p1:YTile>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
@@ -1921,6 +1831,48 @@
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>light</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>2.23445</d6p1:X>
+            <d6p1:Y>-0.0510168262</d6p1:Y>
+            <d6p1:Z>2.33067179</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightProperties">
+          <d5p1:Color xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:Color>
+          <d5p1:Intensity>1</d5p1:Intensity>
+          <d5p1:isLightDisabled>false</d5p1:isLightDisabled>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:DirectionalLightRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
   </Entities>
   <EntityPointers xmlns:d2p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Entities" />
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -1948,811 +1900,6 @@
             <d6p1:Y>-9.8</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:Gravity3D>
-        </d3p1:Value>
-      </d3p1:KeyValueOfstringanyType>
-      <d3p1:KeyValueOfstringanyType>
-        <d3p1:Key>Render Layers</d3p1:Key>
-        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:SceneRenderLayerData">
-          <d5p1:RenderLayers xmlns:d6p1="WaveEngine.Framework.Graphics.Layer">
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>0</d6p1:Id>
-              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
-              <d6p1:Name>Opaque</d6p1:Name>
-              <d6p1:blendMode>Opaque</d6p1:blendMode>
-              <d6p1:depthStencilMode>Write</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>CullBack</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>true</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>Back</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0.999</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>1</d6p1:Id>
-              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
-              <d6p1:Name>Skybox</d6p1:Name>
-              <d6p1:blendMode>Opaque</d6p1:blendMode>
-              <d6p1:depthStencilMode>Write</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>CullFront</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0.999</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>true</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>Front</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>2</d6p1:Id>
-              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
-              <d6p1:Name>Alpha</d6p1:Name>
-              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
-              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>None</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>3</d6p1:Id>
-              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
-              <d6p1:Name>Additive</d6p1:Name>
-              <d6p1:blendMode>Additive</d6p1:blendMode>
-              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>One</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>One</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>None</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>4</d6p1:Id>
-              <d6p1:IsGUILayer>true</d6p1:IsGUILayer>
-              <d6p1:Name>GUI</d6p1:Name>
-              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
-              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>None</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-            <d6p1:RenderLayerDescription>
-              <d6p1:DepthRange xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                <d8p1:MinDepth>0</d8p1:MinDepth>
-              </d6p1:DepthRange>
-              <d6p1:Id>5</d6p1:Id>
-              <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
-              <d6p1:Name>Debug</d6p1:Name>
-              <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
-              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
-              <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
-              <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:BlendState>
-                  <d8p1:AlphaToCoverageEnable>false</d8p1:AlphaToCoverageEnable>
-                  <d8p1:IndependentBlendEnable>false</d8p1:IndependentBlendEnable>
-                  <d8p1:RenderTarget0>
-                    <d8p1:BlendEnable>true</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>InverseSourceAlpha</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget0>
-                  <d8p1:RenderTarget1>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget1>
-                  <d8p1:RenderTarget2>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget2>
-                  <d8p1:RenderTarget3>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget3>
-                  <d8p1:RenderTarget4>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget4>
-                  <d8p1:RenderTarget5>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget5>
-                  <d8p1:RenderTarget6>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget6>
-                  <d8p1:RenderTarget7>
-                    <d8p1:BlendEnable>false</d8p1:BlendEnable>
-                    <d8p1:BlendOperationAlpha>Add</d8p1:BlendOperationAlpha>
-                    <d8p1:BlendOperationColor>Add</d8p1:BlendOperationColor>
-                    <d8p1:ColorWriteChannels>All</d8p1:ColorWriteChannels>
-                    <d8p1:DestinationBlendAlpha>Zero</d8p1:DestinationBlendAlpha>
-                    <d8p1:DestinationBlendColor>Zero</d8p1:DestinationBlendColor>
-                    <d8p1:SourceBlendAlpha>One</d8p1:SourceBlendAlpha>
-                    <d8p1:SourceBlendColor>One</d8p1:SourceBlendColor>
-                  </d8p1:RenderTarget7>
-                </d8p1:BlendState>
-                <d8p1:DepthRange>
-                  <d8p1:MaxDepth>1</d8p1:MaxDepth>
-                  <d8p1:MinDepth>0</d8p1:MinDepth>
-                </d8p1:DepthRange>
-                <d8p1:DepthStencilState>
-                  <d8p1:BackFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:BackFace>
-                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
-                  <d8p1:DepthFunction>Less</d8p1:DepthFunction>
-                  <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
-                  <d8p1:FrontFace>
-                    <d8p1:StencilDepthFailOperation>Keep</d8p1:StencilDepthFailOperation>
-                    <d8p1:StencilFailOperation>Keep</d8p1:StencilFailOperation>
-                    <d8p1:StencilFunction>Always</d8p1:StencilFunction>
-                    <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
-                  </d8p1:FrontFace>
-                  <d8p1:StencilEnable>false</d8p1:StencilEnable>
-                  <d8p1:StencilReadMask>255</d8p1:StencilReadMask>
-                  <d8p1:StencilWriteMask>255</d8p1:StencilWriteMask>
-                </d8p1:DepthStencilState>
-                <d8p1:RasterizerState>
-                  <d8p1:AntialiasedLineEnable>false</d8p1:AntialiasedLineEnable>
-                  <d8p1:CullMode>None</d8p1:CullMode>
-                  <d8p1:DepthBias>0</d8p1:DepthBias>
-                  <d8p1:DepthBiasClamp>0</d8p1:DepthBiasClamp>
-                  <d8p1:DepthClipEnable>true</d8p1:DepthClipEnable>
-                  <d8p1:FillMode>Solid</d8p1:FillMode>
-                  <d8p1:FrontCounterClockwise>false</d8p1:FrontCounterClockwise>
-                  <d8p1:MultisampleEnable>false</d8p1:MultisampleEnable>
-                  <d8p1:SlopeScaledDepthBias>0</d8p1:SlopeScaledDepthBias>
-                </d8p1:RasterizerState>
-              </d6p1:renderState>
-            </d6p1:RenderLayerDescription>
-          </d5p1:RenderLayers>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

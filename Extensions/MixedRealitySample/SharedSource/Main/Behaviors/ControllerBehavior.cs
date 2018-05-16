@@ -71,7 +71,7 @@ namespace MixedRealitySample.Behaviors
             }
 
             this.collisions.Clear();
-            this.Owner.Scene.PhysicsManager.Simulation3D.RayCastAll(ref ray, this.collisions);
+            this.Owner.Scene.PhysicsManager.Simulation3D.RayCastAll(ref ray, 10, this.collisions);
             if (this.collisions != null && this.collisions.Count > 0)
             {
                 HitResult3D result = this.NearestCollider(ref ray.Position, this.collisions);
