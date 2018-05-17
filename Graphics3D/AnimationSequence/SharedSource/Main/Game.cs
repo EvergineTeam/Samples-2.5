@@ -13,6 +13,8 @@ namespace AnimationSequence
         public override void Initialize(IApplication application)
         {
             base.Initialize(application);
+            
+            this.Load(WaveContent.GameInfo);
 
 			ScreenContext screenContext = new ScreenContext(new Scene2());	
 			WaveServices.ScreenContextManager.To(screenContext);

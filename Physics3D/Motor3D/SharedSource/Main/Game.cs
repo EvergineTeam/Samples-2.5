@@ -14,6 +14,7 @@ namespace Motor3D
         {
             base.Initialize(application);
 
+            this.Load(WaveContent.GameInfo);
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
