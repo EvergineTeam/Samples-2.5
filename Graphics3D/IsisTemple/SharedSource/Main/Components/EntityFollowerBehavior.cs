@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
@@ -25,6 +26,7 @@ namespace IsisTemple.Components
         #endregion
 
         [DataMember]
+        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Graphics.Transform3D" }, CustomPropertyName = "Follow Entity", Tooltip = "The target entity")]
         public string FollowEntityPath
         {
             get
@@ -66,10 +68,9 @@ namespace IsisTemple.Components
             if (this.followEntity == null && !string.IsNullOrEmpty(this.followEntityPath))
             {
                 this.followEntity = EntityManager.Find(this.followEntityPath);
+                var followTransform = followEntity.FindComponent<Transform3D>();
+                this.positionOffset = this.transform.Position - followTransform.Position;
             }
-
-            var followTransform = followEntity.FindComponent<Transform3D>();
-            this.positionOffset = this.transform.Position - followTransform.Position;
         }
 
         protected override void Update(TimeSpan gameTime)
