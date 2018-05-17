@@ -1,5 +1,5 @@
 ﻿<GameInfoModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>6d638afa-1e21-454f-aac1-757313ad9778</Id>
+  <Id>6c931251-0c27-4f97-bf11-ab8c914475b3</Id>
   <GameSettings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
     <d2p1:Categories xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
       <d3p1:KeyValueOfstringanyType>
@@ -553,7 +553,7 @@
               <d6p1:IsGUILayer>true</d6p1:IsGUILayer>
               <d6p1:Name>GUI</d6p1:Name>
               <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
-              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
+              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
               <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
               <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:BlendState>
@@ -651,7 +651,7 @@
                     <d8p1:StencilFunction>Always</d8p1:StencilFunction>
                     <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
                   </d8p1:BackFace>
-                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
                   <d8p1:DepthFunction>Less</d8p1:DepthFunction>
                   <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
                   <d8p1:FrontFace>
@@ -686,7 +686,7 @@
               <d6p1:IsGUILayer>false</d6p1:IsGUILayer>
               <d6p1:Name>Debug</d6p1:Name>
               <d6p1:blendMode>AlphaBlend</d6p1:blendMode>
-              <d6p1:depthStencilMode>None</d6p1:depthStencilMode>
+              <d6p1:depthStencilMode>Read</d6p1:depthStencilMode>
               <d6p1:rasterizeMode>None</d6p1:rasterizeMode>
               <d6p1:renderState xmlns:d8p1="WaveEngine.Common.Graphics">
                 <d8p1:BlendState>
@@ -784,7 +784,7 @@
                     <d8p1:StencilFunction>Always</d8p1:StencilFunction>
                     <d8p1:StencilPassOperation>Keep</d8p1:StencilPassOperation>
                   </d8p1:BackFace>
-                  <d8p1:DepthEnable>false</d8p1:DepthEnable>
+                  <d8p1:DepthEnable>true</d8p1:DepthEnable>
                   <d8p1:DepthFunction>Less</d8p1:DepthFunction>
                   <d8p1:DepthWriteMask>false</d8p1:DepthWriteMask>
                   <d8p1:FrontFace>
