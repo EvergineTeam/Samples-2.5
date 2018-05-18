@@ -61,8 +61,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>-1.02072562E-07</d6p1:X>
-            <d6p1:Y>1.2</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
+            <d6p1:Y>2</d6p1:Y>
+            <d6p1:Z>2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -240,7 +240,7 @@
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:PlaneMesh">
           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
-          <d5p1:Height>1</d5p1:Height>
+          <d5p1:Height>2</d5p1:Height>
           <d5p1:Normal xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
@@ -250,7 +250,7 @@
           <d5p1:UTile>1</d5p1:UTile>
           <d5p1:UVHorizontalFlip>false</d5p1:UVHorizontalFlip>
           <d5p1:UVVerticalFlip>false</d5p1:UVVerticalFlip>
-          <d5p1:Width>1</d5p1:Width>
+          <d5p1:Width>2</d5p1:Width>
           <d5p1:YTile>1</d5p1:YTile>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
@@ -281,15 +281,15 @@
                               <d2p1:SerializeComponents xmlns:d16p1="WaveEngine.Framework">
                                 <d16p1:Component xmlns:d17p1="WaveEngine.Framework.Graphics" i:type="d17p1:Transform3D">
                                   <d17p1:LocalOrientation xmlns:d18p1="WaveEngine.Common.Math">
-                                    <d18p1:W>1</d18p1:W>
-                                    <d18p1:X>0</d18p1:X>
-                                    <d18p1:Y>0</d18p1:Y>
-                                    <d18p1:Z>-1.49011612E-08</d18p1:Z>
+                                    <d18p1:W>0.9887215</d18p1:W>
+                                    <d18p1:X>-0.0342881568</d18p1:X>
+                                    <d18p1:Y>0.132202834</d18p1:Y>
+                                    <d18p1:Z>0.0614927821</d18p1:Z>
                                   </d17p1:LocalOrientation>
                                   <d17p1:LocalPosition xmlns:d18p1="WaveEngine.Common.Math">
-                                    <d18p1:X>-0.00168768072</d18p1:X>
-                                    <d18p1:Y>0.0141399791</d18p1:Y>
-                                    <d18p1:Z>-0.0314401</d18p1:Z>
+                                    <d18p1:X>6.541089E-05</d18p1:X>
+                                    <d18p1:Y>0.0145077528</d18p1:Y>
+                                    <d18p1:Z>-0.0319611542</d18p1:Z>
                                   </d17p1:LocalPosition>
                                   <d17p1:LocalScale xmlns:d18p1="WaveEngine.Common.Math">
                                     <d18p1:X>0.1</d18p1:X>
@@ -316,7 +316,7 @@
                                   <d16p1:IsVisible>true</d16p1:IsVisible>
                                 </d16p1:Component>
                                 <d16p1:Component xmlns:d17p1="http://schemas.datacontract.org/2004/07/AnimationSequence.Animations" i:type="d17p1:AnimationJoint">
-                                  <d17p1:Joint>Box</d17p1:Joint>
+                                  <d17p1:Joint>HandedBox</d17p1:Joint>
                                 </d16p1:Component>
                               </d2p1:SerializeComponents>
                             </d2p1:BaseEntityModel>
@@ -330,9 +330,9 @@
                             <d14p1:Component xmlns:d15p1="WaveEngine.Framework.Graphics" i:type="d15p1:Transform3D">
                               <d15p1:LocalOrientation xmlns:d16p1="WaveEngine.Common.Math">
                                 <d16p1:W>1</d16p1:W>
-                                <d16p1:X>0</d16p1:X>
-                                <d16p1:Y>0</d16p1:Y>
-                                <d16p1:Z>1.49011612E-08</d16p1:Z>
+                                <d16p1:X>3.271295E-23</d16p1:X>
+                                <d16p1:Y>2.19534126E-15</d16p1:Y>
+                                <d16p1:Z>1.49010777E-08</d16p1:Z>
                               </d15p1:LocalOrientation>
                               <d15p1:LocalPosition xmlns:d16p1="WaveEngine.Common.Math">
                                 <d16p1:X>-0.000244593015</d16p1:X>
@@ -387,8 +387,8 @@
                           <d13p1:LocalOrientation xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:W>1</d14p1:W>
                             <d14p1:X>0</d14p1:X>
-                            <d14p1:Y>-1.54074414E-33</d14p1:Y>
-                            <d14p1:Z>0</d14p1:Z>
+                            <d14p1:Y>-1.627726E-33</d14p1:Y>
+                            <d14p1:Z>-5.249713E-34</d14p1:Z>
                           </d13p1:LocalOrientation>
                           <d13p1:LocalPosition xmlns:d14p1="WaveEngine.Common.Math">
                             <d14p1:X>1.20928134E-05</d14p1:X>
@@ -441,10 +441,10 @@
                   <d2p1:SerializeComponents xmlns:d10p1="WaveEngine.Framework">
                     <d10p1:Component xmlns:d11p1="WaveEngine.Framework.Graphics" i:type="d11p1:Transform3D">
                       <d11p1:LocalOrientation xmlns:d12p1="WaveEngine.Common.Math">
-                        <d12p1:W>0.9848078</d12p1:W>
-                        <d12p1:X>-5.8017982E-33</d12p1:X>
-                        <d12p1:Y>2.58752553E-33</d12p1:Y>
-                        <d12p1:Z>-0.173648134</d12p1:Z>
+                        <d12p1:W>1</d12p1:W>
+                        <d12p1:X>0</d12p1:X>
+                        <d12p1:Y>-2.5680265E-08</d12p1:Y>
+                        <d12p1:Z>0</d12p1:Z>
                       </d11p1:LocalOrientation>
                       <d11p1:LocalPosition xmlns:d12p1="WaveEngine.Common.Math">
                         <d12p1:X>0.0003216301</d12p1:X>
@@ -600,7 +600,7 @@
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>-0</d6p1:Z>
+            <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -645,9 +645,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.309193045</d6p1:X>
+            <d6p1:X>-0.1596832</d6p1:X>
             <d6p1:Y>0.065479584</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Z>0.593493</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>

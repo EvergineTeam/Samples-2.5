@@ -23,11 +23,11 @@
               <Platform>MacOS</Platform>
             </Profile>
             <Profile>
-              <AlphaCompressionFormat>PVRTC4BPP</AlphaCompressionFormat>
+              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType>Default</LauncherType>
-              <Name>iOS</Name>
-              <NonAlphaCompressionFormat>PVRTC4BPP</NonAlphaCompressionFormat>
-              <Platform>iOS</Platform>
+              <Name>LinuxProfile</Name>
+              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
+              <Platform>Linux</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
