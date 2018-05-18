@@ -1,16 +1,17 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 using WaveEngine.Common.Attributes;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AnimationSequence")]
-[assembly: AssemblyProduct("AnimationSequence")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -26,7 +27,7 @@ using WaveEngine.Common.Attributes;
 // On Windows, the following GUID is for the ID of the typelib if this
 // project is exposed to COM. On other platforms, it unique identifies the
 // title storage container when deploying this assembly to the device.
-[assembly: Guid("6e16bf7a-b58e-47dc-b233-a0c2e87ba3bb")]
+[assembly: Guid("55baf08c-fe64-42af-8ae6-f7c45098f4e1")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,3 +37,4 @@ using WaveEngine.Common.Attributes;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguageAttribute("en-US")]

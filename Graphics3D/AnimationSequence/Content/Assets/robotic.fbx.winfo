@@ -1,5 +1,5 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>980b3884-e762-40d4-9843-f9702911fba4</Id>
+  <Id>a19f5d5e-3300-4998-80e0-36ffe35457dd</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
     <d2p1:AssociatedFiles xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
@@ -25,9 +25,9 @@
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>255</d5p1:B>
-          <d5p1:G>255</d5p1:G>
-          <d5p1:R>255</d5p1:R>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>53</d5p1:G>
+          <d5p1:R>254</d5p1:R>
         </d2p1:DiffuseColor>
         <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
@@ -58,9 +58,9 @@
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>255</d5p1:B>
-          <d5p1:G>255</d5p1:G>
-          <d5p1:R>255</d5p1:R>
+          <d5p1:B>150</d5p1:B>
+          <d5p1:G>150</d5p1:G>
+          <d5p1:R>150</d5p1:R>
         </d2p1:DiffuseColor>
         <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
@@ -91,9 +91,9 @@
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>255</d5p1:B>
-          <d5p1:G>255</d5p1:G>
-          <d5p1:R>255</d5p1:R>
+          <d5p1:B>40</d5p1:B>
+          <d5p1:G>40</d5p1:G>
+          <d5p1:R>40</d5p1:R>
         </d2p1:DiffuseColor>
         <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
