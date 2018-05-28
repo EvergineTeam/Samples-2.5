@@ -1,6 +1,5 @@
 #region Using Statements
 using System;
-using System.Linq;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
@@ -9,11 +8,8 @@ using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Models;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
-using WaveEngine.NoesisGUI;
-using static NoesisWPF.MainHUD;
 #endregion
 
 namespace NoesisSample
@@ -23,10 +19,6 @@ namespace NoesisSample
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
-
-            this.RenderManager.RegisterLayerBefore(new StarsLayer(this.RenderManager), DefaultLayers.Alpha);
-
-            this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Materials.Stars).Material.LayerType = typeof(StarsLayer);
 
             // Remove the camera components  of all the path cameras
             var pathCameras = this.EntityManager.FindAllByTag("PathCamera");
