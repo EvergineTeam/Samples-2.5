@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedModel", "Launchers\LinuxProfile\AnimatedModel.csproj", "{D5CB11BC-0227-42AF-BE20-306B5744F50C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AnimatedModelSource", "SharedSource\Main\AnimatedModelSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedSource\Main\AnimatedModelSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
+		SharedSource\Main\AnimatedModelSource.projitems*{d5cb11bc-0227-42af-be20-306b5744f50c}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|x86.ActiveCfg = Debug|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Debug|x86.Build.0 = Debug|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|x86.ActiveCfg = Release|x86
+		{D5CB11BC-0227-42AF-BE20-306B5744F50C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal

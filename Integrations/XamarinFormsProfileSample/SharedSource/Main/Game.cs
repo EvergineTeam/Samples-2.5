@@ -16,6 +16,7 @@ namespace XamarinFormsProfileSample
 
             base.Initialize(application);
 
+            this.Load(WaveContent.GameInfo);
             _scene = new MyScene();
             _scene.Started += OnStarted;
 

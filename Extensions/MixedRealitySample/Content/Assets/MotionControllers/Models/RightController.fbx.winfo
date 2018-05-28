@@ -1,35 +1,35 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>5bbdbff6-199b-404e-af32-6470a7654039</Id>
+  <Id>29e958e8-ff91-49b4-a16f-c33b7c79de68</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Model">
+    <d2p1:AssociatedFiles xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:ModelProfile">
+        <d3p1:ExcludeAsset>false</d3p1:ExcludeAsset>
         <d3p1:Name i:nil="true" />
-        <d3p1:FullBoneWeights>true</d3p1:FullBoneWeights>
       </d3p1:ExportProfile>
     </d2p1:Profiles>
     <d2p1:ZipCompress>true</d2p1:ZipCompress>
-    <d2p1:Animations xmlns:d3p1="WaveEngine.Framework.Models.Profiles" />
+    <d2p1:Clips xmlns:d3p1="WaveEngine.Framework.Models.Profiles" />
+    <d2p1:EmbeddedResources xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <d2p1:ExportAnimations>false</d2p1:ExportAnimations>
-    <d2p1:FramesPerSecond>0</d2p1:FramesPerSecond>
     <d2p1:GenerateTangentSpace>true</d2p1:GenerateTangentSpace>
-    <d2p1:IsAnimated>false</d2p1:IsAnimated>
     <d2p1:Materials>
       <d2p1:Material>
         <d2p1:AmbientColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>195</d5p1:B>
-          <d5p1:G>195</d5p1:G>
-          <d5p1:R>195</d5p1:R>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
         </d2p1:AmbientColor>
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>195</d5p1:B>
-          <d5p1:G>195</d5p1:G>
-          <d5p1:R>195</d5p1:R>
+          <d5p1:B>255</d5p1:B>
+          <d5p1:G>255</d5p1:G>
+          <d5p1:R>255</d5p1:R>
         </d2p1:DiffuseColor>
-        <d2p1:DiffuseTextureFile>..\..\..\Tmp\GLTF\M0_0_0_0.png</d2p1:DiffuseTextureFile>
+        <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
           <d5p1:B>0</d5p1:B>
@@ -38,30 +38,31 @@
         </d2p1:EmissiveColor>
         <d2p1:EmissiveTextureFile i:nil="true" />
         <d2p1:Name>M0_0_0_0</d2p1:Name>
+        <d2p1:NormalTextureFile i:nil="true" />
         <d2p1:Opacity>1</d2p1:Opacity>
         <d2p1:SpecularColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>84</d5p1:B>
-          <d5p1:G>84</d5p1:G>
-          <d5p1:R>84</d5p1:R>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
         </d2p1:SpecularColor>
         <d2p1:SpecularTextureFile i:nil="true" />
       </d2p1:Material>
       <d2p1:Material>
         <d2p1:AmbientColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>150</d5p1:B>
-          <d5p1:G>150</d5p1:G>
-          <d5p1:R>150</d5p1:R>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
         </d2p1:AmbientColor>
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>150</d5p1:B>
-          <d5p1:G>150</d5p1:G>
-          <d5p1:R>150</d5p1:R>
+          <d5p1:B>255</d5p1:B>
+          <d5p1:G>255</d5p1:G>
+          <d5p1:R>255</d5p1:R>
         </d2p1:DiffuseColor>
-        <d2p1:DiffuseTextureFile>..\..\HoloPortation\dev\DemoTechSummit\Content\Assets\Textures\star.png</d2p1:DiffuseTextureFile>
+        <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
           <d5p1:B>0</d5p1:B>
@@ -70,6 +71,7 @@
         </d2p1:EmissiveColor>
         <d2p1:EmissiveTextureFile i:nil="true" />
         <d2p1:Name>Material #3</d2p1:Name>
+        <d2p1:NormalTextureFile i:nil="true" />
         <d2p1:Opacity>1</d2p1:Opacity>
         <d2p1:SpecularColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
@@ -82,18 +84,18 @@
       <d2p1:Material>
         <d2p1:AmbientColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>150</d5p1:B>
-          <d5p1:G>150</d5p1:G>
-          <d5p1:R>150</d5p1:R>
+          <d5p1:B>0</d5p1:B>
+          <d5p1:G>0</d5p1:G>
+          <d5p1:R>0</d5p1:R>
         </d2p1:AmbientColor>
         <d2p1:AmbientTextureFile i:nil="true" />
         <d2p1:DiffuseColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
-          <d5p1:B>150</d5p1:B>
-          <d5p1:G>150</d5p1:G>
-          <d5p1:R>150</d5p1:R>
+          <d5p1:B>255</d5p1:B>
+          <d5p1:G>255</d5p1:G>
+          <d5p1:R>255</d5p1:R>
         </d2p1:DiffuseColor>
-        <d2p1:DiffuseTextureFile>..\Microsoft.Connect17.MixedReality\src\Content\Assets\MotionControllers\Textures\EmissiveMat.png</d2p1:DiffuseTextureFile>
+        <d2p1:DiffuseTextureFile i:nil="true" />
         <d2p1:EmissiveColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
           <d5p1:B>0</d5p1:B>
@@ -102,6 +104,7 @@
         </d2p1:EmissiveColor>
         <d2p1:EmissiveTextureFile i:nil="true" />
         <d2p1:Name>Material #2</d2p1:Name>
+        <d2p1:NormalTextureFile i:nil="true" />
         <d2p1:Opacity>1</d2p1:Opacity>
         <d2p1:SpecularColor xmlns:d5p1="WaveEngine.Common.Graphics">
           <d5p1:A>255</d5p1:A>
@@ -112,288 +115,75 @@
         <d2p1:SpecularTextureFile i:nil="true" />
       </d2p1:Material>
     </d2p1:Materials>
-    <d2p1:Nodes>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08930204</d7p1:M11>
-              <d7p1:M12>-1.52008522E-15</d7p1:M12>
-              <d7p1:M13>-3.47754963E-08</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>5.665648E-15</d7p1:M21>
-              <d7p1:M22>0.08930204</d7p1:M22>
-              <d7p1:M23>-1.84526669E-08</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>3.47754963E-08</d7p1:M31>
-              <d7p1:M32>-1.84526669E-08</d7p1:M32>
-              <d7p1:M33>-0.08930204</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>0</d7p1:M41>
-              <d7p1:M42>0</d7p1:M42>
-              <d7p1:M43>0</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>3218</d2p1:NumFaces>
-            <d2p1:NumVertices>2015</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+    <d2p1:Meshes>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Controller</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.0872506946</d7p1:M11>
-              <d7p1:M12>0.0127026914</d7p1:M12>
-              <d7p1:M13>0.0141704706</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>0.0019230179</d7p1:M21>
-              <d7p1:M22>0.0720406249</d7p1:M22>
-              <d7p1:M23>-0.0527382</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>-0.0189331342</d7p1:M31>
-              <d7p1:M32>-0.0512216426</d7p1:M32>
-              <d7p1:M33>-0.07065936</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.00130546093</d7p1:M41>
-              <d7p1:M42>0.00147235394</d7p1:M42>
-              <d7p1:M43>-0.155369312</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>224</d2p1:NumFaces>
-            <d2p1:NumVertices>129</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>3218</d2p1:NumFaces>
+        <d2p1:NumVertices>1991</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Touchpad</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08930204</d7p1:M11>
-              <d7p1:M12>-1.52008522E-15</d7p1:M12>
-              <d7p1:M13>-3.47754963E-08</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>5.665648E-15</d7p1:M21>
-              <d7p1:M22>0.08930204</d7p1:M22>
-              <d7p1:M23>-1.84526669E-08</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>3.47754963E-08</d7p1:M31>
-              <d7p1:M32>-1.84526669E-08</d7p1:M32>
-              <d7p1:M33>-0.08930204</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.0116950274</d7p1:M41>
-              <d7p1:M42>-0.0695641041</d7p1:M42>
-              <d7p1:M43>-0.192194343</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>226</d2p1:NumFaces>
-            <d2p1:NumVertices>137</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>224</d2p1:NumFaces>
+        <d2p1:NumVertices>129</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Trigger</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08625921</d7p1:M11>
-              <d7p1:M12>0.0148568088</d7p1:M12>
-              <d7p1:M13>0.0177056268</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>2.12912781E-08</d7p1:M21>
-              <d7p1:M22>0.06840938</d7p1:M22>
-              <d7p1:M23>-0.05740227</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>-0.0231130589</d7p1:M31>
-              <d7p1:M32>-0.05544632</d7p1:M32>
-              <d7p1:M33>-0.06607837</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.0535831451</d7p1:M41>
-              <d7p1:M42>0.0310812</d7p1:M42>
-              <d7p1:M43>-0.111546651</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>160</d2p1:NumFaces>
-            <d2p1:NumVertices>99</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>226</d2p1:NumFaces>
+        <d2p1:NumVertices>137</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Menu</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08930204</d7p1:M11>
-              <d7p1:M12>-1.52008522E-15</d7p1:M12>
-              <d7p1:M13>-3.47754963E-08</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>5.665648E-15</d7p1:M21>
-              <d7p1:M22>0.08930204</d7p1:M22>
-              <d7p1:M23>-1.84526669E-08</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>3.47754963E-08</d7p1:M31>
-              <d7p1:M32>-1.84526669E-08</d7p1:M32>
-              <d7p1:M33>-0.08930204</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.0290491581</d7p1:M41>
-              <d7p1:M42>-0.03345999</d7p1:M42>
-              <d7p1:M43>-0.00160127878</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>258</d2p1:NumFaces>
-            <d2p1:NumVertices>149</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>160</d2p1:NumFaces>
+        <d2p1:NumVertices>97</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Grab</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08625921</d7p1:M11>
-              <d7p1:M12>0.0148568088</d7p1:M12>
-              <d7p1:M13>0.0177056268</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>2.12912781E-08</d7p1:M21>
-              <d7p1:M22>0.06840938</d7p1:M22>
-              <d7p1:M23>-0.05740227</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>-0.0231130589</d7p1:M31>
-              <d7p1:M32>-0.05544632</d7p1:M32>
-              <d7p1:M33>-0.06607837</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.09995997</d7p1:M41>
-              <d7p1:M42>-0.0139340162</d7p1:M42>
-              <d7p1:M43>-0.110563666</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>864</d2p1:NumFaces>
-            <d2p1:NumVertices>537</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>258</d2p1:NumFaces>
+        <d2p1:NumVertices>149</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Thumbstick</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08896231</d7p1:M11>
-              <d7p1:M12>0.00778319174</d7p1:M12>
-              <d7p1:M13>-3.498342E-08</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>0.00778319174</d7p1:M21>
-              <d7p1:M22>0.08896231</d7p1:M22>
-              <d7p1:M23>-4.73438782E-08</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>3.07239745E-08</d7p1:M31>
-              <d7p1:M32>-5.02126731E-08</d7p1:M32>
-              <d7p1:M33>-0.08930204</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>0.00436663628</d7p1:M41>
-              <d7p1:M42>0.03053236</d7p1:M42>
-              <d7p1:M43>-0.067494154</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>224</d2p1:NumFaces>
-            <d2p1:NumVertices>137</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>864</d2p1:NumFaces>
+        <d2p1:NumVertices>515</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>0</d2p1:MaterialIndex>
         <d2p1:Name>Windows</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.137755275</d7p1:M11>
-              <d7p1:M12>-1.32701615E-07</d7p1:M12>
-              <d7p1:M13>-0.9904663</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>-0.9541204</d7p1:M21>
-              <d7p1:M22>0.268411845</d7p1:M22>
-              <d7p1:M23>0.1327002</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>0.2658529</d7p1:M31>
-              <d7p1:M32>0.9633043</d7p1:M32>
-              <d7p1:M33>-0.0369752757</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.0119516551</d7p1:M41>
-              <d7p1:M42>0.0268449783</d7p1:M42>
-              <d7p1:M43>-0.320471346</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>1</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>248</d2p1:NumFaces>
-            <d2p1:NumVertices>682</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>224</d2p1:NumFaces>
+        <d2p1:NumVertices>129</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>1</d2p1:MaterialIndex>
         <d2p1:Name>Shines</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
-      <d2p1:Node>
-        <d2p1:Children />
-        <d2p1:Meshes>
-          <d2p1:Mesh>
-            <d2p1:LocalTransform xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-              <d7p1:M11>-0.08625909</d7p1:M11>
-              <d7p1:M12>0.0132570844</d7p1:M12>
-              <d7p1:M13>0.0189331025</d7p1:M13>
-              <d7p1:M14>0</d7p1:M14>
-              <d7p1:M21>-1.99605648E-08</d7p1:M21>
-              <d7p1:M22>0.07315195</d7p1:M22>
-              <d7p1:M23>-0.05122157</d7p1:M23>
-              <d7p1:M24>0</d7p1:M24>
-              <d7p1:M31>-0.023113057</d7p1:M31>
-              <d7p1:M32>-0.0494762361</d7p1:M32>
-              <d7p1:M33>-0.0706593543</d7p1:M33>
-              <d7p1:M34>0</d7p1:M34>
-              <d7p1:M41>-0.05769658</d7p1:M41>
-              <d7p1:M42>-0.145331144</d7p1:M42>
-              <d7p1:M43>-0.243240237</d7p1:M43>
-              <d7p1:M44>1</d7p1:M44>
-            </d2p1:LocalTransform>
-            <d2p1:MaterialIndex>2</d2p1:MaterialIndex>
-            <d2p1:Name></d2p1:Name>
-            <d2p1:NumFaces>832</d2p1:NumFaces>
-            <d2p1:NumVertices>462</d2p1:NumVertices>
-          </d2p1:Mesh>
-        </d2p1:Meshes>
+        <d2p1:NumFaces>248</d2p1:NumFaces>
+        <d2p1:NumVertices>682</d2p1:NumVertices>
+      </d2p1:Mesh>
+      <d2p1:Mesh>
+        <d2p1:MaterialIndex>2</d2p1:MaterialIndex>
         <d2p1:Name>Ring</d2p1:Name>
-        <d2p1:Parent i:nil="true" />
-      </d2p1:Node>
+        <d2p1:NumFaces>832</d2p1:NumFaces>
+        <d2p1:NumVertices>462</d2p1:NumVertices>
+      </d2p1:Mesh>
+    </d2p1:Meshes>
+    <d2p1:Nodes xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <d3p1:string>RootNode</d3p1:string>
+      <d3p1:string>RootNode.Controller</d3p1:string>
+      <d3p1:string>RootNode.Touchpad</d3p1:string>
+      <d3p1:string>RootNode.Trigger</d3p1:string>
+      <d3p1:string>RootNode.Menu</d3p1:string>
+      <d3p1:string>RootNode.Grab</d3p1:string>
+      <d3p1:string>RootNode.Thumbstick</d3p1:string>
+      <d3p1:string>RootNode.Windows</d3p1:string>
+      <d3p1:string>RootNode.Shines</d3p1:string>
+      <d3p1:string>RootNode.Ring</d3p1:string>
     </d2p1:Nodes>
-    <d2p1:NumFrames>0</d2p1:NumFrames>
+    <d2p1:SourceAnimationTracks xmlns:d3p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Models.Profiles" />
     <d2p1:SwapWindingOrder>true</d2p1:SwapWindingOrder>
   </Asset>
   <Thumbnail i:nil="true" />

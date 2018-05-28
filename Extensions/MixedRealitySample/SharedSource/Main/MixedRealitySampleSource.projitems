@@ -13,34 +13,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\ControllerBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\ButtonComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\ButtonComponentBase.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Drawables\GPULineRenderer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Drawables\LineVertexInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Materials\LineMaterial.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Materials\LineVertexFormat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WaveContent.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Shaders\HLSL\Helpers.fxh" />
-    <None Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\CompileShaders.cmd" />
-    <None Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\LineMaterial.fx" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\psLineMaterial.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_APPEARING.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_APPEARING_NOISE.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_APPEARING_NOISE_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_APPEARING_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_APPEARING.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_APPEARING_NOISE.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_APPEARING_NOISE_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_APPEARING_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_NOISE.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_NOISE_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_BIAS_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_NOISE.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_NOISE_UVSHIFT.fxo" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Shaders\HLSL\LineMaterial\vsLineMaterial_UVSHIFT.fxo" />
   </ItemGroup>
 </Project>

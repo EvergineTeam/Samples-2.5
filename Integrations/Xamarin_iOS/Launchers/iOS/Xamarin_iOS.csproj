@@ -132,7 +132,6 @@
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
       <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
-      <HintPath>..\..\packages\WaveEngi2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
       <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>

@@ -14,7 +14,9 @@ namespace AnimationSequence
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new Scene2());	
+            this.Load(WaveContent.GameInfo);
+
+			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

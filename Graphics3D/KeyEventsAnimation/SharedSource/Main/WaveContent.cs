@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 27/03/2018 17:27:03
+// File generated on 5/17/2018 5:27:05 PM
 namespace KeyEventsAnimation
 {
     using System;
@@ -58,13 +58,6 @@ namespace KeyEventsAnimation
                 
                 /// <summary> Path to Content/Assets/Textures/isis_spec.png </summary>
                 public const string isis_spec_png = "Content/Assets/Textures/isis_spec.png";
-            }
-            
-            public sealed class Material
-            {
-                
-                /// <summary> Path to Content/Assets/Material/IsisMaterial.wmat </summary>
-                public const string IsisMaterial = "Content/Assets/Material/IsisMaterial.wmat";
             }
         }
         

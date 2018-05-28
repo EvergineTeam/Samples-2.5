@@ -7,9 +7,9 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using MixedRealitySample.Materials;
-using MixedRealitySample.Drawables;
 using WaveEngine.Common.Attributes;
+using WaveEngine.Components.Graphics3D;
+using WaveEngine.Components.Primitives;
 #endregion
 
 namespace MixedRealitySample.Behaviors
@@ -24,14 +24,9 @@ namespace MixedRealitySample.Behaviors
     public abstract class BaseControllerBehavior : Behavior
     {
         // Entities
-        protected Entity ring;
-        protected Entity trigger;
-        protected Entity grab;
-        protected Entity thumbstick;
-        protected Entity menu;
+        protected Entity gaze;
         protected Entity ray;
         protected Entity dot;
-        protected Entity gaze;
 
         // Components
         protected Transform3D triggerTransform;
@@ -39,8 +34,7 @@ namespace MixedRealitySample.Behaviors
         protected Transform3D grabTransform;
         protected Transform3D menuTransform;
         protected Transform3D rayTransform;
-        protected GPULineRenderer lineRenderer;
-        protected LineMaterial lineMaterial;
+        protected LineMesh lineMesh;
         protected Transform3D dotTransform;
         protected Transform3D gazeTransform;
         protected Transform3D cameraTransform;
@@ -49,7 +43,6 @@ namespace MixedRealitySample.Behaviors
         protected Vector3 initialThumbStickRotation;
         protected Vector3 initialGrabRotation;
         protected Vector3 initialMenuPosition;
-        protected List<LineVertexInfo> rayPoints;
         protected float lastTriggerValue;
         protected float rayThin;
         protected ControllerType type;
@@ -99,7 +92,7 @@ namespace MixedRealitySample.Behaviors
         {
             base.DefaultValues();
 
-            this.rayThin = 0.43f;
+            this.rayThin = 0.043f;
         }
 
         /// <summary>
@@ -111,34 +104,34 @@ namespace MixedRealitySample.Behaviors
 
             var current = this.Owner;
 
-            this.ring = this.Owner.FindChild("Ring");
-
             this.ray = this.Owner.FindChild("Ray");
             this.rayTransform = this.ray?.FindComponent<Transform3D>();
-            this.lineRenderer = new GPULineRenderer()
+            this.lineMesh = new LineMesh()
             {
-                WorldSpace = true,
+                UseWorldSpace = true,
+                TexturePath = WaveContent.Assets.MotionControllers.Textures.RayMat_png
             };
-            this.ray.AddComponent(this.lineRenderer);
+            this.ray.AddComponent(this.lineMesh)
+                    .AddComponent(new LineMeshRenderer3D() { LayerId = WaveContent.RenderLayers.Additive });
 
 
-            this.menu = this.Owner.FindChild("Menu");
-            this.menuTransform = this.menu.FindComponent<Transform3D>();
+            var menu = this.Owner.FindChild("Menu");
+            this.menuTransform = menu.FindComponent<Transform3D>();
             this.initialMenuPosition = this.menuTransform.LocalPosition;
 
             this.dot = this.Owner.Find("[this].Touchpad.Dot");
             this.dotTransform = this.dot?.FindComponent<Transform3D>();
 
-            this.thumbstick = this.Owner.FindChild("Thumbstick");
-            this.thumbstickTransform = this.thumbstick?.FindComponent<Transform3D>();
+            var thumbstick = this.Owner.FindChild("Thumbstick");
+            this.thumbstickTransform = thumbstick?.FindComponent<Transform3D>();
             this.initialThumbStickRotation = this.thumbstickTransform.LocalRotation;
 
-            this.grab = this.Owner.FindChild("Grab");
-            this.grabTransform = this.grab?.FindComponent<Transform3D>();
+            var grab = this.Owner.FindChild("Grab");
+            this.grabTransform = grab?.FindComponent<Transform3D>();
             this.initialGrabRotation = this.grabTransform.LocalRotation;
 
-            this.trigger = this.Owner.FindChild("Trigger");
-            this.triggerTransform = this.trigger?.FindComponent<Transform3D>();
+            var trigger = this.Owner.FindChild("Trigger");
+            this.triggerTransform = trigger?.FindComponent<Transform3D>();
 
             this.gaze = this.ray.FindChild("Gaze");
             this.gazeTransform = this.gaze?.FindComponent<Transform3D>();
@@ -154,38 +147,25 @@ namespace MixedRealitySample.Behaviors
         {
             base.Initialize();
 
-            // Points    
-            var pointInfo1 = new LineVertexInfo()
+            // Points
+            var pointInfo1 = new LinePointInfo()
             {
                 Position = Vector3.Zero,
-                Size = -this.ScaledRayThin,
+                Thickness = -this.ScaledRayThin,
                 Color = Color.White,
             };
 
-            var pointInfo2 = new LineVertexInfo()
+            var pointInfo2 = new LinePointInfo()
             {
                 Position = Vector3.UnitZ * 15,
-                Size = -this.ScaledRayThin,
+                Thickness = -this.ScaledRayThin,
                 Color = Color.White,
             };
-            this.rayPoints = new List<LineVertexInfo>();
-            this.rayPoints.Add(pointInfo1);
-            this.rayPoints.Add(pointInfo2);
-            this.lineRenderer.SetLineVertices(this.rayPoints);
 
-            // Material
-            if (!WaveServices.Platform.IsEditor)
-            {
-                this.lineMaterial = new LineMaterial(DefaultLayers.Additive)
-                {
-                    TexturePath = WaveContent.Assets.MotionControllers.Textures.RayMat2_png,
-                    //Texture = tex,
-                    //Bias = -0.0005f,                
-                };
-                this.lineMaterial.Initialize(this.Assets);
-
-                this.lineRenderer.LineMaterial = this.lineMaterial;
-            }
+            var rayPoints = new List<LinePointInfo>();
+            rayPoints.Add(pointInfo1);
+            rayPoints.Add(pointInfo2);
+            this.lineMesh.LinePoints = rayPoints;
         }
 
         /// <summary>
@@ -202,6 +182,7 @@ namespace MixedRealitySample.Behaviors
         }
 
         protected abstract void UpdateState();
+
         private void UpdateGaze()
         {
             Vector3 rayPosition = this.rayTransform.Position;
@@ -222,35 +203,25 @@ namespace MixedRealitySample.Behaviors
                 gazeNormal = -ray.Direction;
             }
 
-            LineVertexInfo startRay = this.rayPoints[0];
-            startRay.Position = ray.Position;
-            this.rayPoints[0] = startRay;
-
-            LineVertexInfo endRay = this.rayPoints[1];
-            endRay.Position = gazePosition;
-            this.rayPoints[1] = endRay;
-
-            for (int i = 0; i < this.rayPoints.Count; i++)
-            {
-                LineVertexInfo vertex = this.rayPoints[i];
-                vertex.Size = this.ScaledRayThin;
-                this.rayPoints[i] = vertex;
-            }
+            var rayPoints = this.lineMesh.LinePoints;
+            rayPoints[0].Position = ray.Position;
+            rayPoints[0].Thickness = this.ScaledRayThin;
+            rayPoints[1].Position = gazePosition;
+            rayPoints[1].Thickness = this.ScaledRayThin;
+            this.lineMesh.LinePoints = rayPoints;
 
             float distance;
             Vector3 cameraPosition = this.cameraTransform.Position;
             Vector3.Distance(ref cameraPosition, ref gazePosition, out distance);
             this.gazeTransform.Position = gazePosition;
-            this.gazeTransform.LocalScale = Vector3.One * (distance / 2.5f);
+            this.gazeTransform.LocalScale = Vector3.One * (distance / 20.5f);
 
             Vector3 gazeNormalPosition = gazePosition + gazeNormal;
             this.gazeTransform.LookAt(gazeNormalPosition, Vector3.Up);
-
-            this.lineRenderer.SetLineVertices(this.rayPoints);
         }
 
         protected abstract void CalculateGazeProperties(ref Ray ray, out Vector3 gazePosition, out Vector3 gazeNormalPosition);
-        
+
         private void AnimateController()
         {
             // Trigger
@@ -261,13 +232,12 @@ namespace MixedRealitySample.Behaviors
                 this.triggerTransform.LocalRotation = triggerRotation;
 
                 float raySize = -this.ScaledRayThin - (0.03f * TriggerValue);
-                for (int i = 0; i < this.rayPoints.Count; i++)
+                var rayPoints = this.lineMesh.LinePoints;
+                for (int i = 0; i < rayPoints.Count; i++)
                 {
-                    LineVertexInfo vertex = this.rayPoints[i];
-                    vertex.Size = raySize;
-                    this.rayPoints[i] = vertex;
+                    rayPoints[i].Thickness = raySize;
                 }
-                this.lineRenderer.SetLineVertices(this.rayPoints);
+                this.lineMesh.LinePoints = rayPoints;
 
                 this.lastTriggerValue = this.TriggerValue;
             }
@@ -299,7 +269,7 @@ namespace MixedRealitySample.Behaviors
             // Touchpad           
             this.dot.IsVisible = (TouchpadValue == Vector2.Zero) ? false : true;
             var touchpadPosition = this.dotTransform.LocalPosition;
-            float radius = this.Type == ControllerType.Right ? 0.42f : 0.042f;
+            float radius = this.Type == ControllerType.Right ? 0.14f : 0.014f;
             touchpadPosition.X = -radius * this.TouchpadValue.X;
             touchpadPosition.Z = radius * this.TouchpadValue.Y;
             this.dotTransform.LocalPosition = touchpadPosition;
