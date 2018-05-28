@@ -13,6 +13,7 @@ namespace KinectSample
         {
             base.Initialize(application);           
 
+            this.Load(WaveContent.GameInfo);
             // Register KinectServices
             var kinectService = new KinectService();
             WaveServices.RegisterService(kinectService);

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 20/04/2018 14:07:12
+// File generated on 17/05/2018 16:41:04
 namespace SpineSkeletalAnimation
 {
     using System;

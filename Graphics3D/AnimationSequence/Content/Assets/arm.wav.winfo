@@ -1,12 +1,14 @@
 ﻿<Asset xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>c7a2ac9a-32d5-4b62-862f-e2ceda6305f2</Id>
+  <Id>eb2c624e-9ea3-413c-a503-e1cbc38d300c</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Sound">
+    <d2p1:AssociatedFiles xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:SoundProfile">
+        <d3p1:ExcludeAsset>false</d3p1:ExcludeAsset>
         <d3p1:Name i:nil="true" />
         <d3p1:AudioQuality>High</d3p1:AudioQuality>
-        <d3p1:ChannelFormat>Mono</d3p1:ChannelFormat>
+        <d3p1:ChannelFormat>Stereo</d3p1:ChannelFormat>
       </d3p1:ExportProfile>
     </d2p1:Profiles>
     <d2p1:ZipCompress>true</d2p1:ZipCompress>

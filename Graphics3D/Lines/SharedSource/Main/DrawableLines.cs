@@ -32,6 +32,7 @@ namespace Lines
         private List<Line> lines;
         private Line l;
         private WaveEngine.Framework.Services.Random random;
+        private LineBatch3D lineBatch;
 
         public DrawableLines()
             : base("DrawableLines")
@@ -55,6 +56,8 @@ namespace Lines
             {
                 AddNewLine();
             }
+
+            this.lineBatch = this.RenderManager.FindLayer(WaveContent.RenderLayers.Debug).LineBatch3D;
         }
 
         private void AddNewLine()
@@ -88,7 +91,7 @@ namespace Lines
             for (int i = 0; i < lines.Count; i++)
             {
                 Line l = lines[i];
-                RenderManager.LineBatch3D.DrawLine(ref l);
+                this.lineBatch.DrawLine(ref l);
             }
         }
 

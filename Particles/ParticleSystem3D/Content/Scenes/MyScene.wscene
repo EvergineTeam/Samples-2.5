@@ -11,14 +11,14 @@
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>0.7062888</d6p1:W>
-            <d6p1:X>-0.03400493</d6p1:X>
-            <d6p1:Y>-0.7062885</d6p1:Y>
-            <d6p1:Z>-0.03400493</d6p1:Z>
+            <d6p1:W>0.7071068</d6p1:W>
+            <d6p1:X>8.564954E-09</d6p1:X>
+            <d6p1:Y>-0.7071067</d6p1:Y>
+            <d6p1:Z>-8.564956E-09</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-24.21191</d6p1:X>
-            <d6p1:Y>5.453938</d6p1:Y>
+            <d6p1:X>-75</d6p1:X>
+            <d6p1:Y>5</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">

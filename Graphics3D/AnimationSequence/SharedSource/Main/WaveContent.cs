@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 3/22/2018 5:11:56 PM
+// File generated on 18/05/2018 12:46:46
 namespace AnimationSequence
 {
     using System;
@@ -26,23 +26,17 @@ namespace AnimationSequence
             /// <summary> Path to Content/Assets/arm.wav </summary>
             public const string arm_wav = "Content/Assets/arm.wav";
             
-            /// <summary> Path to Content/Assets/coin.wav </summary>
-            public const string coin_wav = "Content/Assets/coin.wav";
+            /// <summary> Path to Content/Assets/Cubemap.cubemap </summary>
+            public const string Cubemap_cubemap = "Content/Assets/Cubemap.cubemap";
             
             /// <summary> Path to Content/Assets/robotic.fbx </summary>
             public const string robotic_fbx = "Content/Assets/robotic.fbx";
             
-            /// <summary> Path to Content/Assets/redMaterial.wmat </summary>
-            public const string redMaterial = "Content/Assets/redMaterial.wmat";
-            
-            /// <summary> Path to Content/Assets/whiteMaterial.wmat </summary>
-            public const string whiteMaterial = "Content/Assets/whiteMaterial.wmat";
-            
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/reflect.cubemap </summary>
-                public const string reflect_cubemap = "Content/Assets/Materials/reflect.cubemap";
+                /// <summary> Path to Content/Assets/Materials/floor.wmat </summary>
+                public const string floor = "Content/Assets/Materials/floor.wmat";
                 
                 /// <summary> Path to Content/Assets/Materials/metal.wmat </summary>
                 public const string metal = "Content/Assets/Materials/metal.wmat";
@@ -80,11 +74,8 @@ namespace AnimationSequence
         public sealed class Scenes
         {
             
-            /// <summary> Path to Content/Scenes/Scene1.wscene </summary>
-            public const string Scene1 = "Content/Scenes/Scene1.wscene";
-            
-            /// <summary> Path to Content/Scenes/Scene2.wscene </summary>
-            public const string Scene2 = "Content/Scenes/Scene2.wscene";
+            /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
+            public const string MyScene = "Content/Scenes/MyScene.wscene";
         }
     }
 }

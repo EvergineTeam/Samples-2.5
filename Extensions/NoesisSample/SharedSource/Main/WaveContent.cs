@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 09/08/2017 14:20:54
+// File generated on 17/05/2018 16:25:38
 namespace NoesisSample
 {
     using System;
@@ -134,6 +134,10 @@ namespace NoesisSample
                 /// <summary> Path to Content/Assets/Materials/Stars.wmat </summary>
                 public const string Stars = "Content/Assets/Materials/Stars.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
         }
         
         public sealed class Scenes

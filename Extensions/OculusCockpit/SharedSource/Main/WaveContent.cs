@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/10/2017 11:00:10 AM
+// File generated on 24/04/2018 12:23:03
 namespace OculusCockpit
 {
     using System;
@@ -23,12 +23,8 @@ namespace OculusCockpit
         public sealed class Assets
         {
             
-            public sealed class Model
-            {
-                
-                /// <summary> Path to Content/Assets/Model/ShoperCockpit.fbx </summary>
-                public const string ShoperCockpit_fbx = "Content/Assets/Model/ShoperCockpit.fbx";
-            }
+            /// <summary> Path to Content/Assets/ShoperCockpit.fbx </summary>
+            public const string ShoperCockpit_fbx = "Content/Assets/ShoperCockpit.fbx";
             
             public sealed class Sounds
             {
@@ -59,15 +55,40 @@ namespace OculusCockpit
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/Fuse.wmat </summary>
-                public const string Fuse = "Content/Assets/Materials/Fuse.wmat";
+                /// <summary> Path to Content/Assets/Materials/04 - Default.wmat </summary>
+                public const string _04_Default = "Content/Assets/Materials/04 - Default.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/Instruments.wmat </summary>
-                public const string Instruments = "Content/Assets/Materials/Instruments.wmat";
+                /// <summary> Path to Content/Assets/Materials/06 - Default.wmat </summary>
+                public const string _06_Default = "Content/Assets/Materials/06 - Default.wmat";
                 
-                /// <summary> Path to Content/Assets/Materials/Interior.wmat </summary>
-                public const string Interior = "Content/Assets/Materials/Interior.wmat";
+                /// <summary> Path to Content/Assets/Materials/Mat.001_gazelle_interior.png.wmat </summary>
+                public const string Mat_001_gazelle_interior_png = "Content/Assets/Materials/Mat.001_gazelle_interior.png.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/Mat_fuse.png.wmat </summary>
+                public const string Mat_fuse_png = "Content/Assets/Materials/Mat_fuse.png.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

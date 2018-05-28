@@ -16,6 +16,7 @@ namespace Xamarin_iOS
         {
             base.Initialize(application);
 
+            this.Load(WaveContent.GameInfo);
             this.scene = new MyScene();
             ScreenContext screenContext = new ScreenContext(this.scene);	
 			WaveServices.ScreenContextManager.To(screenContext);
