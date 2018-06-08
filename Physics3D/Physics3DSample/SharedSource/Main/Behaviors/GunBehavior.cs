@@ -11,6 +11,9 @@ using WaveEngine.Framework.Services;
 
 namespace Physics3DSample.Behaviors
 {
+    /// <summary>
+    /// Component that fires a ball
+    /// </summary>
     [DataContract]
     public class GunBehavior : Behavior
     {
@@ -87,6 +90,7 @@ namespace Physics3DSample.Behaviors
                 {
                     pressed = true;
 
+                    // Launches the ball
                     var position = this.transform.Position;
                     var scale = this.ballRigidBody.Transform3D.Scale;
                     var direction = this.transform.WorldTransform.Forward;

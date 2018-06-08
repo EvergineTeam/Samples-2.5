@@ -18,8 +18,7 @@ namespace Physics3DSample
     {
         protected override void CreateScene()
         {
-            ////this.RenderManager.DebugLines = true;
-            this.Load(WaveContent.Scenes.MyScene);           
+            this.Load(WaveContent.Scenes.MyScene);
         }
     }
 }

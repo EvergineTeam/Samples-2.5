@@ -9,6 +9,9 @@ using WaveEngine.Framework.Graphics;
 
 namespace Physics3DSample.Behaviors
 {
+    /// <summary>
+    /// Component that places itself in the gaze target
+    /// </summary>
     [DataContract]
     public class PointerBehavior : Behavior
     {
@@ -35,6 +38,7 @@ namespace Physics3DSample.Behaviors
                 // Create ray
                 Ray ray = new Ray(this.transform.Position, this.transform.WorldTransform.Forward);
 
+                // Checks collision
                 var result = this.Owner.Scene.PhysicsManager.Simulation3D.RayCast(ref ray, 1000);
 
                 if(result.Succeeded)

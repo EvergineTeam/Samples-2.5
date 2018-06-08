@@ -9,6 +9,7 @@
     <Import_RootNamespace>Physics3DSample</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\FocusBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\GunBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\PlayerBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\PointerBehavior.cs" />

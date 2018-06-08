@@ -117,7 +117,7 @@
             </d6p1:AngularVelocity>
             <d6p1:Gravity xmlns:d7p1="WaveEngine.Common.Math">
               <d7p1:X>0</d7p1:X>
-              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Y>-10</d7p1:Y>
               <d7p1:Z>0</d7p1:Z>
             </d6p1:Gravity>
             <d6p1:LinearDamping>0</d6p1:LinearDamping>
@@ -226,7 +226,7 @@
                 </d8p1:AngularVelocity>
                 <d8p1:Gravity xmlns:d9p1="WaveEngine.Common.Math">
                   <d9p1:X>0</d9p1:X>
-                  <d9p1:Y>0</d9p1:Y>
+                  <d9p1:Y>-10</d9p1:Y>
                   <d9p1:Z>0</d9p1:Z>
                 </d8p1:Gravity>
                 <d8p1:LinearDamping>0</d8p1:LinearDamping>
@@ -460,7 +460,7 @@
                 </d8p1:AngularVelocity>
                 <d8p1:Gravity xmlns:d9p1="WaveEngine.Common.Math">
                   <d9p1:X>0</d9p1:X>
-                  <d9p1:Y>0</d9p1:Y>
+                  <d9p1:Y>-10</d9p1:Y>
                   <d9p1:Z>0</d9p1:Z>
                 </d8p1:Gravity>
                 <d8p1:LinearDamping>0</d8p1:LinearDamping>
