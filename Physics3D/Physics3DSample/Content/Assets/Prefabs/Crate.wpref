@@ -42,25 +42,6 @@
             <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
             <d5p1:IsVisible>true</d5p1:IsVisible>
           </d5p1:Component>
-          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
-            <d6p1:margin>0.04</d6p1:margin>
-            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:X>0</d7p1:X>
-              <d7p1:Y>0</d7p1:Y>
-              <d7p1:Z>0</d7p1:Z>
-            </d6p1:offset>
-            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:W>1</d7p1:W>
-              <d7p1:X>0</d7p1:X>
-              <d7p1:Y>0</d7p1:Y>
-              <d7p1:Z>0</d7p1:Z>
-            </d6p1:orientationOffset>
-            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:X>1</d7p1:X>
-              <d7p1:Y>1</d7p1:Y>
-              <d7p1:Z>1</d7p1:Z>
-            </d6p1:size>
-          </d5p1:Component>
           <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:RigidBody3D">
             <d5p1:UpdateOrder>0.5</d5p1:UpdateOrder>
             <d5p1:isDisabled>false</d5p1:isDisabled>
@@ -102,6 +83,101 @@
             <d6p1:Mass>20</d6p1:Mass>
             <d6p1:OverrideGravity>false</d6p1:OverrideGravity>
             <d6p1:PhysicBodyType>Dynamic</d6p1:PhysicBodyType>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0.04</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>-0.009</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>1</d7p1:X>
+              <d7p1:Y>0.13</d7p1:Y>
+              <d7p1:Z>1</d7p1:Z>
+            </d6p1:size>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0.04</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>-0.012</d7p1:X>
+              <d7p1:Y>0.001</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0.1</d7p1:X>
+              <d7p1:Y>0.8</d7p1:Y>
+              <d7p1:Z>1</d7p1:Z>
+            </d6p1:size>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0.012</d7p1:X>
+              <d7p1:Y>0.001</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0.1</d7p1:X>
+              <d7p1:Y>0.8</d7p1:Y>
+              <d7p1:Z>1</d7p1:Z>
+            </d6p1:size>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0.001</d7p1:Y>
+              <d7p1:Z>0.012</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0.79</d7p1:X>
+              <d7p1:Y>0.8</d7p1:Y>
+              <d7p1:Z>0.1</d7p1:Z>
+            </d6p1:size>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0.001</d7p1:Y>
+              <d7p1:Z>-0.012</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>-0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0.79</d7p1:X>
+              <d7p1:Y>0.8</d7p1:Y>
+              <d7p1:Z>0.1</d7p1:Z>
+            </d6p1:size>
           </d5p1:Component>
         </d2p1:SerializeComponents>
       </d2p1:BaseEntityModel>
@@ -145,25 +221,6 @@
             <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
             <d5p1:IsVisible>true</d5p1:IsVisible>
           </d5p1:Component>
-          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
-            <d6p1:margin>0.04</d6p1:margin>
-            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:X>0</d7p1:X>
-              <d7p1:Y>0</d7p1:Y>
-              <d7p1:Z>0</d7p1:Z>
-            </d6p1:offset>
-            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:W>1</d7p1:W>
-              <d7p1:X>0</d7p1:X>
-              <d7p1:Y>0</d7p1:Y>
-              <d7p1:Z>0</d7p1:Z>
-            </d6p1:orientationOffset>
-            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
-              <d7p1:X>1</d7p1:X>
-              <d7p1:Y>1</d7p1:Y>
-              <d7p1:Z>1</d7p1:Z>
-            </d6p1:size>
-          </d5p1:Component>
           <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:RigidBody3D">
             <d5p1:UpdateOrder>0.5</d5p1:UpdateOrder>
             <d5p1:isDisabled>false</d5p1:isDisabled>
@@ -205,6 +262,25 @@
             <d6p1:Mass>10</d6p1:Mass>
             <d6p1:OverrideGravity>false</d6p1:OverrideGravity>
             <d6p1:PhysicBodyType>Dynamic</d6p1:PhysicBodyType>
+          </d5p1:Component>
+          <d5p1:Component xmlns:d6p1="WaveEngine.Framework.Physics3D" i:type="d6p1:BoxCollider3D">
+            <d6p1:margin>0.04</d6p1:margin>
+            <d6p1:offset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:offset>
+            <d6p1:orientationOffset xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:W>1</d7p1:W>
+              <d7p1:X>0</d7p1:X>
+              <d7p1:Y>0</d7p1:Y>
+              <d7p1:Z>0</d7p1:Z>
+            </d6p1:orientationOffset>
+            <d6p1:size xmlns:d7p1="WaveEngine.Common.Math">
+              <d7p1:X>1</d7p1:X>
+              <d7p1:Y>1</d7p1:Y>
+              <d7p1:Z>1</d7p1:Z>
+            </d6p1:size>
           </d5p1:Component>
         </d2p1:SerializeComponents>
       </d2p1:BaseEntityModel>

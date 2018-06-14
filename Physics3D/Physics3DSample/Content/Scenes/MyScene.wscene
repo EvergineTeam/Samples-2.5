@@ -160,8 +160,9 @@
                 <d8p1:Component xmlns:d9p1="http://schemas.datacontract.org/2004/07/Physics3DSample.Behaviors" i:type="d9p1:GunBehavior">
                   <d8p1:UpdateOrder>0.5</d8p1:UpdateOrder>
                   <d8p1:isDisabled>false</d8p1:isDisabled>
-                  <d9p1:FiredEntityPath>sphere</d9p1:FiredEntityPath>
+                  <d9p1:FiredPrefabPath>Content/Assets/Prefabs/ball.wpref</d9p1:FiredPrefabPath>
                   <d9p1:Impulse>200</d9p1:Impulse>
+                  <d9p1:MaxBalls>5</d9p1:MaxBalls>
                 </d8p1:Component>
                 <d8p1:Component xmlns:d9p1="http://schemas.datacontract.org/2004/07/Physics3DSample.Behaviors" i:type="d9p1:PointerBehavior">
                   <d8p1:UpdateOrder>0.5</d8p1:UpdateOrder>
@@ -268,7 +269,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1.24540865</d6p1:X>
-            <d6p1:Y>2.304007</d6p1:Y>
+            <d6p1:Y>1.50294507</d6p1:Y>
             <d6p1:Z>11.6292448</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -328,196 +329,6 @@
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Physics3DSample.Behaviors" i:type="d5p1:PlayerBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
-        </d4p1:Component>
-      </d2p1:SerializeComponents>
-    </d2p1:BaseEntityModel>
-    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-      <d2p1:SerializeChildrens>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isDisabled>false</d2p1:isDisabled>
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>flare</d2p1:name>
-          <d2p1:tag i:nil="true" />
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>1</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>4.2</d8p1:X>
-                <d8p1:Y>4.2</d8p1:Y>
-                <d8p1:Z>1</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:Billboard">
-              <d7p1:BillboardType>PointOrientation</d7p1:BillboardType>
-              <d7p1:Origin xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-                <d8p1:X>0.5</d8p1:X>
-                <d8p1:Y>0.5</d8p1:Y>
-              </d7p1:Origin>
-              <d7p1:Rotation>0</d7p1:Rotation>
-              <d7p1:TexturePath>Content/Assets/Materials/flare1.png.wpk</d7p1:TexturePath>
-              <d7p1:TintColor xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:A>255</d8p1:A>
-                <d8p1:B>255</d8p1:B>
-                <d8p1:G>255</d8p1:G>
-                <d8p1:R>255</d8p1:R>
-              </d7p1:TintColor>
-              <d7p1:isGlobalAsset>false</d7p1:isGlobalAsset>
-              <d7p1:texturePath>Content/Assets/Materials/flare1.png.wpk</d7p1:texturePath>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Components.Shared.Graphic3D" i:type="d7p1:BillboardRenderer">
-              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
-              <d6p1:IsVisible>true</d6p1:IsVisible>
-              <d7p1:layerId>3</d7p1:layerId>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-        <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
-          <d2p1:SerializeChildrens />
-          <d2p1:isDisabled>false</d2p1:isDisabled>
-          <d2p1:isStatic>false</d2p1:isStatic>
-          <d2p1:isVisible>true</d2p1:isVisible>
-          <d2p1:name>light</d2p1:name>
-          <d2p1:tag i:nil="true" />
-          <d2p1:SerializeComponents xmlns:d6p1="WaveEngine.Framework">
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:Transform3D">
-              <d7p1:LocalOrientation xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:W>1</d8p1:W>
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalOrientation>
-              <d7p1:LocalPosition xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>0</d8p1:X>
-                <d8p1:Y>0</d8p1:Y>
-                <d8p1:Z>0</d8p1:Z>
-              </d7p1:LocalPosition>
-              <d7p1:LocalScale xmlns:d8p1="WaveEngine.Common.Math">
-                <d8p1:X>1</d8p1:X>
-                <d8p1:Y>1</d8p1:Y>
-                <d8p1:Z>1</d8p1:Z>
-              </d7p1:LocalScale>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightProperties">
-              <d7p1:Color xmlns:d8p1="WaveEngine.Common.Graphics">
-                <d8p1:A>255</d8p1:A>
-                <d8p1:B>255</d8p1:B>
-                <d8p1:G>168</d8p1:G>
-                <d8p1:R>0</d8p1:R>
-              </d7p1:Color>
-              <d7p1:Intensity>3.52</d7p1:Intensity>
-              <d7p1:isLightDisabled>false</d7p1:isLightDisabled>
-              <d7p1:LightRange>5</d7p1:LightRange>
-            </d6p1:Component>
-            <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Graphics" i:type="d7p1:PointLightRenderer">
-              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
-              <d6p1:IsVisible>true</d6p1:IsVisible>
-            </d6p1:Component>
-          </d2p1:SerializeComponents>
-        </d2p1:BaseEntityModel>
-      </d2p1:SerializeChildrens>
-      <d2p1:isDisabled>false</d2p1:isDisabled>
-      <d2p1:isStatic>false</d2p1:isStatic>
-      <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>sphere</d2p1:name>
-      <d2p1:tag i:nil="true" />
-      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform3D">
-          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:W>1</d6p1:W>
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LocalOrientation>
-          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.296719044</d6p1:X>
-            <d6p1:Y>1.85511065</d6p1:Y>
-            <d6p1:Z>15.3425474</d6p1:Z>
-          </d5p1:LocalPosition>
-          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.3</d6p1:X>
-            <d6p1:Y>0.3</d6p1:Y>
-            <d6p1:Z>0.3</d6p1:Z>
-          </d5p1:LocalScale>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
-          <d5p1:AsignedTo i:nil="true" />
-          <d5p1:MaterialPath>Content/Assets/Materials/PlasmaMat.wmat</d5p1:MaterialPath>
-          <d5p1:UseCopy>true</d5p1:UseCopy>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:SphereMesh">
-          <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Primitive</ModelMeshName>
-          <d5p1:Diameter>1</d5p1:Diameter>
-          <d5p1:Tessellation>8</d5p1:Tessellation>
-          <d5p1:UVHorizontalFlip>false</d5p1:UVHorizontalFlip>
-          <d5p1:UVVerticalFlip>false</d5p1:UVVerticalFlip>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics3D" i:type="d5p1:MeshRenderer">
-          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
-          <d4p1:IsVisible>true</d4p1:IsVisible>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:RigidBody3D">
-          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
-          <d4p1:isDisabled>false</d4p1:isDisabled>
-          <d5p1:CcdMotionThreshold>0.1</d5p1:CcdMotionThreshold>
-          <d5p1:CcdSweptSphereRadius>0.1</d5p1:CcdSweptSphereRadius>
-          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
-          <d5p1:Friction>0.8</d5p1:Friction>
-          <d5p1:IsSensor>false</d5p1:IsSensor>
-          <d5p1:MaskBits>All</d5p1:MaskBits>
-          <d5p1:Restitution>0</d5p1:Restitution>
-          <d5p1:RollingFriction>0</d5p1:RollingFriction>
-          <d5p1:AngularDamping>0</d5p1:AngularDamping>
-          <d5p1:AngularFactor xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:AngularFactor>
-          <d5p1:AngularVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:AngularVelocity>
-          <d5p1:Gravity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-10</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:Gravity>
-          <d5p1:LinearDamping>0.2</d5p1:LinearDamping>
-          <d5p1:LinearFactor xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1</d6p1:X>
-            <d6p1:Y>1</d6p1:Y>
-            <d6p1:Z>1</d6p1:Z>
-          </d5p1:LinearFactor>
-          <d5p1:LinearVelocity xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:LinearVelocity>
-          <d5p1:Mass>3</d5p1:Mass>
-          <d5p1:OverrideGravity>false</d5p1:OverrideGravity>
-          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
-        </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics3D" i:type="d5p1:SphereCollider3D">
-          <d5p1:margin>0.04</d5p1:margin>
-          <d5p1:offset xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
-          </d5p1:offset>
-          <d5p1:radius>0.5</d5p1:radius>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -1274,27 +1085,27 @@
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
           <d5p1:AsignedTo>wall_albedo</d5p1:AsignedTo>
-          <d5p1:MaterialPath>Content/Assets/Models/Materials/wall_albedo.wmat</d5p1:MaterialPath>
+          <d5p1:MaterialPath i:nil="true" />
           <d5p1:UseCopy>false</d5p1:UseCopy>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
           <d5p1:AsignedTo>podlaha_albedo</d5p1:AsignedTo>
-          <d5p1:MaterialPath>Content/Assets/Models/Materials/podlaha_albedo.wmat</d5p1:MaterialPath>
+          <d5p1:MaterialPath i:nil="true" />
           <d5p1:UseCopy>false</d5p1:UseCopy>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
           <d5p1:AsignedTo>base_ram_albedo</d5p1:AsignedTo>
-          <d5p1:MaterialPath>Content/Assets/Models/Materials/base_ram_albedo.wmat</d5p1:MaterialPath>
+          <d5p1:MaterialPath i:nil="true" />
           <d5p1:UseCopy>false</d5p1:UseCopy>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
           <d5p1:AsignedTo>base_door</d5p1:AsignedTo>
-          <d5p1:MaterialPath>Content/Assets/Models/Materials/base_door.wmat</d5p1:MaterialPath>
+          <d5p1:MaterialPath i:nil="true" />
           <d5p1:UseCopy>false</d5p1:UseCopy>
-          <d5p1:useDummyMaterial>false</d5p1:useDummyMaterial>
+          <d5p1:useDummyMaterial>true</d5p1:useDummyMaterial>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">corridorLow</ModelMeshName>
@@ -3510,8 +3321,8 @@ WASD = Move</d7p1:text>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>-337.8002</d6p1:X>
-            <d6p1:Y>-406.199921</d6p1:Y>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">

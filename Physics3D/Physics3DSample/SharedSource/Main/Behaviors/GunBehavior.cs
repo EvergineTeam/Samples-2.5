@@ -18,34 +18,54 @@ namespace Physics3DSample.Behaviors
     public class GunBehavior : Behavior
     {
         private bool pressed;
-        private RigidBody3D ballRigidBody;
-        private string firedEntityPath;
+
+        private RigidBody3D[] rigidBodyPool;
+
+        private int numBalls;
+
+        private string firedPrefabPath;
+
+        private int maxBalls;
 
         [RequiredComponent(false)]
         private Transform3D transform = null;
 
         [DataMember]
-        public float Impulse
-        {
-            get;
-            set;
-        }
+        public float Impulse;
 
-        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Physics3D.RigidBody3D" })]
         [DataMember]
-        public string FiredEntityPath
+        public int MaxBalls
         {
             get
             {
-                return this.firedEntityPath;
+                return this.maxBalls;
             }
 
             set
             {
-                this.firedEntityPath = value;
+                this.maxBalls = value;
                 if (this.isInitialized)
                 {
-                    this.RefreshFiredEntity();
+                    this.RefreshPool();
+                }
+            }
+        }
+
+        [RenderPropertyAsAsset(AssetType.Prefab)]
+        [DataMember]
+        public string FiredPrefabPath
+        {
+            get
+            {
+                return this.firedPrefabPath;
+            }
+
+            set
+            {
+                this.firedPrefabPath = value;
+                if (this.isInitialized)
+                {
+                    this.RefreshPool();
                 }
             }
         }
@@ -54,30 +74,49 @@ namespace Physics3DSample.Behaviors
         {
             base.DefaultValues();
             this.Impulse = 100;
+            this.MaxBalls = 5;
         }
 
         protected override void Initialize()
         {
             base.Initialize();
 
-            this.RefreshFiredEntity();
+            this.RefreshPool();
         }
 
-        private void RefreshFiredEntity()
+        private void RefreshPool()
         {
-            if (!string.IsNullOrEmpty(this.firedEntityPath))
+            if (!string.IsNullOrEmpty(this.firedPrefabPath))
             {
-                var ball = this.EntityManager.Find(this.firedEntityPath);
-                if (ball != null)
+                if (this.rigidBodyPool != null)
                 {
-                    this.ballRigidBody = ball.FindComponent<RigidBody3D>();
+                    foreach (var b in this.rigidBodyPool)
+                    {
+                        this.EntityManager.Remove(b.Owner);
+                    }
+                }
+
+                this.rigidBodyPool = new RigidBody3D[this.MaxBalls];
+
+                for (int i = 0; i < this.MaxBalls; i++)
+                {
+                    var ball = this.EntityManager.Instantiate(this.firedPrefabPath);
+                    ball.Name = $"ball{i}";
+
+                    this.rigidBodyPool[i] = ball?.FindComponent<RigidBody3D>();
                 }
             }
+            else
+            {
+                this.rigidBodyPool = null;
+            }
+
+            this.numBalls = 0;
         }
 
         protected override void Update(TimeSpan gameTime)
         {
-            if (this.ballRigidBody == null)
+            if (this.rigidBodyPool == null)
             {
                 return;
             }
@@ -90,24 +129,39 @@ namespace Physics3DSample.Behaviors
                 {
                     pressed = true;
 
-                    // Launches the ball
-                    var position = this.transform.Position;
-                    var scale = this.ballRigidBody.Transform3D.Scale;
-                    var direction = this.transform.WorldTransform.Forward;
-                    direction.Normalize();
-
-                    this.ballRigidBody.InternalBody.SetTransform(position, Quaternion.Identity, scale);
-                    
-                    this.ballRigidBody.AngularVelocity = Vector3.Zero;
-                    this.ballRigidBody.LinearVelocity = Vector3.Zero;
-                    this.ballRigidBody.ClearForces();
-                    this.ballRigidBody.ApplyImpulse(this.Impulse * direction);
+                    this.Launch();
                 }
             }
             else
             {
                 pressed = false;
             }
+        }
+
+        private void Launch()
+        {
+            var mustBeAdded = this.numBalls < this.MaxBalls;
+
+            var index = this.numBalls++ % this.MaxBalls;
+
+            var ballRigidBody = this.rigidBodyPool[index];
+
+            if (mustBeAdded)
+            {
+                this.EntityManager.Add(ballRigidBody.Owner);
+            }
+
+            var position = this.transform.Position;
+            var scale = ballRigidBody.Transform3D.Scale;
+            var direction = this.transform.WorldTransform.Forward;
+            direction.Normalize();
+
+            ballRigidBody.InternalBody.SetTransform(position, Quaternion.Identity, scale);
+
+            ballRigidBody.AngularVelocity = Vector3.Zero;
+            ballRigidBody.LinearVelocity = Vector3.Zero;
+            ballRigidBody.ClearForces();
+            ballRigidBody.ApplyImpulse(this.Impulse * direction);
         }
     }
 }
