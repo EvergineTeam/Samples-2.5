@@ -35,6 +35,7 @@
     <ApplicationIcon>Game.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="WaveEngine.Adapter">
       <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180614-656\lib\net45\WaveEngine.Adapter.dll</HintPath>
     </Reference>
@@ -77,6 +78,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.ico" />
     <EmbeddedResource Include="SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\Networking_P2PSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\Networking_P2PSource.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

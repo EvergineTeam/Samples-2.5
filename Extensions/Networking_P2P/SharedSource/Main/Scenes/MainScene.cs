@@ -1,16 +1,8 @@
 #region Using Statements
 using System;
 using System.Collections.Generic;
-using WaveEngine.Common;
-using WaveEngine.Common.Graphics;
-using WaveEngine.Common.Math;
-using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Graphics2D;
-using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
 using WaveEngine.Networking.P2P;
@@ -35,7 +27,8 @@ namespace Networking_P2P.Scenes
         {
             this.Load(WaveContent.Scenes.MainScene);
 
-            this.networkPeerService = new NetworkPeerService();
+            this.networkPeerService = new NetworkPeerService(); 
+
             WaveServices.RegisterService(this.networkPeerService);
 
             this.CreateUi();
@@ -74,8 +67,7 @@ namespace Networking_P2P.Scenes
             {
                 this.CleanErrorMessage();
                 this.DisableHostDiscoveryAndCleanButtons();
-                this.networkPeerService.StartAsync();
-                startButton.IsVisible = false;
+                //this.networkPeerService.StartAsync();
 
                 WaveServices.ScreenContextManager.Push(new ScreenContext(new LoadingScene()));
             }

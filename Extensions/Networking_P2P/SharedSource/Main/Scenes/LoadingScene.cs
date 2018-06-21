@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
@@ -37,8 +35,9 @@ namespace Networking_P2P.Scenes
 
             try
             {
-                var networkPeerService = WaveServices.GetService<NetworkPeerService>();
-                await networkPeerService.StartAsync();
+                //var networkPeerService = WaveServices.GetService<NetworkPeerService>();
+                //networkPeerService.PortNum = 21000;
+                //await networkPeerService.StartAsync();
 
                 //Wait 3 seconds and start game
                 int remainingSeconds = 3;
@@ -59,7 +58,7 @@ namespace Networking_P2P.Scenes
                     this.UpdateRemainingSeconds(remainingSeconds);
                 }, true, this);
             }
-            catch
+            catch(Exception)
             {
                 this.messageTextBlock.Text = $"Cannot connect. In 1 second you will back screen.";
                 WaveServices.TimerFactory.CreateTimer(TimeSpan.FromSeconds(1), () =>
