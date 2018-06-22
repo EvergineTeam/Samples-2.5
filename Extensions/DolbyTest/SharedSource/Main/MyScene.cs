@@ -43,7 +43,6 @@ namespace DolbyTest
 				this.UpdateLabels();
 			};
 
-
 			Button button2 = this.AddButton ("Disable Dolby", 300, 200);
 			button2.Click += (s, o) =>
 			{

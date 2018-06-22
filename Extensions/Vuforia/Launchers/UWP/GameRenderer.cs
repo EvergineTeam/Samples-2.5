@@ -1,6 +1,5 @@
 using System;
 using WaveEngine.Adapter;
-using WaveEngine.Common.Input;
 using Windows.System.Display;
 using Windows.UI.Xaml.Controls;
 
@@ -19,7 +18,7 @@ namespace Vuforia
         }
 
         public override void Update(TimeSpan gameTime)
-        {  
+        {
             game.UpdateFrame(gameTime);
         }
 
@@ -31,8 +30,6 @@ namespace Vuforia
         public override void Initialize()
         {
             base.Initialize();
-
-            this.Adapter.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
 
             this.displayRequest = new DisplayRequest();
             this.displayRequest.RequestActive();

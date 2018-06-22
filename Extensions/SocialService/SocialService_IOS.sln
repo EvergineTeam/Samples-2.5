@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialService", "Launchers\IOS\SocialService.csproj", "{DB5BF7A3-FBDD-4090-8449-CB7F0F829AC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialService", "Launchers\iOS\SocialService.csproj", "{DB5BF7A3-FBDD-4090-8449-CB7F0F829AC5}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SocialServiceSource", "SharedSource\Main\SocialServiceSource.shproj", "{846D34C8-E537-4DC7-B646-CFF649CE42E4}"
 EndProject

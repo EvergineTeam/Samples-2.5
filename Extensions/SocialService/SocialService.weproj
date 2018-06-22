@@ -1,5 +1,5 @@
-<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>92b60e62-98ea-47d0-beb9-910de661558a</Id>
+﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+  <Id>f03ab5ad-f840-498d-959d-65c7a70c740a</Id>
   <GameInfoPath>SocialService.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -9,22 +9,22 @@
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
           <d5p1:Profiles>
             <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
+              <LauncherType>DirectX</LauncherType>
+              <Name>Windows</Name>
+              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>R4G4B4A4</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
               <Name>Android</Name>
               <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
               <Platform>Android</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>iOS</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>iOS</Platform>
-            </Profile>
-            <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <LauncherType>Default</LauncherType>
               <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
@@ -37,11 +37,11 @@
               <Platform>MacOS</Platform>
             </Profile>
             <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>Windows</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Windows</Platform>
+              <AlphaCompressionFormat>PVRTC4BPP</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>iOS</Name>
+              <NonAlphaCompressionFormat>PVRTC4BPP</NonAlphaCompressionFormat>
+              <Platform>iOS</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
@@ -51,8 +51,8 @@
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>0</d2p1:_Build>
     <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>4</d2p1:_Minor>
+    <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180208-617</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
 </Project>

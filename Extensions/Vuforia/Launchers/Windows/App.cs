@@ -10,137 +10,136 @@ using WaveEngine.Framework.Services;
 namespace Vuforia
 {
     public class App : WaveEngine.Adapter.Application
-{
+    {
         Vuforia.Game game;
-    SpriteBatch spriteBatch;
-    Texture2D splashScreen;
-    bool splashState = true;
-    TimeSpan time;
-    Vector2 position;
-    Color backgroundSplashColor;
+        SpriteBatch spriteBatch;
+        Texture2D splashScreen;
+        bool splashState = true;
+        TimeSpan time;
+        Vector2 position;
+        Color backgroundSplashColor;
 
-    public App()
-    {
-        this.Width = 1280;
-        this.Height = 720;
-        this.FullScreen = false;
-        this.WindowTitle = "Vuforia";
-        this.HasVideoSupport = true;
-    }
-
-    public override void Initialize()
-    {
-        this.game = new Vuforia.Game();
-        this.game.Initialize(this);
-
-        #region DEFAULT SPLASHSCREEN
-        this.backgroundSplashColor = new Color("#ebebeb");
-        this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-
-        var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
-        string name = string.Empty;
-
-        foreach (string item in resourceNames)
+        public App()
         {
-            if (item.Contains("SplashScreen.png"))
-            {
-                name = item;
-                break;
-            }
+            this.Width = 1280;
+            this.Height = 720;
+            this.FullScreen = false;
+            this.WindowTitle = "Vuforia";
+            this.HasVideoSupport = true;
         }
 
-        if (string.IsNullOrWhiteSpace(name))
+        public override void Initialize()
         {
-            throw new InvalidProgramException("License terms not agreed.");
-        }
+            this.game = new Vuforia.Game();
+            this.game.Initialize(this);
 
-        using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
-        {
-            this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
-        }
+            #region DEFAULT SPLASHSCREEN
+            this.backgroundSplashColor = Color.White;
+            this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
-        position = new Vector2();
-        position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
-        position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
-        #endregion
-    }
+            var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
+            string name = string.Empty;
 
-    public override void Update(TimeSpan elapsedTime)
-    {
-        if (this.game != null && !this.game.HasExited)
-        {
-            if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
+            foreach (string item in resourceNames)
             {
-                this.FullScreen = !this.FullScreen;
-            }
-
-            if (this.splashState)
-            {
-                #region DEFAULT SPLASHSCREEN
-                this.time += elapsedTime;
-                if (time > TimeSpan.FromSeconds(2))
+                if (item.Contains("SplashScreen.png"))
                 {
-                    this.splashState = false;
+                    name = item;
+                    break;
                 }
-                #endregion
             }
-            else
+
+            if (string.IsNullOrWhiteSpace(name))
             {
-                if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
+                throw new InvalidProgramException("License terms not agreed.");
+            }
+
+            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
+            {
+                this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
+            }
+
+            position = new Vector2();
+            position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+            position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
+            #endregion
+        }
+
+        public override void Update(TimeSpan elapsedTime)
+        {
+            if (this.game != null && !this.game.HasExited)
+            {
+                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
-                    WaveServices.Platform.Exit();
+                    this.FullScreen = !this.FullScreen;
+                }
+
+                if (this.splashState)
+                {
+                    #region DEFAULT SPLASHSCREEN
+                    this.time += elapsedTime;
+                    if (time > TimeSpan.FromSeconds(2))
+                    {
+                        this.splashState = false;
+                    }
+                    #endregion
                 }
                 else
                 {
-                    this.game.UpdateFrame(elapsedTime);
+                    if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
+                    {
+                        WaveServices.Platform.Exit();
+                    }
+                    else
+                    {
+                        this.game.UpdateFrame(elapsedTime);
+                    }
                 }
             }
         }
-    }
 
-    public override void Draw(TimeSpan elapsedTime)
-    {
-        if (this.game != null && !this.game.HasExited)
+        public override void Draw(TimeSpan elapsedTime)
         {
-            if (this.splashState)
+            if (this.game != null && !this.game.HasExited)
             {
-                #region DEFAULT SPLASHSCREEN
-                WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
-                WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
-                this.spriteBatch.Render();
-                #endregion
-            }
-            else
-            {
-                this.game.DrawFrame(elapsedTime);
+                if (this.splashState)
+                {
+                    #region DEFAULT SPLASHSCREEN
+                    WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
+                    WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
+                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Render();
+                    #endregion
+                }
+                else
+                {
+                    this.game.DrawFrame(elapsedTime);
+                }
             }
         }
-    }
 
-    /// <summary>
-    /// Called when [activated].
-    /// </summary>
-    public override void OnActivated()
-    {
-        base.OnActivated();
-        if (this.game != null)
+        /// <summary>
+        /// Called when [activated].
+        /// </summary>
+        public override void OnActivated()
         {
-            game.OnActivated();
+            base.OnActivated();
+            if (this.game != null)
+            {
+                game.OnActivated();
+            }
         }
-    }
 
-    /// <summary>
-    /// Called when [deactivate].
-    /// </summary>
-    public override void OnDeactivate()
-    {
-        base.OnDeactivate();
-        if (this.game != null)
+        /// <summary>
+        /// Called when [deactivate].
+        /// </summary>
+        public override void OnDeactivate()
         {
-            game.OnDeactivated();
+            base.OnDeactivate();
+            if (this.game != null)
+            {
+                game.OnDeactivated();
+            }
         }
     }
 }
-}
-

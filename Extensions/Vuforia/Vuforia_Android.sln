@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vuforia", "Launchers\Android\Vuforia.csproj", "{5A2BDAFD-AA77-492C-8D29-F29013625366}"
 EndProject
@@ -8,8 +8,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "VuforiaSource", "SharedSour
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Source\VuforiaSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
-		Source\VuforiaSource.projitems*{5a2bdafd-aa77-492c-8d29-f29013625366}*SharedItemsImports = 4
+		SharedSource\Main\VuforiaSource.projitems*{5a2bdafd-aa77-492c-8d29-f29013625366}*SharedItemsImports = 4
+		SharedSource\Main\VuforiaSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71C2B09E-A319-4D93-9299-7EC292AA9E0F}
 	EndGlobalSection
 	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
 		SpecExplorer.ActivityCompletionStatus = 

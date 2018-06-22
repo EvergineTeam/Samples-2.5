@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARMobile", "Launchers\Android\ARMobile.csproj", "{5A2BDAFD-AA77-492C-8D29-F29013625366}"
 EndProject
@@ -27,7 +27,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ED5F1C1B-5E4B-40C3-819B-3336311D7F64}
+		SolutionGuid = {4CED886B-F00E-4E76-9BA9-7E92A3DC9942}
 	EndGlobalSection
 	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
 		SpecExplorer.ActivityCompletionStatus = 

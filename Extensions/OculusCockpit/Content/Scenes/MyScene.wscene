@@ -102,7 +102,7 @@
                     <d10p1:X>0</d10p1:X>
                     <d10p1:Y>0</d10p1:Y>
                   </d9p1:Viewport>
-                  <d9p1:AspectRatio>2.189655</d9p1:AspectRatio>
+                  <d9p1:AspectRatio>1.78217816</d9p1:AspectRatio>
                 </d8p1:Component>
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Skybox">
                   <d8p1:FrustumCullingEnabled>true</d8p1:FrustumCullingEnabled>
@@ -179,7 +179,7 @@
                     <d10p1:X>0</d10p1:X>
                     <d10p1:Y>0</d10p1:Y>
                   </d9p1:Viewport>
-                  <d9p1:AspectRatio>2.189655</d9p1:AspectRatio>
+                  <d9p1:AspectRatio>1.78217816</d9p1:AspectRatio>
                 </d8p1:Component>
               </d2p1:SerializeComponents>
             </d2p1:BaseEntityModel>
@@ -241,7 +241,7 @@
                     <d10p1:X>0</d10p1:X>
                     <d10p1:Y>0</d10p1:Y>
                   </d9p1:Viewport>
-                  <d9p1:AspectRatio>2.189655</d9p1:AspectRatio>
+                  <d9p1:AspectRatio>1.78217816</d9p1:AspectRatio>
                 </d8p1:Component>
                 <d8p1:Component xmlns:d9p1="WaveEngine.Framework.Graphics" i:type="d9p1:Skybox">
                   <d8p1:FrustumCullingEnabled>true</d8p1:FrustumCullingEnabled>
@@ -424,7 +424,7 @@
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:FileMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Interior</ModelMeshName>
-              <d7p1:ModelPath>Content/Assets/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
+              <d7p1:ModelPath>Content/Assets/Model/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
@@ -466,7 +466,7 @@
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:FileMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Fuse</ModelMeshName>
-              <d7p1:ModelPath>Content/Assets/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
+              <d7p1:ModelPath>Content/Assets/Model/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
@@ -508,7 +508,7 @@
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:FileMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Instruments</ModelMeshName>
-              <d7p1:ModelPath>Content/Assets/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
+              <d7p1:ModelPath>Content/Assets/Model/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
@@ -550,7 +550,7 @@
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d7p1:FileMesh">
               <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Rotor</ModelMeshName>
-              <d7p1:ModelPath>Content/Assets/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
+              <d7p1:ModelPath>Content/Assets/Model/ShoperCockpit.fbx.wpk</d7p1:ModelPath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics3D" i:type="d7p1:MeshRenderer">
               <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>

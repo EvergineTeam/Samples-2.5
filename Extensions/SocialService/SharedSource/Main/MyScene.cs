@@ -65,6 +65,8 @@ namespace SocialService
             {
                 ////SimulationMode = true
             };
+
+            WaveServices.RegisterService(_socialService);
         }
 
         private void InitializeSceneParameters()
@@ -98,7 +100,6 @@ namespace SocialService
             {
                 Text = "SocialService Sample",
                 Width = 700,
-                ////FontPath = "Content/arial.wpk",
                 HorizontalAlignment = HorizontalAlignment.Center,
                 TextAlignment = TextAlignment.Center,
                 Margin = new Thickness(0, 30, 0, 0)

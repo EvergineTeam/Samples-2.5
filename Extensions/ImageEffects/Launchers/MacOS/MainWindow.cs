@@ -47,7 +47,7 @@ namespace ImageEffects
 			this.game.Initialize(this);
 
 			#region DEFAULT SPLASHSCREEN
-			this.backgroundSplashColor = new Color("#ebebeb");
+			this.backgroundSplashColor = Color.White;
 			this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
 			var resourceNames = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();

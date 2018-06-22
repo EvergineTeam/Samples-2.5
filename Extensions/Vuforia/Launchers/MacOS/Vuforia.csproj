@@ -13,8 +13,6 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,51 +50,39 @@
     <EnablePackageSigning>false</EnablePackageSigning>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BulletSharpPInvoke, Version=0.10.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\BulletSharpPInvoke.dll</HintPath>
-    </Reference>
-    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\protobuf-net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="WaveEngine.Box2D, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Box2DSharp, Version=2.0.6.25533, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Box2DSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Bullet, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Bullet.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Common, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Components, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Framework, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Materials, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
-    </Reference>
     <Reference Include="WaveEngine.Vuforia, Version=2.5.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\..\packages\WaveEngine.Vuforia.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\WaveEngine.Vuforia.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Vuforia.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Vuforia.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Mac" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="OpenTK">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180516-645\lib\Xamarin.Mac\OpenTK.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Common">
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Framework">
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Materials">
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Components">
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180516-645\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Box2D">
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Bullet">
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Bullet.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180516-645\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
-    </Reference>
-    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180525-648\lib\Xamarin.Mac\Zlib.Portable.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup />
@@ -132,14 +118,7 @@
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\VuforiaSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\VuforiaSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
-  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180516-645\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180516-645\build\Xamarin.Mac\WaveEngine.targets')" />
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Box2D.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Box2D.targets'))" />
-    <Error Condition="!Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Bullet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Bullet.targets'))" />
-  </Target>
-  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180525-648\build\Xamarin.Mac\WaveEngine.Bullet.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Bullet.targets')" />
 </Project>

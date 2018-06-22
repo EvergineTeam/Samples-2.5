@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -24,6 +24,7 @@
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>True</MtouchProfiling>
     <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -34,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
     <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>True</DebugSymbols>
@@ -52,7 +54,7 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchFastDev>False</MtouchFastDev>
     <MtouchEnableGenericValueTypeSharing>False</MtouchEnableGenericValueTypeSharing>
-    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <MtouchUseLlvm>False</MtouchUseLlvm>
     <MtouchUseThumb>False</MtouchUseThumb>
     <MtouchUseSGen>False</MtouchUseSGen>
@@ -81,7 +83,7 @@
     <MtouchExtraArgs />
     <MtouchFastDev>False</MtouchFastDev>
     <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
-    <MtouchArch>Default, ARMv7, ARMv7s</MtouchArch>
+    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
     <MtouchUseLlvm>True</MtouchUseLlvm>
     <MtouchUseThumb>False</MtouchUseThumb>
     <MtouchUseSGen>True</MtouchUseSGen>
@@ -113,77 +115,131 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Core" />
-    <Reference Include="WaveEngine.Social">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Social.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WaveEngine.Social, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Social.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
     <Reference Include="OpenTK-1.0" />
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
-    </Reference>
-    <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Box2D.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Bullet">
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Bullet.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Framework">
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Components">
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveEngine.Materials">
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180208-617\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180620-662\lib\Xamarin.iOS\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <None Include="Info.plist">
-      <SubType>Designer</SubType>
-    </None>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SplashScreen.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SplashScreen.imageset\SplashScreen.x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SplashScreen.imageset\SplashScreen.x2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SplashScreen.imageset\SplashScreen.x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <InterfaceDefinition Include="Main.storyboard" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Default-Landscape.png" />
-    <BundleResource Include="Resources\Default-Landscape%402x.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
-    <BundleResource Include="Resources\Default-Portrait%402x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
-    <BundleResource Include="Resources\Icon%402x.png" />
-    <BundleResource Include="Resources\Icon-60%402x.png" />
-    <BundleResource Include="Resources\Icon-72%402x.png" />
-    <BundleResource Include="Resources\Icon-72.png" />
-    <BundleResource Include="Resources\Icon-76%402x.png" />
-    <BundleResource Include="Resources\Icon-76.png" />
-    <BundleResource Include="Resources\Icon-Small%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-40.png" />
-    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
-    <BundleResource Include="Resources\Icon-Small-50.png" />
-    <BundleResource Include="Resources\Icon-Small.png" />
-    <BundleResource Include="Resources\Icon.png" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainController.designer.cs">
+      <DependentUpon>MainController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="..\..\Source\SocialServiceSource.projitems" Label="Shared" Condition="Exists('..\..\Source\SocialServiceSource.projitems')" />
   <Import Project="..\..\SharedSource\Main\SocialServiceSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\SocialServiceSource.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup />
-  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.Bullet.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.iOS\WaveEngine.targets'))" />
   </Target>
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180208-617\build\Xamarin.iOS\WaveEngine.Box2D.targets')" />
 </Project>

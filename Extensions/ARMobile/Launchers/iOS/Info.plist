@@ -6,35 +6,25 @@
 	<string>ARMobile</string>
 	<key>CFBundleIdentifier</key>
 	<string>ARMobile.ARMobile</string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>Icon-72@2x.png</string>
-		<string>Icon-72.png</string>
-		<string>Icon@2x.png</string>
-		<string>Icon.png</string>
-		<string>Icon-60@2x.png</string>
-		<string>Icon-76.png</string>
-		<string>Icon-76@2x.png</string>
-		<string>Default.png</string>
-		<string>Default@2x.png</string>
-		<string>Default-568h@2x.png</string>
-		<string>Default-Landscape.png</string>
-		<string>Default-Landscape@2x.png</string>
-		<string>Default-Portrait.png</string>
-		<string>Default-Portrait@2x.png</string>
-		<string>Icon-Small-50@2x.png</string>
-		<string>Icon-Small-50.png</string>
-		<string>Icon-Small-40.png</string>
-		<string>Icon-Small-40@2x.png</string>
-		<string>Icon-Small.png</string>
-	</array>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>7.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
 		<integer>2</integer>
 	</array>
-	<key>MinimumOSVersion</key>
-	<string>7.0</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
@@ -46,16 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>CFBundleShortVersionString</key>
-	<string></string>
-	<key>CFBundleVersion</key>
-	<string></string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Camera use is needed in ARKit</string>
+	<string>Camera access is required for this application</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 </dict>
 </plist>

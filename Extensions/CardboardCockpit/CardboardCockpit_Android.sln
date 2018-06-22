@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardboardCockpit", "Launchers\Android\CardboardCockpit.csproj", "{5A2BDAFD-AA77-492C-8D29-F29013625366}"
 EndProject
@@ -27,7 +27,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A6872725-FD06-4F82-BCAA-15DE1C660DEB}
+		SolutionGuid = {2E0D4A2B-25D8-4730-9CDB-1C33E05312CD}
 	EndGlobalSection
 	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
 		SpecExplorer.ActivityCompletionStatus = 

@@ -12,7 +12,7 @@ using WaveEngine.Common.Attributes;
 [assembly: AssemblyCompany("")]
 
 [assembly: AssemblyProduct("MixedRealitySample")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
 
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
