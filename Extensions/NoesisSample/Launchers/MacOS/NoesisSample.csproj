@@ -119,6 +119,7 @@
     <BundleResource Include="Resources\Icon.icns" />
   </ItemGroup>
   <Import Project="..\..\SharedSource\Main\NoesisSampleSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\NoesisSampleSource.projitems')" />
+  <Import Project="..\..\SharedSource\Panels\Panels.Shared.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Panels\Panels.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets')" />
   <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />

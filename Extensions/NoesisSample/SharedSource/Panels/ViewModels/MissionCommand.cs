@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace NoesisWPFLibrary
+namespace NoesisSample.ViewModels
 { 
     public class MissionCommand : ICommand
     {

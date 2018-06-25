@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NoesisSample;
 using System.Windows.Input;
 
-namespace NoesisWPFLibrary
+namespace NoesisSample.ViewModels
 {
     public class MainPanelVM
     {

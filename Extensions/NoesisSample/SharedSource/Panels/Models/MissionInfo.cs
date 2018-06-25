@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NoesisWPFLibrary
+namespace NoesisSample
 {
     public class MissionInfo
     {

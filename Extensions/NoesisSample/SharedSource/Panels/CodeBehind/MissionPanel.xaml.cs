@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NoesisWPFLibrary;
-
-#if WPF
+﻿
+#if PANELS_PROJECT
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,10 +12,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 #else
 using Noesis;
-using NoesisSample;
 #endif
 
-namespace NoesisWPF
+namespace NoesisSample
 {
     /// <summary>
     /// Interaction logic for MainHUD.xaml
@@ -33,7 +26,7 @@ namespace NoesisWPF
 
         public MissionPanel()
         {
-#if WPF
+#if PANELS_PROJECT
             InitializeComponent();
 #else
             Noesis.GUI.LoadComponent(this, WaveContent.Assets.Xaml.MissionPanel_xaml);

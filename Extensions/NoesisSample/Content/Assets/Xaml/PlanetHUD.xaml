@@ -1,11 +1,9 @@
-﻿<UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:NoesisWPF"
-             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="NoesisWPF.PlanetHUD"
-             mc:Ignorable="d" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             x:Class="NoesisSample.PlanetHUD"
+             mc:Ignorable="d"
              d:DesignHeight="334" d:DesignWidth="334">
     <UserControl.Resources>
         <Storyboard x:Key="loop" RepeatBehavior="1">
@@ -904,7 +902,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <Image x:Name="___NoesisWPF_component_Image2_png" Source="/NoesisWPF;component/Image2.png" Stretch="Fill" Width="852" Height="480" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-24.249,-47.086,-442.751,-47.914" Opacity="0.5" Visibility="Collapsed"/>
             <Ellipse x:Name="ellipse7" Stroke="#FF64E1FF" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="170" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.RenderTransform>
                     <TransformGroup>

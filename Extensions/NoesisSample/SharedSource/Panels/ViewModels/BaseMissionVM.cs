@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NoesisWPFLibrary.ViewModels
+namespace NoesisSample.ViewModels
 {
     public abstract class BaseMissionVM
     {
@@ -10,7 +10,9 @@ namespace NoesisWPFLibrary.ViewModels
 
         public BaseMissionVM(MissionEnum mission)
         {
+#if !PANELS_PROJECT
             this.missionInfo = MissionFactory.GetMission(mission);
+#endif
         }
 
         public string Title
