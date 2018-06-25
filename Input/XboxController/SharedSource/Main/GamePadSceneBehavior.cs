@@ -1,20 +1,14 @@
 ﻿#region Using Statements
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
-using WaveEngine.Common.Math;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using XBoxController;
 
 #endregion
 
-namespace XBoxController
+namespace XboxController
 {
     public class GamePadSceneBehavior : SceneBehavior
     {

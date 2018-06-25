@@ -13,7 +13,7 @@ using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace XBoxController
+namespace XboxController
 {
     public class MyScene : Scene
     {
