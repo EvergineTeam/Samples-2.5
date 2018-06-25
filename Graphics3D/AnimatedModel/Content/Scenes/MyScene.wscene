@@ -59,7 +59,7 @@
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
-          <d5p1:AspectRatio>1.78217816</d5p1:AspectRatio>
+          <d5p1:AspectRatio>1.39178085</d5p1:AspectRatio>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Sound" i:type="d5p1:SoundListener3D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -1915,7 +1915,7 @@
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:ApplyRootMotion>true</d5p1:ApplyRootMotion>
           <d5p1:CurrentAnimation>Take 001</d5p1:CurrentAnimation>
-          <d5p1:PlayAutomatically>false</d5p1:PlayAutomatically>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
           <d5p1:modelPath>Content/Assets/isis.fbx.wpk</d5p1:modelPath>
           <d5p1:playbackRate>1</d5p1:playbackRate>
         </d4p1:Component>

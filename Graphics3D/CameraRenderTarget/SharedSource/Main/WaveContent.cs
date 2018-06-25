@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 24-May-18 13:32:38
+// File generated on 6/25/2018 3:30:01 PM
 namespace CameraRenderTarget
 {
     using System;

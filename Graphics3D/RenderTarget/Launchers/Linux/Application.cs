@@ -18,8 +18,8 @@ namespace RenderTarget
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
-		Color backgroundSplashColor;
-		bool lastKeyF10Pressed = false;
+        Color backgroundSplashColor;
+        bool lastKeyF10Pressed = false;
 
         public App()
         {
@@ -35,7 +35,7 @@ namespace RenderTarget
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -66,19 +66,19 @@ namespace RenderTarget
         {
             if (this.game != null && !this.game.HasExited)
             {
-				bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
-				if (keyF10Pressed && !this.lastKeyF10Pressed)
-				{
-					this.FullScreen = !this.FullScreen;
-				}
+                bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
+                if (keyF10Pressed && !this.lastKeyF10Pressed)
+                {
+                    this.FullScreen = !this.FullScreen;
+                }
 
-				this.lastKeyF10Pressed = keyF10Pressed;
+                this.lastKeyF10Pressed = keyF10Pressed;
 
                 if (this.splashState)
                 {
                     #region DEFAULT SPLASHSCREEN
                     position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
-					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
+                    position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
                     {
@@ -100,7 +100,7 @@ namespace RenderTarget
             }
         }
 
-		public override void Draw(TimeSpan elapsedTime)
+        public override void Draw(TimeSpan elapsedTime)
         {
             if (this.game != null && !this.game.HasExited)
             {

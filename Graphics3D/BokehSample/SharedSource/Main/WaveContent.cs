@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 22-May-18 16:44:41
+// File generated on 6/25/2018 3:27:20 PM
 namespace BokehSample
 {
     using System;
