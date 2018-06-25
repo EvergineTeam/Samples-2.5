@@ -233,7 +233,7 @@
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:FileMesh">
           <ModelMeshName xmlns="WaveEngine.Components.Graphics3D">Teapot001</ModelMeshName>
-          <d5p1:ModelPath>Content/Assets/Models/teapot.fbx.wpk</d5p1:ModelPath>
+          <d5p1:ModelPath i:nil="true" />
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Components.Graphics3D" i:type="d5p1:MaterialComponent">
           <d5p1:AsignedTo>DefaultMaterial</d5p1:AsignedTo>

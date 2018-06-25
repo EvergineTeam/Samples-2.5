@@ -1,5 +1,5 @@
 ﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>c4c68053-19ef-4d25-a228-6528937d8800</Id>
+  <Id>9fad4924-1659-4685-b57e-708b72cbdf89</Id>
   <GameInfoPath>CustomMaterial.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -40,5 +40,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180521-646</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
 </Project>
