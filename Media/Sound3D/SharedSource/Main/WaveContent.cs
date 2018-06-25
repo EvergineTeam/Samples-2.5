@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 22/03/2018 16:29:06
+// File generated on 6/25/2018 6:03:20 PM
 namespace Sound3D
 {
     using System;
@@ -26,29 +26,14 @@ namespace Sound3D
             /// <summary> Path to Content/Assets/engines_1.wav </summary>
             public const string engines_1_wav = "Content/Assets/engines_1.wav";
             
-            /// <summary> Path to Content/Assets/fighter_diffuse.png </summary>
-            public const string fighter_diffuse_png = "Content/Assets/fighter_diffuse.png";
-            
-            /// <summary> Path to Content/Assets/fighter_normal.png </summary>
-            public const string fighter_normal_png = "Content/Assets/fighter_normal.png";
-            
-            /// <summary> Path to Content/Assets/fighter_spec.png </summary>
-            public const string fighter_spec_png = "Content/Assets/fighter_spec.png";
-            
             /// <summary> Path to Content/Assets/spaceship.fbx </summary>
             public const string spaceship_fbx = "Content/Assets/spaceship.fbx";
-            
-            /// <summary> Path to Content/Assets/Thrust.png </summary>
-            public const string Thrust_png = "Content/Assets/Thrust.png";
             
             /// <summary> Path to Content/Assets/RedMat.wmat </summary>
             public const string RedMat = "Content/Assets/RedMat.wmat";
             
             /// <summary> Path to Content/Assets/ShipMat.wmat </summary>
             public const string ShipMat = "Content/Assets/ShipMat.wmat";
-            
-            /// <summary> Path to Content/Assets/ThrustMat.wmat </summary>
-            public const string ThrustMat = "Content/Assets/ThrustMat.wmat";
             
             public sealed class spaceship_Textures
             {

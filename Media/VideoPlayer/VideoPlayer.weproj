@@ -1,5 +1,5 @@
 ﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>568af4d7-075a-4e5b-823a-bcf5174ac037</Id>
+  <Id>4ddf277c-fce2-49bf-8e10-ed0ab1ec2b22</Id>
   <GameInfoPath>VideoPlayer.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -40,5 +40,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180409-627</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
 </Project>

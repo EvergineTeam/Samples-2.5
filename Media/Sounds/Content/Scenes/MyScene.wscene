@@ -53,7 +53,7 @@
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearDepth>1</d5p1:ClearDepth>
-          <d5p1:ClearFlags>DepthAndStencil</d5p1:ClearFlags>
+          <d5p1:ClearFlags>All</d5p1:ClearFlags>
           <d5p1:ClearStencil>0</d5p1:ClearStencil>
           <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:MaxDepth>1</d6p1:MaxDepth>

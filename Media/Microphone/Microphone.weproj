@@ -1,5 +1,5 @@
 ﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>e004222d-c42f-47a8-abcc-f21a418ae7f3</Id>
+  <Id>b6baf16a-7859-4e74-ada9-ebfd0a229dfd</Id>
   <GameInfoPath>Microphone.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -40,5 +40,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180409-627</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
 </Project>
