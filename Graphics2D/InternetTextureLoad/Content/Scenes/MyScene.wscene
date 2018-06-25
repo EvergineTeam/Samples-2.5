@@ -17,13 +17,13 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>640</d6p1:X>
-            <d6p1:Y>360</d6p1:Y>
+            <d6p1:X>507.999939</d6p1:X>
+            <d6p1:Y>364.999969</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1.51</d6p1:X>
-            <d6p1:Y>1.51</d6p1:Y>
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Opacity>1</d5p1:Opacity>
@@ -47,9 +47,9 @@
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Camera2D">
           <d5p1:BackgroundColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>255</d6p1:A>
-            <d6p1:B>65</d6p1:B>
-            <d6p1:G>64</d6p1:G>
-            <d6p1:R>64</d6p1:R>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
           <d5p1:ClearDepth>1</d5p1:ClearDepth>
@@ -84,8 +84,8 @@
             <d6p1:Y>0.5</d6p1:Y>
           </d5p1:vanishingPoint>
           <d5p1:zoom xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>1.51</d6p1:X>
-            <d6p1:Y>1.51</d6p1:Y>
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
           </d5p1:zoom>
         </d4p1:Component>
       </d2p1:SerializeComponents>
@@ -106,8 +106,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>649.57</d6p1:X>
-            <d6p1:Y>163.45</d6p1:Y>
+            <d6p1:X>508</d6p1:X>
+            <d6p1:Y>180</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -170,13 +170,13 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>665.65</d6p1:X>
-            <d6p1:Y>511.45</d6p1:Y>
+            <d6p1:X>508</d6p1:X>
+            <d6p1:Y>641</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.88</d6p1:X>
-            <d6p1:Y>0.88</d6p1:Y>
+            <d6p1:X>0.5293676</d6p1:X>
+            <d6p1:Y>0.532840967</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Opacity>1</d5p1:Opacity>

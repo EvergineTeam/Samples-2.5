@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 16/05/2018 16:02:41
+// File generated on 6/25/2018 1:55:22 PM
 namespace ParallaxCamera2D
 {
     using System;
