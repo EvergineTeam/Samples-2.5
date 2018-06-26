@@ -7,7 +7,7 @@ using System.IO;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 
-namespace Diagnostic
+namespace Diagnostics
 {
 	public partial class MainWindow : WaveEngine.Adapter.Application, WaveEngine.Common.IApplication
 	{
@@ -19,14 +19,14 @@ namespace Diagnostic
 		private Vector2 position;
 		private Color backgroundSplashColor;
 
-		private Diagnostic.Game game;
+		private Diagnostics.Game game;
 		#endregion
 
 		#region Constructors
 
 		public MainWindow (IntPtr handle) : base (handle)
 		{
-			this.WindowTitle = "Diagnostic";
+			this.WindowTitle = "Diagnostics";
 			this.ResizeScreen(1280, 720);
 		}
 
@@ -43,11 +43,11 @@ namespace Diagnostic
 		/// </summary>
 		public override void Initialize()
 		{
-			this.game = new Diagnostic.Game();
+			this.game = new Diagnostics.Game();
 			this.game.Initialize(this);
 
 			#region DEFAULT SPLASHSCREEN
-			this.backgroundSplashColor = new Color("#ebebeb");
+			this.backgroundSplashColor = Color.White;
 			this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
 			var resourceNames = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();

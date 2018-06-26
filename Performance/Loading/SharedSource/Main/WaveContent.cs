@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 24-May-18 16:14:20
+// File generated on 6/26/2018 10:41:51 AM
 namespace Loading
 {
     using System;
@@ -66,6 +66,9 @@ namespace Loading
             
             /// <summary> Path to Content/Scenes/LoadingScene.wscene </summary>
             public const string LoadingScene = "Content/Scenes/LoadingScene.wscene";
+            
+            /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
+            public const string MyScene = "Content/Scenes/MyScene.wscene";
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using WaveEngine.Adapter;
 
-namespace Diagnostic
+namespace Diagnostics
 {
     static class Program
     {

@@ -249,7 +249,7 @@
           <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostic.Behaviors" i:type="d5p1:CubeBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostics" i:type="d5p1:CubeBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:Amplitude xmlns:d6p1="WaveEngine.Common.Math">
@@ -305,7 +305,7 @@
           <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostic.Behaviors" i:type="d5p1:CubeBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostics" i:type="d5p1:CubeBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:Amplitude xmlns:d6p1="WaveEngine.Common.Math">
@@ -361,7 +361,7 @@
           <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
         </d4p1:Component>
-        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostic.Behaviors" i:type="d5p1:CubeBehavior">
+        <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Diagnostics" i:type="d5p1:CubeBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
           <d4p1:isDisabled>false</d4p1:isDisabled>
           <d5p1:Amplitude xmlns:d6p1="WaveEngine.Common.Math">

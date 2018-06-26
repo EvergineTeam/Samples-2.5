@@ -52,28 +52,33 @@
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -143,11 +148,10 @@
               <d7p1:texturePath>Content/Assets/SyncSceneLoad.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
               <d7p1:CollidesWith>All</d7p1:CollidesWith>
@@ -182,7 +186,7 @@
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
               <d7p1:ProjectCamera>false</d7p1:ProjectCamera>
-              <d7p1:TouchOrder>500</d7p1:TouchOrder>
+              <d7p1:TouchOrder>200</d7p1:TouchOrder>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -242,11 +246,10 @@
               <d7p1:texturePath>Content/Assets/AsyncImagesLoad.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
               <d7p1:CollidesWith>All</d7p1:CollidesWith>
@@ -281,7 +284,7 @@
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
               <d7p1:ProjectCamera>false</d7p1:ProjectCamera>
-              <d7p1:TouchOrder>500</d7p1:TouchOrder>
+              <d7p1:TouchOrder>200</d7p1:TouchOrder>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -341,11 +344,10 @@
               <d7p1:texturePath>Content/Assets/AsyncSceneLoad.png.wpk</d7p1:texturePath>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Components.Graphics2D" i:type="d7p1:SpriteRenderer">
+              <d6p1:FrustumCullingEnabled>true</d6p1:FrustumCullingEnabled>
               <d6p1:IsVisible>true</d6p1:IsVisible>
-              <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-              <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+              <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
               <d7p1:DrawMode>Simple</d7p1:DrawMode>
-              <d7p1:SamplerMode>LinearClamp</d7p1:SamplerMode>
             </d6p1:Component>
             <d6p1:Component xmlns:d7p1="WaveEngine.Framework.Physics2D" i:type="d7p1:RectangleCollider2D">
               <d7p1:CollidesWith>All</d7p1:CollidesWith>
@@ -380,7 +382,7 @@
               <d7p1:MaxScale>5</d7p1:MaxScale>
               <d7p1:MinScale>0.1</d7p1:MinScale>
               <d7p1:ProjectCamera>false</d7p1:ProjectCamera>
-              <d7p1:TouchOrder>500</d7p1:TouchOrder>
+              <d7p1:TouchOrder>200</d7p1:TouchOrder>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
@@ -399,8 +401,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>693.899536</d6p1:X>
-            <d6p1:Y>420.9999</d6p1:Y>
+            <d6p1:X>649.1998</d6p1:X>
+            <d6p1:Y>392.8001</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">

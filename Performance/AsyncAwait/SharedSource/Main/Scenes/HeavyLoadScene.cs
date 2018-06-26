@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Graphics2D;
@@ -55,6 +53,11 @@ namespace AsyncAwait.Scenes
         {
             using (var imageStreamResult = ImagesHelper.LoadImageStream(imageUrl))
             {
+                if (!imageStreamResult.IsSuccess)
+                {
+                    return null;
+                }
+
                 var texture = Texture2D.FromFile(this.RenderManager.GraphicsDevice, imageStreamResult.Stream);
                 return texture;
             }

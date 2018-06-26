@@ -1,10 +1,9 @@
 #region Using Statements
-using Diagnostic;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Diagnostic
+namespace Diagnostics
 {
     public class MyScene : Scene
     {

@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Diagnostic
+namespace Diagnostics
 {
     public class Game : WaveEngine.Framework.Game
     {

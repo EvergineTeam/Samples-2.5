@@ -1,7 +1,7 @@
 using Foundation;
 using AppKit;
 
-namespace Diagnostic
+namespace Diagnostics
 {
 	public partial class AppDelegate : NSApplicationDelegate
 	{

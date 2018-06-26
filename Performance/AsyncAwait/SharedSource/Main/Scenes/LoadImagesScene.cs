@@ -51,7 +51,11 @@ namespace AsyncAwait.Scenes
                     var texture = await textureTask.ConfigureWaveAwait(WaveTaskContinueOn.Foreground);
 
                     this.DisposedCancellationToken.ThrowIfCancellationRequested();
-                    await this.CreateImageSprite(texture).ConfigureAwait(false);
+
+                    if (texture != null)
+                    {
+                        await this.CreateImageSprite(texture).ConfigureAwait(false);
+                    }
                 }
             }
             catch (OperationCanceledException)
@@ -81,6 +85,11 @@ namespace AsyncAwait.Scenes
         {
             using (var imageStreamResult = await ImagesHelper.LoadImageStreamAsync(imageUrl, cancellationToken).ConfigureWaveAwait(WaveTaskContinueOn.Background))
             {
+                if (!imageStreamResult.IsSuccess)
+                {
+                    return null;
+                }
+
                 cancellationToken.ThrowIfCancellationRequested();
                 var texture = Texture2D.FromFile(this.RenderManager.GraphicsDevice, imageStreamResult.Stream);
                 this.downloadedImages++;
