@@ -2829,7 +2829,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.990268052</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0.13917309</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -3317,7 +3317,7 @@
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>0.990268052</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Y>0</d6p1:Y>
             <d6p1:Z>0.13917309</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -3672,9 +3672,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>2449.37964</d6p1:X>
-            <d6p1:Y>2093.3</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:X>619.899963</d6p1:X>
+            <d6p1:Y>-91.15003</d6p1:Y>
+            <d6p1:Z>-2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -3685,17 +3685,17 @@
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:Height>21</d6p1:Height>
             <d6p1:Width>366</d6p1:Width>
-            <d6p1:X>-402.6</d6p1:X>
-            <d6p1:Y>42</d6p1:Y>
+            <d6p1:X>-183</d6p1:X>
+            <d6p1:Y>10.5</d6p1:Y>
           </d5p1:Rectangle>
           <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
           </d5p1:origin>
           <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0.9</d6p1:X>
-            <d6p1:Y>0.9</d6p1:Y>
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.05</d6p1:Y>
           </d5p1:screenPosition>
           <d5p1:transformMode>Screen</d5p1:transformMode>
         </d4p1:Component>
@@ -3710,15 +3710,15 @@
           </d5p1:foreground>
           <d5p1:lineSpacing>0</d5p1:lineSpacing>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
           </d5p1:origin>
           <d5p1:scale xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
           </d5p1:scale>
           <d5p1:text>Textures made by Kenney (www.kenney.nl)</d5p1:text>
-          <d5p1:textAlignment>Left</d5p1:textAlignment>
+          <d5p1:textAlignment>Center</d5p1:textAlignment>
           <d5p1:textWrapping>false</d5p1:textWrapping>
           <d5p1:width>300</d5p1:width>
         </d4p1:Component>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 05/04/2018 17:46:33
+// File generated on 6/26/2018 1:39:19 PM
 namespace StickyProjectiles
 {
     using System;

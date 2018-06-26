@@ -1,5 +1,5 @@
 ﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>2d380bbb-a911-48f5-8182-bb196d9a3cef</Id>
+  <Id>9da1e51f-57d5-42a8-b8ec-fcc7537cf2de</Id>
   <GameInfoPath>StickyProjectiles.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -10,7 +10,7 @@
           <d5p1:Profiles>
             <Profile>
               <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
-              <LauncherType>Default</LauncherType>
+              <LauncherType>DirectX</LauncherType>
               <Name>Windows</Name>
               <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
               <Platform>Windows</Platform>
@@ -18,16 +18,16 @@
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType>Default</LauncherType>
-              <Name>MacOSProfile</Name>
+              <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>MacOS</Platform>
+              <Platform>Linux</Platform>
             </Profile>
             <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
               <LauncherType>Default</LauncherType>
-              <Name>LinuxProfile</Name>
+              <Name>MacOS</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Linux</Platform>
+              <Platform>MacOS</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
@@ -40,5 +40,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1.35</WaveVersion>
+  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
 </Project>

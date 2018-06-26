@@ -3260,7 +3260,7 @@
               <d7p1:Rectangle xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
                 <d8p1:Height>63</d8p1:Height>
                 <d8p1:Width>287</d8p1:Width>
-                <d8p1:X>-0</d8p1:X>
+                <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
               </d7p1:Rectangle>
               <d7p1:effect>None</d7p1:effect>
@@ -3321,8 +3321,8 @@ WASD = Move</d7p1:text>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:X>-508</d6p1:X>
+            <d6p1:Y>-365</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">

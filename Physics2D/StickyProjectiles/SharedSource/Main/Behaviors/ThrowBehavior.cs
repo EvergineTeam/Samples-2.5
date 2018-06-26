@@ -19,12 +19,6 @@ namespace StickyProjectiles.Behaviors
     [DataContract]
     public class ThrowBehavior : Behavior
     {
-        private struct JointData
-        {
-            public Entity arrow;
-            public Entity obstacle;
-        }
-
         private int proyectileInstances;
         private Input input;
         private KeyboardState lastKeyboardState;
@@ -143,11 +137,9 @@ namespace StickyProjectiles.Behaviors
                 Vector2 arrowPointing = Vector2.Transform(Vector2.UnitX * 100, projectileTransform.WorldTransform);
                 Vector2 flightDirection = arrowPointing - projectileTransform.Position;
                 flightDirection.Normalize();
-                //projectileBody.AngularDamping = 0;
 
                 Vector2 arrowTailPosition = Vector2.Transform(Vector2.UnitX * -35, projectileTransform.WorldTransform);
                 projectileBody.ApplyForce(flightDirection * this.Force, arrowTailPosition);
-                //projectileBody.ApplyLinearImpulse(flightDirection * 0.2f, arrowTailPosition);        
             }
         }
 
@@ -162,8 +154,7 @@ namespace StickyProjectiles.Behaviors
                 {
                     var physicBodyA = colliderA.RigidBody.UserData as RigidBody2D;
                     var physicBodyB = colliderB.RigidBody.UserData as RigidBody2D;
-                    //if (physicBodyB.LinearVelocity.Length() > 250.0f)
-                    //{
+
                     Entity obstacle = physicBodyA.Owner;
                     Entity arrow = physicBodyB.Owner;
                     Transform2D obstacleTransform = obstacle.FindComponent<Transform2D>();
@@ -182,7 +173,6 @@ namespace StickyProjectiles.Behaviors
                         ReferenceAngle = obstacleTransform.LocalRotation - arrowTransform.LocalRotation,
                     };
                     arrow.AddComponent(distance);
-                    //}
                 }
             });
         }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 17/04/2018 15:37:29
+// File generated on 6/26/2018 1:58:54 PM
 namespace VehiclePhysics2D
 {
     using System;
@@ -148,9 +148,6 @@ namespace VehiclePhysics2D
             
             /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
             public const string MyScene = "Content/Scenes/MyScene.wscene";
-            
-            /// <summary> Path to Content/Scenes/MyScene01.wscene </summary>
-            public const string MyScene01 = "Content/Scenes/MyScene01.wscene";
         }
     }
 }

@@ -97,9 +97,6 @@ namespace StickyProjectiles.Behaviors
                                         this.mouseJoint = new MouseJoint2D()
                                         {
                                             Target = this.TouchPosition,
-                                            //MaxForce = 100,
-                                            //DampingRatio = 0.5f,
-                                            //FrequencyHz = 2000,
                                         };
                                         this.ConnectedEntity.AddComponent(mouseJoint);
 
