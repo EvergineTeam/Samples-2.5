@@ -17,8 +17,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>507.999939</d6p1:X>
-            <d6p1:Y>364.999969</d6p1:Y>
+            <d6p1:X>508</d6p1:X>
+            <d6p1:Y>240</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -107,7 +107,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>508</d6p1:X>
-            <d6p1:Y>180</d6p1:Y>
+            <d6p1:Y>140</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -117,8 +117,8 @@
           </d5p1:LocalScale>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>157</d6p1:Height>
-            <d6p1:Width>375</d6p1:Width>
+            <d6p1:Height>128</d6p1:Height>
+            <d6p1:Width>223</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Rectangle>
@@ -143,8 +143,8 @@
             <d6p1:R>255</d6p1:R>
           </TintColor>
           <materialPath i:nil="true" xmlns="WaveEngine.Components.Graphics2D" />
-          <texturePath xmlns="WaveEngine.Components.Graphics2D">https://raw.githubusercontent.com/WaveEngine/Samples/master/Graphics2D/InternetTextureLoad/Images/logo.png</texturePath>
-          <d5p1:TextureUrl>https://raw.githubusercontent.com/WaveEngine/Samples/master/Graphics2D/InternetTextureLoad/Images/logo.png</d5p1:TextureUrl>
+          <texturePath xmlns="WaveEngine.Components.Graphics2D">https://wave.blob.core.windows.net/samplesresouces/InternetTextureLoad/logo.png</texturePath>
+          <d5p1:TextureUrl>https://wave.blob.core.windows.net/samplesresouces/InternetTextureLoad/logo.png</d5p1:TextureUrl>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
@@ -171,7 +171,7 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>508</d6p1:X>
-            <d6p1:Y>641</d6p1:Y>
+            <d6p1:Y>480</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -181,7 +181,7 @@
           </d5p1:LocalScale>
           <d5p1:Opacity>1</d5p1:Opacity>
           <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-            <d6p1:Height>442</d6p1:Height>
+            <d6p1:Height>387</d6p1:Height>
             <d6p1:Width>1920</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
@@ -189,7 +189,7 @@
           <d5p1:effect>None</d5p1:effect>
           <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:Y>1</d6p1:Y>
           </d5p1:origin>
           <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0</d6p1:X>
@@ -207,8 +207,8 @@
             <d6p1:R>255</d6p1:R>
           </TintColor>
           <materialPath i:nil="true" xmlns="WaveEngine.Components.Graphics2D" />
-          <texturePath xmlns="WaveEngine.Components.Graphics2D">https://raw.githubusercontent.com/WaveEngine/Samples/master/Graphics2D/InternetTextureLoad/Images/banner.png</texturePath>
-          <d5p1:TextureUrl>https://raw.githubusercontent.com/WaveEngine/Samples/master/Graphics2D/InternetTextureLoad/Images/banner.png</d5p1:TextureUrl>
+          <texturePath xmlns="WaveEngine.Components.Graphics2D">https://wave.blob.core.windows.net/samplesresouces/InternetTextureLoad/banner.png</texturePath>
+          <d5p1:TextureUrl>https://wave.blob.core.windows.net/samplesresouces/InternetTextureLoad/banner.png</d5p1:TextureUrl>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
           <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
@@ -228,7 +228,7 @@
           <d5p1:Enabled>false</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>730</d5p1:VirtualHeight>
+          <d5p1:VirtualHeight>479</d5p1:VirtualHeight>
           <d5p1:VirtualWidth>1016</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
