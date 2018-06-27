@@ -15,23 +15,19 @@ namespace ARMobile
         private Vector3 currentVelocity;
 
         [DataMember]
-        private Vector3 endScale;
-
-        [DataMember]
-        private Vector3 startScale;
-
-        [DataMember]
         public TimeSpan AnimationTime { get; set; }
 
-        public Vector3 StartScale { get => startScale; set => startScale = value; }
+        [DataMember]
+        public Vector3 StartScale { get; set; }
 
-        public Vector3 EndScale { get => endScale; set => endScale = value; }
+        [DataMember]
+        public Vector3 EndScale { get; set; }
 
         protected override void DefaultValues()
         {
             base.DefaultValues();
 
-            this.endScale = Vector3.One;
+            this.EndScale = Vector3.One;
             this.AnimationTime = TimeSpan.FromSeconds(1);
         }
 
@@ -39,7 +35,7 @@ namespace ARMobile
         {
             var localScale = this.transform.LocalScale;
 
-            localScale = Vector3.SmoothDamp(localScale, this.endScale, ref this.currentVelocity, (float)this.AnimationTime.TotalSeconds, (float)gameTime.TotalSeconds);
+            localScale = Vector3.SmoothDamp(localScale, this.EndScale, ref this.currentVelocity, (float)this.AnimationTime.TotalSeconds, (float)gameTime.TotalSeconds);
 
             if (Vector3.DistanceSquared(localScale, this.EndScale) < 0.0001f)
             {

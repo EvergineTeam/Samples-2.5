@@ -1512,16 +1512,16 @@
               <d6p1:UpdateOrder>0.5</d6p1:UpdateOrder>
               <d6p1:isDisabled>false</d6p1:isDisabled>
               <d7p1:AnimationTime>PT0.81S</d7p1:AnimationTime>
-              <d7p1:endScale xmlns:d8p1="WaveEngine.Common.Math">
+              <d7p1:EndScale xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0.4</d8p1:X>
                 <d8p1:Y>0.4</d8p1:Y>
                 <d8p1:Z>0.4</d8p1:Z>
-              </d7p1:endScale>
-              <d7p1:startScale xmlns:d8p1="WaveEngine.Common.Math">
+              </d7p1:EndScale>
+              <d7p1:StartScale xmlns:d8p1="WaveEngine.Common.Math">
                 <d8p1:X>0</d8p1:X>
                 <d8p1:Y>0</d8p1:Y>
                 <d8p1:Z>0</d8p1:Z>
-              </d7p1:startScale>
+              </d7p1:StartScale>
             </d6p1:Component>
           </d2p1:SerializeComponents>
         </d2p1:BaseEntityModel>
