@@ -11,6 +11,10 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\Messages\BaseMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\Messages\MoveMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\Messages\NewPlayerMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\P2PMessageType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\LoadingScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\MainScene.cs" />

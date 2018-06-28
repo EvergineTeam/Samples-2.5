@@ -6,11 +6,15 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Framework.UI;
+using WaveEngine.Components.UI;
 using WaveEngine.Networking;
 using WaveEngine.Networking.Connection.Messages;
 using WaveEngine.Networking.P2P;
 using WaveEngine.Networking.P2P.Events;
 using WaveEngine.Networking.P2P.Players;
+using System;
+using Networking_P2P.Networking;
 
 namespace Networking_P2P.Scenes
 {
@@ -22,14 +26,31 @@ namespace Networking_P2P.Scenes
         {
             this.Load(WaveContent.Scenes.GameScene);
 
+            var button = new Button
+            {
+                Text = "Test",
+                Width = 200,
+                Height = 50,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Top,
+                Margin = new Thickness(10, 10 + 70, 10, 10)
+            };
+            button.Click += this.OnButtonClicked;
+            this.EntityManager.Add(button);
+
             this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
 
             networkPeerService.PortNum = 21809;
-  
+
             networkPeerService.MessageReceivedFromPlayer += OnNetworkPeerServiceMessageReceivedFromPlayer;
             networkPeerService.NetworkPlayerChange += OnNetworkPeerServiceNetworkPlayerChange;
 
             await networkPeerService.StartAsync();
+        }
+
+        private async void OnButtonClicked(object sender, EventArgs e)
+        {
+            await this.networkPeerService.SendBroadcastAsync(new OutgoingMessage(new NetBuffer() { Data = new byte[] { 1, 2, 3, 4 } }));
         }
 
         private void AddPlayer(INetworkPlayer player, bool isLocal)
@@ -55,15 +76,22 @@ namespace Networking_P2P.Scenes
             return $"player_{player.Id}";
         }
 
-        private void OnNetworkPeerServiceMessageReceivedFromPlayer(object sender, MessageFromPlayerEventArgs e)
+        private void OnNetworkPeerServiceMessageReceivedFromPlayer(object sender, PeerMessageFromPlayerEventArgs e)
         {
-            var messageReceived = Encoding.ASCII.GetString(e.ReceivedMessage.ReadBytes());
+            var rawMessage = e.ReceivedMessage;
+            var messagetType = (P2PMessageType) rawMessage.ReadInt32();
 
-            if(messageReceived.Equals("New Player"))
+            switch (messagetType)
             {
-                AddPlayer(null, false);
+                case P2PMessageType.NewPlayer:
+                    var playerId = rawMessage.ReadString();
+                    break;
+                case P2PMessageType.Move:
+                    var position = rawMessage.ReadVector2();
+                    break;
+                default:
+                    break;
             }
-     
         }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
@@ -71,13 +99,14 @@ namespace Networking_P2P.Scenes
             var localIpAddress = await networkPeerService.GetIPAddress();
             var players = e.NetworkPlayers;
 
-            foreach(var player in players)
+            foreach (var player in players)
             {
-                if(player.IpAddress == localIpAddress)
+                if (player.IpAddress != localIpAddress)
                 {
                     AddPlayer(player, true);
-                    await SendPlayerInfoRequestAsync();
                 }
+
+                await SendPlayerInfoRequestAsync();
             }
         }
 
