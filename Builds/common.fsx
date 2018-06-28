@@ -94,8 +94,8 @@ let printReport (l : List<sampleReport>) =
 let buildSample (platform: string, configuration : string, architecture : string, sample : string) = 
     match platform with
     | "Windows" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
+    | "MacOS" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
     | "Linux" -> Exec "xbuild" ("/p:Configuration=" + configuration + " " + sample)
-    | "MacOS" -> Exec "/Applications/Xamarin Studio.app/Contents/MacOS/mdtool" ("-v build -t:Build -c:" + configuration + " " + sample)
     | _-> ()
 
 let buildsamples(platform: string) =
