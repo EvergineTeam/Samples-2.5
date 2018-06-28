@@ -93,10 +93,8 @@ let printReport (l : List<sampleReport>) =
 
 let buildSample (platform: string, configuration : string, architecture : string, sample : string) = 
     match platform with
-    | "Windows" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
-    | "MacOS" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
-    | "Linux" -> Exec "xbuild" ("/p:Configuration=" + configuration + " " + sample)
-    | _-> ()
+    | "Linux" -> MSBuild null "Build" [("Configuration", configuration); ("Platform", "x86")] [sample] |> ignore
+    | _-> MSBuild null "Build" [("Configuration", configuration); ("Platform", architecture)] [sample] |> ignore
 
 let buildsamples(platform: string) =
     for sample in Directory.GetFiles(rootFolder, ("*" + platform + "*.sln"), SearchOption.AllDirectories) do
@@ -109,7 +107,6 @@ let buildsamples(platform: string) =
             RestorePackages sample
 
             traceImportant ("Building...")
-            
 
             buildSample (platform, configuration, architecture, sample)
         with

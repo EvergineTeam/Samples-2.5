@@ -17,7 +17,7 @@ Target "linux-restore-tools" (fun() ->
     Exec "NuGet/nuget.exe" nugetArgs
 
     traceImportant "Generate waveengine installation path"
-    let target = "/usr/lib/WaveEngine/2.0/Tools/VisualEditor/"
+    let target = "/opt/WaveEngine/v2.0/Tools/VisualEditor/"
     !! (WaveToolDirectory + "/tools/*.*")
         |> CopyFiles target
 )
