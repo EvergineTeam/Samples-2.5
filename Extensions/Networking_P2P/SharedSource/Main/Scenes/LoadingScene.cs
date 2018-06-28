@@ -35,9 +35,9 @@ namespace Networking_P2P.Scenes
 
             try
             {
-                //var networkPeerService = WaveServices.GetService<NetworkPeerService>();
-                //networkPeerService.PortNum = 21000;
-                //await networkPeerService.StartAsync();
+                var networkPeerService = WaveServices.GetService<NetworkPeerService>();
+                networkPeerService.PortNum = 21000;
+                await networkPeerService.StartAsync();
 
                 //Wait 3 seconds and start game
                 int remainingSeconds = 3;

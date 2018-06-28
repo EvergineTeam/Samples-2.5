@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Networking_P2P.Networking.Messages;
+using System;
 using System.Linq;
 using System.Runtime.Serialization;
 using WaveEngine.Common.Input;
@@ -7,6 +8,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
+using WaveEngine.Networking.P2P;
 
 namespace Networking_P2P.Behaviors
 {
@@ -18,11 +20,14 @@ namespace Networking_P2P.Behaviors
 
         private VirtualScreenManager virtualScreenManager;
 
+        private NetworkPeerService networkPeerService;
+
         protected override void Initialize()
         {
             base.Initialize();
 
             this.virtualScreenManager = this.Owner.Scene.VirtualScreenManager;
+            this.networkPeerService = this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
         }
 
         protected override void Update(TimeSpan gameTime)
@@ -73,6 +78,10 @@ namespace Networking_P2P.Behaviors
             {
                 this.transform.Position += input;
             }
+
+            var playerId = this.Owner.Name.Replace("player_", string.Empty);
+            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId, this.transform.Position);
+            networkPeerService.SendBroadcastAsync(message);
         }
     }
 }
