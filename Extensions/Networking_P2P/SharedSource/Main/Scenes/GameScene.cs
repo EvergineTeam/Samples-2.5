@@ -8,6 +8,7 @@ using WaveEngine.Networking.P2P;
 using WaveEngine.Networking.P2P.Events;
 using Networking_P2P.Networking;
 using Networking_P2P.Networking.Messages;
+using System;
 
 namespace Networking_P2P.Scenes
 {
@@ -26,8 +27,8 @@ namespace Networking_P2P.Scenes
             networkPeerService.MessageReceivedFromPlayer += this.OnNetworkPeerServiceMessageReceivedFromPlayer;
             networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
 
-            var localIpAddress = await networkPeerService.GetIPAddress();
-            var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, localIpAddress, networkPeerService.Identifier.ToString());
+            var playerId = Guid.NewGuid().ToString();
+            var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId);
             await this.networkPeerService.SendBroadcastAsync(message);
         }
 
@@ -79,10 +80,13 @@ namespace Networking_P2P.Scenes
 
         private void CreateNetworkPlayer(string playerId)
         {
+            AddPlayer(playerId, false);
         }
 
         private void MoveNetworkPlayer(string playerId, Vector2 position)
         {
+            var playerTransform = EntityManager.FindComponentFromEntityPath<Transform2D>($"player_{playerId}", true);
+            playerTransform.Position = position;
         }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)

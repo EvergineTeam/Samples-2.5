@@ -1,6 +1,8 @@
 ﻿using Lidgren.Network;
 using WaveEngine.Common.Math;
-using WaveEngine.Networking.Connection.Messages;
+using WaveEngine.Framework.Services;
+using WaveEngine.Networking.Messages;
+using WaveEngine.Networking.P2P;
 
 namespace Networking_P2P.Networking.Messages
 {
@@ -14,19 +16,25 @@ namespace Networking_P2P.Networking.Messages
             private set;
         }
 
-        public static OutgoingMessage CreateMessage(P2PMessageType messageType, string playerId, string s)
+        public static OutgoingMessage CreateMessage(P2PMessageType messageType, string playerId, string s = "")
         {
-            var message = new OutgoingMessage(new NetBuffer());
+            var service = WaveServices.GetService<NetworkPeerService>();
+            var message = service.CreateMessage();
             message.Write((int)messageType);
             message.Write(playerId);
-            message.Write(s);
+
+            if (!string.IsNullOrEmpty(s))
+            {
+                message.Write(s);
+            }
 
             return message;
         }
 
         public static OutgoingMessage CreateMessage(P2PMessageType messageType, string playerId, Vector2 vector)
         {
-            var message = new OutgoingMessage(new NetBuffer());
+            var service = WaveServices.GetService<NetworkPeerService>();
+            var message = service.CreateMessage();
             message.Write((int)messageType);
             message.Write(playerId);
             message.Write(vector);

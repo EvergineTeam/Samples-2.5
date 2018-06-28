@@ -5,16 +5,16 @@ using WaveEngine.Adapter;
 
 namespace Networking_P2P
 {
-    static class Program
-    {
+	static class Program
+	{
 		[STAThread]
-        static void Main()
-        {
-            using (App game = new App())
-            {
-                game.Run();
-            }
-        }
-    }
+		static void Main()
+		{
+			using (App game = new App())
+			{
+				game.Run();
+			}
+		}
+	}
 }
 

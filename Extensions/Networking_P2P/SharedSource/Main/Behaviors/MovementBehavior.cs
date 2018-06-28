@@ -30,7 +30,7 @@ namespace Networking_P2P.Behaviors
             this.networkPeerService = this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
         }
 
-        protected override void Update(TimeSpan gameTime)
+        protected override async void Update(TimeSpan gameTime)
         {
             var keyState = WaveServices.Input.KeyboardState;
             var touchState = WaveServices.Input.TouchPanelState;
@@ -80,8 +80,8 @@ namespace Networking_P2P.Behaviors
             }
 
             var playerId = this.Owner.Name.Replace("player_", string.Empty);
-            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId, this.transform.Position);
-            networkPeerService.SendBroadcastAsync(message);
+            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, this.networkPeerService.Identifier.ToString(), this.transform.Position);
+            await networkPeerService.SendBroadcastAsync(message);
         }
     }
 }
