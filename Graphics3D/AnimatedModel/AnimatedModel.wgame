@@ -813,6 +813,12 @@
           </d5p1:RenderLayers>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
+      <d3p1:KeyValueOfstringanyType>
+        <d3p1:Key>Optimizations</d3p1:Key>
+        <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:OptimizationsData">
+          <d5p1:UseBinaryResources>true</d5p1:UseBinaryResources>
+        </d3p1:Value>
+      </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>
   </GameSettings>
 </GameInfoModel>
