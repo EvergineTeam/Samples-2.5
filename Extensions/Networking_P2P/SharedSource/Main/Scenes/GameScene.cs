@@ -103,11 +103,11 @@ namespace Networking_P2P.Scenes
             {
                 if (player.IpAddress != localIpAddress)
                 {
-                    AddPlayer(player.Id.ToString(), false);
+                    AddPlayer(player.IpAddress.Sanitize(), false);
                 }
                 else
                 {
-                    AddPlayer(player.Id.ToString(), true);
+                    AddPlayer(player.IpAddress.Sanitize(), true);
                 }
             }
         }
