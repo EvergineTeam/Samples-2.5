@@ -27,7 +27,7 @@ namespace Networking_P2P.Scenes
             networkPeerService.MessageReceivedFromPlayer += this.OnNetworkPeerServiceMessageReceivedFromPlayer;
             networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
 
-            var playerId = Guid.NewGuid().ToString();
+            var playerId = await this.networkPeerService.GetIPAddress();
             var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId);
             await this.networkPeerService.SendBroadcastAsync(message);
         }

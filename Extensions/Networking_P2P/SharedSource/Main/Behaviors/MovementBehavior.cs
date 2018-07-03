@@ -79,8 +79,8 @@ namespace Networking_P2P.Behaviors
                 this.transform.Position += input;
             }
 
-            var playerId = this.Owner.Name.Replace("player_", string.Empty);
-            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, this.networkPeerService.Identifier.ToString(), this.transform.Position);
+            var playerId = await networkPeerService.GetIPAddress();
+            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId, this.transform.Position);
             await networkPeerService.SendBroadcastAsync(message);
         }
     }
