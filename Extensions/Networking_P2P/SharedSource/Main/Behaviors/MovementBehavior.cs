@@ -1,4 +1,5 @@
-﻿using Networking_P2P.Networking.Messages;
+﻿using Networking_P2P.Extensions;
+using Networking_P2P.Networking.Messages;
 using System;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -80,7 +81,7 @@ namespace Networking_P2P.Behaviors
             }
 
             var playerId = await networkPeerService.GetIPAddress();
-            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId, this.transform.Position);
+            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId.Sanitize(), this.transform.Position);
             await networkPeerService.SendBroadcastAsync(message);
         }
     }

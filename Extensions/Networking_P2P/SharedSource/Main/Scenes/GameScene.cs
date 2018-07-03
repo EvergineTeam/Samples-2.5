@@ -9,6 +9,7 @@ using WaveEngine.Networking.P2P.Events;
 using Networking_P2P.Networking;
 using Networking_P2P.Networking.Messages;
 using System;
+using Networking_P2P.Extensions;
 
 namespace Networking_P2P.Scenes
 {
@@ -28,7 +29,7 @@ namespace Networking_P2P.Scenes
             networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
 
             var playerId = await this.networkPeerService.GetIPAddress();
-            var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId);
+            var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId.Sanitize());
             await this.networkPeerService.SendBroadcastAsync(message);
         }
 
