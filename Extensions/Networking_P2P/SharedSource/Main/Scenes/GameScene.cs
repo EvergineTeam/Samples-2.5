@@ -86,8 +86,12 @@ namespace Networking_P2P.Scenes
 
         private void MoveNetworkPlayer(string playerId, Vector2 position)
         {
-            var playerTransform = EntityManager.FindComponentFromEntityPath<Transform2D>($"player_{playerId}", true);
-            playerTransform.Position = position;
+            var playerTransform = EntityManager.FindComponentFromEntityPath<Transform2D>(GetEntityName(playerId), true);
+
+			if (playerTransform != null)
+			{
+				playerTransform.Position = position;
+			}
         }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
