@@ -52,7 +52,8 @@ namespace Networking_P2P.Scenes
                         WaveServices.TimerFactory.RemoveTimer(timer);
 
                         //Navigate to GameScene
-                        WaveServices.ScreenContextManager.Push(new ScreenContext(new GameScene()));
+                        //WaveServices.ScreenContextManager.Push(new ScreenContext(new GameScene()));
+                        WaveServices.ScreenContextManager.Push(new ScreenContext(new GameCustomPropertiesScene()));
                     }
 
                     this.UpdateRemainingSeconds(remainingSeconds);
