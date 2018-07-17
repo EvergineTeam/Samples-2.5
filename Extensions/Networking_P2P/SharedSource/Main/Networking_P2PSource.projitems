@@ -11,7 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementBaseBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementByCustomPropertyBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementByKeyboardBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\NetworkMovementByCustomPropertyComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
