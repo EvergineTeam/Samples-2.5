@@ -19,6 +19,7 @@ namespace Networking_P2P.Scenes
     public class GameCustomPropertiesScene : Scene
     {
         private NetworkPeerService networkPeerService;
+        private List<string> addedIps = new List<string>();
 
         protected override async void CreateScene()
         {
@@ -41,13 +42,18 @@ namespace Networking_P2P.Scenes
 
             foreach (var player in players)
             {
-                if (player.IpAddress != localIpAddress)
+                if (!this.addedIps.Contains(player.IpAddress))
                 {
-                    this.AddPlayer(player, false);
-                }
-                else
-                {
-                    this.AddPlayer(player, true);
+                    if (player.IpAddress != localIpAddress)
+                    {
+                        this.AddPlayer(player, false);
+                    }
+                    else
+                    {
+                        this.AddPlayer(player, true);
+                    }
+
+                    this.addedIps.Add(player.IpAddress);
                 }
             }
         }
