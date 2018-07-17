@@ -46,7 +46,7 @@ namespace Networking_P2P.Scenes
 
 			if (isLocal)
 			{
-				playerEntity.AddComponent(new MovementBehavior());
+				playerEntity.AddComponent(new MovementByKeyboardBehavior());
 			}
 
 			if (!this.EntityManager.Contains(playerEntity))

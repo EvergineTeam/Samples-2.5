@@ -29,7 +29,6 @@ namespace Networking_P2P.Behaviors
             base.CurrentNetworkBehavior();
 
             this.networkPlayer.CustomProperties.Set(0, this.transform.Position);
-
         }
     }
 }
