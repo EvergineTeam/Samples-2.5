@@ -30,9 +30,15 @@ namespace Networking_P2P.Scenes
             networkPeerService.NetworkPlayerChange -= this.OnNetworkPeerServiceNetworkPlayerChange;
             networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
 
+            networkPeerService.MessageReceivedFromPlayer += this.NetworkPeerService_MessageReceivedFromPlayer;
+
             var playerId = await this.networkPeerService.GetIPAddress();
             var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId.Sanitize());
             await this.networkPeerService.SendBroadcastAsync(message);
+        }
+
+        private void NetworkPeerService_MessageReceivedFromPlayer(object sender, WaveEngine.Networking.PeerMessageFromPlayerEventArgs e)
+        {
         }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
@@ -44,13 +50,13 @@ namespace Networking_P2P.Scenes
             {
                 if (!this.addedIps.Contains(player.IpAddress))
                 {
-                    if (player.IpAddress != localIpAddress)
+                    if (player.IsLocalPlayer)
                     {
-                        this.AddPlayer(player, false);
+                        this.AddPlayer(player, true);
                     }
                     else
                     {
-                        this.AddPlayer(player, true);
+                        this.AddPlayer(player, false);
                     }
 
                     this.addedIps.Add(player.IpAddress);
