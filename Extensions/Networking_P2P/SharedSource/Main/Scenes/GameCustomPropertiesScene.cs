@@ -39,6 +39,28 @@ namespace Networking_P2P.Scenes
 
         private void NetworkPeerService_MessageReceivedFromPlayer(object sender, WaveEngine.Networking.PeerMessageFromPlayerEventArgs e)
         {
+            var rawMessage = e.ReceivedMessage;
+
+            var playerFieldFlag = (PlayerFieldFlag)rawMessage.ReadInt32();
+
+            if(playerFieldFlag == PlayerFieldFlag.UserDataFromClient)
+            {
+                var messagetType = (P2PMessageType)rawMessage.ReadInt32();
+                var playerId = rawMessage.ReadString();
+
+                switch (messagetType)
+                {
+                    case P2PMessageType.NewPlayer:
+                        //this.CreateNetworkPlayer(playerId);
+                        break;
+                    case P2PMessageType.Move:
+                        var position = rawMessage.ReadVector2();
+                        //this.MoveNetworkPlayer(playerId, position);
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
