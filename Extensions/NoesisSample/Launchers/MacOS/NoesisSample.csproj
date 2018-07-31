@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,37 +54,37 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="WaveEngine.NoesisGUI, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.NoesisGUI.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.NoesisGUI.dll</HintPath>
+    <Reference Include="WaveEngine.NoesisGUI">
+      <HintPath>..\..\packages\WaveEngine.NoesisGUI.2.5.0.39\lib\Xamarin.Mac\WaveEngine.NoesisGUI.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Mac" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="OpenTK">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\OpenTK.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.0.39\lib\Xamarin.Mac\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Adapter">
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Box2D.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Bullet">
-      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.Bullet.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.0.39\lib\Xamarin.Mac\WaveEngine.Bullet.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180620-662\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.0.39\lib\Xamarin.Mac\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup />
@@ -121,14 +121,14 @@
   <Import Project="..\..\SharedSource\Main\NoesisSampleSource.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Main\NoesisSampleSource.projitems')" />
   <Import Project="..\..\SharedSource\Panels\Panels.Shared.projitems" Label="Shared" Condition="Exists('..\..\SharedSource\Panels\Panels.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
-  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.targets')" />
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
-  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.Bullet.targets')" />
-  <Import Project="..\..\packages\WaveEngine.NoesisGUI.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets" Condition="Exists('..\..\packages\WaveEngine.NoesisGUI.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.0.39\build\Xamarin.Mac\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.0.39\build\Xamarin.Mac\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.0.39\build\Xamarin.Mac\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.0.39\build\Xamarin.Mac\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.0.39\build\Xamarin.Mac\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.0.39\build\Xamarin.Mac\WaveEngine.Bullet.targets')" />
+  <Import Project="..\..\packages\WaveEngine.NoesisGUI.2.5.0.39\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets" Condition="Exists('..\..\packages\WaveEngine.NoesisGUI.2.5.0.39\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.NoesisGUI.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.NoesisGUI.2.5.1-alpha-20180620-662\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.NoesisGUI.2.5.0.39\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.NoesisGUI.2.5.0.39\build\Xamarin.Mac\WaveEngine.NoesisGUI.targets'))" />
   </Target>
 </Project>

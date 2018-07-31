@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>8c52c01e-6b49-4e19-8539-98a3e1bbeb9a</Id>
   <GameInfoPath>Touch.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -61,5 +61,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
+  <WaveVersion>2.5.0.39</WaveVersion>
 </Project>

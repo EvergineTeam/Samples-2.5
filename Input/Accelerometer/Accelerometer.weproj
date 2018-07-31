@@ -1,4 +1,4 @@
-﻿<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
+<Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
   <Id>dd9795c0-027c-41cf-9dd9-1c2713187460</Id>
   <GameInfoPath>Accelerometer.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
@@ -54,5 +54,5 @@
     <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.5.1-alpha-20180620-662</WaveVersion>
+  <WaveVersion>2.5.0.39</WaveVersion>
 </Project>

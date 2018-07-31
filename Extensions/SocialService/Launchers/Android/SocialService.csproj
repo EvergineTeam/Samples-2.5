@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -56,32 +56,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GooglePlayServicesLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\MonoAndroid\GooglePlayServicesLib.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.0.39\lib\MonoAndroid\GooglePlayServicesLib.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Adapter">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Adapter.2.5.0.39\lib\MonoAndroid\WaveEngine.Adapter.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Common">
-      <HintPath>..\..\packages\WaveEngine.Common.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Common.2.5.0.39\lib\MonoAndroid\WaveEngine.Common.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Box2D">
-      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Box2D.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Box2D.2.5.0.39\lib\MonoAndroid\WaveEngine.Box2D.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Bullet">
-      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Bullet.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Bullet.2.5.0.39\lib\MonoAndroid\WaveEngine.Bullet.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Framework">
-      <HintPath>..\..\packages\WaveEngine.Framework.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Framework.2.5.0.39\lib\MonoAndroid\WaveEngine.Framework.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Components">
-      <HintPath>..\..\packages\WaveEngine.Components.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Components.2.5.0.39\lib\MonoAndroid\WaveEngine.Components.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.Materials">
-      <HintPath>..\..\packages\WaveEngine.Materials.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Materials.2.5.0.39\lib\MonoAndroid\WaveEngine.Materials.dll</HintPath>
     </Reference>
     <Reference Include="WaveEngine.ImageEffects">
-      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.ImageEffects.2.5.0.39\lib\MonoAndroid\WaveEngine.ImageEffects.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
@@ -91,17 +90,17 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="WaveEngine.Social, Version=2.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\MonoAndroid\WaveEngine.Social.dll</HintPath>
+    <Reference Include="WaveEngine.Social">
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.0.39\lib\MonoAndroid\WaveEngine.Social.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\MonoAndroid\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.0.39\lib\MonoAndroid\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\MonoAndroid\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.0.39\lib\MonoAndroid\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.MediaRouter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WaveEngine.Social.2.5.1-alpha-20180620-662\lib\MonoAndroid\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+      <HintPath>..\..\packages\WaveEngine.Social.2.5.0.39\lib\MonoAndroid\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -140,13 +139,13 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\games-ids.xml" />
   </ItemGroup>
-  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.Box2D.targets')" />
-  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.Bullet.targets')" />
-  <Import Project="..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Box2D.2.5.0.39\build\MonoAndroid\WaveEngine.Box2D.targets" Condition="Exists('..\..\packages\WaveEngine.Box2D.2.5.0.39\build\MonoAndroid\WaveEngine.Box2D.targets')" />
+  <Import Project="..\..\packages\WaveEngine.Bullet.2.5.0.39\build\MonoAndroid\WaveEngine.Bullet.targets" Condition="Exists('..\..\packages\WaveEngine.Bullet.2.5.0.39\build\MonoAndroid\WaveEngine.Bullet.targets')" />
+  <Import Project="..\..\packages\WaveEngine.2.5.0.39\build\MonoAndroid\WaveEngine.targets" Condition="Exists('..\..\packages\WaveEngine.2.5.0.39\build\MonoAndroid\WaveEngine.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.1-alpha-20180620-662\build\MonoAndroid\WaveEngine.targets'))" />
+    <Error Condition="!Exists('..\..\packages\WaveEngine.2.5.0.39\build\MonoAndroid\WaveEngine.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\WaveEngine.2.5.0.39\build\MonoAndroid\WaveEngine.targets'))" />
   </Target>
 </Project>
