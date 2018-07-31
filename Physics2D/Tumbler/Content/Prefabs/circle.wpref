@@ -1,5 +1,5 @@
 ﻿<Prefab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models.Assets">
-  <Id xmlns="WaveEngine.Framework.Models">ece4ff28-fcdb-419a-9564-cc6a8a12cb6f</Id>
+  <Id xmlns="WaveEngine.Framework.Models">9df6db6d-d589-42e5-b0d5-0dc17ca1fa15</Id>
   <EntityModel xmlns:d2p1="WaveEngine.Framework.Models.Entities">
     <d2p1:SerializeChildrens />
     <d2p1:isDisabled>false</d2p1:isDisabled>
@@ -21,11 +21,10 @@
           <d5p1:Z>0</d5p1:Z>
         </d4p1:LocalPosition>
         <d4p1:LocalScale xmlns:d5p1="WaveEngine.Common.Math">
-          <d5p1:X>0.5</d5p1:X>
-          <d5p1:Y>0.5</d5p1:Y>
+          <d5p1:X>1</d5p1:X>
+          <d5p1:Y>1</d5p1:Y>
           <d5p1:Z>1</d5p1:Z>
         </d4p1:LocalScale>
-        <d4p1:Effect>None</d4p1:Effect>
         <d4p1:Opacity>1</d4p1:Opacity>
         <d4p1:Rectangle xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
           <d5p1:Height>70</d5p1:Height>
@@ -33,6 +32,7 @@
           <d5p1:X>0</d5p1:X>
           <d5p1:Y>0</d5p1:Y>
         </d4p1:Rectangle>
+        <d4p1:effect>None</d4p1:effect>
         <d4p1:origin xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
           <d5p1:X>0.5</d5p1:X>
           <d5p1:Y>0.5</d5p1:Y>
@@ -56,10 +56,27 @@
         <d4p1:texturePath>Content/Assets/circle.png.wpk</d4p1:texturePath>
       </d3p1:Component>
       <d3p1:Component xmlns:d4p1="WaveEngine.Components.Graphics2D" i:type="d4p1:SpriteRenderer">
+        <d3p1:FrustumCullingEnabled>true</d3p1:FrustumCullingEnabled>
         <d3p1:IsVisible>true</d3p1:IsVisible>
-        <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-        <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-        <d4p1:SamplerMode>LinearClamp</d4p1:SamplerMode>
+        <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+        <d4p1:DrawMode>Simple</d4p1:DrawMode>
+      </d3p1:Component>
+      <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Physics2D" i:type="d4p1:RigidBody2D">
+        <d3p1:UpdateOrder>0.5</d3p1:UpdateOrder>
+        <d3p1:isDisabled>false</d3p1:isDisabled>
+        <d4p1:AllowSleep>true</d4p1:AllowSleep>
+        <d4p1:AngularDamping>0</d4p1:AngularDamping>
+        <d4p1:AngularVelocity>0</d4p1:AngularVelocity>
+        <d4p1:Awake>true</d4p1:Awake>
+        <d4p1:FixedRotation>false</d4p1:FixedRotation>
+        <d4p1:GravityScale>1</d4p1:GravityScale>
+        <d4p1:IsBullet>false</d4p1:IsBullet>
+        <d4p1:LinearDamping>0</d4p1:LinearDamping>
+        <d4p1:LinearVelocity xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+          <d5p1:X>0</d5p1:X>
+          <d5p1:Y>0</d5p1:Y>
+        </d4p1:LinearVelocity>
+        <d4p1:PhysicBodyType>Dynamic</d4p1:PhysicBodyType>
       </d3p1:Component>
       <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Physics3D" i:type="d4p1:CircleCollider2D">
         <CollidesWith xmlns="WaveEngine.Framework.Physics2D">All</CollidesWith>
@@ -81,23 +98,6 @@
           <d5p1:Y>0</d5p1:Y>
         </offset>
         <d4p1:Radius>1</d4p1:Radius>
-      </d3p1:Component>
-      <d3p1:Component xmlns:d4p1="WaveEngine.Framework.Physics2D" i:type="d4p1:RigidBody2D">
-        <d3p1:IsActive>true</d3p1:IsActive>
-        <d3p1:UpdateOrder>0.5</d3p1:UpdateOrder>
-        <d4p1:AllowSleep>true</d4p1:AllowSleep>
-        <d4p1:AngularDamping>0</d4p1:AngularDamping>
-        <d4p1:AngularVelocity>0</d4p1:AngularVelocity>
-        <d4p1:Awake>true</d4p1:Awake>
-        <d4p1:FixedRotation>false</d4p1:FixedRotation>
-        <d4p1:GravityScale>1</d4p1:GravityScale>
-        <d4p1:IsBullet>false</d4p1:IsBullet>
-        <d4p1:LinearDamping>0</d4p1:LinearDamping>
-        <d4p1:LinearVelocity xmlns:d5p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
-          <d5p1:X>0</d5p1:X>
-          <d5p1:Y>0</d5p1:Y>
-        </d4p1:LinearVelocity>
-        <d4p1:PhysicBodyType>Dynamic</d4p1:PhysicBodyType>
       </d3p1:Component>
     </d2p1:SerializeComponents>
   </EntityModel>

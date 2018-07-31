@@ -20,10 +20,12 @@ namespace Project
     {
         TextBlock instructions;
 
+
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
 
+            
             // Add the textbox to show the picked entity
             instructions = new TextBlock()
             {
@@ -31,7 +33,7 @@ namespace Project
                 HorizontalAlignment = HorizontalAlignment.Left,
                 Text = "Selected Entity",
             };
-            EntityManager.Add(instructions.Entity);         
+            EntityManager.Add(instructions.Entity);
         }
 
         /// <summary>

@@ -8,33 +8,34 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 
-namespace Transition
+namespace Transitions
 {
     public class App : WaveEngine.Adapter.Application
     {
-        Transition.Game game;
+        Transitions.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
+        bool lastKeyF10Pressed = false;
 
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
             this.FullScreen = false;
-            this.WindowTitle = "Transition";
+            this.WindowTitle = "Transitions";
         }
 
         public override void Initialize()
         {
-            this.game = new Transition.Game();
+            this.game = new Transitions.Game();
             this.game.Initialize(this);
 
-            #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color("#ebebeb");
+            #region DEFAULT SPLASHSCREEN
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -65,16 +66,19 @@ namespace Transition
         {
             if (this.game != null && !this.game.HasExited)
             {
-                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
+                bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
+                if (keyF10Pressed && !this.lastKeyF10Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
+                this.lastKeyF10Pressed = keyF10Pressed;
+
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
-					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
-					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
+                    #region DEFAULT SPLASHSCREEN
+                    position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
+                    position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
                     {
@@ -96,13 +100,13 @@ namespace Transition
             }
         }
 
-		public override void Draw(TimeSpan elapsedTime)
+        public override void Draw(TimeSpan elapsedTime)
         {
             if (this.game != null && !this.game.HasExited)
             {
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
                     this.spriteBatch.Draw (this.splashScreen, this.position, Color.White);

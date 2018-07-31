@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 10/08/2017 15:01:45
+// File generated on 22/06/2018 8:10:25
 namespace SocialService
 {
     using System;
@@ -35,6 +35,28 @@ namespace SocialService
             
             /// <summary> Path to Content/Fonts/arial.ttf </summary>
             public const string arial_ttf = "Content/Fonts/arial.ttf";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:02:49
+// File generated on 6/26/2018 12:55:45 PM
 namespace BasicPhysic2D
 {
     using System;
@@ -16,6 +16,9 @@ namespace BasicPhysic2D
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/BasicPhysic2D.wgame </summary>
+        public const string GameInfo = "Content/BasicPhysic2D.wgame";
         
         public sealed class Assets
         {
@@ -71,6 +74,28 @@ namespace BasicPhysic2D
                 /// <summary> Path to Content/Assets/Textures/weightChained.png </summary>
                 public const string weightChained_png = "Content/Assets/Textures/weightChained.png";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

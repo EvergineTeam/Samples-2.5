@@ -1,7 +1,7 @@
 using Foundation;
 using AppKit;
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
 	public partial class AppDelegate : NSApplicationDelegate
 	{

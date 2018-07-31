@@ -22,12 +22,6 @@ namespace StaticBatching
             WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
 
             this.Load(WaveContent.Scenes.MyScene);
-
-            // Now Activate All IsStatic entites
-            foreach (var item in EntityManager.FindAllByTag("colum").Cast<Entity>())
-            {
-                item.IsStatic = true;
-            }
         }
     }
 }

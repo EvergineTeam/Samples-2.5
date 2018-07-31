@@ -17,8 +17,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>512</d6p1:X>
-            <d6p1:Y>384</d6p1:Y>
+            <d6p1:X>640</d6p1:X>
+            <d6p1:Y>360</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -52,28 +52,33 @@
             <d6p1:R>131</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -90,8 +95,8 @@
       <d2p1:isDisabled>false</d2p1:isDisabled>
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
-      <d2p1:name>skeleton</d2p1:name>
-      <d2p1:tag></d2p1:tag>
+      <d2p1:name>skeletalSpine</d2p1:name>
+      <d2p1:tag i:nil="true" />
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -101,13 +106,13 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>512</d6p1:X>
-            <d6p1:Y>600.199951</d6p1:Y>
+            <d6p1:X>698.899963</d6p1:X>
+            <d6p1:Y>643.500061</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0.5</d6p1:X>
-            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:X>0.3</d6p1:X>
+            <d6p1:Y>0.3</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
           <d5p1:Opacity>1</d5p1:Opacity>
@@ -129,7 +134,7 @@
           <d5p1:transformMode>Standard</d5p1:transformMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
-          <d5p1:atlasPath>Content/Assets/raptor.atlas</d5p1:atlasPath>
+          <d5p1:atlasPath>Content/Assets/Raptor/raptor.atlas</d5p1:atlasPath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -138,14 +143,13 @@
           <d5p1:Loop>true</d5p1:Loop>
           <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
           <d5p1:Speed>1</d5p1:Speed>
-          <d5p1:animationPath>Content/Assets/raptor.json</d5p1:animationPath>
+          <d5p1:animationPath>Content/Assets/Raptor/raptor.json</d5p1:animationPath>
           <d5p1:currentSkin>default</d5p1:currentSkin>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
-          <d5p1:ActualDebugMode>Bones</d5p1:ActualDebugMode>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:A>0</d6p1:A>
             <d6p1:B>0</d6p1:B>
@@ -158,7 +162,462 @@
             <d6p1:G>0</d6p1:G>
             <d6p1:R>0</d6p1:R>
           </d5p1:DebugQuadColor>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine01</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>431.6998</d6p1:X>
+            <d6p1:Y>312.599884</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.4</d6p1:X>
+            <d6p1:Y>0.4</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>391.477325</d6p1:Height>
+            <d6p1:Width>365.780457</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5230095</d6p1:X>
+            <d6p1:Y>0.988552749</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/Alien/alien.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>run</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/Alien/alien.json</d5p1:animationPath>
+          <d5p1:currentSkin>default</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine02</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>240.699783</d6p1:X>
+            <d6p1:Y>503.099854</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>716.3946</d6p1:Height>
+            <d6p1:Width>897</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.4432677</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/Dragon/dragon.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>flying</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/Dragon/dragon.json</d5p1:animationPath>
+          <d5p1:currentSkin>default</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine03</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1058.70007</d6p1:X>
+            <d6p1:Y>659.300049</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>349.5745</d6p1:Height>
+            <d6p1:Width>266.9588</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5023826</d6p1:X>
+            <d6p1:Y>0.9906346</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/Goblins/goblins-ffd.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>walk</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/Goblins/goblins-ffd.json</d5p1:animationPath>
+          <d5p1:currentSkin>goblingirl</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine04</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>689.2999</d6p1:X>
+            <d6p1:Y>317.299927</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.6</d6p1:X>
+            <d6p1:Y>0.6</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>333.712769</d6p1:Height>
+            <d6p1:Width>318.6955</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.27363193</d6p1:X>
+            <d6p1:Y>0.999769032</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/Hero/hero-mesh.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>Run</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/Hero/hero-mesh.json</d5p1:animationPath>
+          <d5p1:currentSkin>default</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine05</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1067.40015</d6p1:X>
+            <d6p1:Y>346.1999</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>195.700012</d6p1:Height>
+            <d6p1:Width>413.17</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5017063</d6p1:X>
+            <d6p1:Y>1.61016858</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/PowerUp/powerup.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>animation</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/PowerUp/powerup.json</d5p1:animationPath>
+          <d5p1:currentSkin>default</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
+          <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>skeletalSpine06</d2p1:name>
+      <d2p1:tag i:nil="true" />
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>1</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>119.099709</d6p1:X>
+            <d6p1:Y>312.2998</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>0.3</d6p1:X>
+            <d6p1:Y>0.3</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>682.372864</d6p1:Height>
+            <d6p1:Width>432.9098</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.4236787</d6p1:X>
+            <d6p1:Y>0.9883347</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalData">
+          <d5p1:atlasPath>Content/Assets/SpineBoy/spineboy.atlas</d5p1:atlasPath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalAnimation">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:CurrentAnimation>run</d5p1:CurrentAnimation>
+          <d5p1:Loop>true</d5p1:Loop>
+          <d5p1:PlayAutomatically>true</d5p1:PlayAutomatically>
+          <d5p1:Speed>1</d5p1:Speed>
+          <d5p1:animationPath>Content/Assets/SpineBoy/spineboy.json</d5p1:animationPath>
+          <d5p1:currentSkin>default</d5p1:currentSkin>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Spine" i:type="d5p1:SkeletalRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DebugBonesColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugBonesColor>
+          <d5p1:DebugQuadColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>0</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>0</d6p1:G>
+            <d6p1:R>0</d6p1:R>
+          </d5p1:DebugQuadColor>
           <d5p1:ZOrderBias>0.0001</d5p1:ZOrderBias>
         </d4p1:Component>
       </d2p1:SerializeComponents>
@@ -188,8 +647,8 @@
           <d5p1:Enabled>true</d5p1:Enabled>
           <d5p1:Expand>true</d5p1:Expand>
           <d5p1:Stretch>Uniform</d5p1:Stretch>
-          <d5p1:VirtualHeight>768</d5p1:VirtualHeight>
-          <d5p1:VirtualWidth>1024</d5p1:VirtualWidth>
+          <d5p1:VirtualHeight>720</d5p1:VirtualHeight>
+          <d5p1:VirtualWidth>1280</d5p1:VirtualWidth>
         </d3p1:Value>
       </d3p1:KeyValueOfstringanyType>
     </d2p1:Categories>

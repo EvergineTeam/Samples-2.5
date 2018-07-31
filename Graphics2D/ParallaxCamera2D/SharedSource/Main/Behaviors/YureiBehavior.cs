@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using WaveEngine.Common.Attributes;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Animation;
 using WaveEngine.Framework;
-using WaveEngine.Framework.Diagnostic;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 using WaveEngine.Spine;
 
 namespace ParallaxCamera2D.Behaviors
 {
+    [DataContract]
     public class YureiBehavior : Behavior
     {
         private enum YureiState
@@ -22,7 +20,7 @@ namespace ParallaxCamera2D.Behaviors
             RunRight,   // Is Running toward right direction
             RunLeft     // Is Running toward left direction
         }
-        
+
         private enum YureiControl
         {
             None = 0,
@@ -40,20 +38,42 @@ namespace ParallaxCamera2D.Behaviors
         private const float Speed = 500;
         private const float MixDuration = 0.075f;
 
+        [RequiredService]
+        private Input input;
+
         [RequiredComponent]
         private Transform2D transform = null;
 
         [RequiredComponent]
         private SkeletalAnimation skeletalAnimation = null;
 
+        [DataMember]
+        private string dustEntityPath;
+
         private Entity dustEntity;
         private Animation2D dustAnimation;
         private Transform2D dustTransform;
 
-        private Input input;
         private YureiState state;
-
         private YureiControl yureiControl;
+
+        [RenderPropertyAsEntity(new string[] { "WaveEngine.Framework.Transform3D" })]
+        public string DustEntityPath
+        {
+            get
+            {
+                return this.dustEntityPath;
+            }
+            set
+            {
+                this.dustEntityPath = value;
+
+                if (this.isInitialized)
+                {
+                    this.RefreshDustEntity();
+                }
+            }
+        }
 
         private YureiState State
         {
@@ -74,20 +94,11 @@ namespace ParallaxCamera2D.Behaviors
             }
         }
 
-        public YureiBehavior(Entity dustEntity)
-        {
-            this.dustEntity = dustEntity;
-        }
-
         protected override void Initialize()
         {
             base.Initialize();
-            
-            this.input = WaveServices.Input;
 
-            this.dustAnimation = this.dustEntity.FindComponent<Animation2D>();
-            this.dustTransform = this.dustEntity.FindComponent<Transform2D>();
-            this.dustEntity.Enabled = false;
+            this.RefreshDustEntity();
 
             // Set animation mix
             this.skeletalAnimation.SetAnimationMixDuration(IdleAnimation, MoveAnimation, MixDuration);
@@ -104,7 +115,7 @@ namespace ParallaxCamera2D.Behaviors
 
             if (dustAnimation.State == WaveEngine.Framework.Animation.AnimationState.Stopped)
             {
-                dustEntity.Enabled = false;
+                this.dustEntity.Enabled = false;
             }
 
             switch (this.State)
@@ -122,6 +133,22 @@ namespace ParallaxCamera2D.Behaviors
             }
 
             this.transform.X = Math.Max(MinX, Math.Min(MaxX, this.transform.X));
+        }
+
+        private void RefreshDustEntity()
+        {
+            this.dustEntity = null;
+            this.dustAnimation = null;
+            this.dustTransform = null;
+
+            if (!string.IsNullOrEmpty(this.dustEntityPath))
+            {
+                this.dustEntity = this.EntityManager.Find(this.dustEntityPath, this.Owner);
+
+                this.dustAnimation = this.dustEntity.FindComponent<Animation2D>();
+                this.dustTransform = this.dustEntity.FindComponent<Transform2D>();
+                this.dustEntity.Enabled = false;
+            }
         }
 
         private void ChangeState()
@@ -161,7 +188,7 @@ namespace ParallaxCamera2D.Behaviors
                         //this.dustTransform.Transform3D.Rotation = Vector3.UnitY * MathHelper.Pi;
 
                         this.dustEntity.Enabled = true;
-                        this.dustAnimation.PlayAnimation("start",false);
+                        this.dustAnimation.PlayAnimation("start", false);
                         break;
                     }
                 default:
@@ -206,7 +233,7 @@ namespace ParallaxCamera2D.Behaviors
                 }
                 else if (keyboard.Left == ButtonState.Pressed)
                 {
-                    this.yureiControl = YureiControl.Keyboard; 
+                    this.yureiControl = YureiControl.Keyboard;
                     this.State = YureiState.RunLeft;
                 }
                 else if (this.yureiControl == YureiControl.Keyboard)

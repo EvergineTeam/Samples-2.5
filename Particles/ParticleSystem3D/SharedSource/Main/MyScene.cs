@@ -18,7 +18,7 @@ namespace ParticleSystem3D
     {
         protected override void CreateScene()
         {
-            this.Load(WaveContent.Scenes.MyScene);
+            this.Load(WaveContent.Scenes.MyScene);           
         }
     }
 }

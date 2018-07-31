@@ -1,6 +1,6 @@
 using AppKit;
 
-namespace XBoxController
+namespace XboxController
 {
 	static class MainClass
 	{

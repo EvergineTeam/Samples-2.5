@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 12:56:53 PM
+// File generated on 6/25/2018 6:03:20 PM
 namespace Sound3D
 {
     using System;
@@ -26,20 +26,8 @@ namespace Sound3D
             /// <summary> Path to Content/Assets/engines_1.wav </summary>
             public const string engines_1_wav = "Content/Assets/engines_1.wav";
             
-            /// <summary> Path to Content/Assets/fighter_diffuse.png </summary>
-            public const string fighter_diffuse_png = "Content/Assets/fighter_diffuse.png";
-            
-            /// <summary> Path to Content/Assets/fighter_normal.png </summary>
-            public const string fighter_normal_png = "Content/Assets/fighter_normal.png";
-            
-            /// <summary> Path to Content/Assets/fighter_spec.png </summary>
-            public const string fighter_spec_png = "Content/Assets/fighter_spec.png";
-            
             /// <summary> Path to Content/Assets/spaceship.fbx </summary>
             public const string spaceship_fbx = "Content/Assets/spaceship.fbx";
-            
-            /// <summary> Path to Content/Assets/Thrust.png </summary>
-            public const string Thrust_png = "Content/Assets/Thrust.png";
             
             /// <summary> Path to Content/Assets/RedMat.wmat </summary>
             public const string RedMat = "Content/Assets/RedMat.wmat";
@@ -47,8 +35,56 @@ namespace Sound3D
             /// <summary> Path to Content/Assets/ShipMat.wmat </summary>
             public const string ShipMat = "Content/Assets/ShipMat.wmat";
             
-            /// <summary> Path to Content/Assets/ThrustMat.wmat </summary>
-            public const string ThrustMat = "Content/Assets/ThrustMat.wmat";
+            public sealed class spaceship_Textures
+            {
+                
+                /// <summary> Path to Content/Assets/spaceship_Textures/spaceship_0.jpg </summary>
+                public const string spaceship_0_jpg = "Content/Assets/spaceship_Textures/spaceship_0.jpg";
+                
+                /// <summary> Path to Content/Assets/spaceship_Textures/spaceship_1.jpg </summary>
+                public const string spaceship_1_jpg = "Content/Assets/spaceship_Textures/spaceship_1.jpg";
+                
+                /// <summary> Path to Content/Assets/spaceship_Textures/spaceship_2.png </summary>
+                public const string spaceship_2_png = "Content/Assets/spaceship_Textures/spaceship_2.png";
+                
+                /// <summary> Path to Content/Assets/spaceship_Textures/spaceship_3.jpg </summary>
+                public const string spaceship_3_jpg = "Content/Assets/spaceship_Textures/spaceship_3.jpg";
+                
+                /// <summary> Path to Content/Assets/spaceship_Textures/spaceship_4.jpg </summary>
+                public const string spaceship_4_jpg = "Content/Assets/spaceship_Textures/spaceship_4.jpg";
+            }
+            
+            public sealed class Materials
+            {
+                
+                /// <summary> Path to Content/Assets/Materials/Fighter.wmat </summary>
+                public const string Fighter = "Content/Assets/Materials/Fighter.wmat";
+                
+                /// <summary> Path to Content/Assets/Materials/Thrust.wmat </summary>
+                public const string Thrust = "Content/Assets/Materials/Thrust.wmat";
+            }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

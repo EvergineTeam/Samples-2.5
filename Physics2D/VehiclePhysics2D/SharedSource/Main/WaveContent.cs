@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 16:03:35
+// File generated on 6/26/2018 1:58:54 PM
 namespace VehiclePhysics2D
 {
     using System;
@@ -16,6 +16,9 @@ namespace VehiclePhysics2D
     
     public sealed class WaveContent
     {
+        
+        /// <summary> Path to Content/VehiclePhysics2D.wgame </summary>
+        public const string GameInfo = "Content/VehiclePhysics2D.wgame";
         
         public sealed class Assets
         {
@@ -67,13 +70,23 @@ namespace VehiclePhysics2D
                 public struct SpriteSheet_spritesheet_TextureName
                 {
                     
+                    public const string box = "box";
+                    
                     public const string cloud1 = "cloud1";
                     
                     public const string cloud2 = "cloud2";
                     
+                    public const string clouds1 = "clouds1";
+                    
                     public const string fence = "fence";
                     
                     public const string fence_piece = "fence_piece";
+                    
+                    public const string grass5 = "grass5";
+                    
+                    public const string grass6 = "grass6";
+                    
+                    public const string hills1 = "hills1";
                     
                     public const string house_beige_front = "house_beige_front";
                     
@@ -83,9 +96,9 @@ namespace VehiclePhysics2D
                     
                     public const string house_grey_side = "house_grey_side";
                     
-                    public const string hills1 = "hills1";
-                    
                     public const string pointy_mountains = "pointy_mountains";
+                    
+                    public const string sun = "sun";
                     
                     public const string tree02 = "tree02";
                     
@@ -99,23 +112,35 @@ namespace VehiclePhysics2D
                     
                     public const string tree23 = "tree23";
                     
+                    public const string tree29 = "tree29";
+                    
                     public const string tree31 = "tree31";
                     
                     public const string tree34 = "tree34";
-                    
-                    public const string sun = "sun";
-                    
-                    public const string clouds1 = "clouds1";
-                    
-                    public const string box = "box";
-                    
-                    public const string grass5 = "grass5";
-                    
-                    public const string grass6 = "grass6";
-                    
-                    public const string tree29 = "tree29";
                 }
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 08/08/2017 8:56:15
+// File generated on 22-May-18 17:08:07
 namespace IsisTemple
 {
     using System;
@@ -37,6 +37,22 @@ namespace IsisTemple
                 
                 /// <summary> Path to Content/Assets/Models/isis.fbx </summary>
                 public const string isis_fbx = "Content/Assets/Models/isis.fbx";
+                
+                public sealed class Materials
+                {
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/DefaultMaterial.wmat </summary>
+                    public const string DefaultMaterial = "Content/Assets/Models/Materials/DefaultMaterial.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/Isis.wmat </summary>
+                    public const string Isis = "Content/Assets/Models/Materials/Isis.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/Material #503.wmat </summary>
+                    public const string Material_503 = "Content/Assets/Models/Materials/Material #503.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/Material #505.wmat </summary>
+                    public const string Material_505 = "Content/Assets/Models/Materials/Material #505.wmat";
+                }
             }
             
             public sealed class Textures
@@ -100,6 +116,28 @@ namespace IsisTemple
                 /// <summary> Path to Content/Assets/Materials/IsisMaterial.wmat </summary>
                 public const string IsisMaterial = "Content/Assets/Materials/IsisMaterial.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

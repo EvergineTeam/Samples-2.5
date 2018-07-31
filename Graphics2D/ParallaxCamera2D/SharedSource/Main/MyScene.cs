@@ -1,18 +1,14 @@
 #region Using Statements
 using ParallaxCamera2D.Behaviors;
-using ParallaxCamera2D.Layers;
-using System;
 using System.Collections.Generic;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Components.Particles;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.ImageEffects;
 using WaveEngine.Materials;
@@ -23,13 +19,11 @@ namespace ParallaxCamera2D
 {
     public class MyScene : Scene
     {
-        private Entity yurei;
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MyScene);
 
             //RenderManager.DebugLines = true;
-            this.RegisterCustomLayers();
             this.CreateGrass();
             this.CreateForest();
             this.CreateHauntedHouse();
@@ -41,8 +35,8 @@ namespace ParallaxCamera2D
 
         private void CreateSun()
         {
-            this.CreateSprite(typeof(SunLayer), WaveContent.Assets.Textures.Sun_png, new Vector3(2000, 1600, 10500), Vector3.One * 120, SceneResources.SunColor * 0.35f);
-            this.CreateSprite(typeof(BackgroundLayer), WaveContent.Assets.Textures.Sun_png, new Vector3(2000, 1600, 10500), Vector3.One * 120, Color.White * 0.7f);
+            this.CreateSprite(WaveContent.RenderLayers.Sun, WaveContent.Assets.Textures.Sun_png, new Vector3(2000, 1600, 10500), Vector3.One * 120, SceneResources.SunColor * 0.35f);
+            this.CreateSprite(WaveContent.RenderLayers.Background, WaveContent.Assets.Textures.Sun_png, new Vector3(2000, 1600, 10500), Vector3.One * 120, Color.White * 0.7f);
         }
 
         private void CreateCamera()
@@ -63,8 +57,6 @@ namespace ParallaxCamera2D
                 cameraEntity.AddComponent(ImageEffects.Vignette());
                 //cameraEntity.AddComponent(new FilmGrainLens() { GrainIntensityMin = 0.075f, GrainIntensityMax = 0.15f });
             }
-
-            cameraEntity.AddComponent(new CameraBehavior(this.yurei));
         }
 
         /// <summary>
@@ -72,18 +64,9 @@ namespace ParallaxCamera2D
         /// </summary>
         private void CreateYurei()
         {
-            this.yurei = EntityManager.Find("yurei");
-            Entity starDust = yurei.FindChild("dust");
-
-            starDust.FindComponent<SpriteAtlasRenderer>().LayerType = typeof(ForegroundLayer);
-
-            yurei.AddComponent(new YureiBehavior(starDust));
-
-            Transform3D transform = yurei.FindComponent<Transform2D>().Transform3D;
-            transform.Position = new Vector3(500, this.VirtualScreenManager.BottomEdge - 152, 150);
-            transform.Scale = Vector3.One * 0.85f;
-
-            yurei.FindComponent<SkeletalRenderer>().LayerType = typeof(ForegroundLayer);
+            var yurei = EntityManager.Find("yurei");
+            var yureiTransform = yurei.FindComponent<Transform2D>().Transform3D;
+            yureiTransform.Position = new Vector3(500, this.VirtualScreenManager.BottomEdge - 152, 150);
 
         }
 
@@ -92,19 +75,19 @@ namespace ParallaxCamera2D
             float initOffset = 0;
 
             // Foreground graveyard
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 3120, this.VirtualScreenManager.BottomEdge + 15, -200), new Vector3(1.5f, 1.5f, 1), Color.Black);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4169, this.VirtualScreenManager.BottomEdge + 17, -150), new Vector3(1.5f, 1.5f, 1), Vector3.Zero, Color.Black, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4403, this.VirtualScreenManager.BottomEdge - 15, -10), new Vector3(1.5f, 1.5f, 1), Vector3.Zero, Color.Black, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4605, this.VirtualScreenManager.BottomEdge + 30, -200), new Vector3(1.5f, 1.5f, 1), Color.Black);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 3120, this.VirtualScreenManager.BottomEdge + 15, -200), new Vector3(1.5f, 1.5f, 1), Color.Black);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4169, this.VirtualScreenManager.BottomEdge + 17, -150), new Vector3(1.5f, 1.5f, 1), Vector3.Zero, Color.Black, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4403, this.VirtualScreenManager.BottomEdge - 15, -10), new Vector3(1.5f, 1.5f, 1), Vector3.Zero, Color.Black, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardForeground_png, new Vector3(initOffset + 4605, this.VirtualScreenManager.BottomEdge + 30, -200), new Vector3(1.5f, 1.5f, 1), Color.Black);
 
             //Background graveyard
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardBackground_png, new Vector3(initOffset + 3615, this.VirtualScreenManager.BottomEdge - 20, 300), new Vector3(1.8f, 1.8f, 1), Vector3.Zero, SceneResources.GraveyardColor, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.GraveyardBackground_png, new Vector3(initOffset + 3684, this.VirtualScreenManager.BottomEdge - 30, 260), new Vector3(1.8f, 1.8f, 1), Vector3.Zero, SceneResources.GraveyardColor, new Vector2(0.5f, 1), SpriteEffects.None);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardBackground_png, new Vector3(initOffset + 3615, this.VirtualScreenManager.BottomEdge - 20, 300), new Vector3(1.8f, 1.8f, 1), Vector3.Zero, SceneResources.GraveyardColor, new Vector2(0.5f, 1), SpriteEffects.FlipHorizontally);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.GraveyardBackground_png, new Vector3(initOffset + 3684, this.VirtualScreenManager.BottomEdge - 30, 260), new Vector3(1.8f, 1.8f, 1), Vector3.Zero, SceneResources.GraveyardColor, new Vector2(0.5f, 1), SpriteEffects.None);
 
             // Fence
             this.CreateSpriteStripLayer(
-                typeof(ForegroundLayer),
-                 SceneResources.FenceContent,
+                WaveContent.RenderLayers.Foreground,
+                SceneResources.FenceContent,
                 new Vector3(
                     initOffset + 3752,
                     this.VirtualScreenManager.BottomEdge - 20,
@@ -122,7 +105,7 @@ namespace ParallaxCamera2D
             this.CreateSprite(DefaultLayers.Alpha, WaveContent.Assets.Textures.HouseTower_png, new Vector3(initOffset + 5120, this.VirtualScreenManager.BottomEdge - 500, 700), new Vector3(3, 3, 1), Vector3.Zero, SceneResources.HauntedHouseColor, new Vector2(0.5f, 1), SpriteEffects.None);
 
             // Crow
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Crow_png, new Vector3(initOffset + 3802, this.VirtualScreenManager.BottomEdge - 123, 205), new Vector3(1.1f, 1.1f, 1), SceneResources.CrowColor, new Vector2(0.5f, 1));
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Crow_png, new Vector3(initOffset + 3802, this.VirtualScreenManager.BottomEdge - 123, 205), new Vector3(1.1f, 1.1f, 1), SceneResources.CrowColor, new Vector2(0.5f, 1));
 
             // Scarecrow
             this.CreateSprite(DefaultLayers.Alpha, WaveContent.Assets.Textures.scarecrow_png, new Vector3(initOffset + 4120, this.VirtualScreenManager.BottomEdge, 400), new Vector3(1.3f, 1.3f, 1), SceneResources.ScarecrowColor);
@@ -133,22 +116,12 @@ namespace ParallaxCamera2D
         }
 
         /// <summary>
-        /// Register custom layers
-        /// </summary>
-        private void RegisterCustomLayers()
-        {
-            this.RenderManager.RegisterLayerAfter(new ForegroundLayer(this.RenderManager), DefaultLayers.Additive);
-            this.RenderManager.RegisterLayerAfter(new SunLayer(this.RenderManager), typeof(ForegroundLayer));
-            this.RenderManager.RegisterLayerBefore(new BackgroundLayer(this.RenderManager), DefaultLayers.Alpha);
-        }
-
-        /// <summary>
         /// Create grass
         /// </summary>
         private void CreateGrass()
         {
             this.CreateSpriteStripLayer(
-               typeof(ForegroundLayer),
+               WaveContent.RenderLayers.Foreground,
                SceneResources.GrassContent,
                new Vector3(
                    this.VirtualScreenManager.LeftEdge,
@@ -160,7 +133,7 @@ namespace ParallaxCamera2D
                Color.Black);
 
             this.CreateSpriteStripLayer(
-                typeof(ForegroundLayer),
+                WaveContent.RenderLayers.Foreground,
                 SceneResources.GrassContent,
                 new Vector3(
                     this.VirtualScreenManager.LeftEdge - 100,
@@ -172,7 +145,7 @@ namespace ParallaxCamera2D
                 SceneResources.Grass2ndPlaneColor);
         }
 
-        private void CreateSpriteStripLayer(Type layer, string[] sprites, Vector3 start, Vector3 scale, int nSections, float overlaping, Color color, bool flip = true)
+        private void CreateSpriteStripLayer(int layerId, string[] sprites, Vector3 start, Vector3 scale, int nSections, float overlaping, Color color, bool flip = true)
         {
             Texture2D grassTexture = this.Assets.LoadAsset<Texture2D>(sprites[0]);
             float width = grassTexture.Width;
@@ -190,7 +163,7 @@ namespace ParallaxCamera2D
                 Entity grass = new Entity()
                 .AddComponent(transform)
                 .AddComponent(new Sprite(sprites[spriteIndex]) { TintColor = color })
-                .AddComponent(new SpriteRenderer(layer));
+                .AddComponent(new SpriteRenderer(layerId));
 
                 this.EntityManager.Add(grass);
 
@@ -205,16 +178,16 @@ namespace ParallaxCamera2D
             float initOffset = 0;
 
             // Darkness
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Darkness_png, new Vector3(0, this.VirtualScreenManager.TopEdge, 0), new Vector3(10, 6.5f, 1), SceneResources.DarknessColor, Vector2.Zero);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Darkness_png, new Vector3(0, this.VirtualScreenManager.TopEdge, 0), new Vector3(10, 6.5f, 1), SceneResources.DarknessColor, Vector2.Zero);
 
             // Mist
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Mist_png, new Vector3(-160, this.VirtualScreenManager.BottomEdge + 300, 210), Vector3.One * 6.5f, SceneResources.TreeMistColor, Vector2.UnitY);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Mist_png, new Vector3(-160, this.VirtualScreenManager.BottomEdge + 300, 210), Vector3.One * 6.5f, SceneResources.TreeMistColor, Vector2.UnitY);
 
             // Mushrooms
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Mushrooms.mushroom_0_png, new Vector3(394, this.VirtualScreenManager.BottomEdge - 20, 205), Vector3.One, SceneResources.Mushroom1Color);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Mushrooms.mushroom_1_png, new Vector3(1350, this.VirtualScreenManager.BottomEdge - 20, 165), Vector3.One, SceneResources.Mushroom1Color);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Mushrooms.mushroom_2_png, new Vector3(1940, this.VirtualScreenManager.BottomEdge - 20, 195), Vector3.One, SceneResources.Mushroom2Color);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Mushrooms.mushroom_3_png, new Vector3(1618, this.VirtualScreenManager.BottomEdge + 50, -100), Vector3.One * 2.5f, SceneResources.Mushroom3Color);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Mushrooms.mushroom_0_png, new Vector3(394, this.VirtualScreenManager.BottomEdge - 20, 205), Vector3.One, SceneResources.Mushroom1Color);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Mushrooms.mushroom_1_png, new Vector3(1350, this.VirtualScreenManager.BottomEdge - 20, 165), Vector3.One, SceneResources.Mushroom1Color);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Mushrooms.mushroom_2_png, new Vector3(1940, this.VirtualScreenManager.BottomEdge - 20, 195), Vector3.One, SceneResources.Mushroom2Color);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Mushrooms.mushroom_3_png, new Vector3(1618, this.VirtualScreenManager.BottomEdge + 50, -100), Vector3.One * 2.5f, SceneResources.Mushroom3Color);
 
             //LightBeams
             this.CreateSprite(DefaultLayers.Alpha, WaveContent.Assets.Textures.LightBeam_png, new Vector3(0, this.VirtualScreenManager.TopEdge - 400, 600), new Vector3(10, 6, 1), new Vector3(0, 0, MathHelper.ToRadians(30)), Color.White, new Vector2(0, 0.5f));
@@ -224,10 +197,10 @@ namespace ParallaxCamera2D
             // 1st tree layer
             float scale = 1.95f;
             float depth = 400;
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Trees.tree1st_0_png, new Vector3(978 + initOffset, this.VirtualScreenManager.BottomEdge, depth - 50), Vector3.One * scale, SceneResources.Trees1stLayerColor);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Trees.tree1st_1_png, new Vector3(1592 + initOffset, this.VirtualScreenManager.BottomEdge, depth), Vector3.One * scale, SceneResources.Trees1stLayerColor);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Trees.tree1st_2_png, new Vector3(2330 + initOffset, this.VirtualScreenManager.BottomEdge, depth + 20), Vector3.One * scale, SceneResources.Trees1stLayerColor);
-            this.CreateSprite(typeof(ForegroundLayer), WaveContent.Assets.Textures.Trees.tree1st_3_png, new Vector3(2968 + initOffset, this.VirtualScreenManager.BottomEdge, depth), Vector3.One * scale, SceneResources.Trees1stLayerColor);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Trees.tree1st_0_png, new Vector3(978 + initOffset, this.VirtualScreenManager.BottomEdge, depth - 50), Vector3.One * scale, SceneResources.Trees1stLayerColor);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Trees.tree1st_1_png, new Vector3(1592 + initOffset, this.VirtualScreenManager.BottomEdge, depth), Vector3.One * scale, SceneResources.Trees1stLayerColor);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Trees.tree1st_2_png, new Vector3(2330 + initOffset, this.VirtualScreenManager.BottomEdge, depth + 20), Vector3.One * scale, SceneResources.Trees1stLayerColor);
+            this.CreateSprite(WaveContent.RenderLayers.Foreground, WaveContent.Assets.Textures.Trees.tree1st_3_png, new Vector3(2968 + initOffset, this.VirtualScreenManager.BottomEdge, depth), Vector3.One * scale, SceneResources.Trees1stLayerColor);
 
             // 2st tree layer
             scale = 5.4f;
@@ -246,7 +219,7 @@ namespace ParallaxCamera2D
             this.CreateSprite(DefaultLayers.Alpha, WaveContent.Assets.Textures.Trees.tree3rd_2_png, new Vector3(1983 + initOffset, this.VirtualScreenManager.BottomEdge, depth - 20), Vector3.One * scale, SceneResources.Trees3rdLayerColor);
             this.CreateSprite(DefaultLayers.Alpha, WaveContent.Assets.Textures.Trees.tree3rd_3_png, new Vector3(2682 + initOffset, this.VirtualScreenManager.BottomEdge, depth - 100), Vector3.One * scale, SceneResources.Trees3rdLayerColor);
 
-            // Dust particles            
+            // Dust particles
             Entity dust = new Entity("smoke")
                 .AddComponent(new Transform2D() { Position = new Vector2(1500, 300), DrawOrder = 700 })
                 .AddComponent(new ParticleSystem2D()
@@ -271,8 +244,8 @@ namespace ParallaxCamera2D
                      Material = new StandardMaterial()
                      {
                          LightingEnabled = false,
-                         LayerType = DefaultLayers.Additive,
-                         DiffusePath = WaveContent.Assets.Textures.DustParticle_png,
+                         LayerId = DefaultLayers.Additive,
+                         Diffuse1Path = WaveContent.Assets.Textures.DustParticle_png,
                          VertexColorEnable = true
                      }
                  })
@@ -281,17 +254,17 @@ namespace ParallaxCamera2D
             EntityManager.Add(dust);
         }
 
-        private void CreateSprite(Type layer, string texture, Vector3 position, Vector3 scale, Color color)
+        private void CreateSprite(int layerId, string texture, Vector3 position, Vector3 scale, Color color)
         {
-            this.CreateSprite(layer, texture, position, scale, color, new Vector2(0.5f, 1));
+            this.CreateSprite(layerId, texture, position, scale, color, new Vector2(0.5f, 1));
         }
 
-        private void CreateSprite(Type layer, string texture, Vector3 position, Vector3 scale, Color color, Vector2 origin)
+        private void CreateSprite(int layerId, string texture, Vector3 position, Vector3 scale, Color color, Vector2 origin)
         {
-            this.CreateSprite(layer, texture, position, scale, Vector3.Zero, color, origin);
+            this.CreateSprite(layerId, texture, position, scale, Vector3.Zero, color, origin);
         }
 
-        private void CreateSprite(Type layer, string texture, Vector3 position, Vector3 scale, Vector3 rotation, Color color, Vector2 origin, SpriteEffects effect = SpriteEffects.None)
+        private void CreateSprite(int layerId, string texture, Vector3 position, Vector3 scale, Vector3 rotation, Color color, Vector2 origin, SpriteEffects effect = SpriteEffects.None)
         {
             Transform2D transform = new Transform2D() { Origin = origin, Effect = effect };
             transform.Transform3D.Position = position;
@@ -301,8 +274,7 @@ namespace ParallaxCamera2D
             Entity sprite = new Entity()
                .AddComponent(transform)
                .AddComponent(new Sprite(texture) { TintColor = color })
-                //.AddComponent(new RectangleCollider())
-               .AddComponent(new SpriteRenderer(layer));
+               .AddComponent(new SpriteRenderer(layerId));
 
             this.EntityManager.Add(sprite);
         }

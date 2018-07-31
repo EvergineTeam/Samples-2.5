@@ -6,11 +6,10 @@ using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using WaveEngine.OculusRift;
 
 namespace OculusCockpit
 {
-    public class App : OculusVRApplication
+    public class App : WaveEngine.Adapter.Application
     {
         OculusCockpit.Game game;
         SpriteBatch spriteBatch;
@@ -26,7 +25,7 @@ namespace OculusCockpit
             this.Height = 720;
             this.FullScreen = false;
             this.WindowTitle = "OculusCockpit";
-            this.msaaSampleCount = 4;
+            this.HasVideoSupport = true;
         }
 
         public override void Initialize()
@@ -34,8 +33,8 @@ namespace OculusCockpit
             this.game = new OculusCockpit.Game();
             this.game.Initialize(this);
 
-            #region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color("#ebebeb");
+            #region DEFAULT SPLASHSCREEN
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -77,7 +76,7 @@ namespace OculusCockpit
 
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
                     {
@@ -105,7 +104,7 @@ namespace OculusCockpit
             {
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
                     this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
@@ -144,4 +143,3 @@ namespace OculusCockpit
         }
     }
 }
-

@@ -1,10 +1,9 @@
-﻿<UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:NoesisWPF"
-             xmlns:ViewModels="clr-namespace:NoesisWPFLibrary.ViewModels" x:Class="NoesisWPF.MissionPanel"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ViewModels="clr-namespace:NoesisSample.ViewModels" 
+             x:Class="NoesisSample.MissionPanel"
              mc:Ignorable="d" 
              d:DesignHeight="580" d:DesignWidth="752">
     <UserControl.Resources>
@@ -399,9 +398,6 @@
             <BeginStoryboard Storyboard="{StaticResource loop}"/>
         </EventTrigger>
     </UserControl.Triggers>
-    <UserControl.DataContext>
-        <ViewModels:SpiritMission/>
-    </UserControl.DataContext>
     <Viewbox x:Name="viewbox">
         <Grid x:Name="grid3" Height="580" Width="752">
             <Grid Width="750" HorizontalAlignment="Left" VerticalAlignment="Top" Height="750" RenderTransformOrigin="0.5,0.5" Margin="0,-171,0,0">

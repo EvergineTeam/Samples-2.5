@@ -1,5 +1,5 @@
 <Project xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="WaveEngine.Framework.Models">
-  <Id>75aa4179-a445-48f6-b975-68aba7cf7b92</Id>
+  <Id>dd9795c0-027c-41cf-9dd9-1c2713187460</Id>
   <GameInfoPath>Accelerometer.wgame</GameInfoPath>
   <ResourcesPath>Content</ResourcesPath>
   <Settings xmlns:d2p1="WaveEngine.Framework.Models.Settings">
@@ -9,8 +9,15 @@
         <d3p1:Value xmlns:d5p1="WaveEngine.Framework.Models.Settings.Categories" i:type="d5p1:ProfilesData">
           <d5p1:Profiles>
             <Profile>
+              <AlphaCompressionFormat>DXT5</AlphaCompressionFormat>
+              <LauncherType>DirectX</LauncherType>
+              <Name>Windows</Name>
+              <NonAlphaCompressionFormat>DXT5</NonAlphaCompressionFormat>
+              <Platform>Windows</Platform>
+            </Profile>
+            <Profile>
               <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
+              <LauncherType>Default</LauncherType>
               <Name>Linux</Name>
               <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
               <Platform>Linux</Platform>
@@ -23,11 +30,18 @@
               <Platform>MacOS</Platform>
             </Profile>
             <Profile>
-              <AlphaCompressionFormat>R8G8B8A8</AlphaCompressionFormat>
-              <LauncherType i:nil="true" />
-              <Name>Windows</Name>
-              <NonAlphaCompressionFormat>R8G8B8A8</NonAlphaCompressionFormat>
-              <Platform>Windows</Platform>
+              <AlphaCompressionFormat>R4G4B4A4</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>Android</Name>
+              <NonAlphaCompressionFormat>ETC1RGB8</NonAlphaCompressionFormat>
+              <Platform>Android</Platform>
+            </Profile>
+            <Profile>
+              <AlphaCompressionFormat>PVRTC4BPP</AlphaCompressionFormat>
+              <LauncherType>Default</LauncherType>
+              <Name>iOS</Name>
+              <NonAlphaCompressionFormat>PVRTC4BPP</NonAlphaCompressionFormat>
+              <Platform>iOS</Platform>
             </Profile>
           </d5p1:Profiles>
         </d3p1:Value>
@@ -37,8 +51,8 @@
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>0</d2p1:_Build>
     <d2p1:_Major>2</d2p1:_Major>
-    <d2p1:_Minor>4</d2p1:_Minor>
+    <d2p1:_Minor>5</d2p1:_Minor>
     <d2p1:_Revision>0</d2p1:_Revision>
   </Version>
-  <WaveVersion>2.4.0.34</WaveVersion>
+  <WaveVersion>2.5.0.39</WaveVersion>
 </Project>

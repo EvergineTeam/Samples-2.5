@@ -1,6 +1,6 @@
 using System;
 
-namespace CameraRengerTarget
+namespace CameraRenderTarget
 {
     static class Program
     {

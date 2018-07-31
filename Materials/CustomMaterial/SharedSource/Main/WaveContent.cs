@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 11:53:53 AM
+// File generated on 6/25/2018 5:32:26 PM
 namespace CustomMaterial
 {
     using System;
@@ -25,6 +25,28 @@ namespace CustomMaterial
             
             /// <summary> Path to Content/Assets/DefaultTexture.png </summary>
             public const string DefaultTexture_png = "Content/Assets/DefaultTexture.png";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

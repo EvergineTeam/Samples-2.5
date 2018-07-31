@@ -18,15 +18,15 @@ namespace NoesisSample
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-		
+
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-			this.FullScreen = false;
-			this.WindowTitle = "NoesisSample";
+            this.FullScreen = false;
+            this.WindowTitle = "NoesisSample";
             this.HasVideoSupport = true;
-    }
+        }
 
         public override void Initialize()
         {
@@ -34,7 +34,7 @@ namespace NoesisSample
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -67,14 +67,14 @@ namespace NoesisSample
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-				if (this.splashState)
+                if (this.splashState)
                 {
                     #region DEFAULT SPLASHSCREEN
                     this.time += elapsedTime;
@@ -141,6 +141,5 @@ namespace NoesisSample
                 game.OnDeactivated();
             }
         }
-	}
+    }
 }
-

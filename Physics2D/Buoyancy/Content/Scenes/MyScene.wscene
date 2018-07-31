@@ -17,8 +17,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>640</d6p1:X>
-            <d6p1:Y>357.900024</d6p1:Y>
+            <d6p1:X>650</d6p1:X>
+            <d6p1:Y>100</d6p1:Y>
             <d6p1:Z>10</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -52,28 +52,33 @@
             <d6p1:R>100</d6p1:R>
           </d5p1:BackgroundColor>
           <d5p1:CameraOrder>0</d5p1:CameraOrder>
+          <d5p1:ClearDepth>1</d5p1:ClearDepth>
           <d5p1:ClearFlags>All</d5p1:ClearFlags>
+          <d5p1:ClearStencil>0</d5p1:ClearStencil>
+          <d5p1:DepthRange xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:MaxDepth>1</d6p1:MaxDepth>
+            <d6p1:MinDepth>0</d6p1:MinDepth>
+          </d5p1:DepthRange>
           <d5p1:FarPlane>1000</d5p1:FarPlane>
           <d5p1:FieldOfView>0</d5p1:FieldOfView>
+          <d5p1:FrustumCullingEnabled>true</d5p1:FrustumCullingEnabled>
           <d5p1:IsActive>true</d5p1:IsActive>
           <d5p1:LayerMaskDefaultValue>true</d5p1:LayerMaskDefaultValue>
           <d5p1:NearPlane>-1000</d5p1:NearPlane>
           <d5p1:UpVector xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>0</d6p1:X>
+            <d6p1:X>-0</d6p1:X>
             <d6p1:Y>1</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:UpVector>
           <d5p1:Viewport xmlns:d6p1="WaveEngine.Common.Graphics">
             <d6p1:Height>1</d6p1:Height>
-            <d6p1:MaxDepth>1</d6p1:MaxDepth>
-            <d6p1:MinDepth>0</d6p1:MinDepth>
             <d6p1:Width>1</d6p1:Width>
             <d6p1:X>0</d6p1:X>
             <d6p1:Y>0</d6p1:Y>
           </d5p1:Viewport>
           <d5p1:customVirtualScreen xmlns:d6p1="WaveEngine.Framework.Managers" i:nil="true" />
           <d5p1:distance>0</d5p1:distance>
-          <d5p1:rotation>0</d5p1:rotation>
+          <d5p1:rotation>-0</d5p1:rotation>
           <d5p1:vanishingPoint xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
             <d6p1:X>0.5</d6p1:X>
             <d6p1:Y>0.5</d6p1:Y>
@@ -91,13 +96,13 @@
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>background</d2p1:name>
-      <d2p1:tag i:nil="true" />
+      <d2p1:tag></d2p1:tag>
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:W>1</d6p1:W>
             <d6p1:X>0</d6p1:X>
-            <d6p1:Y>0</d6p1:Y>
+            <d6p1:Y>-0</d6p1:Y>
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
@@ -141,11 +146,10 @@
           <d5p1:texturePath>Content/Assets/blue_land.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -155,7 +159,7 @@
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>water</d2p1:name>
-      <d2p1:tag i:nil="true" />
+      <d2p1:tag></d2p1:tag>
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -165,12 +169,12 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>643.4041</d6p1:X>
+            <d6p1:X>642.6043</d6p1:X>
             <d6p1:Y>483.6413</d6p1:Y>
             <d6p1:Z>-0.1</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>1.128664</d6p1:X>
+            <d6p1:X>1.17406654</d6p1:X>
             <d6p1:Y>1.47556341</d6p1:Y>
             <d6p1:Z>1</d6p1:Z>
           </d5p1:LocalScale>
@@ -205,11 +209,10 @@
           <d5p1:texturePath>Content/Assets/water.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:BuoyancyBehavior">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -306,9 +309,9 @@
           </d5p1:vertices>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:BuoyancyRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -368,11 +371,10 @@
           <d5p1:texturePath>Content/Assets/ground.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -434,9 +436,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>38.2007065</d6p1:X>
-            <d6p1:Y>370.349945</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:X>39.2007065</d6p1:X>
+            <d6p1:Y>371.349945</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -474,11 +476,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -541,8 +542,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1255.30042</d6p1:X>
-            <d6p1:Y>585.4499</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>590.4499</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -580,11 +581,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -647,8 +647,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>38.20064</d6p1:X>
-            <d6p1:Y>588.7499</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>590.7499</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -686,11 +686,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -753,8 +752,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1253.20044</d6p1:X>
-            <d6p1:Y>362.8499</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>370.8499</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -792,11 +791,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -859,8 +857,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1251.30054</d6p1:X>
-            <d6p1:Y>140.549957</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>151.549957</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -898,11 +896,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -965,8 +962,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1251.30054</d6p1:X>
-            <d6p1:Y>-81.74999</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>-67.74999</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -1004,11 +1001,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1071,8 +1067,8 @@
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>37.2006454</d6p1:X>
-            <d6p1:Y>148.149948</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:Y>152.149948</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -1110,11 +1106,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1166,7 +1161,7 @@
       <d2p1:isStatic>false</d2p1:isStatic>
       <d2p1:isVisible>true</d2p1:isVisible>
       <d2p1:name>wall08</d2p1:name>
-      <d2p1:tag i:nil="true" />
+      <d2p1:tag></d2p1:tag>
       <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
           <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
@@ -1176,9 +1171,9 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>35.300602</d6p1:X>
-            <d6p1:Y>-72.25</d6p1:Y>
-            <d6p1:Z>0</d6p1:Z>
+            <d6p1:X>36.300602</d6p1:X>
+            <d6p1:Y>-67.25</d6p1:Y>
+            <d6p1:Z>-0.2</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
             <d6p1:X>1</d6p1:X>
@@ -1216,11 +1211,10 @@
           <d5p1:texturePath>Content/Assets/elementStone025.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RectangleCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1322,11 +1316,10 @@
           <d5p1:texturePath>Content/Assets/elementWood012.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1555,11 +1548,10 @@
           <d5p1:texturePath>Content/Assets/elementWood012.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
           <d5p1:CollidesWith>All</d5p1:CollidesWith>
@@ -1788,11 +1780,10 @@
           <d5p1:texturePath>Content/Assets/alienPink_square.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -2069,11 +2060,10 @@
           <d5p1:texturePath>Content/Assets/alienBeige_square.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -2350,11 +2340,10 @@
           <d5p1:texturePath>Content/Assets/alienYellow_square.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -2397,6 +2386,286 @@
             <d6p1:Y>1</d6p1:Y>
           </d5p1:Size>
           <d5p1:TexturePath>Content/Assets/alienYellow_square.png.wpk</d5p1:TexturePath>
+          <d5p1:detectHoles>false</d5p1:detectHoles>
+          <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics2D">
+            <d6p1:PolygonShapeData>
+              <d6p1:Vertices xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:Vector2>
+                  <d8p1:X>12.5</d8p1:X>
+                  <d8p1:Y>0.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>52.5</d8p1:X>
+                  <d8p1:Y>0.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>65.5</d8p1:X>
+                  <d8p1:Y>2.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>68.5</d8p1:X>
+                  <d8p1:Y>6.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>69.5</d8p1:X>
+                  <d8p1:Y>36.5</d8p1:Y>
+                </d8p1:Vector2>
+              </d6p1:Vertices>
+            </d6p1:PolygonShapeData>
+            <d6p1:PolygonShapeData>
+              <d6p1:Vertices xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:Vector2>
+                  <d8p1:X>69.5</d8p1:X>
+                  <d8p1:Y>36.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>69.5</d8p1:X>
+                  <d8p1:Y>58.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>68.5</d8p1:X>
+                  <d8p1:Y>63.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>65.5</d8p1:X>
+                  <d8p1:Y>67.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>60.5</d8p1:X>
+                  <d8p1:Y>69.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>12.5</d8p1:X>
+                  <d8p1:Y>0.5</d8p1:Y>
+                </d8p1:Vector2>
+              </d6p1:Vertices>
+            </d6p1:PolygonShapeData>
+            <d6p1:PolygonShapeData>
+              <d6p1:Vertices xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:Vector2>
+                  <d8p1:X>60.5</d8p1:X>
+                  <d8p1:Y>69.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>10.5</d8p1:X>
+                  <d8p1:Y>69.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>4.5</d8p1:X>
+                  <d8p1:Y>67.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>1.5</d8p1:X>
+                  <d8p1:Y>63.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>0.5</d8p1:X>
+                  <d8p1:Y>33.5</d8p1:Y>
+                </d8p1:Vector2>
+              </d6p1:Vertices>
+            </d6p1:PolygonShapeData>
+            <d6p1:PolygonShapeData>
+              <d6p1:Vertices xmlns:d8p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+                <d8p1:Vector2>
+                  <d8p1:X>0.5</d8p1:X>
+                  <d8p1:Y>33.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>0.5</d8p1:X>
+                  <d8p1:Y>11.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>1.5</d8p1:X>
+                  <d8p1:Y>6.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>4.5</d8p1:X>
+                  <d8p1:Y>2.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>12.5</d8p1:X>
+                  <d8p1:Y>0.5</d8p1:Y>
+                </d8p1:Vector2>
+                <d8p1:Vector2>
+                  <d8p1:X>60.5</d8p1:X>
+                  <d8p1:Y>69.5</d8p1:Y>
+                </d8p1:Vector2>
+              </d6p1:Vertices>
+            </d6p1:PolygonShapeData>
+          </d5p1:internalData>
+          <d5p1:rotationOffset>0</d5p1:rotationOffset>
+          <d5p1:threshold>1</d5p1:threshold>
+          <d5p1:vertices xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Vector2>
+              <d6p1:X>12.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>52.5</d6p1:X>
+              <d6p1:Y>0.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>65.5</d6p1:X>
+              <d6p1:Y>2.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>68.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>69.5</d6p1:X>
+              <d6p1:Y>36.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>69.5</d6p1:X>
+              <d6p1:Y>58.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>68.5</d6p1:X>
+              <d6p1:Y>63.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>65.5</d6p1:X>
+              <d6p1:Y>67.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>60.5</d6p1:X>
+              <d6p1:Y>69.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>10.5</d6p1:X>
+              <d6p1:Y>69.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>4.5</d6p1:X>
+              <d6p1:Y>67.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>63.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>33.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>0.5</d6p1:X>
+              <d6p1:Y>11.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>1.5</d6p1:X>
+              <d6p1:Y>6.5</d6p1:Y>
+            </d6p1:Vector2>
+            <d6p1:Vector2>
+              <d6p1:X>4.5</d6p1:X>
+              <d6p1:Y>2.5</d6p1:Y>
+            </d6p1:Vector2>
+          </d5p1:vertices>
+        </d4p1:Component>
+      </d2p1:SerializeComponents>
+    </d2p1:BaseEntityModel>
+    <d2p1:BaseEntityModel i:type="d2p1:EntityModel">
+      <d2p1:SerializeChildrens />
+      <d2p1:isDisabled>false</d2p1:isDisabled>
+      <d2p1:isStatic>false</d2p1:isStatic>
+      <d2p1:isVisible>true</d2p1:isVisible>
+      <d2p1:name>alien04</d2p1:name>
+      <d2p1:tag>Draggable</d2p1:tag>
+      <d2p1:SerializeComponents xmlns:d4p1="WaveEngine.Framework">
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Graphics" i:type="d5p1:Transform2D">
+          <d5p1:LocalOrientation xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:W>0.997743249</d6p1:W>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>-0</d6p1:Y>
+            <d6p1:Z>0.06714462</d6p1:Z>
+          </d5p1:LocalOrientation>
+          <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>927.65</d6p1:X>
+            <d6p1:Y>174.400238</d6p1:Y>
+            <d6p1:Z>0</d6p1:Z>
+          </d5p1:LocalPosition>
+          <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+            <d6p1:Z>1</d6p1:Z>
+          </d5p1:LocalScale>
+          <d5p1:Opacity>1</d5p1:Opacity>
+          <d5p1:Rectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:Height>70</d6p1:Height>
+            <d6p1:Width>70</d6p1:Width>
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:Rectangle>
+          <d5p1:effect>None</d5p1:effect>
+          <d5p1:origin xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0.5</d6p1:X>
+            <d6p1:Y>0.5</d6p1:Y>
+          </d5p1:origin>
+          <d5p1:screenPosition xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:screenPosition>
+          <d5p1:transformMode>Standard</d5p1:transformMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:Sprite">
+          <d5p1:IsGlobalAsset>false</d5p1:IsGlobalAsset>
+          <d5p1:SourceRectangle xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math" i:nil="true" />
+          <d5p1:TintColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>255</d6p1:B>
+            <d6p1:G>255</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:TintColor>
+          <d5p1:materialPath i:nil="true" />
+          <d5p1:texturePath>Content/Assets/alienGreen_square.png.wpk</d5p1:texturePath>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
+          <d4p1:IsVisible>true</d4p1:IsVisible>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
+          <d5p1:DrawMode>Simple</d5p1:DrawMode>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
+          <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
+          <d4p1:isDisabled>false</d4p1:isDisabled>
+          <d5p1:AllowSleep>false</d5p1:AllowSleep>
+          <d5p1:AngularDamping>1</d5p1:AngularDamping>
+          <d5p1:AngularVelocity>0</d5p1:AngularVelocity>
+          <d5p1:Awake>true</d5p1:Awake>
+          <d5p1:FixedRotation>false</d5p1:FixedRotation>
+          <d5p1:GravityScale>1</d5p1:GravityScale>
+          <d5p1:IsBullet>false</d5p1:IsBullet>
+          <d5p1:LinearDamping>1</d5p1:LinearDamping>
+          <d5p1:LinearVelocity xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:LinearVelocity>
+          <d5p1:PhysicBodyType>Dynamic</d5p1:PhysicBodyType>
+        </d4p1:Component>
+        <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:PolygonCollider2D">
+          <d5p1:CollidesWith>All</d5p1:CollidesWith>
+          <d5p1:CollisionCategories>Cat1</d5p1:CollisionCategories>
+          <d5p1:DebugLineColor xmlns:d6p1="WaveEngine.Common.Graphics">
+            <d6p1:A>255</d6p1:A>
+            <d6p1:B>0</d6p1:B>
+            <d6p1:G>165</d6p1:G>
+            <d6p1:R>255</d6p1:R>
+          </d5p1:DebugLineColor>
+          <d5p1:Density>0.4</d5p1:Density>
+          <d5p1:Friction>0.2</d5p1:Friction>
+          <d5p1:GroupIndex>0</d5p1:GroupIndex>
+          <d5p1:IsSensor>false</d5p1:IsSensor>
+          <d5p1:Restitution>0</d5p1:Restitution>
+          <d5p1:autoRefresh>true</d5p1:autoRefresh>
+          <d5p1:offset xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>0</d6p1:X>
+            <d6p1:Y>0</d6p1:Y>
+          </d5p1:offset>
+          <d5p1:Size xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Common.Math">
+            <d6p1:X>1</d6p1:X>
+            <d6p1:Y>1</d6p1:Y>
+          </d5p1:Size>
+          <d5p1:TexturePath>Content/Assets/alienBeige_square.png.wpk</d5p1:TexturePath>
           <d5p1:detectHoles>false</d5p1:detectHoles>
           <d5p1:internalData xmlns:d6p1="http://schemas.datacontract.org/2004/07/WaveEngine.Framework.Physics2D">
             <d6p1:PolygonShapeData>
@@ -2631,11 +2900,10 @@
           <d5p1:texturePath>Content/Assets/debrisWood_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -2840,11 +3108,10 @@
           <d5p1:texturePath>Content/Assets/debrisWood_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -3049,11 +3316,10 @@
           <d5p1:texturePath>Content/Assets/debrisWood_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -3258,11 +3524,10 @@
           <d5p1:texturePath>Content/Assets/debrisWood_2.png.wpk</d5p1:texturePath>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Graphics2D" i:type="d5p1:SpriteRenderer">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
           <d5p1:DrawMode>Simple</d5p1:DrawMode>
-          <d5p1:SamplerMode>LinearClamp</d5p1:SamplerMode>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Framework.Physics2D" i:type="d5p1:RigidBody2D">
           <d4p1:UpdateOrder>0.5</d4p1:UpdateOrder>
@@ -3459,9 +3724,9 @@
           <d4p1:isDisabled>false</d4p1:isDisabled>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="http://schemas.datacontract.org/2004/07/Buoyancy" i:type="d5p1:MouseDrawable">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">0</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>
@@ -3481,8 +3746,8 @@
             <d6p1:Z>0</d6p1:Z>
           </d5p1:LocalOrientation>
           <d5p1:LocalPosition xmlns:d6p1="WaveEngine.Common.Math">
-            <d6p1:X>614.4</d6p1:X>
-            <d6p1:Y>-400.4001</d6p1:Y>
+            <d6p1:X>670.500061</d6p1:X>
+            <d6p1:Y>-360.299438</d6p1:Y>
             <d6p1:Z>-0.5</d6p1:Z>
           </d5p1:LocalPosition>
           <d5p1:LocalScale xmlns:d6p1="WaveEngine.Common.Math">
@@ -3527,14 +3792,14 @@
             <d6p1:Y>1</d6p1:Y>
           </d5p1:scale>
           <d5p1:text>Textures made by Kenney (www.kenney.nl)</d5p1:text>
-          <d5p1:textAlignment>Left</d5p1:textAlignment>
+          <d5p1:textAlignment>Center</d5p1:textAlignment>
           <d5p1:textWrapping>false</d5p1:textWrapping>
           <d5p1:width>300</d5p1:width>
         </d4p1:Component>
         <d4p1:Component xmlns:d5p1="WaveEngine.Components.Toolkit" i:type="d5p1:TextRenderer2D">
+          <d4p1:FrustumCullingEnabled>true</d4p1:FrustumCullingEnabled>
           <d4p1:IsVisible>true</d4p1:IsVisible>
-          <CullingEnabled xmlns="WaveEngine.Framework.Graphics">true</CullingEnabled>
-          <LayerTypeName xmlns="WaveEngine.Framework.Graphics">WaveEngine.Framework.Graphics.AlphaLayer,WaveEngine.Framework</LayerTypeName>
+          <layerId xmlns="WaveEngine.Framework.Graphics">2</layerId>
         </d4p1:Component>
       </d2p1:SerializeComponents>
     </d2p1:BaseEntityModel>

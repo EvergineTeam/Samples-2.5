@@ -3,46 +3,31 @@ using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
-using WaveEngine.Common.Media;
 using WaveEngine.Components.Cameras;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
-using WaveEngine.Components.UI;
 using WaveEngine.Framework;
+using WaveEngine.Components.UI;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Models;
 using WaveEngine.Framework.Resources;
 using WaveEngine.Framework.Services;
 using WaveEngine.Materials;
+using WaveEngine.Common.Media;
+using WaveEngine.Framework.Models;
 #endregion
 
 namespace CameraCapture
 {
     public class MyScene : Scene
     {
-        /// <summary>
-        /// The is recording
-        /// </summary>
         private bool isRecording;
-
-        /// <summary>
-        /// The is video playing
-        /// </summary>
+        
         private bool isVideoPlaying;
-
-        /// <summary>
-        /// The final video path
-        /// </summary>
+        
         private string finalVideoPath;
-
-        /// <summary>
-        /// The record button
-        /// </summary>
+        
         Button RecButton;
-
-        /// <summary>
-        /// The play recorded button
-        /// </summary>
+        
         private Button PlayRecordedButton;
 
         private StandardMaterial tvScreenMaterial;
@@ -124,8 +109,6 @@ namespace CameraCapture
             }
         }
 
-
-
         protected override void Start()
         {
             base.Start();
@@ -136,8 +119,8 @@ namespace CameraCapture
                 WaveServices.VideoPlayer.OnComplete += (s, e) => { this.StopVideo(); };
                 WaveServices.CameraCapture.Start(CameraCaptureType.Front);
 
-                this.tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Material.TVScreenMaterial).Material as StandardMaterial;
-                this.tvScreenMaterial.Diffuse = WaveServices.CameraCapture.PreviewTexture;
+                this.tvScreenMaterial = this.Assets.LoadModel<MaterialModel>(WaveContent.Assets.Materials.screenMat).Material as StandardMaterial;
+                this.tvScreenMaterial.Diffuse1 = WaveServices.CameraCapture.PreviewTexture;
             }
         }
 
@@ -190,7 +173,7 @@ namespace CameraCapture
 
                 WaveServices.VideoPlayer.Play(videoInfo);
 
-                this.tvScreenMaterial.Diffuse = WaveServices.VideoPlayer.VideoTexture;
+                this.tvScreenMaterial.Diffuse1 = WaveServices.VideoPlayer.VideoTexture;
 
                 this.PlayRecordedButton.Text = "Stop";
 
@@ -205,7 +188,7 @@ namespace CameraCapture
                 WaveServices.VideoPlayer.Stop();
             }
 
-            this.tvScreenMaterial.Diffuse = WaveServices.CameraCapture.PreviewTexture;
+            this.tvScreenMaterial.Diffuse1 = WaveServices.CameraCapture.PreviewTexture;
 
             this.PlayRecordedButton.Text = "Play";
 

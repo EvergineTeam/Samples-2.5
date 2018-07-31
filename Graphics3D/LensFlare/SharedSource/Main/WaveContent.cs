@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 08/08/2017 9:43:22
+// File generated on 22-May-18 17:11:44
 namespace LensFlare
 {
     using System;
@@ -28,6 +28,13 @@ namespace LensFlare
                 
                 /// <summary> Path to Content/Assets/Models/planet.fbx </summary>
                 public const string planet_fbx = "Content/Assets/Models/planet.fbx";
+                
+                public sealed class Materials
+                {
+                    
+                    /// <summary> Path to Content/Assets/Models/Materials/01 - Default.wmat </summary>
+                    public const string _01_Default = "Content/Assets/Models/Materials/01 - Default.wmat";
+                }
             }
             
             public sealed class Textures
@@ -83,6 +90,28 @@ namespace LensFlare
                 /// <summary> Path to Content/Assets/Materials/MoonMaterial.wmat </summary>
                 public const string MoonMaterial = "Content/Assets/Materials/MoonMaterial.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

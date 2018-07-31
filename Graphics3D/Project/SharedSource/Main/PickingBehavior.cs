@@ -7,6 +7,7 @@ using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.Physics3D;
 using System.Runtime.Serialization;
+using WaveEngine.Framework.Managers;
 
 namespace Project
 {
@@ -49,48 +50,19 @@ namespace Project
         /// </summary>
         /// <param name="gameTime"></param>
         protected override void Update(TimeSpan gameTime)
-        {
+        {            
             touchPanelState = WaveServices.Input.TouchPanelState;
-            bestValue = float.MaxValue;
+           // bestValue = float.MaxValue;
             if (touchPanelState.IsConnected && touchPanelState.Count > 0)
             {
                 // Calculate the ray
                 CalculateRay();
 
-                // Look for all entities in the game...
-                for (int i = 0; i < EntityManager.Count; i++)
+                var hitResult = this.myScene.PhysicsManager.Simulation3D.RayCast(ref this.ray, 1000);
+                if (hitResult.Succeeded)
                 {
-                    currentEntity = EntityManager.EntityGraph.ElementAt(i); ;
-
-                    entityCollider = currentEntity.FindComponent<Collider3D>(false);
-                    // ... but only a collidable entities ( entities which have a boxCollider component)
-                    if (entityCollider != null)
-                    {
-                        if (entityCollider is BoxCollider3D)
-                        {
-                            // Intersect our calculated ray with the entity's boxCollider
-                            collisionResult = (entityCollider as BoxCollider3D).Intersects(ref ray);
-                        }
-                        else if (entityCollider is SphereCollider3D)
-                        {
-                            collisionResult = (entityCollider as SphereCollider3D).Intersects(ref ray);
-                        }                        
-
-                        // If any collision
-                        if (collisionResult.HasValue)
-                        {
-                            // Check the distance. We want to have the closer to the screen entity, so we want to get the low collisionResult value
-                            if (collisionResult.Value < bestValue)
-                            {
-                                // Send to the scene the new entity picked name
-                                if (this.myScene != null)
-                                {
-                                    this.myScene.ShowPickedEntity(currentEntity.Name);
-                                }
-                                bestValue = collisionResult.Value;
-                            }
-                        }
-                    }
+                    var userData = (Collider3D)hitResult.Collider.UserData;
+                    this.myScene.ShowPickedEntity(userData.Owner.Name);
                 }
             }
             else

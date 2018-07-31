@@ -19,8 +19,8 @@ namespace StickyProjectiles
     {
         protected override void CreateScene()
         {
-            this.PhysicsManager.Simulation2D.DrawFlags |= WaveEngine.Common.Physics2D.DebugDrawFlags.CenterOfMassBit;            
-            this.Load(WaveContent.Scenes.MyScene);            
+            this.PhysicsManager.Simulation2D.DrawFlags |= WaveEngine.Common.Physics2D.DebugDrawFlags.CenterOfMassBit;
+            this.Load(WaveContent.Scenes.MyScene);
         }
     }
 }

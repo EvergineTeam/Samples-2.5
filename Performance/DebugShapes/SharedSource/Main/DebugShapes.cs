@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2012-2015 Weekend Game Studio
+// Copyright (C) 2012-2015 Weekend Game Studio
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -42,9 +42,9 @@ namespace DebugShapesProject
     public class DebugShapes : Drawable3D
     {
         // The shapes that we'll be drawing
-        BoundingOrientedBox box;
-        BoundingFrustum frustum;
-        BoundingSphere sphere;
+        private BoundingOrientedBox box;
+        private BoundingFrustum frustum;
+        private BoundingSphere sphere;
 
         public DebugShapes()
             : base("DebugShapes")
@@ -54,30 +54,30 @@ namespace DebugShapesProject
         public override void Draw(TimeSpan gameTime)
         {
             // Add our shapes to be rendered
-            RenderManager.LineBatch3D.DrawBoundingOrientedBox(box, Color.Yellow);
-            RenderManager.LineBatch3D.DrawBoundingFrustum(frustum, Color.Green);
-            RenderManager.LineBatch3D.DrawBoundingSphere(sphere, Color.Red);
+            this.RenderManager.LineBatch3D.DrawBoundingOrientedBox(this.box, Color.Yellow);
+            this.RenderManager.LineBatch3D.DrawBoundingFrustum(this.frustum, Color.Green);
+            this.RenderManager.LineBatch3D.DrawBoundingSphere(this.sphere, Color.Red);
 
             //Also add a triangle and a line
-            RenderManager.LineBatch3D.DrawBox(new Vector3(-2), new Vector3(2), Color.White);
-            RenderManager.LineBatch3D.DrawCircle(Vector3.Zero, 1.5f, Color.Pink);
-            RenderManager.LineBatch3D.DrawTriangle(new Vector3(-1f, 0f, 0f), new Vector3(1f, 0f, 0f), new Vector3(0f, 2f, 0f), Color.Purple);
-            RenderManager.LineBatch3D.DrawLine(new Vector3(0f, 0f, 0f), new Vector3(3f, 3f, 3f), Color.Blue);
+            this.RenderManager.LineBatch3D.DrawBox(new Vector3(-2), new Vector3(2), Color.White);
+            this.RenderManager.LineBatch3D.DrawCircle(Vector3.Zero, 1.5f, Color.Pink);
+            this.RenderManager.LineBatch3D.DrawTriangle(new Vector3(-1f, 0f, 0f), new Vector3(1f, 0f, 0f), new Vector3(0f, 2f, 0f), Color.Purple);
+            this.RenderManager.LineBatch3D.DrawLine(new Vector3(0f, 0f, 0f), new Vector3(3f, 3f, 3f), Color.Blue);
         }
 
         protected override void Initialize()
         {
             // Create a box that is centered on the origin and extends from (-3, -3, -3) to (3, 3, 3)
-            box = new BoundingOrientedBox(Vector3.Zero, new Vector3(3), Quaternion.Identity);
+            this.box = new BoundingOrientedBox(Vector3.Zero, new Vector3(3), Quaternion.Identity);
 
             // Create our frustum to simulate a camera sitting at the origin, looking down the X axis, with a 16x9
             // aspect ratio, a near plane of 1, and a far plane of 5
             Matrix frustumView = Matrix.CreateLookAt(Vector3.Zero, Vector3.UnitX, Vector3.Up);
             Matrix frustumProjection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, 16f / 9f, 1f, 5f);
-            frustum = new BoundingFrustum(frustumView * frustumProjection);
+            this.frustum = new BoundingFrustum(frustumView * frustumProjection);
 
             // Create a sphere that is centered on the origin and has a radius of 3
-            sphere = new BoundingSphere(Vector3.Zero, 3f);
+            this.sphere = new BoundingSphere(Vector3.Zero, 3f);
         }
 
         protected override void Dispose(bool disposing)

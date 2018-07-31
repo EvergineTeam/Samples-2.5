@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/08/2017 14:12:19
+// File generated on 6/25/2018 3:24:15 PM
 namespace AnimationSequence
 {
     using System;
@@ -23,20 +23,20 @@ namespace AnimationSequence
         public sealed class Assets
         {
             
+            /// <summary> Path to Content/Assets/arm.wav </summary>
+            public const string arm_wav = "Content/Assets/arm.wav";
+            
+            /// <summary> Path to Content/Assets/Cubemap.cubemap </summary>
+            public const string Cubemap_cubemap = "Content/Assets/Cubemap.cubemap";
+            
             /// <summary> Path to Content/Assets/robotic.fbx </summary>
             public const string robotic_fbx = "Content/Assets/robotic.fbx";
-            
-            /// <summary> Path to Content/Assets/redMaterial.wmat </summary>
-            public const string redMaterial = "Content/Assets/redMaterial.wmat";
-            
-            /// <summary> Path to Content/Assets/whiteMaterial.wmat </summary>
-            public const string whiteMaterial = "Content/Assets/whiteMaterial.wmat";
             
             public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Materials/reflect.cubemap </summary>
-                public const string reflect_cubemap = "Content/Assets/Materials/reflect.cubemap";
+                /// <summary> Path to Content/Assets/Materials/floor.wmat </summary>
+                public const string floor = "Content/Assets/Materials/floor.wmat";
                 
                 /// <summary> Path to Content/Assets/Materials/metal.wmat </summary>
                 public const string metal = "Content/Assets/Materials/metal.wmat";
@@ -49,14 +49,33 @@ namespace AnimationSequence
             }
         }
         
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
+        }
+        
         public sealed class Scenes
         {
             
-            /// <summary> Path to Content/Scenes/Scene1.wscene </summary>
-            public const string Scene1 = "Content/Scenes/Scene1.wscene";
-            
-            /// <summary> Path to Content/Scenes/Scene2.wscene </summary>
-            public const string Scene2 = "Content/Scenes/Scene2.wscene";
+            /// <summary> Path to Content/Scenes/MyScene.wscene </summary>
+            public const string MyScene = "Content/Scenes/MyScene.wscene";
         }
     }
 }

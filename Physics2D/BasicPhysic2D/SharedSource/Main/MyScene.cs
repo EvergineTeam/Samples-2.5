@@ -18,8 +18,6 @@ namespace BasicPhysic2D
     {
         protected override void CreateScene()
         {
-
-            this.RenderManager.DebugLines = true;
             this.Load(WaveContent.Scenes.MyScene);           
         }
     }

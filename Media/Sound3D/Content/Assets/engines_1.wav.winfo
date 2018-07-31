@@ -2,8 +2,10 @@
   <Id>bd894f3a-5134-4b4d-bd40-1f3298e253ba</Id>
   <AsRaw>false</AsRaw>
   <Asset xmlns:d2p1="WaveEngine.Framework.Models.Assets" i:type="d2p1:Sound">
+    <d2p1:AssociatedFiles xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
     <d2p1:Profiles xmlns:d3p1="WaveEngine.Framework.Models.Profiles">
       <d3p1:ExportProfile i:type="d3p1:SoundProfile">
+        <d3p1:ExcludeAsset>false</d3p1:ExcludeAsset>
         <d3p1:Name i:nil="true" />
         <d3p1:AudioQuality>High</d3p1:AudioQuality>
         <d3p1:ChannelFormat>Mono</d3p1:ChannelFormat>

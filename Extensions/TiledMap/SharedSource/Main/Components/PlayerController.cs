@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 using TiledMap.Entities;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
@@ -71,7 +68,7 @@ namespace TiledMap.Components
 
             this.Collider.BeginCollision += Collider_BeginCollision;
             this.Collider.EndCollision += Collider_EndCollision;
-        }        
+        }
 
         public void Reset()
         {
@@ -89,12 +86,12 @@ namespace TiledMap.Components
 
         private void HandleGamepad()
         {
-            if(this.input.GamePadState.IsConnected)
+            if (this.input.GamePadState.IsConnected)
             {
                 var gamepadState = this.input.GamePadState;
 
                 if (this.OnFloor && (gamepadState.ThumbSticks.Left.X != 0))
-                {                    
+                {
                     this.RigidBody.ApplyLinearImpulse(Vector2.UnitX * SideImpulse * gamepadState.ThumbSticks.Left.X, RigidBody.Transform2D.Position);
                 }
 
@@ -214,6 +211,6 @@ namespace TiledMap.Components
         private void Collider_EndCollision(WaveEngine.Common.Physics2D.ICollisionInfo2D contact)
         {
             this.collisionCounter--;
-        }        
+        }
     }
 }

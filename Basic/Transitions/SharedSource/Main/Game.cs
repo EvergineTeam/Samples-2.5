@@ -6,7 +6,7 @@ using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 #endregion
 
-namespace Transition
+namespace Transitions
 {
     public class Game : WaveEngine.Framework.Game
     {
@@ -14,7 +14,9 @@ namespace Transition
         {
             base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene(0));	
+            this.Load(WaveContent.GameInfo);
+
+			ScreenContext screenContext = new ScreenContext(new MyScene(0));
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

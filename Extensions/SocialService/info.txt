@@ -1,0 +1,13 @@
+androiddebugkey
+android
+android
+
+keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+C:\Users\[USER]\AppData\Local\Xamarin\Mono for Android
+
+com.waveengine.socialsample
+6B:68:19:7B:A7:8B:79:56:A4:D2:1D:DB:9C:79:0F:6C:58:B4:CB:A6
+
+
+http://keystore-explorer.sourceforge.net/

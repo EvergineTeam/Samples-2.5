@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading;
+using WaveEngine.Common.Math;
+using WaveEngine.Components.GameActions;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Animation;
 using WaveEngine.Framework.Graphics;
@@ -10,117 +12,82 @@ namespace Loading
 {
     public class LoadingScene : Scene
     {
-        Entity background, tower, text;
-        GameScene gameScene;
+        private Entity background;
+        private Entity tower;
+        private Entity text;
+
+        private GameScene gameScene;
+
+        private Transform2D backgroundTransform;
+        private Transform2D towerTransform;
+        private Transform2D textTransform;
 
         protected override void CreateScene()
         {
             this.Load(@"Content/Scenes/LoadingScene.wscene");
 
-            background = EntityManager.Find("background");
-            tower = EntityManager.Find("tower");
-            text = EntityManager.Find("text");
+            this.background = this.EntityManager.Find("background");
+            this.tower = this.EntityManager.Find("tower");
+            this.text = this.EntityManager.Find("text");
+
+            this.backgroundTransform = this.background.FindComponent<Transform2D>();
+            this.towerTransform = this.tower.FindComponent<Transform2D>();
+            this.textTransform = this.text.FindComponent<Transform2D>();
         }
 
         protected override void Start()
         {
             base.Start();
 
-            StartAnimation();
+            this.StartAnimation();
 
             WaveBackgroundTask.Run(() =>
             {
-                gameScene = new GameScene();
-                gameScene.Initialize(WaveServices.GraphicsDevice);
+                this.gameScene = new GameScene();
+                this.gameScene.Initialize(WaveServices.GraphicsDevice);
                 Thread.Sleep(5000);
-            }).ContinueWith((t) =>
+            })
+            .ContinueWith((t) =>
             {
-                EndAnimation();
+                this.EndAnimation();
             });
         }
 
         private void StartAnimation()
         {
-            background.FindComponent<AnimationUI>()
-                    .BeginAnimation(
-                        Transform2D.OpacityProperty,
-                        new SingleAnimation(0f, 1f, TimeSpan.FromMilliseconds(2000)));
+            var backgroundTransform = this.background.FindComponent<Transform2D>();
+            var towerTransform = this.tower.FindComponent<Transform2D>();
+            var textTransform = this.text.FindComponent<Transform2D>();
 
-            tower.FindComponent<AnimationUI>()                    
-                    .BeginAnimation(
-                        Transform2D.XProperty,
-                        new SingleAnimation(-718, 0, TimeSpan.FromSeconds(2), EasingFunctions.Cubic));
+            var animation = this.CreateParallelGameActions(
+                new FloatAnimationGameAction(this.background, 0.0f, 1.0f, TimeSpan.FromMilliseconds(2000), EaseFunction.CircleOutEase, (v) => { backgroundTransform.Opacity = v; }),
+                new FloatAnimationGameAction(this.tower, 0.0f, 1.0f, TimeSpan.FromMilliseconds(1000), EaseFunction.ExponentialOutEase, (v) => { towerTransform.Opacity = v; }),
+                new MoveTo2DGameAction(this.tower, new Vector2(0.0f, 77.0f), TimeSpan.FromMilliseconds(3000), EaseFunction.CircleOutEase, true)
+                )
+                .WaitAll()
+                .ContinueWith(
+                    new MoveTo2DGameAction(this.text, Vector2.Zero, TimeSpan.FromMilliseconds(500f), EaseFunction.BackOutEase, true));
 
-            SingleAnimation positionX =
-                new SingleAnimation(
-                    -325,
-                    300,
-                    TimeSpan.FromMilliseconds(2200),
-                    EasingFunctions.Circle);
-
-            positionX.Completed += positionX_Completed;
-
-            text.FindComponent<AnimationUI>()
-                    .BeginAnimation(
-                        Transform2D.OpacityProperty,
-                        new SingleAnimation(0, 0.4f, TimeSpan.FromMilliseconds(400)))
-                    .BeginAnimation(
-                        Transform2D.XProperty,
-                        positionX)
-                    .BeginAnimation(
-                        Transform2D.YProperty,
-                        new SingleAnimation(
-                                1300,
-                                600,
-                                TimeSpan.FromMilliseconds(2200),
-                                EasingFunctions.Circle));
-        }
-
-        private void positionX_Completed(object sender, EventArgs e)
-        {
-            text.FindComponent<AnimationUI>()
-                .BeginAnimation(
-                    Transform2D.XProperty,
-                    new SingleAnimation(
-                            text.FindComponent<Transform2D>().X,
-                            text.FindComponent<Transform2D>().X + 600,
-                            TimeSpan.FromSeconds(70)))
-                .BeginAnimation(
-                    Transform2D.YProperty,
-                    new SingleAnimation(
-                            text.FindComponent<Transform2D>().Y,
-                            text.FindComponent<Transform2D>().Y - 600,
-                            TimeSpan.FromSeconds(70)));           
+            animation.Run();
         }
 
         private void EndAnimation()
         {
-            SingleAnimation getOutAnimation =
-                new SingleAnimation(
-                    0, -500, TimeSpan.FromSeconds(1), EasingFunctions.Back);
+            var animation = new MoveTo2DGameAction(this.text, new Vector2(700, -700), TimeSpan.FromMilliseconds(500f), EaseFunction.BackInEase, true)
+                           .ContinueWith(
+                               this.CreateParallelGameActions(
+                                   new FloatAnimationGameAction(this.background, 1.0f, 0.0f, TimeSpan.FromMilliseconds(2000), EaseFunction.CircleInOutEase, (v) => { backgroundTransform.Opacity = v; }),
+                                   new FloatAnimationGameAction(this.tower, 1.0f, 0.0f, TimeSpan.FromMilliseconds(500), EaseFunction.CircleInEase, (v) => { towerTransform.Opacity = v; }),
+                                   new MoveTo2DGameAction(this.tower, new Vector2(0.0f, 500.0f), TimeSpan.FromMilliseconds(500), EaseFunction.CircleInEase, true)
+                                   )
+                                   .WaitAll()
+                            );
 
-            getOutAnimation.Completed += getOutAnimation_Completed;
-
-            tower.FindComponent<AnimationUI>()
-                    .BeginAnimation(
-                        Transform2D.XProperty,
-                        getOutAnimation)
-                    .BeginAnimation(
-                        Transform2D.OpacityProperty,
-                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
-
-            background.FindComponent<AnimationUI>()
-                    .BeginAnimation(
-                        Transform2D.OpacityProperty,
-                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
-
-            text.FindComponent<AnimationUI>()
-                    .BeginAnimation(
-                        Transform2D.OpacityProperty,
-                        new SingleAnimation(1, 0, TimeSpan.FromSeconds(1)));
+            animation.Completed += this.AnimationCompleted;
+            animation.Run();
         }
 
-        private void getOutAnimation_Completed(object sender, EventArgs e)
+        private void AnimationCompleted(IGameAction obj)
         {
             WaveServices.ScreenContextManager.To(new ScreenContext(gameScene));
         }

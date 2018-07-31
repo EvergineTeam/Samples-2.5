@@ -99,14 +99,18 @@ namespace PlatformGameDemo
             // Move sprite
             trans2D.X += direction * SPEED * (gameTime.Milliseconds / 10);
 
+            var screenMidLenght = WaveServices.Platform.ScreenWidth / 2;
+            var left = -screenMidLenght + BORDER_OFFSET;
+            var right = screenMidLenght - BORDER_OFFSET;
+            
             // Check borders
-            if (trans2D.X < BORDER_OFFSET)
+            if (trans2D.X < left)
             {
-                trans2D.X = BORDER_OFFSET;
+                trans2D.X = left;
             }
-            else if (trans2D.X > WaveServices.Platform.ScreenWidth - BORDER_OFFSET)
+            else if (trans2D.X > right)
             {
-                trans2D.X = WaveServices.Platform.ScreenWidth - BORDER_OFFSET;
+                trans2D.X = right;
             }
         }
     }

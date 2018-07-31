@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 03/08/2017 14:05:25
+// File generated on 6/25/2018 1:55:22 PM
 namespace ParallaxCamera2D
 {
     using System;
@@ -197,6 +197,37 @@ namespace ParallaxCamera2D
                 /// <summary> Path to Content/Assets/Yurei/yurei.spine </summary>
                 public const string yurei_spine = "Content/Assets/Yurei/yurei.spine";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Background</summary>
+            public const int Background = 1001;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of Foreground</summary>
+            public const int Foreground = 1003;
+            
+            /// <summary>Id of Sun</summary>
+            public const int Sun = 1002;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

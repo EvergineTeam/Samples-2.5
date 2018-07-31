@@ -46,8 +46,8 @@ namespace Billboard
 			this.game = new Billboard.Game();
 			this.game.Initialize(this);
 
-			#region WAVE SOFTWARE LICENSE AGREEMENT
-			this.backgroundSplashColor = new Color("#ebebeb");
+			#region DEFAULT SPLASHSCREEN
+			this.backgroundSplashColor = Color.White;
 			this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
 			var resourceNames = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -84,7 +84,7 @@ namespace Billboard
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					position.X = (this.Width / 2.0f) - (this.splashScreen.Width / 2.0f);
 					position.Y = (this.Height / 2.0f) - (this.splashScreen.Height / 2.0f);
 					this.time += elapsedTime;
@@ -117,7 +117,7 @@ namespace Billboard
 			{
 				if (this.splashState)
 				{
-					#region WAVE SOFTWARE LICENSE AGREEMENT
+					#region DEFAULT SPLASHSCREEN
 					WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
 					WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
 					this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);

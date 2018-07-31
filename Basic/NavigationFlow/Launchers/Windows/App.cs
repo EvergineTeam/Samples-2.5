@@ -1,4 +1,3 @@
-using NavigationFlow.Navigation;
 using System;
 using System.IO;
 using System.Reflection;
@@ -19,7 +18,6 @@ namespace NavigationFlow
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-        KeyboardState lastKeyboardState;
 
         public App()
         {
@@ -36,7 +34,7 @@ namespace NavigationFlow
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -58,7 +56,7 @@ namespace NavigationFlow
 
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
             {
-                this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);	
+                this.splashScreen = Texture2D.FromFile(WaveServices.GraphicsDevice, stream);
             }
 
             position = new Vector2();
@@ -71,10 +69,7 @@ namespace NavigationFlow
         {
             if (this.game != null && !this.game.HasExited)
             {
-                var keyboardState = WaveServices.Input.KeyboardState;
-
-                if (keyboardState.IsKeyReleased(Keys.F10) &&
-                    this.lastKeyboardState.IsKeyPressed(Keys.F10))
+                if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
@@ -91,23 +86,15 @@ namespace NavigationFlow
                 }
                 else
                 {
-                    if (keyboardState.IsKeyReleased(Keys.Escape) &&
-                        this.lastKeyboardState.IsKeyPressed(Keys.Escape))
+                    if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
                     {
-                        var navService = WaveServices.GetService<NavigationService>();
-
-                        if (navService.CanNavigate(NavigateCommands.Back))
-                        {
-                            navService.Navigate(NavigateCommands.Back);
-                        }
+                        WaveServices.Platform.Exit();
                     }
                     else
                     {
                         this.game.UpdateFrame(elapsedTime);
                     }
                 }
-
-                this.lastKeyboardState = keyboardState;
             }
         }
 
@@ -156,4 +143,3 @@ namespace NavigationFlow
         }
     }
 }
-

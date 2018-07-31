@@ -3,7 +3,7 @@ using System;
 using Foundation;
 using AppKit;
 
-namespace XBoxController
+namespace XboxController
 {
 	public partial class MainWindowController : NSWindowController
 	{

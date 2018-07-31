@@ -24,7 +24,7 @@ namespace VehiclePhysics2D
             this.Width = 1280;
             this.Height = 720;
             this.FullScreen = false;
-            this.WindowTitle = "VehiclePhysics";
+            this.WindowTitle = "VehiclePhysics2D";
             this.HasVideoSupport = true;
         }
 
@@ -34,7 +34,7 @@ namespace VehiclePhysics2D
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -143,4 +143,3 @@ namespace VehiclePhysics2D
         }
     }
 }
-

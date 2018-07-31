@@ -1,7 +1,7 @@
 using Foundation;
 using AppKit;
 
-namespace XBoxController
+namespace XboxController
 {
 	public partial class AppDelegate : NSApplicationDelegate
 	{

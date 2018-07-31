@@ -21,13 +21,8 @@ namespace ParticleSystem2D
 {
     public class MyScene : Scene
     {
-        private MountainLayer mountainLayer;
-
         protected override void CreateScene()
         {
-            this.mountainLayer = new MountainLayer(this.RenderManager);
-            this.RenderManager.RegisterLayerBefore(this.mountainLayer, DefaultLayers.Alpha);
-
             this.Load(WaveContent.Scenes.MyScene);
 
             var textBlock = new TextBlock()
@@ -42,7 +37,6 @@ namespace ParticleSystem2D
 
             var mountains = EntityManager.Find("mountains");
             var mountainsRenderer = mountains.FindComponent<SpriteRenderer>();
-            mountainsRenderer.LayerType = this.mountainLayer.GetType();           
         }
     }
 }

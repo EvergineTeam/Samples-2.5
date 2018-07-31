@@ -7,35 +7,36 @@ using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 
-namespace XBoxController
+namespace XboxController
 {
     public class App : WaveEngine.Adapter.Application
     {
-        XBoxController.Game game;
+        XboxController.Game game;
         SpriteBatch spriteBatch;
         Texture2D splashScreen;
         bool splashState = true;
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-		
+
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
-			this.FullScreen = false;
-			this.WindowTitle = "XBoxController";
+            this.FullScreen = false;
+            this.WindowTitle = "XboxController";
+            this.HasVideoSupport = true;
         }
 
         public override void Initialize()
         {
-            this.game = new XBoxController.Game();
+            this.game = new XboxController.Game();
             this.game.Initialize(this);
-			
-			#region WAVE SOFTWARE LICENSE AGREEMENT
-            this.backgroundSplashColor = new Color("#ebebeb");
+
+            #region DEFAULT SPLASHSCREEN
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-            
+
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -66,16 +67,16 @@ namespace XBoxController
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
 
-				if (this.splashState)
+                if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     this.time += elapsedTime;
                     if (time > TimeSpan.FromSeconds(2))
                     {
@@ -103,7 +104,7 @@ namespace XBoxController
             {
                 if (this.splashState)
                 {
-                    #region WAVE SOFTWARE LICENSE AGREEMENT
+                    #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
                     this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
@@ -140,6 +141,5 @@ namespace XBoxController
                 game.OnDeactivated();
             }
         }
-	}
+    }
 }
-

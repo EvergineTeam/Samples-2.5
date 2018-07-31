@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="226">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="225">
+            <objects>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11" customClass="GLView" fixedFrame="YES">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
+                <viewController id="226" sceneMemberID="viewController" customClass="MainController" storyboardIdentifier="MainController">
+                    <connections>
+                        <outlet property="glView" destination="230" id="name-outlet-230"/>
+                        <outlet property="glView" destination="11" id="name-outlet-11"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="228" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-407"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,7 +7,6 @@ using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Graphics;
-using NavigationFlow.Navigation;
 
 namespace NavigationFlow
 {
@@ -20,7 +19,7 @@ namespace NavigationFlow
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-        KeyboardState lastKeyboardState;
+        bool lastKeyF10Pressed = false;
 
         public App()
         {
@@ -36,7 +35,7 @@ namespace NavigationFlow
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
 
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
@@ -67,13 +66,13 @@ namespace NavigationFlow
         {
             if (this.game != null && !this.game.HasExited)
             {
-                var keyboardState = WaveServices.Input.KeyboardState;
-
-                if (keyboardState.IsKeyReleased(Keys.F10) &&
-                    this.lastKeyboardState.IsKeyPressed(Keys.F10))
+                bool keyF10Pressed = WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed;
+                if (keyF10Pressed && !this.lastKeyF10Pressed)
                 {
                     this.FullScreen = !this.FullScreen;
                 }
+
+                this.lastKeyF10Pressed = keyF10Pressed;
 
                 if (this.splashState)
                 {
@@ -89,22 +88,14 @@ namespace NavigationFlow
                 }
                 else
                 {
-                    if (keyboardState.IsKeyReleased(Keys.Escape) &&
-                       this.lastKeyboardState.IsKeyPressed(Keys.Escape))
+                    if (WaveServices.Input.KeyboardState.Escape == ButtonState.Pressed)
                     {
-                        var navService = WaveServices.GetService<NavigationService>();
-
-                        if (navService.CanNavigate(NavigateCommands.Back))
-                        {
-                            navService.Navigate(NavigateCommands.Back);
-                        }
+                        WaveServices.Platform.Exit();
                     }
                     else
                     {
                         this.game.UpdateFrame(elapsedTime);
                     }
-
-                    this.lastKeyboardState = keyboardState;
                 }
             }
         }
@@ -118,8 +109,8 @@ namespace NavigationFlow
                     #region DEFAULT SPLASHSCREEN
                     WaveServices.GraphicsDevice.RenderTargets.SetRenderTarget(null);
                     WaveServices.GraphicsDevice.Clear(ref this.backgroundSplashColor, ClearFlags.Target, 1);
-                    this.spriteBatch.Draw(this.splashScreen, this.position, Color.White);
-                    this.spriteBatch.Render();
+                    this.spriteBatch.Draw (this.splashScreen, this.position, Color.White);
+                    this.spriteBatch.Render ();
                     #endregion
                 }
                 else

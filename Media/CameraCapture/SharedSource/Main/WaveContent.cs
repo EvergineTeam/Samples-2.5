@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 8/3/2017 12:36:43 PM
+// File generated on 6/25/2018 5:55:24 PM
 namespace CameraCapture
 {
     using System;
@@ -23,15 +23,8 @@ namespace CameraCapture
         public sealed class Assets
         {
             
-            /// <summary> Path to Content/Assets/TvRoomLightingMap.png </summary>
-            public const string TvRoomLightingMap_png = "Content/Assets/TvRoomLightingMap.png";
-            
-            public sealed class Model
-            {
-                
-                /// <summary> Path to Content/Assets/Model/TvRoom.fbx </summary>
-                public const string TvRoom_fbx = "Content/Assets/Model/TvRoom.fbx";
-            }
+            /// <summary> Path to Content/Assets/TvRoom.fbx </summary>
+            public const string TvRoom_fbx = "Content/Assets/TvRoom.fbx";
             
             public sealed class Texture
             {
@@ -45,28 +38,53 @@ namespace CameraCapture
                 /// <summary> Path to Content/Assets/Texture/table_Difuse.png </summary>
                 public const string table_Difuse_png = "Content/Assets/Texture/table_Difuse.png";
                 
+                /// <summary> Path to Content/Assets/Texture/TvRoomLightingMap.png </summary>
+                public const string TvRoomLightingMap_png = "Content/Assets/Texture/TvRoomLightingMap.png";
+                
                 /// <summary> Path to Content/Assets/Texture/Tv_Difuse.png </summary>
                 public const string Tv_Difuse_png = "Content/Assets/Texture/Tv_Difuse.png";
             }
             
-            public sealed class Material
+            public sealed class Materials
             {
                 
-                /// <summary> Path to Content/Assets/Material/ChairMaterial.wmat </summary>
-                public const string ChairMaterial = "Content/Assets/Material/ChairMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/chairMat.wmat </summary>
+                public const string chairMat = "Content/Assets/Materials/chairMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Material/ParketMaterial.wmat </summary>
-                public const string ParketMaterial = "Content/Assets/Material/ParketMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/floorMat.wmat </summary>
+                public const string floorMat = "Content/Assets/Materials/floorMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Material/TableMaterial.wmat </summary>
-                public const string TableMaterial = "Content/Assets/Material/TableMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/screenMat.wmat </summary>
+                public const string screenMat = "Content/Assets/Materials/screenMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Material/TVMaterial.wmat </summary>
-                public const string TVMaterial = "Content/Assets/Material/TVMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/tableMat.wmat </summary>
+                public const string tableMat = "Content/Assets/Materials/tableMat.wmat";
                 
-                /// <summary> Path to Content/Assets/Material/TVScreenMaterial.wmat </summary>
-                public const string TVScreenMaterial = "Content/Assets/Material/TVScreenMaterial.wmat";
+                /// <summary> Path to Content/Assets/Materials/tvMat.wmat </summary>
+                public const string tvMat = "Content/Assets/Materials/tvMat.wmat";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

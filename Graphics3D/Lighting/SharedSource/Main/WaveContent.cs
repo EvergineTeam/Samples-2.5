@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 07/02/2017 15:58:17
+// File generated on 6/25/2018 4:36:11 PM
 namespace Lighting
 {
     using System;
@@ -17,14 +17,42 @@ namespace Lighting
     public sealed class WaveContent
     {
         
+        /// <summary> Path to Content/Lighting.wgame </summary>
+        public const string GameInfo = "Content/Lighting.wgame";
+        
         public sealed class Assets
         {
             
             /// <summary> Path to Content/Assets/tile1.png </summary>
             public const string tile1_png = "Content/Assets/tile1.png";
             
-            /// <summary> Path to Content/Assets/tile1Material.wmat </summary>
-            public const string tile1Material = "Content/Assets/tile1Material.wmat";
+            /// <summary> Path to Content/Assets/basicMat.wmat </summary>
+            public const string basicMat = "Content/Assets/basicMat.wmat";
+            
+            /// <summary> Path to Content/Assets/MyMaterial.wmat </summary>
+            public const string MyMaterial = "Content/Assets/MyMaterial.wmat";
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

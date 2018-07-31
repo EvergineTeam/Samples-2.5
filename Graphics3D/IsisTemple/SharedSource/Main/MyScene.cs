@@ -1,11 +1,9 @@
 #region Using Statements
-using IsisTemple.Components;
 using System;
 using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Common.Math;
 using WaveEngine.Components.Cameras;
-using WaveEngine.Components.Gestures;
 using WaveEngine.Components.Graphics2D;
 using WaveEngine.Components.Graphics3D;
 using WaveEngine.Framework;
@@ -20,7 +18,7 @@ namespace IsisTemple
     {
         protected override void CreateScene()
         {
-            this.Load(WaveContent.Scenes.MyScene);
+            this.Load(WaveContent.Scenes.MyScene);           
         }
     }
 }

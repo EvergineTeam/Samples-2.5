@@ -15,6 +15,7 @@ namespace LeapMotionSample
         {
             base.Initialize(application);
 
+            this.Load(WaveContent.GameInfo);
             LeapMotionService leapMotionService = new LeapMotionService();
             WaveServices.RegisterService(leapMotionService);
             leapMotionService.StartSensor(LeapFeatures.Hands | LeapFeatures.CameraImages);

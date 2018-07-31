@@ -1,6 +1,6 @@
 using System;
 
-namespace XBoxController
+namespace XboxController
 {
     static class Program
     {

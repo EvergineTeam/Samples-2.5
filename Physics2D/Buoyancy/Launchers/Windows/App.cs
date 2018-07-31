@@ -18,15 +18,15 @@ namespace Buoyancy
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-        
+
         public App()
         {
             this.Width = 1280;
             this.Height = 720;
             this.FullScreen = false;
-            this.WindowTitle = "Bouyance";
+            this.WindowTitle = "Buoyancy";
             this.HasVideoSupport = true;
-    }
+        }
 
         public override void Initialize()
         {
@@ -34,9 +34,9 @@ namespace Buoyancy
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-            
+
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -67,7 +67,7 @@ namespace Buoyancy
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
@@ -143,4 +143,3 @@ namespace Buoyancy
         }
     }
 }
-

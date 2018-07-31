@@ -6,11 +6,11 @@ using WaveEngine.Common.Attributes;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VehiclePhysics")]
-[assembly: AssemblyProduct("VehiclePhysics")]
+[assembly: AssemblyTitle("VehiclePhysics2D")]
+[assembly: AssemblyProduct("VehiclePhysics2D")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

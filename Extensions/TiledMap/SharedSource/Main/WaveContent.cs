@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 09/08/2017 14:54:35
+// File generated on 22/06/2018 12:22:38
 namespace TiledMap
 {
     using System;
@@ -97,6 +97,28 @@ namespace TiledMap
                 /// <summary> Path to Content/Assets/tilesets/sceneTiles.png </summary>
                 public const string sceneTiles_png = "Content/Assets/tilesets/sceneTiles.png";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
+            
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

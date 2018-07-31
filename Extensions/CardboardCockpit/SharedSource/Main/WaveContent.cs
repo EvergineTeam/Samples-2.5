@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// File generated on 08/08/2017 14:12:13
+// File generated on 21/06/2018 16:11:05
 namespace CardboardCockpit
 {
     using System;
@@ -28,6 +28,22 @@ namespace CardboardCockpit
                 
                 /// <summary> Path to Content/Assets/Model/ShoperCockpit.fbx </summary>
                 public const string ShoperCockpit_fbx = "Content/Assets/Model/ShoperCockpit.fbx";
+                
+                public sealed class Materials
+                {
+                    
+                    /// <summary> Path to Content/Assets/Model/Materials/04 - Default.wmat </summary>
+                    public const string _04_Default = "Content/Assets/Model/Materials/04 - Default.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Model/Materials/06 - Default.wmat </summary>
+                    public const string _06_Default = "Content/Assets/Model/Materials/06 - Default.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Model/Materials/Mat.001_gazelle_interior.png.wmat </summary>
+                    public const string Mat_001_gazelle_interior_png = "Content/Assets/Model/Materials/Mat.001_gazelle_interior.png.wmat";
+                    
+                    /// <summary> Path to Content/Assets/Model/Materials/Mat_fuse.png.wmat </summary>
+                    public const string Mat_fuse_png = "Content/Assets/Model/Materials/Mat_fuse.png.wmat";
+                }
             }
             
             public sealed class Sounds
@@ -55,19 +71,28 @@ namespace CardboardCockpit
                 /// <summary> Path to Content/Assets/Texture/Skybox.cubemap </summary>
                 public const string Skybox_cubemap = "Content/Assets/Texture/Skybox.cubemap";
             }
+        }
+        
+        public sealed class RenderLayers
+        {
             
-            public sealed class Materials
-            {
-                
-                /// <summary> Path to Content/Assets/Materials/Fuse.wmat </summary>
-                public const string Fuse = "Content/Assets/Materials/Fuse.wmat";
-                
-                /// <summary> Path to Content/Assets/Materials/Instruments.wmat </summary>
-                public const string Instruments = "Content/Assets/Materials/Instruments.wmat";
-                
-                /// <summary> Path to Content/Assets/Materials/Interior.wmat </summary>
-                public const string Interior = "Content/Assets/Materials/Interior.wmat";
-            }
+            /// <summary>Id of Opaque</summary>
+            public const int Opaque = 0;
+            
+            /// <summary>Id of Skybox</summary>
+            public const int Skybox = 1;
+            
+            /// <summary>Id of Alpha</summary>
+            public const int Alpha = 2;
+            
+            /// <summary>Id of Additive</summary>
+            public const int Additive = 3;
+            
+            /// <summary>Id of GUI</summary>
+            public const int GUI = 4;
+            
+            /// <summary>Id of Debug</summary>
+            public const int Debug = 5;
         }
         
         public sealed class Scenes

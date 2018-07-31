@@ -20,8 +20,7 @@ namespace CustomMaterial
         {
             this.Load(WaveContent.Scenes.MyScene);
 
-            var materialComponent = this.EntityManager.FindComponentFromEntityPath<MaterialComponent>("sphere");
-
+            var materialComponent = this.EntityManager.FindFirstComponentOfType<MaterialComponent>();
             materialComponent.Material = new MyMaterial(WaveContent.Assets.DefaultTexture_png);
         }
     }

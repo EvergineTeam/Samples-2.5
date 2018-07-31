@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoyancy", "Launchers\Windows\Buoyancy.csproj", "{8F3605A3-8720-48F7-8799-A33CD4ACCB97}"
 EndProject
@@ -8,8 +8,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BuoyancySource", "SharedSou
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		SharedSource\Main\BuoyancySource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
 		SharedSource\Main\BuoyancySource.projitems*{8f3605a3-8720-48f7-8799-a33cd4accb97}*SharedItemsImports = 4
+		SharedSource\Main\BuoyancySource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialService", "Launchers\Android\SocialService.csproj", "{5A2BDAFD-AA77-492C-8D29-F29013625366}"
 EndProject
@@ -12,19 +12,22 @@ Global
 		SharedSource\Main\SocialServiceSource.projitems*{846d34c8-e537-4dc7-b646-cff649ce42e4}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|x86.Build.0 = Debug|Any CPU
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|x86.Deploy.0 = Debug|Any CPU
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|x86.ActiveCfg = Release|Any CPU
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|x86.Build.0 = Release|Any CPU
-		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|x86.Deploy.0 = Release|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2BDAFD-AA77-492C-8D29-F29013625366}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2CE306E-AD06-4108-BF05-2D7310A998A8}
 	EndGlobalSection
 	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
 		SpecExplorer.ActivityCompletionStatus = 

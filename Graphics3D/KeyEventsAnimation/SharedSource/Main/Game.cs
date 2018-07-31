@@ -13,7 +13,7 @@ namespace KeyEventsAnimation
         public override void Initialize(IApplication application)
         {
             base.Initialize(application);
-
+            this.Load(WaveContent.GameInfo);
 			ScreenContext screenContext = new ScreenContext(new MyScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }

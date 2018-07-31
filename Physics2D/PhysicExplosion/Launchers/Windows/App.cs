@@ -18,7 +18,7 @@ namespace PhysicExplosion
         TimeSpan time;
         Vector2 position;
         Color backgroundSplashColor;
-        
+
         public App()
         {
             this.Width = 1280;
@@ -26,7 +26,7 @@ namespace PhysicExplosion
             this.FullScreen = false;
             this.WindowTitle = "PhysicExplosion";
             this.HasVideoSupport = true;
-    }
+        }
 
         public override void Initialize()
         {
@@ -34,9 +34,9 @@ namespace PhysicExplosion
             this.game.Initialize(this);
 
             #region DEFAULT SPLASHSCREEN
-            this.backgroundSplashColor = new Color("#ebebeb");
+            this.backgroundSplashColor = Color.White;
             this.spriteBatch = new SpriteBatch(WaveServices.GraphicsDevice);
-            
+
             var resourceNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             string name = string.Empty;
 
@@ -67,7 +67,7 @@ namespace PhysicExplosion
 
         public override void Update(TimeSpan elapsedTime)
         {
-             if (this.game != null && !this.game.HasExited)
+            if (this.game != null && !this.game.HasExited)
             {
                 if (WaveServices.Input.KeyboardState.F10 == ButtonState.Pressed)
                 {
@@ -143,4 +143,3 @@ namespace PhysicExplosion
         }
     }
 }
-

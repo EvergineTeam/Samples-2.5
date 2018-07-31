@@ -18,16 +18,12 @@ namespace Buoyancy
         [RequiredComponent]
         private MouseBehavior behavior = null;
 
-        private Layer layer;
-
         /// <summary>
         /// Resolve dependencies method
         /// </summary>
         protected override void ResolveDependencies()
         {
-            base.ResolveDependencies();
-
-            this.layer = this.RenderManager.FindLayer(DefaultLayers.Debug) as DebugLayer;                 
+            base.ResolveDependencies();                
         }
 
         /// <summary>

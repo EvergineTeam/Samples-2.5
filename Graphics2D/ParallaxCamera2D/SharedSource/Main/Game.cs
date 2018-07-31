@@ -12,9 +12,11 @@ namespace ParallaxCamera2D
     {
         public override void Initialize(IApplication application)
         {
-            base.Initialize(application);            
+            base.Initialize(application);
 
-			ScreenContext screenContext = new ScreenContext(new MyScene());	
+            this.Load(WaveContent.GameInfo);
+
+			ScreenContext screenContext = new ScreenContext(new MyScene());
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }
