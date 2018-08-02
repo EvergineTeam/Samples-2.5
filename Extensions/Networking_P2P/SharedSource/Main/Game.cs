@@ -15,6 +15,8 @@ namespace Networking_P2P
         {
             base.Initialize(application);
 
+            SerializerFactory.DefaultSerializationType = SerializationType.DATACONTRACT;
+
             this.Load(WaveContent.GameInfo);
 
 			ScreenContext screenContext = new ScreenContext(new MainScene());	

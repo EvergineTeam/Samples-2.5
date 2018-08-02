@@ -1,13 +1,6 @@
 ﻿using Networking_P2P.Extensions;
 using Networking_P2P.Networking.Messages;
-using System;
-using System.Linq;
 using System.Runtime.Serialization;
-using WaveEngine.Common.Input;
-using WaveEngine.Common.Math;
-using WaveEngine.Framework;
-using WaveEngine.Framework.Graphics;
-using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
 using WaveEngine.Networking.P2P;
 

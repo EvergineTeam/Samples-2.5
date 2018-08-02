@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 using WaveEngine.Common.Input;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Managers;
 using WaveEngine.Framework.Services;
-using WaveEngine.Networking.P2P;
 
 namespace Networking_P2P.Behaviors
 {

@@ -3,13 +3,13 @@ using Networking_P2P.Components;
 using Networking_P2P.Extensions;
 using Networking_P2P.Networking;
 using Networking_P2P.Networking.Messages;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
+using WaveEngine.Networking.Components;
 using WaveEngine.Networking.P2P;
 using WaveEngine.Networking.P2P.Events;
 using WaveEngine.Networking.P2P.Players;
@@ -43,23 +43,14 @@ namespace Networking_P2P.Scenes
 
             var playerFieldFlag = (PlayerFieldFlag)rawMessage.ReadInt32();
 
-            if(playerFieldFlag == PlayerFieldFlag.UserDataFromClient)
+            if(playerFieldFlag == PlayerFieldFlag.CustomProperties)
             {
-                var messagetType = (P2PMessageType)rawMessage.ReadInt32();
-                var playerId = rawMessage.ReadString();
+                var playerId = e.FromPlayer.IpAddress.Sanitize();
+                var position = this.networkPeerService.Player.CustomProperties.GetVector2((byte)P2PMessageType.Move);
 
-                switch (messagetType)
-                {
-                    case P2PMessageType.NewPlayer:
-                        //this.CreateNetworkPlayer(playerId);
-                        break;
-                    case P2PMessageType.Move:
-                        var position = rawMessage.ReadVector2();
-                        //this.MoveNetworkPlayer(playerId, position);
-                        break;
-                    default:
-                        break;
-                }
+                Debug.WriteLine(playerId);
+                Debug.WriteLine(position);
+
             }
         }
 
@@ -102,7 +93,8 @@ namespace Networking_P2P.Scenes
             }
             else
             {
-                playerEntity.AddComponent(new NetworkMovementByCustomProperty(nPlayer));
+                playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider());
+                playerEntity.AddComponent(new NetworkMovementByCustomProperty());
             }
 
             if (!this.EntityManager.Contains(playerEntity))

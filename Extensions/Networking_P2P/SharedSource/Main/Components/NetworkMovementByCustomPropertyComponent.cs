@@ -1,45 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Networking_P2P.Networking;
+using System;
 using System.Runtime.Serialization;
-using System.Text;
-using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
-using WaveEngine.Networking.P2P.Players;
+using WaveEngine.Networking.P2P.Providers;
 
 namespace Networking_P2P.Components
 {
     [DataContract]
-    public class NetworkMovementByCustomProperty : Component
+    public class NetworkMovementByCustomProperty : WaveEngine.Networking.P2P.Synchronization.NetworkVector2PropertySync<P2PMessageType>
     {
-        private readonly NetworkPlayer networkPlayer;
+        [RequiredComponent(false)]
+        protected Transform2D transform;
 
-        private Vector2 amount = Vector2.Zero;
-
-        [RequiredComponent]
-        private Transform2D transform = null;
-
-        public NetworkMovementByCustomProperty(NetworkPlayer nPlayer)
+        protected override void DefaultValues()
         {
-            this.networkPlayer = nPlayer;
-            this.networkPlayer.CustomProperties.PropertyChanged += CustomProperties_PropertyChanged;
+            base.DefaultValues();
+            this.ProviderFilter = WaveEngine.Networking.Components.NetworkPropertyProviderFilter.Player;
+            this.PropertyKey = P2PMessageType.Move;
         }
 
-        private void CustomProperties_PropertyChanged(object sender, byte e)
+        protected override void Initialize()
         {
-            if (e == 0)
+            base.Initialize();
+
+            var playerProvider = this.propertiesTableProvider as NetworkPlayerProvider;
+
+            if (playerProvider?.Player != null)
             {
-                amount = this.networkPlayer.CustomProperties.GetVector2(0);
+                this.transform.PositionChanged += this.OnTransformPositionChanged;
+                this.OnTransformPositionChanged(this, EventArgs.Empty);
             }
         }
 
-        private void NetworkPlayer_OnCustomPropertiesChanged(object sender, EventArgs e)
+        protected override void OnPropertyAddedOrChanged()
         {
-            if (amount != Vector2.Zero)
-            {
-                this.transform.Position = amount;
-                amount = Vector2.Zero;
-            }
+            this.transform.Position = this.PropertyValue;
+        }
+
+        protected override void OnPropertyRemoved()
+        {
+        }
+
+        private void OnTransformPositionChanged(object sender, EventArgs e)
+        {
+            this.PropertyValue = this.transform.Position;
         }
     }
 }
