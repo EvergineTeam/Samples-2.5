@@ -4,12 +4,10 @@ using Networking_P2P.Extensions;
 using Networking_P2P.Networking;
 using Networking_P2P.Networking.Messages;
 using System.Collections.Generic;
-using System.Diagnostics;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
-using WaveEngine.Networking.Components;
 using WaveEngine.Networking.P2P;
 using WaveEngine.Networking.P2P.Events;
 using WaveEngine.Networking.P2P.Players;
@@ -30,29 +28,11 @@ namespace Networking_P2P.Scenes
             networkPeerService.NetworkPlayerChange -= this.OnNetworkPeerServiceNetworkPlayerChange;
             networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
 
-            networkPeerService.MessageReceivedFromPlayer += this.NetworkPeerService_MessageReceivedFromPlayer;
-
             var playerId = await this.networkPeerService.GetIPAddress();
             var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId.Sanitize());
             await this.networkPeerService.SendBroadcastAsync(message);
         }
 
-        private void NetworkPeerService_MessageReceivedFromPlayer(object sender, WaveEngine.Networking.PeerMessageFromPlayerEventArgs e)
-        {
-            var rawMessage = e.ReceivedMessage;
-
-            var playerFieldFlag = (PlayerFieldFlag)rawMessage.ReadInt32();
-
-            if(playerFieldFlag == PlayerFieldFlag.CustomProperties)
-            {
-                var playerId = e.FromPlayer.IpAddress.Sanitize();
-                var position = this.networkPeerService.Player.CustomProperties.GetVector2((byte)P2PMessageType.Move);
-
-                Debug.WriteLine(playerId);
-                Debug.WriteLine(position);
-
-            }
-        }
 
         private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
         {
