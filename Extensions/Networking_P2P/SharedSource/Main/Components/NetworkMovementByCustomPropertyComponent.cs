@@ -29,6 +29,7 @@ namespace Networking_P2P.Components
 
             if (playerProvider?.Player?.IsLocalPlayer != true)
             {
+                this.transform.PositionChanged -= this.OnTransformPositionChanged;
                 this.transform.PositionChanged += this.OnTransformPositionChanged;
                 this.OnTransformPositionChanged(this, EventArgs.Empty);
             }
@@ -36,7 +37,10 @@ namespace Networking_P2P.Components
 
         protected override void OnPropertyAddedOrChanged()
         {
-            this.transform.Position = this.PropertyValue;
+            if (this.PropertyValue != this.transform.Position)
+            {
+                this.transform.Position = this.PropertyValue;
+            }
         }
 
         protected override void OnPropertyRemoved()
@@ -45,7 +49,10 @@ namespace Networking_P2P.Components
 
         private void OnTransformPositionChanged(object sender, EventArgs e)
         {
-            this.PropertyValue = this.transform.Position;
+            if (this.PropertyValue != this.transform.Position)
+            {
+                this.PropertyValue = this.transform.Position;
+            }
         }
     }
 }

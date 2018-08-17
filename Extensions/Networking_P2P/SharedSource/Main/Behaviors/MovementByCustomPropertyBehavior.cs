@@ -1,4 +1,5 @@
 ﻿using Networking_P2P.Networking;
+using System.Diagnostics;
 using System.Runtime.Serialization;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework.Services;
@@ -10,11 +11,13 @@ namespace Networking_P2P.Behaviors
     [DataContract]
     public class MovementByCustomPropertyBehavior : MovementBaseBehavior
     {
+        private NetworkPlayer networkPlayer;
         private NetworkPeerService networkPeerService;
         private Vector2 lastPosition = Vector2.Zero;
 
         public MovementByCustomPropertyBehavior(NetworkPlayer player)
         {
+            this.networkPlayer = player;
             this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
         }
 
@@ -24,9 +27,11 @@ namespace Networking_P2P.Behaviors
 
             if (this.lastPosition != this.transform.Position)
             {
-                if (this.networkPeerService.Player != null)
+                if (this.networkPlayer != null)
                 {
-                    this.networkPeerService.Player.CustomProperties.Set((byte)P2PMessageType.Move, this.transform.Position);
+                    this.networkPlayer.CustomProperties.Set((byte)P2PMessageType.Move, this.transform.Position);
+
+                    Debug.WriteLine("SetCustomProperties:" + this.transform.Position);
                 }
 
                 this.lastPosition = this.transform.Position;
