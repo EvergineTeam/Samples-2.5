@@ -1,5 +1,6 @@
 ﻿using Networking_P2P.Networking;
 using System;
+using System.Diagnostics;
 using System.Runtime.Serialization;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
@@ -26,7 +27,7 @@ namespace Networking_P2P.Components
 
             var playerProvider = this.propertiesTableProvider as NetworkPlayerProvider;
 
-            if (playerProvider?.Player != null)
+            if (playerProvider?.Player?.IsLocalPlayer != true)
             {
                 this.transform.PositionChanged += this.OnTransformPositionChanged;
                 this.OnTransformPositionChanged(this, EventArgs.Empty);
