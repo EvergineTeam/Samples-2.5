@@ -40,6 +40,8 @@ namespace Networking_P2P.Components
             if (this.PropertyValue != this.transform.Position)
             {
                 this.transform.Position = this.PropertyValue;
+
+                Debug.WriteLine(string.Format("OnPropertyAddedOrChanged: {0},{1}", this.PropertyValue.X, this.PropertyValue.Y));
             }
         }
 

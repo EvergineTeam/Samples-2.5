@@ -5,6 +5,7 @@ using Networking_P2P.Networking;
 using Networking_P2P.Networking.Messages;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
@@ -40,7 +41,7 @@ namespace Networking_P2P.Scenes
             var localIpAddress = await networkPeerService.GetIPAddress();
             var players = e.NetworkPlayers;
 
-            foreach (var player in players)
+            foreach (var player in players.Distinct())
             {
                 if (!this.addedIps.Contains(player.IpAddress))
                 {
@@ -74,7 +75,7 @@ namespace Networking_P2P.Scenes
             if (isLocal)
             {
                 playerEntity.AddComponent(new MovementByCustomPropertyBehavior(nPlayer));
-
+                this.networkPeerService.Player = nPlayer;
                 Debug.WriteLine("LOCAL: " + playerEntity.Name);
             }
             else
