@@ -76,6 +76,7 @@ namespace Networking_P2P.Scenes
             {
                 playerEntity.AddComponent(new MovementByCustomPropertyBehavior(nPlayer));
                 this.networkPeerService.Player = nPlayer;
+         
                 Debug.WriteLine("LOCAL: " + playerEntity.Name);
             }
             else
@@ -90,7 +91,7 @@ namespace Networking_P2P.Scenes
 
             playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider
             {
-                PlayerId = System.Convert.ToInt32(localIpAddress.GetHashCode())
+                PlayerId = System.Convert.ToInt32(nPlayer.IpAddress.GetHashCode())
             });
 
             playerEntity.AddComponent(new NetworkMovementByCustomProperty());
