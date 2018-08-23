@@ -59,7 +59,7 @@ namespace Networking_P2P.Scenes
             }
         }
 
-        private void AddPlayer(NetworkPlayer nPlayer, bool isLocal)
+        private async void AddPlayer(NetworkPlayer nPlayer, bool isLocal)
         {
 
             var playerEntity = this.EntityManager.Instantiate(WaveContent.Prefabs.Player);
@@ -80,11 +80,21 @@ namespace Networking_P2P.Scenes
             }
             else
             {
-                playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider());
-                playerEntity.AddComponent(new NetworkMovementByCustomProperty());
+                //playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider());
+                //playerEntity.AddComponent(new NetworkMovementByCustomProperty());
 
                 Debug.WriteLine("REMOTE: " + playerEntity.Name);
             }
+
+            var localIpAddress = await networkPeerService.GetIPAddress();
+
+            playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider
+            {
+                PlayerId = System.Convert.ToInt32(localIpAddress.GetHashCode())
+            });
+
+            playerEntity.AddComponent(new NetworkMovementByCustomProperty());
+
 
             if (!this.EntityManager.Contains(playerEntity))
             {

@@ -29,9 +29,9 @@ namespace Networking_P2P.Behaviors
             {
                 if (this.networkPlayer != null)
                 {
-                    this.networkPlayer.CustomProperties.Set((byte)P2PMessageType.Move, this.transform.Position);
+                    //this.networkPlayer.CustomProperties.Set((byte)P2PMessageType.Move, this.transform.Position);
 
-                    Debug.WriteLine("SetCustomProperties:" + this.transform.Position);
+                    //Debug.WriteLine("SetCustomProperties:" + this.transform.Position);
                 }
 
                 this.lastPosition = this.transform.Position;

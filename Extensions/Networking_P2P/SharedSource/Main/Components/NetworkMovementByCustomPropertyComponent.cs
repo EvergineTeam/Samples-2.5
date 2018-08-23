@@ -27,7 +27,7 @@ namespace Networking_P2P.Components
 
             var playerProvider = this.propertiesTableProvider as NetworkPlayerProvider;
 
-            if (playerProvider?.Player?.IsLocalPlayer != true)
+            if (playerProvider?.Player?.IsLocalPlayer == true)
             {
                 this.transform.PositionChanged -= this.OnTransformPositionChanged;
                 this.transform.PositionChanged += this.OnTransformPositionChanged;
@@ -37,7 +37,9 @@ namespace Networking_P2P.Components
 
         protected override void OnPropertyAddedOrChanged()
         {
-            if (this.PropertyValue != this.transform.Position)
+            var playerProvider = this.propertiesTableProvider as NetworkPlayerProvider;
+
+            if (playerProvider?.Player?.IsLocalPlayer != true)
             {
                 this.transform.Position = this.PropertyValue;
 
@@ -51,10 +53,7 @@ namespace Networking_P2P.Components
 
         private void OnTransformPositionChanged(object sender, EventArgs e)
         {
-            if (this.PropertyValue != this.transform.Position)
-            {
-                this.PropertyValue = this.transform.Position;
-            }
+            this.PropertyValue = this.transform.Position;
         }
     }
 }
