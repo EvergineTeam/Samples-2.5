@@ -11,28 +11,21 @@ namespace Networking_P2P.Behaviors
     [DataContract]
     public class MovementByCustomPropertyBehavior : MovementBaseBehavior
     {
-        private NetworkPlayer networkPlayer;
-        private NetworkPeerService networkPeerService;
         private Vector2 lastPosition = Vector2.Zero;
 
-        public MovementByCustomPropertyBehavior(NetworkPlayer player)
+        public MovementByCustomPropertyBehavior()
         {
-            this.networkPlayer = player;
-            this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
         }
 
-        protected override void CurrentNetworkBehavior()
+        protected override void CurrentNetworkBehavior(Vector2 input)
         {
-            base.CurrentNetworkBehavior();
+            base.CurrentNetworkBehavior(input);
 
-            if (this.lastPosition != this.transform.Position)
+            var newPos = this.transform.Position + input;
+
+            if (this.lastPosition != newPos)
             {
-                if (this.networkPlayer != null)
-                {
-                    this.networkPlayer.CustomProperties.Set((byte)P2PMessageType.Position, this.transform.Position);
-
-                    //Debug.WriteLine("SetCustomProperties:" + this.transform.Position);
-                }
+                this.transform.Position = newPos;
 
                 this.lastPosition = this.transform.Position;
             }

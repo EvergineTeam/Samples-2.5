@@ -71,15 +71,10 @@ namespace Networking_P2P.Behaviors
                 }
             }
 
-            if (input != Vector2.Zero)
-            {
-                this.transform.Position += input;
-            }
-
-            this.CurrentNetworkBehavior();
+            this.CurrentNetworkBehavior(input);
         }
 
-        protected virtual void CurrentNetworkBehavior()
+        protected virtual void CurrentNetworkBehavior(Vector2 input)
         {
         }
 

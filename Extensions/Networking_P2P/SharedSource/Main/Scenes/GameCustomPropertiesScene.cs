@@ -74,7 +74,7 @@ namespace Networking_P2P.Scenes
 
             if (isLocal)
             {
-                playerEntity.AddComponent(new MovementByCustomPropertyBehavior(nPlayer));
+                playerEntity.AddComponent(new MovementByCustomPropertyBehavior());
                 this.networkPeerService.Player = nPlayer;
          
                 Debug.WriteLine("LOCAL: " + playerEntity.Name);

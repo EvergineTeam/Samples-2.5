@@ -36,7 +36,7 @@ namespace Networking_P2P.Components
 
         protected override void OnPropertyAddedOrChanged()
         {
-            this.transform.Position = this.PropertyValue;
+            //this.transform.Position = this.PropertyValue;
         }
 
         protected override void OnPropertyRemoved()
