@@ -18,7 +18,7 @@ namespace Networking_P2P.Components
         {
             base.DefaultValues();
             this.ProviderFilter = WaveEngine.Networking.Components.NetworkPropertyProviderFilter.Player;
-            this.PropertyKey = P2PMessageType.Move;
+            this.PropertyKey = P2PMessageType.Position;
         }
 
         protected override void Initialize()
@@ -26,8 +26,7 @@ namespace Networking_P2P.Components
             base.Initialize();
 
             var playerProvider = this.propertiesTableProvider as NetworkPlayerProvider;
-
-            if (playerProvider?.Player?.IsLocalPlayer != true)
+            if (playerProvider?.Player?.IsLocalPlayer == true)
             {
                 this.transform.PositionChanged -= this.OnTransformPositionChanged;
                 this.transform.PositionChanged += this.OnTransformPositionChanged;

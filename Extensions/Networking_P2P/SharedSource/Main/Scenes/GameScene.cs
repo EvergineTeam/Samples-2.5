@@ -72,7 +72,7 @@ namespace Networking_P2P.Scenes
 				case P2PMessageType.NewPlayer:
 					this.CreateNetworkPlayer(playerId);
 					break;
-				case P2PMessageType.Move:
+				case P2PMessageType.Position:
 					var position = rawMessage.ReadVector2();
 					this.MoveNetworkPlayer(playerId, position);
 					break;

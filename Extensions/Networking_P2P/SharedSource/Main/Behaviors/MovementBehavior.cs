@@ -21,7 +21,7 @@ namespace Networking_P2P.Behaviors
         protected override async void CurrentNetworkBehavior()
         {
             var playerId = await this.networkPeerService.GetIPAddress();
-            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Move, playerId.Sanitize(), this.transform.Position);
+            var message = NetworkMessage.CreateMessage(Networking.P2PMessageType.Position, playerId.Sanitize(), this.transform.Position);
             await this.networkPeerService.SendBroadcastAsync(message);
         }
     }
