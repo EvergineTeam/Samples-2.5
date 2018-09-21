@@ -1,10 +1,5 @@
-﻿using Networking_P2P.Networking;
-using System.Diagnostics;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using WaveEngine.Common.Math;
-using WaveEngine.Framework.Services;
-using WaveEngine.Networking.P2P;
-using WaveEngine.Networking.P2P.Players;
 
 namespace Networking_P2P.Behaviors
 {

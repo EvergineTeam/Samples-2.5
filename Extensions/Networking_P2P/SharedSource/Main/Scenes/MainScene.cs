@@ -5,31 +5,25 @@ using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
 using WaveEngine.Framework.UI;
-using WaveEngine.Networking.P2P;
 #endregion
 
 namespace Networking_P2P.Scenes
 {
     public class MainScene : Scene
     {
-        private NetworkPeerService networkPeerService;
         private readonly List<Entity> discoveredHostButtons;
 
         private TextBlock errorMessage;
 
         public MainScene()
         {
-            
+
             this.discoveredHostButtons = new List<Entity>();
         }
 
         protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.MainScene);
-
-            this.networkPeerService = new NetworkPeerService(); 
-
-            WaveServices.RegisterService(this.networkPeerService);
 
             this.CreateUi();
         }
@@ -67,7 +61,6 @@ namespace Networking_P2P.Scenes
             {
                 this.CleanErrorMessage();
                 this.DisableHostDiscoveryAndCleanButtons();
-                //this.networkPeerService.StartAsync();
 
                 WaveServices.ScreenContextManager.Push(new ScreenContext(new LoadingScene()));
             }

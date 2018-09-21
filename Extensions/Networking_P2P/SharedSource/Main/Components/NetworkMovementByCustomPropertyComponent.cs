@@ -1,6 +1,5 @@
 ﻿using Networking_P2P.Networking;
 using System;
-using System.Diagnostics;
 using System.Runtime.Serialization;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
@@ -36,7 +35,7 @@ namespace Networking_P2P.Components
 
         protected override void OnPropertyAddedOrChanged()
         {
-            //this.transform.Position = this.PropertyValue;
+            this.transform.Position = this.PropertyValue;
         }
 
         protected override void OnPropertyRemoved()

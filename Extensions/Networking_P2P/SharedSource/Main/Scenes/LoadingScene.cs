@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using WaveEngine.Components.UI;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
@@ -12,7 +11,7 @@ namespace Networking_P2P.Scenes
     {
         private TextBlock messageTextBlock;
 
-        protected async override void CreateScene()
+        protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.LoadingScene);
 
@@ -26,18 +25,17 @@ namespace Networking_P2P.Scenes
             };
             this.EntityManager.Add(this.messageTextBlock);
 
-            await this.ConnectPeers();
+            this.ConnectPeers();
         }
 
-        private async Task ConnectPeers()
+        private void ConnectPeers()
         {
             this.messageTextBlock.Text = "Connecting...";
 
             try
             {
-                var networkPeerService = WaveServices.GetService<NetworkPeerService>();
-                networkPeerService.PortNum = 21000;
-                await networkPeerService.StartAsync();
+                var networkPeerService = WaveServices.GetService<P2PServerService>();
+                networkPeerService.Start(21000);
 
                 //Wait 3 seconds and start game
                 int remainingSeconds = 3;
@@ -52,14 +50,13 @@ namespace Networking_P2P.Scenes
                         WaveServices.TimerFactory.RemoveTimer(timer);
 
                         //Navigate to GameScene
-                        //WaveServices.ScreenContextManager.Push(new ScreenContext(new GameScene()));
                         WaveServices.ScreenContextManager.Push(new ScreenContext(new GameCustomPropertiesScene()));
                     }
 
                     this.UpdateRemainingSeconds(remainingSeconds);
                 }, true, this);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 this.messageTextBlock.Text = $"Cannot connect. In 1 second you will back screen.";
                 WaveServices.TimerFactory.CreateTimer(TimeSpan.FromSeconds(1), () =>

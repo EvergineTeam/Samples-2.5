@@ -5,6 +5,7 @@ using WaveEngine.Common;
 using WaveEngine.Common.Graphics;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Services;
+using WaveEngine.Networking.P2P;
 #endregion
 
 namespace Networking_P2P
@@ -19,7 +20,11 @@ namespace Networking_P2P
 
             this.Load(WaveContent.GameInfo);
 
-			ScreenContext screenContext = new ScreenContext(new MainScene());	
+            WaveServices.RegisterService(new P2PServerService());
+            WaveServices.RegisterService(new P2PClientService());
+
+
+            ScreenContext screenContext = new ScreenContext(new MainScene());	
 			WaveServices.ScreenContextManager.To(screenContext);
         }
     }

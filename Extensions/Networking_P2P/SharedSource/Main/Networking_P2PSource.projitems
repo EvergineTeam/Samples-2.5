@@ -11,12 +11,14 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementBaseBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementByCustomPropertyBehavior.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\MovementBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Components\NetworkMovementByCustomPropertyComponent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Game.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NetworkConfiguration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Networking\Messages\NetworkMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Networking\P2PMessageType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)P2PNetworkServerService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlayerProperties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameCustomPropertiesScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\GameScene.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Scenes\LoadingScene.cs" />

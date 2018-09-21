@@ -1,69 +1,57 @@
 ﻿using Networking_P2P.Behaviors;
 using Networking_P2P.Components;
 using Networking_P2P.Extensions;
-using Networking_P2P.Networking;
-using Networking_P2P.Networking.Messages;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using WaveEngine.Common.Math;
 using WaveEngine.Framework;
 using WaveEngine.Framework.Graphics;
 using WaveEngine.Framework.Services;
 using WaveEngine.Networking.P2P;
-using WaveEngine.Networking.P2P.Events;
 using WaveEngine.Networking.P2P.Players;
 
 namespace Networking_P2P.Scenes
 {
     public class GameCustomPropertiesScene : Scene
     {
-        private NetworkPeerService networkPeerService;
+        private P2PServerService networkPeerService;
+        private P2PClientService clientPeerService;
         private List<string> addedIps = new List<string>();
 
-        protected override async void CreateScene()
+        public int OnPlayerSynchronized { get; private set; }
+
+        protected override void CreateScene()
         {
             this.Load(WaveContent.Scenes.GameScene);
 
-            this.networkPeerService = WaveServices.GetService<NetworkPeerService>();
+            this.networkPeerService = WaveServices.GetService<P2PServerService>();
+            this.networkPeerService.PlayerConnected += this.NetworkPeerService_PlayerConnected;
+            this.networkPeerService.PlayerDisconnected += NetworkPeerService_PlayerDisconnected; ;
 
-            networkPeerService.NetworkPlayerChange -= this.OnNetworkPeerServiceNetworkPlayerChange;
-            networkPeerService.NetworkPlayerChange += this.OnNetworkPeerServiceNetworkPlayerChange;
-
-            var playerId = await this.networkPeerService.GetIPAddress();
-            var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId.Sanitize());
-            await this.networkPeerService.SendBroadcastAsync(message);
+            this.clientPeerService = WaveServices.GetService<P2PClientService>();
+            this.clientPeerService.ConnectAsync(new WaveEngine.Networking.NetworkEndpoint("10.4.1.37", 21000));
+            this.clientPeerService.SendBroadcast();
+            
+            // var playerId = await this.networkPeerService.GetIPAddress();
+            // var message = NetworkMessage.CreateMessage(P2PMessageType.NewPlayer, playerId.Sanitize());
+            // await this.networkPeerService.SendBroadcastAsync(message);
         }
 
-
-        private async void OnNetworkPeerServiceNetworkPlayerChange(object sender, NetworkPlayerChangeEventArgs e)
+        private void NetworkPeerService_PlayerDisconnected(object sender, P2PRemotePlayer e)
         {
-            var localIpAddress = await networkPeerService.GetIPAddress();
-            var players = e.NetworkPlayers;
-
-            foreach (var player in players.Distinct())
-            {
-                if (!this.addedIps.Contains(player.IpAddress))
-                {
-                    if (player.IsLocalPlayer)
-                    {
-                        this.AddPlayer(player, true);
-                    }
-                    else
-                    {
-                        this.AddPlayer(player, false);
-                    }
-
-                    this.addedIps.Add(player.IpAddress);
-                }
-            }
+            // this.RemovePlayer(e.Endpoint.ToString().Sanitize());
         }
 
-        private async void AddPlayer(NetworkPlayer nPlayer, bool isLocal)
+        private void NetworkPeerService_PlayerConnected(object sender, P2PRemotePlayer e)
+        {
+            this.AddPlayer(e);
+        }
+
+
+        private void AddPlayer(P2PRemotePlayer player)
         {
 
             var playerEntity = this.EntityManager.Instantiate(WaveContent.Prefabs.Player);
-            playerEntity.Name = this.GetEntityName(nPlayer.IpAddress.Sanitize());
+            playerEntity.Name = this.GetEntityName(player.Endpoint.ToString().Sanitize());
 
             var random = WaveServices.Random;
             //var transform = playerEntity.FindComponent<Transform2D>();
@@ -72,11 +60,9 @@ namespace Networking_P2P.Scenes
 
             //transform.Position = new Vector2(random.Next(10, 800), random.Next(10, 200));
 
-            if (isLocal)
+            if (player.IsLocalPlayer)
             {
                 playerEntity.AddComponent(new MovementByCustomPropertyBehavior());
-                this.networkPeerService.Player = nPlayer;
-         
                 Debug.WriteLine("LOCAL: " + playerEntity.Name);
             }
             else
@@ -87,15 +73,12 @@ namespace Networking_P2P.Scenes
                 Debug.WriteLine("REMOTE: " + playerEntity.Name);
             }
 
-            var localIpAddress = await networkPeerService.GetIPAddress();
-
             playerEntity.AddComponent(new WaveEngine.Networking.P2P.Providers.NetworkPlayerProvider
             {
-                PlayerId = System.Convert.ToInt32(nPlayer.IpAddress.GetHashCode())
+                PlayerId = System.Convert.ToInt32(player.Endpoint.ToString().GetHashCode())
             });
 
             playerEntity.AddComponent(new NetworkMovementByCustomProperty());
-
 
             if (!this.EntityManager.Contains(playerEntity))
             {

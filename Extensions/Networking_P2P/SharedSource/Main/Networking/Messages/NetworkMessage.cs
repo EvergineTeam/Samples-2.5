@@ -18,7 +18,7 @@ namespace Networking_P2P.Networking.Messages
 
         public static OutgoingMessage CreateMessage(P2PMessageType messageType, string playerId, string s = "")
         {
-            var service = WaveServices.GetService<NetworkPeerService>();
+            var service = WaveServices.GetService<P2PClientService>();
             var message = service.CreateMessage();
             message.Write((int)messageType);
             message.Write(playerId);
@@ -33,7 +33,7 @@ namespace Networking_P2P.Networking.Messages
 
         public static OutgoingMessage CreateMessage(P2PMessageType messageType, string playerId, Vector2 vector)
         {
-            var service = WaveServices.GetService<NetworkPeerService>();
+            var service = WaveServices.GetService<P2PClientService>();
             var message = service.CreateMessage();
             message.Write((int)messageType);
             message.Write(playerId);
